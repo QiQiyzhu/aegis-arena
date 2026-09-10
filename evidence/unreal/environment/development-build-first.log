@@ -1,0 +1,132 @@
+Log started at 09/10/2026 13:50:50 (2026-09-10T05:50:50Z)
+No project argument provided while trying to parse Project File. Attempting fallback parsing to attempt to find a Project File.
+Resolved project argument C:/Users/yzhu/Documents/ChatGPT/AegisArena/AegisArena.uproject to C:\Users\yzhu\Documents\ChatGPT\AegisArena\AegisArena.uproject
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\yzhu\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\yzhu\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  C:\Users\yzhu\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\Documents\ChatGPT\AegisArena\Saved\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\AppData\Local\UnrealEngine\Intermediate\Build\UnrealBuildTool.Env.BuildConfiguration.xml
+Setting temp directory to 'C:\Users\yzhu\AppData\Local\Temp\UnrealBuildTool\e98283ba'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.19041.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.26100.0, Version_AutoSdk=10.0.22621.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+Command line: "D:\Program Files\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" AegisArena Win64 Development C:/Users/yzhu/Documents/ChatGPT/AegisArena/AegisArena.uproject -WaitMutex -NoHotReloadFromIDE
+Log file: C:\Users\yzhu\AppData\Local\UnrealBuildTool\Log.txt
+
+Determining max actions to execute in parallel (24 physical cores, 32 logical cores)
+  Executing up to 24 processes, one per physical core
+  Requested 1.5 GB memory per action, 15.73 GB available: limiting max parallel actions to 10
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\yzhu\Documents\ChatGPT\AegisArena).
+UbaStorageServer - Database loaded from C:\ProgramData\Epic\UnrealBuildAccelerator\cas\casdb (v32) in <1ms (contained 0 entries estimated to 0b)
+UbaServer - Listening on 0.0.0.0:1345
+Skipping D:\Program Files\UE_5.8\Engine\Intermediate\Build\BuildRules\UE5Rules.dll: File is installed
+Skipping D:\Program Files\UE_5.8\Engine\Intermediate\Build\BuildRules\UE5ProgramRules.dll: File is installed
+C:\Users\yzhu\Documents\ChatGPT\AegisArena\Source\AegisArena\Private\AegisCharacter.cpp was not part of source working set and should be
+Invalidating makefile for AegisArena (working set of source files changed)
+Compiler: D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717\bin\Hostx64\x64\cl.exe
+Linker: D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717\bin\Hostx64\x64\link.exe
+Library Manager: D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717\bin\Hostx64\x64\link.exe
+Resource Compiler: C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x64\rc.exe
+Resource Converter: D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717\bin\Hostx64\x64\cvtres.exe
+Using EngineIncludeOrderVersion.Unreal5_8 for target AegisArena.Target.cs
+Building UnrealGame - AegisArena - Win64 - Development
+VerseVMBytecodeGenerator.Generate, generating CPP headers in: 'D:\Program Files\UE_5.8\Engine\Intermediate\Build\Win64\UnrealGame\Inc\CoreUObject\VerseVMBytecode'
+	Writing out generated header file. Changed:False Path:'D:\Program Files\UE_5.8\Engine\Intermediate\Build\Win64\UnrealGame\Inc\CoreUObject\VerseVMBytecode\VVMBytecodeOps.gen.h'
+	Writing out generated header file. Changed:False Path:'D:\Program Files\UE_5.8\Engine\Intermediate\Build\Win64\UnrealGame\Inc\CoreUObject\VerseVMBytecode\VVMBytecodesAndCaptures.gen.h'
+	Writing out generated header file. Changed:False Path:'D:\Program Files\UE_5.8\Engine\Intermediate\Build\Win64\UnrealGame\Inc\CoreUObject\VerseVMBytecode\VVMMakeCapturesFuncs.gen.h'
+	Writing out generated header file. Changed:False Path:'D:\Program Files\UE_5.8\Engine\Intermediate\Build\Win64\UnrealGame\Inc\CoreUObject\VerseVMBytecode\VVMCaptureSwitch.gen.h'
+Generated code is up to date.
+Found 4 shared PCH headers (listed in order of preference):
+	Engine
+	Slate
+	CoreUObject
+	Core
+Updating C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\Win64\x64\AegisArena\Development\AegisArena.exe.rsp: contents have changed. Saving previous version to C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\Win64\x64\AegisArena\Development\AegisArena.exe.rsp.old.
+Building AegisArena...
+===== Toolchain Information =====
+Using ISPC compiler (D:\Program Files\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.50.35738 toolchain (D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from AegisArena unity file: AegisAIController.cpp, AegisCharacter.cpp, AegisDebugCommands.cpp, AegisLab.cpp, AegisAutomationTests.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 6 action(s)
+  CPU 24 physical cores, 32 logical cores
+  Memory 15.73 GB physical, 31.49 GB/37.3 GB committed
+  UBA Storage capacity 40 GB
+  UBA RootDir C:\ProgramData\Epic\UnrealBuildAccelerator
+Cache bucket 3983957818 used. Action: Compile [x64] AegisAIController.cpp ()
+Cache bucket 136926991 used. Action: Link [x64] AegisArena.exe ()
+All processes queued
+[1/6] Compile [x64] AegisAIController.cpp
+[2/6] Compile [x64] AegisAutomationTests.cpp
+[3/6] Compile [x64] AegisCharacter.cpp
+[4/6] Compile [x64] AegisLab.cpp
+[5/6] Link [x64] AegisArena.exe
+  正在创建库 C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena.lib 和对象 C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena.exp
+[6/6] WriteMetadata AegisArena.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 47.68 seconds
+Output binary: C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena.exe
+UbaStorageServer - Database saved in <1ms (0 file entries, 0 cas entries. deleted 0 dropped cas files)
+WriteFileIfChanged() wrote 0 changed files of 1 requested writes.
+
+Timeline:
+[  0.000]  +0.234 Main
+   0.010          [  0.010]  +0.069 Apply XmlConfig
+   0.014             0.014          [  0.004]  +0.005 Find target files
+   0.081          [  0.081]  +0.037 AddTelemetry
+   0.130          [  0.130]  +0.103 RegisterPlatforms
+[  0.249]  +0.020 ParseCommandLine
+[  0.313]  +0.058 LoadMakefile
+   0.340          [  0.026]  +0.035 EngineRulesPlugins
+   0.375             0.061          [  0.035]  +0.000 FindPlugins
+[  0.378]  +0.002 EngineRulesFetchDirs
+   0.380          [  0.001]  +0.014 MakefileValid
+   0.387             0.009          [  0.007]  +0.007 EngineRulesAssembly
+   0.394             0.016          [  0.014]  +0.000 ProgramRulesAssembly
+[  0.395]  +0.002 ProjectRulesAssembly
+[  0.397]  +0.177 CreateTargetRules
+[  0.611]  +0.002 CppDependencyCache
+[  0.622]  +0.990 AegisArena Win64 Development
+   0.622          [  0.000]  +0.461 <unknown>
+   1.084          [  0.461]  +0.025 UHTModules
+   1.179          [  0.557]  +0.015 UHTManifest
+   1.195          [  0.572]  +0.007 UHTTimestamps
+   1.203          [  0.580]  +0.407 <unknown>
+   1.611          [  0.988]  +0.000 WaitOnWrites
+[  1.613]  +0.028 SavingMakefile
+   1.613          [  0.000]  +0.000 UHTWait
+   1.628          [  0.015]  +0.000 CppDependencyCache
+   1.629          [  0.016]  +0.065 Preparing ActionGraph
+   1.638             0.025          [  0.008]  +0.003 LinkActions
+   1.642             0.029          [  0.013]  +0.000 GatherPrerequisiteActions
+   1.643             0.030          [  0.014]  +0.000 CppDependencyCacheWait
+   1.644             0.031          [  0.015]  +0.038 GatherOutdatedActions
+   1.685             0.072          [  0.056]  +0.005 LinkActions
+   1.692             0.078          [  0.062]  +0.000 DeleteOutdatedProducedItems
+   1.692             0.079          [  0.063]  +0.002 SaveActionHistory
+   1.695             0.082          [  0.065]  +0.000 CreateDirectoriesForProducedItems
+[  1.705]  +0.122 GarbageCollect
+[  1.827] +47.554 <unknown>
+[ 49.381]  +0.000 Deploying targets
+[ 49.383]  +0.000 DisconnectCache
+[ 49.390]  +0.023 SaveCasTable
+[ 49.416]  +0.030 Saving caches
+[ 49.447]  +0.001 TelemetryService.FlushEvents
+[ 49.450]
+
+Result: Succeeded
+Total execution time: 49.45 seconds

@@ -1,6 +1,6 @@
 # Evaluation: evidence, not policy labels
 
-All results below are from the compiled **portable C++ model**, not Unreal. No engine evaluation has been run yet. Raw data and exact configuration are in [the report](../evidence/portable/evaluation/report.json), [JSON episodes](../evidence/portable/evaluation/episodes.json), and [CSV](../evidence/portable/evaluation/episodes.csv).
+This page preserves the earlier compiled **portable C++ model** evaluation. A separate **60-episode actual UE evaluation** is now available in [native-evaluation.md](native-evaluation.md); keep the environments and metric definitions separate. Raw data and exact configuration are in [the report](../evidence/portable/evaluation/report.json), [JSON episodes](../evidence/portable/evaluation/episodes.json), and [CSV](../evidence/portable/evaluation/episodes.csv).
 
 ## Protocol
 
@@ -57,4 +57,4 @@ The runner validates inputs before invoking a binary and refuses to overwrite an
 
 The `AAegisScenarioRunner` source provides editable map name, policy, count, starting seed, duration and episode count. In PIE, its **Run Batch** button or `aegis.RunScenario` starts capture. It validates map, navigation and BT/EQS assets; creates only its own actors; subscribes to actual damage callbacks; samples positions and health at 10 Hz; and writes JSON/CSV to `Saved/AegisReports/<UTC timestamp>`.
 
-It currently requires manual BT/EQS asset wiring and does not produce verified results until run in the engine. Engine seeds set spawn placement; engine scheduling and default navigation sampling are not certified deterministic. The director is kept out of fixed policy comparisons. A real UE evaluation must also align the metric differences above and confirm there are no pre-existing combat actors contaminating the encounter.
+The native editor library and Python authoring script create and wire real BB/BT/EQS assets. That source only becomes execution evidence after successful asset generation and an engine run. Project seeds control spawn placement and patrol candidate generation; engine scheduling and navigation are not certified deterministic. The director is kept out of fixed policy comparisons. The runner removes its interactive encounter and player pawn before scripted evaluation. The actual native evaluation retains its own metric definitions and raw reports; those differences prevent direct numeric cross-environment comparisons.

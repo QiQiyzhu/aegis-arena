@@ -4,11 +4,13 @@
 
 A small AI architecture and evaluation project: one arena specification, a player, a companion, an enemy, and an elite variant. The goal is explainable decisions and reproducible evidence, not content volume.
 
-**Current status: the portable C++ decision/model layer is compiled and evaluated. The UE 5.7 adapter is source complete for review but has NOT been compiled or run in Unreal on this machine.** No Unreal gameplay video, BT screenshot, EQS capture, engine performance claim, or RL result is presented as completed. [Exact acceptance gaps](docs/status.md).
+**Current status: real UE 5.8.2 Editor/Game builds, ten saved native assets, five Core Automation tests, one game-world Functional Test, 60 native policy episodes and 12 rendered performance episodes have passed. Standalone Development and Shipping packages have been built and launched; Development batch output and the Shipping diagnostic boundary were checked.** [Current acceptance ledger](docs/status.md).
 
-![Actual portable C++ trace — NOT Unreal Engine footage](docs/media/portable-trace.gif)
+![Actual Unreal Engine 5.8.2 arena capture](docs/media/unreal-arena.gif)
 
-*The animation replays [actual CSV positions and states](evidence/portable/trace.csv), seed 1001. It is a diagnostic model view, not an Unreal render.*
+*Thirteen actual engine frames sampled every 0.5 game seconds, resized to 960×540. The 2 fps GIF sampling rate is not gameplay performance. Primitive geometry, movable lights and original AI diagnostics; no mock engine screenshots.*
+
+[Download Windows builds](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v1.0.0-native) · [Run and acceptance details](docs/release.md)
 
 ## Verified evidence
 
@@ -16,12 +18,17 @@ A small AI architecture and evaluation project: one arena specification, a playe
 |---|---|---|
 | Strict C++17 build | Clang 20.1.2 through Zig 0.15.2; warnings treated as errors | [Build + assertions](evidence/portable/evaluation/report.json) |
 | Core assertions | 325 passed | [Tests](core/tests/tests.cpp) |
-| Python integration tests | 7 passed, including actual binary JSON/CSV round trip | [Tests](scripts/test_tools.py) |
+| Python integration tests | 9 passed, including actual binary JSON/CSV round trip | [Tests](scripts/test_tools.py) |
 | Fixed evaluation set | 60 episodes: 30 priority + 30 utility | [Raw episodes](evidence/portable/evaluation/episodes.json) |
 | CPU model sampling | 20 episodes, 1 / 10 / 25 / 50 enemies | [Results](evidence/portable/performance/report.json) |
-| UE compilation / Automation / functional map | Pending installed UE 5.7 and compatible MSVC | [Setup](docs/unreal-setup.md) |
+| UE 5.8.2 Game Development build | MSVC 14.50.35738 + Windows SDK 26100: compiled and linked | [Actual build/cook log](evidence/unreal/environment/development-package.log) |
+| UE 5.8.2 Game Shipping build | Compiled and linked; nine debug markers absent (static check) | [Actual binary gate](evidence/unreal/environment/shipping-string-gate.json) |
+| UE Editor and saved asset inspection | Actual Editor compilation; ten native assets, real BT/BB/EQS wiring and navigation bounds | [Inspection](evidence/unreal/asset-inspection.json) |
+| UE Core Automation / Functional Test | 5 / 1 passed; Functional executes 12 PIE world assertions | [Automation](evidence/unreal/automation/index.json), [Functional](evidence/unreal/functional/index.json) |
+| Native policy comparison | 60 real UE episodes, paired seeds, fixed game timestep + NullRHI | [Native evaluation](docs/native-evaluation.md) |
+| Rendered native sampling | 12 sustained 15s episodes, four loads, D3D12 / RTX 4060 Laptop | [Performance and limits](docs/performance.md) |
 
-The utility companion won **19/30** episodes versus the priority baseline's **20/30**. It died in **6/30** versus **16/30**. This is a survival/offense tradeoff in this model, **not proof that utility is a better policy**. [Evaluation and uncertainty](docs/evaluation.md).
+In the native four-enemy stress encounter, both policies won **0/30**. Utility had fewer companion deaths (**6 vs 25**), but higher player damage taken and lower allied damage output. The difficulty creates a win-rate floor; these results do not establish overall policy superiority. [Native results and uncertainty](docs/native-evaluation.md). The [earlier portable model results](docs/evaluation.md) remain separate.
 
 ## Run the verified layer
 
@@ -33,7 +40,7 @@ From a fresh clone, enter the repository directory and run this single command o
 python3 scripts/verify_portable.py --compiler g++
 ```
 
-It builds both executables, runs the core assertions and seven Python test cases, then runs the two-episode smoke configuration. No prebuilt binary, ignored local toolchain, Pillow, engine installation or credentials are required. Logs and raw JSON/CSV go to a new timestamped directory under `outputs/`. Add `--full` to include all 60 evaluation episodes.
+It builds both executables, runs the core assertions and nine Python test cases, then runs the two-episode smoke configuration. No prebuilt binary, ignored local toolchain, Pillow, engine installation or credentials are required. Logs and raw JSON/CSV go to a new timestamped directory under `outputs/`. Add `--full` to include all 60 evaluation episodes.
 
 Windows with an existing compiler:
 
@@ -55,14 +62,14 @@ python3 scripts/run_benchmark.py --scenario scenarios/performance.json --output 
 
 CMake is also supported: `cmake -S . -B build-cmake`, `cmake --build build-cmake --config Release`, then `ctest --test-dir build-cmake -C Release --output-on-failure`. This CMake path builds/runs C++ tests; use the Python commands above for the scenario/report pipeline. The repository does not download tools automatically. Existing report directories cannot be overwritten accidentally.
 
-The [portable GitHub Actions workflow](.github/workflows/portable.yml) uses Ubuntu `g++`, runs the same strict build, seven Python tests, smoke and full evaluation configurations, and uploads raw JSON/CSV plus build provenance. **It does not install or execute Unreal.** A workflow definition is not evidence of a hosted pass; consult the repository's actual Actions run after publication.
+The [portable GitHub Actions workflow](.github/workflows/portable.yml) uses Ubuntu `g++`, runs the same strict build, nine Python tests, smoke and full evaluation configurations, and uploads raw JSON/CSV plus build provenance. **It does not install or execute Unreal.** See the [hosted per-commit runs and evaluation artifacts](https://github.com/QiQiyzhu/aegis-arena/actions/workflows/portable.yml) for the current branch result.
 
 ## Unreal adapter
 
-Target **UE 5.7, latest available hotfix**, Visual Studio 2022 17.14, C++ game development workload and Windows SDK. Follow [the exact installation/build/asset/acceptance procedure](docs/unreal-setup.md). Engine content and `.umap` files are generated by Unreal, never fabricated by scripts outside the editor.
+Target **UE 5.8.2**, compatible MSVC, Windows SDK and the additional .NET Framework SDK required by the Editor build. Follow [the exact installation/build/asset/acceptance procedure](docs/unreal-setup.md). The ten checked-in map/AI/material assets were generated and saved by the actual Unreal editor. Engine primitive assets remain references to the installed engine. `-GenerateAssets` is only for an intentionally asset-free checkout; it refuses to overwrite the included maps.
 
 ```powershell
-./scripts/build_unreal.ps1 -EngineRoot 'D:/Epic/UE_5.7' -Automation
+./scripts/build_unreal.ps1 -EngineRoot 'D:/Program Files/UE_5.8' -CacheRoot 'D:/AegisWork' -Automation
 ```
 
 C++ owns health, faction filtering, ranged/melee traces, cooldowns, observation boundaries, utility scores, director constraints, scenario capture, and debug controls. **Blueprint/assets own BT/EQS graph composition, asset references, presentation tuning, and map configuration.** StateTree and Learning Agents are not enabled: [why](docs/rl-experiment.md).
@@ -87,11 +94,15 @@ flowchart LR
 
 - [Architecture / ownership](docs/architecture.md)
 - [AI design / BT asset specification](docs/ai-design.md)
-- [Evaluation / metric definitions](docs/evaluation.md)
+- [Native evaluation / raw data and limitations](docs/native-evaluation.md)
+- [EQS failure investigation and actual runtime diagnostics](docs/eqs-debugging.md)
+- [Separate portable evaluation / metric definitions](docs/evaluation.md)
 - [Performance / limits of these measurements](docs/performance.md)
 - [RL experiment status](docs/rl-experiment.md)
-- [Interview guide: 10 source files + five evidence-backed bullets](docs/interview-guide.md)
-- [Remaining UE acceptance gates](docs/status.md)
+- [A–T interview dossier: architecture, 10 code exercises, 20 follow-ups, five honest bullets](docs/interview-dossier.md)
+- [Original interview guide](docs/interview-guide.md)
+- [Acceptance ledger and remaining scope](docs/status.md)
+- [Verified packaged release](docs/release.md)
 - [AI-assisted development log and verification responsibility](docs/ai-development-log.md)
 
-Code is MIT licensed. Primitive geometry is authored here; Engine default mesh references resolve from the user's licensed Unreal installation. No downloaded art, marketplace packs, or engine binaries are redistributed. [Provenance](ASSETS.md).
+Code is MIT licensed. Primitive geometry is authored here; Engine default mesh references resolve from the user's licensed Unreal installation. No downloaded art or marketplace packs are included. Source licensing does not relicense the Unreal runtime distributed with packaged builds. [Provenance](ASSETS.md).

@@ -20,6 +20,8 @@ struct FAegisScenarioDefinition
     UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 Seed = 1001;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ClampMin = "1", ClampMax = "300"))
     float Duration = 60;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) bool DirectorEnabled = false;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite) bool PerformanceMode = false;
     bool IsValid() const;
 };
 
@@ -40,6 +42,18 @@ struct FAegisEpisodeResult
     UPROPERTY() double DistanceTravelled = 0;
     UPROPERTY() int32 CoverUsage = 0;
     UPROPERTY() int32 DecisionCounts = 0;
+    UPROPERTY() int32 EnemiesSpawned = 0;
+    UPROPERTY() int32 CompletedQueries = 0;
+    UPROPERTY() int32 FailedQueries = 0;
+    UPROPERTY() int32 ProfiledQueries = 0;
+    UPROPERTY() double DecisionCpuMilliseconds = 0;
+    UPROPERTY() double EqsCpuMilliseconds = 0;
+    UPROPERTY() int32 FrameSamples = 0;
+    UPROPERTY() double FrameMeanMilliseconds = 0;
+    UPROPERTY() double FrameP95Milliseconds = 0;
+    UPROPERTY() double GameThreadMeanMilliseconds = 0;
+    UPROPERTY() double PeakResidentMiB = 0;
+    UPROPERTY() bool RenderingEnabled = false;
 };
 
 UCLASS()
@@ -48,6 +62,7 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
     GENERATED_BODY()
   public:
     AAegisScenarioRunner();
+    virtual void Tick(float DeltaSeconds) override;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Scenario") FAegisScenarioDefinition Definition;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Scenario",
               meta = (ClampMin = "1", ClampMax = "100"))
@@ -62,6 +77,7 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Scenario") FString Status = TEXT("Idle");
     UFUNCTION(CallInEditor, BlueprintCallable, Category = "Scenario") void RunBatch();
     UFUNCTION(CallInEditor, BlueprintCallable, Category = "Scenario") void CancelBatch();
+    UFUNCTION(BlueprintCallable, Category = "Scenario") void StartInteractive();
 
   protected:
     virtual void BeginPlay() override;
@@ -69,6 +85,7 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
 
   private:
     UPROPERTY() TArray<TObjectPtr<AAegisAICharacter>> OwnedBots;
+    UPROPERTY() TObjectPtr<class AAegisEncounterDirector> Director;
     TArray<FVector> LastPositions;
     TArray<float> StuckSeconds;
     TArray<FAegisEpisodeResult> Results;
@@ -76,6 +93,20 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
     FAegisEpisodeResult Current;
     int32 Episode = 0;
     double StartedAt = 0;
+    double LastFrameAt = 0, GameThreadTotalMilliseconds = 0, NextDirectorSpawnAt = 0;
+    TArray<double> FrameMilliseconds;
+    FRandomStream EncounterRandom;
+    bool bInteractive = false, bQuitWhenDone = false;
+    FTimerHandle StartupTimer;
+    double StartupDeadline = 0;
+    bool bNavigationRebuildRequested = false;
+    FString CaptureDirectory;
+    double NextCaptureAt = 2;
+    int32 CaptureIndex = 0;
+    void Startup();
+    AAegisAICharacter* SpawnConfiguredBot(const FVector& Location, EAegisTeam Team, bool Companion,
+                                          bool Elite, int32 Seed);
+    void ApplyDirector();
     void StartEpisode();
     void Sample();
     void FinishEpisode();

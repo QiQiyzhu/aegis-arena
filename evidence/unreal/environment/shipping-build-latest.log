@@ -1,0 +1,108 @@
+Log started at 09/10/2026 14:26:09 (2026-09-10T06:26:09Z)
+No project argument provided while trying to parse Project File. Attempting fallback parsing to attempt to find a Project File.
+Resolved project argument C:/Users/yzhu/Documents/ChatGPT/AegisArena/AegisArena.uproject to C:\Users\yzhu\Documents\ChatGPT\AegisArena\AegisArena.uproject
+No config file at C:\ProgramData\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\yzhu\AppData\Local\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+No config file at C:\Users\yzhu\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Configuration will be read from:
+  C:\Users\yzhu\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\Documents\ChatGPT\AegisArena\Saved\UnrealBuildTool\BuildConfiguration.xml
+Reading configuration file from cache (C:\Users\yzhu\Documents\ChatGPT\AegisArena\Intermediate\Build\XmlConfigCache.bin): C:\Users\yzhu\AppData\Local\UnrealEngine\Intermediate\Build\UnrealBuildTool.Env.BuildConfiguration.xml
+Setting temp directory to 'D:\AegisWork\Temp\UnrealBuildTool\e98283ba'
+    Registering build platform: UnrealBuildTool.AndroidPlatformFactory
+    Registering build platform: UnrealBuildTool.IOSPlatformFactory
+    Registering build platform: UnrealBuildTool.LinuxPlatformFactory
+    Registering build platform: UnrealBuildTool.MacPlatformFactory
+    Registering build platform: UnrealBuildTool.TVOSPlatformFactory
+    Registering build platform: UnrealBuildTool.WindowsPlatformFactory
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (1)
+Found Windows 10 SDK root at C:\Program Files (x86)\Windows Kits\10 (2)
+Found Windows 10 SDK version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Found Universal CRT version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\10
+Win64 Installed SDK(s): MinVersion_Sdk=10.0.19041.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.26100.0, Version_AutoSdk=10.0.22621.0, CurrentVersion_AutoSdk=
+        Registering build platform: Win64 - buildable: True
+    Registering build platform: UnrealBuildTool.VisionOSPlatformFactory
+Command line: "D:\Program Files\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" AegisArena Win64 Shipping C:/Users/yzhu/Documents/ChatGPT/AegisArena/AegisArena.uproject -WaitMutex -NoHotReloadFromIDE -UBARootDir=D:/AegisWork/UBA -MaxParallelActions=2
+Log file: C:\Users\yzhu\AppData\Local\UnrealBuildTool\Log.txt
+
+Executing up to 2 actions based on MaxProcessorCount override
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\yzhu\Documents\ChatGPT\AegisArena).
+UbaStorageServer - Database loaded from D:\AegisWork\UBA\cas\casdb (v32) in <1ms (contained 0 entries estimated to 0b)
+UbaServer - Listening on 0.0.0.0:1345
+Skipping D:\Program Files\UE_5.8\Engine\Intermediate\Build\BuildRules\UE5Rules.dll: File is installed
+Skipping D:\Program Files\UE_5.8\Engine\Intermediate\Build\BuildRules\UE5ProgramRules.dll: File is installed
+Building UnrealGame - AegisArena - Win64 - Shipping
+Generated code is up to date.
+Deleting outdated item: C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena-Win64-Shipping.pdb
+Building AegisArena...
+===== Toolchain Information =====
+Using ISPC compiler (D:\Program Files\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.50.35738 toolchain (D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from AegisArena unity file: AegisAIController.cpp, AegisCharacter.cpp, AegisDebugCommands.cpp, AegisLab.cpp, AegisAutomationTests.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 4 action(s)
+  CPU 24 physical cores, 32 logical cores
+  Memory 15.73 GB physical, 34.96 GB/39.79 GB committed
+  UBA Storage capacity 40 GB
+  UBA RootDir D:\AegisWork\UBA
+Cache bucket 1869154297 used. Action: Compile [x64] AegisAIController.cpp ()
+Cache bucket 3897781166 used. Action: Link [x64] AegisArena-Win64-Shipping.exe ()
+All processes queued
+[1/4] Compile [x64] AegisAIController.cpp
+[2/4] Compile [x64] AegisLab.cpp
+[3/4] Link [x64] AegisArena-Win64-Shipping.exe
+  正在创建库 C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena-Win64-Shipping.lib 和对象 C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena-Win64-Shipping.exp
+[4/4] WriteMetadata AegisArena-Win64-Shipping.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 47.59 seconds
+Output binary: C:\Users\yzhu\Documents\ChatGPT\AegisArena\Binaries\Win64\AegisArena-Win64-Shipping.exe
+UbaStorageServer - Database saved in <1ms (0 file entries, 0 cas entries. deleted 0 dropped cas files)
+WriteFileIfChanged() wrote 0 changed files of 1 requested writes.
+
+Timeline:
+[  0.000]  +0.315 Main
+   0.012          [  0.012]  +0.084 Apply XmlConfig
+   0.016             0.016          [  0.004]  +0.006 Find target files
+   0.098          [  0.098]  +0.051 AddTelemetry
+   0.170          [  0.170]  +0.144 RegisterPlatforms
+[  0.341]  +0.023 ParseCommandLine
+[  0.418]  +0.068 LoadMakefile
+   0.459          [  0.041]  +0.028 EngineRulesPlugins
+[  0.490]  +0.000 FindPlugins
+[  0.490]  +0.003 EngineRulesFetchDirs
+[  0.496]  +0.012 MakefileValid
+   0.502          [  0.006]  +0.007 EngineRulesAssembly
+   0.508             0.012          [  0.006]  +0.000 GitWait
+[  0.510]  +0.001 ProgramRulesAssembly
+[  0.511]  +0.002 ProjectRulesAssembly
+[  0.514]  +0.187 CreateTargetRules
+[  0.746]  +0.002 CppDependencyCache
+[  0.760]  +0.034 AegisArena Win64 Shipping
+[  0.796]  +0.017 UHTWait
+   0.797          [  0.000]  +0.015 UHTManifest
+   0.813          [  0.017]  +0.009 UHTTimestamps
+[  0.829]  +0.000 CppDependencyCache
+[  0.829]  +0.103 Preparing ActionGraph
+   0.839          [  0.009]  +0.004 LinkActions
+   0.843             0.014          [  0.004]  +0.000 DetectActionGraphCycles
+   0.844          [  0.014]  +0.000 GatherPrerequisiteActions
+   0.846          [  0.016]  +0.000 CppDependencyCacheWait
+   0.846          [  0.016]  +0.072 GatherOutdatedActions
+   0.921          [  0.092]  +0.007 LinkActions
+   0.921             0.092          [  0.000]  +0.000 DetectActionGraphCycles
+   0.930          [  0.100]  +0.001 DeleteOutdatedProducedItems
+   0.931          [  0.102]  +0.000 SaveActionHistory
+   0.933          [  0.103]  +0.000 CreateDirectoriesForProducedItems
+[  0.944]  +0.215 GarbageCollect
+[  1.160] +47.371 <unknown>
+[ 48.532]  +0.000 Deploying targets
+[ 48.534]  +0.000 DisconnectCache
+[ 48.546]  +0.026 SaveCasTable
+[ 48.579]  +0.020 Saving caches
+[ 48.600]  +0.005 TelemetryService.FlushEvents
+[ 48.607]
+
+Result: Succeeded
+Total execution time: 48.61 seconds

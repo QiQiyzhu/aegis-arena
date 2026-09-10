@@ -9,6 +9,8 @@
 #include "Perception/AISense_Damage.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "DrawDebugHelpers.h"
 
 UAegisHealthComponent::UAegisHealthComponent()
 {
@@ -71,6 +73,10 @@ bool UAegisCombatComponent::FireAt(const FVector& AimPoint)
                                              Params))
         if (auto* Target = Cast<AAegisCharacter>(Hit.GetActor()))
             Target->Health->ApplyDamage(RangedDamage, Owner);
+#if !UE_BUILD_SHIPPING
+    DrawDebugLine(GetWorld(), Start, Hit.bBlockingHit ? Hit.ImpactPoint : Start + Direction * RangedRange,
+                  Owner->Team == EAegisTeam::Player ? FColor::Cyan : FColor::Orange, false, 0.12f, 0, 4);
+#endif
     return true;
 }
 bool UAegisCombatComponent::Melee()
@@ -96,12 +102,15 @@ AAegisCharacter::AAegisCharacter()
     Combat = CreateDefaultSubobject<UAegisCombatComponent>(TEXT("Combat"));
     Body = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("PrimitiveBody"));
     Body->SetupAttachment(GetRootComponent());
-    static ConstructorHelpers::FObjectFinder<UStaticMesh> Mesh(TEXT("/Engine/BasicShapes/Cube.Cube"));
-    if (Mesh.Succeeded())
-        Body->SetStaticMesh(Mesh.Object);
+    static ConstructorHelpers::FObjectFinder<UStaticMesh> PrimitiveMesh(
+        TEXT("/Engine/BasicShapes/Cube.Cube"));
+    if (PrimitiveMesh.Succeeded())
+        Body->SetStaticMesh(PrimitiveMesh.Object);
     Body->SetRelativeScale3D(FVector(0.55, 0.55, 1.2));
     Body->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
+    // Tactical occlusion traces test level geometry; a pawn at the context endpoint is not cover.
+    GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_GameTraceChannel1, ECR_Ignore);
     GetCharacterMovement()->MaxWalkSpeed = 420;
 }
 bool AAegisCharacter::IsHostile(const AActor* Other) const
@@ -113,6 +122,18 @@ void AAegisCharacter::BeginPlay()
 {
     Super::BeginPlay();
     Health->OnDeath.AddDynamic(this, &AAegisCharacter::Die);
+    if (auto* Material =
+            LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/Aegis/Materials/M_AegisActor.M_AegisActor")))
+        if (auto* Instance = Body->CreateDynamicMaterialInstance(0, Material))
+        {
+            const auto* Bot = Cast<AAegisAICharacter>(this);
+            const FLinearColor Tint = Team == EAegisTeam::Player
+                                          ? (Bot && Bot->bCompanion ? FLinearColor(0.15f, 0.9f, 0.45f)
+                                                                    : FLinearColor(0.05f, 0.65f, 1.f))
+                                          : (Bot && Bot->bElite ? FLinearColor(0.9f, 0.15f, 0.75f)
+                                                                : FLinearColor(1.f, 0.25f, 0.12f));
+            Instance->SetVectorParameterValue(TEXT("Tint"), Tint);
+        }
 }
 float AAegisCharacter::TakeDamage(float Amount, const FDamageEvent& Event, AController* InstigatorController,
                                   AActor* Causer)
@@ -125,6 +146,7 @@ void AAegisCharacter::Die()
 {
     GetCharacterMovement()->DisableMovement();
     SetActorEnableCollision(false);
+    Body->SetVectorParameterValueOnMaterials(TEXT("Tint"), FVector(0.15, 0.15, 0.15));
     if (auto* AI = Cast<AAegisAIController>(GetController()))
         AI->ShutdownAI();
 }
@@ -136,6 +158,7 @@ AAegisPlayerCharacter::AAegisPlayerCharacter()
     SpringArm->TargetArmLength = 1400;
     SpringArm->SetRelativeRotation(FRotator(-65, 0, 0));
     SpringArm->bUsePawnControlRotation = false;
+    SpringArm->SetUsingAbsoluteRotation(true);
     Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
     Camera->SetupAttachment(SpringArm);
     bUseControllerRotationYaw = true;

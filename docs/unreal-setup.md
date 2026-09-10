@@ -1,58 +1,82 @@
-# Unreal 5.7 setup and acceptance
+# Unreal 5.8 setup and acceptance
 
-This is a reproducible integration procedure, not evidence that the steps have already run. Follow the gates in [status.md](status.md).
+Target the installed **UE 5.8.2**. Editor and Game targets, real maps, native scenarios and render sampling have run on Windows; the precise acceptance boundaries are recorded in [status.md](status.md).
 
-## Installation
+## Toolchain and disk placement
 
-Install the latest **5.7 hotfix** offered by Epic Games Launcher to a drive with space, for example `D:/Epic/UE_5.7`. The development machine had only about 20 GiB free on C: when checked, so engine/toolchain/cache installation should use D:. Do not assume the example path exists.
+The validated engine is `D:/Program Files/UE_5.8` (5.8.2, changelist 56702186). Its own `Engine/Config/Windows/Windows_SDK.json` lists preferred MSVC families 14.50 / 14.44 and rejects known-bad patch levels. The build used **MSVC 14.50.35738** and **Windows SDK 10.0.26100.0**. Do not install an older engine simply to match an earlier draft of this project.
 
-Use **Visual Studio 2022 17.14**, the C++ game development and desktop C++ workloads, MSVC v143, and Windows SDK 10.0.22621 or newer. For UE 5.7, Epic lists VS2022 17.8+ and recommends 17.14; VS2026 is marked experimental for that engine version. [Official compatibility table](https://dev.epicgames.com/documentation/unreal-engine/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine).
+UE Editor's `SwarmInterface.Build.cs` additionally requires a .NET Framework SDK >=4.6. The small official Visual Studio component `Microsoft.Net.Component.4.8.SDK` supplies the missing SDK; it is different from UE's bundled .NET 10 SDK. [Microsoft component reference](https://learn.microsoft.com/en-us/visualstudio/install/workload-component-id-vs-build-tools).
 
-For this Windows primitive arena, mobile/console platforms and debug symbol downloads are unnecessary initially. Keep core editor components. [Official engine installation](https://dev.epicgames.com/documentation/unreal-engine/install-unreal-engine?lang=en-US).
+Keep engine, toolchain downloads, DDC, UBA and generated project outputs on a drive with room. `-CacheRoot` routes process TEMP/TMP, DDC, UBA and reports there, then restores the prior process environment. It does not relocate an existing Windows SDK or system runtime. Project `Binaries`, `Intermediate`, `Saved` may be relocated with verified local junctions; such machine configuration is not part of Git.
 
-## Build and core automation
+This machine also had an unrelated **existing VC++ x86 14.44.35211 runtime with missing MSI cache**. Upgrading it failed with MSI 1612/1714. A hash/signature-verified official repair package was prepared for the user to run locally. No registry deletion or silent privilege workaround is part of this repository.
+
+## Build, generate assets and run core tests
+
+For a fresh clone containing the checked-in native maps:
 
 ```powershell
-./scripts/build_unreal.ps1 -EngineRoot 'D:/Epic/UE_5.7' -Automation
+./scripts/build_unreal.ps1 -EngineRoot 'D:/Program Files/UE_5.8' -CacheRoot 'D:/AegisWork' -Automation
 ```
 
-The script checks actual engine binaries and `Build.version`, invokes UBT for `AegisArenaEditor Win64 Development`, and writes logs under `outputs/unreal`. It can then invoke five `Aegis.Core.*` Automation tests. Review report contents and test counts, not merely an editor process exit code. Keep raw logs/reports in a dated evidence folder only after successful execution.
+Use `-GenerateAssets` only for an intentionally asset-free checkout. Generation deliberately refuses to overwrite authored levels or a partial AI asset set. The command builds `AegisArenaEditor Win64 Development`, generates real assets inside UE when requested, and checks a new Automation report when requested. Logs live in a unique directory under `<CacheRoot>/Reports`; no stale report can satisfy the gate.
 
-## Generate primitive arena
+The asset authoring library uses UE 5.8 source APIs: `UBehaviorTreeGraph` creates an editable graph from runtime nodes; BB keys, native decorators/services/tasks and Wait are saved as real assets. EQS has path-existence, geometry-only occlusion and distance tests. Its editor graph class is loaded from the 5.8 EnvironmentQueryEditor plugin. `UActorFactory::CreateBrushForVolumeActor` creates a real NavMeshBoundsVolume brush with finite physical bounds. The runner builds the small dynamic navigation once before gameplay begins: commandlet-saved Recast actors have no baked tiles, and UE 5.8 does not automatically treat a loaded empty actor as newly spawned.
 
-Open the compiled project. Enable the bundled Python plugin if prompted, restart, and run `scripts/unreal/create_arena.py` through **Tools → Execute Python Script**. The script saves dirty levels before creating a new one and refuses to overwrite `/Game/Aegis/Maps/AegisArena`. It creates floor, four walls, four cover primitives, lights, player start, scenario runner and a native functional-test actor.
+The Python script creates:
 
-The generator uses documented [EditorActorSubsystem](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/EditorActorSubsystem?application_version=5.7) and [LevelEditorSubsystem](https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/LevelEditorSubsystem?application_version=5.7) APIs. Python editor scripting is experimental; the script itself still needs engine execution validation.
+- `/Game/Aegis/Maps/AegisArena`: floor, walls, four cover primitives, lights, PlayerStart, overview camera, configured runner and navigation bounds.
+- `/Game/Aegis/Maps/AegisFunctional`: an isolated combat Functional Test scene.
+- `BB_Aegis`, `BT_Aegis`, `EQS_Cover`, `EQS_Attack`, `EQS_Retreat`.
+- Three simple authored materials; the actor material uses a `Tint` parameter. No external art is downloaded.
 
-Add a **NavMeshBoundsVolume using the editor's Place Actors tool**, enclosing the floor (about 4000 × 3000 × 500 cm). Build navigation and press P to inspect the walkable region. Merely spawning an empty volume Actor in Python does not reliably author a valid brush, so the script intentionally does not pretend to create one.
+Core Automation must have at least five completed successful `Aegis.Core.*` tests and zero failures. Actual functional-map execution and perception/navigation tests remain distinct from pure rules Automation. Never infer a test passed because the editor process returned 0.
 
-Set this map as Editor/Game startup map after it exists. Save it. Run the native `AAegisCombatFunctionalTest` from the Functional Testing workflow: it spawns two characters, verifies a physical ranged trace, cooldown, team rejection and terminal death, then cleans up.
+Run the separate twelve-assertion game-world fixture:
 
-## Author and wire AI assets
+```powershell
+python scripts/run_unreal_functional.py --engine-root 'D:/Program Files/UE_5.8' --cache-root 'D:/AegisWork' --output 'D:/AegisWork/Reports/my-functional'
+```
 
-Create `BB_Aegis`, `BT_Aegis`, `EQ_Cover`, `EQ_Attack`, and `EQ_Retreat` under `/Game/Aegis/AI` following [ai-design.md](ai-design.md). The UE editor is the source of truth for graph serialization. There are no fabricated `.uasset` bytes in the repository.
+The actor remains in the Editor module to exclude it from the packaged game, but explicitly requests a PIE world. The wrapper loads the Functional map first and requires `WorldType=3`, begun-play, all twelve named assertion messages, a clean report and no handled ensure. This catches an observed UE 5.8 false positive: its report could say Success after failing to find the actor in the default map. A test count and exit code are insufficient.
 
-Assign the BT/three EQS references on the Scenario Runner actor. For interactive play, place one `AAegisAICharacter` with `bCompanion=true` and two enemies, one `bElite=true`; give each the same asset references. Use a separate saved testing map or remove interactive actors before batch evaluation to avoid interference.
+## Run scenarios
 
-In Play mode: WASD movement, mouse X rotates aim, left click ranged, right click melee. The setup intentionally uses primitives and simple controls; no animation montage, marketplace art or commercial gameplay polish is claimed.
+Interactive mode starts the small encounter when navigation is ready. WASD moves, mouse X rotates aim, left click fires and right click performs melee. The camera keeps a fixed orientation. The companion is green, the player cyan, normal enemies orange, and the elite magenta. These are primitive diagnostic visuals, not a claim of commercial animation polish.
 
-## Run a scenario and inspect behavior
+In PIE select the runner's **runtime** instance, configure `Definition` and `EpisodeCount`, then **Run Batch**, or enter `aegis.RunScenario`. It removes the interactive actors and player pawn before spawning benchmark actors, so user input does not contaminate scripted episodes. `Arena` must match the loaded map. Results go to `Saved/AegisReports/<UTC>-<GUID>`.
 
-In PIE, select the runner's runtime instance, choose `CompanionPolicy`, `EnemyCount`, `Seed`, `Duration`, `EpisodeCount` and press **Run Batch**. Alternatively use `aegis.RunScenario`. `Arena` must match the current map name. Results go to `Saved/AegisReports/<timestamp>`. Do not call a batch from an editor-only world; it fails explicitly.
+A Development editor game process can run a batch without manual input:
 
-Developer commands (compiled out of Shipping):
+```powershell
+& 'D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Cmd.exe' `
+  'C:/path/to/AegisArena/AegisArena.uproject' /Game/Aegis/Maps/AegisArena -game `
+  -AegisBatch -AegisPolicy=utility -AegisEnemies=4 -AegisEpisodes=10 `
+  -AegisSeed=1001 -AegisDuration=60 -AegisQuit -unattended -nop4 -NullRHI
+```
+
+`-AegisDirector` enables bounded extra spawns. `-AegisPerformance` disables damage for a sustained-load measurement; it must not be mixed into policy win-rate evaluation. Omit `-NullRHI` for rendered frame measurements. Batch failure requests an error exit; Unreal can still return process status 0 during a graceful shutdown, so the wrapper also requires the unique successful `AEGIS_REPORT` marker and validates every raw episode. The same seed controls project spawn and patrol randomness; engine scheduling and physics are not claimed bit deterministic.
+
+The checked wrapper creates a fresh output directory, limits process duration, copies raw engine JSON/CSV and verifies the requested seed/configuration, actual nonzero decisions and rendering mode:
+
+```powershell
+python scripts/run_unreal_scenario.py --engine-root 'D:/Program Files/UE_5.8' --cache-root 'D:/AegisWork' --output 'D:/AegisWork/Reports/native-smoke-01' --episodes 2 --duration 15
+```
+
+Add `--rendered --performance --enemies 25 --duration 30` for a damage-disabled sustained render workload. The wrapper does not build or install the engine, and it cannot turn a missing or stale report into success.
+
+## Debug controls and acceptance
 
 | Command | Action |
-|---|---|
-| `aegis.PauseAI 1` / `0` | Pause/resume brain logic and movement |
-| `aegis.StepDecision` | Recompute one observation/utility decision for paused bots; does not step world physics |
-| `aegis.Policy utility` / `priority` | Switch companion scoring policy |
-| `aegis.SpawnBot` | Clone one configured enemy's asset wiring into a new enemy |
-| `aegis.KillBot` | Kill first alive enemy through hostile damage path |
-| `aegis.Visualize perception` | Five-second observation-radius/last-known-position snapshot |
+| --- | --- |
+| `aegis.PauseAI 1` / `0` | Pause/resume brain and movement |
+| `aegis.StepDecision` | Evaluate one observation/utility decision; does not step physics |
+| `aegis.Policy utility` / `priority` | Change companion policy |
+| `aegis.SpawnBot` | Spawn a configured enemy |
+| `aegis.KillBot` | Kill through the regular hostile damage path |
+| `aegis.Visualize perception` | Five-second observation snapshot |
 | `aegis.Visualize eqs` | Five-second selected-point snapshot |
 | `aegis.Visualize clear` | Clear persistent debug lines |
 
-Use Unreal's built-in AI Debugger/EQS testing tools for candidate scores, real perception cones and BT execution. The project snapshots do not replace those tools.
-
-Finally capture genuine gameplay/BT/EQS/runner media, profile with Insights, and build Shipping to verify debug entry removal. Add evidence links to README only after those artifacts exist.
+`--query-diagnostics` on the scenario wrapper records actual engine candidate scores and failure reasons and draws a bounded runtime sample. This is explicitly a runtime diagnostic overlay, not the Editor BT/EQS debugger. See [the measured spatial-context bug](eqs-debugging.md). Compile Shipping and verify commands/overlay are unavailable; source gates alone are not that acceptance test. Keep raw native reports separate from portable model evidence.

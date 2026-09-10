@@ -1,0 +1,201 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "CE55D32646494B4A118CBD82C15A0D8F",
+			"instanceName": "雨竹砌筑-42844",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-08.22.51",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.93376410007476807,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Aegis Combat Functional Test",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisFunctional.Aegis Combat Functional Test",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"CE55D32646494B4A118CBD82C15A0D8F"
+			],
+			"duration": 0.93376410007476807,
+			"dateTime": "2026.09.10-08.22.50",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Ranged fire accepted)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Real trace applies 14 damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Cooldown rejects duplicate fire)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Team filter rejects friendly damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Dead pawn cannot heal)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Real default controller possesses pawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Pawn moved away from spawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (EQS Querier context resolves)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (EQS Querier follows moved pawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing attack query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing cover query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing retreat query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Combat, moving EQS Querier, missing-query selector fallback verified in world",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.22.51"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

@@ -1,0 +1,44 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "C7E4955945256EEAFA0EE99DD7FF3455",
+			"instanceName": "雨竹砌筑-50468",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-08.00.46",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 1.1410353183746338,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Aegis Combat Functional Test",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisFunctional.Aegis Combat Functional Test",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"C7E4955945256EEAFA0EE99DD7FF3455"
+			],
+			"duration": 1.1410353183746338,
+			"dateTime": "2026.09.10-08.00.45",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

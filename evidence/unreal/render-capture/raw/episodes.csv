@@ -1,0 +1,2 @@
+engine,seed,policy,enemy_count,win,survival_seconds,damage_dealt,damage_taken,companion_deaths,enemy_deaths,time_to_engage,stuck_events,distance_cm,cover_queries_succeeded,decision_counts
+unreal-runtime,1001,utility,4,0,8.209,112.000,122.000,0,0,4.408,0,12400.485,3,203

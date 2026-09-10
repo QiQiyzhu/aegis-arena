@@ -6,7 +6,7 @@ Learning Agents is experimental. It must not be described as a commercially stab
 
 ## Conditional future experiment
 
-If the installed UE 5.7 hotfix's official Learning Agents plugin can actually run, scope the experiment to projectile dodging in this arena. Keep gameplay, encounter composition and reward calculation fixed while comparing controllers.
+If the installed UE 5.8 hotfix's official Learning Agents plugin can actually run, scope the experiment to projectile dodging in this arena. Keep gameplay, encounter composition and reward calculation fixed while comparing controllers.
 
 | Interface | Proposed definition, not implemented |
 |---|---|

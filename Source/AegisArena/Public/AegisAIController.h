@@ -4,6 +4,7 @@
 #include "Perception/AIPerceptionTypes.h"
 #include "BehaviorTree/BTService.h"
 #include "BehaviorTree/BTTaskNode.h"
+#include "BehaviorTree/BTDecorator.h"
 #include "EnvironmentQuery/EnvQueryContext.h"
 #include "EnvironmentQuery/EnvQueryTypes.h"
 #include "aegis/rules.hpp"
@@ -31,10 +32,13 @@ class AEGISARENA_API AAegisAIController : public AAIController
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UAIPerceptionComponent> Senses;
     UPROPERTY(VisibleAnywhere) TObjectPtr<UAegisDecisionComponent> Decision;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) FString DebugState = TEXT("Uninitialized");
+    FString QueryDiagnostic;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) FVector LastKnown = FVector::ZeroVector;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) FVector SelectedPoint = FVector::ZeroVector;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) bool bTargetVisible = false;
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly) int32 CoverUses = 0;
+    double DecisionCpuSeconds = 0, QueryCpuSeconds = 0;
+    int32 CompletedQueries = 0, FailedQueries = 0, ProfiledQueries = 0;
     TWeakObjectPtr<class AAegisCharacter> ObservedTarget;
     TWeakObjectPtr<class AAegisCharacter> ObservedAlly;
     bool bPaused = false, bHasTacticalPoint = false;
@@ -52,6 +56,10 @@ class AEGISARENA_API AAegisAIController : public AAIController
   private:
     double LastSensedAt = -1000, NextQueryAt = 0, SupportReadyAt = 0;
     int32 QueryId = INDEX_NONE;
+    FRandomStream PatrolRandom;
+    TSharedPtr<FEnvQueryInstance> ActiveQuery;
+    bool bPendingCoverQuery = false;
+    int32 DiagnosticQueries = 0;
     void QueryFinished(TSharedPtr<FEnvQueryResult> Result);
 };
 
@@ -76,6 +84,23 @@ class AEGISARENA_API UBTTask_AegisAction : public UBTTaskNode
 
   protected:
     virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+};
+
+/** Immutable key comparison; the shared BT template never owns per-agent state. */
+UCLASS()
+class AEGISARENA_API UBTDecorator_AegisCondition : public UBTDecorator
+{
+    GENERATED_BODY()
+  public:
+    UBTDecorator_AegisCondition();
+    UPROPERTY(EditAnywhere, Category = "Aegis") FName Key;
+    UPROPERTY(EditAnywhere, Category = "Aegis") bool bInteger = false;
+    UPROPERTY(EditAnywhere, Category = "Aegis") int32 Expected = 1;
+    virtual FString GetStaticDescription() const override;
+
+  protected:
+    virtual bool CalculateRawConditionValue(UBehaviorTreeComponent& OwnerComp,
+                                            uint8* NodeMemory) const override;
 };
 
 UCLASS()

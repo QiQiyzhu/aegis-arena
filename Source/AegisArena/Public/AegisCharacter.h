@@ -102,6 +102,8 @@ class AEGISARENA_API AAegisAICharacter : public AAegisCharacter
     AAegisAICharacter();
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") bool bCompanion = false;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") bool bElite = false;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") bool bUtilityCompanionPolicy = true;
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") int32 DecisionSeed = 1001;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") TObjectPtr<class UBehaviorTree> Behavior;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") TObjectPtr<class UEnvQuery> CoverQuery;
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AI") TObjectPtr<class UEnvQuery> AttackQuery;

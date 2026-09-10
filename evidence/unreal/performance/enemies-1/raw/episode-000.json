@@ -1,0 +1,38 @@
+{
+	"engine": "unreal-runtime",
+	"scenario":
+	{
+		"arena": "AegisArena",
+		"playerConfig": "scripted",
+		"companionPolicy": "utility",
+		"enemyPolicy": "behavior_tree",
+		"enemyCount": 1,
+		"seed": 5001,
+		"duration": 15,
+		"directorEnabled": false,
+		"performanceMode": true
+	},
+	"win": false,
+	"survivalSeconds": 15,
+	"damageDealt": 0,
+	"damageTaken": 0,
+	"companionDeaths": 0,
+	"enemyDeaths": 0,
+	"timeToEngage": -1,
+	"stuckEvents": 0,
+	"distanceTravelled": 11550.689338422228,
+	"coverUsage": 0,
+	"decisionCounts": 222,
+	"enemiesSpawned": 1,
+	"completedQueries": 0,
+	"failedQueries": 0,
+	"profiledQueries": 0,
+	"decisionCpuMilliseconds": 2.0928941667079926,
+	"eqsCpuMilliseconds": 0,
+	"frameSamples": 4243,
+	"frameMeanMilliseconds": 3.3012091676258351,
+	"frameP95Milliseconds": 4.0528997778892517,
+	"gameThreadMeanMilliseconds": 1.113941291818185,
+	"peakResidentMiB": 1877.23046875,
+	"renderingEnabled": true
+}

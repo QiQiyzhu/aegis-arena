@@ -15,7 +15,7 @@
 | `AAegisAICharacter` | Enemy/companion/elite configuration and reflected BT/EQS asset references. |
 | `AAegisAIController` | Possession, built-in AI Perception, BB updates, transient target memory, navigation and EQS lifecycle. Observed actors are `TWeakObjectPtr`, not ownership claims. |
 | `UAegisDecisionComponent` | No Tick. Converts observations into scores and a selected action. State includes only previous action, scores and decision count. |
-| `UBTService_AegisObserve` | Refreshes an observation at 0.2 s interval with 0.02 s deviation. The service stores no per-bot state. |
+| `UBTService_AegisObserve` | Refreshes an observation at 0.2 s interval with zero random deviation. The service stores no per-bot state. |
 | `UBTTask_AegisAction` | Immutable action configuration, requests controller commands and returns success/failure. A Wait task paces branch repetition. It does not store a Pawn pointer in a shared BT node. |
 | `AAegisEncounterDirector` | Designer-authorized global telemetry sampled at 0.25 s; bounded recommendations. It does not secretly give a companion global knowledge. |
 | `AAegisScenarioRunner` | Owns the actors it spawns, timers and results. Records actual damage events, positions and controller counters. It destroys only its own episode actors. |
@@ -35,13 +35,13 @@ The controller permits one EQS request at a time and no more than one submission
 2. The BT service reads currently perceived sight actors and filters alive hostile targets by distance.
 3. TargetActor is cleared when hidden; LastKnownLocation remains for 2.5 s. A companion sees allied health only for a currently perceived ally.
 4. The pure utility scorer receives a value observation; it cannot fetch an unseen actor's current transform or health.
-5. Blackboard observer decorators select a branch. EQS scores spatial candidates; action tasks submit navigation/attack/support commands.
+5. Immutable Blackboard comparison decorators select a branch during paced traversal. EQS scores spatial candidates; action tasks submit navigation/attack/support commands.
 6. At execution, physical traces and team filtering validate damage. Perception authorization is not a bypass for collision.
 7. Runner callbacks capture applied damage, not attempted damage or score estimates.
 
 ## Runtime budgets
 
-No Actor/component decision Tick is enabled. Engine CharacterMovement and BT machinery still have their own legitimate updates. The controller service is 5 Hz, director 4 Hz, scenario sampling 10 Hz, EQS submission cap 1 Hz/controller with one outstanding request. These are configuration budgets, not demonstrated engine timing improvements.
+No Actor/component decision Tick is enabled. The runner enables lightweight per-frame timing only for dedicated performance episodes. Engine CharacterMovement and BT machinery still have their own legitimate updates. The controller service is 5 Hz, director 4 Hz, scenario sampling 10 Hz, EQS submission cap 1 Hz/controller with one outstanding request. These are configuration budgets, not demonstrated engine timing improvements.
 
 The total EQS demand still scales with bot count. A global query scheduler or significance manager is a future response to measured contention, not an unimplemented feature claimed here.
 

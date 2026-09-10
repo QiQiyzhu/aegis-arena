@@ -1,0 +1,69 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "BEB8B2B84FAE7D518C9C91B4A9F97119",
+			"instanceName": "雨竹砌筑-44928",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-08.02.27",
+	"succeeded": 0,
+	"succeededWithWarnings": 0,
+	"failed": 1,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 21.83497428894043,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Aegis Combat Functional Test",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisFunctional.Aegis Combat Functional Test",
+			"tags": [],
+			"state": "Fail",
+			"deviceInstance": [
+				"BEB8B2B84FAE7D518C9C91B4A9F97119"
+			],
+			"duration": 21.83497428894043,
+			"dateTime": "2026.09.10-08.02.05",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogStreaming: FlushAsyncLoading(304): 1 QueuedPackages, 0 AsyncPackages",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-08.02.27"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "Aegis Combat Functional Test: FinishTest TestResult=Failed. Combat or tactical world invariant failed",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "C:\\Users\\yzhu\\Documents\\ChatGPT\\AegisArena\\Source\\AegisArenaEditor\\Private\\AegisCombatFunctionalTest.cpp",
+					"lineNumber": 81,
+					"timestamp": "2026.09.10-08.02.27"
+				}
+			],
+			"warnings": 0,
+			"errors": 1,
+			"artifacts": []
+		}
+	]
+}

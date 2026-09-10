@@ -1,0 +1,24 @@
+{
+  "engine": "unreal-runtime",
+  "world": "PIE",
+  "rendering": "NullRHI",
+  "command": [
+    "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\AegisArena\\AegisArena.uproject",
+    "/Game/Aegis/Maps/AegisFunctional",
+    "-unattended",
+    "-nop4",
+    "-NullRHI",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ExecCmds=Automation RunTests Project.Functional Tests.Aegis.Maps.AegisFunctional",
+    "-TestExit=Automation Test Queue Empty",
+    "-ReportExportPath=D:\\AegisWork\\Reports\\native-functional-release-verified",
+    "-abslog=D:\\AegisWork\\Reports\\native-functional-release-verified\\engine.log"
+  ],
+  "startedAtUtc": "2026-09-10T08:22:30.155506+00:00",
+  "passed": true,
+  "exitCode": 0,
+  "nativeAssertions": 12,
+  "wallSeconds": 21.702999999994063
+}

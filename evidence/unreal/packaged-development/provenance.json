@@ -1,0 +1,28 @@
+{
+  "engine": "unreal-packaged-development",
+  "passed": true,
+  "startedAtUtc": "2026-09-10T08:23:59.963788+00:00",
+  "command": [
+    "D:\\AegisWork\\Packages\\development-release\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+    "-AegisBatch",
+    "-AegisQuit",
+    "-AegisPolicy=utility",
+    "-AegisEnemies=2",
+    "-AegisEpisodes=2",
+    "-AegisSeed=2001",
+    "-AegisDuration=15",
+    "-UseFixedTimeStep",
+    "-FPS=60",
+    "-NullRHI",
+    "-unattended",
+    "-nosound",
+    "-stdout",
+    "-UserDir=D:\\AegisWork\\Reports\\packaged-development-release\\user",
+    "-abslog=D:\\AegisWork\\Reports\\packaged-development-release\\engine.log"
+  ],
+  "binarySha256": "e9659c1dd10012a655bba23657a0b47f25d01f3028568a9d7175e3e5474068bc",
+  "limitation": "Cooked game-world smoke with NullRHI; separate from UI/render/performance acceptance",
+  "exitCode": 0,
+  "episodes": 2,
+  "wallSeconds": 8.48399999999674
+}

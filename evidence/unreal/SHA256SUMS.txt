@@ -1,0 +1,2 @@
+307b91b8da13ccb406cb19cd4771bcbffe4ad3a3104eb7ba91136f8be912772a  AegisArena-v1.0.0-Development-Win64.zip
+afb596922e3275232f73206094bf188faab524346cbe9e6c08683613f8147ba8  AegisArena-v1.0.0-Shipping-Win64.zip

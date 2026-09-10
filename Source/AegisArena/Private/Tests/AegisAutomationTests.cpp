@@ -5,7 +5,7 @@
 #include "JsonObjectConverter.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FAegisDamageTest, "Aegis.Core.DamageAndTeams",
-                                 EAutomationTestFlags::ApplicationContextMask |
+                                 EAutomationTestFlags_ApplicationContextMask |
                                      EAutomationTestFlags::EngineFilter)
 bool FAegisDamageTest::RunTest(const FString& Parameters)
 {
@@ -17,7 +17,7 @@ bool FAegisDamageTest::RunTest(const FString& Parameters)
     return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FAegisUtilityTest, "Aegis.Core.UtilityAuthorization",
-                                 EAutomationTestFlags::ApplicationContextMask |
+                                 EAutomationTestFlags_ApplicationContextMask |
                                      EAutomationTestFlags::EngineFilter)
 bool FAegisUtilityTest::RunTest(const FString& Parameters)
 {
@@ -31,7 +31,7 @@ bool FAegisUtilityTest::RunTest(const FString& Parameters)
     return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FAegisDirectorTest, "Aegis.Core.DirectorBounds",
-                                 EAutomationTestFlags::ApplicationContextMask |
+                                 EAutomationTestFlags_ApplicationContextMask |
                                      EAutomationTestFlags::EngineFilter)
 bool FAegisDirectorTest::RunTest(const FString& Parameters)
 {
@@ -49,7 +49,7 @@ bool FAegisDirectorTest::RunTest(const FString& Parameters)
     return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FAegisScenarioTest, "Aegis.Core.ScenarioSerialization",
-                                 EAutomationTestFlags::ApplicationContextMask |
+                                 EAutomationTestFlags_ApplicationContextMask |
                                      EAutomationTestFlags::EngineFilter)
 bool FAegisScenarioTest::RunTest(const FString& Parameters)
 {
@@ -67,7 +67,7 @@ bool FAegisScenarioTest::RunTest(const FString& Parameters)
     return true;
 }
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FAegisSeedTest, "Aegis.Core.FixedSeed",
-                                 EAutomationTestFlags::ApplicationContextMask |
+                                 EAutomationTestFlags_ApplicationContextMask |
                                      EAutomationTestFlags::EngineFilter)
 bool FAegisSeedTest::RunTest(const FString& Parameters)
 {

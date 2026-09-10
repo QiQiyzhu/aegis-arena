@@ -1,6 +1,6 @@
 # AI design and engine asset specification
 
-These are implementation/authoring specifications. They are **not screenshots of executed Unreal assets**. UE graph authoring and validation remain pending.
+The real UE 5.8.2 editor generated and saved the specified BB/BT/EQS assets. Native structural inspection verifies their saved nodes, role guards and query tests; the runtime scenario uses them. The diagrams below describe architecture, not screenshots of a running graph. Full BT/EQS editor-debugger captures remain a distinct acceptance item.
 
 ## Knowledge contract
 
@@ -17,7 +17,7 @@ An enemy remembers the most recent stimulus position for 2.5 s. Sight makes a ta
 | Support | Known ally, cooldown ready, ally health below 0.8: `0.30 + 0.85 * (1 - ally_health)`; otherwise 0 |
 | Retreat | `(1 - self_health) * (visible_threat ? 1.25 : 0.85)` |
 
-The chosen action changes only when the winner exceeds the previous action by at least 0.08. This suppresses small score oscillations; it does not prevent urgent safety selection. The scorer does not assert tactical quality. The fixed evaluation actually showed a win-rate tradeoff: [results](evaluation.md).
+The chosen action changes only when the winner exceeds the previous action by at least 0.08. This suppresses small score oscillations; an overly large threshold can delay useful reactions and requires evaluation. The scorer does not assert tactical quality. The fixed evaluation actually showed a win-rate tradeoff: [results](evaluation.md).
 
 ## Blackboard: `BB_Aegis`
 
@@ -35,42 +35,27 @@ The chosen action changes only when the winner exceeds the previous action by at
 
 ## Behavior Tree: `BT_Aegis`
 
-Root → Selector, with `BTService_AegisObserve`. Create these branches in priority order. Use Blackboard decorators with **Observer Aborts = Both** on role/action/visibility transitions. Every action sequence ends in **Wait = 0.2 s**; failed EQS branches must also yield through a fallback wait rather than tight retries.
+A root Sequence holds the observation service, a role Selector, then Wait 0.2 s. The role Selector has two guarded subtrees: Companion when `IsCompanion=true`, enemy otherwise. A failed companion action cannot fall into enemy logic. Immutable native Blackboard comparison decorators are re-evaluated on each paced traversal; this implementation does not claim event-driven observer aborts.
 
-| Priority | Guards | Sequence actions |
-|---|---|---|
-| 1 | IsCompanion, UtilityAction=3 | AegisAction(Retreat), Wait |
-| 2 | IsCompanion, UtilityAction=2 | AegisAction(Support), Wait |
-| 3 | IsCompanion, UtilityAction=1, HasLOS, InRange | AegisAction(Attack), Wait |
-| 4 | IsCompanion, UtilityAction=1, HasMemory | AegisAction(Chase), Wait |
-| 5 | IsCompanion | AegisAction(Follow), Wait |
-| 6 | not IsCompanion, CriticalHealth, HasMemory | AegisAction(Retreat), Wait |
-| 7 | not IsCompanion, NeedsRecovery | AegisAction(Recover), Wait |
-| 8 | not IsCompanion, NeedsCover | AegisAction(FindCover), Wait |
-| 9 | not IsCompanion, HasLOS, InRange | AegisAction(Attack), Wait |
-| 10 | not IsCompanion, HasLOS | AegisAction(AttackPosition), Wait; fallback Chase |
-| 11 | not IsCompanion, HasMemory | AegisAction(Investigate), Wait |
-| 12 | otherwise | AegisAction(Patrol), Wait; fallback Wait |
+Companion branches: recover when retreat is selected and threat memory has expired; retreat with remembered threat; support; attack in range; chase a remembered target; follow a perceived ally; final Wait. Enemy branches: critical retreat; recover; find cover; attack; seek attack position; investigate; patrol; final Wait. Both subtrees have a bounded wait fallback. Attack cooldown retains the attack branch instead of accidentally triggering patrol.
 
-The companion branches need a role-constrained parent selector: if a companion action fails, it must reach a Wait fallback inside that subtree rather than accidentally enter enemy branches. All enemy rows explicitly exclude companions. Root's final Wait prevents rapid failure loops when no move/query succeeds.
+## Three native EQS assets
 
-## EQS: three actual assets to author
+The generator uses a 700 cm grid half-size, 140 cm spacing (121 initial candidates), navigation projection and a path-existence filter. The authorized threat context is a remembered location, not an omniscient actor lookup.
 
-Use **Points: Grid**, centered on Querier, 1600 cm extent, 200 cm spacing, projected to navigation. Threat context is `EnvQueryContext_AegisThreat`, whose location originates from authorized memory. Add a Pathfinding test to discard unreachable items. Resolve querier to its controlled Pawn in EQS as required by the installed engine's generator/test.
+| Query | Filtering | Scoring |
+| --- | --- | --- |
+| EQS_Cover | Reachable and geometry trace occluded | Prefer distance from threat within the local search region |
+| EQS_Attack | Reachable, clear geometry trace, 300–900 cm threat distance | Prefer reference distance 650 cm |
+| EQS_Retreat | Reachable | Prefer occlusion and greater threat distance |
 
-| Query | Filters | Scoring |
-|---|---|---|
-| EQ_Cover | Path exists; trace to Threat blocked | Prefer short travel distance; avoid being closer than 350 cm to threat |
-| EQ_Attack | Path exists; trace to Threat clear; distance 500–1100 cm | Prefer about 800 cm combat distance and short travel |
-| EQ_Retreat | Path exists; trace to Threat blocked; threat distance at least 600 cm | Prefer farther from threat with a bounded travel penalty |
-
-Trace direction, eye-height offset and collision channel must be verified in the **EQS Testing Pawn** with actual arena walls. Use Visibility and a 30 cm offset consistent with attack traces. Save debug screenshots only after items, scores and selected points are visible in a real run. A geometric portable sampler does not count as an EQS implementation or capture.
+The `AegisCoverTrace` collision channel ignores character capsules while level geometry blocks it. This avoids a target capsule at the context endpoint falsely marking all candidates as cover. Candidate height offset is 90 cm; threat context offset 30 cm. Actual path/occlusion/range tests ran in native scenarios, with raw engine candidate diagnostics retained in the EQS debugging report. A dedicated EQS Testing Pawn debugger recording remains an optional additional view. A portable geometry sampler is not an EQS capture.
 
 ## Director
 
 Pressure is a normalized combination of low player health (0.65), recent damage (0.25) and enemy count (0.10), smoothed by an exponential moving average with 2 s time constant. Recovery enters above 0.58 and exits below 0.32. Policy changes have a 5 s cooldown. Outputs: spawn budget 0–3 with hard living-enemy cap 12, elite probability 0–0.25 and 8 s recovery recommendation. Population safety clamping applies even during cooldown.
 
-The UE actor emits these recommendations; an encounter owner must consume them to spawn appropriate enemies. The portable development scenario contains an actual bounded spawner, evaluated separately from the fixed policy comparison. No LLM participates.
+The UE director emits recommendations; the Scenario Runner / interactive encounter owner now consumes them at a five-second interval, honors recovery and rechecks the live-enemy cap before spawning. The portable development scenario contains an actual bounded spawner, evaluated separately from the fixed policy comparison. No LLM participates.
 
 ## Why these techniques
 

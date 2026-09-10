@@ -1,0 +1,51 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" AegisArenaEditor Win64 Development C:\Users\yzhu\Documents\ChatGPT\AegisArena\AegisArena.uproject -WaitMutex -NoHotReloadFromIDE -MaxParallelActions=2 -UBARootDir=D:\AegisWork\UBA
+Log file: C:\Users\yzhu\AppData\Local\UnrealBuildTool\Log.txt
+Executing up to 2 actions based on MaxProcessorCount override
+Using 'git status' to determine working set for adaptive non-unity build (C:\Users\yzhu\Documents\ChatGPT\AegisArena).
+Creating makefile for AegisArenaEditor (no existing makefile)
+UbaServer - Listening on 0.0.0.0:1345
+WARNING: Unable to find Visual Studio SDK. Editor integration will be disabled
+UHT compiled-in object format Default
+Building AegisArenaEditor...
+===== Toolchain Information =====
+Using ISPC compiler (D:\Program Files\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.50.35738 toolchain (D:\AegisToolchain\BuildTools\VC\Tools\MSVC\14.50.35717) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from AegisArenaEditor unity file: AegisEditorLibrary.cpp
+[Adaptive Build] Excluded from AegisArena unity file: AegisAIController.cpp, AegisCharacter.cpp, AegisDebugCommands.cpp, AegisLab.cpp, AegisAutomationTests.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 21 action(s)
+  CPU 24 physical cores, 32 logical cores
+  Memory 15.73 GB physical, 35.41 GB/39.07 GB committed
+  UBA Storage capacity 40 GB
+[1/21] Compile [x64] SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.cpp
+[2/21] Compile [x64] AegisAIController.cpp
+[3/21] Compile [x64] AegisArena.cpp
+[4/21] Compile [x64] AegisAutomationTests.cpp
+[5/21] Compile [x64] AegisCharacter.cpp
+[6/21] Compile [x64] AegisDebugCommands.cpp
+[7/21] Compile [x64] AegisLab.cpp
+[8/21] Compile [x64] Module.AegisArena.gen.cpp
+[9/21] Compile [x64] PerModuleInline.gen.cpp
+[10/21] Link [x64] UnrealEditor-AegisArena.lib
+  正在创建库 C:/Users/yzhu/Documents/ChatGPT/AegisArena/Intermediate/Build/Win64/x64/UnrealEditor/Development/AegisArena/UnrealEditor-AegisArena.lib 和对象 C:/Users/yzhu/Documents/ChatGPT/AegisArena/Intermediate/Build/Win64/x64/UnrealEditor/Development/AegisArena/UnrealEditor-AegisArena.exp
+[11/21] Compile [x64] AegisArenaEditor.cpp
+[12/21] Compile [x64] AegisCombatFunctionalTest.cpp
+[13/21] Compile [x64] AegisEditorLibrary.cpp
+[14/21] Compile [x64] Module.AegisArenaEditor.gen.cpp
+[15/21] Compile [x64] PerModuleInline.gen.cpp
+[16/21] Link [x64] UnrealEditor-AegisArenaEditor.lib
+  正在创建库 C:/Users/yzhu/Documents/ChatGPT/AegisArena/Intermediate/Build/Win64/x64/UnrealEditor/Development/AegisArenaEditor/UnrealEditor-AegisArenaEditor.lib 和对象 C:/Users/yzhu/Documents/ChatGPT/AegisArena/Intermediate/Build/Win64/x64/UnrealEditor/Development/AegisArenaEditor/UnrealEditor-AegisArenaEditor.exp
+[17/21] Compile Resource [x64] Default.rc2
+[18/21] Link [x64] UnrealEditor-AegisArenaEditor.dll
+[19/21] Compile Resource [x64] Default.rc2
+[20/21] Link [x64] UnrealEditor-AegisArena.dll
+[21/21] WriteMetadata AegisArenaEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 189.61 seconds
+Output binary: D:\Program Files\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 204.17 seconds
+Trace written to file C:\Users\yzhu\AppData\Local\UnrealBuildTool\Trace.uba with size 29.3kb

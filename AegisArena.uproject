@@ -1,8 +1,9 @@
 {
   "FileVersion": 3,
-  "EngineAssociation": "5.7",
+  "EngineAssociation": "5.8",
+  "DisableEnginePluginsByDefault": true,
   "Category": "Game AI Evaluation",
   "Description": "Unreal C++ AI adapter and independently verified portable decision core.",
   "Modules": [{"Name": "AegisArena", "Type": "Runtime", "LoadingPhase": "Default"}, {"Name": "AegisArenaEditor", "Type": "Editor", "LoadingPhase": "Default"}],
-  "Plugins": [{"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]}, {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]}]
+  "Plugins": [{"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]}, {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]}, {"Name": "EnvironmentQueryEditor", "Enabled": true, "TargetAllowList": ["Editor"]}, {"Name": "ACLPlugin", "Enabled": true}]
 }

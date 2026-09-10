@@ -1,0 +1,83 @@
+{
+  "engine": "unreal-editor-asset-inspection",
+  "passed": true,
+  "checkedAtUtc": "2026-09-10T07:33:37.287003+00:00",
+  "blackboardKeys": [
+    "SelfActor",
+    "HasLOS",
+    "HasMemory",
+    "CriticalHealth",
+    "NeedsRecovery",
+    "NeedsCover",
+    "InRange",
+    "IsCompanion",
+    "QueryPending",
+    "UtilityAction",
+    "TargetActor",
+    "LastKnownLocation",
+    "TacticalPoint"
+  ],
+  "roleActions": [
+    [
+      "Recover",
+      "Retreat",
+      "Support",
+      "Attack",
+      "Chase",
+      "Follow",
+      "Wait"
+    ],
+    [
+      "Retreat",
+      "Recover",
+      "FindCover",
+      "Attack",
+      "AttackPosition",
+      "Investigate",
+      "Patrol",
+      "Wait"
+    ]
+  ],
+  "queries": {
+    "EQS_Cover": {
+      "optionCount": 1,
+      "generator": "EnvQueryGenerator_SimpleGrid",
+      "distanceFactor": 1,
+      "tests": [
+        "EnvQueryTest_Pathfinding",
+        "EnvQueryTest_Trace",
+        "EnvQueryTest_Distance"
+      ]
+    },
+    "EQS_Attack": {
+      "optionCount": 1,
+      "generator": "EnvQueryGenerator_SimpleGrid",
+      "distanceFactor": 1,
+      "tests": [
+        "EnvQueryTest_Pathfinding",
+        "EnvQueryTest_Trace",
+        "EnvQueryTest_Distance"
+      ]
+    },
+    "EQS_Retreat": {
+      "optionCount": 1,
+      "generator": "EnvQueryGenerator_SimpleGrid",
+      "distanceFactor": 1,
+      "tests": [
+        "EnvQueryTest_Pathfinding",
+        "EnvQueryTest_Trace",
+        "EnvQueryTest_Distance"
+      ]
+    }
+  },
+  "navBoundsExtentCm": [
+    2050.0,
+    1550.0,
+    350.0
+  ],
+  "cameraPitchDegrees": -61.99999999999996,
+  "movableLights": 2,
+  "arenaActorCount": 16,
+  "functionalTestActors": 1,
+  "limitation": "Saved assets and wiring only; no game-world behavior or rendered acceptance"
+}
