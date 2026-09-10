@@ -1,0 +1,1495 @@
+{
+  "schemaVersion": 1,
+  "project": "aegis-arena",
+  "title": "同伴活着，队伍却更好吗？",
+  "subtitle": "30 对原生实验的策略取舍审查：先审查指标，再选择偏好。",
+  "evidenceKind": "reanalysis-of-existing-native-endpoints",
+  "notANewExperiment": true,
+  "pairCount": 30,
+  "episodeCount": 60,
+  "provenance": {
+    "nativeEvidenceRef": "v1.0.0-native",
+    "sourceSha256": "58eeb1037ce8338801598d8f9eaa47fec6cd41003cd20bef665d72206fb894e9",
+    "contentSha256": "91547daf2b2a7e81c88d18d0e71cabf738018f7b74f942b8ff0443443ddc74c2",
+    "inputSetCanonicalSha256": "eaaa0e28b5c647f4558e43a46dae7350aacf23da187c5bc4231969dbe452b6cc",
+    "hashMethod": "SHA256 of sorted-within-policy relative path + NUL + canonical parsed JSON + NUL; priority then utility",
+    "sourceBaseUrl": "https://github.com/QiQiyzhu/aegis-arena/blob/v1.0.0-native/",
+    "inputs": [
+      {
+        "path": "evidence/unreal/evaluation/priority/provenance.json",
+        "canonicalJsonSha256": "aa10d596f2390f2cbbc1d9e454bf1b2dda4d5dc6ac2c5417f393033de8c8a055"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-000.json",
+        "canonicalJsonSha256": "80e066065df10d3db8a9a6794cfc58c13dba553a368dcfa98b4faf009fccc8d1"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-001.json",
+        "canonicalJsonSha256": "8409aca758f3ecf2f2d9e34ee9e228d0f566ed6005e761d407c630dcce6ed91e"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-002.json",
+        "canonicalJsonSha256": "578508face1a6b205808f64bcdbcb8df571fba00a7c029fdae4824fc778e6467"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-003.json",
+        "canonicalJsonSha256": "bdf5fdd1f7330efc4ccc3a187d4a178a9165a77994e385a31883693ceeff1f5f"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-004.json",
+        "canonicalJsonSha256": "0fe5ceba1152f543237fcd51846840c6658681956ac0b6be5256029f743f7067"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-005.json",
+        "canonicalJsonSha256": "86d01c17363ed3d3fd795c048f30649d5edb9d1d0011547d8150e20b126e3ee5"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-006.json",
+        "canonicalJsonSha256": "56389e9269394aa358eec82dcc646f11b8f1e45d50920fc4b3a823c45f5a5df9"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-007.json",
+        "canonicalJsonSha256": "9ebd3edcc4a31a3a6f05d088484b0d829b17aae3c777724fff52845cbcc2fe4a"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-008.json",
+        "canonicalJsonSha256": "b72c568f1fcdf1e9e1f9abe3a06b07e906c7e3d50d5cb8aa1232c696e2c6ea1d"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-009.json",
+        "canonicalJsonSha256": "46edd6418cafdc84226cc17d1f3306f669aba33ed855801f58cb16729678c9ef"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-010.json",
+        "canonicalJsonSha256": "638f4aaa3b57e5b23b582d06672d7404a838ac3124fc9caa9f33a9aa2777aa11"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-011.json",
+        "canonicalJsonSha256": "828b359f67c4e984ac024f05c821ec525be539d42812bc62944ce53105bda7a6"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-012.json",
+        "canonicalJsonSha256": "1eeed6daf88b46e9c42cd0b599166fa22edfd647fea95dc66698f3f1f6c2cacd"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-013.json",
+        "canonicalJsonSha256": "a89e9862c4900407d605ad0d73176f71f74444477f173bb4c6347336edff7a87"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-014.json",
+        "canonicalJsonSha256": "e5e3f4a8747d9e674e41aa7b1e33ae24fbb1cb1a074ff2c2e3be5a7ab09f0afe"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-015.json",
+        "canonicalJsonSha256": "70bd93596c0818c7101967e898aedcbcdeee7e5549a36e66361c8332d24fba6b"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-016.json",
+        "canonicalJsonSha256": "570babd81f1abee4a00c8e5649209b891ea71b4f87b150ea1422e774b7407f87"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-017.json",
+        "canonicalJsonSha256": "32c5c149035ba9631c0e11867ff465df985c2fcfa6ecd3d46933226d489f7965"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-018.json",
+        "canonicalJsonSha256": "b57c0f50f924e1ae67259fd7c096d3432b3eedce64cc5221f02e1db9b3c4dbae"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-019.json",
+        "canonicalJsonSha256": "1df3b57fb8d5d778d7fdfd60d50c26748d3e8031e86d4b8a9d71b68208cdd4f6"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-020.json",
+        "canonicalJsonSha256": "626225bc6ffdc48ad9ccfff4e678806a541bf0913faf53e091c48d3e2108b66f"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-021.json",
+        "canonicalJsonSha256": "600abbb9eb2332762990a0f73a6c69b9e39b1938f10197e0566650a5c91f0cfb"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-022.json",
+        "canonicalJsonSha256": "3e34565c9c6ebea895e2cfa050d717200035aa557bf2334293a14c954d013c8b"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-023.json",
+        "canonicalJsonSha256": "e54194d918d3d58be73c75bf223f25bf7259bbd372b44577cf55afdc88cc6f98"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-024.json",
+        "canonicalJsonSha256": "e6a260f554fa80f8c46da400954495b8641dd646bbb9de109539695a16c78108"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-025.json",
+        "canonicalJsonSha256": "f2e5d56bbbe3b9971ce83244cfcc80453cb1104965fe79518c83046f3986642e"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-026.json",
+        "canonicalJsonSha256": "32d1789989c8de1e85f91a50d431a66b0049bc8c6913c6b78688f02c7257d280"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-027.json",
+        "canonicalJsonSha256": "f17eac06a91a1e3e7533fd8dac0eb8776f647c1fb0b436ae352c3bd4ad61daa0"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-028.json",
+        "canonicalJsonSha256": "7e2e88a19e928c186e4e5f0a90c932f820f192207813dc4a100ada1316808613"
+      },
+      {
+        "path": "evidence/unreal/evaluation/priority/raw/episode-029.json",
+        "canonicalJsonSha256": "5d1d2aab9fde4529b67b78008704533fd84d7c991605d72f3ad1cf0245ae1563"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/provenance.json",
+        "canonicalJsonSha256": "2c8e930aed19f2561d5db98153066c6d302ffb2f86203970e2e63a02a66602a3"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-000.json",
+        "canonicalJsonSha256": "20df25bd40cd9e6abdfbd683e076c22057ca562570639bd30facc08f5eb74b10"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-001.json",
+        "canonicalJsonSha256": "4ea5300f0f6410c3d64b12eebac54875188c1762925da1ebd168d406e8909f7e"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-002.json",
+        "canonicalJsonSha256": "f479b412fbeacdb92adb854b43c265ec72075253c2a6429cafd7182502ec5b6f"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-003.json",
+        "canonicalJsonSha256": "72262a0c51d93b01c8ca762948c4679f0ee9b86a18aab36b79b5be9e35007636"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-004.json",
+        "canonicalJsonSha256": "679f63f40394bf112e9e24446fa72a5fe68e846a1e71fa6d937724550e730da7"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-005.json",
+        "canonicalJsonSha256": "e60a9c40d3c84c98e7a4abb54ba982bf315adb04736eff05aab3f5319e25ad7e"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-006.json",
+        "canonicalJsonSha256": "80efc99afb17fd4b044617aedf85bd86b0e159aaa7c83c798a587de03b95b9cd"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-007.json",
+        "canonicalJsonSha256": "4d9a3b80a4eb48c6511fceb650a87c895358eb7cca5a188ff4e6ac5e83d74759"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-008.json",
+        "canonicalJsonSha256": "e825ed3061887d8e9abd06b034dc46c68ac786d7db130bc818030ccc6e911e2a"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-009.json",
+        "canonicalJsonSha256": "8b89aaabc57043f27b40af607819e8b93b3c2fcc960b3aef250af5768f0f9112"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-010.json",
+        "canonicalJsonSha256": "dcb81b3d26260cbf482b3fbea53188665b61d4ad6a157abc0c61887acfe3b23b"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-011.json",
+        "canonicalJsonSha256": "50789c736d4bd7e7a8e0ee84e9cabccd9d353bb3a4a594de1472dc0305bab5e8"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-012.json",
+        "canonicalJsonSha256": "2b8ef26d6dc24a06717c7b9915388ac21bf146a53a7c48ec87f2252751a38678"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-013.json",
+        "canonicalJsonSha256": "228846ead3d49964ecc6993e1301dc36fe0b53fec9e6774123d5cbe0616d5093"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-014.json",
+        "canonicalJsonSha256": "5b86ea19e5146b14a22ebc9613c2c3162684ea715a8a28f931cdafe700a7332f"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-015.json",
+        "canonicalJsonSha256": "72477219d0de22e3ec81cf958aa187bf06f04d28c0498c4143dc8f2141cbaeec"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-016.json",
+        "canonicalJsonSha256": "c8d1c9ae73ecccae4f42041768fe3d5108da2dcf3d140a9a179585018521f4e5"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-017.json",
+        "canonicalJsonSha256": "3c72f8b9676c29153baafb8f9a3f18e890dd1c56e58d3b2ce8eb0c917c09dce1"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-018.json",
+        "canonicalJsonSha256": "d5a1ddf58b761a637e8a5370647d5c04eef880f569867bd74fea91fa0f555e24"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-019.json",
+        "canonicalJsonSha256": "6c884b7cca4f2700094bbd9a1297cc85f092741a76f4b7a3e98a5ddb3ba3e408"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-020.json",
+        "canonicalJsonSha256": "6ef5c7ab700303e91196d52ecc77701cc744ee9bc88ba18037d3ce79f56130c2"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-021.json",
+        "canonicalJsonSha256": "b021a885a707bd34296fdb37f046823e6f4f765f6f8b115d3846ebb5255e35ce"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-022.json",
+        "canonicalJsonSha256": "53268f53f071b1a0950fc84bd0f7b658c2207d846f8479a8d38c2bacc5a11815"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-023.json",
+        "canonicalJsonSha256": "a0d7e553bbf890a5a118e48a646b66b6b5055d0795d3afdfa43edb1a79e68499"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-024.json",
+        "canonicalJsonSha256": "744e4ee79041bb85f760c426725a8deed026b9038c349a355df2d0aefac06d9b"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-025.json",
+        "canonicalJsonSha256": "3a02c8543aafe7b308aa7d805c5af7ead1cfbb4108ee55b9e1527e20df11e1b5"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-026.json",
+        "canonicalJsonSha256": "5f40338fc9c71427a68ee92c240a339c5bb2463e9fb0124ffadf9b00049ababb"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-027.json",
+        "canonicalJsonSha256": "158a4ede99f2d5a9843eb3897cd6bbb5267d90ce2498256c84ed46ca30764869"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-028.json",
+        "canonicalJsonSha256": "0a0deed38afabee7e4bc3a28e519c241d32ad7e4edcfba75f573a5d2e30c9bd1"
+      },
+      {
+        "path": "evidence/unreal/evaluation/utility/raw/episode-029.json",
+        "canonicalJsonSha256": "ddfa7ba33a361ed74126715608d64d7fd84fca471aee4c23c7cf0dbdf167df4e"
+      }
+    ]
+  },
+  "protocol": {
+    "engine": "UE 5.8.2",
+    "seeds": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030
+    ],
+    "arenaCount": 1,
+    "enemies": 4,
+    "directorEnabled": false,
+    "player": "scripted",
+    "maximumGameSeconds": 60,
+    "rendering": "NullRHI",
+    "fixedGameStepSeconds": 0.016666666666666666,
+    "pairingMeaning": "同项目seed与配置；不保证相同导航/感知时序或反事实轨迹。"
+  },
+  "metrics": [
+    {
+      "id": "companionAliveAtEnd",
+      "label": "结束时同伴仍存活",
+      "direction": 1,
+      "scale": 1,
+      "unit": "0 / 1",
+      "definition": "1 - companionDeaths；只是在本轮终止时的状态，非存活时间。"
+    },
+    {
+      "id": "alliedDamage",
+      "label": "累计己方输出",
+      "direction": 1,
+      "scale": 100,
+      "unit": "damage",
+      "definition": "脚本玩家与同伴造成的实际累计伤害；暴露时长不同。"
+    },
+    {
+      "id": "playerDamageTaken",
+      "label": "累计玩家承伤",
+      "direction": -1,
+      "scale": 100,
+      "unit": "damage",
+      "definition": "治疗后可再次受伤，故可能超过初始生命；较高值不等于更早死亡。"
+    },
+    {
+      "id": "episodeSeconds",
+      "label": "本轮持续时间",
+      "direction": 1,
+      "scale": 60,
+      "unit": "game seconds",
+      "definition": "玩家死亡、胜利或时限即结束；不是同伴生存时间。"
+    }
+  ],
+  "summary": {
+    "priority": {
+      "episodes": 30,
+      "wins": 0,
+      "companionDeathsAtEnd": 25,
+      "reachedDurationLimit": 1,
+      "completedQueries": 878,
+      "failedQueries": 16,
+      "mean": {
+        "companionAliveAtEnd": 0.16666666666666666,
+        "alliedDamage": 170.4566665649414,
+        "playerDamageTaken": 106.67667236328126,
+        "episodeSeconds": 25.37666776974996
+      }
+    },
+    "utility": {
+      "episodes": 30,
+      "wins": 0,
+      "companionDeathsAtEnd": 6,
+      "reachedDurationLimit": 0,
+      "completedQueries": 892,
+      "failedQueries": 8,
+      "mean": {
+        "companionAliveAtEnd": 0.8,
+        "alliedDamage": 139.4,
+        "playerDamageTaken": 126.05666809082031,
+        "episodeSeconds": 21.763334639867146
+      }
+    }
+  },
+  "pairedDeltas": {
+    "companionAliveAtEnd": {
+      "mean": 0.6333333333333333,
+      "median": 1.0,
+      "minimum": -1,
+      "maximum": 1,
+      "utilityHigherPreference": 20,
+      "priorityHigherPreference": 1,
+      "equalWithinTolerance": 9
+    },
+    "alliedDamage": {
+      "mean": -31.056666564941406,
+      "median": -21.0,
+      "minimum": -128,
+      "maximum": 42,
+      "utilityHigherPreference": 2,
+      "priorityHigherPreference": 22,
+      "equalWithinTolerance": 6
+    },
+    "playerDamageTaken": {
+      "mean": 19.37999572753906,
+      "median": 13.749980926513672,
+      "minimum": -26,
+      "maximum": 127.5,
+      "utilityHigherPreference": 4,
+      "priorityHigherPreference": 17,
+      "equalWithinTolerance": 9
+    },
+    "episodeSeconds": {
+      "mean": -3.6133331298828124,
+      "median": -2.6999998092651367,
+      "minimum": -23.300002098083496,
+      "maximum": 17.60000228881836,
+      "utilityHigherPreference": 7,
+      "priorityHigherPreference": 20,
+      "equalWithinTolerance": 3
+    }
+  },
+  "endpointComparisonCounts": {
+    "equal": 3,
+    "utility_dominates": 1,
+    "priority_dominates": 3,
+    "tradeoff": 23
+  },
+  "pairs": [
+    {
+      "seed": 1001,
+      "priority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 42,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 7.90000057220459,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 9,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-000.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 42,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 7.90000057220459,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 9,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-000.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 0,
+        "episodeSeconds": 0.0
+      },
+      "endpointComparison": "equal"
+    },
+    {
+      "seed": 1002,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 224,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 19.000001907348633,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 34,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-001.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 112,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 12.80000114440918,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 20,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-001.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -112,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -6.200000762939453
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1003,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 280,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 31.200000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 37,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-002.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 238,
+        "playerDamageTaken": 227.5,
+        "episodeSeconds": 48.80000305175781,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 55,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-002.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -42,
+        "playerDamageTaken": 127.5,
+        "episodeSeconds": 17.60000228881836
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1004,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 238,
+        "playerDamageTaken": 100.69999694824219,
+        "episodeSeconds": 30.400001525878906,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 48,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-003.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 176,
+        "playerDamageTaken": 153.10000610351562,
+        "episodeSeconds": 22.700000762939453,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 26,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-003.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -62,
+        "playerDamageTaken": 52.40000915527344,
+        "episodeSeconds": -7.700000762939453
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1005,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 196,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 24.600000381469727,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 29,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-004.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 238,
+        "playerDamageTaken": 180.70001220703125,
+        "episodeSeconds": 30.000001907348633,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 33,
+        "failedQueries": 2,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-004.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 42,
+        "playerDamageTaken": 80.70001220703125,
+        "episodeSeconds": 5.400001525878906
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1006,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 232,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 22.700000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 33,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-005.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 210,
+        "playerDamageTaken": 144,
+        "episodeSeconds": 24.000001907348633,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 30,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-005.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -22,
+        "playerDamageTaken": 44,
+        "episodeSeconds": 1.3000011444091797
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1007,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 154,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 40.400001525878906,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 40,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-006.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 126,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 38.60000228881836,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 64,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-006.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -28,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -1.7999992370605469
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1008,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 205.6999969482422,
+        "playerDamageTaken": 139.20004272460938,
+        "episodeSeconds": 37.80000305175781,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 33,
+        "failedQueries": 4,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-007.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 140,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 14.500000953674316,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 20,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-007.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -65.69999694824219,
+        "playerDamageTaken": -17.200042724609375,
+        "episodeSeconds": -23.300002098083496
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1009,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 196,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 17.600000381469727,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 33,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-008.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 126,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 11.90000057220459,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 16,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-008.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -70,
+        "playerDamageTaken": 0,
+        "episodeSeconds": -5.699999809265137
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1010,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 196,
+        "playerDamageTaken": 110.50000762939453,
+        "episodeSeconds": 24.600000381469727,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 32,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-009.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 184,
+        "playerDamageTaken": 154.5,
+        "episodeSeconds": 28.400001525878906,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 43,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-009.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -12,
+        "playerDamageTaken": 43.99999237060547,
+        "episodeSeconds": 3.8000011444091797
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1011,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 134,
+        "playerDamageTaken": 117.50001525878906,
+        "episodeSeconds": 33,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 17,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-010.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 112,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 22.900001525878906,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 22,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-010.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -22,
+        "playerDamageTaken": 4.4999847412109375,
+        "episodeSeconds": -10.099998474121094
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1012,
+      "priority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 5.400000095367432,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 10,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-011.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 5.400000095367432,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 10,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-011.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 0,
+        "episodeSeconds": 0.0
+      },
+      "endpointComparison": "equal"
+    },
+    {
+      "seed": 1013,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 224,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 20.30000114440918,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 31,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-012.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 98,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 16.100000381469727,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 22,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-012.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -126,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -4.200000762939453
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1014,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 182,
+        "playerDamageTaken": 100.69999694824219,
+        "episodeSeconds": 22.000001907348633,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 37,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-013.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 156,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 21.80000114440918,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 31,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-013.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": -26,
+        "playerDamageTaken": -0.6999969482421875,
+        "episodeSeconds": -0.20000076293945312
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1015,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 182,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 22.200000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 39,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-014.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 126,
+        "playerDamageTaken": 144,
+        "episodeSeconds": 20.500001907348633,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 41,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-014.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -56,
+        "playerDamageTaken": 44,
+        "episodeSeconds": -1.6999988555908203
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1016,
+      "priority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 12.200000762939453,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 12,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-015.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 12.200000762939453,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 12,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-015.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 0,
+        "episodeSeconds": 0.0
+      },
+      "endpointComparison": "equal"
+    },
+    {
+      "seed": 1017,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 310,
+        "playerDamageTaken": 139.20004272460938,
+        "episodeSeconds": 45.900001525878906,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 43,
+        "failedQueries": 2,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-016.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 294,
+        "playerDamageTaken": 189.80001831054688,
+        "episodeSeconds": 50.000003814697266,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 80,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-016.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -16,
+        "playerDamageTaken": 50.5999755859375,
+        "episodeSeconds": 4.100002288818359
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1018,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 140,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 11.000000953674316,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 20,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-017.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 126,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 10.000000953674316,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 18,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-017.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -14,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -1.0
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1019,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 224,
+        "playerDamageTaken": 128.00003051757812,
+        "episodeSeconds": 37.80000305175781,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 44,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-018.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 204,
+        "playerDamageTaken": 124.10000610351562,
+        "episodeSeconds": 20.900001525878906,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 33,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-018.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -20,
+        "playerDamageTaken": -3.9000244140625,
+        "episodeSeconds": -16.900001525878906
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1020,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 196,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 28.30000114440918,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 23,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-019.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 142,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 26.500001907348633,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 18,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-019.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -54,
+        "playerDamageTaken": 0,
+        "episodeSeconds": -1.7999992370605469
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1021,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 140,
+        "playerDamageTaken": 126,
+        "episodeSeconds": 60,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 20,
+        "failedQueries": 3,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-020.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 126,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 40.80000305175781,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 40,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-020.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": -14,
+        "playerDamageTaken": -26,
+        "episodeSeconds": -19.199996948242188
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1022,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 252,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 29.400001525878906,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 46,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-021.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 196,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 19.100000381469727,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 28,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-021.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -56,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -10.30000114440918
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1023,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 168,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 27.200000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 63,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-022.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 168,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 23.600000381469727,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 41,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-022.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 0,
+        "episodeSeconds": -3.6000003814697266
+      },
+      "endpointComparison": "priority_dominates"
+    },
+    {
+      "seed": 1024,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 284,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 32,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 38,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-023.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 156,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 25.000001907348633,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 24,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-023.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -128,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -6.999998092651367
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1025,
+      "priority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 56,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 8.40000057220459,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 12,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-024.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 56,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 8.5,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 12,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-024.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 0,
+        "episodeSeconds": 0.09999942779541016
+      },
+      "endpointComparison": "utility_dominates"
+    },
+    {
+      "seed": 1026,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 126,
+        "playerDamageTaken": 105.5999984741211,
+        "episodeSeconds": 19.700000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 30,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-025.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 98,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 10.40000057220459,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 19,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-025.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -28,
+        "playerDamageTaken": 16.400001525878906,
+        "episodeSeconds": -9.300000190734863
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1027,
+      "priority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 42,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 11.500000953674316,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 12,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-026.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 17.80000114440918,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 31,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-026.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": -1,
+        "alliedDamage": 28,
+        "playerDamageTaken": 0,
+        "episodeSeconds": 6.300000190734863
+      },
+      "endpointComparison": "tradeoff"
+    },
+    {
+      "seed": 1028,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 126,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 37.500003814697266,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 12,
+        "failedQueries": 4,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-027.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 112,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 32.60000228881836,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 36,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-027.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": -14,
+        "playerDamageTaken": 0,
+        "episodeSeconds": -4.900001525878906
+      },
+      "endpointComparison": "priority_dominates"
+    },
+    {
+      "seed": 1029,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 154,
+        "playerDamageTaken": 132.90003967285156,
+        "episodeSeconds": 26.400001525878906,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 22,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-028.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 154,
+        "playerDamageTaken": 144,
+        "episodeSeconds": 20.700000762939453,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 47,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-028.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 0,
+        "playerDamageTaken": 11.099960327148438,
+        "episodeSeconds": -5.700000762939453
+      },
+      "endpointComparison": "priority_dominates"
+    },
+    {
+      "seed": 1030,
+      "priority": {
+        "companionAliveAtEnd": 0,
+        "alliedDamage": 70,
+        "playerDamageTaken": 100,
+        "episodeSeconds": 14.90000057220459,
+        "win": false,
+        "companionDeaths": 1,
+        "completedQueries": 19,
+        "failedQueries": 1,
+        "source": "evidence/unreal/evaluation/priority/raw/episode-029.json"
+      },
+      "utility": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": 56,
+        "playerDamageTaken": 122,
+        "episodeSeconds": 8.5,
+        "win": false,
+        "companionDeaths": 0,
+        "completedQueries": 11,
+        "failedQueries": 0,
+        "source": "evidence/unreal/evaluation/utility/raw/episode-029.json"
+      },
+      "deltaUtilityMinusPriority": {
+        "companionAliveAtEnd": 1,
+        "alliedDamage": -14,
+        "playerDamageTaken": 22,
+        "episodeSeconds": -6.40000057220459
+      },
+      "endpointComparison": "tradeoff"
+    }
+  ],
+  "presets": [
+    {
+      "id": "endpoint",
+      "label": "优先结束时同伴存活",
+      "weights": [
+        0.65,
+        0.15,
+        0.15,
+        0.05
+      ],
+      "scores": {
+        "priority": 0.22515054777728186,
+        "utility": 0.5581511100636589
+      },
+      "deltaUtilityMinusPriority": 0.3330005622863771,
+      "ranking": [
+        "utility",
+        "priority"
+      ]
+    },
+    {
+      "id": "pressure",
+      "label": "优先输出与坚持",
+      "weights": [
+        0.1,
+        0.45,
+        0.25,
+        0.2
+      ],
+      "scores": {
+        "priority": 0.601618877866533,
+        "utility": 0.46470277857250647
+      },
+      "deltaUtilityMinusPriority": -0.13691609929402654,
+      "ranking": [
+        "priority",
+        "utility"
+      ]
+    },
+    {
+      "id": "exposure",
+      "label": "优先降低累计玩家承伤",
+      "weights": [
+        0.1,
+        0.15,
+        0.65,
+        0.1
+      ],
+      "scores": {
+        "priority": -0.37875225756433284,
+        "utility": -0.4939961181905535
+      },
+      "deltaUtilityMinusPriority": -0.11524386062622066,
+      "ranking": [
+        "priority",
+        "utility"
+      ]
+    }
+  ],
+  "scoring": {
+    "formula": "sum(weight[i] * direction[i] * endpoint[i] / scale[i]) / sum(weight)",
+    "metricOrder": [
+      "companionAliveAtEnd",
+      "alliedDamage",
+      "playerDamageTaken",
+      "episodeSeconds"
+    ],
+    "weightDomain": "finite, nonnegative; sum > 0",
+    "scoreTieTolerance": 1e-06,
+    "pairComparisonToleranceInMetricUnits": 0.0001,
+    "interpretation": "无量纲偏好指数，允许负值；不是胜率、AI策略重训练或新实验。量纲参考1/100/100/60预先在公式中公开，非数据min-max。",
+    "warning": "均值排序只重加权已观测终点；改变滑块不会改变游戏行为。即使端点支配也不证明因果或外推。"
+  },
+  "counterexamples": [
+    {
+      "seed": 1027,
+      "title": "反例：Utility 同伴反而死亡",
+      "detail": "Priority 同伴在11.5秒结束时仍活着；Utility 在17.8秒结束时已死，同时输出高28。观察窗口不同，不能据此声称长时生存更差。"
+    },
+    {
+      "seed": 1024,
+      "title": "保住同伴的输出代价",
+      "detail": "同伴端点由死亡变存活，但输出少128、玩家累计承伤多22，本轮早7秒结束。"
+    },
+    {
+      "seed": 1003,
+      "title": "更高承伤也可能伴随更长战斗",
+      "detail": "Utility 结束时同伴活着，战斗长17.6秒，累计玩家承伤多127.5；治疗/暴露时长使累计伤害不能直接等同保护能力。"
+    },
+    {
+      "seed": 1021,
+      "title": "时限与死亡不可混为一谈",
+      "detail": "Priority 达60秒时限，Utility 为40.8秒；两边同伴均死。raw未单独记录终止原因，不把时限行当作精确死亡时间。"
+    }
+  ],
+  "limitations": [
+    "同伴死亡是结束时状态，没有同伴死亡时刻、逐时风险集或匹配观察窗口；不能计算生存曲线或每存活秒死亡率。",
+    "Utility 本轮平均更短；25对6的同伴死亡数不能单独证明保护能力提高。",
+    "累计玩家承伤受治疗和暴露时长影响；累计己方输出也受终止时刻影响。",
+    "双方0/30胜，有地板效应；不宣称总体更优、不进行外推或配对显著性宣传。",
+    "这是一次政策各一轮/seed的单地图结果；UE调度并非位级确定，不能当作同一轨迹的两个反事实。"
+  ],
+  "acceptanceLesson": {
+    "headline": "Automation JSON 成功不等于测试在真实世界执行",
+    "falsePositive": "错误地图没有测试Actor，JSON仍Success；显式加载fixture又揭示Editor World问题。",
+    "currentGate": "1个干净结果 + PIE WorldType=3/BegunPlay=1 marker + 12条具名断言 + 无handled ensure。",
+    "evidencePaths": [
+      "evidence/unreal/before-eqs-fix/functional-false-positive/index.json",
+      "evidence/unreal/before-eqs-fix/functional-false-positive/engine.log",
+      "evidence/unreal/functional/index.json",
+      "evidence/unreal/functional/engine.log"
+    ],
+    "codePath": "scripts/run_unreal_functional.py"
+  }
+}

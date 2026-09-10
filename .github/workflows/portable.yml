@@ -24,6 +24,8 @@ jobs:
         run: python3 scripts/build_portable.py --compiler g++
       - name: Test scenario tools and actual binary integration
         run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Reproduce frozen native endpoint analysis without running Unreal
+        run: python3 scripts/export_decision_case.py --output evidence/unreal/decision-case.json --check
       - name: Run short pipeline scenario
         run: python3 scripts/run_benchmark.py --scenario scenarios/smoke.json --output outputs/ci-smoke
       - name: Run all 60 fixed evaluation episodes
@@ -38,3 +40,4 @@ jobs:
             outputs/ci-smoke
             outputs/ci-evaluation
             build/build-report.json
+            evidence/unreal/decision-case.json

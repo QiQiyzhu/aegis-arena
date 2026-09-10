@@ -19,7 +19,7 @@
 | 证据 | 实际状态 | 能说明什么 |
 | --- | --- | --- |
 | portable C++ 严格编译 | 325 个断言通过 | 纯规则与模拟器，不是 325 个独立测试用例 |
-| Python integration | 9 个 unittest case 通过 | CLI、验证、真实二进制 JSON/CSV 与报告协议 |
+| Python integration | 16 个 unittest case 通过 | 原有9项加7项终点重分析；CLI、JSON/CSV与验收拒绝路径 |
 | GitHub Actions | Ubuntu GCC 13.3 / Python 3.11 成功 | 新机器 portable 可复现；不运行 UE |
 | UE 5.8.2 Game Development / Shipping | 两个目标真实 build/cook/stage，UAT 153.34s / 128.22s | MSVC 14.50.35738 + SDK 26100 能编译 native gameplay |
 | Shipping 静态二进制检查 | 9 个开发入口标记在 Dev 存在、Shipping 缺失 | 静态 gate 与独立 Dev 两轮场景、Shipping 实机启动/入口检查共同记录 |
@@ -172,7 +172,7 @@ python scripts/verify_portable.py
 python scripts/verify_portable.py --full
 ```
 
-这两条命令不要求 UE：编译 C++17、运行 325 个断言、9 个 Python case，再运行短场景；`--full` 增加既定完整评估。没有编译器时应明确失败，不输出假成功。
+这两条命令不要求 UE：编译 C++17、运行 325 个断言、16 个 Python case，再运行短场景；`--full` 增加既定完整评估。没有编译器时应明确失败，不输出假成功。
 
 ```powershell
 ./scripts/build_unreal.ps1 -EngineRoot 'D:/Program Files/UE_5.8' -CacheRoot 'D:/AegisWork' -Automation
@@ -202,7 +202,7 @@ portable 实验使用 seeds 1001–1030，每个 seed 比较 priority 与 utilit
 
 **不能说**：胜率显著提升、模型比 UE 更快、所有场景优于 BT、收益具有商业泛化能力。小样本区间重叠；更完整的配对统计、效应大小和独立 holdout 是后续工作。报告路径 `evidence/portable/evaluation/`。
 
-原生结果使用 `engine=unreal-runtime` 的独立目录。最终 60 次 UE episode（相同 30 seeds，每策略各一次）：两组均 0/30 胜利，priority / utility 队友死亡为 25 / 6，玩家承伤均值 106.68 / 126.06，盟友输出均值 170.46 / 139.40。压力场景有胜率下界效应，不能据此说 Utility 全面更强。使用 1/60 固定游戏步长和 NullRHI，严格不等同渲染性能。见 [原生评估](native-evaluation.md) 与对应 raw JSON/CSV。
+原生结果使用 `engine=unreal-runtime` 的独立目录。最终 60 次 UE episode（相同 30 seeds，每策略各一次）：两组均 0/30 胜利，priority / utility 队友死亡为 25 / 6，玩家承伤均值 106.68 / 126.06，盟友输出均值 170.46 / 139.40。压力场景有胜率下界效应，不能据此说 Utility 全面更强。 同伴死亡是整轮终止时状态；Utility 轮次平均更短，观察窗口改变，因此25/6不能单独证明保护能力或同伴存活时间提升。现有记录无死亡时刻，不能补算生存风险。进一步的30对反例、偏好重加权与假成功验收见[决策案例](decision-case-study.md)和[分层深讲](interview-deep-dive.md)。使用 1/60 固定游戏步长和 NullRHI，严格不等同渲染性能。见 [原生评估](native-evaluation.md) 与对应 raw JSON/CSV。
 
 ## L. Ablation · 策略对照与未执行消融
 
@@ -357,7 +357,7 @@ std::size_t chooseAction(const std::array<double, 4>& score,
 
 下述表述只适用于候选人已亲自复现并能解释代码之后；不要把“AI 辅助完成”改成虚构商业经历。
 
-- 构建 C++17 可移植游戏 AI 规则与评估模型，并通过 GCC/Clang 严格编译、325 个断言及 9 个 Python integration case，GitHub Actions 提供可复现运行证据。
+- 构建 C++17 可移植游戏 AI 规则与评估模型，并通过 GCC/Clang 严格编译、325 个断言及 16 个 Python 工具与证据验收 case，GitHub Actions 提供可复现运行证据。
 - 实现基于授权观察的 Companion Utility 策略与优先级基线，在 30 个配对 seeds、60 次 portable episode 上记录胜率、承伤和队友死亡，保留原始 JSON/CSV 与置信区间。
 - 实现 EMA、hysteresis、cooldown 与 clamp 组成的有界 Encounter Director，并为调整冷却期间仍需施加敌人数上限的边界增加回归验证。
 - 使用 Unreal 5.8.2 C++ 实现 Perception、Blackboard/Behavior Tree、EQS 与场景评测；真实生成 10 个原生资产，通过 5 项 Core Automation 和 1 项 World Functional Test，其中 Functional 执行12条PIE世界断言，并保留60局原生策略实验的JSON/CSV。

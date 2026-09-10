@@ -12,13 +12,15 @@ A small AI architecture and evaluation project: one arena specification, a playe
 
 [Download Windows builds](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v1.0.0-native) · [Run and acceptance details](docs/release.md)
 
+**Start the technical review here:** [When the companion survives but the team does not](docs/decision-case-study.md). Trace 30 paired native outcomes, a real counterexample, an episode-termination confound and an Automation false positive. [30-second / 3-minute / 8-minute walkthrough](docs/interview-deep-dive.md) · [Reproducible data for preference exploration](evidence/unreal/decision-case.json). The preference index only reweights existing observations; it does not run a new policy.
+
 ## Verified evidence
 
 | Evidence | Result | Source |
 |---|---|---|
 | Strict C++17 build | Clang 20.1.2 through Zig 0.15.2; warnings treated as errors | [Build + assertions](evidence/portable/evaluation/report.json) |
 | Core assertions | 325 passed | [Tests](core/tests/tests.cpp) |
-| Python integration tests | 9 passed, including actual binary JSON/CSV round trip | [Tests](scripts/test_tools.py) |
+| Python tool and evidence tests | 16 passed: 7 tool/integration, 2 native acceptance-gate and 7 endpoint reanalysis cases | [Tools](scripts/test_tools.py), [Reanalysis](scripts/test_decision_case.py) |
 | Fixed evaluation set | 60 episodes: 30 priority + 30 utility | [Raw episodes](evidence/portable/evaluation/episodes.json) |
 | CPU model sampling | 20 episodes, 1 / 10 / 25 / 50 enemies | [Results](evidence/portable/performance/report.json) |
 | UE 5.8.2 Game Development build | MSVC 14.50.35738 + Windows SDK 26100: compiled and linked | [Actual build/cook log](evidence/unreal/environment/development-package.log) |
@@ -28,7 +30,7 @@ A small AI architecture and evaluation project: one arena specification, a playe
 | Native policy comparison | 60 real UE episodes, paired seeds, fixed game timestep + NullRHI | [Native evaluation](docs/native-evaluation.md) |
 | Rendered native sampling | 12 sustained 15s episodes, four loads, D3D12 / RTX 4060 Laptop | [Performance and limits](docs/performance.md) |
 
-In the native four-enemy stress encounter, both policies won **0/30**. Utility had fewer companion deaths (**6 vs 25**), but higher player damage taken and lower allied damage output. The difficulty creates a win-rate floor; these results do not establish overall policy superiority. [Native results and uncertainty](docs/native-evaluation.md). The [earlier portable model results](docs/evaluation.md) remain separate.
+In the native four-enemy stress encounter, both policies won **0/30**. Utility had fewer companion deaths **at episode termination (6 vs 25)**, but higher cumulative player damage taken and lower allied damage output. Its episodes also ended earlier on average, changing the companion's observation window. This endpoint cannot establish improved protection or longer companion survival. The difficulty creates a win-rate floor; these results do not establish overall policy superiority. [Native results and uncertainty](docs/native-evaluation.md). The [earlier portable model results](docs/evaluation.md) remain separate.
 
 ## Run the verified layer
 
@@ -40,7 +42,7 @@ From a fresh clone, enter the repository directory and run this single command o
 python3 scripts/verify_portable.py --compiler g++
 ```
 
-It builds both executables, runs the core assertions and nine Python test cases, then runs the two-episode smoke configuration. No prebuilt binary, ignored local toolchain, Pillow, engine installation or credentials are required. Logs and raw JSON/CSV go to a new timestamped directory under `outputs/`. Add `--full` to include all 60 evaluation episodes.
+It builds both executables, runs the core assertions and sixteen Python test cases, then runs the two-episode smoke configuration. No prebuilt binary, ignored local toolchain, Pillow, engine installation or credentials are required. Logs and raw JSON/CSV go to a new timestamped directory under `outputs/`. Add `--full` to include all 60 evaluation episodes.
 
 Windows with an existing compiler:
 
@@ -62,7 +64,7 @@ python3 scripts/run_benchmark.py --scenario scenarios/performance.json --output 
 
 CMake is also supported: `cmake -S . -B build-cmake`, `cmake --build build-cmake --config Release`, then `ctest --test-dir build-cmake -C Release --output-on-failure`. This CMake path builds/runs C++ tests; use the Python commands above for the scenario/report pipeline. The repository does not download tools automatically. Existing report directories cannot be overwritten accidentally.
 
-The [portable GitHub Actions workflow](.github/workflows/portable.yml) uses Ubuntu `g++`, runs the same strict build, nine Python tests, smoke and full evaluation configurations, and uploads raw JSON/CSV plus build provenance. **It does not install or execute Unreal.** See the [hosted per-commit runs and evaluation artifacts](https://github.com/QiQiyzhu/aegis-arena/actions/workflows/portable.yml) for the current branch result.
+The [portable GitHub Actions workflow](.github/workflows/portable.yml) uses Ubuntu `g++`, runs the same strict build, sixteen Python tests, smoke and full evaluation configurations, and uploads raw JSON/CSV plus build provenance. **It does not install or execute Unreal.** See the [hosted per-commit runs and evaluation artifacts](https://github.com/QiQiyzhu/aegis-arena/actions/workflows/portable.yml) for the current branch result.
 
 ## Unreal adapter
 

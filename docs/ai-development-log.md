@@ -35,7 +35,7 @@ The pre-correction/generated working files were not used to replace final eviden
 
 ## Reproduction
 
-The default `verify_portable.py` command performs a fresh strict build, assertions, all nine Python tests and two short smoke episodes. `--full` additionally runs the existing 60-episode evaluation configuration. The delivery check does not overwrite the earlier 60+20 reference evidence. All generated logs are labelled `portable-cpp-model`; the wrapper never invokes engine binaries.
+The default `verify_portable.py` command performs a fresh strict build, assertions, all sixteen Python tests and two short smoke episodes. `--full` additionally runs the existing 60-episode evaluation configuration. The delivery check does not overwrite the earlier 60+20 reference evidence. All generated logs are labelled `portable-cpp-model`; the wrapper never invokes engine binaries.
 
 The one-command path was also executed from a clean source copy containing neither `build/` nor `.tools/`, using an explicitly supplied external compiler. It passed the strict build, 325 assertions, seven Python test cases and two smoke episodes. Eleven generated/credential path patterns were checked with Git, and README/documentation local links were checked for missing targets. [Delivery check record](../evidence/portable/delivery-check.json). That clean-copy check was Windows; a later hosted Ubuntu/GCC Actions pass is separately linked above.
 
@@ -78,3 +78,10 @@ No RL training, policy generalization, full Editor debugger screenshot, GPU Insi
 
 
 Final Development and Shipping targets both completed cook/stage/archive. The standalone Development binary completed two validated episodes with no Editor process. The actual Shipping window rendered running AI with no debug HUD; the grave key did not open a console. Nine development markers were present in Development and absent from Shipping. Basic controls are implemented, but the final Shipping inspection is not described as exhaustive input coverage. Source, runtime binaries and archive checksums are linked by the release manifest.
+
+
+## Endpoint decision review (no new Unreal execution)
+
+The existing 60 final native records were paired by seed and reanalyzed without changing runtime code or running the engine. Source inspection clarified that companionDeaths is an episode-termination state, not a lifespan: earlier player termination changes the observation window. Cumulative damage also depends on healing and elapsed exposure. The review therefore retains 25/6 as an endpoint, not proof of better protection. All 30 pairs and four counterexamples are exported with canonical input digests; a disclosed preference formula only reweights those observations.
+
+Seven additional Python regression cases verify the frozen totals/counterexamples, a preference ranking flip without data mutation, invalid weights, missing/duplicate/mixed/nonfinite rows, line-ending-stable canonical JSON, unchanged export and failed/mixed-revision provenance or aggregate mismatch. Together with the existing nine cases, the suite now contains sixteen. The CI additionally rejects a stale committed export. No new native policy outcome, frame-time measurement or packaged binary is claimed. README and the A–T dossier receive minimal metric/verification clarification; the detailed decision case and 30-second/3-minute/8-minute narration are separate documents.
