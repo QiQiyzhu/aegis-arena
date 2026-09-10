@@ -1,0 +1,12 @@
+test_actual_binary_json_csv_pipeline (test_tools.ToolsTests.test_actual_binary_json_csv_pipeline) ... ok
+test_cli_rejects_unknown_and_invalid (test_tools.ToolsTests.test_cli_rejects_unknown_and_invalid) ... ok
+test_confidence_interval_not_point_estimate (test_tools.ToolsTests.test_confidence_interval_not_point_estimate) ... ok
+test_overflow (test_tools.ToolsTests.test_overflow) ... ok
+test_reject_invalid_schema_and_ranges (test_tools.ToolsTests.test_reject_invalid_schema_and_ranges) ... ok
+test_schema_roundtrip (test_tools.ToolsTests.test_schema_roundtrip) ... ok
+test_unknown_fields (test_tools.ToolsTests.test_unknown_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.150s
+
+OK

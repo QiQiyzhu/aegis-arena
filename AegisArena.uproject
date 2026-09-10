@@ -1,0 +1,8 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.7",
+  "Category": "Game AI Evaluation",
+  "Description": "Unreal C++ AI adapter and independently verified portable decision core.",
+  "Modules": [{"Name": "AegisArena", "Type": "Runtime", "LoadingPhase": "Default"}, {"Name": "AegisArenaEditor", "Type": "Editor", "LoadingPhase": "Default"}],
+  "Plugins": [{"Name": "PythonScriptPlugin", "Enabled": true, "TargetAllowList": ["Editor"]}, {"Name": "EditorScriptingUtilities", "Enabled": true, "TargetAllowList": ["Editor"]}]
+}

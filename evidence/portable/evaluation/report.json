@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "engine": "portable-cpp-model",
+  "created_utc": "2026-09-10T04:58:29.493056+00:00",
+  "source_sha256": "948e423c87e652d7e325fa30e6a034f342815edf4be3d3690fe69961af66778e",
+  "binary_sha256": "5e941738e1689eea1d96cd45b5af23369098f5f8eba0e3004dbbd2bc52cc322e",
+  "host": {
+    "platform": "Windows-10-10.0.22631-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "build": {
+    "engine": "portable-cpp-model",
+    "compiler": "clang version 20.1.2 (https://github.com/ziglang/zig-bootstrap 7ef74e656cf8ddbd6bf891a8475892aa1afa6891)",
+    "flags": "C++17 -O2 -Wall -Wextra -Werror -pedantic",
+    "tests": {
+      "suite": "portable_cpp",
+      "assertions": 325,
+      "failed": 0
+    },
+    "unreal_compiled": false
+  },
+  "config": {
+    "schema_version": 1,
+    "arena": "pillars",
+    "player_config": "scripted",
+    "companion_policies": [
+      "priority",
+      "utility"
+    ],
+    "enemy_policy": "priority",
+    "enemy_counts": [
+      4
+    ],
+    "seed_start": 1001,
+    "episodes": 30,
+    "duration": 60,
+    "director": false
+  },
+  "episode_count": 60,
+  "aggregate": [
+    {
+      "enemy_count": 4,
+      "policy": "priority",
+      "episodes": 30,
+      "wins": 20,
+      "win_rate": 0.6666666666666666,
+      "win_rate_95ci_wilson": [
+        0.48779725813830266,
+        0.807697044731538
+      ],
+      "mean_survival_seconds": 33.910000000000004,
+      "mean_damage_dealt": 359.96,
+      "mean_damage_taken": 86.53333333333333,
+      "mean_companion_deaths": 0.5333333333333333,
+      "mean_enemy_deaths": 3.3333333333333335,
+      "mean_stuck_events": 4.166666666666667,
+      "mean_distance_travelled": 181.389601,
+      "mean_cover_usage": 52.46666666666667,
+      "mean_decision_counts": 673.2,
+      "mean_decision_us": 0.3621382,
+      "mean_geometry_query_us": 1.8662209333333333,
+      "mean_step_p95_us": 2.236666666666667
+    },
+    {
+      "enemy_count": 4,
+      "policy": "utility",
+      "episodes": 30,
+      "wins": 19,
+      "win_rate": 0.6333333333333333,
+      "win_rate_95ci_wilson": [
+        0.45513246433604937,
+        0.7812629779598231
+      ],
+      "mean_survival_seconds": 35.47,
+      "mean_damage_dealt": 344.22333333333336,
+      "mean_damage_taken": 104.5,
+      "mean_companion_deaths": 0.2,
+      "mean_enemy_deaths": 3,
+      "mean_stuck_events": 5.166666666666667,
+      "mean_distance_travelled": 198.47932826666667,
+      "mean_cover_usage": 78.9,
+      "mean_decision_counts": 759.3,
+      "mean_decision_us": 0.5964637,
+      "mean_geometry_query_us": 1.8182138333333333,
+      "mean_step_p95_us": 2.8933333333333335
+    }
+  ],
+  "limitations": [
+    "Not Unreal runtime or rendered frame measurements",
+    "CPU microbenchmarks share a busy desktop host",
+    "Simple axis-slide geometry can become stuck; no NavMesh",
+    "Priority policy is not execution of Unreal Behavior Tree",
+    "No RL or learning results"
+  ]
+}

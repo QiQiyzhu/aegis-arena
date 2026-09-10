@@ -1,0 +1,40 @@
+name: Portable C++ evidence
+on: [push, pull_request, workflow_dispatch]
+
+# Public PR jobs need no token write permissions or external service credentials.
+permissions:
+  contents: read
+
+concurrency:
+  group: portable-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: State the execution boundary
+        run: echo 'This job compiles the portable C++ model with g++. It does not install, compile, or execute Unreal Engine.'
+      - name: Compile strict C++17 and run assertions
+        run: python3 scripts/build_portable.py --compiler g++
+      - name: Test scenario tools and actual binary integration
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+      - name: Run short pipeline scenario
+        run: python3 scripts/run_benchmark.py --scenario scenarios/smoke.json --output outputs/ci-smoke
+      - name: Run all 60 fixed evaluation episodes
+        run: python3 scripts/run_benchmark.py --scenario scenarios/evaluation.json --output outputs/ci-evaluation
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portable-model-evidence-not-unreal
+          retention-days: 30
+          if-no-files-found: warn
+          path: |
+            outputs/ci-smoke
+            outputs/ci-evaluation
+            build/build-report.json

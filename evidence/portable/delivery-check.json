@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-09-10T05:23:08.264318+00:00",
+  "environment": "Windows local fresh source copy; external Clang through Zig",
+  "fresh_copy_had_no_build_or_tools": true,
+  "one_command": "python scripts/verify_portable.py --compiler <absolute existing zig.exe>",
+  "strict_cpp_assertions": 325,
+  "python_test_cases": 7,
+  "smoke_episodes": 2,
+  "reference_evaluation_rerun": false,
+  "reference_performance_rerun": false,
+  "secret_and_generated_ignore_paths_checked": 11,
+  "readme_local_links": "passed",
+  "workflow_structure": "validated; hosted GitHub Actions not executed in this check",
+  "unreal_invoked": false,
+  "status": "passed"
+}

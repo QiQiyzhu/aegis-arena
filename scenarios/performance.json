@@ -1,0 +1,1 @@
+{"schema_version":1,"arena":"pillars","player_config":"scripted","companion_policies":["utility"],"enemy_policy":"priority","enemy_counts":[1,10,25,50],"seed_start":5001,"episodes":5,"duration":60,"director":false}

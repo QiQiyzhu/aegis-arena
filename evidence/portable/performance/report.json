@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "engine": "portable-cpp-model",
+  "created_utc": "2026-09-10T04:58:30.006264+00:00",
+  "source_sha256": "948e423c87e652d7e325fa30e6a034f342815edf4be3d3690fe69961af66778e",
+  "binary_sha256": "5e941738e1689eea1d96cd45b5af23369098f5f8eba0e3004dbbd2bc52cc322e",
+  "host": {
+    "platform": "Windows-10-10.0.22631-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "build": {
+    "engine": "portable-cpp-model",
+    "compiler": "clang version 20.1.2 (https://github.com/ziglang/zig-bootstrap 7ef74e656cf8ddbd6bf891a8475892aa1afa6891)",
+    "flags": "C++17 -O2 -Wall -Wextra -Werror -pedantic",
+    "tests": {
+      "suite": "portable_cpp",
+      "assertions": 325,
+      "failed": 0
+    },
+    "unreal_compiled": false
+  },
+  "config": {
+    "schema_version": 1,
+    "arena": "pillars",
+    "player_config": "scripted",
+    "companion_policies": [
+      "utility"
+    ],
+    "enemy_policy": "priority",
+    "enemy_counts": [
+      1,
+      10,
+      25,
+      50
+    ],
+    "seed_start": 5001,
+    "episodes": 5,
+    "duration": 60,
+    "director": false
+  },
+  "episode_count": 20,
+  "aggregate": [
+    {
+      "enemy_count": 1,
+      "policy": "utility",
+      "episodes": 5,
+      "wins": 5,
+      "win_rate": 1.0,
+      "win_rate_95ci_wilson": [
+        0.5655085052479191,
+        1
+      ],
+      "mean_survival_seconds": 5.11,
+      "mean_damage_dealt": 65.0,
+      "mean_damage_taken": 6.4,
+      "mean_companion_deaths": 0,
+      "mean_enemy_deaths": 1,
+      "mean_stuck_events": 0,
+      "mean_distance_travelled": 45.860906,
+      "mean_cover_usage": 6,
+      "mean_decision_counts": 77.6,
+      "mean_decision_us": 0.3475106,
+      "mean_geometry_query_us": 2.5436666,
+      "mean_step_p95_us": 2.32
+    },
+    {
+      "enemy_count": 10,
+      "policy": "utility",
+      "episodes": 5,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.43449149475208104
+      ],
+      "mean_survival_seconds": 8.68,
+      "mean_damage_dealt": 134.4,
+      "mean_damage_taken": 138.8,
+      "mean_companion_deaths": 0.6,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0.6,
+      "mean_distance_travelled": 245.0628064,
+      "mean_cover_usage": 26.6,
+      "mean_decision_counts": 513.2,
+      "mean_decision_us": 0.2046866,
+      "mean_geometry_query_us": 2.101413,
+      "mean_step_p95_us": 2.98
+    },
+    {
+      "enemy_count": 25,
+      "policy": "utility",
+      "episodes": 5,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.43449149475208104
+      ],
+      "mean_survival_seconds": 5.37,
+      "mean_damage_dealt": 84.0,
+      "mean_damage_taken": 138.8,
+      "mean_companion_deaths": 0.4,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0.2,
+      "mean_distance_travelled": 373.1248804,
+      "mean_cover_usage": 13.4,
+      "mean_decision_counts": 718.4,
+      "mean_decision_us": 0.115616,
+      "mean_geometry_query_us": 1.9730906000000001,
+      "mean_step_p95_us": 3.38
+    },
+    {
+      "enemy_count": 50,
+      "policy": "utility",
+      "episodes": 5,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.43449149475208104
+      ],
+      "mean_survival_seconds": 4.82,
+      "mean_damage_dealt": 72.8,
+      "mean_damage_taken": 138.8,
+      "mean_companion_deaths": 0.4,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0.4,
+      "mean_distance_travelled": 645.5056886,
+      "mean_cover_usage": 11.2,
+      "mean_decision_counts": 1240.6,
+      "mean_decision_us": 0.14192860000000002,
+      "mean_geometry_query_us": 3.9407262,
+      "mean_step_p95_us": 4.9
+    }
+  ],
+  "limitations": [
+    "Not Unreal runtime or rendered frame measurements",
+    "CPU microbenchmarks share a busy desktop host",
+    "Simple axis-slide geometry can become stuck; no NavMesh",
+    "Priority policy is not execution of Unreal Behavior Tree",
+    "No RL or learning results"
+  ]
+}

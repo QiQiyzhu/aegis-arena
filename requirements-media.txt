@@ -1,0 +1,2 @@
+# Optional; tests, compiler driver and benchmark runner use only Python stdlib.
+Pillow==11.3.0

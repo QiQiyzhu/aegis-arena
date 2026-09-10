@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "cpp_assertions": 325,
+  "python_test_cases": 7,
+  "evaluation_episodes": 60,
+  "performance_episodes": 20,
+  "source_sha256": "948e423c87e652d7e325fa30e6a034f342815edf4be3d3690fe69961af66778e",
+  "unreal_compiled": false,
+  "unreal_executed": false,
+  "learning_agents_trained": false
+}
