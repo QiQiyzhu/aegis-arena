@@ -30,7 +30,7 @@ FString PortfolioJson(const TSharedRef<FJsonObject>& Object)
     FJsonSerializer::Serialize(Object, Writer);
     return Text;
 }
-const TCHAR* PhaseName(aegis::TrialPhase Phase)
+const TCHAR* PortfolioPhaseName(aegis::TrialPhase Phase)
 {
     switch (Phase)
     {
@@ -492,7 +492,7 @@ void AAegisPortfolio::ObserveProgress()
     if (LastPhase != static_cast<int32>(Trial.phase) || LastWave != Trial.wave)
     {
         auto Data = MakeShared<FJsonObject>();
-        Data->SetStringField(TEXT("phase"), PhaseName(Trial.phase));
+        Data->SetStringField(TEXT("phase"), PortfolioPhaseName(Trial.phase));
         Data->SetNumberField(TEXT("wave"), Trial.wave);
         Data->SetBoolField(TEXT("pressure"), Trial.pressure);
         RecordEvent(TEXT("phase_changed"), Data);

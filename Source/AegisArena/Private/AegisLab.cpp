@@ -1296,6 +1296,7 @@ void AAegisPlayerController::BeginPlay()
     Super::BeginPlay();
     const auto Preferences = FAegisUIPreferences::Load(FAegisUIPreferences::DefaultPath(), FCommandLine::Get());
     bEnglishUI = Preferences.bEnglish;
+    bReducedEffects = Preferences.bReducedEffects;
     bPersistUILanguage = Preferences.bPersistent;
     bShowMouseCursor = true;
     bEnableClickEvents = true;
@@ -1326,6 +1327,7 @@ void AAegisPlayerController::SetupInputComponent()
     InputComponent->BindKey(EKeys::Tab, IE_Pressed, this, &AAegisPlayerController::TogglePlannerPanel).bExecuteWhenPaused = true;
     InputComponent->BindKey(EKeys::L, IE_Pressed, this, &AAegisPlayerController::ToggleLanguage).bExecuteWhenPaused = true;
     InputComponent->BindKey(EKeys::F11, IE_Pressed, this, &AAegisPlayerController::ToggleWindowMode).bExecuteWhenPaused = true;
+    InputComponent->BindKey(EKeys::K, IE_Pressed, this, &AAegisPlayerController::ToggleEffects).bExecuteWhenPaused = true;
     InputComponent->BindKey(EKeys::R, IE_Pressed, this, &AAegisPlayerController::Restart).bExecuteWhenPaused = true;
     InputComponent->BindKey(EKeys::P, IE_Pressed, this, &AAegisPlayerController::PauseTrial).bExecuteWhenPaused = true;
     InputComponent->BindKey(EKeys::Escape, IE_Pressed, this, &AAegisPlayerController::PauseTrial).bExecuteWhenPaused = true;
@@ -1336,6 +1338,7 @@ void AAegisPlayerController::SetupInputComponent()
 void AAegisPlayerController::MenuAction(FName Action)
 {
     if (Action == TEXT("WindowMode")) { ToggleWindowMode(); return; }
+    if (Action == TEXT("Effects")) { ToggleEffects(); return; }
     if (Action == TEXT("Music")) { if (auto* Music = AAegisPortfolioMusic::Find(GetWorld())) Music->ToggleMute(); return; }
     if (Action == TEXT("Language"))
     {
@@ -1482,6 +1485,17 @@ void AAegisPlayerController::ToggleWindowMode()
         Settings->ConfirmVideoMode();
         Settings->SaveSettings();
     }
+}
+void AAegisPlayerController::ToggleEffects()
+{
+    bReducedEffects = !bReducedEffects;
+    auto Preferences = FAegisUIPreferences::Load(FAegisUIPreferences::DefaultPath(), FCommandLine::Get());
+    Preferences.bEnglish = bEnglishUI;
+    Preferences.bReducedEffects = bReducedEffects;
+    const bool Saved = Preferences.Save(FAegisUIPreferences::DefaultPath());
+    CommandFeedback = bEnglishUI ? TEXT("Effects updated; gameplay cues remain visible") : TEXT("特效已更新；必要的战斗提示始终保留");
+    if (!Saved) CommandFeedback = bEnglishUI ? TEXT("Effects changed; setting could not be saved") : TEXT("特效已切换；偏好未能保存");
+    CommandFeedbackUntil = GetWorld() ? GetWorld()->GetTimeSeconds()+2 : 0;
 }
 void AAegisPlayerController::OnApplicationActivationChanged(bool bActive)
 {

@@ -2,6 +2,8 @@
 #include "AegisPortfolio.h"
 #include "AegisPortfolioPresentation.h"
 #include "AegisAIController.h"
+#include "AegisLab.h"
+#include "AegisTacticalFX.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -397,7 +399,9 @@ void AAegisCharacter::EmitShotParticle(UStaticMesh* Shape, const FVector& Positi
     const double Now = GetWorld()->GetTimeSeconds();
     int32 Slot = INDEX_NONE;
     double Oldest = TNumericLimits<double>::Max();
-    for (int32 Index = 0; Index < ShotFXParticles.Num(); ++Index)
+    const auto* FXController = Cast<AAegisPlayerController>(GetWorld()->GetFirstPlayerController());
+    const int32 DecorativeSlots = FXController && FXController->bReducedEffects ? FMath::Min(6,ShotFXParticles.Num()) : ShotFXParticles.Num();
+    for (int32 Index = 0; Index < DecorativeSlots; ++Index)
     {
         const auto& Particle = ShotFXParticles[Index];
         if (Particle.Lifetime <= 0 || Now >= Particle.StartedAt + Particle.Lifetime)
@@ -469,13 +473,13 @@ void AAegisCharacter::ShowRangedShot(const FVector& Start, const FVector& End, b
     const float Length = static_cast<float>(Segment.Size());
     const FVector Direction = Segment.GetSafeNormal();
     const FRotator Facing = Direction.Rotation();
-    const FLinearColor Color = bCharged ? FLinearColor(.58f, .34f, 1.f)
+    const FLinearColor Color = bCharged ? FLinearColor(.12f, .75f, 1.f)
         : Team == EAegisTeam::Player ? FLinearColor(.05f, .92f, .82f) : FLinearColor(1.f, .58f, .12f);
     // This remains the existing tracer pool, so the real shot also drives V2Gun's cosmetic recoil.
     const int32 Slot = NextTracer;
     NextTracer = (NextTracer + 1) % Tracers.Num();
     auto* Core = Tracers[Slot].Get();
-    ShotCoreMaterials[Slot]->SetVectorParameterValue(TEXT("Tint"), bCharged ? FLinearColor(.90f, .78f, 1.f)
+    ShotCoreMaterials[Slot]->SetVectorParameterValue(TEXT("Tint"), bCharged ? FLinearColor(.78f, .95f, 1.f)
         : Team == EAegisTeam::Player ? FLinearColor(.58f, 1.f, .96f) : FLinearColor(1.f, .90f, .60f));
     Core->SetWorldLocationAndRotation((Start + End) * .5f, Facing);
     Core->SetWorldScale3D(FVector(Length / 100.f, bCharged ? .029f : .014f, bCharged ? .029f : .014f));
@@ -512,7 +516,7 @@ void AAegisCharacter::ShowShotImpact(const FVector& Point, const FVector& Normal
     if (bFatal && Kind == EAegisShotImpact::CharacterDamaged) ++ShotVFXStats.FatalImpacts;
     if (!bPresentationEnabled || ShotFXPool.IsEmpty()) return;
     const bool bDamage = Kind == EAegisShotImpact::CharacterDamaged;
-    const FLinearColor Color = bCharged ? FLinearColor(.65f, .37f, 1.f)
+    const FLinearColor Color = bCharged ? FLinearColor(.12f, .75f, 1.f)
         : bDamage ? (Team == EAegisTeam::Player ? FLinearColor(.16f, .95f, .84f) : FLinearColor(1.f, .65f, .20f))
         : FLinearColor(.58f, .67f, .75f);
     const FVector Outward = Normal.GetSafeNormal(UE_SMALL_NUMBER, FVector::UpVector);
@@ -955,7 +959,8 @@ void AAegisPlayerCharacter::Dash()
     Movement->Velocity = DashDirection * 1600;
     bDashing = true;
     // CharacterMovement keeps capsule sweeps and wall blocking during the dash; no teleport or immunity.
-    ShowAttack(GetActorLocation(), GetActorLocation() - DashDirection * 100);
+    if (AegisPortfolioPresentation::V2Enabled()) AAegisTacticalFX::Emit(this,EAegisTacticalCue::Dash,GetActorLocation(),DashDirection);
+    else ShowAttack(GetActorLocation(), GetActorLocation() - DashDirection * 100);
 }
 void AAegisPlayerCharacter::EndDash()
 {

@@ -7,6 +7,7 @@ struct AEGISARENA_API FAegisUIPreferences
 {
     bool bEnglish = false;
     bool bMusicMuted = false;
+    bool bReducedEffects = false;
     bool bPersistent = true;
 
     static FString DefaultPath();

@@ -1,0 +1,238 @@
+{
+  "version": "2.5.0-rc.1",
+  "engine": "5.8.2 / D3D11",
+  "humanPlaytest": false,
+  "shippingRuntime": false,
+  "coreAutomation": {
+    "succeeded": 8,
+    "failed": 0,
+    "notRun": 0,
+    "inProcess": 0
+  },
+  "nativeReleaseAndArt": {
+    "1280": {
+      "passed": true,
+      "checks": [
+        "release_profile_opens_latest_briefing",
+        "isolated_preferences_default_chinese_music_on",
+        "clickable_language_and_music_controls",
+        "deploy_starts_active_operation",
+        "focus_callback_pauses_active_game",
+        "focus_return_does_not_resume_or_advance_time",
+        "manual_resume_clears_focus_pause",
+        "restart_requires_confirmation_and_preserves_attempt",
+        "cancel_restart_keeps_existing_attempt_paused",
+        "confirmed_restart_returns_clean_briefing",
+        "tactical_pool_has_seven_fixed_components",
+        "real_charge_input_drives_semantic_windup",
+        "reduced_effects_retains_semantic_charge",
+        "accepted_charge_release_emits_cue",
+        "transient_cues_decay_to_zero",
+        "standard_cue_has_bounded_attack_and_decay",
+        "reduced_cue_emits_fewer_decorations",
+        "presentation_does_not_change_health_or_energy",
+        "stress_drops_decorations_without_allocating_components",
+        "stress_cues_expire_and_leave_semantic_layer",
+        "real_dash_input_emits_directional_trail"
+      ],
+      "native": {
+        "passed": true,
+        "checks": 21,
+        "artFixture": true,
+        "aiFrozenForArt": true,
+        "syntheticVisualCues": true,
+        "syntheticMenuActions": true,
+        "simulatedFocusCallback": true,
+        "realWindowFocusTest": false,
+        "humanPlaytest": false,
+        "shippingRuntime": false
+      },
+      "seconds": 22.078000000008615
+    },
+    "1600": {
+      "passed": true,
+      "checks": [
+        "release_profile_opens_latest_briefing",
+        "isolated_preferences_default_chinese_music_on",
+        "clickable_language_and_music_controls",
+        "deploy_starts_active_operation",
+        "focus_callback_pauses_active_game",
+        "focus_return_does_not_resume_or_advance_time",
+        "manual_resume_clears_focus_pause",
+        "restart_requires_confirmation_and_preserves_attempt",
+        "cancel_restart_keeps_existing_attempt_paused",
+        "confirmed_restart_returns_clean_briefing",
+        "tactical_pool_has_seven_fixed_components",
+        "real_charge_input_drives_semantic_windup",
+        "reduced_effects_retains_semantic_charge",
+        "accepted_charge_release_emits_cue",
+        "transient_cues_decay_to_zero",
+        "standard_cue_has_bounded_attack_and_decay",
+        "reduced_cue_emits_fewer_decorations",
+        "presentation_does_not_change_health_or_energy",
+        "stress_drops_decorations_without_allocating_components",
+        "stress_cues_expire_and_leave_semantic_layer",
+        "real_dash_input_emits_directional_trail"
+      ],
+      "native": {
+        "passed": true,
+        "checks": 21,
+        "artFixture": true,
+        "aiFrozenForArt": true,
+        "syntheticVisualCues": true,
+        "syntheticMenuActions": true,
+        "simulatedFocusCallback": true,
+        "realWindowFocusTest": false,
+        "humanPlaytest": false,
+        "shippingRuntime": false
+      },
+      "seconds": 20.312999999994645
+    }
+  },
+  "survey": {
+    "passed": true,
+    "nativeAssertions": 25,
+    "inputsBefore": {
+      "sourceSha256": "7745e43cbac70e90ebffec63dc5a931f548061c163b25c6e4253776368be5774",
+      "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+    },
+    "binariesBefore": {
+      "launcher": {
+        "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+      },
+      "projectModule": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+        "sha256": "8fae5430a73ed542dd37b49b243709fdad7a1afff22380495be911a604f179d5"
+      }
+    },
+    "wallSeconds": 31.156000000002678
+  },
+  "skills": {
+    "passed": true,
+    "nativeAssertions": 36,
+    "inputsBefore": {
+      "sourceSha256": "b44af98c80cd2d02d009e07dcd49bfd7326ec43e247ecccb18fc65322bd2dc03",
+      "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+    },
+    "binariesBefore": {
+      "launcher": {
+        "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+      },
+      "projectModule": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+        "sha256": "426b5ecf31f7092c52ccb2a362a2eb8533e8ab34b9e584fba688a1d4211c9fbc"
+      }
+    },
+    "wallSeconds": 23.75
+  },
+  "fullRun": {
+    "passed": true,
+    "frames": 110,
+    "outcome": "won",
+    "source": {
+      "sourceSha256": "b44af98c80cd2d02d009e07dcd49bfd7326ec43e247ecccb18fc65322bd2dc03",
+      "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+    },
+    "binariesBefore": {
+      "launcher": {
+        "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+      },
+      "projectModule": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+        "sha256": "426b5ecf31f7092c52ccb2a362a2eb8533e8ab34b9e584fba688a1d4211c9fbc"
+      }
+    },
+    "systemEvidence": {
+      "path": "D:\\AegisWork\\Reports\\art-v25-20261007\\final-full-run\\system\\portfolio-5333E71B47906B2AE1ADC68526B37AB0.json",
+      "sha256": "b2167e2b6798e65e96d5e3c0974f1d4afaa2030d676e32dd8ee4351a56279857",
+      "traceSha256": "73ab16339707e275c31d52ba0e7e6a18cbd41f9b4a1384f28d53c20f0028513f",
+      "events": 174,
+      "outcome": "won",
+      "ledgerReconciled": true,
+      "damageRoleVerification": "full",
+      "pulsesUsed": 3,
+      "repairsUsed": 1,
+      "actualRepairHealing": 14.0,
+      "chargedShots": 1,
+      "overclocks": 2,
+      "northRouteFirst": true,
+      "survey": {
+        "surveyKeys": 1,
+        "surveySupplies": 0,
+        "surveyBoosts": 1,
+        "surveyCancelled": 3,
+        "surveyPlayerActualHealing": 0.0,
+        "surveyCompanionActualHealing": 0.0,
+        "surveyClaimedMask": 1,
+        "surveyKeyPending": false,
+        "surveyBoostRelayKey": -1
+      },
+      "symbiosisActualHealing": 0.0,
+      "companionStateChanges": 53,
+      "companionShortReversalsUnder1s": 16,
+      "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+      "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+    },
+    "wallSeconds": 55.046000000002095
+  },
+  "captureProvenance": {
+    "beforeBriefing": "v2.4 baseline 6784c59; editor-game; 1600x900; synthetic menu/focus fixture",
+    "briefingAndPause": "v2.5 editor-game; 1600x900; synthetic menu/focus callback; not OS focus test",
+    "tacticalHud": "v2.5 editor-game; frozen AI and simulated key input; art fixture",
+    "upgradeAndResult": "v2.5 editor-game; genuine game states reached by scripted input; no fixture damage, placement or frozen AI",
+    "pixelEditing": false
+  },
+  "sourceNote": "Final source differs from final-full-run recorded source only by removed blank lines at EOF in HUD/ReleaseProbe/V2Probe. Shipping is rebuilt from that formatted source.",
+  "retainedFailure": {
+    "folder": "D:\\AegisWork\\Reports\\art-v25-20261007\\skills-final",
+    "nativeReason": "restart_resets_route_energy_charge",
+    "resolution": "Updated legacy fixture to press R, release, and press R again for v2.4 confirmation. Game semantics unchanged."
+  },
+  "screenshots": {
+    "before-briefing.png": {
+      "sha256": "362b4fd7c9c71ee09f0d8972b5d1025d7fa686242f5008b81b24ddca7490fc6b",
+      "bytes": 1021312,
+      "width": 1600,
+      "height": 900
+    },
+    "briefing.png": {
+      "sha256": "acfdabca5c9a9040f9b173511f21b4d5da8dbba015432893c0cf98661b2a4475",
+      "bytes": 477061,
+      "width": 1600,
+      "height": 900
+    },
+    "pause.png": {
+      "sha256": "805c5be9ab899df08527b08cbab9694fc97424006e29a45be052253238a8cd97",
+      "bytes": 512961,
+      "width": 1600,
+      "height": 900
+    },
+    "tactical-hud.png": {
+      "sha256": "5bfa32d0112598ecc1ae0169c79421a625ce0506ca8717acf98261b7adaffcfe",
+      "bytes": 1428290,
+      "width": 1600,
+      "height": 900
+    },
+    "upgrade.png": {
+      "sha256": "085ff43bd0dbac2ba4ff44917940fb59d3103c1b59afe4dc845764186a2654ec",
+      "bytes": 604542,
+      "width": 1600,
+      "height": 900
+    },
+    "result.png": {
+      "sha256": "ea968f9b73ad055aec681e5e1c47751f737b6b68c17ceab3e21a10cd612524ec",
+      "bytes": 422264,
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "notCovered": [
+    "human playtest",
+    "hardware compatibility matrix",
+    "general performance or win-rate claims",
+    "store certification"
+  ]
+}

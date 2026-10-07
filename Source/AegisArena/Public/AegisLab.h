@@ -208,6 +208,7 @@ class AEGISARENA_API AAegisPlayerController : public APlayerController
     bool bMenuOpen = false;
     bool bRestartConfirmation = false;
     bool bPausedForFocus = false;
+    bool bReducedEffects = false;
     bool bPlannerOpen = false;
     // Saved local UI preference. Missing/invalid settings default to Chinese.
     bool bEnglishUI = false;
@@ -217,6 +218,7 @@ class AEGISARENA_API AAegisPlayerController : public APlayerController
     void TogglePlannerPanel();
     void ToggleLanguage();
     void ToggleWindowMode();
+    void ToggleEffects();
     void OnApplicationActivationChanged(bool bActive);
     void ClosePlannerPanel();
     bool SubmitPlannerInstruction(const FString& Instruction);

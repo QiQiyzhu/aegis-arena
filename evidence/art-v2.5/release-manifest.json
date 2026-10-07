@@ -1,0 +1,181 @@
+{
+  "version": "v2.5.0-rc.1",
+  "platform": "Windows x64 Shipping",
+  "zip": "Aegis-Arena-v2.5.0-rc.1-Windows.zip",
+  "bytes": 110580471,
+  "sha256": "1b090b55f8fdfe39454856dbac7934f4898afaa92f71b1dedad34a003169bd49",
+  "files": [
+    {
+      "path": "AegisArena/Binaries/Win64/AegisArena-Win64-Shipping.exe",
+      "bytes": 103694848,
+      "sha256": "37e7874e70e24514f556269677c41712008c362176683c1460bc1b87a64ac853"
+    },
+    {
+      "path": "AegisArena/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+      "bytes": 4831768,
+      "sha256": "c41711499e13244fd07ca28a9b32ece29e4454ecc38fb50681f74254b333a9b3"
+    },
+    {
+      "path": "AegisArena/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+      "bytes": 4943344,
+      "sha256": "e36f1ee4371798892529762368907d19b997493ad6f30aa8acbfd0132881804f"
+    },
+    {
+      "path": "AegisArena/Binaries/Win64/tbb12.dll",
+      "bytes": 342456,
+      "sha256": "de15a5f93bfd334d4fe32343a81d76f9de0824af8e31b2189637d12545af2673"
+    },
+    {
+      "path": "AegisArena/Binaries/Win64/tbbmalloc.dll",
+      "bytes": 117176,
+      "sha256": "74edc04a8f5bc2593a5a555b675c1251d6d90e693ee6a67cfa11dd3b2d17a856"
+    },
+    {
+      "path": "AegisArena/Content/Fonts/DroidSansFallback.ttf",
+      "bytes": 3939852,
+      "sha256": "05d71b179ef97b82cf1bb91cef290c600a510f77f39b4964359e3ef88378c79d"
+    },
+    {
+      "path": "AegisArena/Content/Paks/AegisArena-Windows.pak",
+      "bytes": 10300070,
+      "sha256": "d7b0b2d8b82d111cbad1530de0f2055b594aa11713a589caae79e127a8260f67"
+    },
+    {
+      "path": "AegisArena/Content/Paks/AegisArena-Windows.ucas",
+      "bytes": 18375936,
+      "sha256": "52452613aa4d493b6e9a063b53edf1bfbe4ba68c9bc5f97194bbd4a1a46fa25d"
+    },
+    {
+      "path": "AegisArena/Content/Paks/AegisArena-Windows.utoc",
+      "bytes": 60627,
+      "sha256": "01af65b3288b59553c15801584a723a4a3b8c94cdf6cd538b1f9b4fed0088941"
+    },
+    {
+      "path": "AegisArena/Content/Paks/global.ucas",
+      "bytes": 1569936,
+      "sha256": "32d9ffdd3e00ac550adb5cedce6eda2afdb9da43ffffd0b9a061a71d61b931cf"
+    },
+    {
+      "path": "AegisArena/Content/Paks/global.utoc",
+      "bytes": 482,
+      "sha256": "29d137d6f27f27340bef0f330a7c2172e1a3909bf4159782d3be26f07a4d3b7b"
+    },
+    {
+      "path": "AegisArena.exe",
+      "bytes": 171520,
+      "sha256": "20fd088675bb5ebe7c905accf97d1803369f0b60ff16daee8b278a8ab2c2b739"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+      "bytes": 2232688,
+      "sha256": "36795e47d9724ee68349efbbe64aba94db108b9cad1e3dfe8bc510f359136f53"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+      "bytes": 5799016,
+      "sha256": "82d7a3e50710d660927db2f318cbed471049c962b7c05de12c2b2b3e40a35af9"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+      "bytes": 59832,
+      "sha256": "f23df1213c4bf23b5c666bafa7ec18743847a2e18192ae8e0d096a2fb7c28bf9"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+      "bytes": 1724856,
+      "sha256": "a56d43a98e197f5e73a1dadf5c1dc7a07ad40327b199faa4ff1247abd6eccd5b"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+      "bytes": 48568,
+      "sha256": "d64e67ca918716be8b6056a6f7a1f6256e910754425db8369d952943264b40eb"
+    },
+    {
+      "path": "Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+      "bytes": 858152,
+      "sha256": "0ca010abcabe52493fdb744d79c4c8132ae6756046b68aa7c88bdc03ec1effcd"
+    },
+    {
+      "path": "Engine/Config/StagedBuild_AegisArena.ini",
+      "bytes": 3,
+      "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+    },
+    {
+      "path": "Engine/Content/Renderer/TessellationTable.bin",
+      "bytes": 259568,
+      "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941"
+    },
+    {
+      "path": "Engine/Content/Slate/Cursor/invisible.cur",
+      "bytes": 326,
+      "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1"
+    },
+    {
+      "path": "Engine/Content/SlateDebug/Fonts/LastResort.tps",
+      "bytes": 930,
+      "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8"
+    },
+    {
+      "path": "Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+      "bytes": 5395052,
+      "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9"
+    },
+    {
+      "path": "Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+      "bytes": 11751688,
+      "sha256": "9a4540c1ed0ac2a0755c0093a9c01e4b3dbe21b25805318ba495648fc890e14f"
+    },
+    {
+      "path": "Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+      "bytes": 18569648,
+      "sha256": "c458c6841310561ef6fadef893092ed02d840da205ad0ae9843fb0d2579b3378"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1065,
+      "sha256": "d5a42cb7d8e705732337e840e64d079deacca6d8250b29ee8ad9de80bd37e0e3"
+    },
+    {
+      "path": "Manifest_NonUFSFiles_Win64.txt",
+      "bytes": 1412,
+      "sha256": "59805918178d367073b21c0f32ba9b4e90ffa9822994d55965e9b87f07bf012c"
+    },
+    {
+      "path": "Manifest_UFSFiles_Win64.txt",
+      "bytes": 149024,
+      "sha256": "20329f35ffac2e013b41c5345fea99b9d405c001531c19ba2b3a0facf698bcce"
+    },
+    {
+      "path": "NOTICES.txt",
+      "bytes": 111,
+      "sha256": "ba49ae5586f817b36a2772269f71f899cb1f54b5f2720fad951319edd5e140b8"
+    },
+    {
+      "path": "PLAY-Aegis.cmd",
+      "bytes": 323,
+      "sha256": "8f01c22462b6bf062d745356bd929348575d3ff77b4bcb8dab29e77919049961"
+    },
+    {
+      "path": "PLAY.md",
+      "bytes": 2192,
+      "sha256": "d4336d29b5cd05f75d60c028259e81b63df794de01bb67c8e05bd3714fb2568d"
+    },
+    {
+      "path": "ThirdPartyNotices/DroidSans-LICENSE.txt",
+      "bytes": 12086,
+      "sha256": "5da12bfaffe32a5c3e1129bcccb606ee4d674ffe9a2c63d78e1c1f68153dcbb3"
+    },
+    {
+      "path": "ThirdPartyNotices/FreeType-LICENSE.txt",
+      "bytes": 6912,
+      "sha256": "308dca54b5aaa4a6ba0880621fe3bcf287956821aa948430263062a8333625c0"
+    },
+    {
+      "path": "ThirdPartyNotices/README.txt",
+      "bytes": 1137,
+      "sha256": "b924db7ed8c6f1b426afa96a9bf258cd5e25270de095fea1b404e2af785fccf2"
+    }
+  ],
+  "excluded": "PDB, DebugFiles manifest and Saved directories; original build retained locally",
+  "validation": "Repository evidence/art-v2.5 and docs/release-v2.5.md; native fixtures and real Shipping UI smoke are distinct"
+}

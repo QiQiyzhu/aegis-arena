@@ -17,9 +17,11 @@ bool FAegisUILanguageTest::RunTest(const FString& Parameters)
     FAegisUIPreferences Settings;
     Settings.bEnglish = true;
     Settings.bMusicMuted = true;
+    Settings.bReducedEffects = true;
     TestTrue(TEXT("English preference is written to a new directory"), Settings.Save(Path));
     TestTrue(TEXT("A fresh session reads English from disk"), FAegisUIPreferences::Load(Path, TEXT("")).bEnglish);
     TestTrue(TEXT("Music mute survives a fresh session"), FAegisUIPreferences::Load(Path, TEXT("")).bMusicMuted);
+    TestTrue(TEXT("Reduced effects survives a fresh session"), FAegisUIPreferences::Load(Path, TEXT("")).bReducedEffects);
     FString Before;
     FFileHelper::LoadFileToString(Before, *Path);
     for (const TCHAR* Flags : {TEXT("-AegisPortfolioCapture"), TEXT("-AegisInputProbe"), TEXT("-RenderOffscreen")})
@@ -28,6 +30,7 @@ bool FAegisUILanguageTest::RunTest(const FString& Parameters)
         TestFalse(TEXT("Automation starts Chinese despite the saved English preference"), Isolated.bEnglish);
         TestFalse(TEXT("Automation suppresses persistence"), Isolated.bPersistent);
         TestFalse(TEXT("Automation keeps deterministic unmuted music"), Isolated.bMusicMuted);
+        TestFalse(TEXT("Automation keeps deterministic full effects"), Isolated.bReducedEffects);
         TestTrue(TEXT("An isolated switch succeeds without a write"), Isolated.Save(Path));
         FString After;
         FFileHelper::LoadFileToString(After, *Path);

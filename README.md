@@ -4,9 +4,11 @@
 
 ## ▶ 下载后直接玩
 
-**[下载 Windows 试玩版](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v2.4.0-rc.1)** · **[详细游玩说明](docs/PLAY.md)** · [版本与验证](docs/release-v2.4.md)
+**[下载 Windows 试玩版](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v2.5.0-rc.1)** · **[详细游玩说明](docs/PLAY.md)** · [版本与验证](docs/release-v2.5.md)
 
-1. 打开上方下载页，在 **Assets** 中下载 **`Aegis-Arena-v2.4.0-rc.1-Windows.zip`**。不要选择 `Source code`。
+**[查看 UI 与战斗特效的美术策划档案](https://arc-shift.black-kid-3047.chatgpt.site/art-direction/index.html)**：真实界面对照、战术信息层级、技能节奏与验证依据。
+
+1. 打开上方下载页，在 **Assets** 中下载 **`Aegis-Arena-v2.5.0-rc.1-Windows.zip`**。不要选择 `Source code`。
 2. 右键 ZIP → **全部解压缩**，保留整个文件夹。
 3. 双击 **`PLAY-Aegis.cmd`**（也可以打开 `AegisArena.exe`），按 **Enter** 开始。
 
@@ -21,9 +23,9 @@
 | 暂停 | Esc 或 P |
 | 退出游戏 | 暂停菜单或结算页中按 X |
 
-**第一次玩：跟随当前目标，留意共享能量，最后亲自进入撤离区。** L 切换中英文；M 开关音乐。更多队友指令、扫描与路线操作见 [游玩说明](docs/PLAY.md)。
+**第一次玩：跟随当前目标，留意共享能量，最后亲自进入撤离区。** L 切换中英文；M 开关音乐；K 切换精简特效。更多队友指令、扫描与路线操作见 [游玩说明](docs/PLAY.md)。
 
-这是经过本机验证的独立游戏试玩候选版，包含一张竞技场和三阶段任务。没有多人联机，也没有中途存档恢复；当前局退出后需重新开始。已知限制与本次测试范围见 [v2.4 记录](docs/release-v2.4.md)。
+这是经过本机验证的独立游戏试玩候选版，包含一张竞技场和三阶段任务。没有多人联机，也没有中途存档恢复；当前局退出后需重新开始。已知限制与本次测试范围见 [v2.5 记录](docs/release-v2.5.md)。
 
 <details>
 <summary>开发者：源码、构建与历史证据</summary>

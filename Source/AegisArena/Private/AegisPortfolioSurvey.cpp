@@ -281,7 +281,7 @@ void AAegisPortfolio::UpdateSurveyIndicators()
         if (!Tint) continue;
         const bool bClaimed = Survey.claimed(Node), bScanning = Survey.node == Node;
         Tint->SetVectorParameterValue(TEXT("Tint"), bClaimed ? FLinearColor(.08f, .22f, .20f) :
-            bScanning ? FLinearColor(1.f, .58f, .15f) : FLinearColor(.55f, .28f, 1.f));
+            bScanning ? FLinearColor(.82f, .62f, 1.f) : FLinearColor(.55f, .28f, 1.f));
         // The ring closes clockwise as input accumulates. Its state is directly
         // read from the same ledger that grants the reward, not a demo animation.
         for (int32 Segment = 0; Segment < 24; ++Segment)

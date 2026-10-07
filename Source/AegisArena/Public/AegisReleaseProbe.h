@@ -18,6 +18,9 @@ private:
     int32 Stage = -1, Checks = 0;
     double Started = 0, Next = 0, PausedClock = 0;
     bool bRunning = false;
+    bool bArt = false;
+    int32 EffectsBefore = 0, FullEmission = 0, SnapshotEnergy = 0;
+    float SnapshotHealth = 0;
     FString Output;
     bool Check(const TCHAR* Name, bool bPassed);
     void Finish(bool bPassed);

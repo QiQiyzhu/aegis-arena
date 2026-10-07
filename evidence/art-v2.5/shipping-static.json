@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "scope": "Static package/binary verification; not Shipping runtime or human playtest",
+  "package": "D:\\AegisWork\\Packages\\aegis-v25-rc1-20261007\\package\\Windows",
+  "source": {
+    "sourceSha256": "327a6e2b48a72b034846a3c8234c41431b8d6bcdcec98854d74a8c7bdad58ece",
+    "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+  },
+  "Shipping": {
+    "file": "AegisArena-Win64-Shipping.exe",
+    "bytes": 103694848,
+    "sha256": "37e7874e70e24514f556269677c41712008c362176683c1460bc1b87a64ac853",
+    "markers": {
+      "aegis.PauseAI": false,
+      "aegis.StepDecision": false,
+      "aegis.Policy": false,
+      "aegis.SpawnBot": false,
+      "aegis.KillBot": false,
+      "aegis.Visualize": false,
+      "aegis.RunScenario": false,
+      "AEGIS / development diagnostics": false,
+      "AEGIS_EQS": false,
+      "AEGIS_INPUT_PROBE_PASS": false,
+      "AegisProbeOutput=": false,
+      "AEGIS_PLAY_PROBE_PASS": false,
+      "AegisPlayOutput=": false,
+      "AEGIS_COPILOT_PROBE_BEGIN": false,
+      "AegisCopilotOutput=": false,
+      "AEGIS_COPILOT_FAULT_BEGIN": false,
+      "AegisCopilotFaultOutput=": false,
+      "AEGIS_RELEASE_PROBE_CHECK": false,
+      "AegisReleaseProbeOutput=": false
+    },
+    "extraDevelopmentMarkers": {
+      "AegisArtProbe": false,
+      "tactical_pool_has_seven_fixed_components": false,
+      "AEGIS_V2_PROBE_BEGIN": false
+    }
+  },
+  "EditorPositiveControl": {
+    "file": "UnrealEditor-AegisArena.dll",
+    "bytes": 2167296,
+    "sha256": "426b5ecf31f7092c52ccb2a362a2eb8533e8ab34b9e584fba688a1d4211c9fbc",
+    "markers": {
+      "aegis.PauseAI": true,
+      "aegis.StepDecision": true,
+      "aegis.Policy": true,
+      "aegis.SpawnBot": true,
+      "aegis.KillBot": true,
+      "aegis.Visualize": true,
+      "aegis.RunScenario": true,
+      "AEGIS / development diagnostics": true,
+      "AEGIS_EQS": true,
+      "AEGIS_INPUT_PROBE_PASS": true,
+      "AegisProbeOutput=": true,
+      "AEGIS_PLAY_PROBE_PASS": true,
+      "AegisPlayOutput=": true,
+      "AEGIS_COPILOT_PROBE_BEGIN": true,
+      "AegisCopilotOutput=": true,
+      "AEGIS_COPILOT_FAULT_BEGIN": true,
+      "AegisCopilotFaultOutput=": true,
+      "AEGIS_RELEASE_PROBE_CHECK": true,
+      "AegisReleaseProbeOutput=": true
+    },
+    "extraDevelopmentMarkers": {
+      "AegisArtProbe": true,
+      "tactical_pool_has_seven_fixed_components": true,
+      "AEGIS_V2_PROBE_BEGIN": true
+    }
+  },
+  "copiedDocumentsAndFont": {
+    "PLAY-Aegis.cmd": {
+      "sha256": "8f01c22462b6bf062d745356bd929348575d3ff77b4bcb8dab29e77919049961",
+      "matchesSource": true
+    },
+    "PLAY.md": {
+      "sha256": "d4336d29b5cd05f75d60c028259e81b63df794de01bb67c8e05bd3714fb2568d",
+      "matchesSource": true
+    },
+    "LICENSE.txt": {
+      "sha256": "d5a42cb7d8e705732337e840e64d079deacca6d8250b29ee8ad9de80bd37e0e3",
+      "matchesSource": true
+    },
+    "AegisArena/Content/Fonts/DroidSansFallback.ttf": {
+      "sha256": "05d71b179ef97b82cf1bb91cef290c600a510f77f39b4964359e3ef88378c79d",
+      "matchesSource": true
+    },
+    "ThirdPartyNotices/DroidSans-LICENSE.txt": {
+      "sha256": "5da12bfaffe32a5c3e1129bcccb606ee4d674ffe9a2c63d78e1c1f68153dcbb3",
+      "matchesSource": true
+    },
+    "ThirdPartyNotices/FreeType-LICENSE.txt": {
+      "sha256": "308dca54b5aaa4a6ba0880621fe3bcf287956821aa948430263062a8333625c0",
+      "matchesSource": true
+    },
+    "ThirdPartyNotices/README.txt": {
+      "sha256": "b924db7ed8c6f1b426afa96a9bf258cd5e25270de095fea1b404e2af785fccf2",
+      "matchesSource": true
+    }
+  },
+  "prerequisite": {
+    "file": "Engine\\Extras\\Redist\\en-us\\vc_redist.x64.exe",
+    "sha256": "c458c6841310561ef6fadef893092ed02d840da205ad0ae9843fb0d2579b3378"
+  },
+  "launcherSha256": "20fd088675bb5ebe7c905accf97d1803369f0b60ff16daee8b278a8ab2c2b739",
+  "buildLogSha256": "42befbec82ce6aa7bbb287d2eb2d78a84fba675d685cd8d3d11b696615497966",
+  "buildCookStageArchive": true,
+  "matchingCompiledPayload": true,
+  "normalQuitAndFocus": "separate actual Shipping window smoke required"
+}

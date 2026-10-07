@@ -25,6 +25,7 @@ FAegisUIPreferences FAegisUIPreferences::Load(const FString& Path, const TCHAR* 
         Config.GetString(TEXT("Interface"), TEXT("Language"), Language);
         Result.bEnglish = Language.Equals(TEXT("en"), ESearchCase::IgnoreCase);
         Config.GetBool(TEXT("Audio"), TEXT("MusicMuted"), Result.bMusicMuted);
+        Config.GetBool(TEXT("Accessibility"), TEXT("ReducedEffects"), Result.bReducedEffects);
     }
     return Result;
 }
@@ -37,5 +38,6 @@ bool FAegisUIPreferences::Save(const FString& Path) const
     Config.Read(Path);
     Config.SetString(TEXT("Interface"), TEXT("Language"), bEnglish ? TEXT("en") : TEXT("zh-CN"));
     Config.SetBool(TEXT("Audio"), TEXT("MusicMuted"), bMusicMuted);
+    Config.SetBool(TEXT("Accessibility"), TEXT("ReducedEffects"), bReducedEffects);
     return Config.Write(Path, false);
 }

@@ -3,6 +3,7 @@
 #include "AegisPortfolio.h"
 #include "AegisPortfolioCapture.h"
 #include "AegisPortfolioMusic.h"
+#include "AegisTacticalFX.h"
 #include "Components/AudioComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -32,7 +33,6 @@ namespace AegisPortfolioPresentation
 namespace
 {
 void BuildV2Arena(AActor* Owner);
-void V2Event(UObject* Context, const TCHAR* Name, const FVector& Location);
 
 // Cosmetic instances only. Navigation, cover traces and combat collision remain authored by the arena.
 UInstancedStaticMeshComponent* V2Layer(AActor* Owner, const TCHAR* Name, UStaticMesh* Mesh,
@@ -112,7 +112,7 @@ void ApplyV22CharacterStyle(UWorld* World)
             ? (Companion ? FLinearColor(.04f, 1.f, .66f) : FLinearColor(.06f, .82f, .95f))
             : (Heavy ? FLinearColor(1.f, .20f, .07f)
                    : Flank ? FLinearColor(1.f, .52f, .06f)
-                           : FLinearColor(.70f, .26f, 1.f));
+                           : FLinearColor(1.f, .35f, .12f));
         auto* RoleMaterial = UMaterialInstanceDynamic::Create(Energy, Character);
         RoleMaterial->SetVectorParameterValue(TEXT("Tint"), RoleColor);
         auto* DarkMaterial = UMaterialInstanceDynamic::Create(Basalt, Character);
@@ -426,65 +426,7 @@ void BuildV2Arena(AActor* Owner)
             }), .25f, true);
     }
 }
-void V2Event(UObject* Context, const TCHAR* Name, const FVector& Location)
-{
-    const bool Overclock = FCString::Strcmp(Name, TEXT("S_Overclock")) == 0;
-    if (!Overclock && FCString::Strcmp(Name, TEXT("S_Charge")) != 0) return;
-    UWorld* World = Context ? Context->GetWorld() : nullptr;
-    AActor* Owner = Cast<AActor>(Context);
-    if (!World || !Owner || !FApp::CanEverRender() || FParse::Param(FCommandLine::Get(), TEXT("NullRHI"))) return;
-    auto* Cube = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cube.Cube"));
-    auto* Material = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/Aegis/V2/Materials/M_V2Energy.M_V2Energy"));
-    static TArray<TWeakObjectPtr<UInstancedStaticMeshComponent>> Pool;
-    Pool.RemoveAll([](const TWeakObjectPtr<UInstancedStaticMeshComponent>& Item) { return !Item.IsValid(); });
-    if (Pool.Num() >= 8)
-    {
-        if (Pool[0].IsValid()) Pool[0]->DestroyComponent();
-        Pool.RemoveAt(0);
-    }
-    auto* C = V2Layer(Owner, TEXT(""), Cube, Material,
-                      Overclock ? FLinearColor(1.f, .47f, .08f) : FLinearColor(.15f, .85f, 1.f), true);
-    if (!C) return;
-    Pool.Add(C);
-    const int32 Count = Overclock ? 32 : 16;
-    const FVector Center = Overclock ? FVector(Location.X, Location.Y, 12) : Location;
-    for (int32 I = 0; I < Count; ++I)
-    {
-        const float A = 2 * PI * I / Count;
-        const float Radius = Overclock ? 252.f : 28.f;
-        V2Add(C, Center + FVector(FMath::Cos(A) * Radius, FMath::Sin(A) * Radius, 0),
-              FVector(Overclock ? .30f : .12f, .025f, .035f), FRotator(0, FMath::RadiansToDegrees(A) + 90, 0));
-    }
-    const float Started = World->GetTimeSeconds();
-    const TWeakObjectPtr<UWorld> WeakWorld(World);
-    const TWeakObjectPtr<UInstancedStaticMeshComponent> WeakComponent(C);
-    const TWeakObjectPtr<AAegisPortfolio> Portfolio(AAegisPortfolio::Find(World));
-    const TSharedRef<FTimerHandle> Handle = MakeShared<FTimerHandle>();
-    World->GetTimerManager().SetTimer(*Handle, FTimerDelegate::CreateLambda(
-        [WeakWorld, WeakComponent, Portfolio, Handle, Started, Overclock, Center, Count]()
-        {
-            if (!WeakWorld.IsValid()) return;
-            auto* W = WeakWorld.Get();
-            auto* Component = WeakComponent.Get();
-            const float Age = W->GetTimeSeconds() - Started;
-            if (!Component || Age >= (Overclock ? 6.f : .32f) ||
-                (Overclock && (!Portfolio.IsValid() || Portfolio->GetOverclockRemaining() <= 0)))
-            {
-                if (Component) Component->DestroyComponent();
-                W->GetTimerManager().ClearTimer(*Handle);
-                return;
-            }
-            for (int32 I = 0; I < Count; ++I)
-            {
-                const float A = 2 * PI * I / Count + (Overclock ? Age * .16f : 0.f);
-                const float R = Overclock ? 252.f : 28.f + Age * 150.f;
-                const float Width = Overclock ? .025f + .01f * FMath::Sin(Age * 6) : .03f * (1 - Age / .32f);
-                Component->UpdateInstanceTransform(I, FTransform(FRotator(0, FMath::RadiansToDegrees(A) + 90, 0),
-                    Center + FVector(FMath::Cos(A) * R, FMath::Sin(A) * R, 0),
-                    FVector(Overclock ? .30f : .12f, Width, .035f)), true, I == Count - 1, true);
-            }
-        }), .033f, true);
-}
+
 }
 bool V2Enabled()
 {
@@ -502,7 +444,12 @@ void Sound(UObject* Context, const TCHAR* Name, const FVector& Location, float V
 {
     if (!Enabled() || !Context)
         return;
-    if (V2Enabled()) V2Event(Context, Name, Location);
+    if (V2Enabled())
+    {
+        if (FCString::Strcmp(Name,TEXT("S_Charge"))==0) AAegisTacticalFX::Emit(Context,EAegisTacticalCue::ChargeRelease,Location);
+        else if (FCString::Strcmp(Name,TEXT("S_Repair"))==0) AAegisTacticalFX::Emit(Context,EAegisTacticalCue::Repair,Location);
+        else if (FCString::Strcmp(Name,TEXT("S_Overclock"))==0) AAegisTacticalFX::Emit(Context,EAegisTacticalCue::Overclock,Location);
+    }
     UWorld* World = Context->GetWorld();
     if (!World) return;
     FString ActualName(Name);
@@ -564,7 +511,7 @@ void BuildArena(AActor* Owner)
 {
     if (!Owner || !FApp::CanEverRender() || FParse::Param(FCommandLine::Get(), TEXT("NullRHI")))
         return;
-    if (V2Enabled()) { BuildV2Arena(Owner); AAegisPortfolioMusic::Ensure(Owner); return; }
+    if (V2Enabled()) { BuildV2Arena(Owner); AAegisPortfolioMusic::Ensure(Owner); AAegisTacticalFX::Ensure(Owner); return; }
     auto* Cube = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cube.Cube"));
     auto* Cylinder = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cylinder.Cylinder"));
     auto* Metal = LoadObject<UMaterialInterface>(
@@ -716,7 +663,7 @@ void AAegisCharacter::BuildPortfolioPresentation()
     const bool Flank = Bot && Bot->EnemyRole == EAegisEnemyRole::Flanker && !Friend;
     IdentityColor = Friend
                         ? (Companion ? FLinearColor(0.15f, 0.59f, 0.43f) : FLinearColor(0.58f, 0.75f, 0.79f))
-                        : (Elite   ? FLinearColor(0.46f, 0.10f, 0.35f)
+                        : (Elite   ? FLinearColor(0.62f, 0.17f, 0.10f)
                            : Flank ? FLinearColor(0.71f, 0.33f, 0.055f)
                                    : FLinearColor(0.57f, 0.13f, 0.09f));
     if (AegisPortfolioPresentation::V2Enabled())
@@ -729,7 +676,7 @@ void AAegisCharacter::BuildPortfolioPresentation()
         if (Armor && Shard && Ceramic && Basalt && Energy)
         {
             IdentityColor = Friend ? (Companion ? FLinearColor(.10f, .64f, .46f) : FLinearColor(.66f, .78f, .83f))
-                : (Elite ? FLinearColor(.45f, .12f, .52f) : Flank ? FLinearColor(.76f, .38f, .075f) : FLinearColor(.59f, .16f, .12f));
+                : (Elite ? FLinearColor(.62f, .18f, .095f) : Flank ? FLinearColor(.76f, .38f, .075f) : FLinearColor(.59f, .16f, .12f));
             ActorMaterial = Energy;
             BodyMaterial = UMaterialInstanceDynamic::Create(Ceramic, this);
             BodyMaterial->SetVectorParameterValue(TEXT("Tint"), IdentityColor);

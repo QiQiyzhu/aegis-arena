@@ -123,7 +123,8 @@ void AAegisV2Probe::Tick(float DeltaSeconds)
         Tap(EKeys::E); Advance(11); break;
     case 11:
         if (!Check(TEXT("small_repair_cooldown_rejects_repeat"), Portfolio->GetEnergy() == 52 && S.RepairsUsed == 1 && S.EnergySpent == 8)) return;
-        PreviousPawn = Player; Tap(EKeys::R); Advance(12); break;
+        // Release profile requires a second real R press to confirm the restart.
+        PreviousPawn = Player; Key(EKeys::R,true); Key(EKeys::R,false); Tap(EKeys::R); Advance(12); break;
     case 12:
         if (!Check(TEXT("restart_resets_route_energy_charge"), TWeakObjectPtr<AAegisPlayerCharacter>(Player) != PreviousPawn &&
             Phase == aegis::TrialPhase::Briefing && !Runner->IsNorthRouteFirst() && !Player->IsCharging() && Portfolio->GetEnergy() == 60 && S.RepairsUsed == 0)) return;
@@ -158,7 +159,8 @@ void AAegisV2Probe::Tick(float DeltaSeconds)
     case 19:
         if (!Check(TEXT("insufficient_energy_full_charge_release_is_free"), !Player->IsCharging() && Portfolio->GetEnergy() == 8 &&
             S.ChargedShots == 1 && FirstTarget->Health->Current == 48 && SecondTarget->Health->Current == 48)) return;
-        PreviousPawn = Player; Tap(EKeys::R); Advance(20); break;
+        // Release profile requires a second real R press to confirm the restart.
+        PreviousPawn = Player; Key(EKeys::R,true); Key(EKeys::R,false); Tap(EKeys::R); Advance(20); break;
     case 20:
         if (!Check(TEXT("second_restart_resets_all_v2_state"), TWeakObjectPtr<AAegisPlayerCharacter>(Player) != PreviousPawn &&
             Phase == aegis::TrialPhase::Briefing && Portfolio->GetEnergy() == 60 && S.ChargedShots == 0 && S.Overclocks == 0 && !Portfolio->IsOverclockUsed())) return;
@@ -195,7 +197,8 @@ void AAegisV2Probe::Tick(float DeltaSeconds)
         if (FPlatformTime::Seconds()-StageWall < 0.4) return;
         if (!Check(TEXT("overclock_pause_freezes_timer"), PC->IsPaused() &&
             FMath::Abs(GetWorld()->GetTimeSeconds()-PausedGame) < 0.001 && FMath::Abs(Portfolio->GetOverclockRemaining()-OverclockBefore) < 0.001)) return;
-        PreviousPawn = Player; Tap(EKeys::R); Advance(29); break;
+        // Release profile requires a second real R press to confirm the restart.
+        PreviousPawn = Player; Key(EKeys::R,true); Key(EKeys::R,false); Tap(EKeys::R); Advance(29); break;
     case 29:
         if (!Check(TEXT("overclock_restart_clears_used_route_and_energy"), !PC->IsPaused() && TWeakObjectPtr<AAegisPlayerCharacter>(Player) != PreviousPawn &&
             Phase == aegis::TrialPhase::Briefing && !Runner->IsNorthRouteFirst() && Portfolio->GetEnergy() == 60 &&

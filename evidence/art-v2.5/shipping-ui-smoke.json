@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "date": "2026-10-07",
+  "method": "Computer Use keyboard input and visible window inspection on the actual Windows Shipping payload, launched through the outer AegisArena.exe without flags",
+  "humanPlaytest": false,
+  "shippingBinarySha256": "37e7874e70e24514f556269677c41712008c362176683c1460bc1b87a64ac853",
+  "checks": {
+    "outerLauncherStartsNewTacticalBriefing": true,
+    "chineseAndEnglishBriefingReadable": true,
+    "kTogglesLowEffectsWithVisibleConfirmation": true,
+    "enterStartsCombatAndFourSkillDeckVisible": true,
+    "escapeOpensReadablePauseMenu": true,
+    "restartShowsConfirmationAndEscapeCancelsToPause": true,
+    "f11SwitchesToBorderless": true,
+    "pauseMenuXClosesGame": true,
+    "freshLaunchPreservesEnglishLowEffectsAndBorderless": true
+  },
+  "notes": [
+    "The outer bootstrap launcher handed off to the Shipping child process; the child window was rediscovered before interaction.",
+    "After final persistence inspection, user input was detected; a fresh observation showed Chinese windowed briefing. No further automation was sent to the game.",
+    "Native fixture checks and the full simulated-input mission are recorded separately in native-validation.json."
+  ],
+  "limits": [
+    "Short interaction smoke on one Windows computer, not a full natural playthrough or broad hardware compatibility test",
+    "No fresh-machine prerequisite installation or human audio review",
+    "No new real Alt-Tab test in this version's Shipping smoke; native focus callback regression is separate"
+  ]
+}
