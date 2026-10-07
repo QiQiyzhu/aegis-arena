@@ -1,110 +1,44 @@
-# Aegis Arena
+# Aegis Arena · 棱镜坠落
 
-**Unreal C++ Game AI Systems & Evaluation Lab**
+一款单人科幻俯视角射击游戏。与 AI 队友协作，夺回中继、传输数据并撤离；途中选择升级，扫描可选档案获得补给或密钥。
 
-A small AI architecture and evaluation project: one arena specification, a player, a companion, an enemy, and an elite variant. The goal is explainable decisions and reproducible evidence, not content volume.
+## ▶ 下载后直接玩
 
-**Current status: real UE 5.8.2 Editor/Game builds, ten saved native assets, five Core Automation tests, one game-world Functional Test, 60 native policy episodes and 12 rendered performance episodes have passed. Standalone Development and Shipping packages have been built and launched; Development batch output and the Shipping diagnostic boundary were checked.** [Current acceptance ledger](docs/status.md).
+**[下载 Windows 试玩版](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v2.4.0-rc.1)** · **[详细游玩说明](docs/PLAY.md)** · [版本与验证](docs/release-v2.4.md)
 
-![Actual Unreal Engine 5.8.2 arena capture](docs/media/unreal-arena.gif)
+1. 打开上方下载页，在 **Assets** 中下载 **`Aegis-Arena-v2.4.0-rc.1-Windows.zip`**。不要选择 `Source code`。
+2. 右键 ZIP → **全部解压缩**，保留整个文件夹。
+3. 双击 **`PLAY-Aegis.cmd`**（也可以打开 `AegisArena.exe`），按 **Enter** 开始。
 
-*Thirteen actual engine frames sampled every 0.5 game seconds, resized to 960×540. The 2 fps GIF sampling rate is not gameplay performance. Primitive geometry, movable lights and original AI diagnostics; no mock engine screenshots.*
+无需 Unreal 编辑器、Python、账号或 API Key。面向 Windows 10/11 64 位电脑，使用键盘和鼠标；最低硬件要求尚未完成系统测定。
 
-[Download Windows builds](https://github.com/QiQiyzhu/aegis-arena/releases/tag/v1.0.0-native) · [Run and acceptance details](docs/release.md)
+| 最常用操作 | 按键 |
+|---|---|
+| 移动 / 瞄准 | WASD / 鼠标 |
+| 射击 / 蓄能射击 | 左键 / 按住右键后释放 |
+| 闪避 | Space |
+| 脉冲 / 修复 / 中继超频 | Q / E / F |
+| 暂停 | Esc 或 P |
+| 退出游戏 | 暂停菜单或结算页中按 X |
 
-**Start the technical review here:** [When the companion survives but the team does not](docs/decision-case-study.md). Trace 30 paired native outcomes, a real counterexample, an episode-termination confound and an Automation false positive. [30-second / 3-minute / 8-minute walkthrough](docs/interview-deep-dive.md) · [Reproducible data for preference exploration](evidence/unreal/decision-case.json). The preference index only reweights existing observations; it does not run a new policy.
+**第一次玩：跟随当前目标，留意共享能量，最后亲自进入撤离区。** L 切换中英文；M 开关音乐。更多队友指令、扫描与路线操作见 [游玩说明](docs/PLAY.md)。
 
-## Verified evidence
+这是经过本机验证的独立游戏试玩候选版，包含一张竞技场和三阶段任务。没有多人联机，也没有中途存档恢复；当前局退出后需重新开始。已知限制与本次测试范围见 [v2.4 记录](docs/release-v2.4.md)。
 
-| Evidence | Result | Source |
-|---|---|---|
-| Strict C++17 build | Clang 20.1.2 through Zig 0.15.2; warnings treated as errors | [Build + assertions](evidence/portable/evaluation/report.json) |
-| Core assertions | 325 passed | [Tests](core/tests/tests.cpp) |
-| Python tool and evidence tests | 16 passed: 7 tool/integration, 2 native acceptance-gate and 7 endpoint reanalysis cases | [Tools](scripts/test_tools.py), [Reanalysis](scripts/test_decision_case.py) |
-| Fixed evaluation set | 60 episodes: 30 priority + 30 utility | [Raw episodes](evidence/portable/evaluation/episodes.json) |
-| CPU model sampling | 20 episodes, 1 / 10 / 25 / 50 enemies | [Results](evidence/portable/performance/report.json) |
-| UE 5.8.2 Game Development build | MSVC 14.50.35738 + Windows SDK 26100: compiled and linked | [Actual build/cook log](evidence/unreal/environment/development-package.log) |
-| UE 5.8.2 Game Shipping build | Compiled and linked; nine debug markers absent (static check) | [Actual binary gate](evidence/unreal/environment/shipping-string-gate.json) |
-| UE Editor and saved asset inspection | Actual Editor compilation; ten native assets, real BT/BB/EQS wiring and navigation bounds | [Inspection](evidence/unreal/asset-inspection.json) |
-| UE Core Automation / Functional Test | 5 / 1 passed; Functional executes 12 PIE world assertions | [Automation](evidence/unreal/automation/index.json), [Functional](evidence/unreal/functional/index.json) |
-| Native policy comparison | 60 real UE episodes, paired seeds, fixed game timestep + NullRHI | [Native evaluation](docs/native-evaluation.md) |
-| Rendered native sampling | 12 sustained 15s episodes, four loads, D3D12 / RTX 4060 Laptop | [Performance and limits](docs/performance.md) |
+<details>
+<summary>开发者：源码、构建与历史证据</summary>
 
-In the native four-enemy stress encounter, both policies won **0/30**. Utility had fewer companion deaths **at episode termination (6 vs 25)**, but higher cumulative player damage taken and lower allied damage output. Its episodes also ended earlier on average, changing the companion's observation window. This endpoint cannot establish improved protection or longer companion survival. The difficulty creates a win-rate floor; these results do not establish overall policy superiority. [Native results and uncertainty](docs/native-evaluation.md). The [earlier portable model results](docs/evaluation.md) remain separate.
+Unreal 项目使用 UE 5.8.x 与配套 Windows C++ 工具链。可移植 C++ 层可独立验证：
 
-## Run the verified layer
-
-Requirements: Python 3.10+, a C++17 compiler (`clang++` / `g++` / Zig). No Python packages are required for tests or benchmarks. Pillow is needed only to regenerate the animation.
-
-From a fresh clone, enter the repository directory and run this single command on Linux with `g++` installed:
-
-```bash
+```sh
+python3 -m pip install -r requirements-media.txt
 python3 scripts/verify_portable.py --compiler g++
 ```
 
-It builds both executables, runs the core assertions and sixteen Python test cases, then runs the two-episode smoke configuration. No prebuilt binary, ignored local toolchain, Pillow, engine installation or credentials are required. Logs and raw JSON/CSV go to a new timestamped directory under `outputs/`. Add `--full` to include all 60 evaluation episodes.
+原生构建请读 [Unreal 安装与验收](docs/unreal-setup.md)。GitHub 的 Portable CI 验证可移植核心和 Python 工具，不代表云端构建或运行了 Unreal。
 
-Windows with an existing compiler:
+[架构](docs/architecture.md) · [AI 设计](docs/ai-design.md) · [历史首页](docs/readme-history-before-v24.md) · [v2.3 交付](docs/portfolio-v2.3-delivery.md) · [源码许可](LICENSE) · [资产来源](ASSETS.md)
 
-```powershell
-python scripts/verify_portable.py --compiler 'D:/Tools/zig/zig.exe'
-```
+当前主模式使用战术规则队友；Decision Lab 和云端 Copilot 是单独的历史实验入口，不需要它们即可游玩。没有 RL 训练或新策略效果提升声明。项目由用户提出方向，Codex 协助开发、测试和文档；自动化操作不等于真人研究。Unreal 运行时保留 Epic 自身许可。
 
-Replace that example with your actual absolute `zig.exe` or `clang++.exe` path. If a supported compiler is already on PATH, omit `--compiler`.
-
-Individual commands remain available:
-
-```bash
-python3 scripts/build_portable.py --compiler g++
-python3 -m unittest discover -s scripts -p 'test_*.py' -v
-python3 scripts/run_benchmark.py --scenario scenarios/smoke.json --output outputs/my-smoke
-python3 scripts/run_benchmark.py --scenario scenarios/evaluation.json --output outputs/my-evaluation
-python3 scripts/run_benchmark.py --scenario scenarios/performance.json --output outputs/my-performance
-```
-
-CMake is also supported: `cmake -S . -B build-cmake`, `cmake --build build-cmake --config Release`, then `ctest --test-dir build-cmake -C Release --output-on-failure`. This CMake path builds/runs C++ tests; use the Python commands above for the scenario/report pipeline. The repository does not download tools automatically. Existing report directories cannot be overwritten accidentally.
-
-The [portable GitHub Actions workflow](.github/workflows/portable.yml) uses Ubuntu `g++`, runs the same strict build, sixteen Python tests, smoke and full evaluation configurations, and uploads raw JSON/CSV plus build provenance. **It does not install or execute Unreal.** See the [hosted per-commit runs and evaluation artifacts](https://github.com/QiQiyzhu/aegis-arena/actions/workflows/portable.yml) for the current branch result.
-
-## Unreal adapter
-
-Target **UE 5.8.2**, compatible MSVC, Windows SDK and the additional .NET Framework SDK required by the Editor build. Follow [the exact installation/build/asset/acceptance procedure](docs/unreal-setup.md). The ten checked-in map/AI/material assets were generated and saved by the actual Unreal editor. Engine primitive assets remain references to the installed engine. `-GenerateAssets` is only for an intentionally asset-free checkout; it refuses to overwrite the included maps.
-
-```powershell
-./scripts/build_unreal.ps1 -EngineRoot 'D:/Program Files/UE_5.8' -CacheRoot 'D:/AegisWork' -Automation
-```
-
-C++ owns health, faction filtering, ranged/melee traces, cooldowns, observation boundaries, utility scores, director constraints, scenario capture, and debug controls. **Blueprint/assets own BT/EQS graph composition, asset references, presentation tuning, and map configuration.** StateTree and Learning Agents are not enabled: [why](docs/rl-experiment.md).
-
-```mermaid
-flowchart LR
-    P[AI Perception events] --> O[Authorized observation snapshot]
-    O --> B[Blackboard]
-    O --> U[Pure C++ utility scorer]
-    U --> B
-    B --> T[Behavior Tree selectors and services]
-    T --> Q[EQS spatial queries]
-    Q --> N[Navigation / combat commands]
-    T --> N
-    N --> G[Character + health + combat]
-    G --> R[Scenario Runner JSON / CSV]
-    G --> D[Bounded Director]
-    R --> E[Evaluation report]
-```
-
-## Review and interview
-
-- [Architecture / ownership](docs/architecture.md)
-- [AI design / BT asset specification](docs/ai-design.md)
-- [Native evaluation / raw data and limitations](docs/native-evaluation.md)
-- [EQS failure investigation and actual runtime diagnostics](docs/eqs-debugging.md)
-- [Separate portable evaluation / metric definitions](docs/evaluation.md)
-- [Performance / limits of these measurements](docs/performance.md)
-- [RL experiment status](docs/rl-experiment.md)
-- [A–T interview dossier: architecture, 10 code exercises, 20 follow-ups, five honest bullets](docs/interview-dossier.md)
-- [Original interview guide](docs/interview-guide.md)
-- [Acceptance ledger and remaining scope](docs/status.md)
-- [Verified packaged release](docs/release.md)
-- [AI-assisted development log and verification responsibility](docs/ai-development-log.md)
-
-Code is MIT licensed. Primitive geometry is authored here; Engine default mesh references resolve from the user's licensed Unreal installation. No downloaded art or marketplace packs are included. Source licensing does not relicense the Unreal runtime distributed with packaged builds. [Provenance](ASSETS.md).
+</details>

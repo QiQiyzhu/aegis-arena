@@ -1,0 +1,44 @@
+{
+  "case": "focus_zh",
+  "instruction": "攻击视野中的敌人，然后重新集结。",
+  "expectedSkill": "focus_visible",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1963.2870999994338,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": false,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "attack_target_relay",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "capture_relay",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 61,
+    "prompt_tokens": 269,
+    "total_tokens": 330,
+    "prompt_tokens_details": {
+      "cached_tokens": 127
+    }
+  },
+  "timings": {
+    "cache_n": 127,
+    "prompt_n": 142,
+    "prompt_ms": 438.18,
+    "prompt_per_token_ms": 3.085774647887324,
+    "prompt_per_second": 324.067734720891,
+    "predicted_n": 61,
+    "predicted_ms": 1502.915,
+    "predicted_per_token_ms": 25.048583333333333,
+    "predicted_per_second": 39.92241743545044
+  }
+}

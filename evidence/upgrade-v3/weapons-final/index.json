@@ -1,0 +1,429 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "767312A9496280CCE8A4F9945F4793A1",
+			"instanceName": "雨竹砌筑-14812",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-19.57.27",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 2.3030476570129395,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Weapons rules - fixed geometry and seeded windup",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisWeaponsFunctional.Weapons rules - fixed geometry and seeded windup",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"767312A9496280CCE8A4F9945F4793A1"
+			],
+			"duration": 2.3030476570129395,
+			"dateTime": "2026.09.10-19.57.25",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Weapons fixture runs in begun play game world)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Weapons fixture has isolated offscreen input context)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Weapons fixture owns a local player controller)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Fresh player preserves baseline combat and disabled upgrades)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse requires explicit trial opt in)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse fixture contains a pending seeded shot warning)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Enabled pulse activation uses real gameplay entry)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse applies exactly thirty two damage to visible hostile)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (World cover blocks pulse damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse cannot hit beyond radius)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Normal pulse neither damages allies nor restores health)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Normal pulse cannot revive dead companion)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse staggers hostile and immediately cancels controller warning)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Stagger blocks both ranged and melee combat)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse cooldown rejects duplicate without additional damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.25"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Stagger expires and permits combat again)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Restorative upgrade uses the same pulse activation)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Restorative pulse heals self by twelve)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Restorative pulse heals visible companion by twenty)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (World cover blocks companion restoration)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Restorative pulse cannot revive a dead companion)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Baseline shot stops at first hostile for fourteen damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Piercing round damages two distinct hostiles once each)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Piercing round stops after two hostiles from one attack)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Cover after first hostile blocks piercing continuation)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.26"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Ally after first hostile blocks piercing and receives no damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Ally at muzzle blocks entire piercing shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Cover at muzzle blocks entire piercing shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Piercing continuation retains original total range)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Pulse cooldown tuning controls actual ability and HUD duration)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Assertion passed (Fresh pawn clears upgrades activation counters and cooldown tuning)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Weapons rules - fixed geometry and seeded windup: Weapons rules verified with isolated fixed geometry",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.27"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

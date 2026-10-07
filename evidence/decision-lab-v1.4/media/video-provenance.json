@@ -1,0 +1,1247 @@
+{
+  "scope": "Native Unreal packaged diagnostic replay, scripted player; sampled PNGs, no generated gameplay frames",
+  "captureSource": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture",
+  "policy": "improved",
+  "seed": 2003,
+  "enemyCount": 2,
+  "frameCount": 200,
+  "firstGameSeconds": 0.3166666831821203,
+  "lastGameSeconds": 60.00000312924385,
+  "command": [
+    "D:\\AegisWork\\Tools\\decision-video\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-nostdin",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\video-frames.ffconcat",
+    "-vf",
+    "fps=30",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "20",
+    "-pix_fmt",
+    "yuv420p",
+    "-threads",
+    "2",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Aegis Arena native UE replay - scripted player",
+    "-metadata",
+    "comment=Original Unreal PNG frames; fixed game timestep; sampled screenshots; diagnostic run excluded from holdout.",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\decision-lab-v1.4\\media\\decision-demo.mp4"
+  ],
+  "ffmpegSha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+  "videoSha256": "e1975d809b61e03e3baacd2dcbd52d149ddab9e17331e1f0e2ffa8fa2256b4bf",
+  "rawFrames": [
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0000.png",
+      "sha256": "0754b3f87efe38605870f5ecfa279ee3a3f786deb55e3fc96b99664d39265912",
+      "gameSeconds": 0.3166666831821203,
+      "decisionSequence": 1
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0001.png",
+      "sha256": "754c5951dd4d24b9dc707f448784b4e92572fefa372af8cd67d1942e2004d229",
+      "gameSeconds": 0.6166666988283396,
+      "decisionSequence": 3
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0002.png",
+      "sha256": "308c8e2986c1839aef48419ef3991de05a8e1a2ffe19895cb2c39116a7918db7",
+      "gameSeconds": 0.9166667144745588,
+      "decisionSequence": 4
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0003.png",
+      "sha256": "ca99f4bcbd354a0d3d0cc1c6ff922870e7bf9a7aaca8a7724d5396e1cd5cb3d4",
+      "gameSeconds": 1.200000062584877,
+      "decisionSequence": 5
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0004.png",
+      "sha256": "9c133dc0de633c7d0ec8895bf92f6f6e805b787f3b4163a9d5d63f7e2ef72721",
+      "gameSeconds": 1.5000000782310963,
+      "decisionSequence": 7
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0005.png",
+      "sha256": "f237abb4ef7909498c18337a3ccd36b169764aa95f61a7ced5aaf926dff6704c",
+      "gameSeconds": 1.8000000938773155,
+      "decisionSequence": 8
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0006.png",
+      "sha256": "c1ba5e9197980e50eaabd5024eab78dbb38d442a95b65e037310b8acf712729a",
+      "gameSeconds": 2.1000001095235348,
+      "decisionSequence": 10
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0007.png",
+      "sha256": "1b147e983eb93e9828d26b2ab5e4d003ba97a95a70d308e178d107a6d59b63ec",
+      "gameSeconds": 2.400000125169754,
+      "decisionSequence": 11
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0008.png",
+      "sha256": "592679f5227ff8e6a58130d238ca249f857508ff3573f6225b52bbf356f50b55",
+      "gameSeconds": 2.7000001408159733,
+      "decisionSequence": 13
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0009.png",
+      "sha256": "b6d78b2c59fbdbbc47550eb17f6c6a5500f9b538ae696bfed23d32ad1e008ffe",
+      "gameSeconds": 3.0000001564621925,
+      "decisionSequence": 14
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0010.png",
+      "sha256": "03b5de92720ec21fe6561adcbaacbc72ee9e285b2c402886fe6fcf757a855535",
+      "gameSeconds": 3.300000172108412,
+      "decisionSequence": 16
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0011.png",
+      "sha256": "b8042f51f6921fb699c1d2b2c7c2519f9cd31671c4fa716dcb5fff5a50b7bde2",
+      "gameSeconds": 3.600000187754631,
+      "decisionSequence": 17
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0012.png",
+      "sha256": "436c4ca11814606f3e24bf988315b76e8171aec960b7bad4e0aeaa55bfb7e1d3",
+      "gameSeconds": 3.9000002034008503,
+      "decisionSequence": 18
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0013.png",
+      "sha256": "3125eecfba44560ea60b5c396891c4af853e9b9fcec0f25572df71cc9f8532d5",
+      "gameSeconds": 4.2000002190470695,
+      "decisionSequence": 20
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0014.png",
+      "sha256": "01227f7ecabcb8d966d2a5c5972f4110cd6ccc25e250937c67e2fed540a33af9",
+      "gameSeconds": 4.500000234693289,
+      "decisionSequence": 21
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0015.png",
+      "sha256": "1fe252e39d7b7af5cb12257c31185b64c0bcf79a95d5dbce7d981dbbe4f88e39",
+      "gameSeconds": 4.800000250339508,
+      "decisionSequence": 23
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0016.png",
+      "sha256": "d86df989fa9918c91af1c30666fd3b3d5bb62c1fb8c2aa0717187020846b478c",
+      "gameSeconds": 5.100000265985727,
+      "decisionSequence": 24
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0017.png",
+      "sha256": "395455b55316bcfe70632399462092549bd13e61d8239923b11e826cb07a1637",
+      "gameSeconds": 5.400000281631947,
+      "decisionSequence": 26
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0018.png",
+      "sha256": "2b1eecf1e4ff54f97b53d7a2e165d8ed5078ce8dc6601864ff7ea0ba50ff8d36",
+      "gameSeconds": 5.700000297278166,
+      "decisionSequence": 27
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0019.png",
+      "sha256": "0eb3305b400c1ed4a1588c82e7116c38c0b36c3f094f2ba30db2bce345d30be8",
+      "gameSeconds": 6.000000312924385,
+      "decisionSequence": 29
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0020.png",
+      "sha256": "81be5f3858126f9ac9656e496f87ee6b2be866aa8b7da0ce7bc67b1428d688a4",
+      "gameSeconds": 6.300000328570604,
+      "decisionSequence": 30
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0021.png",
+      "sha256": "93d91c6d046c20ab97a649d834dab385400bdb24edf17f7b5badf5b48b4c9caa",
+      "gameSeconds": 6.600000344216824,
+      "decisionSequence": 32
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0022.png",
+      "sha256": "0224d0378875aae4122d1313142a7e7b31471e675b07f802c1b3f94b887b8c2b",
+      "gameSeconds": 6.900000359863043,
+      "decisionSequence": 33
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0023.png",
+      "sha256": "d6123c6dff657df5f067375c9a637a13d150ac7890a69d0c64ba96a98ef545e9",
+      "gameSeconds": 7.200000375509262,
+      "decisionSequence": 35
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0024.png",
+      "sha256": "6b81b8c0a51d1ba8d9fe5a711db365c1a3655d3cda6c4c32eeb2f25468599a65",
+      "gameSeconds": 7.500000391155481,
+      "decisionSequence": 36
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0025.png",
+      "sha256": "dae0a2ef51b2c7ed55efc991120c5051dc14b026f73ab04a0856e58e8b6ef0ff",
+      "gameSeconds": 7.800000406801701,
+      "decisionSequence": 38
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0026.png",
+      "sha256": "0d21afe3a8d7f12a85decdde374fa5992f87e671e1c1991687cd53cbf840c29a",
+      "gameSeconds": 8.10000042244792,
+      "decisionSequence": 39
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0027.png",
+      "sha256": "c9535c7579a113b8e709942d658d826d115e8124f536ceb98092cc8a40d15538",
+      "gameSeconds": 8.400000438094139,
+      "decisionSequence": 40
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0028.png",
+      "sha256": "ca0c150dbf9faaa6cafbd5de3befc30144737afb983cdcc7e3f01e19b5077146",
+      "gameSeconds": 8.700000453740358,
+      "decisionSequence": 42
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0029.png",
+      "sha256": "d3254a30cff5185535196f72e5d41c98d70a9215745ac69ef7e67eae13123c9e",
+      "gameSeconds": 9.000000469386578,
+      "decisionSequence": 43
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0030.png",
+      "sha256": "c3e4a6ffbea8e5f382b49b4ee8dc72cf1423ec2505a418a997df708cf98b71f5",
+      "gameSeconds": 9.300000485032797,
+      "decisionSequence": 45
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0031.png",
+      "sha256": "e929f844c5615153df60a5d981118424e4d24a234361ed897ea71a68b5bf7f2d",
+      "gameSeconds": 9.600000500679016,
+      "decisionSequence": 46
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0032.png",
+      "sha256": "1e6197cac4a922bae291c0f68fbf1cb98a5b09ed91377dc528ad2a482014f7f7",
+      "gameSeconds": 9.900000516325235,
+      "decisionSequence": 48
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0033.png",
+      "sha256": "f0aa672a2e3866d1fdc2304182f3255cfd92a9261fde9e950373642b5a7e845b",
+      "gameSeconds": 10.200000531971455,
+      "decisionSequence": 49
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0034.png",
+      "sha256": "6fcb6c6edfa9ea6576a92e10743b32b2603dfff53f295744e0ae4004bfd60d4b",
+      "gameSeconds": 10.500000547617674,
+      "decisionSequence": 51
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0035.png",
+      "sha256": "f69e34c1ff9fabc56f46c2cac7e8e256f709bc7474ef334838383f42c7f43d30",
+      "gameSeconds": 10.800000563263893,
+      "decisionSequence": 52
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0036.png",
+      "sha256": "fa8f86e1dbf4b1de882490fcc49ef8a48909eeb22f742ddec4f81d2f4c5a9e62",
+      "gameSeconds": 11.100000578910112,
+      "decisionSequence": 54
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0037.png",
+      "sha256": "3b4dec6f9509765e4877690243346d52fdc6a363e67265a436b5834f7d858fc3",
+      "gameSeconds": 11.400000594556332,
+      "decisionSequence": 55
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0038.png",
+      "sha256": "ad57c75383d217f3711209e433113c24c81b38849849d545bca07cfcc0876858",
+      "gameSeconds": 11.70000061020255,
+      "decisionSequence": 57
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0039.png",
+      "sha256": "9b7f18029be9fd3ee4550c63fd620f909abb4e6266a975c1cf23d370ea019fc6",
+      "gameSeconds": 12.00000062584877,
+      "decisionSequence": 58
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0040.png",
+      "sha256": "c781d42324fbc8372ac01e01d51d491d4c574e653bd28db02436d25fd4c6fcc8",
+      "gameSeconds": 12.30000064149499,
+      "decisionSequence": 59
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0041.png",
+      "sha256": "9996fca6239bc323d3b208aed341766bc568713897a6c61e0d9dbf6c6f6e18c5",
+      "gameSeconds": 12.600000657141209,
+      "decisionSequence": 61
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0042.png",
+      "sha256": "877977e8e64fcfd545d59e32ddf919448db81f160339d483c34bf64b2b4102da",
+      "gameSeconds": 12.900000672787428,
+      "decisionSequence": 62
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0043.png",
+      "sha256": "64e1ef022531aeceb109c3f150e1db66f4679fe60a14aa6e83213087d04bd0f7",
+      "gameSeconds": 13.200000688433647,
+      "decisionSequence": 64
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0044.png",
+      "sha256": "326bc78a370b120561d88dbc3191d90495095f610ea185b617e39aba9c718486",
+      "gameSeconds": 13.500000704079866,
+      "decisionSequence": 65
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0045.png",
+      "sha256": "81430fc8db8c4cc561344c9309b3f098c1ee91b671cea783d12e849638f2ec89",
+      "gameSeconds": 13.800000719726086,
+      "decisionSequence": 67
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0046.png",
+      "sha256": "8b026a8238e0b595a4a2bca84c1fc368888128a4f06ad3d9af9d14b031c36ab3",
+      "gameSeconds": 14.100000735372305,
+      "decisionSequence": 68
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0047.png",
+      "sha256": "cd7944bd0e36ebf271195752f1ba6ae71a34f50c016ac5e74f33c4b52c8f9f0c",
+      "gameSeconds": 14.400000751018524,
+      "decisionSequence": 70
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0048.png",
+      "sha256": "bdcb63278334a94a20304523773467b8c303d125042ecf23a7be8a15b02fc1d0",
+      "gameSeconds": 14.700000766664743,
+      "decisionSequence": 71
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0049.png",
+      "sha256": "64db3d69deeef70ca93851810ea3f560e04e1ed733dbe4e02d1ce6d34dd44083",
+      "gameSeconds": 15.000000782310963,
+      "decisionSequence": 73
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0050.png",
+      "sha256": "5fbcd2c8e5f7396519dc7d068d99037900446605802df4b873d3aa64d52d17cb",
+      "gameSeconds": 15.300000797957182,
+      "decisionSequence": 74
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0051.png",
+      "sha256": "3f74d1a61aae0ade18d16d61a388b9e8af232e3c1c094b17265bdb1d46047ea9",
+      "gameSeconds": 15.600000813603401,
+      "decisionSequence": 76
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0052.png",
+      "sha256": "f2057025a65054e90b2c58d1b5be8df309026947dababa722bfb81207880c66b",
+      "gameSeconds": 15.90000082924962,
+      "decisionSequence": 77
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0053.png",
+      "sha256": "2911b10f2fea478b47d86c0bab558e2c43acf8f6e807cf46e4db12251114f6e4",
+      "gameSeconds": 16.20000084489584,
+      "decisionSequence": 79
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0054.png",
+      "sha256": "486a3628c6d9aee4b751e5b07e6225addeb5e7c880baf7e92e180afdb9432b30",
+      "gameSeconds": 16.50000086054206,
+      "decisionSequence": 80
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0055.png",
+      "sha256": "2ff72196b529bb5b9d51ef97e4d09b0eb84a195936ef38bc8a0333c06281addf",
+      "gameSeconds": 16.800000876188278,
+      "decisionSequence": 81
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0056.png",
+      "sha256": "74f42ab26c742c359b3efb4a65e5b83c2b1ea8fe62c8a1c522e8ef4b1003ef3b",
+      "gameSeconds": 17.100000891834497,
+      "decisionSequence": 83
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0057.png",
+      "sha256": "a93be801a7051aaf550aa036c038f49e95d03be7458bf095ab6bf5c5872d1904",
+      "gameSeconds": 17.400000907480717,
+      "decisionSequence": 84
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0058.png",
+      "sha256": "47cc870128e9cebabf4a5b098f8e4cdd5446e651047e17b3ecf0bae070314dc1",
+      "gameSeconds": 17.700000923126936,
+      "decisionSequence": 86
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0059.png",
+      "sha256": "8e76e4e1ee86c9b69c14693381b3b5622bf07e72ed4cf6c852e9ecaa28f825eb",
+      "gameSeconds": 18.000000938773155,
+      "decisionSequence": 87
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0060.png",
+      "sha256": "8f85458d952f26f43a3a2a444fbceefd72c2fa53c9e9e107669db7fbce865939",
+      "gameSeconds": 18.300000954419374,
+      "decisionSequence": 89
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0061.png",
+      "sha256": "75207e7237a63d9728cc0a92fb707b749618e635e235254a1222191bd6b16112",
+      "gameSeconds": 18.600000970065594,
+      "decisionSequence": 90
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0062.png",
+      "sha256": "6f538ff88f2ac00fb8e56e65988fff2aaffc5c5036c12d1b2b14d71e638a499b",
+      "gameSeconds": 18.900000985711813,
+      "decisionSequence": 92
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0063.png",
+      "sha256": "d9eee306dbfa2b9a60a17ea3d32ac17be061f13d9f0c54e623c6daa6be8b05d6",
+      "gameSeconds": 19.200001001358032,
+      "decisionSequence": 93
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0064.png",
+      "sha256": "f994818406dbc0c2084e480cb2ce4be073a54d698472f1f567a2c3b38b88a072",
+      "gameSeconds": 19.50000101700425,
+      "decisionSequence": 95
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0065.png",
+      "sha256": "69fa3d97fb32e39ccba8cb225d59e2a485bb458a97b4a1b906e162d23917c61f",
+      "gameSeconds": 19.80000103265047,
+      "decisionSequence": 96
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0066.png",
+      "sha256": "6225376dc33c58855d8ce3796540e8603c67e14c52b5bafb70d9532f1c0c1c4c",
+      "gameSeconds": 20.10000104829669,
+      "decisionSequence": 97
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0067.png",
+      "sha256": "031fd0253e5289d8e8670a315a8d5651f4657d024b073c35ca84c7921f40ffaf",
+      "gameSeconds": 20.40000106394291,
+      "decisionSequence": 99
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0068.png",
+      "sha256": "5d26b1d122aa34b8be72d11b1e50850b4d6685fed8bec51803efe51a574ea7db",
+      "gameSeconds": 20.70000107958913,
+      "decisionSequence": 100
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0069.png",
+      "sha256": "1a8fe51750cd8997012e734cc81e4a09dd21d3e927abdc19a0983fcd1e140846",
+      "gameSeconds": 21.000001095235348,
+      "decisionSequence": 102
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0070.png",
+      "sha256": "5342f90133b576fb99ba513ae2f09cbaa7e54564313e5bfe6df740944b459f18",
+      "gameSeconds": 21.300001110881567,
+      "decisionSequence": 103
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0071.png",
+      "sha256": "fd64a234a77a7c4dd72dbe5afbd4ed3220a321a6d8c71910ef008df53fcb88fc",
+      "gameSeconds": 21.600001126527786,
+      "decisionSequence": 105
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0072.png",
+      "sha256": "1942d157ba5c2405948b82428332cd934ec079d781ed0f35f9930a27ec6245c0",
+      "gameSeconds": 21.900001142174006,
+      "decisionSequence": 106
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0073.png",
+      "sha256": "2f383855190c425c0853671b986f20174a392118320c1ff68d17f1f65adde0b1",
+      "gameSeconds": 22.200001157820225,
+      "decisionSequence": 108
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0074.png",
+      "sha256": "c2601d2b62f8e28cfb73789fa411f9b9400b26e93f0f875deb6837998453d1ab",
+      "gameSeconds": 22.500001173466444,
+      "decisionSequence": 109
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0075.png",
+      "sha256": "445efa5fc1cb7ee2a3b163fc77b0062f31b5073cfde4705b38b26a02356a3e84",
+      "gameSeconds": 22.800001189112663,
+      "decisionSequence": 111
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0076.png",
+      "sha256": "4309ae3d7200f809c444239ff0834deee683b7bea1d074c229c690f3d8ec4e35",
+      "gameSeconds": 23.100001204758883,
+      "decisionSequence": 112
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0077.png",
+      "sha256": "8a7651cf0518af8c9858edb3e16b120e25f146eb28fe7b727576917bc7e966c1",
+      "gameSeconds": 23.4000012204051,
+      "decisionSequence": 113
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0078.png",
+      "sha256": "a88b1b730d4112d8b45072249cc5dbf83f09b42230c0b830a5826ebd749f69c6",
+      "gameSeconds": 23.70000123605132,
+      "decisionSequence": 115
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0079.png",
+      "sha256": "962a1f7fab0712c509c01ae5c94a6322aa8ac1feb460b129eb73a799c580277e",
+      "gameSeconds": 24.00000125169754,
+      "decisionSequence": 116
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0080.png",
+      "sha256": "3676005641d31c4e6d87a9883458fd5fb5d95c1164a2db82d9eb27ba72c00c33",
+      "gameSeconds": 24.30000126734376,
+      "decisionSequence": 118
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0081.png",
+      "sha256": "b18c0e87fc6cc0bd167b4c875a92cbce8224229d65189c79ab8b87ac1a587662",
+      "gameSeconds": 24.60000128298998,
+      "decisionSequence": 119
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0082.png",
+      "sha256": "ce6feede3e596ee5be99938f098de472168e9116462be0d5753650c90ef66c34",
+      "gameSeconds": 24.900001298636198,
+      "decisionSequence": 121
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0083.png",
+      "sha256": "17b4191e83760316f42bf498e64200a0b4a22e760d714025550c48e34fec6138",
+      "gameSeconds": 25.200001314282417,
+      "decisionSequence": 122
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0084.png",
+      "sha256": "1c66611d620662cb27212fe9ab6e051ce62c67db0dc69e58ee2edeb23808236b",
+      "gameSeconds": 25.500001329928637,
+      "decisionSequence": 124
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0085.png",
+      "sha256": "0c49984dc26a237d4239a585a3f99a60b1f2612a16bed8c2f53b7cc19753ed81",
+      "gameSeconds": 25.800001345574856,
+      "decisionSequence": 125
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0086.png",
+      "sha256": "989ec6cf9288be0a51bd48af631b6c97df0f95bad78b997728e8d59c1f817907",
+      "gameSeconds": 26.100001361221075,
+      "decisionSequence": 126
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0087.png",
+      "sha256": "746ffd48cef65eda1c1312b631e82ce3dba0a63d8378a06111abc97194c4032a",
+      "gameSeconds": 26.400001376867294,
+      "decisionSequence": 128
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0088.png",
+      "sha256": "f41a5f8a9ddf305b8217334d4e18c17086a91f7d51cbdd415e1bc7964f9dde07",
+      "gameSeconds": 26.700001392513514,
+      "decisionSequence": 129
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0089.png",
+      "sha256": "1954b1a11f3a779e894fedd0a43991e8fd98175e2e3af877448e6983a36a1241",
+      "gameSeconds": 27.000001408159733,
+      "decisionSequence": 131
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0090.png",
+      "sha256": "3603ff38cbd0cdd19f009e7fbd50cdf866ae4151558cc4705aafe8baf265ecb9",
+      "gameSeconds": 27.300001423805952,
+      "decisionSequence": 132
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0091.png",
+      "sha256": "b65c0d2d3d3a4e7bae801c24b00d61ca17286f4a303058cfadf8993788978104",
+      "gameSeconds": 27.60000143945217,
+      "decisionSequence": 134
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0092.png",
+      "sha256": "a7b2af9b263c9f31dd5cfb44bfac211d6d38697722fcb6e2df6b09de63176ffa",
+      "gameSeconds": 27.90000145509839,
+      "decisionSequence": 135
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0093.png",
+      "sha256": "0e2d5db8406829fb7bee9fa0059ed025954a5d94dfd68e2b98bdf8cd0e94a80f",
+      "gameSeconds": 28.20000147074461,
+      "decisionSequence": 136
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0094.png",
+      "sha256": "3280e0a0025615851971f87ee6770e2f02003abcabe3d56a2a98dfc0ebefe046",
+      "gameSeconds": 28.50000148639083,
+      "decisionSequence": 138
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0095.png",
+      "sha256": "a719a88dfb93e9038de498e65c878fe5ec8c27eff6f69cc56a9fa3d58daf9a32",
+      "gameSeconds": 28.80000150203705,
+      "decisionSequence": 139
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0096.png",
+      "sha256": "d72d20dd266123fdebe2d47737e4b49e784c4426bd8e98237b93e645aa34a3f4",
+      "gameSeconds": 29.100001517683268,
+      "decisionSequence": 141
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0097.png",
+      "sha256": "0353af736435eff05ffc28755d2b86dc7fca36c0747f44f87d881aae5b21bd51",
+      "gameSeconds": 29.400001533329487,
+      "decisionSequence": 142
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0098.png",
+      "sha256": "734512a41b0596ec064ea510b7e3430c0b53d4d33745ded223d1c75a6f657a64",
+      "gameSeconds": 29.700001548975706,
+      "decisionSequence": 144
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0099.png",
+      "sha256": "77f5fca3d324796b544fc664a99e4508725f1f6e741b2f77c2140da4e3b25b55",
+      "gameSeconds": 30.000001564621925,
+      "decisionSequence": 145
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0100.png",
+      "sha256": "954b2ad0b4c41ea0a86f25c369b5ecf069015454f274eac0016c799e6bfecec2",
+      "gameSeconds": 30.300001580268145,
+      "decisionSequence": 147
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0101.png",
+      "sha256": "c9d18876f56439529cc0b47e271efc38c7c7b3a96aba00203e0e8628fdc218ce",
+      "gameSeconds": 30.600001595914364,
+      "decisionSequence": 148
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0102.png",
+      "sha256": "4bca7ed09070a5abbb980542588ba128aefe2fec5baed415a85af3d3f20c0bc7",
+      "gameSeconds": 30.900001611560583,
+      "decisionSequence": 149
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0103.png",
+      "sha256": "ecd8601ecfa20daba6f0af3dbd3c3dd982cad88edb55011b6433054f9d4f4dbe",
+      "gameSeconds": 31.200001627206802,
+      "decisionSequence": 151
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0104.png",
+      "sha256": "b7d49cede260d107439832c3a9d6642dcaa781e90e89d086b491e9b2d7d2b413",
+      "gameSeconds": 31.50000164285302,
+      "decisionSequence": 152
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0105.png",
+      "sha256": "bbbf209f235a0f35a23908266988b968a82fcf0d35631d38d905508329684064",
+      "gameSeconds": 31.80000165849924,
+      "decisionSequence": 154
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0106.png",
+      "sha256": "72f837bfe7a765303c82ad6cb0e9ef8b841916cbf8af24951853ca581abb5816",
+      "gameSeconds": 32.10000167414546,
+      "decisionSequence": 155
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0107.png",
+      "sha256": "954cad2afc5175820a3e2758f198b0365c0841e3fc32d5ac9ce3c346e9a2f31e",
+      "gameSeconds": 32.40000168979168,
+      "decisionSequence": 157
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0108.png",
+      "sha256": "2b97896b16e2e9b0130279b32d0cccb3edd827ff5ca42533b6b4de21847d4ac5",
+      "gameSeconds": 32.7000017054379,
+      "decisionSequence": 158
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0109.png",
+      "sha256": "7dee91a90ab16411b3522f04b09fa09be7499164178ee1083c8ff89db5820c0e",
+      "gameSeconds": 33.00000172108412,
+      "decisionSequence": 160
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0110.png",
+      "sha256": "7065ffec01c5655e244576e2af4c3137e2b6a37d900492f429b8d3be2b20e72f",
+      "gameSeconds": 33.30000173673034,
+      "decisionSequence": 161
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0111.png",
+      "sha256": "d0cc4c12e67c14464ce85cb444e26744a08db9b5b713f1726ac61a0a78a33b15",
+      "gameSeconds": 33.600001752376556,
+      "decisionSequence": 163
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0112.png",
+      "sha256": "525d99a93d600b093072f3ddb818e5e462e38de031bf9e6bbdee39735db22fd1",
+      "gameSeconds": 33.900001768022776,
+      "decisionSequence": 164
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0113.png",
+      "sha256": "4af01af89fe5c038fae8c12687b0122d671b4f243ac8862746b567d0630321d1",
+      "gameSeconds": 34.200001783668995,
+      "decisionSequence": 165
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0114.png",
+      "sha256": "80f286bda30979c7e340d895095bfe1e226c6b1b19b9b9b0ad8b9f0f99698156",
+      "gameSeconds": 34.500001799315214,
+      "decisionSequence": 167
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0115.png",
+      "sha256": "7fea0a7242a29b22dc711bd7394976e4d626dd1781c3e1977184bbd1caaee841",
+      "gameSeconds": 34.80000181496143,
+      "decisionSequence": 168
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0116.png",
+      "sha256": "11bdfd90e63715a43869b5cca04cdcf57142ac84c67bad856555916d58bd3c9c",
+      "gameSeconds": 35.10000183060765,
+      "decisionSequence": 170
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0117.png",
+      "sha256": "9fcab409bdbb94d20579567193e64c623fd4f12e68f7c4b792bd006aceb46690",
+      "gameSeconds": 35.40000184625387,
+      "decisionSequence": 171
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0118.png",
+      "sha256": "35416c5465f88ead6b7535942263d05ade6505c55fc6af70a79be6c619e46592",
+      "gameSeconds": 35.70000186190009,
+      "decisionSequence": 173
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0119.png",
+      "sha256": "9e50eb553a3563e3b7c54766c366928e5dd27e3792b9b541ae07af5736587390",
+      "gameSeconds": 36.00000187754631,
+      "decisionSequence": 174
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0120.png",
+      "sha256": "17683e66b0a0263e47edaee1d73b7b147a9d253f898d43a4041e00129f3baf08",
+      "gameSeconds": 36.30000189319253,
+      "decisionSequence": 175
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0121.png",
+      "sha256": "b92081ae51c638eaf734af2c8c4b50ad21be1a7744dfbbe5b6908e25d20c54a0",
+      "gameSeconds": 36.60000190883875,
+      "decisionSequence": 177
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0122.png",
+      "sha256": "5e263b11711037a900ee22503e166db0c077fdca4869b51da69e583e6adb7122",
+      "gameSeconds": 36.90000192448497,
+      "decisionSequence": 178
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0123.png",
+      "sha256": "94459aa642572f48f8402987de080ccbb1b0827f29e5ae900a73ca5871c660f2",
+      "gameSeconds": 37.20000194013119,
+      "decisionSequence": 180
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0124.png",
+      "sha256": "28ffbe13a844acc56eec421b7a753fe591bc76440dadb57484988c3bf3f824be",
+      "gameSeconds": 37.50000195577741,
+      "decisionSequence": 181
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0125.png",
+      "sha256": "3f33d415c2e53fa7b24e2135311803c9a4cd453fd53a1c98f6136e8e2a582e78",
+      "gameSeconds": 37.800001971423626,
+      "decisionSequence": 183
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0126.png",
+      "sha256": "3f117f62a273934131c91f93aeefe4bc9a2f721aaf13ade9d49ec013407b981b",
+      "gameSeconds": 38.100001987069845,
+      "decisionSequence": 184
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0127.png",
+      "sha256": "fa4704447a872c0e4756ad847042adddf4dd2781c1bca5abe65cd93b79aeef31",
+      "gameSeconds": 38.400002002716064,
+      "decisionSequence": 186
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0128.png",
+      "sha256": "14c145463bd034c5b515345101d1f3b1f4c2c6ed734c8bd01ff89a0ed22ac6c0",
+      "gameSeconds": 38.700002018362284,
+      "decisionSequence": 187
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0129.png",
+      "sha256": "01292b2a6ce368bdd923d75d793807ddd37a43ca78c00d618da6ffb92dcde5eb",
+      "gameSeconds": 39.0000020340085,
+      "decisionSequence": 188
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0130.png",
+      "sha256": "2c8e9ff43612fdc3ae8be63651e6c1c0bfb79eb674d598570a6f0c97ab442109",
+      "gameSeconds": 39.30000204965472,
+      "decisionSequence": 190
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0131.png",
+      "sha256": "c1bb2643f0482690c8accf5d8d8217daf3e98761042854fdf1c36d5d5ceeacc2",
+      "gameSeconds": 39.60000206530094,
+      "decisionSequence": 191
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0132.png",
+      "sha256": "90f7548986b61c6c9af992dff3049e4337665f42037194115cbb2860936cdffa",
+      "gameSeconds": 39.90000208094716,
+      "decisionSequence": 193
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0133.png",
+      "sha256": "69322ce9a94496304cbb709904daeb6b1230976f93585663ba56fba1abd0da7b",
+      "gameSeconds": 40.20000209659338,
+      "decisionSequence": 194
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0134.png",
+      "sha256": "7526f6b40a25549010c5ef08fdf4509e495cbcfc1a46e11352e280eaf08b2998",
+      "gameSeconds": 40.5000021122396,
+      "decisionSequence": 196
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0135.png",
+      "sha256": "94646e0542404d29fa22ea77100e8c74735fc430a8fda78fa4efd22665936081",
+      "gameSeconds": 40.80000212788582,
+      "decisionSequence": 197
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0136.png",
+      "sha256": "bd32ae386875ff7a09779f3656cb053dbe508a09027a698597b69400a6cf6ed9",
+      "gameSeconds": 41.10000214353204,
+      "decisionSequence": 199
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0137.png",
+      "sha256": "0ea5a9d11925d0ca788d2738a127d2f2e4cf0759e08eb608bc860a1dafd64f44",
+      "gameSeconds": 41.40000215917826,
+      "decisionSequence": 200
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0138.png",
+      "sha256": "484524daf95903220d94001c40943d86f90149680706ae24ae271bfa177e9daf",
+      "gameSeconds": 41.700002174824476,
+      "decisionSequence": 201
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0139.png",
+      "sha256": "93a92efc090560efc3cfdeb7b8c86f6be1922f51d7b0ae567ff4d58ac5c13137",
+      "gameSeconds": 42.000002190470695,
+      "decisionSequence": 203
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0140.png",
+      "sha256": "75170e4e7cf3fcceeb334ea3d55d10c281c98c04a207f4e50a636b2a7ab873ef",
+      "gameSeconds": 42.300002206116915,
+      "decisionSequence": 204
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0141.png",
+      "sha256": "f1b510281eb1074d4d2210577810b0c382b88cece5f112ee94d66b2e36204b5f",
+      "gameSeconds": 42.600002221763134,
+      "decisionSequence": 206
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0142.png",
+      "sha256": "c374f5c61c9dd022b242c845c0e7b2b96954e6b71489ccf4a94c5013ceb74a20",
+      "gameSeconds": 42.90000223740935,
+      "decisionSequence": 207
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0143.png",
+      "sha256": "9db1b9daa504a0becf564d9b4a99250d5258a7be3038261c9fa05121e07e86f3",
+      "gameSeconds": 43.20000225305557,
+      "decisionSequence": 209
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0144.png",
+      "sha256": "fc7eb91d71a78193cb5dac9a80d644f488d9b6c1e3f4c598ff69c67c5448694c",
+      "gameSeconds": 43.50000226870179,
+      "decisionSequence": 210
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0145.png",
+      "sha256": "2be81ac1c288ce5633ceb7eec771decf44dc43fc601064546aff5faddac168b0",
+      "gameSeconds": 43.80000228434801,
+      "decisionSequence": 212
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0146.png",
+      "sha256": "f93b52d504f6fb70ad6782bfb471356e3871668f7512d7eb003d46133a1d3dd4",
+      "gameSeconds": 44.10000229999423,
+      "decisionSequence": 213
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0147.png",
+      "sha256": "48924cd898d43f35b0861d28dece2f8456eb08b5dfa1655e969d602bfc287eae",
+      "gameSeconds": 44.40000231564045,
+      "decisionSequence": 214
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0148.png",
+      "sha256": "e081293828afe6ca9aa49dc3a5d7964cfdb71b401bef1a069330128cf6dae4be",
+      "gameSeconds": 44.70000233128667,
+      "decisionSequence": 216
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0149.png",
+      "sha256": "5912f6e5e2bf8b80b94b6094dd4690b6f37e7f562abba1674cce3253f914ce98",
+      "gameSeconds": 45.00000234693289,
+      "decisionSequence": 217
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0150.png",
+      "sha256": "9662194b3dd14bdefd8fa176ea5718785a2ead4e1bc89b6fbb1bd10f0757bb8c",
+      "gameSeconds": 45.30000236257911,
+      "decisionSequence": 219
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0151.png",
+      "sha256": "4f7181c77a1467e00bf88d19682b431a28b2250f34bd84badcb7ef817ac539dc",
+      "gameSeconds": 45.60000237822533,
+      "decisionSequence": 220
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0152.png",
+      "sha256": "ab746c0e7e3024ef096e293e40cc647f1ad069cc6d6ecb87c27634dcd0a2e72e",
+      "gameSeconds": 45.900002393871546,
+      "decisionSequence": 222
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0153.png",
+      "sha256": "20f6bd4fc0b8b2c2c62847ce88f9afb5d01124f3587e3034db2b9fe794312a18",
+      "gameSeconds": 46.200002409517765,
+      "decisionSequence": 223
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0154.png",
+      "sha256": "6e84881827f85708b42e37f134d92b1a2e8e37f5aa34ecb70e59cfb97e788855",
+      "gameSeconds": 46.500002425163984,
+      "decisionSequence": 225
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0155.png",
+      "sha256": "98e4cfb500ca21684cc0be021506cc6410f74194fc6ecd4b4ab2d39ff6787d0b",
+      "gameSeconds": 46.8000024408102,
+      "decisionSequence": 226
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0156.png",
+      "sha256": "338a959061b483d109bc230a1ac31764e56fc255dbb0b3e4992acec2b5c2850b",
+      "gameSeconds": 47.10000245645642,
+      "decisionSequence": 227
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0157.png",
+      "sha256": "1d32ee20d7e3be4cc921a6d0e96e4ce33eb0fa54d42a5cb1d3294cbfc3d77ccc",
+      "gameSeconds": 47.40000247210264,
+      "decisionSequence": 229
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0158.png",
+      "sha256": "4d20e78f241410458e1772e51374f671bb580e1895d9dbb4a923148082e1405e",
+      "gameSeconds": 47.70000248774886,
+      "decisionSequence": 230
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0159.png",
+      "sha256": "7eb28ba9e0e4536b8c1ab3c1270f0a26d5fcff5175df062540c2b941a4e8b7e6",
+      "gameSeconds": 48.00000250339508,
+      "decisionSequence": 232
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0160.png",
+      "sha256": "77566a5c13339a077e90be6d7bc581df84bcb3894ac2a1e85780b17c0b977a4b",
+      "gameSeconds": 48.3000025190413,
+      "decisionSequence": 233
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0161.png",
+      "sha256": "9e79ee385e9693f49b03a3fde05b83083d3ca532808a42f165e2c821fac41bcb",
+      "gameSeconds": 48.60000253468752,
+      "decisionSequence": 235
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0162.png",
+      "sha256": "302dd89a2c88bd65b5b8853916966f987ac6437d914f516644fd0eb8b3bfc361",
+      "gameSeconds": 48.90000255033374,
+      "decisionSequence": 236
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0163.png",
+      "sha256": "3f154bf1114fb0d17b683cc2b32724aaa9784669d42405cf0e28d18505542192",
+      "gameSeconds": 49.20000256597996,
+      "decisionSequence": 238
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0164.png",
+      "sha256": "8c393e6ee102c3d0a298e0bf6a1ef0506487428137b7cc4c5123e08ddd884ced",
+      "gameSeconds": 49.50000258162618,
+      "decisionSequence": 239
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0165.png",
+      "sha256": "0612b2a6c712f587bcfc79417b4fa1aef19cb7ec81183fb5013a75ee44bc3d31",
+      "gameSeconds": 49.800002597272396,
+      "decisionSequence": 240
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0166.png",
+      "sha256": "14e4bafd4177873e077af7486b55b7386dfc8f0cb499b3c2e0c84d36463f6833",
+      "gameSeconds": 50.100002612918615,
+      "decisionSequence": 242
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0167.png",
+      "sha256": "f945ec0381fa859da952fde0c26c4d36c022b306f8d9a6eb7d516a7b8bc8fab7",
+      "gameSeconds": 50.400002628564835,
+      "decisionSequence": 243
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0168.png",
+      "sha256": "c4a586fd3fa4d0133dfbc60c55ff460c30ad47e7b31e13cadd481ee5d5be1a3a",
+      "gameSeconds": 50.700002644211054,
+      "decisionSequence": 245
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0169.png",
+      "sha256": "da98d9ba322ea51936f2ff5dd63d57ccfe6d22cb7ca2370152205127fc8b0e88",
+      "gameSeconds": 51.00000265985727,
+      "decisionSequence": 246
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0170.png",
+      "sha256": "795e159fe5e3478ef47aefe0f18f04d68e82acb753809f11aaeac52d02141f8e",
+      "gameSeconds": 51.30000267550349,
+      "decisionSequence": 248
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0171.png",
+      "sha256": "3b41dcef7b37a94090fdbdcc23956dc798eee7347aad3a140540e8be89049d80",
+      "gameSeconds": 51.60000269114971,
+      "decisionSequence": 249
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0172.png",
+      "sha256": "d87fb47f50de80e2e23602d69cac0a59e18c54030dc59a8ee3e9fd06e02f87b4",
+      "gameSeconds": 51.90000270679593,
+      "decisionSequence": 250
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0173.png",
+      "sha256": "775a84d4b1a47994d99c06f5f5968d8c30c188ed826e04334752868c9e9e02fd",
+      "gameSeconds": 52.20000272244215,
+      "decisionSequence": 252
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0174.png",
+      "sha256": "fec61cbdd3725ba35216ef026395a51220927517cfd51842244ae2b3a7311264",
+      "gameSeconds": 52.50000273808837,
+      "decisionSequence": 253
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0175.png",
+      "sha256": "6dff4e003664248f27bc645416c9a4a6aa0d3e49a162480ccd2131b4ad489f86",
+      "gameSeconds": 52.80000275373459,
+      "decisionSequence": 255
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0176.png",
+      "sha256": "7b6a6a620572e34c8f87c5428c58ead39eb80f70a803965b14bc370026da3c83",
+      "gameSeconds": 53.10000276938081,
+      "decisionSequence": 256
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0177.png",
+      "sha256": "8c3463eb22bbb1acb3cdc0e899c7692eedeb518d5506cd5b9f69a077df1cb0ee",
+      "gameSeconds": 53.40000278502703,
+      "decisionSequence": 258
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0178.png",
+      "sha256": "50b820f81b96910e8e2b887da192afb08492f9d085f7c6f90cfbe7ea4d3cbd5a",
+      "gameSeconds": 53.700002800673246,
+      "decisionSequence": 259
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0179.png",
+      "sha256": "b4f710d841b8fb76340ef9630b114733bb0498ac0ea8c91e30f0b72b8efb65a5",
+      "gameSeconds": 54.000002816319466,
+      "decisionSequence": 261
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0180.png",
+      "sha256": "430a48e0829a6d4db9396ebeb3485e8981f1cd156ef195f1000dc1c114508384",
+      "gameSeconds": 54.300002831965685,
+      "decisionSequence": 262
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0181.png",
+      "sha256": "40cc9dbc70b823d6dda31ef9c2cd5d4392fa29ed012a97f78d61aac9eb228ecb",
+      "gameSeconds": 54.600002847611904,
+      "decisionSequence": 263
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0182.png",
+      "sha256": "5c8b86a3ef60d5e8ffb6d9a4f2053765d6f5d230c66bae1c3a505a4b69267dc8",
+      "gameSeconds": 54.90000286325812,
+      "decisionSequence": 265
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0183.png",
+      "sha256": "bf82530215eb38768e990e5bc17e716750bf8cd50a51659cbb42cc1918044a48",
+      "gameSeconds": 55.20000287890434,
+      "decisionSequence": 266
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0184.png",
+      "sha256": "4720aec2c9b45b341393ba9b699178d6360dd154ced8b9130df01878c99f5638",
+      "gameSeconds": 55.50000289455056,
+      "decisionSequence": 268
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0185.png",
+      "sha256": "e22266f12ba94aa674fe3f4b9c366c91cc990e7f883e9f98acf8d5e119441ffb",
+      "gameSeconds": 55.80000291019678,
+      "decisionSequence": 269
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0186.png",
+      "sha256": "7324714e71b8b90bfd1640481745dd149f8914c261c0eee2d4c14d13b77976c4",
+      "gameSeconds": 56.100002925843,
+      "decisionSequence": 271
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0187.png",
+      "sha256": "f4a870b47b9bda6a0914a960867f036deb5ba0456e22e41cc1294f9ea6d526d8",
+      "gameSeconds": 56.40000294148922,
+      "decisionSequence": 272
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0188.png",
+      "sha256": "0655189679d546164d029b2a16816cf436d5298689b1cc8853240115089e478f",
+      "gameSeconds": 56.70000295713544,
+      "decisionSequence": 274
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0189.png",
+      "sha256": "cd05cfcb12db4232c50d8e086b57c58f2abe0469e56b3e0a2283d7d06a3846b3",
+      "gameSeconds": 57.00000297278166,
+      "decisionSequence": 275
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0190.png",
+      "sha256": "dc5b14dcc615702e0bd384dbb2a1b2f65e532a998c3e8b15cb17dd8c5b9a93dc",
+      "gameSeconds": 57.30000298842788,
+      "decisionSequence": 276
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0191.png",
+      "sha256": "754a91a4a896464792ea139c5d6b8885b361aa05e382097a5b1859009c4a299e",
+      "gameSeconds": 57.6000030040741,
+      "decisionSequence": 278
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0192.png",
+      "sha256": "e2b203310016f0526dc4ecd87123a16cb4591e7e31c1bf1223988d4d7929b626",
+      "gameSeconds": 57.900003019720316,
+      "decisionSequence": 279
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0193.png",
+      "sha256": "c48e21588a7ec6323e054fbf2f14e86644cc4577519c1cd35fe3152fd08bcee3",
+      "gameSeconds": 58.200003035366535,
+      "decisionSequence": 281
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0194.png",
+      "sha256": "237d0bcda161bd3eb88d243b8fafaee4ed2c4a3f8adc4201c253e8e63899693d",
+      "gameSeconds": 58.500003051012754,
+      "decisionSequence": 282
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0195.png",
+      "sha256": "620d12a68a68160141b90ff9c821e9ebe7e98ff2bf01a6b24c0b94605a6bd17b",
+      "gameSeconds": 58.800003066658974,
+      "decisionSequence": 284
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0196.png",
+      "sha256": "f03c8475fa3491d9bfb26a57b55472fbb103d85dee4659a30b81a478b582a5cd",
+      "gameSeconds": 59.10000308230519,
+      "decisionSequence": 285
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0197.png",
+      "sha256": "9efcec0fb32820185d7afe3ec1a60d37bb62857e7169539a0fc93184703f15eb",
+      "gameSeconds": 59.40000309795141,
+      "decisionSequence": 287
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0198.png",
+      "sha256": "6b09c894257ce7b4ffa545c2e6ab6a03b4e0cb0c78db709fd7a21e76662f3a49",
+      "gameSeconds": 59.70000311359763,
+      "decisionSequence": 288
+    },
+    {
+      "file": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\frames\\frame-0199.png",
+      "sha256": "2bc48f3f653388d52a223fa1638874888eb4fa1318c230b15a160b9b3fc9558c",
+      "gameSeconds": 60.00000312924385,
+      "decisionSequence": 289
+    }
+  ]
+}

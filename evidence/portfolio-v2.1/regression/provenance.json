@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "engine": "unreal-runtime",
+  "launch": "packaged-development",
+  "scriptedInput": true,
+  "fixtureDamage": false,
+  "humanPlaytest": false,
+  "phase": "development-demonstration",
+  "mode": "aegis-prism-fall-v2.0",
+  "seed": 1101,
+  "guardPolicy": "improved",
+  "evaluationScope": "scripted full-run observation; paired seeds do not establish general win-rate improvement",
+  "source": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "inputsBefore": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "command": [
+    "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+    "-AegisPortfolio",
+    "-AegisV2",
+    "-AegisPortfolioCapture",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-windowed",
+    "-ForceRes",
+    "-ResX=1920",
+    "-ResY=1080",
+    "-UseFixedTimeStep",
+    "-FPS=30",
+    "-unattended",
+    "-nop4",
+    "-nosound",
+    "-nosplash",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-AegisPortfolioCaptureOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\system",
+    "-AegisPortfolioFrameInterval=0.03333333333333333",
+    "-AegisPortfolioSeed=1101",
+    "-abslog=D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\engine.log",
+    "-AegisPortfolioNoFrames"
+  ],
+  "passed": true,
+  "recording": "native rendered PNGs with game/video timestamps; no generated gameplay frames",
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "binary": {
+    "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+    "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+  },
+  "wrappersBefore": {
+    "run_v2_capture.py": "d7740ea206710333b1bbf5e3dcbca9cbd8b7de4d014864ee3c03764ef95662cf",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "exitCode": 0,
+  "resultQuitEvidence": {
+    "outcome": "lost",
+    "key": "X",
+    "normalExit": true,
+    "resultHoldSeconds": 4.000000208616257
+  },
+  "frames": 0,
+  "videoSeconds": 95.1000049598515,
+  "knownEngineWarnings": [
+    "[2026.09.18-05.44.29:956][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+  ],
+  "systemEvidence": {
+    "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\system\\portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.json",
+    "sha256": "a0ecd64d58272ab596c15d4a68305975d5b19920aa15fa25d33061961156f95e",
+    "traceSha256": "2f14678ec35ed5cb36254d86f0a54a89252da8a6aa8c663d80e7c842311d5e61",
+    "events": 190,
+    "outcome": "lost",
+    "ledgerReconciled": true,
+    "damageRoleVerification": "full",
+    "pulsesUsed": 1,
+    "repairsUsed": 2,
+    "actualRepairHealing": 44.933349609375,
+    "chargedShots": 1,
+    "overclocks": 3,
+    "northRouteFirst": true,
+    "symbiosisActualHealing": 1.066665567457676,
+    "companionStateChanges": 70,
+    "companionShortReversalsUnder1s": 14,
+    "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+    "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+  },
+  "outcome": "lost",
+  "inputsAfter": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "wrappersAfter": {
+    "run_v2_capture.py": "d7740ea206710333b1bbf5e3dcbca9cbd8b7de4d014864ee3c03764ef95662cf",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "wallSeconds": 18.656000000002678,
+  "files": {
+    "capture.json": {
+      "bytes": 1987484,
+      "sha256": "7713160121e3bc0c08d4ff2041883248aba0121e3a1c2fdc52681fffb0b8a5fa"
+    },
+    "engine.log": {
+      "bytes": 84335,
+      "sha256": "01f78a573f5fe75f9e2a14b8302fbe46de7153699629c28c0f67fbf3dbf6c575"
+    },
+    "stdout.log": {
+      "bytes": 84205,
+      "sha256": "60997768068613de74ed1a3911a487acb77167dfb4a9faf6ccb1fd9ce41654cb"
+    },
+    "system\\portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.json": {
+      "bytes": 1215,
+      "sha256": "a0ecd64d58272ab596c15d4a68305975d5b19920aa15fa25d33061961156f95e"
+    },
+    "system\\portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.jsonl": {
+      "bytes": 54375,
+      "sha256": "2f14678ec35ed5cb36254d86f0a54a89252da8a6aa8c663d80e7c842311d5e61"
+    }
+  }
+}

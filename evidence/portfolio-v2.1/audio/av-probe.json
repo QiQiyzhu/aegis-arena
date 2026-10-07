@@ -1,0 +1,243 @@
+{
+	"schemaVersion": 1,
+	"passed": true,
+	"presentationVersion": "2.1",
+	"reason": "Completed sound-enabled native music lifecycle with master mix exports",
+	"engine": "unreal-runtime",
+	"soundEnabled": true,
+	"syntheticKeyboardInput": true,
+	"fixtureDamage": false,
+	"fixturePlacement": false,
+	"humanPlaytest": false,
+	"hardwareLoopback": false,
+	"audioEvidence": "Unreal master submix rendering, not physical speaker or microphone measurement",
+	"quitPath": "normal menu X",
+	"wallSeconds": 12.935569100081921,
+	"assertions": [
+		{
+			"name": "seven_tracks_loaded",
+			"passed": true,
+			"wallSeconds": 1.2003466002643108,
+			"gameSeconds": 2.2071656984626316,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.37999999523162842
+			]
+		},
+		{
+			"name": "one_music_actor_two_channels_budget",
+			"passed": true,
+			"wallSeconds": 1.2003709003329277,
+			"gameSeconds": 2.2071656984626316,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.37999999523162842
+			]
+		},
+		{
+			"name": "briefing_voice_playing",
+			"passed": true,
+			"wallSeconds": 1.2003767006099224,
+			"gameSeconds": 2.2071656984626316,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.37999999523162842
+			]
+		},
+		{
+			"name": "m_mutes_and_stops_voices",
+			"passed": true,
+			"wallSeconds": 3.1044520996510983,
+			"gameSeconds": 4.1113916998147033,
+			"paused": false,
+			"musicState": "muted",
+			"muted": true,
+			"playingVoices": 0,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0
+			]
+		},
+		{
+			"name": "m_restores_music_playback",
+			"passed": true,
+			"wallSeconds": 4.8107362017035484,
+			"gameSeconds": 5.8177670006989501,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0.37999999523162842,
+				0
+			]
+		},
+		{
+			"name": "enter_switches_to_relay_score",
+			"passed": true,
+			"wallSeconds": 7.3170830011367798,
+			"gameSeconds": 8.3241229010163806,
+			"paused": false,
+			"musicState": "relay1",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.40000000596046448
+			]
+		},
+		{
+			"name": "paused_menu_has_quiet_score",
+			"passed": true,
+			"wallSeconds": 8.3187160007655621,
+			"gameSeconds": 8.3283695009886287,
+			"paused": true,
+			"musicState": "paused",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0.15999999642372131,
+				0
+			]
+		},
+		{
+			"name": "paused_mute_freezes_game_clock",
+			"passed": true,
+			"wallSeconds": 8.7198726013302803,
+			"gameSeconds": 8.3283695009886287,
+			"paused": true,
+			"musicState": "muted",
+			"muted": true,
+			"playingVoices": 0,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0
+			]
+		},
+		{
+			"name": "paused_unmute_restores_one_voice",
+			"passed": true,
+			"wallSeconds": 9.5229337997734547,
+			"gameSeconds": 8.3283695009886287,
+			"paused": true,
+			"musicState": "paused",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.15999999642372131
+			]
+		},
+		{
+			"name": "resume_restores_relay_score",
+			"passed": true,
+			"wallSeconds": 10.523059401661158,
+			"gameSeconds": 9.3240597014664672,
+			"paused": false,
+			"musicState": "relay1",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0.40000000596046448,
+				0
+			]
+		},
+		{
+			"name": "restart_creates_new_player",
+			"passed": true,
+			"wallSeconds": 11.525754399597645,
+			"gameSeconds": 10.326760998868849,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.37999999523162842
+			]
+		},
+		{
+			"name": "restart_restores_one_briefing_voice",
+			"passed": true,
+			"wallSeconds": 11.525794200599194,
+			"gameSeconds": 10.326760998868849,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0,
+				0.37999999523162842
+			]
+		},
+		{
+			"name": "second_restart_has_no_music_actor_leak",
+			"passed": true,
+			"wallSeconds": 12.532679099589586,
+			"gameSeconds": 11.333063698315527,
+			"paused": false,
+			"musicState": "briefing",
+			"muted": false,
+			"playingVoices": 1,
+			"loadedTracks": 7,
+			"gains": [
+				0.37999999523162842,
+				0
+			]
+		},
+		{
+			"name": "three_master_mix_wavs_exported",
+			"passed": true,
+			"wallSeconds": 12.935537800192833,
+			"gameSeconds": 11.337955499941017,
+			"paused": true,
+			"musicState": "paused",
+			"muted": false,
+			"playingVoices": 2,
+			"loadedTracks": 7,
+			"gains": [
+				0.14683276414871216,
+				0.098175674676895142
+			]
+		},
+		{
+			"name": "normal_menu_quit_available",
+			"passed": true,
+			"wallSeconds": 12.935556199401617,
+			"gameSeconds": 11.337955499941017,
+			"paused": true,
+			"musicState": "paused",
+			"muted": false,
+			"playingVoices": 2,
+			"loadedTracks": 7,
+			"gains": [
+				0.14683276414871216,
+				0.098175674676895142
+			]
+		}
+	]
+}

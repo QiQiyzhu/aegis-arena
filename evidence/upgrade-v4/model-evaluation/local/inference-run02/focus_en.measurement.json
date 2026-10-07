@@ -1,0 +1,44 @@
+{
+  "case": "focus_en",
+  "instruction": "Attack the visible threat, then regroup.",
+  "expectedSkill": "focus_visible",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1554.6499999982188,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": false,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "ATTACK_RELAY",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "capture_relay",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 61,
+    "prompt_tokens": 268,
+    "total_tokens": 329,
+    "prompt_tokens_details": {
+      "cached_tokens": 267
+    }
+  },
+  "timings": {
+    "cache_n": 267,
+    "prompt_n": 1,
+    "prompt_ms": 23.998,
+    "prompt_per_token_ms": 23.998,
+    "prompt_per_second": 41.670139178264854,
+    "predicted_n": 61,
+    "predicted_ms": 1502.829,
+    "predicted_per_token_ms": 25.04715,
+    "predicted_per_second": 39.92470201200536
+  }
+}

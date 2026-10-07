@@ -1,0 +1,281 @@
+{
+  "scope": "Small paired native scripted runs; every attempted outcome retained",
+  "frozen": {
+    "timestampUtc": "2026-09-18T03:31:43.458465+00:00",
+    "inputs": {
+      "sourceSha256": "6dad19526dbc6b093a841ccf46f040e48148e37700d3e5a2184d6f66d42b3cc2",
+      "contentSha256": "9667582db87935a68d8823eca0801b1c47ade897f12a1c848f926a4e02e88fd5"
+    },
+    "binary": {
+      "launcher": {
+        "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+        "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+      },
+      "gamePayload": {
+        "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+        "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+      },
+      "cookedContainers": {
+        "AegisArena-Windows.pak": {
+          "bytes": 10298008,
+          "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+        },
+        "AegisArena-Windows.ucas": {
+          "bytes": 12890784,
+          "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+        },
+        "AegisArena-Windows.utoc": {
+          "bytes": 57106,
+          "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+        },
+        "global.ucas": {
+          "bytes": 1569152,
+          "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+        },
+        "global.utoc": {
+          "bytes": 482,
+          "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+        }
+      }
+    },
+    "wrappers": {
+      "run_v2_capture.py": "d7740ea206710333b1bbf5e3dcbca9cbd8b7de4d014864ee3c03764ef95662cf",
+      "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+      "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+      "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+      "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+      "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+      "run_v2_evaluation.py": "545983f8ea3e5a199446ff2ba50c717172ea6b33c3de8db2847077be173b15c1"
+    },
+    "developmentEvidence": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-02\\provenance.json",
+    "developmentSeed": 1101,
+    "developmentEvidenceSha256": "6745121e806b0ef9ae182ac1e145591347f9a0dc2f3ad6d3df9cc6546a587828",
+    "holdoutSeeds": [
+      5501,
+      6607,
+      7703
+    ],
+    "policies": [
+      "legacy",
+      "improved"
+    ],
+    "renderConfig": {
+      "width": 1920,
+      "height": 1080,
+      "derivedFromDevelopment": true
+    },
+    "onlyPolicyDifference": "-AegisGuardLegacy disables Guard candidate shot-line qualification",
+    "playerDriver": "same scripted inputs and rules; route north-first; upgrades3 then1",
+    "ruleConfig": {
+      "energyInitial": 60,
+      "chargedCost": 12,
+      "pulseCost": 35,
+      "overclockCost": 35,
+      "overclockSeconds": 6,
+      "objectiveSeconds": [
+        8,
+        10,
+        10,
+        4
+      ]
+    },
+    "training": false,
+    "humanPlaytest": false,
+    "populationWinRateClaim": false,
+    "priorEvaluation": {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\evaluation.json",
+      "sha256": "64b7768c994c80d47bf95f020ebba05a5151ed78182d1cc39bb480ba938cf95e",
+      "excludedExposedSeeds": [
+        2203,
+        3307,
+        4409
+      ],
+      "correction": "Match the calibrated development viewport; preserve all prior outcomes. No runtime/AI/rule changes."
+    }
+  },
+  "rows": [
+    {
+      "seed": 5501,
+      "policy": "legacy",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-legacy",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 90.90000474080443,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 62,
+      "companionActualDamageTaken": 70,
+      "companionSurvived": true,
+      "companionStateChanges": 91,
+      "companionShortReversalsUnder1s": 19,
+      "companionShots": 11,
+      "companionMoveRequests": 67,
+      "guardSlotChecks": 0,
+      "guardSlotRejections": 0,
+      "guardAlternateSelections": 0,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "pulsesUsed": 2,
+      "repairsUsed": 1,
+      "energySpent": 199,
+      "energyFinal": 80,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 24.833351135253906,
+      "symbiosisCompanionActualHealing": 8.999996185302734
+    },
+    {
+      "seed": 5501,
+      "policy": "improved",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-improved",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 100.90000526234508,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 76,
+      "companionActualDamageTaken": 70,
+      "companionSurvived": true,
+      "companionStateChanges": 78,
+      "companionShortReversalsUnder1s": 11,
+      "companionShots": 11,
+      "companionMoveRequests": 80,
+      "guardSlotChecks": 18,
+      "guardSlotRejections": 8,
+      "guardAlternateSelections": 2,
+      "chargedShots": 2,
+      "overclocks": 3,
+      "pulsesUsed": 2,
+      "repairsUsed": 2,
+      "energySpent": 235,
+      "energyFinal": 44,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 7.06666374206543,
+      "symbiosisCompanionActualHealing": 6.466663837432861
+    },
+    {
+      "seed": 6607,
+      "policy": "improved",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-improved",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 92.20000480860472,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 118,
+      "companionActualDamageTaken": 20,
+      "companionSurvived": true,
+      "companionStateChanges": 47,
+      "companionShortReversalsUnder1s": 9,
+      "companionShots": 6,
+      "companionMoveRequests": 68,
+      "guardSlotChecks": 9,
+      "guardSlotRejections": 1,
+      "guardAlternateSelections": 1,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "pulsesUsed": 2,
+      "repairsUsed": 2,
+      "energySpent": 223,
+      "energyFinal": 56,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 22.000225067138672,
+      "symbiosisCompanionActualHealing": 0
+    },
+    {
+      "seed": 6607,
+      "policy": "legacy",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-legacy",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 92.20000480860472,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 118,
+      "companionActualDamageTaken": 20,
+      "companionSurvived": true,
+      "companionStateChanges": 47,
+      "companionShortReversalsUnder1s": 9,
+      "companionShots": 6,
+      "companionMoveRequests": 68,
+      "guardSlotChecks": 0,
+      "guardSlotRejections": 0,
+      "guardAlternateSelections": 0,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "pulsesUsed": 2,
+      "repairsUsed": 2,
+      "energySpent": 223,
+      "energyFinal": 56,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 22.000225067138672,
+      "symbiosisCompanionActualHealing": 0
+    },
+    {
+      "seed": 7703,
+      "policy": "legacy",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-legacy",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 87.10000454261899,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 0,
+      "companionActualDamageTaken": 14,
+      "companionSurvived": true,
+      "companionStateChanges": 72,
+      "companionShortReversalsUnder1s": 9,
+      "companionShots": 11,
+      "companionMoveRequests": 68,
+      "guardSlotChecks": 0,
+      "guardSlotRejections": 0,
+      "guardAlternateSelections": 0,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "pulsesUsed": 2,
+      "repairsUsed": 0,
+      "energySpent": 187,
+      "energyFinal": 82,
+      "energyOverflow": 10,
+      "symbiosisPlayerActualHealing": 0,
+      "symbiosisCompanionActualHealing": 0
+    },
+    {
+      "seed": 7703,
+      "policy": "improved",
+      "runnerExitCode": 0,
+      "output": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-improved",
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 86.70000452175736,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 104,
+      "companionActualDamageTaken": 56,
+      "companionSurvived": true,
+      "companionStateChanges": 65,
+      "companionShortReversalsUnder1s": 8,
+      "companionShots": 10,
+      "companionMoveRequests": 75,
+      "guardSlotChecks": 20,
+      "guardSlotRejections": 3,
+      "guardAlternateSelections": 3,
+      "chargedShots": 1,
+      "overclocks": 2,
+      "pulsesUsed": 3,
+      "repairsUsed": 2,
+      "energySpent": 235,
+      "energyFinal": 44,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 7.799996376037598,
+      "symbiosisCompanionActualHealing": 10.66666030883789
+    }
+  ],
+  "allRunnersPassed": true,
+  "complete": true,
+  "stabilityDefinition": "DebugState transitions include normal aim/fire/reposition cycles; not Utility oscillation"
+}

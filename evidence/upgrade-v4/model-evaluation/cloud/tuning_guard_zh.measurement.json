@@ -1,0 +1,41 @@
+{
+  "case": "tuning_guard_zh",
+  "split": "tuning",
+  "httpStatus": 200,
+  "latencyMilliseconds": 813.116600002104,
+  "rawResponseSha256": "fde19019b78b76475fe545edbd0e015357a44c8c82ddeec4f47f1755ea5e806d",
+  "savedResponseSha256": "fde19019b78b76475fe545edbd0e015357a44c8c82ddeec4f47f1755ea5e806d",
+  "credentialRedactionApplied": false,
+  "responseId": "c8874c90-30ec-4200-a2bc-4f1ed20ba114",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 705,
+    "completion_tokens": 33,
+    "total_tokens": 738,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 321
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Regroup then protect the player",
+    "steps": [
+      {
+        "skill": "regroup",
+        "target": "none"
+      },
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "allPagesReviewed": true,
+  "pageCount": 9,
+  "outputHashes": {
+    "Aegis_Arena_System_Design_v1.5.docx": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e",
+    "Aegis_Arena_System_Design_v1.5.pdf": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f"
+  },
+  "reviewedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "reviewedUtc": "2026-09-17T21:12:53.067276+00:00",
+  "manifest": {
+    "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-evidence-r2.json",
+    "sha256": "5f1338ce8467b5006eed070a5222658a92a62dfbb27eae5d26278fad9d387c40"
+  },
+  "pageImages": [
+    {
+      "page": 1,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-1.png",
+      "sha256": "df6f60c1734bf44fca851886803c57dbe79f0dd13255022367859ee4abe04e55"
+    },
+    {
+      "page": 2,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-2.png",
+      "sha256": "0e6eca4bc4ca90f9c9f153e3ccf6e8b2666f3ce5e6eeb0ffc17e92227cb8058b"
+    },
+    {
+      "page": 3,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-3.png",
+      "sha256": "2b1b4aeaa7e16b6c423f040048c19e215f7085b743ffe2dc2177268ab5ede73b"
+    },
+    {
+      "page": 4,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-4.png",
+      "sha256": "11fadd466f2fbca5e87081de1355ece35ba010e0a59490ccef560bba4b0283da"
+    },
+    {
+      "page": 5,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-5.png",
+      "sha256": "6425bb5ec73446ddb844428060ef3ecdaaa4d5ca6f401167c1bf0305f7f612bc"
+    },
+    {
+      "page": 6,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-6.png",
+      "sha256": "ebf39c09dcf32f1339c51e4061fbc01a3a80da3b8f16ad3b695c6e68c9623d8f"
+    },
+    {
+      "page": 7,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-7.png",
+      "sha256": "a020bc5922bbd7d9d7790465e3afb923e7d5c64e6ee8f4f569d2f9ef2e7403cb"
+    },
+    {
+      "page": 8,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-8.png",
+      "sha256": "2ce172de2a365a2825e7896a1bed77cdeee4b57436e35bd93d0ade110a6bc1eb"
+    },
+    {
+      "page": 9,
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-9.png",
+      "sha256": "a55cec683e94fa948604c0477bd802150eed8f1e091bf2ac203fd0ff6606e29d"
+    }
+  ],
+  "notes": [
+    "All nine final qa-05 rendered page PNGs inspected individually at full page resolution.",
+    "No blank pages, orphaned headings, clipped text or tables, overlap, missing Chinese glyphs, or distorted images.",
+    "Five native screenshots retained intact; two diagrams explicitly labelled as design schematics.",
+    "Final release-r2 source 30d7bb8f4da7 and capture-packaged-02 figures replace interim evidence.",
+    "Historical v1.3 imagery is separated from current v1.5 and is not a controlled performance comparison.",
+    "Independent frozen-source check found no mismatch in E eligibility, stage rules, Q/E costs, or natural-play versus frozen-AI fixture scope.",
+    "DOCX has editable text, seven embedded images and three official-source hyperlinks; PDF has nine text-bearing pages.",
+    "Final video is 107.97 seconds and 14163113 bytes; rounded document size is 14.16 MB."
+  ]
+}

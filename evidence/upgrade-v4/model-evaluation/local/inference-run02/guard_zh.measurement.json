@@ -1,0 +1,44 @@
+{
+  "case": "guard_zh",
+  "instruction": "靠近我并保护我。",
+  "expectedSkill": "guard",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1923.8017000025138,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": false,
+  "desiredSkillPresent": false,
+  "plan": {
+    "label": "CATCH",
+    "steps": [
+      {
+        "skill": "capture_relay",
+        "target": "t0"
+      },
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 59,
+    "prompt_tokens": 266,
+    "total_tokens": 325,
+    "prompt_tokens_details": {
+      "cached_tokens": 127
+    }
+  },
+  "timings": {
+    "cache_n": 127,
+    "prompt_n": 139,
+    "prompt_ms": 450.733,
+    "prompt_per_token_ms": 3.2426834532374103,
+    "prompt_per_second": 308.3865614454677,
+    "predicted_n": 59,
+    "predicted_ms": 1431.334,
+    "predicted_per_token_ms": 24.678172413793103,
+    "predicted_per_second": 40.521639254010594
+  }
+}

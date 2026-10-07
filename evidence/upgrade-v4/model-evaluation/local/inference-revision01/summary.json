@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "runAtUtc": "2026-09-11T06:45:11.232361+00:00",
+  "scope": "Six bilingual native-preset requests; structural schema and visible-token grounding are separate from plan-quality judgment. No Unreal or concurrent-load validation.",
+  "server": "http://127.0.0.1:18765",
+  "model": "Qwen3-0.6B",
+  "quantization": "Q8_0",
+  "cpu": "Intel Core i9-13900HX",
+  "threads": 4,
+  "context": 2048,
+  "gpuLayers": 0,
+  "systemPrompt": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think",
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "steps"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "^[ -~]+$"
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "skill",
+            "target"
+          ],
+          "properties": {
+            "skill": {
+              "type": "string",
+              "enum": [
+                "guard",
+                "capture_relay",
+                "focus_visible",
+                "regroup"
+              ]
+            },
+            "target": {
+              "type": "string",
+              "enum": [
+                "none",
+                "t0",
+                "t1",
+                "t2",
+                "t3",
+                "t4",
+                "t5"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "observation": {
+    "wave": 1,
+    "relay": 0,
+    "objective": {
+      "complete": false,
+      "contested": false,
+      "charge": 1.0,
+      "player_in_ring": false,
+      "companion_in_ring": false,
+      "requires_player": false
+    },
+    "player": {
+      "health_fraction": 0.7,
+      "distance_cm": 400
+    },
+    "companion": {
+      "health_fraction": 0.8
+    },
+    "visible_hostiles": [
+      {
+        "target": "t0",
+        "distance_cm": 900,
+        "health_fraction": 0.5
+      }
+    ]
+  },
+  "requests": [
+    {
+      "case": "capture_en",
+      "instruction": "Secure the relay, then cover me.",
+      "expectedSkill": "capture_relay",
+      "coldRequest": true,
+      "httpStatus": 200,
+      "latencyMilliseconds": 2777.548400001251,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Secure the relay",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 43,
+        "prompt_tokens": 536,
+        "total_tokens": 579,
+        "prompt_tokens_details": {
+          "cached_tokens": 4
+        }
+      },
+      "timings": {
+        "cache_n": 4,
+        "prompt_n": 532,
+        "prompt_ms": 1659.931,
+        "prompt_per_token_ms": 3.120171052631579,
+        "prompt_per_second": 320.4952495013347,
+        "predicted_n": 43,
+        "predicted_ms": 1097.672,
+        "predicted_per_token_ms": 26.13504761904762,
+        "predicted_per_second": 38.26279617226275
+      }
+    },
+    {
+      "case": "guard_en",
+      "instruction": "Stay close and protect me.",
+      "expectedSkill": "guard",
+      "coldRequest": false,
+      "httpStatus": 200,
+      "latencyMilliseconds": 1489.276600004814,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Protect me",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 40,
+        "prompt_tokens": 534,
+        "total_tokens": 574,
+        "prompt_tokens_details": {
+          "cached_tokens": 396
+        }
+      },
+      "timings": {
+        "cache_n": 396,
+        "prompt_n": 138,
+        "prompt_ms": 467.377,
+        "prompt_per_token_ms": 3.3867898550724638,
+        "prompt_per_second": 295.2648504312365,
+        "predicted_n": 40,
+        "predicted_ms": 1011.688,
+        "predicted_per_token_ms": 25.94071794871795,
+        "predicted_per_second": 38.549434212919394
+      }
+    },
+    {
+      "case": "focus_en",
+      "instruction": "Attack the visible threat, then regroup.",
+      "expectedSkill": "focus_visible",
+      "coldRequest": false,
+      "httpStatus": 200,
+      "latencyMilliseconds": 1624.4944999998552,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Attack the visible threat",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 44,
+        "prompt_tokens": 537,
+        "total_tokens": 581,
+        "prompt_tokens_details": {
+          "cached_tokens": 396
+        }
+      },
+      "timings": {
+        "cache_n": 396,
+        "prompt_n": 141,
+        "prompt_ms": 486.108,
+        "prompt_per_token_ms": 3.4475744680851066,
+        "prompt_per_second": 290.05899923473794,
+        "predicted_n": 44,
+        "predicted_ms": 1109.14,
+        "predicted_per_token_ms": 25.793953488372097,
+        "predicted_per_second": 38.76877580828389
+      }
+    },
+    {
+      "case": "capture_zh",
+      "instruction": "先控制信号中继，再掩护我。",
+      "expectedSkill": "capture_relay",
+      "coldRequest": false,
+      "httpStatus": 200,
+      "latencyMilliseconds": 1953.793400003633,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Control relay then protect",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 52,
+        "prompt_tokens": 540,
+        "total_tokens": 592,
+        "prompt_tokens_details": {
+          "cached_tokens": 396
+        }
+      },
+      "timings": {
+        "cache_n": 396,
+        "prompt_n": 144,
+        "prompt_ms": 501.095,
+        "prompt_per_token_ms": 3.479826388888889,
+        "prompt_per_second": 287.37065825841404,
+        "predicted_n": 52,
+        "predicted_ms": 1419.633,
+        "predicted_per_token_ms": 27.835941176470588,
+        "predicted_per_second": 35.924777741853
+      }
+    },
+    {
+      "case": "guard_zh",
+      "instruction": "靠近我并保护我。",
+      "expectedSkill": "guard",
+      "coldRequest": false,
+      "httpStatus": 200,
+      "latencyMilliseconds": 1572.454300003301,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Protect me",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 35,
+        "prompt_tokens": 535,
+        "total_tokens": 570,
+        "prompt_tokens_details": {
+          "cached_tokens": 396
+        }
+      },
+      "timings": {
+        "cache_n": 396,
+        "prompt_n": 139,
+        "prompt_ms": 534.762,
+        "prompt_per_token_ms": 3.847208633093525,
+        "prompt_per_second": 259.9287159521432,
+        "predicted_n": 35,
+        "predicted_ms": 1026.668,
+        "predicted_per_token_ms": 30.19611764705882,
+        "predicted_per_second": 33.11684010799986
+      }
+    },
+    {
+      "case": "focus_zh",
+      "instruction": "攻击视野中的敌人，然后重新集结。",
+      "expectedSkill": "focus_visible",
+      "coldRequest": false,
+      "httpStatus": 200,
+      "latencyMilliseconds": 2197.701800003415,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "Engage then regroup",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "regroup",
+            "target": "none"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 54,
+        "prompt_tokens": 538,
+        "total_tokens": 592,
+        "prompt_tokens_details": {
+          "cached_tokens": 396
+        }
+      },
+      "timings": {
+        "cache_n": 396,
+        "prompt_n": 142,
+        "prompt_ms": 597.745,
+        "prompt_per_token_ms": 4.209471830985915,
+        "prompt_per_second": 237.55949443324494,
+        "predicted_n": 54,
+        "predicted_ms": 1588.298,
+        "predicted_per_token_ms": 29.96788679245283,
+        "predicted_per_second": 33.36905291072582
+      }
+    }
+  ],
+  "schemaValidCount": 6,
+  "groundedCount": 6,
+  "desiredSkillPresentCount": 6,
+  "latencyMilliseconds": {
+    "min": 1489.276600004814,
+    "median": 1789.143950001744,
+    "max": 2777.548400001251,
+    "firstRequest": 2777.548400001251
+  }
+}

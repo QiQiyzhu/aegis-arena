@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-09-18T06:16:04.038485+00:00",
+  "archiveKind": "compact-byte-preserving-evidence-registry",
+  "copiedOriginalCount": 19,
+  "rawReportsModified": false,
+  "sourceSnapshotsUniform": false,
+  "finalRuntimeSourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+  "scope": "Compact copies of original JSON records. Final package and prior failed capture intentionally have different source snapshots. Historical AI results are referenced evidence, not v2.1 policy retests.",
+  "excluded": "No PNG frames, large capture.json, MP4/WAV, executable, cooked container or event trace copied here.",
+  "files": [
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/acceptance-final-01.json",
+      "sha256": "6b5ef45aec4238d1cdedffe2d217401a79ce6185f3477aa919f0f7babd06f9b2",
+      "bytes": 29494,
+      "copiedRelativePath": "acceptance-final-01.json",
+      "scope": "Final release acceptance registry; deliveryReady=true describes its recorded checks, not human playtesting.",
+      "observedOriginalFields": {
+        "deliveryReady": true,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/control-package-02/provenance.json",
+      "sha256": "1712cb533d5dde5b0fa65acfc2c78a6228b0ab67503107ae65bb58bd116fd1ef",
+      "bytes": 10408,
+      "copiedRelativePath": "control/provenance.json",
+      "scope": "Packaged native controlled input and resource transaction fixture: 36 checks; not natural combat or human experience evidence.",
+      "observedOriginalFields": {
+        "passed": true,
+        "nativeAssertions": 36,
+        "fixtureDamage": true,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/audio-package-03/provenance.json",
+      "sha256": "0214c4f0ce0facc368278013edd83f6145753784574043c3f39fdc1213ccdb4e",
+      "bytes": 8924,
+      "copiedRelativePath": "audio/provenance.json",
+      "scope": "Packaged native audio lifecycle: 15 checks and independent UE Master Submix on/muted/restored PCM measurements; declared test-only audio overrides; not physical speaker proof.",
+      "observedOriginalFields": {
+        "passed": true,
+        "nativeAssertions": 15,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/audio-package-03/av-probe.json",
+      "sha256": "43e9313a84fc4760eb2d28a3d9edce60c4f56bd26a7ba8b223cf64c65e21a0df",
+      "bytes": 5407,
+      "copiedRelativePath": "audio/av-probe.json",
+      "scope": "Raw native audio probe assertions and observations; three Master Submix excerpts do not record all seven music tracks.",
+      "observedOriginalFields": {
+        "passed": true,
+        "fixtureDamage": false,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/lab-package-02/provenance.json",
+      "sha256": "163ca4c9da2cae20b9524e285a6fe20b9827a23cb85148ad066c2ce8a35eaa09",
+      "bytes": 15531,
+      "copiedRelativePath": "decision-lab/provenance.json",
+      "scope": "Packaged native Decision Lab input and permissions: 35 checks; separate from tactical-mode AI quality or historical policy evaluation.",
+      "observedOriginalFields": {
+        "passed": true,
+        "nativeAssertions": 35,
+        "fixtureDamage": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/capture-02/provenance.json",
+      "sha256": "8af9b3eb11ead5069d67ee94db49284c24dcb489ea8abd42c573ed46468fed12",
+      "bytes": 563755,
+      "copiedRelativePath": "capture/provenance.json",
+      "scope": "Final continuous packaged capture, ordinary scripted input, no fixture damage; technical pass and observed natural won outcome; not human playtesting.",
+      "observedOriginalFields": {
+        "passed": true,
+        "outcome": "won",
+        "fixtureDamage": false,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/vfx-final-01.json",
+      "sha256": "8fdecb3de5a1ad42e201a58ad35d04d8e7be9da19f44c2aa6b26f70f912644a4",
+      "bytes": 582,
+      "copiedRelativePath": "vfx-final-01.json",
+      "scope": "Recorded player shot/impact counters and bounded component pool; not GPU performance or whole-world visual-quality proof.",
+      "observedOriginalFields": {}
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/video-final-01/video-provenance.json",
+      "sha256": "adebbf3dcea36d36f8ff11f7bac0db05f201abee50a9e2437556e8e0fceb55ca",
+      "bytes": 19356,
+      "copiedRelativePath": "video/video-provenance.json",
+      "scope": "Video encoding, source-frame binding and full decode; audio is an event-based offline remix separate from native Master Submix recordings.",
+      "observedOriginalFields": {
+        "passed": true,
+        "outcome": "won",
+        "fixtureDamage": false,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/video-final-01/visual-review.json",
+      "sha256": "b81d48b8b1a9e42662678b81a7d915fd2e7f1a160d532a5f5cda093db69ad446",
+      "bytes": 1522,
+      "copiedRelativePath": "video/visual-review.json",
+      "scope": "Explicit reviewed video image records; image originals remain at their recorded absolute locations.",
+      "observedOriginalFields": {
+        "passed": true
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/document-qa-01/build-record.json",
+      "sha256": "ee0fd633a33efabd1ae1c7cba1ca093785d61889cb26cdf9d505cdc559d99962",
+      "bytes": 13150,
+      "copiedRelativePath": "document/build-record.json",
+      "scope": "Final document build and source/evidence bindings; not an independent gameplay run.",
+      "observedOriginalFields": {}
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/document-qa-01/visual-review.json",
+      "sha256": "0108c0fa5bc97398a79f0dc0ab6490569d67bd2cb9f45fa6973a62cfae7dd0b5",
+      "bytes": 3328,
+      "copiedRelativePath": "document/visual-review.json",
+      "scope": "Explicit rendered-page visual review records; page images remain at their recorded absolute locations.",
+      "observedOriginalFields": {
+        "passed": true
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/regression-package-01/provenance.json",
+      "sha256": "082907843d80419324a173435547f8029566a440e53f525f0598421f8de6802f",
+      "bytes": 8446,
+      "copiedRelativePath": "regression/provenance.json",
+      "scope": "Final-package native regression: technical pass with natural lost outcome preserved separately from final capture success.",
+      "observedOriginalFields": {
+        "passed": true,
+        "outcome": "lost",
+        "fixtureDamage": false,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/capture-01/provenance.json",
+      "sha256": "da0b3979d0f395953510be109259517b1bb4fbb1ccb00a37fb519e96bb85e9cb",
+      "bytes": 61576,
+      "copiedRelativePath": "failures/capture-01/provenance.json",
+      "scope": "Original failed capture with shared tracer cursor crash, preserved as passed=false; predates final cursor fix and source snapshot.",
+      "observedOriginalFields": {
+        "passed": false,
+        "fixtureDamage": false,
+        "humanPlaytest": false
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/capture-02/system/portfolio-A0D224764863FC7A346B48B306537967.json",
+      "sha256": "f95f7dbb589b7e6525d587b28d68f79e742c09b23eed2ef1b743cdd41fb4be3d",
+      "bytes": 1223,
+      "copiedRelativePath": "capture/system/portfolio-A0D224764863FC7A346B48B306537967.json",
+      "scope": "Final capture settlement: actual resources, damage, stages and outcome; full event trace remains external and is referenced by the original report.",
+      "observedOriginalFields": {
+        "outcome": "won",
+        "completed": true,
+        "ledgerBalanced": true,
+        "traceComplete": true
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:/AegisWork/Reports/v2.1-20260918/regression-package-01/system/portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.json",
+      "sha256": "a0ecd64d58272ab596c15d4a68305975d5b19920aa15fa25d33061961156f95e",
+      "bytes": 1215,
+      "copiedRelativePath": "regression/system/portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.json",
+      "scope": "Natural failed regression settlement: actual resources and damage; not relabeled as a successful mission.",
+      "observedOriginalFields": {
+        "outcome": "lost",
+        "completed": true,
+        "ledgerBalanced": true,
+        "traceComplete": true
+      }
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\v2.1-20260918\\retired-attachments.json",
+      "sha256": "eaab8b75012f0005e74c67f581339119ed737faff5f8b0f3ae6b120a1ce4964d",
+      "bytes": 558,
+      "copiedRelativePath": "delivery/retired-attachments.json",
+      "scope": "Only explicitly requested old portfolio delivery directories removed after new artifact hash verification."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\v2.1-20260918\\retired-attachments-inventory.json",
+      "sha256": "3463bed90428643a9b56e300fd8633d6e267eb8b632b40cfb08b6ec6218c4c85",
+      "bytes": 5272,
+      "copiedRelativePath": "delivery/retired-attachments-inventory.json",
+      "scope": "Pre-deletion SHA inventory of old v1.5 and v2.0 portfolio attachment files; raw reports retained."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\v2.1-20260918\\playable-copy-01.json",
+      "sha256": "08907064f7657a516ec24639544f1975409b8c1cb7321b83ae8ca8a8565e477e",
+      "bytes": 9234,
+      "copiedRelativePath": "delivery/playable-copy-01.json",
+      "scope": "Every copied final-package payload byte matched; shortcut launch setup is separately documented."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.1\\delivery-manifest.json",
+      "sha256": "2882ef99d67beb8e72bbf06882e76d113d87619d33bfc11d95b89d05d69040d4",
+      "bytes": 3651,
+      "copiedRelativePath": "delivery/delivery-manifest.json",
+      "scope": "Final attachment hashes and complete ZIP CRC verification."
+    }
+  ],
+  "updatedAtUtc": "2026-09-18T06:18:04.551684+00:00"
+}

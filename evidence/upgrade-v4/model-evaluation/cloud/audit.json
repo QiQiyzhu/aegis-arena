@@ -1,0 +1,14 @@
+{
+  "credentialMaterialAbsent": true,
+  "checkedFiles": 38,
+  "uniqueResponseIds": 12,
+  "rawResponseHashesVerified": true,
+  "declarationHashVerified": true,
+  "usage": {
+    "prompt_tokens": 8471,
+    "completion_tokens": 351,
+    "total_tokens": 8822,
+    "prompt_cache_hit_tokens": 4224,
+    "prompt_cache_miss_tokens": 4247
+  }
+}

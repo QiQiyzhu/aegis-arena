@@ -1,0 +1,16 @@
+{
+  "scope": "Only v1.5 and v2.0 portfolio delivery directories. Source, reports, original failures and other deliveries retained.",
+  "results": [
+    {
+      "directory": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5",
+      "existsAfter": false
+    },
+    {
+      "directory": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0",
+      "existsAfter": false
+    }
+  ],
+  "newDelivery": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.1",
+  "completedUtc": "2026-09-18T06:14:56.9458715Z",
+  "oldAttachmentsDeleted": true
+}

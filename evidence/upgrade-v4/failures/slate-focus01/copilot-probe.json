@@ -1,0 +1,54 @@
+{
+	"passed": false,
+	"engine": "unreal-runtime",
+	"worldType": 1,
+	"begunPlay": true,
+	"syntheticSlateInput": true,
+	"humanUsabilityTest": false,
+	"fixtureService": true,
+	"provider": "Local / disclosed-transport-fixture",
+	"plan": "capture_relay > guard",
+	"tracePath": "C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisPlans/270CF2C0466D20C09A8B7FBE580C2F67.jsonl",
+	"plannerStatus": "Plan paused - return to combat to execute",
+	"wallSeconds": 2.34644940122962,
+	"lastStage": 6,
+	"assertions": [
+		{
+			"name": "begun_game_world",
+			"passed": true
+		},
+		{
+			"name": "deployed_with_planner",
+			"passed": true
+		},
+		{
+			"name": "tab_opens_paused_slate_panel",
+			"passed": true
+		},
+		{
+			"name": "slate_text_and_enter_submit_real_request",
+			"passed": true
+		},
+		{
+			"name": "provider_plan_passes_runtime_validation",
+			"passed": true
+		},
+		{
+			"name": "goal_preserves_capture_then_guard_order",
+			"passed": true
+		},
+		{
+			"name": "network_response_does_not_advance_paused_game",
+			"passed": true
+		},
+		{
+			"name": "slate_tab_returns_to_combat",
+			"passed": false
+		}
+	],
+	"screenshots": [
+		"D:/AegisWork/Reports/upgrade-v4-copilot-fixture-01/copilot-open.png",
+		"D:/AegisWork/Reports/upgrade-v4-copilot-fixture-01/copilot-request.png",
+		"D:/AegisWork/Reports/upgrade-v4-copilot-fixture-01/copilot-plan.png"
+	]
+}

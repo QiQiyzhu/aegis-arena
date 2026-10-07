@@ -1,0 +1,116 @@
+{
+  "newDelivery": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.1",
+  "directories": [
+    {
+      "directory": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\文件清单.txt",
+          "bytes": 584,
+          "sha256": "d6a143bbe218d21890f037b0080fd68b603c73865386412b5f984dcd050efeec"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\先读我-投递与试玩.txt",
+          "bytes": 1331,
+          "sha256": "0a4b2fb79a4925395b6b2e2e9cd764b278879def03ce856f25afab863d4004e6"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis_Arena_System_Design_v1.5.docx",
+          "bytes": 8202758,
+          "sha256": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis_Arena_System_Design_v1.5.pdf",
+          "bytes": 1257292,
+          "sha256": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-Portfolio-v1.5.mp4",
+          "bytes": 14163113,
+          "sha256": "f7f2bfb2710841068cb725db633b8e3b8ff4044ddecf2c81ba9ed7539ae361e3"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-v1.5-Application.zip",
+          "bytes": 23312723,
+          "sha256": "6090f146d1e5db6a3c7f6f162b6fe1c42538dc191d5563ab27842b3127248d76"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-v1.5-Windows.zip",
+          "bytes": 164546350,
+          "sha256": "b47771e3a3a19bff126055120d353f1f786146e979dd6bc8ab929ef6ee015249"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\delivery-manifest.json",
+          "bytes": 21436,
+          "sha256": "5dd53acacf6d54143f6dd4ac6ecf5263b1f34aa8fad59a05b1b173b6bc3744bb"
+        }
+      ]
+    },
+    {
+      "directory": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\acceptance.json",
+          "bytes": 68587,
+          "sha256": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-AI-Case.md",
+          "bytes": 17779,
+          "sha256": "cacde2999615a4584cb3d7e0c2d48e21c928d3456aa1a9e4b3fcd6878a9e51c1"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Application.zip",
+          "bytes": 32320353,
+          "sha256": "283fcacc9f7753470a0f33646f68b520060b92dc407553bd914786f75db6a486"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Cpp-Guide.md",
+          "bytes": 18650,
+          "sha256": "8030b426b265186c3b73d8afde4343ef0c55b35bf6fe4897d4e9eed770232333"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Demo.mp4",
+          "bytes": 16656237,
+          "sha256": "0914e23e6c71f284b670ec04c06b1a81b3a965d8695f08acc86c7c517179a1b6"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Design.docx",
+          "bytes": 14425544,
+          "sha256": "c351a6826739a51dc16d012dd21704a73d2e49462f1fd78970f7052192aac68c"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Design.pdf",
+          "bytes": 1551011,
+          "sha256": "c5170982b05542922f4b7019616b24c7c812d18415488ce37900c290afa59ee8"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\Aegis-Arena-v2.0-Windows.zip",
+          "bytes": 155348382,
+          "sha256": "b06d484ae09a242e71213920e1f70246a4b7fff8504ce2604fdd327e86c41341"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\delivery-manifest.json",
+          "bytes": 4260,
+          "sha256": "97d9f1693869f9adeecbc09cdbbe1fbdaa0479af9167b85c623d1e615f202bb4"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\portfolio-v2-recording-case.md",
+          "bytes": 14490,
+          "sha256": "261b209b86634f1d0193e6cdfa8ff3d8e24e6fc1e54ad2af66475dd209667ee1"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\README-先读我.txt",
+          "bytes": 1811,
+          "sha256": "1e389f9a8b31abe95be9815cd8d0741a30add6cb675a01f02ee71bcc11dec16a"
+        },
+        {
+          "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v2.0\\v2-reference-and-direction.md",
+          "bytes": 8018,
+          "sha256": "6f8d362cfc026a7714526458ed7a288bde948bdab7d3159f8d8e81d8ebe4ba5c"
+        }
+      ]
+    }
+  ],
+  "recordedUtc": "2026-09-18T06:14:56.8715864Z"
+}

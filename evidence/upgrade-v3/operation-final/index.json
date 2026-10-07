@@ -1,0 +1,429 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "C4126EA94DDA0388D50B8AB9FDEFFC29",
+			"instanceName": "雨竹砌筑-26404",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-19.58.05",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 27.864906311035156,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Operation objectives - stopped AI and authored occupants",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisOperationFunctional.Operation objectives - stopped AI and authored occupants",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"C4126EA94DDA0388D50B8AB9FDEFFC29"
+			],
+			"duration": 27.864906311035156,
+			"dateTime": "2026.09.10-19.57.37",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (begun_pie_world)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.37"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (one_objective_runner)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.37"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (briefing_objectives_reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.38"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (briefing_cannot_choose_upgrade)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.38"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (opening_deploy_has_objective_and_hostiles)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.38"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (living_hostile_contests_actual_ring)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.39"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (clearing_enemies_does_not_complete_empty_ring)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.40"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (companion_alone_charges_actual_ring)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.40"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (dual_occupancy_applies_one_point_five_rate)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.41"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (opening_completion_pauses_for_upgrade)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.43"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (upgrade_pause_freezes_game_clock)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.43"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (invalid_upgrade_keeps_selection_paused)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.43"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (piercing_upgrade_applies_and_resumes)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.43"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (second_choice_cannot_apply_without_pending_upgrade)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.43"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (middle_wave_starts_two_fresh_relays)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.48"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (first_middle_relay_activates_distinct_second_ring)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (occupying_old_ring_cannot_charge_new_relay)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (two_relays_complete_but_living_enemies_block_transition)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.54"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (middle_clear_opens_second_paused_upgrade)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.54"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (owned_upgrade_cannot_be_selected_again)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.54"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (restorative_upgrade_applies_and_resumes)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.57.54"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (extraction_requires_enemies_cleared_before_charging)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.00"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (living_companion_cannot_extract_without_player)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.01"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (authored_damage_creates_real_companion_death)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.01"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (dead_companion_inside_cleared_ring_cannot_charge)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.01"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (dead_companion_adds_no_capture_bonus)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (living_player_finishes_extraction_and_wins)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.04"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (completed_operation_stays_terminal)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.05"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (restart_replaces_pawns_and_resets_objective)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.05"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (restart_clears_upgrades_contest_and_pause)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.05"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Assertion passed (redeploy_begins_fresh_opening_objective)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.05"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Operation objectives - stopped AI and authored occupants: Operation integration verified with AI stopped, authored damage, and placed occupants",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.05"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "reviewer": "Codex agent image inspection",
+  "reviewedImages": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\qa-01.png",
+      "sha256": "22f3bb7f98bbf7e5aa9d5ff9a7225bea1c192ec1da52b83fe3a51cf2a70df31b",
+      "passed": true,
+      "notes": "Intro title, scope and counts legible; no clipping."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\qa-02.png",
+      "sha256": "a6d5f98e5d56a8685a56656c46e0132d8d8dc2195642276f5db37c0a8d05164c",
+      "passed": true,
+      "notes": "Continuous native image and full HUD visible; side rail readable."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\qa-03.png",
+      "sha256": "fc5de80194901624fe63519f09829705bf27918ff8a3dde5827016ac5e08c997",
+      "passed": true,
+      "notes": "Upgrade descriptions and resource differences legible."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\qa-04.png",
+      "sha256": "29741571cd752f5ac37798ae9905b83620751e3c94d1056e4577d6fdc8efa995",
+      "passed": true,
+      "notes": "Native diagnostic and separate explanatory rail legible; no overlaps."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\qa-05.png",
+      "sha256": "d00c44456d66c9226259d471ccd82cee6ed1547f901ee9cd97d801c5f7431816",
+      "passed": true,
+      "notes": "Actual result and numerical scope legible; no cropped text."
+    }
+  ]
+}

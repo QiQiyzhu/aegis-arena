@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "reviewedAtUtc": "2026-09-17T20:28:44.783031+00:00",
+  "allFramesReviewed": true,
+  "allFramesReviewedScope": "All five generated encoded QA frames, not every frame of the film",
+  "reviewedFrames": [
+    {
+      "file": "qa-01.png",
+      "encodedSeconds": 2.0,
+      "sha256": "d1d5674a6a0d4e844d1d59f42fc3759a0e5056d3bec1ac95d44f37e1c3eca9bd",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "reviewed": true,
+      "passed": true,
+      "visualFindings": "Editorial intro explicitly labelled as non-gameplay. Chinese role/title and technical scope are visible; no identity/authorship invention.",
+      "visibleEngineWarning": false
+    },
+    {
+      "file": "qa-02.png",
+      "encodedSeconds": 10.000000208616257,
+      "sha256": "bd26e2d75ba0f6396cb292842ffb91f7b5fd3b9f95bd348dfd49cf8df1e06b05",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "reviewed": true,
+      "passed": true,
+      "visualFindings": "Entire native gameplay viewport visible without crop, engine overlay warnings or text clipping. Stage/energy/team HUD is readable.",
+      "visibleEngineWarning": false
+    },
+    {
+      "file": "qa-03.png",
+      "encodedSeconds": 18.60000065714121,
+      "sha256": "ebc6f5540f21f1b26c16c46e675b78a86a44aae83307e92805aac69be161a2c3",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "reviewed": true,
+      "passed": true,
+      "visualFindings": "Original upgrade choices remain visible and all editorial explanations fit the rail. No fabricated upgrade selection shown.",
+      "visibleEngineWarning": false
+    },
+    {
+      "file": "qa-04.png",
+      "encodedSeconds": 43.416668670251966,
+      "sha256": "44b97110d81cd84aae497fa85b10432eefe532fe4b4d7f0b3c9120cc1ca28105",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "reviewed": true,
+      "passed": true,
+      "visualFindings": "F1 diagnostics and Chinese explanation both explicitly state Utility scores do not control this tactical path and EQS is not used.",
+      "visibleEngineWarning": false
+    },
+    {
+      "file": "qa-05.png",
+      "encodedSeconds": 104.96667167171836,
+      "sha256": "df300a7c9ce7c7d34e97a683b275b201d183e39013fc143f8a8cb089d839fccc",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "reviewed": true,
+      "passed": true,
+      "visualFindings": "Editorial recap matches this ledger:80.9 game seconds,3/3 stages,1260 damage,145 energy spent,3 pulses/1 repair,14 actual E healing. AI-assistance/scope text is visible.",
+      "visibleEngineWarning": false
+    }
+  ],
+  "reviewedFrameCount": 5,
+  "totalEncodedFrames": 3239,
+  "videoSha256": "78cd24bc9ceadb5e47d43a9495a353d34eb62d1d7b3f370ea582ae92df11c974",
+  "videoFile": "Aegis-Arena-Portfolio-v1.5.mp4",
+  "videoBytes": 14160407,
+  "durationSeconds": 107.97,
+  "nativeFrames": 2879,
+  "nativeGameplayUncropped": true,
+  "visualScope": "Five encoded representative frames plus native result frame002860. Not a human playtest or a full-frame visual sweep.",
+  "visibleEngineWarningsInReviewedFrames": false,
+  "fullVideoAudioDecodePassed": true,
+  "audioTechnicalReview": {
+    "passed": true,
+    "method": "AAC stream fully decoded to PCM and measured; no listening claim",
+    "listeningPerformed": false,
+    "decodedSampleRate": 48000,
+    "channels": 2,
+    "decodedPcmSeconds": 107.968,
+    "peakAmplitude": 0.20102617144584656,
+    "rmsAmplitude": 0.0058939475068053755,
+    "clippedSampleCount": 0,
+    "firstAudibleSampleSeconds": 11.8978125,
+    "expectedFirstEventSeconds": 11.900000359863043,
+    "firstOnsetDifferenceSeconds": -0.002187859863042263,
+    "eventCount": 195,
+    "assets": [
+      "S_Break",
+      "S_Impact",
+      "S_Pulse",
+      "S_Repair",
+      "S_Shot",
+      "S_Upgrade"
+    ],
+    "mixMethod": "genuine engine-triggered events remixed from original WAVs; not loopback capture"
+  },
+  "mp4FastStartVerified": true,
+  "mp4TopLevelAtoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 120209
+    },
+    {
+      "type": "free",
+      "offset": 120241,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 120249,
+      "bytes": 14040158
+    }
+  ],
+  "provenanceSha256": "9475a2bd7b271f31d0877a7d57351e376134e6a6d0001acfcc0186954cc0c2ac",
+  "claimsChecked": [
+    "Chinese systems/general design portfolio attribution",
+    "No human playtest claim",
+    "No hardware30fps claim",
+    "No claimed Utility/EQS control",
+    "No inferred companion survival",
+    "Real engine events remixed, not loopback audio"
+  ],
+  "deliveryCopied": false
+}

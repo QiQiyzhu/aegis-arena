@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "scope": "Final Editor Development game module versus actual packaged Shipping binary; static marker isolation only",
+  "development": {
+    "file": "UnrealEditor-AegisArena.dll",
+    "bytes": 2153472,
+    "sha256": "7cf6c5973b29d39d009b8a5787743d7b7e061b3d9c06e575084cfe60d040cceb",
+    "markers": {
+      "aegis.PauseAI": true,
+      "aegis.StepDecision": true,
+      "aegis.Policy": true,
+      "aegis.SpawnBot": true,
+      "aegis.KillBot": true,
+      "aegis.Visualize": true,
+      "aegis.RunScenario": true,
+      "AEGIS / development diagnostics": true,
+      "AEGIS_EQS": true,
+      "AEGIS_INPUT_PROBE_PASS": true,
+      "AegisProbeOutput=": true,
+      "AEGIS_PLAY_PROBE_PASS": true,
+      "AegisPlayOutput=": true,
+      "AEGIS_COPILOT_PROBE_BEGIN": true,
+      "AegisCopilotOutput=": true,
+      "AEGIS_COPILOT_FAULT_BEGIN": true,
+      "AegisCopilotFaultOutput=": true,
+      "AEGIS_RELEASE_PROBE_CHECK": true,
+      "AegisReleaseProbeOutput=": true
+    }
+  },
+  "shipping": {
+    "file": "AegisArena-Win64-Shipping.exe",
+    "bytes": 103689728,
+    "sha256": "87f8b48e272d2af0852a6347e299d9a81030a31909b69085e5ce214178441847",
+    "markers": {
+      "aegis.PauseAI": false,
+      "aegis.StepDecision": false,
+      "aegis.Policy": false,
+      "aegis.SpawnBot": false,
+      "aegis.KillBot": false,
+      "aegis.Visualize": false,
+      "aegis.RunScenario": false,
+      "AEGIS / development diagnostics": false,
+      "AEGIS_EQS": false,
+      "AEGIS_INPUT_PROBE_PASS": false,
+      "AegisProbeOutput=": false,
+      "AEGIS_PLAY_PROBE_PASS": false,
+      "AegisPlayOutput=": false,
+      "AEGIS_COPILOT_PROBE_BEGIN": false,
+      "AegisCopilotOutput=": false,
+      "AEGIS_COPILOT_FAULT_BEGIN": false,
+      "AegisCopilotFaultOutput=": false,
+      "AEGIS_RELEASE_PROBE_CHECK": false,
+      "AegisReleaseProbeOutput=": false
+    }
+  }
+}

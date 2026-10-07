@@ -1,0 +1,37 @@
+{
+  "case": "heldout_no_visible_zh",
+  "split": "heldout",
+  "httpStatus": 200,
+  "latencyMilliseconds": 944.9335000026622,
+  "rawResponseSha256": "f4657b036dda39d8eb202139c6733ae2b5399b4ea362277f08fd553933e5f20e",
+  "savedResponseSha256": "f4657b036dda39d8eb202139c6733ae2b5399b4ea362277f08fd553933e5f20e",
+  "credentialRedactionApplied": false,
+  "responseId": "22231567-2f41-4587-893f-379896f5c64c",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 24,
+    "total_tokens": 717,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 309
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "No visible enemy; guard the player",
+    "steps": [
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

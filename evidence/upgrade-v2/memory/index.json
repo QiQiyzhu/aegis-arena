@@ -1,0 +1,393 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "60CC98C94225A24D9CA1D0A8FC2D43C6",
+			"instanceName": "雨竹砌筑-32700",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-16.29.22",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 3.5485837459564209,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Aegis Combat Functional Test",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisFunctional.Aegis Combat Functional Test",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"60CC98C94225A24D9CA1D0A8FC2D43C6"
+			],
+			"duration": 3.5485837459564209,
+			"dateTime": "2026.09.10-16.29.19",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Ranged fire accepted)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Real trace applies 14 damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Cooldown rejects duplicate fire)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Team filter rejects friendly damage)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Dead pawn cannot heal)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Real default controller possesses pawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Pawn moved away from spawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (EQS Querier context resolves)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (EQS Querier follows moved pawn)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Memory fixture acquires target through real sight)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Configured target memory lasts 2.5 seconds)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing attack query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing cover query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Missing retreat query permits fallback)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Sight loss clears live target and blackboard)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Sight loss clears actor focus)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Unseen motion cannot update remembered location)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Hidden target cannot be attacked)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.19"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Lost target remains remembered before deadline)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Memory expiry clears target and blackboard location)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Expired memory rejects investigation)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Expired memory rejects tactical query)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Sight reacquisition restores target and memory)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Reacquisition records newly perceived location)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Real EQS request becomes pending)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Shutdown cancels pending EQS and clears blackboard)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Shutdown cannot be repopulated by perception)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Assertion passed (Cancelled EQS cannot publish a late tactical point)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Aegis Combat Functional Test: Combat, tactical fallback, real perception memory and EQS cancellation verified in world",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-16.29.22"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

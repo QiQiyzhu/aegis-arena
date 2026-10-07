@@ -1,0 +1,119 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "D24055B74B7237A3EFFF02AB8AAC4208",
+			"instanceName": "雨竹砌筑-49704",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.11-07.12.22",
+	"succeeded": 6,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.099597200751304626,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "DamageAndTeams",
+			"fullTestPath": "Aegis.Core.DamageAndTeams",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.016050901263952255,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "DirectorBounds",
+			"fullTestPath": "Aegis.Core.DirectorBounds",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.016628798097372055,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "FixedSeed",
+			"fullTestPath": "Aegis.Core.FixedSeed",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.016631297767162323,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PlannerProtocol",
+			"fullTestPath": "Aegis.Core.PlannerProtocol",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.016943797469139099,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ScenarioSerialization",
+			"fullTestPath": "Aegis.Core.ScenarioSerialization",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.016792502254247665,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "UtilityAuthorization",
+			"fullTestPath": "Aegis.Core.UtilityAuthorization",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D24055B74B7237A3EFFF02AB8AAC4208"
+			],
+			"duration": 0.01654990017414093,
+			"dateTime": "2026.09.11-07.12.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

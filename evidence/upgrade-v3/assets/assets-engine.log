@@ -1,0 +1,875 @@
+﻿Log file open, 09/11/26 03:38:11
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=649)
+LogWindows: File 'aqProf.dll' does not exist
+LogProfilingDebugging: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=649)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=649)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogWindows: Started CrashReportClient (pid=26584)
+LogWindows: Enabling Tpause support
+LogWindows: Custom abort handler registered for crash reporting.
+LogInit: Running DelayedAutoRegister Phase StartOfEnginePreInit
+LogInit: Display: Running engine for game: AegisArena
+LogCore: UTS: Unreal Trace Server launched successfully
+LogTrace: Initializing trace...
+LogCore: Display: Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+LogCore: No trace connection. Tracing to in-memory cache.
+LogTrace: Display: Control listening on port 1985
+LogTrace: Finished trace initialization.
+LogCsvProfiler: Display: Metadata set : platform="Windows"
+LogCsvProfiler: Display: Metadata set : config="Development"
+LogCsvProfiler: Display: Metadata set : buildversion="++UE5+Release-5.8-CL-56702186"
+LogCsvProfiler: Display: Metadata set : engineversion="5.8.2-56702186+++UE5+Release-5.8"
+LogCsvProfiler: Display: Metadata set : enginereleaseversion="5.8.2"
+LogCsvProfiler: Display: Metadata set : os="Windows 11 (23H2) [10.0.22631.5624] "
+LogCsvProfiler: Display: Metadata set : cpu="GenuineIntel|13th Gen Intel(R) Core(TM) i9-13900HX"
+LogCsvProfiler: Display: Metadata set : pgoenabled="0"
+LogCsvProfiler: Display: Metadata set : pgoprofilingenabled="0"
+LogCsvProfiler: Display: Metadata set : ltoenabled="0"
+LogCsvProfiler: Display: Metadata set : asan="0"
+LogCsvProfiler: Display: Metadata set : mergedmodules="0"
+LogCsvProfiler: Display: Metadata set : compacttset="0"
+LogCsvProfiler: Display: Metadata set : commandline="" C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/AegisArena.uproject -run=pythonscript -script=D:/AegisWork/Reports/create-v3-fixtures.py -unattended -nop4 -NullRHI -stdout -FullStdOutLogOutput -ForceDPCVars=HomeScreen.EnableHomeScreen=0 -abslog=D:/AegisWork/Reports/upgrade-v3-assets-engine.log""
+LogCsvProfiler: Display: Metadata set : loginid="d1e2f1634426316e052880a447aced21"
+LogCsvProfiler: Display: Metadata set : llm="0"
+LogModuleManager: InternalLoadLibrary: 'StorageServerClient' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StorageServerClient.dll')
+LogModuleManager: InternalLoadLibrary: 'CookOnTheFly' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CookOnTheFly.dll')
+LogModuleManager: InternalLoadLibrary: 'StreamingFile' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StreamingFile.dll')
+LogModuleManager: InternalLoadLibrary: 'NetworkFile' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NetworkFile.dll')
+LogModuleManager: InternalLoadLibrary: 'PakFile' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-PakFile.dll')
+LogModuleManager: InternalLoadLibrary: 'RSA' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-RSA.dll')
+LogModuleManager: InternalLoadLibrary: 'SandboxFile' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SandboxFile.dll')
+LogCsvProfiler: Display: Metadata set : zenstreaming="0"
+LogInit: Running DelayedAutoRegister Phase FileSystemReady
+LogInit: Running DelayedAutoRegister Phase TaskGraphSystemReady
+LogStats: Stats thread started at 0.299516
+LogInit: Running DelayedAutoRegister Phase StatSystemReady
+LogModuleManager: InternalLoadLibrary: 'CoreUObject' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CoreUObject.dll')
+LogCsvProfiler: Display: Metadata set : systemresolution.resx="1280"
+LogCsvProfiler: Display: Metadata set : systemresolution.resy="720"
+LogModuleManager: InternalLoadLibrary: 'Engine' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Engine.dll')
+LogModuleManager: InternalLoadLibrary: 'UniversalObjectLocator' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-UniversalObjectLocator.dll')
+LogModuleManager: InternalLoadLibrary: 'Renderer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Renderer.dll')
+LogModuleManager: InternalLoadLibrary: 'AnimGraphRuntime' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AnimGraphRuntime.dll')
+LogModuleManager: InternalLoadLibrary: 'SlateRHIRenderer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SlateRHIRenderer.dll')
+LogModuleManager: InternalLoadLibrary: 'Landscape' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Landscape.dll')
+LogModuleManager: InternalLoadLibrary: 'RHICore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-RHICore.dll')
+LogModuleManager: InternalLoadLibrary: 'RenderCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-RenderCore.dll')
+LogModuleManager: InternalLoadLibrary: 'TextureCompressor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureCompressor.dll')
+LogModuleManager: InternalLoadLibrary: 'OpenColorIOWrapper' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-OpenColorIOWrapper.dll')
+LogModuleManager: InternalLoadLibrary: 'Virtualization' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Virtualization.dll')
+LogModuleManager: InternalLoadLibrary: 'MessageLog' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MessageLog.dll')
+LogModuleManager: InternalLoadLibrary: 'AudioEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioEditor.dll')
+LogModuleManager: InternalLoadLibrary: 'PropertyEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-PropertyEditor.dll')
+LogModuleManager: InternalLoadLibrary: 'AudioExtensions' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioExtensions.dll')
+LogModuleManager: InternalLoadLibrary: 'SignalProcessing' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SignalProcessing.dll')
+LogModuleManager: InternalLoadLibrary: 'AudioMixerCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioMixerCore.dll')
+LogModuleManager: InternalLoadLibrary: 'AnimationModifiers' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AnimationModifiers.dll')
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +8:00, Platform Override: ''
+LogInit: Session CrashGUID >====================================================
+         Session CrashGUID >   UECC-Windows-A7E0D96A48F6682E5AE2A4B975BBCBEB
+         Session CrashGUID >====================================================
+LogConfig: No local boot hotfix file found at: [C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogInit: Running DelayedAutoRegister Phase IniSystemReady
+LogModuleManager: InternalLoadLibrary: 'TargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TargetPlatform.dll')
+LogModuleManager: InternalLoadLibrary: 'DesktopPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-DesktopPlatform.dll')
+Launching UnrealBuildTool... [D:/Program Files/UE_5.8/Engine/Build/BatchFiles/Build.bat -Mode=ValidatePlatforms -OutputSDKs  -AllPlatforms  -project="C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/AegisArena.uproject" -log="C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/Logs/AutoSDKInfo.txt" -verbose -timestamps]
+LogAudio: Display: Audio Device Manager not initializing due to all audio being disabled. If this is not intentional, please check command line arguments for "-nosound".
+LogModuleManager: InternalLoadLibrary: 'TelemetryUtils' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TelemetryUtils.dll')
+LogPluginManager: Looking for build plugins target receipt
+LogPluginManager: Found matching target receipt: C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Binaries/Win64/AegisArenaEditor.target
+LogPluginManager: Looking for enabled plugins target receipt
+LogConfig: Display: Loading Android ini files took 0.04 seconds
+LogConfig: Display: Loading IOS ini files took 0.05 seconds
+LogConfig: Display: Loading Mac ini files took 0.05 seconds
+LogConfig: Display: Loading VulkanPC ini files took 0.05 seconds
+LogPluginManager: Found matching target receipt: C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Binaries/Win64/AegisArenaEditor.target
+LogPluginManager: Mounting Engine plugin ACLPlugin
+LogPluginManager: Mounting Engine plugin EditorScriptingUtilities
+LogPluginManager: Mounting Engine plugin PythonScriptPlugin
+LogPluginManager: Mounting Engine plugin AISupport
+LogPluginManager: Mounting Engine plugin EnvironmentQueryEditor
+LogPluginManager: Mounting Engine plugin ContentBrowserFileDataSource
+LogConfig: Display: Loading Windows ini files took 0.06 seconds
+LogModuleManager: InternalLoadLibrary: 'PythonScriptPluginPreload' ('D:/Program Files/UE_5.8/Engine/Plugins/Experimental/PythonScriptPlugin/Binaries/Win64/UnrealEditor-PythonScriptPluginPreload.dll')
+LogConfig: Display: Loading Unix ini files took 0.06 seconds
+LogConfig: Display: Loading VisionOS ini files took 0.06 seconds
+LogInit: Running DelayedAutoRegister Phase EarliestPossiblePluginsLoaded
+LogModuleManager: InternalLoadLibrary: 'ACLPlugin' ('D:/Program Files/UE_5.8/Engine/Plugins/Animation/ACLPlugin/Binaries/Win64/UnrealEditor-ACLPlugin.dll')
+LogConfig: Display: Loading TVOS ini files took 0.06 seconds
+LogModuleManager: InternalLoadLibrary: 'AISupportModule' ('D:/Program Files/UE_5.8/Engine/Plugins/AI/AISupport/Binaries/Win64/UnrealEditor-AISupportModule.dll')
+LogInit: ExecutableName: UnrealEditor-Cmd.exe
+LogInit: Build: ++UE5+Release-5.8-CL-56702186
+LogInit: Platform=WindowsEditor
+LogInit: MachineId=d1e2f1634426316e052880a447aced21
+LogInit: DeviceId=
+LogInit: Engine Version: 5.8.2-56702186+++UE5+Release-5.8
+LogInit: Compatible Engine Version: 5.8.0-55116800+++UE5+Release-5.8
+LogInit: Net CL: 55116800
+LogInit: OS: Windows 11 (23H2) [10.0.22631.5624] (), CPU: 13th Gen Intel(R) Core(TM) i9-13900HX, GPU: Intel(R) UHD Graphics
+LogInit: CPU Model ID: 6b71, microcode revision: 114
+LogInit: Compiled (64-bit): Aug  7 2026 15:09:20
+LogInit: Architecture: x64
+LogInit: Compiled with Visual C++: 19.44.35228.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE5+Release-5.8
+LogInit: Command Line:  C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/AegisArena.uproject -run=pythonscript -script=D:/AegisWork/Reports/create-v3-fixtures.py -unattended -nop4 -NullRHI -stdout -FullStdOutLogOutput -ForceDPCVars=HomeScreen.EnableHomeScreen=0 -abslog=D:/AegisWork/Reports/upgrade-v3-assets-engine.log
+LogInit: Base Directory: D:/Program Files/UE_5.8/Engine/Binaries/Win64/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogDevObjectVersion: Number of dev versions registered: 35
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 20
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 49
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 268
+LogDevObjectVersion:   FortniteValkyrie (8DBC2C5B-54A7-43E0-A768-FCBB7DA29060): 8
+LogDevObjectVersion:   FortniteSeason (5B4C06B7-2463-4AF8-805B-BF70CDF5D0DD): 15
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 20
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 11
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   UE5-Main (697DD581-E64F-41AB-AA4A-51ECBEB7B628): 123
+LogDevObjectVersion:   UE5-Release (D89B5E42-24BD-4D46-8412-ACA8DF641779): 68
+LogDevObjectVersion:   UE5-SpecialProject (59DA5D52-1232-4948-B878-597870B8E98B): 9
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogDevObjectVersion:   Dev-NaniteResearch (30D58BE3-95EA-4282-A6E3-B159D8EBB06A): 1
+LogConfig: Display: Loading Linux ini files took 0.07 seconds
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC.
+LogStreaming: Display: AsyncLoading2 - Created: Async Loading Thread: false, Async Post Load: false, Multithreaded: false
+LogInit: Object subsystem initialized
+LogConfig: Set CVar [[con.DebugEarlyDefault:1]]
+LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+LogConfig: Set CVar [[r.setres:1280x720]]
+LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+LogConfig: CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]] deferred - dummy variable created
+LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+LogConfig: Set CVar [[r.Nanite.Streaming.ReservedResources:1]]
+LogConfig: CVar [[D3D12.Bindless.ResourceDescriptorHeapSize:32768]] deferred - dummy variable created
+LogConfig: CVar [[D3D12.Bindless.SamplerDescriptorHeapSize:2048]] deferred - dummy variable created
+LogConfig: Set CVar [[r.PSOPrecache.GlobalShaders:1]]
+LogConfig: Set CVar [[r.VRS.EnableSoftware:1]]
+LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
+[2026.09.10-19.38.11:987][  0]LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
+[2026.09.10-19.38.11:987][  0]LogConfig: CVar [[con.DebugLateCheat:1]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[QualityLevelMapping:high]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[r.Occlusion.SingleRHIThreadStall:1]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[D3D12.Bindless.ResourceDescriptorHeapSize:32768]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[D3D12.Bindless.SamplerDescriptorHeapSize:2048]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.GPUCrashDebugging:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[MaxSkinBones:(Default=65536,PerPlatform=(("Mobile", 256)))]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shaders.RemoveUnusedInterpolators:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Substrate.RoughDiffuse:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Substrate.ShadingQuality:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Substrate.TileCoord8bits:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Substrate.Glints:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Substrate.ClosuresPerPixel:4]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Refraction.Blur:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.DynamicGlobalIlluminationMethod:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.ReflectionMethod:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.AsyncLoadingThreadEnabled:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[s.MaxPackageSummarySize:16384]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[s.FlushStreamingOnExit:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__SoundBase]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__DeviceProfileManager]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.AllowParallelGC:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.CreateGCClusters:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.MinGCClusterSize:5]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.AssetClustreringEnabled:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.ActorClusteringEnabled:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[gc.VerifyUObjectsAreNotFGCObjects:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Average",ToolTip="Simulates average internet conditions")]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[NetworkEmulationProfiles:(ProfileName="BufferBloat",ToolTip="Simulates a connection affected by buffer bloat (in and out)")]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [Engine]
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[DefaultASTCQualityBySpeed:2]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[DefaultASTCQualityBySize:3]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[DefaultASTCQualityBySizeHQ:4]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:WidgetBlueprint]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GroupActor]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MetaData]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ObjectRedirector]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NavMeshRenderingComponent]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ReflectionCaptureComponent]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:TextRenderComponent]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:Font]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:InterpCurveEdSetup]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MaterialExpression]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraEmitter]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:NiagaraScript]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleEmitter]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleLODLevel]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:ParticleModule]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SubUVAnimation]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:SoundNode]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:GameplayEffectUIData]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:AmbientSound]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:WidgetBlueprint]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:GroupActor]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:MetaData]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:ObjectRedirector]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedClient:InterpCurveEdSetup]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.AllowStaticLighting]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.MaterialEditor.LWCTruncateMode]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.VelocityOutputPass]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.SelectiveBasePassOutputs]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.DBuffer]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Mobile.DBuffer]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Symbols]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.GenerateSymbols]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.WriteSymbols]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.AllowUniqueSymbols]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.ExtraData]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Optimize]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.CompileShadersForDevelopment]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.MobileHDR]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: CVar [[VersionedIntRValues:r.UsePreExposure]] deferred - dummy variable created
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [Scalability]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.SkeletalMeshLODBias:0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.ViewDistanceScale:1.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [Scalability]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.FXAA.Quality:4]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TemporalAA.Quality:2]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.History.R11G11B10:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.History.ScreenPercentage:200]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.History.UpdateQuality:3]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.ShadingRejection.Flickering:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.RejectionAntiAliasingQuality:2]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.ReprojectionField:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.TSR.Resurrection:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [Scalability]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.LightFunctionQuality:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.ShadowQuality:5]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.MaxResolution:2048]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.DistanceFieldShadowing:1]]
+[2026.09.10-19.38.11:988][  0]LogConfig: Set CVar [[r.VolumetricFog:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.CapsuleShadows:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MaxPhysicalPages:4096]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectional:-1.5]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasDirectionalMoving:-1.5]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocal:0.0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.ResolutionLodBiasLocalMoving:1.0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountDirectional:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayDirectional:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.RayCountLocal:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.SMRT.SamplesPerRayLocal:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Shadow.Virtual.MarkCoarsePagesLocal:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.NumSamplesPerPixel:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.DownsampleMode:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.ScreenTraces.Quality:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.Allow:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.SpecularOnly:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.SoftShadows:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.FrontLayerTranslucency.TexturedRectLights:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.Spatial.UseHistorySpatialVariance:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.Volume.GridPixelSize:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MegaLights.Volume.GridSizeZ:128]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Applying CVar settings from Section [GlobalIlluminationQuality@3] File [Scalability]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DistanceFieldAO:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SkylightIntensityMultiplier:1.0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.AOQuality:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.DiffuseIndirect.Allow:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.FinalGatherMethod:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.AtlasSize:4096]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardTexelDensityScale:100]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardMinResolution:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.SurfaceCache.CardMaxResolution:512]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.MaxLightsPerTile:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.DirectLighting.UpdateFactor:32]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.UpdateFactor:64]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.ProbeSpacing:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LumenScene.Radiosity.HemisphereProbeResolution:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TraceMeshSDFs.Allow:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.ProbeResolution:32]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.RadianceCache.NumProbesToTraceBudget:150]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.DownsampleFactor:16]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.NumAdaptiveProbes:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TracingOctahedronResolution:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.IrradianceFormat:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.StochasticInterpolation:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.FullResolutionJitterWidth:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.TwoSidedFoliageBackfaceDiffuse:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ScreenTraces.HZBTraversal.FullResDepth:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.DownsampleFactor:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.SliceCount:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.BentNormal:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.HZB:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.HorizonSearch.ForegroundSampleRejectPower:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.ShortRangeAO.FoliageOcclusionStrength:.7]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.GridPixelSize:32]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TraceFromVolume:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.ShareRadianceCacheWithOpaque:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.SpatialFilter:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.TracingOctahedronResolution:3]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.ProbeResolution:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.GridResolution:24]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyVolume.RadianceCache.NumProbesToTraceBudget:100]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.HardwareRayTracing.HitLighting.Allowed:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.RayTracing.Scene.BuildMode:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.RayTracing.Geometry.SkeletalMeshes:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MeshCardRepresentation.SkeletalMesh:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.RayTracing.DynamicGeometry.MaxUpdatePrimitivesPerFrame:-1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Applying CVar settings from Section [ReflectionQuality@3] File [Scalability]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSR.Quality:3]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.Reflections.Allow:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.Reflections.DownsampleFactor:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.Reflections.MaxRoughnessToTraceForFoliage:0.4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.ScreenProbeGather.MaxRoughnessToEvaluateRoughSpecularForFoliage:0.8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.NumSamples:5]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.Reflections.ScreenSpaceReconstruction.MinWeight:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Allow:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Lumen.TranslucencyReflections.FrontLayer.Enable:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [Scalability]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MotionBlurQuality:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MotionBlur.HalfResGather:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DepthOfFieldQuality:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.RenderTargetPoolMin:400]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LensFlareQuality:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SceneColorFringeQuality:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.EyeAdaptationQuality:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.BloomQuality:5]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Bloom.ScreenPercentage:50.000]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.FastBlurThreshold:100]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Upscale.Quality:3]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LightShaftQuality:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Filter.SizeScale:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LUT.Shaper:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.LUT.Size:32]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Tonemapper.Quality:5]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Gather.ResolutionDivisor:2         ; lower gathering resolution]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [Scalability]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.MipBias:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.Boost:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MaxAnisotropy:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.VT.MaxAnisotropy:8]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.PoolSize:1000]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [Scalability]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolume.Dim:64]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.RefractionQuality:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SceneColorFormat:4]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.DetailMode:3]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.TranslucencyLightingVolume.Blur:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSS.Scale:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSS.SampleSet:2]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSS.Quality:1]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSS.HalfRes:0]]
+[2026.09.10-19.38.11:989][  0]LogConfig: Set CVar [[r.SSGI.Quality:3]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.ParticleLightQuality:2]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.Fog.SeparateComposition:-1	; Allow fog separate composition when FSSS is enabled.]]
+[2026.09.10-19.38.11:990][  0]LogConfig: CVar [[fx.Niagara.QualityLevel:3]] deferred - dummy variable created
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.Refraction.OffsetQuality:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Allowed:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.DownsampleFactor:2]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.MaxStepCount:256]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.Resolution:512]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.Shadows.Precision:0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HeterogeneousVolumes.UseExistenceMask:0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [Scalability]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[foliage.DensityScale:1.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[grass.DensityScale:1.0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: CVar [[pcg.Quality:3]] deferred - dummy variable created
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [Scalability]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [LandscapeQuality@3] File [Scalability]
+[2026.09.10-19.38.11:990][  0]LogInit: Selected Device Profile: [WindowsEditor]
+[2026.09.10-19.38.11:990][  0]LogHAL: Display: Platform has ~ 16 GB [16895016960 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.09.10-19.38.11:990][  0]LogDeviceProfileManager: Going up to parent DeviceProfile [Windows]
+[2026.09.10-19.38.11:990][  0]LogDeviceProfileManager: Going up to parent DeviceProfile []
+[2026.09.10-19.38.11:990][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.RasterizationMode:Bitmap -> Msdf]]
+[2026.09.10-19.38.11:990][  0]LogDeviceProfileManager: Pushing Device Profile CVar: [[UI.SlateSDFText.ResolutionLevel:2 -> 2]]
+[2026.09.10-19.38.11:990][  0]LogDeviceProfileManager: Setting CommandLine Device Profile CVar: [[HomeScreen.EnableHomeScreen:0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: CVar [[HomeScreen.EnableHomeScreen:0]] deferred - dummy variable created
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: CVar [[fx.SkipVectorVMBackendOptimizations:1]] deferred - dummy variable created
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [Startup_Windows] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[WindowsApplication.UseWorkerThreadForRawInput:0]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[r.PSOPrecache.KeepInMemoryForActiveMaterials:1]]
+[2026.09.10-19.38.11:990][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/Config/WindowsEditor/Editor.ini]
+[2026.09.10-19.38.11:990][  0]LogConfig: Set CVar [[SplineComponent.OnlyUpdateActiveSpline:0]]
+[2026.09.10-19.38.11:990][  0]LogInit: Computer: 雨竹砌筑
+[2026.09.10-19.38.11:990][  0]LogInit: User: yzhu
+[2026.09.10-19.38.11:990][  0]LogInit: CPU Page size=4096, Cores=24
+[2026.09.10-19.38.11:990][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2026.09.10-19.38.11:990][  0]LogInit: Gaming Handheld Device: 0
+[2026.09.10-19.38.12:031][  0]LogMemory: Process is running as part of a Windows Job with separate resource limits
+[2026.09.10-19.38.12:031][  0]LogMemory: Memory total: Physical=15.7GB (16GB approx) Virtual=28.2GB
+[2026.09.10-19.38.12:031][  0]LogMemory: Platform Memory Stats for WindowsEditor
+[2026.09.10-19.38.12:031][  0]LogMemory: Process Physical Memory: 543.73 MB used, 543.73 MB peak
+[2026.09.10-19.38.12:031][  0]LogMemory: Process Virtual Memory: 548.27 MB used, 548.27 MB peak
+[2026.09.10-19.38.12:031][  0]LogMemory: Physical Memory: 10546.35 MB used,  5566.00 MB free, 16112.34 MB total
+[2026.09.10-19.38.12:031][  0]LogMemory: Virtual Memory: 13532.41 MB used,  15379.93 MB free, 28912.34 MB total
+[2026.09.10-19.38.12:031][  0]LogCsvProfiler: Display: Metadata set : extradevelopmentmemorymb="0"
+[2026.09.10-19.38.12:031][  0]LogModuleManager: InternalLoadLibrary: 'IoStoreOnDemandCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-IoStoreOnDemandCore.dll')
+[2026.09.10-19.38.12:031][  0]LogModuleManager: InternalLoadLibrary: 'BandwidthDebugDelegates' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-BandwidthDebugDelegates.dll')
+[2026.09.10-19.38.12:031][  0]LogModuleManager: InternalLoadLibrary: 'ClientBandwidthDebugVisualizer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ClientBandwidthDebugVisualizer.dll')
+[2026.09.10-19.38.12:033][  0]LogModuleManager: InternalLoadLibrary: 'BandwidthMeasurementTool' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-BandwidthMeasurementTool.dll')
+[2026.09.10-19.38.12:033][  0]LogModuleManager: InternalLoadLibrary: 'DownlinkBandwidthManager' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-DownlinkBandwidthManager.dll')
+[2026.09.10-19.38.12:033][  0]LogObj: Display: Attempting to load config data for Default__DownlinkBandwidthManagerConfig before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.09.10-19.38.12:034][  0]LogWindows: WindowsPlatformFeatures enabled
+[2026.09.10-19.38.12:034][  0]LogModuleManager: InternalLoadLibrary: 'WindowsPlatformFeatures' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WindowsPlatformFeatures.dll')
+[2026.09.10-19.38.12:037][  0]LogModuleManager: InternalLoadLibrary: 'GameplayMediaEncoder' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-GameplayMediaEncoder.dll')
+[2026.09.10-19.38.12:037][  0]LogModuleManager: InternalLoadLibrary: 'AVEncoder' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AVEncoder.dll')
+[2026.09.10-19.38.12:037][  0]LogModuleManager: InternalLoadLibrary: 'Chaos' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Chaos.dll')
+[2026.09.10-19.38.12:037][  0]LogModuleManager: InternalLoadLibrary: 'GeometryCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-GeometryCore.dll')
+[2026.09.10-19.38.12:037][  0]LogSpline: Registered spline type: TypeId=0x54E3AD22, Impl=MultiSpline, Value=Vector
+[2026.09.10-19.38.12:037][  0]LogModuleManager: InternalLoadLibrary: 'ChaosSolverEngine' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ChaosSolverEngine.dll')
+[2026.09.10-19.38.12:037][  0]LogChaosDD: Chaos Debug Draw Startup
+[2026.09.10-19.38.12:037][  0]LogInit: Physics initialised using underlying interface: Chaos
+[2026.09.10-19.38.12:037][  0]LogInit: Using OS detected language (zh-CN).
+[2026.09.10-19.38.12:037][  0]LogInit: Using OS detected locale (zh-CN).
+[2026.09.10-19.38.12:038][  0]LogTextLocalizationManager: No specific localization for 'zh-CN' exists, so 'zh-Hans' will be used for the language.
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Editor/zh/Editor.locres' could not be opened for reading!
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Keywords/zh/Keywords.locres' could not be opened for reading!
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Category/zh/Category.locres' could not be opened for reading!
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/ToolTips/zh/ToolTips.locres' could not be opened for reading!
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/PropertyNames/zh/PropertyNames.locres' could not be opened for reading!
+[2026.09.10-19.38.12:246][  0]LogTextLocalizationResource: LocRes '../../../Engine/Content/Localization/Engine/zh/Engine.locres' could not be opened for reading!
+[2026.09.10-19.38.12:306][  0]LogObj: Display: Attempting to load config data for Default__SlateThemeManager before the Class has been constructed/registered/linked (likely during module loading or early startup). This will result in the load silently failing and should be fixed.
+[2026.09.10-19.38.12:372][  0]LogInit: Running DelayedAutoRegister Phase PreRHIInit
+[2026.09.10-19.38.12:374][  0]LogModuleManager: InternalLoadLibrary: 'NullDrv' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NullDrv.dll')
+[2026.09.10-19.38.12:375][  0]LogVRS: Current RHI does not support Variable Rate Shading
+[2026.09.10-19.38.12:376][  0]LogRHI: Render tracing channels set: 'Submission' -> 0xf
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : verbatimrhiname="Null"
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : rhiname="Null"
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : rhifeaturelevel="SM6"
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM6"
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : gpu=""
+[2026.09.10-19.38.12:376][  0]LogCsvProfiler: Display: Metadata set : gpudriver=""
+[2026.09.10-19.38.12:376][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.09.10-19.38.12:376][  0]LogModuleManager: InternalLoadLibrary: 'TurnkeySupport' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TurnkeySupport.dll')
+[2026.09.10-19.38.12:377][  0]LogTargetPlatformManager: UBT AutoSDK ReturnCode: 0
+[2026.09.10-19.38.12:377][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormat' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormat.dll')
+[2026.09.10-19.38.12:377][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatASTC' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatASTC.dll')
+[2026.09.10-19.38.12:378][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatDXT' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatDXT.dll')
+[2026.09.10-19.38.12:378][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatETC2' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatETC2.dll')
+[2026.09.10-19.38.12:378][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatIntelISPCTexComp' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatIntelISPCTexComp.dll')
+[2026.09.10-19.38.12:379][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatOodle' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatOodle.dll')
+[2026.09.10-19.38.12:379][  0]LogModuleManager: InternalLoadLibrary: 'TextureFormatUncompressed' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TextureFormatUncompressed.dll')
+[2026.09.10-19.38.12:379][  0]LogTextureFormatASTC: Display: ASTCEnc version 5.0.1 library loaded
+[2026.09.10-19.38.12:379][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatASTC
+[2026.09.10-19.38.12:379][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatDXT
+[2026.09.10-19.38.12:379][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatETC2
+[2026.09.10-19.38.12:379][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatIntelISPCTexComp
+[2026.09.10-19.38.12:379][  0]LogTextureFormatOodle: Display: Oodle Texture TFO init; latest sdk version = 2.9.16
+[2026.09.10-19.38.12:379][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.16.dll
+[2026.09.10-19.38.12:380][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatOodle
+[2026.09.10-19.38.12:380][  0]LogTextureFormatManager: Display: Loaded Base TextureFormat: TextureFormatUncompressed
+[2026.09.10-19.38.12:381][  0]LogModuleManager: InternalLoadLibrary: 'AndroidTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/Android/UnrealEditor-AndroidTargetPlatform.dll')
+[2026.09.10-19.38.12:382][  0]LogModuleManager: InternalLoadLibrary: 'AndroidTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/Android/UnrealEditor-AndroidTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:390][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Android'
+[2026.09.10-19.38.12:390][  0]LogModuleManager: InternalLoadLibrary: 'IOSTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/IOS/UnrealEditor-IOSTargetPlatform.dll')
+[2026.09.10-19.38.12:391][  0]LogModuleManager: InternalLoadLibrary: 'IOSTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/IOS/UnrealEditor-IOSTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:392][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'IOS'
+[2026.09.10-19.38.12:392][  0]LogModuleManager: InternalLoadLibrary: 'LinuxTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/Linux/UnrealEditor-LinuxTargetPlatform.dll')
+[2026.09.10-19.38.12:392][  0]LogModuleManager: InternalLoadLibrary: 'LinuxTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/Linux/UnrealEditor-LinuxTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:393][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Linux'
+[2026.09.10-19.38.12:393][  0]LogModuleManager: InternalLoadLibrary: 'MacTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MacTargetPlatform.dll')
+[2026.09.10-19.38.12:394][  0]LogModuleManager: InternalLoadLibrary: 'MacTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MacTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:396][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'Mac'
+[2026.09.10-19.38.12:396][  0]LogModuleManager: InternalLoadLibrary: 'TVOSTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/IOS/UnrealEditor-TVOSTargetPlatform.dll')
+[2026.09.10-19.38.12:396][  0]LogModuleManager: InternalLoadLibrary: 'TVOSTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/IOS/UnrealEditor-TVOSTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:396][  0]LogTargetPlatformManager: Display: Failed to SetupSDK for platform 'TVOS'
+[2026.09.10-19.38.12:396][  0]LogModuleManager: InternalLoadLibrary: 'WindowsTargetPlatform' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WindowsTargetPlatform.dll')
+[2026.09.10-19.38.12:397][  0]LogModuleManager: InternalLoadLibrary: 'WindowsTargetPlatformSettings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WindowsTargetPlatformSettings.dll')
+[2026.09.10-19.38.12:398][  0]LogModuleManager: InternalLoadLibrary: 'WindowsTargetPlatformControls' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WindowsTargetPlatformControls.dll')
+[2026.09.10-19.38.12:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2026.09.10-19.38.12:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsEditor'
+[2026.09.10-19.38.12:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2026.09.10-19.38.12:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2026.09.10-19.38.12:399][  0]LogTargetPlatformManager: Display: Building Assets For WindowsEditor
+[2026.09.10-19.38.12:399][  0]LogModuleManager: InternalLoadLibrary: 'AudioFormatOPUS' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioFormatOpus.dll')
+[2026.09.10-19.38.12:399][  0]LogModuleManager: InternalLoadLibrary: 'AudioFormatOGG' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioFormatOgg.dll')
+[2026.09.10-19.38.12:400][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2026.09.10-19.38.12:400][  0]LogModuleManager: InternalLoadLibrary: 'AudioFormatADPCM' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioFormatADPCM.dll')
+[2026.09.10-19.38.12:401][  0]LogModuleManager: InternalLoadLibrary: 'AudioFormatBINK' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioFormatBink.dll')
+[2026.09.10-19.38.12:401][  0]LogModuleManager: InternalLoadLibrary: 'AudioFormatRAD' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AudioFormatRad.dll')
+[2026.09.10-19.38.12:401][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatD3D' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatD3D.dll')
+[2026.09.10-19.38.12:419][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatOpenGL' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatOpenGL.dll')
+[2026.09.10-19.38.12:424][  0]LogModuleManager: InternalLoadLibrary: 'VulkanShaderFormat' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-VulkanShaderFormat.dll')
+[2026.09.10-19.38.12:424][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatVectorVM' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatVectorVM.dll')
+[2026.09.10-19.38.12:425][  0]LogRendererCore: Ray tracing is disabled. Reason: disabled through project setting (r.RayTracing=0).
+[2026.09.10-19.38.12:425][  0]LogModuleManager: InternalLoadLibrary: 'DerivedDataCache' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-DerivedDataCache.dll')
+[2026.09.10-19.38.12:425][  0]LogModuleManager: InternalLoadLibrary: 'SSL' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SSL.dll')
+[2026.09.10-19.38.12:446][  0]LogDerivedDataCache: ProjectPak: Pak cache file C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2026.09.10-19.38.12:446][  0]LogDerivedDataCache: InstalledProjectPak: Pak cache file C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2026.09.10-19.38.12:655][  0]LogDerivedDataCache: Display: ../../../Engine/DerivedDataCache/Compressed.ddp: Opened pak cache for reading. (1679 MiB)
+[2026.09.10-19.38.12:655][  0]LogDerivedDataCache: EnterprisePak: Pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2026.09.10-19.38.12:655][  0]LogZenServiceInstance: Found environment variable UE-LocalDataCachePath=D:/AegisWork/DerivedDataCache
+[2026.09.10-19.38.12:655][  0]LogZenServiceInstance: Found environment variable UE-LocalDataCachePath=D:/AegisWork/DerivedDataCache
+[2026.09.10-19.38.12:655][  0]LogZenServiceInstance: Found local data cache path=D:/AegisWork/DerivedDataCache
+[2026.09.10-19.38.12:655][  0]LogZenServiceInstance: Display: Launching zen utility 'D:/Program Files/UE_5.8/Engine/Binaries/Win64/zen.exe service status'.
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: Display: Writing plugin version info to 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zen_plugin_versions.json'
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: Display: Read zen version cache file from 'C:/Users/yzhu/AppData/Local/UnrealEngine/5.8/Saved/Zen/zen.version', version: '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: InTree version at 'D:/Program Files/UE_5.8/Engine/Binaries/Win64/zenserver.exe' is '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: Display: Read zen version cache file from 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zen.version', version: '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: Installed version at 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe' is '5.8.13-202605190912-windows-x64-release-094f62c2'
+[2026.09.10-19.38.13:365][  0]LogZenServiceInstance: Display: Installed service at 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe' is up to date
+[2026.09.10-19.38.13:366][  0]LogZenServiceInstance: No current process using the data dir found, launching a new instance
+[2026.09.10-19.38.13:366][  0]LogZenServiceInstance: Display: Launching executable 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zenserver.exe', working dir 'C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install', data dir 'D:/AegisWork/DerivedDataCache/Zen', args '--port 8558 --data-dir D:\AegisWork\DerivedDataCache\Zen --http asio --gc-cache-duration-seconds 1209600 --gc-interval-seconds 21600 --gc-low-diskspace-threshold 2147483648 --cache-bucket-limit-overwrites --quiet --restrict-content-types --allow-external-oidctoken-exe=false --plugins-config "C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/zen_plugins_v1.json" --security-config-path "C:/Users/yzhu/AppData/Local/UnrealEngine/Common/Zen/Install/security-config.json" --owner-pid 21872  --child-id Zen_21872_Startup'
+[2026.09.10-19.38.13:498][  0]LogZenServiceInstance: Display: Unreal Zen Storage Server HTTP service at http://[::1]:8558 status: OK!.
+[2026.09.10-19.38.13:499][  0]LogZenServiceInstance: Local ZenServer AutoLaunch initialization completed in 0.135 seconds
+[2026.09.10-19.38.13:500][  0]LogDerivedDataCache: Display: ZenLocal: Using ZenServer HTTP service at [::1] with namespace ue.ddc. Status: OK!.
+[2026.09.10-19.38.13:500][  0]LogDerivedDataCache: Local: Found environment variable UE-LocalDataCachePath=D:/AegisWork/DerivedDataCache
+[2026.09.10-19.38.13:503][  0]LogDerivedDataCache: D:/AegisWork/DerivedDataCache: Speed tests took 0.00 seconds.
+[2026.09.10-19.38.13:503][  0]LogDerivedDataCache: Display: D:/AegisWork/DerivedDataCache: Performance: Latency=0.01ms. RandomReadSpeed=2159.06MBs, RandomWriteSpeed=412.33MBs. Assigned SpeedClass 'Local'
+[2026.09.10-19.38.13:504][  0]LogDerivedDataCache: Local: Using data cache path D:/AegisWork/DerivedDataCache: Writable
+[2026.09.10-19.38.13:504][  0]LogDerivedDataCache: ZenShared: Disabled because Host is set to 'None'
+[2026.09.10-19.38.13:504][  0]LogDerivedDataCache: Shared: Disabled because no path is configured.
+[2026.09.10-19.38.13:504][  0]LogDerivedDataCache: Cloud: Disabled because Host is set to 'None'
+[2026.09.10-19.38.13:506][  0]LogAsyncCompilation: Display: MemorySharingInfo: UsedMemory=739MiB, MaxMemoryAvailable=28912MiB
+[2026.09.10-19.38.13:506][  0]LogModuleManager: InternalLoadLibrary: 'ShaderPreprocessor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderPreprocessor.dll')
+[2026.09.10-19.38.13:506][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Intermediate/Shaders/WorkingDirectory/21872/).
+[2026.09.10-19.38.13:506][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'D:/AegisWork/Temp/UnrealShaderWorkingDir/5733D86048E280A7DD5DEDAE780D7DB0/'.
+[2026.09.10-19.38.13:506][  0]LogShaderCompilers: Display: No distributed shader compiler controller found
+[2026.09.10-19.38.13:506][  0]LogShaderCompilers: Display: Using 29 local workers for shader compilation
+[2026.09.10-19.38.13:507][  0]LogModuleManager: InternalLoadLibrary: 'MetalShaderFormat' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MetalShaderFormat.dll')
+[2026.09.10-19.38.13:513][  0]LogShaderCompilers: Display: Compiling shader autogen file: C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Intermediate/ShaderAutogen/PCD3D_SM6/AutogenShaderHeaders.ush
+[2026.09.10-19.38.13:513][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.09.10-19.38.13:831][  0]LogInit: Running DelayedAutoRegister Phase ShaderTypesReady
+[2026.09.10-19.38.13:831][  0]LogModuleManager: InternalLoadLibrary: 'NullInstallBundleManager' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NullInstallBundleManager.dll')
+[2026.09.10-19.38.13:832][  0]LogModuleManager: InternalLoadLibrary: 'AssetRegistry' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AssetRegistry.dll')
+[2026.09.10-19.38.13:833][  0]LogAssetRegistry: ActiveMountsLoading is disabled.
+[2026.09.10-19.38.13:833][  0]LogAssetRegistry: FAssetRegistry took 0.0004 seconds to start up
+[2026.09.10-19.38.13:833][  0]LogEditorDomain: Display: EditorDomain is Disabled
+[2026.09.10-19.38.13:834][  0]LogInit: Running DelayedAutoRegister Phase PreObjectSystemReady
+[2026.09.10-19.38.13:978][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64Editor not found.
+[2026.09.10-19.38.13:978][  0]LogDeviceProfileManager: Display: Deviceprofile LinuxArm64 not found.
+[2026.09.10-19.38.14:016][  0]LogDeviceProfileManager: Active device profile: [0000019F1C6ABE00][0000019F1C1D0000 82] WindowsEditor
+[2026.09.10-19.38.14:016][  0]LogCsvProfiler: Display: Metadata set : deviceprofile="WindowsEditor"
+[2026.09.10-19.38.14:016][  0]LogInit: Running DelayedAutoRegister Phase DeviceProfileManagerReady
+[2026.09.10-19.38.14:018][  0]LogStreaming: Display: FlushAsyncLoading(1): 1 QueuedPackages, 0 AsyncPackages
+[2026.09.10-19.38.14:030][  0]LogTextureEncodingSettings: Display: Texture Encode Speed: Final (cook).
+[2026.09.10-19.38.14:030][  0]LogTextureEncodingSettings: Display: Oodle Texture Encode Speed settings: Fast: RDO Off Lambda=0, Effort=Normal Final: RDO Off Lambda=0, Effort=Normal
+[2026.09.10-19.38.14:030][  0]LogTextureEncodingSettings: Display: Shared linear texture encoding: Disabled
+[2026.09.10-19.38.14:033][  0]LogModuleManager: InternalLoadLibrary: 'MeshUtilities' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MeshUtilities.dll')
+[2026.09.10-19.38.14:037][  0]LogModuleManager: InternalLoadLibrary: 'MaterialBaking' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MaterialBaking.dll')
+[2026.09.10-19.38.14:037][  0]LogModuleManager: InternalLoadLibrary: 'MeshMergeUtilities' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MeshMergeUtilities.dll')
+[2026.09.10-19.38.14:038][  0]LogModuleManager: InternalLoadLibrary: 'MeshReductionInterface' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MeshReductionInterface.dll')
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: Skeletal mesh reduction module (r.SkeletalMeshReductionModule) set to "SkeletalMeshReduction" which doesn't exist.
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: HLOD mesh reduction module (r.ProxyLODMeshReductionModule) set to "ProxyLODMeshReduction" which doesn't exist.
+[2026.09.10-19.38.14:038][  0]LogModuleManager: InternalLoadLibrary: 'QuadricMeshReduction' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-QuadricMeshReduction.dll')
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: Using QuadricMeshReduction for automatic static mesh reduction
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: No automatic skeletal mesh reduction module available
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: No automatic mesh merging module available
+[2026.09.10-19.38.14:038][  0]LogMeshReduction: Display: No distributed automatic mesh merging module available
+[2026.09.10-19.38.14:038][  0]LogMeshMerging: No automatic mesh merging module available
+[2026.09.10-19.38.14:038][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2026.09.10-19.38.14:038][  0]LogModuleManager: InternalLoadLibrary: 'StaticMeshDescription' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StaticMeshDescription.dll')
+[2026.09.10-19.38.14:039][  0]LogModuleManager: InternalLoadLibrary: 'GeometryProcessingInterfaces' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-GeometryProcessingInterfaces.dll')
+[2026.09.10-19.38.14:039][  0]LogModuleManager: InternalLoadLibrary: 'MeshBoneReduction' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MeshBoneReduction.dll')
+[2026.09.10-19.38.14:048][  0]LogModuleManager: InternalLoadLibrary: 'NaniteBuilder' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NaniteBuilder.dll')
+[2026.09.10-19.38.14:049][  0]LogModuleManager: InternalLoadLibrary: 'MeshBuilder' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MeshBuilder.dll')
+[2026.09.10-19.38.14:053][  0]LogModuleManager: InternalLoadLibrary: 'KismetCompiler' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-KismetCompiler.dll')
+[2026.09.10-19.38.14:053][  0]LogModuleManager: InternalLoadLibrary: 'MovieSceneTools' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MovieSceneTools.dll')
+[2026.09.10-19.38.14:053][  0]LogModuleManager: InternalLoadLibrary: 'Sequencer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Sequencer.dll')
+[2026.09.10-19.38.14:053][  0]LogModuleManager: InternalLoadLibrary: 'CurveEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CurveEditor.dll')
+[2026.09.10-19.38.14:053][  0]LogModuleManager: InternalLoadLibrary: 'SequencerCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SequencerCore.dll')
+[2026.09.10-19.38.14:065][  0]LogModuleManager: InternalLoadLibrary: 'AssetDefinition' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AssetDefinition.dll')
+[2026.09.10-19.38.14:079][  0]LogModuleManager: InternalLoadLibrary: 'Media' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Media.dll')
+[2026.09.10-19.38.14:104][  0]LogConfig: Applying CVar settings from Section [/Script/CQTest.CQTestSettings] File [Engine]
+[2026.09.10-19.38.14:116][  0]LogShaderCompilers: Display: Compiling shader autogen file: C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2026.09.10-19.38.14:116][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.09.10-19.38.14:116][  0]LogVirtualization: Display: VirtualizationSystem name found in ini file: None
+[2026.09.10-19.38.14:116][  0]LogVirtualization: Display: FNullVirtualizationSystem mounted, virtualization will be disabled
+[2026.09.10-19.38.14:116][  0]LogInit: Running DelayedAutoRegister Phase ObjectSystemReady
+[2026.09.10-19.38.14:116][  0]LogModuleManager: StartProcessingNewlyLoadedObjects
+[2026.09.10-19.38.14:116][  0]LogModuleManager: InternalLoadLibrary: 'Core' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Core.dll')
+[2026.09.10-19.38.14:116][  0]LogModuleManager: InternalLoadLibrary: 'Networking' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Networking.dll')
+[2026.09.10-19.38.14:116][  0]LogModuleManager: InternalLoadLibrary: 'Sockets' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Sockets.dll')
+[2026.09.10-19.38.14:116][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2026.09.10-19.38.14:117][  0]LogModuleManager: InternalLoadLibrary: 'LiveCoding' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LiveCoding.dll')
+[2026.09.10-19.38.14:118][  0]LogModuleManager: InternalLoadLibrary: 'HeadMountedDisplay' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-HeadMountedDisplay.dll')
+[2026.09.10-19.38.14:119][  0]LogModuleManager: InternalLoadLibrary: 'SourceCodeAccess' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SourceCodeAccess.dll')
+[2026.09.10-19.38.14:119][  0]LogModuleManager: InternalLoadLibrary: 'Messaging' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Messaging.dll')
+[2026.09.10-19.38.14:120][  0]LogModuleManager: InternalLoadLibrary: 'MRMesh' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MRMesh.dll')
+[2026.09.10-19.38.14:121][  0]LogModuleManager: InternalLoadLibrary: 'UnrealEd' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-UnrealEd.dll')
+[2026.09.10-19.38.14:121][  0]LogModuleManager: InternalLoadLibrary: 'LandscapeEditorUtilities' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LandscapeEditorUtilities.dll')
+[2026.09.10-19.38.14:121][  0]LogModuleManager: InternalLoadLibrary: 'SubobjectDataInterface' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SubobjectDataInterface.dll')
+[2026.09.10-19.38.14:121][  0]LogModuleManager: InternalLoadLibrary: 'SlateCore' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SlateCore.dll')
+[2026.09.10-19.38.14:122][  0]LogModuleManager: InternalLoadLibrary: 'Slate' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Slate.dll')
+[2026.09.10-19.38.14:122][  0]LogModuleManager: InternalLoadLibrary: 'SlateReflector' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SlateReflector.dll')
+[2026.09.10-19.38.14:122][  0]LogModuleManager: InternalLoadLibrary: 'EditorStyle' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-EditorStyle.dll')
+[2026.09.10-19.38.14:128][  0]LogSlate: Border
+[2026.09.10-19.38.14:128][  0]LogSlate: BreadcrumbButton
+[2026.09.10-19.38.14:128][  0]LogSlate: Brushes.Title
+[2026.09.10-19.38.14:128][  0]LogSlate: ColorPicker.ColorThemes
+[2026.09.10-19.38.14:128][  0]LogSlate: Default
+[2026.09.10-19.38.14:128][  0]LogSlate: Icons.Save
+[2026.09.10-19.38.14:128][  0]LogSlate: Icons.Toolbar.Settings
+[2026.09.10-19.38.14:128][  0]LogSlate: ListView
+[2026.09.10-19.38.14:128][  0]LogSlate: SoftwareCursor_CardinalCross
+[2026.09.10-19.38.14:128][  0]LogSlate: SoftwareCursor_Grab
+[2026.09.10-19.38.14:128][  0]LogSlate: TableView.DarkRow
+[2026.09.10-19.38.14:128][  0]LogSlate: TableView.Row
+[2026.09.10-19.38.14:128][  0]LogSlate: TreeView
+[2026.09.10-19.38.14:128][  0]LogModuleManager: InternalLoadLibrary: 'UMG' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-UMG.dll')
+[2026.09.10-19.38.14:128][  0]LogModuleManager: InternalLoadLibrary: 'UMGEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-UMGEditor.dll')
+[2026.09.10-19.38.14:129][  0]LogModuleManager: InternalLoadLibrary: 'ScriptableEditorWidgets' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ScriptableEditorWidgets.dll')
+[2026.09.10-19.38.14:130][  0]LogModuleManager: InternalLoadLibrary: 'CollisionAnalyzer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CollisionAnalyzer.dll')
+[2026.09.10-19.38.14:131][  0]LogModuleManager: InternalLoadLibrary: 'WorkspaceMenuStructure' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WorkspaceMenuStructure.dll')
+[2026.09.10-19.38.14:133][  0]LogModuleManager: InternalLoadLibrary: 'FunctionalTesting' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-FunctionalTesting.dll')
+[2026.09.10-19.38.14:138][  0]LogModuleManager: InternalLoadLibrary: 'BehaviorTreeEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-BehaviorTreeEditor.dll')
+[2026.09.10-19.38.14:142][  0]LogModuleManager: InternalLoadLibrary: 'GameplayTasksEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-GameplayTasksEditor.dll')
+[2026.09.10-19.38.14:142][  0]LogModuleManager: InternalLoadLibrary: 'StringTableEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StringTableEditor.dll')
+[2026.09.10-19.38.14:143][  0]LogModuleManager: InternalLoadLibrary: 'AssetTools' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AssetTools.dll')
+[2026.09.10-19.38.14:143][  0]LogModuleManager: InternalLoadLibrary: 'VREditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-VREditor.dll')
+[2026.09.10-19.38.14:144][  0]LogModuleManager: InternalLoadLibrary: 'Blutility' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Blutility.dll')
+[2026.09.10-19.38.14:145][  0]LogModuleManager: InternalLoadLibrary: 'ToolMenus' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ToolMenus.dll')
+[2026.09.10-19.38.14:145][  0]LogModuleManager: InternalLoadLibrary: 'LevelEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LevelEditor.dll')
+[2026.09.10-19.38.14:145][  0]LogModuleManager: InternalLoadLibrary: 'MainFrame' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MainFrame.dll')
+[2026.09.10-19.38.14:151][  0]LogModuleManager: InternalLoadLibrary: 'HotReload' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-HotReload.dll')
+[2026.09.10-19.38.14:152][  0]LogModuleManager: InternalLoadLibrary: 'CommonMenuExtensions' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CommonMenuExtensions.dll')
+[2026.09.10-19.38.14:158][  0]LogModuleManager: InternalLoadLibrary: 'PixelInspectorModule' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-PixelInspectorModule.dll')
+[2026.09.10-19.38.14:159][  0]LogModuleManager: InternalLoadLibrary: 'MaterialEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MaterialEditor.dll')
+[2026.09.10-19.38.14:159][  0]LogModuleManager: InternalLoadLibrary: 'Settings' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Settings.dll')
+[2026.09.10-19.38.14:160][  0]LogModuleManager: InternalLoadLibrary: 'Overlay' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-Overlay.dll')
+[2026.09.10-19.38.14:160][  0]LogModuleManager: InternalLoadLibrary: 'OverlayEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-OverlayEditor.dll')
+[2026.09.10-19.38.14:161][  0]LogModuleManager: InternalLoadLibrary: 'MediaAssets' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MediaAssets.dll')
+[2026.09.10-19.38.14:161][  0]LogModuleManager: InternalLoadLibrary: 'ClothingSystemRuntimeNv' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ClothingSystemRuntimeNv.dll')
+[2026.09.10-19.38.14:161][  0]LogModuleManager: InternalLoadLibrary: 'ClothingSystemEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ClothingSystemEditor.dll')
+[2026.09.10-19.38.14:162][  0]LogModuleManager: InternalLoadLibrary: 'AnimationDataController' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AnimationDataController.dll')
+[2026.09.10-19.38.14:163][  0]LogModuleManager: InternalLoadLibrary: 'TimeManagement' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TimeManagement.dll')
+[2026.09.10-19.38.14:163][  0]LogModuleManager: InternalLoadLibrary: 'AnimGraph' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AnimGraph.dll')
+[2026.09.10-19.38.14:163][  0]LogModuleManager: InternalLoadLibrary: 'WorldBookmark' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WorldBookmark.dll')
+[2026.09.10-19.38.14:166][  0]LogModuleManager: InternalLoadLibrary: 'WorldPartitionEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-WorldPartitionEditor.dll')
+[2026.09.10-19.38.14:168][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize started...
+[2026.09.10-19.38.14:169][  0]LogWorldPartition: Display: FWorldPartitionClassDescRegistry::Initialize took 1.466 ms
+[2026.09.10-19.38.14:169][  0]LogModuleManager: InternalLoadLibrary: 'SceneOutliner' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SceneOutliner.dll')
+[2026.09.10-19.38.14:170][  0]LogModuleManager: InternalLoadLibrary: 'PacketHandler' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-PacketHandler.dll')
+[2026.09.10-19.38.14:170][  0]LogModuleManager: InternalLoadLibrary: 'NetworkReplayStreaming' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NetworkReplayStreaming.dll')
+[2026.09.10-19.38.14:170][  0]LogModuleManager: InternalLoadLibrary: 'MassEntity' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MassEntity.dll')
+[2026.09.10-19.38.14:175][  0]LogModuleManager: InternalLoadLibrary: 'MassEntityTestSuite' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MassEntityTestSuite.dll')
+[2026.09.10-19.38.14:186][  0]LogModuleManager: InternalLoadLibrary: 'PythonScriptPlugin' ('D:/Program Files/UE_5.8/Engine/Plugins/Experimental/PythonScriptPlugin/Binaries/Win64/UnrealEditor-PythonScriptPlugin.dll')
+[2026.09.10-19.38.14:191][  0]LogModuleManager: InternalLoadLibrary: 'EnvironmentQueryEditor' ('D:/Program Files/UE_5.8/Engine/Plugins/AI/EnvironmentQueryEditor/Binaries/Win64/UnrealEditor-EnvironmentQueryEditor.dll')
+[2026.09.10-19.38.14:192][  0]LogModuleManager: InternalLoadLibrary: 'AegisArena' ('C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Binaries/Win64/UnrealEditor-AegisArena.dll')
+[2026.09.10-19.38.14:198][  0]LogModuleManager: InternalLoadLibrary: 'AegisArenaEditor' ('C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Binaries/Win64/UnrealEditor-AegisArenaEditor.dll')
+[2026.09.10-19.38.14:199][  0]LogModuleManager: InternalLoadLibrary: 'ACLPluginEditor' ('D:/Program Files/UE_5.8/Engine/Plugins/Animation/ACLPlugin/Binaries/Win64/UnrealEditor-ACLPluginEditor.dll')
+[2026.09.10-19.38.14:200][  0]LogModuleManager: InternalLoadLibrary: 'EditorScriptingUtilities' ('D:/Program Files/UE_5.8/Engine/Plugins/Editor/EditorScriptingUtilities/Binaries/Win64/UnrealEditor-EditorScriptingUtilities.dll')
+[2026.09.10-19.38.14:207][  0]LogModuleManager: InternalLoadLibrary: 'ContentBrowserFileDataSource' ('D:/Program Files/UE_5.8/Engine/Plugins/Editor/ContentBrowser/ContentBrowserFileDataSource/Binaries/Win64/UnrealEditor-ContentBrowserFileDataSource.dll')
+[2026.09.10-19.38.14:213][  0]LogUObjectArray: 25728 objects as part of root set at end of initial load.
+[2026.09.10-19.38.14:213][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2026.09.10-19.38.14:220][  0]LogInit: Executing Class /Script/PythonScriptPlugin.PythonScriptCommandlet
+[2026.09.10-19.38.14:220][  0]LogInit: Initializing Editor Engine...
+[2026.09.10-19.38.14:220][  0]LogEngine: Initializing Engine...
+[2026.09.10-19.38.14:220][  0]LogModuleManager: InternalLoadLibrary: 'TypedElementFramework' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TypedElementFramework.dll')
+[2026.09.10-19.38.14:221][  0]LogModuleManager: InternalLoadLibrary: 'TypedElementRuntime' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-TypedElementRuntime.dll')
+[2026.09.10-19.38.14:231][  0]LogMovieScene: USequencerBakeSubsystem subsystem initialized.
+[2026.09.10-19.38.14:233][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.09.10-19.38.14:252][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles (PreLoad): 1 .ref files found, 1 referenced binaries
+[2026.09.10-19.38.14:252][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles: 1 total binaries, 1 referenced (kept), 0 old-style pre-migration (kept), 0 orphans deleted, 0 orphans locked (kept)
+[2026.09.10-19.38.14:252][  0]LogAssetRegistry: Display: FindShardedCacheFiles: 1 via .ref, 0 via migration fallback, 1 total
+[2026.09.10-19.38.14:252][  0]LogAssetRegistry: Display: LoadCacheFiles: loading 1 cache files, memory-mapping=enabled
+[2026.09.10-19.38.14:267][  0]LogAssetRegistry: Display: Asset registry cache read as 11.7 MiB from C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Intermediate/CachedAssetRegistry/CachedAssetRegistry_0_68AA7B8948363D1795C861A00CA1F10B.bin (memory-mapped=yes)
+[2026.09.10-19.38.14:267][  0]LogAssetRegistry: Display: AssetDataGatherer spent 0.015s loading caches from C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Intermediate/CachedAssetRegistry.
+[2026.09.10-19.38.14:268][  0]LogModuleManager: InternalLoadLibrary: 'LevelInstanceEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LevelInstanceEditor.dll')
+[2026.09.10-19.38.14:271][  0]LogModuleManager: InternalLoadLibrary: 'ChaosVDRuntime' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ChaosVDRuntime.dll')
+[2026.09.10-19.38.14:271][  0]LogModuleManager: InternalLoadLibrary: 'AIModule' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AIModule.dll')
+[2026.09.10-19.38.14:271][  0]LogModuleManager: InternalLoadLibrary: 'NavigationSystem' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-NavigationSystem.dll')
+[2026.09.10-19.38.14:271][  0]LogModuleManager: InternalLoadLibrary: 'AITestSuite' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-AITestSuite.dll')
+[2026.09.10-19.38.14:271][  0]LogModuleManager: InternalLoadLibrary: 'GameplayDebugger' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-GameplayDebugger.dll')
+[2026.09.10-19.38.14:272][  0]LogNetVersion: Set ProjectVersion to 1.2.0. Version Checksum will be recalculated on next use.
+[2026.09.10-19.38.14:272][  0]LogInit: Texture streaming: Disabled
+[2026.09.10-19.38.14:272][  0]LogModuleManager: InternalLoadLibrary: 'ImageWriteQueue' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ImageWriteQueue.dll')
+[2026.09.10-19.38.14:272][  0]LogModuleManager: InternalLoadLibrary: 'ImageWrapper' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ImageWrapper.dll')
+[2026.09.10-19.38.14:272][  0]LogModuleManager: InternalLoadLibrary: 'StreamingPauseRendering' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StreamingPauseRendering.dll')
+[2026.09.10-19.38.14:273][  0]LogModuleManager: InternalLoadLibrary: 'MovieScene' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MovieScene.dll')
+[2026.09.10-19.38.14:273][  0]LogModuleManager: InternalLoadLibrary: 'MovieSceneTracks' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MovieSceneTracks.dll')
+[2026.09.10-19.38.14:273][  0]LogModuleManager: InternalLoadLibrary: 'LevelSequence' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LevelSequence.dll')
+[2026.09.10-19.38.14:274][  0]LogModuleManager: InternalLoadLibrary: 'CinematicCamera' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-CinematicCamera.dll')
+[2026.09.10-19.38.14:274][  0]LogModuleManager: InternalLoadLibrary: 'SparseVolumeTexture' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SparseVolumeTexture.dll')
+[2026.09.10-19.38.14:277][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.09.10-19.38.14:279][  0]LogInit: Initializing Editor Engine Completed
+[2026.09.10-19.38.14:279][  0]LogPython: Python enabled via CVar 'Engine.Python.IsEnabledByDefault'
+[2026.09.10-19.38.14:279][  0]LogPython: Using Python 3.11.8
+[2026.09.10-19.38.14:298][  0]LogPython: Display: No pip-enabled plugins with python dependencies found, skipping
+[2026.09.10-19.38.14:397][  0]LogCsvProfiler: Display: Metadata set : raytracing="0"
+[2026.09.10-19.38.14:402][  0]LogModuleManager: InternalLoadLibrary: 'ActorPickerMode' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ActorPickerMode.dll')
+[2026.09.10-19.38.14:402][  0]LogModuleManager: InternalLoadLibrary: 'SceneDepthPickerMode' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SceneDepthPickerMode.dll')
+[2026.09.10-19.38.14:402][  0]LogModuleManager: InternalLoadLibrary: 'LandscapeEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-LandscapeEditor.dll')
+[2026.09.10-19.38.14:409][  0]LogModuleManager: InternalLoadLibrary: 'EditorWidgets' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-EditorWidgets.dll')
+[2026.09.10-19.38.14:410][  0]LogModuleManager: InternalLoadLibrary: 'FoliageEdit' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-FoliageEdit.dll')
+[2026.09.10-19.38.14:410][  0]LogModuleManager: InternalLoadLibrary: 'VirtualTexturingEditor' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-VirtualTexturingEditor.dll')
+[2026.09.10-19.38.14:410][  0]LogModuleManager: InternalLoadLibrary: 'PlacementMode' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-PlacementMode.dll')
+[2026.09.10-19.38.14:413][  0]LogPython: Python enabled via IPythonScriptPlugin::ForceEnablePythonAtRuntime: D:\build\++UE5\Sync\Engine\Plugins\Experimental\PythonScriptPlugin\Source\PythonScriptPlugin\Private\PythonScriptCommandlet.cpp(43:30) int __cdecl UPythonScriptCommandlet::Main(const class FString &)
+[2026.09.10-19.38.14:413][  0]LogModuleManager: InternalLoadLibrary: 'SourceControl' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-SourceControl.dll')
+[2026.09.10-19.38.14:415][  0]SourceControl: 版本控制已禁用
+[2026.09.10-19.38.14:415][  0]SourceControl: 版本控制已禁用
+[2026.09.10-19.38.14:415][  0]LogPythonScriptCommandlet: Display: Running Python script: D:/AegisWork/Reports/create-v3-fixtures.py
+[2026.09.10-19.38.14:473][  0]LightingResults: 新页面：光照构建
+[2026.09.10-19.38.14:473][  0]LogModuleManager: InternalLoadLibrary: 'StatsViewer' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-StatsViewer.dll')
+[2026.09.10-19.38.14:484][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2026.09.10-19.38.14:488][  0]LoadErrors: 新页面：新建地图
+[2026.09.10-19.38.14:489][  0]LogModuleManager: InternalLoadLibrary: 'HierarchicalLODUtilities' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-HierarchicalLODUtilities.dll')
+[2026.09.10-19.38.14:503][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisTacticalFunctional
+[2026.09.10-19.38.14:503][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisTacticalFunctionalFF026ED840A11DA8ADA6F6BC247CA9EE.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisTacticalFunctional.umap'
+[2026.09.10-19.38.14:509][  0]LogFileHelpers: Saving map 'AegisTacticalFunctional' took 0.021
+[2026.09.10-19.38.14:511][  0]LogModuleManager: InternalLoadLibrary: 'ViewportSnapping' ('D:/Program Files/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ViewportSnapping.dll')
+[2026.09.10-19.38.14:512][  0]LogEditor: Attempting to add actor of class 'StaticMeshActor' to level at 0.00,0.00,-50.00
+[2026.09.10-19.38.14:518][  0]LogActorFactory: Actor Factory attempting to spawn Class /Script/Engine.PlayerStart
+[2026.09.10-19.38.14:518][  0]LogActorFactory: Actor Factory spawned Class /Script/Engine.PlayerStart as actor: PlayerStart /Game/Aegis/Maps/AegisTacticalFunctional.AegisTacticalFunctional:PersistentLevel.PlayerStart_0
+[2026.09.10-19.38.14:519][  0]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2026.09.10-19.38.14:528][  0]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2026.09.10-19.38.14:529][  0]LogEditor: Attempting to add actor of class 'AegisTacticalFunctionalTest' to level at 0.00,0.00,0.00
+[2026.09.10-19.38.14:530][  0]Message dialog closed, result: Ok, title: 无法从版本控制检出！, text: 无法从版本控制成功检出以下资产：
+/Game/Aegis/Maps/AegisTacticalFunctional
+[2026.09.10-19.38.14:539][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisTacticalFunctional
+[2026.09.10-19.38.14:539][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisTacticalFunctionalF88EEED0488D880C957D42ADBEFEA0D0.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisTacticalFunctional.umap'
+[2026.09.10-19.38.14:546][  0]LogPython: AEGIS_TACTICAL_FIXTURE_CREATED
+[2026.09.10-19.38.14:547][  0]LightingResults: 新页面：光照构建
+[2026.09.10-19.38.14:560][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.21ms
+[2026.09.10-19.38.14:562][  0]LoadErrors: 新页面：新建地图
+[2026.09.10-19.38.14:568][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisWeaponsFunctional
+[2026.09.10-19.38.14:568][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisWeaponsFunctionalEB4DDB49476A810BEA75F38D3C2B69C6.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisWeaponsFunctional.umap'
+[2026.09.10-19.38.14:574][  0]LogFileHelpers: Saving map 'AegisWeaponsFunctional' took 0.012
+[2026.09.10-19.38.14:574][  0]LogEditor: Attempting to add actor of class 'StaticMeshActor' to level at 0.00,0.00,-50.00
+[2026.09.10-19.38.14:574][  0]LogActorFactory: Actor Factory attempting to spawn Class /Script/Engine.PlayerStart
+[2026.09.10-19.38.14:574][  0]LogActorFactory: Actor Factory spawned Class /Script/Engine.PlayerStart as actor: PlayerStart /Game/Aegis/Maps/AegisWeaponsFunctional.AegisWeaponsFunctional:PersistentLevel.PlayerStart_0
+[2026.09.10-19.38.14:575][  0]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2026.09.10-19.38.14:575][  0]LogEditor: Attempting to add actor of class 'AegisWeaponsFunctionalTest' to level at 0.00,0.00,0.00
+[2026.09.10-19.38.14:575][  0]Message dialog closed, result: Ok, title: 无法从版本控制检出！, text: 无法从版本控制成功检出以下资产：
+/Game/Aegis/Maps/AegisWeaponsFunctional
+[2026.09.10-19.38.14:579][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisWeaponsFunctional
+[2026.09.10-19.38.14:580][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisWeaponsFunctional76F6CF884E0F16255B1991B6AC9B7E54.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisWeaponsFunctional.umap'
+[2026.09.10-19.38.14:586][  0]LogPython: AEGIS_WEAPONS_FIXTURE_CREATED
+[2026.09.10-19.38.14:586][  0]LightingResults: 新页面：光照构建
+[2026.09.10-19.38.14:595][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.19ms
+[2026.09.10-19.38.14:596][  0]LoadErrors: 新页面：新建地图
+[2026.09.10-19.38.14:602][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisOperationFunctional
+[2026.09.10-19.38.14:602][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisOperationFunctional2CB5CD394F52262E4EA84FA6A7C49D56.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisOperationFunctional.umap'
+[2026.09.10-19.38.14:608][  0]LogFileHelpers: Saving map 'AegisOperationFunctional' took 0.011
+[2026.09.10-19.38.14:608][  0]LogEditor: Attempting to add actor of class 'StaticMeshActor' to level at 0.00,0.00,-50.00
+[2026.09.10-19.38.14:608][  0]LogActorFactory: Actor Factory attempting to spawn Class /Script/Engine.PlayerStart
+[2026.09.10-19.38.14:608][  0]LogActorFactory: Actor Factory spawned Class /Script/Engine.PlayerStart as actor: PlayerStart /Game/Aegis/Maps/AegisOperationFunctional.AegisOperationFunctional:PersistentLevel.PlayerStart_0
+[2026.09.10-19.38.14:608][  0]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2026.09.10-19.38.14:608][  0]LogEditor: Attempting to add actor of class 'AegisScenarioRunner' to level at 0.00,0.00,0.00
+[2026.09.10-19.38.14:612][  0]LogEditor: Attempting to add actor of class 'AegisOperationFunctionalTest' to level at 0.00,0.00,0.00
+[2026.09.10-19.38.14:612][  0]Message dialog closed, result: Ok, title: 无法从版本控制检出！, text: 无法从版本控制成功检出以下资产：
+/Game/Aegis/Maps/AegisOperationFunctional
+[2026.09.10-19.38.14:618][  0]LogSavePackage: Moving output files for package: /Game/Aegis/Maps/AegisOperationFunctional
+[2026.09.10-19.38.14:619][  0]LogSavePackage: Moving 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisOperationFunctionalF4A1E9A4428A5D7D4D51979812F11DE5.tmp' to 'C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Content/Aegis/Maps/AegisOperationFunctional.umap'
+[2026.09.10-19.38.14:624][  0]LogPython: AEGIS_OPERATION_FIXTURE_CREATED
+[2026.09.10-19.38.14:624][  0]LogPythonScriptCommandlet: Display: Python script executed successfully
+[2026.09.10-19.38.14:624][  0]LogCore: Engine exit requested (reason: Commandlet PythonScriptCommandlet_0 finished execution (result 0))
+[2026.09.10-19.38.14:624][  0]LogInit: Display: 
+[2026.09.10-19.38.14:624][  0]LogInit: Display: Success - 0 error(s), 0 warning(s)
+[2026.09.10-19.38.14:624][  0]LogInit: Display: 
+Execution of commandlet took:  0.21 seconds, PeakPhysMemoryMB=1108 MB, PeakVirtMemoryMB=1136 MB
+[2026.09.10-19.38.14:624][  0]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.09.10-19.38.14:627][  0]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2026.09.10-19.38.14:627][  0]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2026.09.10-19.38.14:628][  0]LogMovieScene: USequencerBakeSubsystem subsystem deinitialized.
+[2026.09.10-19.38.14:646][  0]LogExit: Preparing to exit.
+[2026.09.10-19.38.14:714][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.19ms
+[2026.09.10-19.38.14:716][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles (PostWrite): 1 .ref files found, 1 referenced binaries
+[2026.09.10-19.38.14:716][  0]LogAssetRegistry: Display: CleanupOrphanedCacheFiles: 1 total binaries, 1 referenced (kept), 0 old-style pre-migration (kept), 0 orphans deleted, 0 orphans locked (kept)
+[2026.09.10-19.38.14:745][  0]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.09.10-19.38.14:756][  0]LogExit: Editor shut down
+[2026.09.10-19.38.14:860][  0]LogExit: Object subsystem successfully closed.
+[2026.09.10-19.38.14:872][  0]LogShaderCompilers: Display: Exiting ShaderCompilingThread
+[2026.09.10-19.38.14:916][  0]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.09.10-19.38.14:923][  0]LogPakFile: Destroying PakPlatformFile
+[2026.09.10-19.38.14:933][  0]LogExit: Exiting.
+[2026.09.10-19.38.14:944][  0]Log file closed, 09/11/26 03:38:14

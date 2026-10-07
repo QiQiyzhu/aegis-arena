@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "command": [
+    "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\AegisArena.uproject",
+    "/Game/Aegis/Maps/AegisArena",
+    "-game",
+    "-AegisRelease",
+    "-AegisReleaseProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-windowed",
+    "-ForceRes",
+    "-ResX=1600",
+    "-ResY=900",
+    "-unattended",
+    "-nosound",
+    "-nosplash",
+    "-nop4",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-AegisReleaseProbeOutput=D:\\AegisWork\\Reports\\release-v24-20261007\\release-flow-final\\native.json",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\release-v24-20261007\\release-flow-final\\sessions",
+    "-abslog=D:\\AegisWork\\Reports\\release-v24-20261007\\release-flow-final\\engine.log"
+  ],
+  "humanPlaytest": false,
+  "shippingRuntime": false,
+  "syntheticMenuActions": true,
+  "simulatedFocusCallback": true,
+  "realWindowFocusTest": false,
+  "exitCode": 0,
+  "checks": [
+    "release_profile_opens_latest_briefing",
+    "isolated_preferences_default_chinese_music_on",
+    "clickable_language_and_music_controls",
+    "deploy_starts_active_operation",
+    "focus_callback_pauses_active_game",
+    "focus_return_does_not_resume_or_advance_time",
+    "manual_resume_clears_focus_pause",
+    "restart_requires_confirmation_and_preserves_attempt",
+    "cancel_restart_keeps_existing_attempt_paused",
+    "confirmed_restart_returns_clean_briefing"
+  ],
+  "native": {
+    "passed": true,
+    "checks": 10,
+    "syntheticMenuActions": true,
+    "simulatedFocusCallback": true,
+    "realWindowFocusTest": false,
+    "humanPlaytest": false,
+    "shippingRuntime": false
+  },
+  "seconds": 17.453999999997905,
+  "files": {
+    "briefing.png": {
+      "bytes": 994797,
+      "sha256": "754a1b231508e59d3be4329ded59912e848015e1165e6accc3c2def1d2c3e2d8"
+    },
+    "engine.log": {
+      "bytes": 129204,
+      "sha256": "1afae4e0baf636976ca259c403b0fb6ca6e230798445d126f1fd4e5774a882d6"
+    },
+    "focus-pause.png": {
+      "bytes": 707446,
+      "sha256": "b1eef2cbb181edd7f3c8dfa951a67f99d035c3734688b7ec80eab139573e5c87"
+    },
+    "native.json": {
+      "bytes": 160,
+      "sha256": "1483759fe603a5bea7d7b2c481e7ca1ae5a9fc505025343d84450c513bc75cb5"
+    },
+    "restart-confirm.png": {
+      "bytes": 809080,
+      "sha256": "f89608bcbbe901b45a4a13a5a6aa5c182f0f7ce81c7dea80445f009f34134ea1"
+    },
+    "stdout.log": {
+      "bytes": 130245,
+      "sha256": "2334e0369a955715d46182c3027f758f4e31cdfd676d87c4c73d55180fe8b8a6"
+    },
+    "sessions\\portfolio-647C5A8D4242FEE18EE653963912C441.json": {
+      "bytes": 1410,
+      "sha256": "73175233809f8e4d71629b8deee3158ace0daedaca9834b11f06ccb1603f7c1c"
+    },
+    "sessions\\portfolio-647C5A8D4242FEE18EE653963912C441.jsonl": {
+      "bytes": 2746,
+      "sha256": "e19ea1ab3f0b06a7cf7e14e124a5151ef30ed0640fb5dd996427cf693b6272ff"
+    },
+    "sessions\\portfolio-B27FFA75418CF4C32241779FA521DE9B.json": {
+      "bytes": 1391,
+      "sha256": "5a29e92c3cf896d0da567e310161ced219b9bee8c8a0ee06458eebf1803de6f7"
+    },
+    "sessions\\portfolio-B27FFA75418CF4C32241779FA521DE9B.jsonl": {
+      "bytes": 2281,
+      "sha256": "4d2d9816ca705b0f5c83b7664b5107fdce6b07b3162bf1da2abd7a7a7af7c848"
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "kind": "byte-preserving-local-evidence-collection",
+  "collectedAtUtc": "2026-09-10T19:45:15.380426+00:00",
+  "destinationBase": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\upgrade-v3",
+  "collectionScope": "upgrade-v3 completed portable/tactical/weapons/operation, first failed + second successful editor compile, five Core automation tests, map-generation logs",
+  "allCopiedFilesByteVerified": true,
+  "copiedFileCount": 29,
+  "copiedBytes": 1604744,
+  "groups": [
+    {
+      "id": "tactical",
+      "scope": "bounded-native-PIE-functional-fixture",
+      "originalResult": "passed",
+      "nativeAssertions": 29,
+      "world": "PIE",
+      "rendering": "NullRHI",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false,
+      "sourceSha256": "278a30cd6308d6b40ae58d042a7436272973b5cfde30837dd3a15ef7732b88a4",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "digestScopeBasis": "scope inferred from runner snapshot_inputs implementation; no scope strings in original tactical provenance",
+      "originalProvenance": "tactical/provenance.json",
+      "fixtureDetails": {
+        "damageDisabled": true,
+        "fixtureInterventions": "Sense toggles isolate allied link/objective advance; real Sight plus spawned occluder verify focus and windup cancellation"
+      },
+      "inputStabilityRecorded": null
+    },
+    {
+      "id": "weapons",
+      "scope": "bounded-native-PIE-functional-fixture",
+      "originalResult": "passed",
+      "nativeAssertions": 31,
+      "world": "PIE",
+      "rendering": "NullRHI",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false,
+      "sourceSha256": "278a30cd6308d6b40ae58d042a7436272973b5cfde30837dd3a15ef7732b88a4",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "digestScopeBasis": "original provenance",
+      "originalProvenance": "weapons/provenance.json",
+      "fixtureDetails": {
+        "fixtureDamage": true,
+        "fixedGeometry": true,
+        "frozenMovement": true,
+        "seededWindup": true,
+        "abilityInvocation": "real TryPulse entry with offscreen local-controller context"
+      },
+      "inputStabilityRecorded": null
+    },
+    {
+      "id": "operation",
+      "scope": "bounded-native-PIE-functional-fixture",
+      "originalResult": "passed",
+      "nativeAssertions": 31,
+      "world": "PIE",
+      "rendering": "NullRHI",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false,
+      "sourceSha256": "278a30cd6308d6b40ae58d042a7436272973b5cfde30837dd3a15ef7732b88a4",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "digestScopeBasis": "original provenance",
+      "originalProvenance": "operation/provenance.json",
+      "fixtureDetails": {
+        "fixtureDamage": true,
+        "aiStoppedDuringInterventions": true,
+        "placedOccupants": true
+      },
+      "inputStabilityRecorded": {
+        "sourceSha256": "278a30cd6308d6b40ae58d042a7436272973b5cfde30837dd3a15ef7732b88a4",
+        "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+      }
+    },
+    {
+      "id": "portable",
+      "scope": "portable C++ model, Python gate unit tests, two short model smoke episodes; not Unreal execution",
+      "originalResult": "passed",
+      "cppAssertions": 381,
+      "pythonTests": 52,
+      "smokeEpisodes": 2,
+      "sourceSha256": "57f517fc8c348e8ec96bcf8b9cf1728e93aa51768772ca06b5e2cdc048188d78",
+      "sourceDigestScope": "core/** files; sorted repository-relative path + bytes",
+      "digestScopeBasis": "scope inferred from scripts/run_benchmark.py source_hash implementation",
+      "contentSha256": null,
+      "unrealInvoked": false,
+      "humanUsabilityTest": false,
+      "performanceEvidence": false
+    },
+    {
+      "id": "build01-failure",
+      "scope": "First editor compile: C4458 in AegisLab; C2181 in operation/weapons fixtures",
+      "originalResult": "failed",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "snapshotBinding": "Original logs have no standalone source/content digest; do not assign later native snapshot hash",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false
+    },
+    {
+      "id": "editor-build",
+      "scope": "Second editor compile after corrections; build runner console also includes Core automation",
+      "originalResult": "succeeded",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "snapshotBinding": "Original logs have no standalone source/content digest; do not assign later native snapshot hash",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false
+    },
+    {
+      "id": "core-automation",
+      "scope": "Five Aegis.Core native automation tests",
+      "originalResult": "passed",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "snapshotBinding": "Original logs have no standalone source/content digest; do not assign later native snapshot hash",
+      "humanUsabilityTest": false,
+      "performanceEvidence": false
+    },
+    {
+      "id": "assets",
+      "scope": "Original Unreal Python map-generation logs; no binary assets copied",
+      "originalMarkers": [
+        "AEGIS_TACTICAL_FIXTURE_CREATED",
+        "AEGIS_WEAPONS_FIXTURE_CREATED",
+        "AEGIS_OPERATION_FIXTURE_CREATED"
+      ],
+      "sourceSha256": null,
+      "contentSha256": null,
+      "snapshotBinding": "No standalone source/content digest in these logs; preserve without assigning native report hashes"
+    }
+  ],
+  "files": [
+    {
+      "group": "assets",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-assets-engine.log",
+      "destinationRelativePath": "assets/assets-engine.log",
+      "bytes": 102884,
+      "sha256": "e26199036e7951aaf59a6823ac0871bf01ca681f83f9ae1d8b15b1d421106207"
+    },
+    {
+      "group": "assets",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-assets-stdout.log",
+      "destinationRelativePath": "assets/assets-stdout.log",
+      "bytes": 103927,
+      "sha256": "0775f827372bf80fa95cbe9fc71d967bd1a33ff589daaeca883f2092784f87be"
+    },
+    {
+      "group": "core-automation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193642-615a912c10924b35946defc4133dca62\\automation-engine.log",
+      "destinationRelativePath": "core-automation/automation-engine.log",
+      "bytes": 138285,
+      "sha256": "dc642e22db837ebd340461b677fd89830e05c54550b6ac35da141bd754e256d5"
+    },
+    {
+      "group": "core-automation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193642-615a912c10924b35946defc4133dca62\\automation.log",
+      "destinationRelativePath": "core-automation/automation.log",
+      "bytes": 139391,
+      "sha256": "30fdd6b9d1199b804d023eb3688315639eef7c7ef98a80416c7a203a8fd47c74"
+    },
+    {
+      "group": "core-automation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193642-615a912c10924b35946defc4133dca62\\automation\\index.json",
+      "destinationRelativePath": "core-automation/automation/index.json",
+      "bytes": 2554,
+      "sha256": "40df3ca9a28d9255a7e907f29b1982a9214d365b0d95468f924b843131ceaf31"
+    },
+    {
+      "group": "editor-build",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-build02-console.log",
+      "destinationRelativePath": "editor-build/build02-and-core-runner-console.log",
+      "bytes": 142566,
+      "sha256": "6a41713547c6cdcc454bccab45ca2000918d9f46e582e728ac1cb165118a21f7"
+    },
+    {
+      "group": "editor-build",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193642-615a912c10924b35946defc4133dca62\\build.log",
+      "destinationRelativePath": "editor-build/build02.log",
+      "bytes": 3025,
+      "sha256": "f52056610a4b685df04c240b6d37b25fbddd46a56dffd3dbb26d461ba6951f8e"
+    },
+    {
+      "group": "build01-failure",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193442-00711b155acb4b0f8343b62dca6f83e4\\build.log",
+      "destinationRelativePath": "failures/build01/build.log",
+      "bytes": 3507,
+      "sha256": "f95a931303dd51eef83e52b276ac116fcf86ddb2ca5459fdb1bbad319ad6f151"
+    },
+    {
+      "group": "build01-failure",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-build01-console.log",
+      "destinationRelativePath": "failures/build01/runner-console.log",
+      "bytes": 3507,
+      "sha256": "f95a931303dd51eef83e52b276ac116fcf86ddb2ca5459fdb1bbad319ad6f151"
+    },
+    {
+      "group": "operation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-operation-01\\engine.log",
+      "destinationRelativePath": "operation/engine.log",
+      "bytes": 152560,
+      "sha256": "df677ab061923a88e0e26cddf83e31170adf58b0befbfb4424275f7047d37669"
+    },
+    {
+      "group": "operation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-operation-01\\index.json",
+      "destinationRelativePath": "operation/index.json",
+      "bytes": 13110,
+      "sha256": "e2021c48b8d3f099cf8c00ea9db9a0eaab692333134d4102c473535e034ee52d"
+    },
+    {
+      "group": "operation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-operation-01\\provenance.json",
+      "destinationRelativePath": "operation/provenance.json",
+      "bytes": 7167,
+      "sha256": "7fb8fbd638359a44308a847c35e7ec3990c486fe70563f45bdecb06f538641b0"
+    },
+    {
+      "group": "operation",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-operation-01\\stdout.log",
+      "destinationRelativePath": "operation/stdout.log",
+      "bytes": 153666,
+      "sha256": "60c29e0a80cd3ff31d916b00b2a085a0b1c4bf1adc337fff807f9925ed6ac6ec"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\build.log",
+      "destinationRelativePath": "portable/build.log",
+      "bytes": 340,
+      "sha256": "1c22d95129a733274126d12bff9c88d98eb177c7a448f5a3a39ff57f1873b8dc"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\python-tests.log",
+      "destinationRelativePath": "portable/python-tests.log",
+      "bytes": 7744,
+      "sha256": "7ab6b97f2ca39709f0398db1360d496514455b641f78ef0a2d319d7ce36eecd6"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-console.log",
+      "destinationRelativePath": "portable/runner-console.log",
+      "bytes": 9574,
+      "sha256": "ff7fe92b7631e1b34a7d431c6d5999f7040bc7dd8ee7b6391f08dde8814c1784"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\smoke.log",
+      "destinationRelativePath": "portable/smoke.log",
+      "bytes": 1371,
+      "sha256": "833595d626d55d72a648c2f83ebb5bbb6bc4c3171790114363e96a1ac38428ff"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\smoke\\episodes.csv",
+      "destinationRelativePath": "portable/smoke/episodes.csv",
+      "bytes": 414,
+      "sha256": "511a4bae2bfd708c912fda8b88e7e9accc7a4a5fa286f291e19f334821bb9c12"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\smoke\\episodes.json",
+      "destinationRelativePath": "portable/smoke/episodes.json",
+      "bytes": 1829,
+      "sha256": "606c0e3ccc71c45e9380e452e7aae7c6cdbd814bc0fad05be37acfc6945126f7"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\smoke\\report.json",
+      "destinationRelativePath": "portable/smoke/report.json",
+      "bytes": 2741,
+      "sha256": "4322657e7c14b55a1d6dadb3c06b931094ac0532912687a9496c12d3acc762f6"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\verification.json",
+      "destinationRelativePath": "portable/verification.json",
+      "bytes": 672,
+      "sha256": "bfeb79d3c95cd392ec5e2da5a98066551c0f3207b0785ced19c42c1f90e66950"
+    },
+    {
+      "group": "tactical",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-01\\engine.log",
+      "destinationRelativePath": "tactical/engine.log",
+      "bytes": 148996,
+      "sha256": "4e9353bdcfb67db9bec0c8a7b984c2687e83ab398e9a45cd7b1b717318008486"
+    },
+    {
+      "group": "tactical",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-01\\index.json",
+      "destinationRelativePath": "tactical/index.json",
+      "bytes": 11944,
+      "sha256": "5599cf79b1af3df8e614ef6b6af2a4532cf25e98400d952749f83fcd506f788d"
+    },
+    {
+      "group": "tactical",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-01\\provenance.json",
+      "destinationRelativePath": "tactical/provenance.json",
+      "bytes": 3482,
+      "sha256": "5a8c60e7d2e3a4605b2891aa696bfa711b141d8c1dfc2d551d730bcfc12146d2"
+    },
+    {
+      "group": "tactical",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-01\\stdout.log",
+      "destinationRelativePath": "tactical/stdout.log",
+      "bytes": 150072,
+      "sha256": "cc9484c91d8653ba31f705ca1dddc0e6661dc98debe573f5a3fdf81eb99bc385"
+    },
+    {
+      "group": "weapons",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-01\\engine.log",
+      "destinationRelativePath": "weapons/engine.log",
+      "bytes": 139976,
+      "sha256": "692fd5f846a462ec661774ea632c30e7515b1aed705e3454a8609f921512207b"
+    },
+    {
+      "group": "weapons",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-01\\index.json",
+      "destinationRelativePath": "weapons/index.json",
+      "bytes": 13132,
+      "sha256": "6c09c7ddbab9d458bb80ba6c3bc09bf0be4c6adc60fa341bbad4b8a981f132d4"
+    },
+    {
+      "group": "weapons",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-01\\provenance.json",
+      "destinationRelativePath": "weapons/provenance.json",
+      "bytes": 5226,
+      "sha256": "c449f237ae5166483603d6d7ee56c91297bd5c7555bfa89234f2a39b3a3c118c"
+    },
+    {
+      "group": "weapons",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-01\\stdout.log",
+      "destinationRelativePath": "weapons/stdout.log",
+      "bytes": 141082,
+      "sha256": "f7577662e854d651051f1e841de4dcb7b5a0938612ded0e489924da0b461ae46"
+    }
+  ],
+  "excludedFiles": [
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-01\\index.html",
+      "reason": "Only raw JSON/log/CSV collected; HTML/web resources and binaries excluded"
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-01\\index.html",
+      "reason": "Only raw JSON/log/CSV collected; HTML/web resources and binaries excluded"
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-operation-01\\index.html",
+      "reason": "Only raw JSON/log/CSV collected; HTML/web resources and binaries excluded"
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-193642-615a912c10924b35946defc4133dca62\\automation\\index.html",
+      "reason": "Only raw JSON/log/CSV collected; HTML/web resources and binaries excluded"
+    }
+  ],
+  "generatedFiles": [
+    "README.md",
+    "failures/README.md",
+    "sources.json"
+  ],
+  "limitations": [
+    "This directory is a byte-preserving evidence collection, not consolidated acceptance. No acceptance.json is generated.",
+    "Tactical 29, weapons 31, operation 31 are bounded native fixtures, not human playtests, input usability tests or rendered performance measurements.",
+    "Portable source digest covers core/** and is not comparable with the broader native source digest. Build and asset logs have no standalone source/content snapshot binding.",
+    "Source/content digests are copied from original reports and are not rewritten to match current source, future UI edits or a later packaged build.",
+    "Input, memory and trial runs, packaged builds, HTML/web resources, executables, PDBs, caches and large resources are outside this collection."
+  ]
+}

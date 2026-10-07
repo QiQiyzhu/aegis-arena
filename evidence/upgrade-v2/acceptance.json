@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "version": "1.1.0 Tactical Trial",
+  "checkedAtUtc": "2026-09-10T16:46:34.451752+00:00",
+  "status": "passed-with-declared-scope",
+  "engine": "Unreal Engine 5.8.2 CL 56702186",
+  "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+  "uncommittedLocalUpgrade": true,
+  "published": false,
+  "inputs": {
+    "sourceSha256": "fae2c996bdfab8a7a5689861f4c97da0bd859028b36a52957aeff04680efa8c7",
+    "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b"
+  },
+  "tests": {
+    "memory-final": {
+      "passed": true,
+      "assertions": 28,
+      "provenance": "memory-final/provenance.json",
+      "sourceSha256": "fae2c996bdfab8a7a5689861f4c97da0bd859028b36a52957aeff04680efa8c7",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b"
+    },
+    "trial-final": {
+      "passed": true,
+      "assertions": 54,
+      "provenance": "trial-final/provenance.json",
+      "sourceSha256": "fae2c996bdfab8a7a5689861f4c97da0bd859028b36a52957aeff04680efa8c7",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b"
+    },
+    "input-packaged": {
+      "passed": true,
+      "assertions": 26,
+      "provenance": "input-packaged/provenance.json",
+      "sourceSha256": "fae2c996bdfab8a7a5689861f4c97da0bd859028b36a52957aeff04680efa8c7",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b"
+    },
+    "coreAutomation": {
+      "passed": true,
+      "tests": 5,
+      "report": "editor-final/automation/index.json",
+      "sourceBinding": "Editor rebuilt with unchanged release input snapshot before final native fixtures"
+    },
+    "python": {
+      "passed": true,
+      "tests": 33,
+      "report": "python/python-release.log"
+    },
+    "portable": {
+      "passed": true,
+      "assertions": 347,
+      "report": "portable/verification.json",
+      "scope": "portable core; earlier immutable run, not Unreal"
+    }
+  },
+  "packages": {
+    "Development": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-development-final\\package\\Windows",
+      "launcher": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-development-final\\package\\Windows\\AegisArena.exe",
+      "gameExecutable": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-development-final\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "gameExecutableSha256": "7fb8dcfdfec55bc4b6fca1aa38eed4ae1c85ca088efff6f952636a698227f4b7",
+      "manifest": "packages/development-manifest.json",
+      "interactiveProbePassed": true,
+      "validationScope": "26 synthetic input checks and four original native screenshots"
+    },
+    "Shipping": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-shipping-final\\package\\Windows",
+      "launcher": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-shipping-final\\package\\Windows\\AegisArena.exe",
+      "gameExecutable": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-shipping-final\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena-Win64-Shipping.exe",
+      "gameExecutableSha256": "363937db3710a865be509abe42075b059eb931895caf25212d883f1fd2396a1f",
+      "manifest": "packages/shipping-manifest.json",
+      "interactiveProbePassed": false,
+      "validationScope": "Build/cook/stage and 11-marker static boundary; no final Shipping window/input inspection"
+    }
+  },
+  "screenshotsReviewed": [
+    "input-packaged/briefing.png",
+    "input-packaged/active.png",
+    "input-packaged/paused.png",
+    "input-packaged/newattempt.png"
+  ],
+  "humanPlaytest": false,
+  "osInputUsedForFinalProbe": false,
+  "originalSourcesManifest": "sources.json",
+  "finalCopiedFiles": [
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-memory-release\\engine.log",
+      "path": "memory-final/engine.log",
+      "bytes": 145990,
+      "sha256": "178ea8455a227b08f7f041499f4fd5aff692fbc1024b8b9bceb4a5def95fd2d4"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-memory-release\\index.json",
+      "path": "memory-final/index.json",
+      "bytes": 11086,
+      "sha256": "9cf4ba3ad2347623ddf5394b2c31a5e373f43d36097b6755c1b0124c72dc0526"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-memory-release\\provenance.json",
+      "path": "memory-final/provenance.json",
+      "bytes": 3288,
+      "sha256": "6588b59aaaef22a1e290a9156b7438b6f59935d627fcfac5a7cb7e08a0389a55"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-memory-release\\stdout.log",
+      "path": "memory-final/stdout.log",
+      "bytes": 147096,
+      "sha256": "5b437371f38cfaa3a62597439e425d426e782c546044f61486dc1b2cd9fce118"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-trial-release\\engine.log",
+      "path": "trial-final/engine.log",
+      "bytes": 158607,
+      "sha256": "6cb518fadf1fd1754c2db184bcb577296676cfaff2441b04a650d197c8264188"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-trial-release\\index.json",
+      "path": "trial-final/index.json",
+      "bytes": 21947,
+      "sha256": "264d61014ec6edda4e53e37f45d340166f96c06571cfbcc97956bf58dcfda647"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-trial-release\\provenance.json",
+      "path": "trial-final/provenance.json",
+      "bytes": 5353,
+      "sha256": "f279e26d300b5a8c188df0fbc0904a6b065b974eec07116a8c43e3dc23fdba23"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-trial-release\\stdout.log",
+      "path": "trial-final/stdout.log",
+      "bytes": 159683,
+      "sha256": "9b40f063075208fd9dc245dd462d50e1b692178306c55a22a0765e8b3f3273c3"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\active.png",
+      "path": "input-packaged/active.png",
+      "bytes": 752425,
+      "sha256": "2a2cdcec7abafb05547b9394a5cd9bd7481ebe2e35f7ee20b863042f4b832da9"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\briefing.png",
+      "path": "input-packaged/briefing.png",
+      "bytes": 399807,
+      "sha256": "64a7e6f3c1fac21a119aa1514690b789362ffb6ec674a0d3a4071e2cb795a1c4"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\engine.log",
+      "path": "input-packaged/engine.log",
+      "bytes": 92960,
+      "sha256": "a45ffbf5be78b99e4773fc9792ea511dc3351cccf5d4f1d4e03d64a982ad3313"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\input-probe.json",
+      "path": "input-packaged/input-probe.json",
+      "bytes": 3879,
+      "sha256": "c91615125450a73c672795321c0f0ddbdb507f2b99cdabcd2041ec6fa3456648"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\newattempt.png",
+      "path": "input-packaged/newattempt.png",
+      "bytes": 400989,
+      "sha256": "83fbf73089e29b75a88d767b52d6d91eb20b922f6764e6263267d0b284a02854"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\paused.png",
+      "path": "input-packaged/paused.png",
+      "bytes": 411934,
+      "sha256": "a116de953a6e51cd0ee08a071fd3e0dee0faf6d90cec7a8060cfa397df17a17b"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\provenance.json",
+      "path": "input-packaged/provenance.json",
+      "bytes": 6529,
+      "sha256": "c7cc94d8ac7e1d55e9e11d04c0f97d3afe6f5e77047b9a72f9639b28d3e31078"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-input-packaged-final\\stdout.log",
+      "path": "input-packaged/stdout.log",
+      "bytes": 92860,
+      "sha256": "6082ab9e89ec853fef0c5d9d87bd6749590042cbc50105088db731138ac711fd"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-final-editor\\20260910-164431-c24cd329715344f69437d4f5bfd0315a\\automation\\index.json",
+      "path": "editor-final/automation/index.json",
+      "bytes": 2553,
+      "sha256": "cb8c604464777582d3aaa112d848788a3701b1361274c84e7887f2bf10bab868"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-final-editor\\20260910-164431-c24cd329715344f69437d4f5bfd0315a\\automation-engine.log",
+      "path": "editor-final/automation-engine.log",
+      "bytes": 138468,
+      "sha256": "7bda5246b15060057c4fb4093d1523b3bfe57121995b646ca7365f81ae52bc3b"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-final-editor\\20260910-164431-c24cd329715344f69437d4f5bfd0315a\\automation.log",
+      "path": "editor-final/automation.log",
+      "bytes": 139574,
+      "sha256": "c23576155f3b5077f11525a29fd53e3443e351cd88d9a8532b67b5a64875e039"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-final-editor\\20260910-164431-c24cd329715344f69437d4f5bfd0315a\\build.log",
+      "path": "editor-final/build.log",
+      "bytes": 2379,
+      "sha256": "e225a1d3981827a3bb527b69813e411bc96a3fdda7c2c29f8c1034dd70010012"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-python-release.log",
+      "path": "python/python-release.log",
+      "bytes": 4909,
+      "sha256": "148e1dd5c4d9a037b2ce78f1560a76553217752e774fef8585bc6a89ef07c8fa"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v2-shipping-gate.json",
+      "path": "packages/shipping-marker-gate.json",
+      "bytes": 1408,
+      "sha256": "02e9fe37dc9e58e72d2e9a68aa5940ada3774db031e208c30074a22b9729e6b2"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-development-final\\package.log",
+      "path": "packages/development-package.log",
+      "bytes": 69878,
+      "sha256": "7fed3769c1aac6825f9e20185410037157b4ceb10ed5b7c823eb05470af84ce1"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\tactical-trial-v1.1-shipping-final\\package.log",
+      "path": "packages/shipping-package.log",
+      "bytes": 70506,
+      "sha256": "526433885eab6f6be3ae43f6f93195ac39fbdefcd28cadb7503f54ec64280a6c"
+    }
+  ],
+  "limitations": [
+    "Trial fixture uses disclosed synthetic damage, not natural-play balance evidence.",
+    "Final input probe is synthetic PlayerController input with RenderOffscreen; it does not validate Alt-Tab, physical mouse behavior or multi-device usability.",
+    "No updated long performance benchmark or paired policy evaluation; v1.0 raw records remain historical.",
+    "No new audio, gamepad, input rebinding, Chinese UI, screen-reader support or RL training.",
+    "Final Shipping was built/cooked and statically inspected, not manually played.",
+    "Public GitHub download remains v1.0; this update is local."
+  ]
+}

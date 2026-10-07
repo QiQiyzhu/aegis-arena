@@ -1,0 +1,405 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "28013D6F457B40AD992A6AA47952C2EF",
+			"instanceName": "雨竹砌筑-6744",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-19.39.04",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 22.905445098876953,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Tactical AI - real movement and authorized sight",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisTacticalFunctional.Tactical AI - real movement and authorized sight",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"28013D6F457B40AD992A6AA47952C2EF"
+			],
+			"duration": 22.905445098876953,
+			"dateTime": "2026.09.10-19.38.41",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (tactical_companion_enabled)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.41"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (explicit_ally_link_survives_no_sight)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.44"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (guard_moves_without_visual_player)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.44"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (guard_avoids_player_fire_lane)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.44"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (rally_command_moves_to_signal)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (invalid_rally_does_not_teleport_or_accept_partial_path)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.48"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (focus_nomination_does_not_grant_sight_or_fire)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (hidden_focus_uses_command_snapshot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (focus_selects_genuinely_seen_nominee)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.50"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (companion_emits_windup_before_fire)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.50"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (occlusion_cancels_windup_without_firing)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_rejects_live_player_link)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.51"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_advances_to_objective_without_target)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.52"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_moves_before_aiming)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_reaction_warning_precedes_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_fires_with_real_los)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_0_repositions_after_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.55"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_rejects_live_player_link)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.55"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_advances_to_objective_without_target)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.56"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_moves_before_aiming)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_reaction_warning_precedes_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_fires_with_real_los)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.58"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_1_repositions_after_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.59"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_rejects_live_player_link)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.38.59"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_advances_to_objective_without_target)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.00"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_moves_before_aiming)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.01"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_reaction_warning_precedes_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_fires_with_real_los)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Assertion passed (role_2_repositions_after_shot)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.04"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Tactical AI - real movement and authorized sight: Tactical commands, authorized sight and three moving enemy roles verified",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.39.04"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "version": "1.4 Decision Lab",
+  "assembledAtUtc": "2026-09-17T08:28:20.781978+00:00",
+  "sourceSha256": "8193689c4841b7fe17f41956d338d9b6d1ea2df8474d3e8fab5959f989307c3e",
+  "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+  "protocolSha256": "b559096f62e9dfd53aec1b4bb3ef37fc44bf2c4a14c97b0e23fc3a943d0ca91d",
+  "binaries": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "7e74169799b6ade5ca8803aeea831c6e251c1c32679b3ba205ead7ec8143ed0e"
+    }
+  },
+  "cookedContainers": {
+    "AegisArena\\Content\\Paks\\AegisArena-Windows.pak": "13bd568e581e57857fb943d22d39b9c0151629166434385a8e785a8200279158",
+    "AegisArena\\Content\\Paks\\AegisArena-Windows.ucas": "c12cca6160446e01a1c1aead88a7f8820a38fcc64443a43bf2c71f534c0569f2",
+    "AegisArena\\Content\\Paks\\AegisArena-Windows.utoc": "acff7dcab54b04ee0af0daa46680be7a36ca7ebc4b45ed9c421036e2d08137f1",
+    "AegisArena\\Content\\Paks\\global.ucas": "6bc7847efb68969337f5ca25234e65ed01210097575739b1c13cb8b90b463bc2",
+    "AegisArena\\Content\\Paks\\global.utoc": "e88db03b5050751603a52a7175394acac783efa228d856016caf8e029667140e"
+  },
+  "package": {
+    "configuration": "Development",
+    "root": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows",
+    "shippingBuiltThisRound": false,
+    "entryPoint": "PLAY-Aegis-Decision-Lab.cmd",
+    "desktopShortcut": {
+      "shortcut": "C:\\Users\\yzhu\\Desktop\\Aegis Arena 决策演示.lnk",
+      "target": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena.exe",
+      "arguments": "-AegisDecisionLab -AegisLabPolicy=improved -AegisLabEnemies=2 -AegisLabSeed=2001 -AegisLabDuration=60 -AegisLabLayout=0 -d3d11 -windowed -ResX=1280 -ResY=720",
+      "workingDirectory": "D:/AegisWork/Packages/decision-lab-v1.4-development/package/Windows"
+    }
+  },
+  "nativeEvidence": {
+    "memory": {
+      "passed": true,
+      "checks": 28,
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\memory-native-final\\provenance.json"
+    },
+    "packagedInput": {
+      "passed": true,
+      "checks": 35,
+      "originalPngs": 4,
+      "synthetic": true,
+      "humanUsability": false,
+      "scope": "PlayerController synthetic input plus four direct link-permission API checks",
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\input-packaged-final\\provenance.json"
+    },
+    "developmentCalibration": {
+      "episodes": 18,
+      "enemiesSelected": 2,
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-analysis.json"
+    },
+    "finalPackageDevelopment": {
+      "episodes": 6,
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\final-case-analysis.json"
+    },
+    "frozenHoldout": {
+      "episodes": 36,
+      "episodesPerPolicy": 12,
+      "wins": {
+        "baseline": 2,
+        "improved": 6,
+        "priority": 5
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\holdout-analysis.json",
+      "execution": "D:\\AegisWork\\Reports\\decision-lab-20260917\\holdout\\execution.json"
+    },
+    "capture": {
+      "episodes": 1,
+      "originalFrames": 200,
+      "outcome": "timeout",
+      "countedInHoldout": false,
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\native-decision-capture\\provenance.json"
+    },
+    "manualLauncher": {
+      "processAndMapLoadVerified": true,
+      "humanGameplayClaim": false,
+      "log": "D:\\AegisWork\\Reports\\decision-lab-20260917\\manual-launch.log",
+      "knownEngineWarnings": [
+        "[2026.09.17-08.19.25:926][  0]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread.",
+        "[2026.09.17-08.19.25:499][  0]LogAudioMixerWasapi: Warning: Sample rate mismatch. Engine sample rate: 48000 Device sample rate: 44100",
+        "[2026.09.17-08.19.25:499][  0]LogAudioMixerWasapi: Warning: Device level sample rate conversion will be used."
+      ],
+      "audioNote": "Normal desktop launch adds two device sample-rate conversion warnings; audio initialization succeeds. Not an audio quality test, and frozen automation gates are unchanged."
+    }
+  },
+  "scriptTests": {
+    "pythonPassed": 160,
+    "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\python-tests-gates-final.log"
+  },
+  "video": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\decision-lab-v1.4\\media\\decision-demo.mp4",
+    "sha256": "e1975d809b61e03e3baacd2dcbd52d149ddab9e17331e1f0e2ffa8fa2256b4bf",
+    "fullDecodeVerified": true,
+    "encodedKeyframeVisuallyInspected": true,
+    "method": "Untouched native PNGs, sampled game-time cadence, repeated frames encoded at 30 fps; no generated gameplay",
+    "player": "scripted",
+    "performanceBenchmark": false,
+    "manifest": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\decision-lab-v1.4\\media\\video-provenance.json"
+  },
+  "mechanism": "Only improved Follow uses an explicitly registered allied position link when Sight ally is unavailable; original utility, BT, EQS, damage and healing parameters retained",
+  "tradeoffs": {
+    "playerDamageMean": [
+      113.17,
+      94.68
+    ],
+    "companionDamageOutputMean": [
+      62.5,
+      77.87
+    ],
+    "companionDeaths": [
+      2,
+      3
+    ],
+    "actionSwitchesMean": [
+      9.5,
+      10.33
+    ],
+    "layout0WinsEachOf6": [
+      1,
+      1
+    ],
+    "scope": "baseline then improved; 12 paired seeds across two spawn layouts"
+  },
+  "limitations": [
+    "Small sample; layout-dependent effects; same-seed engine runs are not bitwise deterministic",
+    "Waiting is expired or failed accepted BT feedback, not all stationary time",
+    "Position link adds declared allied position information; not equal-information scoring comparison",
+    "Rendered runs retain one exact diagnosed UE r.MotionVectorSimulation metadata warning",
+    "Automated evaluation uses scripted player, not human win rate",
+    "No RL training; portable evidence is not native evaluation"
+  ],
+  "preservedFailures": [
+    "original-utility-e4",
+    "calibration-v1-e3-baseline",
+    "calibration-v1-e3-priority",
+    "input-editor-v1",
+    "input-editor-v2",
+    "input-editor-v3",
+    "builds",
+    "all unsuccessful final development and holdout episodes"
+  ],
+  "historicalResultsNotRelabeled": "6 UE Core tests passed earlier this turn before the final link implementation; historical 381 portable checks and v1.3 reports are not final-source native evidence",
+  "team": {
+    "ai_reliability": "Position permission mechanism, passive telemetry, C++ guide, negative-case audit",
+    "combat_presentation": "Separated UI modes, native synthetic input probe, packaged visual acceptance",
+    "research_review": "Prior-evidence audit, protocol review, paired metrics and all negative outcomes",
+    "root": "Lab runtime, integration, build, native runs, video, executable launch and delivery"
+  },
+  "rawEvidenceRoot": "D:\\AegisWork\\Reports\\decision-lab-20260917",
+  "zipRecord": "delivery.json (external to archive, avoiding a self-referential hash)"
+}

@@ -1,0 +1,41 @@
+{
+  "case": "tuning_focus_en",
+  "split": "tuning",
+  "httpStatus": 200,
+  "latencyMilliseconds": 1422.0248000056017,
+  "rawResponseSha256": "c4b97bd6282afa945dfb2918ec5cf4a1a3eef9109c506b528b24cc902df3fa40",
+  "savedResponseSha256": "c4b97bd6282afa945dfb2918ec5cf4a1a3eef9109c506b528b24cc902df3fa40",
+  "credentialRedactionApplied": false,
+  "responseId": "c3ddb150-8d5e-4e03-afed-f070f89555a9",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 706,
+    "completion_tokens": 34,
+    "total_tokens": 740,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 322
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Engage then regroup",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "regroup",
+        "target": "none"
+      }
+    ]
+  }
+}

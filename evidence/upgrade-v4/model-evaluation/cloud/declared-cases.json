@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "declaredAtUtc": "2026-09-11T07:04:00.296396+00:00",
+  "runtimeFixtureSha256": "99c07806b9ad633f1626d7720b17e897ddccd2c90e7b83dfaef0074d89c45734",
+  "runtimeSystemSha256": "0198686cef1febe9a61a3f3534b863caae52ae6f490fddde492a02098c0ee3da",
+  "model": "deepseek-flash",
+  "provider": "deepseek",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "cases": [
+    {
+      "name": "tuning_capture_en",
+      "split": "tuning",
+      "instruction": "Secure the relay, then cover me.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "capture_relay",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "tuning_guard_en",
+      "split": "tuning",
+      "instruction": "Stay close and protect me.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "tuning_focus_en",
+      "split": "tuning",
+      "instruction": "Attack the visible threat, then regroup.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "focus_visible",
+          "regroup"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "tuning_capture_zh",
+      "split": "tuning",
+      "instruction": "先控制信号中继，再掩护我。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "capture_relay",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "tuning_guard_zh",
+      "split": "tuning",
+      "instruction": "靠近我并保护我。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "tuning_focus_zh",
+      "split": "tuning",
+      "instruction": "攻击视野中的敌人，然后重新集结。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "focus_visible",
+          "regroup"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_capture_en",
+      "split": "heldout",
+      "instruction": "Take control of the current relay before you cover my position.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "capture_relay",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_guard_en",
+      "split": "heldout",
+      "instruction": "Do not chase the hostile you can see. Stay with me and watch my back.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_no_visible_en",
+      "split": "heldout",
+      "instruction": "Engage the threat if you can see it. If no hostile is visible, guard me instead.",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": []
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_capture_zh",
+      "split": "heldout",
+      "instruction": "把当前中继站拿下，随后保护我。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "capture_relay",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_guard_zh",
+      "split": "heldout",
+      "instruction": "别去追你看见的敌人，跟着我并提供掩护。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": [
+          {
+            "target": "t0",
+            "distance_cm": 800,
+            "health_fraction": 0.5
+          }
+        ]
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    },
+    {
+      "name": "heldout_no_visible_zh",
+      "split": "heldout",
+      "instruction": "优先打击你能看见的敌人；若没有可见敌人，就留在我身边保护我。",
+      "observation": {
+        "wave": 1,
+        "relay": 0,
+        "player": {
+          "health_fraction": 1,
+          "distance_cm": 240.8318915758459
+        },
+        "companion": {
+          "health_fraction": 1
+        },
+        "objective": {
+          "complete": false,
+          "contested": false,
+          "charge": 0,
+          "requires_player": false,
+          "player_in_ring": false,
+          "companion_in_ring": false
+        },
+        "visible_hostiles": []
+      },
+      "acceptableSkillSequences": [
+        [
+          "guard"
+        ],
+        [
+          "regroup",
+          "guard"
+        ]
+      ],
+      "expectation": "Honor requested skill order, with no unrelated attack or invented target"
+    }
+  ],
+  "requests": [
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Secure the relay, then cover me.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Stay close and protect me.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Attack the visible threat, then regroup.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"先控制信号中继，再掩护我。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"靠近我并保护我。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"攻击视野中的敌人，然后重新集结。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Take control of the current relay before you cover my position.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Do not chase the hostile you can see. Stay with me and watch my back.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"Engage the threat if you can see it. If no hostile is visible, guard me instead.\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": []}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"把当前中继站拿下，随后保护我。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"别去追你看见的敌人，跟着我并提供掩护。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": [{\"target\": \"t0\", \"distance_cm\": 800, \"health_fraction\": 0.5}]}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    {
+      "model": "deepseek-flash",
+      "temperature": 0.1,
+      "max_tokens": 384,
+      "stream": false,
+      "messages": [
+        {
+          "role": "system",
+          "content": "You translate the player's instruction into the smallest practical plan for ONE allied companion. Follow the requested intent and order. Observations restrict what is legal; seeing enemies is NOT permission to replace a protect/capture/regroup request with an unsolicited attack. Output ONLY the required JSON, with 1-3 steps and a printable ASCII label of 1-80 characters. Skills: guard means protect, follow and cover the player for five seconds; the existing combat AI still handles nearby threats. regroup means first move close to the explicitly linked player. capture_relay means move to the current public relay; it is illegal if objective.complete is true, and extraction requires the player too. focus_visible means engage a currently visible target token; choose only a token in visible_hostiles. EVERY guard, regroup and capture_relay step MUST have target=\"none\". ONLY focus_visible may have target=\"t0\" through \"t5\", and that token must exist in the observation. Never invent coordinates, targets, skills or hidden world facts. Use the instruction's requested skills; do not add unrelated steps. If an attack is requested but no target is visible, choose guard and label the missing target. Examples: 'Protect me' -> {\"label\":\"Protect the player\",\"steps\":[{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Capture the relay then cover me' -> {\"label\":\"Capture then protect\",\"steps\":[{\"skill\":\"capture_relay\",\"target\":\"none\"},{\"skill\":\"guard\",\"target\":\"none\"}]}; 'Attack the visible threat then come back' with t0 visible -> {\"label\":\"Engage then regroup\",\"steps\":[{\"skill\":\"focus_visible\",\"target\":\"t0\"},{\"skill\":\"regroup\",\"target\":\"none\"}]}; 'Come back to me' -> {\"label\":\"Regroup with the player\",\"steps\":[{\"skill\":\"regroup\",\"target\":\"none\"}]}. /no_think The exact JSON schema is: {\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"label\",\"steps\"],\"properties\":{\"label\":{\"type\":\"string\",\"minLength\":1,\"maxLength\":80,\"pattern\":\"^[ -~]+$\"},\"steps\":{\"type\":\"array\",\"minItems\":1,\"maxItems\":3,\"items\":{\"type\":\"object\",\"additionalProperties\":false,\"required\":[\"skill\",\"target\"],\"properties\":{\"skill\":{\"type\":\"string\",\"enum\":[\"guard\",\"capture_relay\",\"focus_visible\",\"regroup\"]},\"target\":{\"type\":\"string\",\"enum\":[\"none\",\"t0\",\"t1\",\"t2\",\"t3\",\"t4\",\"t5\"]}}}}}}"
+        },
+        {
+          "role": "user",
+          "content": "{\"instruction\": \"优先打击你能看见的敌人；若没有可见敌人，就留在我身边保护我。\", \"observation\": {\"wave\": 1, \"relay\": 0, \"player\": {\"health_fraction\": 1, \"distance_cm\": 240.8318915758459}, \"companion\": {\"health_fraction\": 1}, \"objective\": {\"complete\": false, \"contested\": false, \"charge\": 0, \"requires_player\": false, \"player_in_ring\": false, \"companion_in_ring\": false}, \"visible_hostiles\": []}}"
+        }
+      ],
+      "response_format": {
+        "type": "json_object"
+      },
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  ],
+  "scope": "Six existing tuning commands and six new heldout paraphrases; synthetic observations with runtime field shape. No model training, no Unreal execution.",
+  "perCaseRequests": 1,
+  "timeoutSeconds": 20
+}

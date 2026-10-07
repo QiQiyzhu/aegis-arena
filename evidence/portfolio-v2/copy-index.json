@@ -1,0 +1,62 @@
+[
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\acceptance-final-01.json",
+    "copy": "evidence\\portfolio-v2\\acceptance.json",
+    "sha256": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\freeze.json",
+    "copy": "evidence\\portfolio-v2\\final-freeze.json",
+    "sha256": "dc21a655eee2850f5d90b27eecbe5a811791b788c11104ac026087e7e270d37a"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\evaluation.json",
+    "copy": "evidence\\portfolio-v2\\final-evaluation.json",
+    "sha256": "2f286cee044136445ec74515341848add6606f8a0a8ab2b98609252aae8b53d2"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\evaluation.json",
+    "copy": "evidence\\portfolio-v2\\preserved-first-evaluation.json",
+    "sha256": "64b7768c994c80d47bf95f020ebba05a5151ed78182d1cc39bb480ba938cf95e"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02-output-analysis.json",
+    "copy": "evidence\\portfolio-v2\\final-output-analysis.json",
+    "sha256": "cab5625fd5c7b64d6e80552825b0ec3d89d3762b6a4555bc52402022cf1cd664"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01-output-analysis.json",
+    "copy": "evidence\\portfolio-v2\\preserved-first-output-analysis.json",
+    "sha256": "ad0f95659e774d7d1dd0d06e8141546b1c9872dac85197a55e8bde86a2c98a8b"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\guard-case-review-r3.json",
+    "copy": "evidence\\portfolio-v2\\guard-case-review.json",
+    "sha256": "604244f162f88d82cf69cbcdbc309b7edf206ce1cdd93cbae3587e296789e3b8"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\build-record.json",
+    "copy": "evidence\\portfolio-v2\\document-build-record.json",
+    "sha256": "df3b032fff5841d28d95fbd8c5b6d9b8ed0e8ae8000538f059933da272d96308"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\visual-qa.json",
+    "copy": "evidence\\portfolio-v2\\document-visual-qa.json",
+    "sha256": "de3f3de90bd581e08664254342db2fe7de8ad30876b766e5fa121f766bd5f332"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\video-provenance.json",
+    "copy": "evidence\\portfolio-v2\\video-provenance.json",
+    "sha256": "9ce4cf2d8ad7fc80ca7e597097df3de60de55f1da7face56c2f78a708360f182"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\visual-qa.json",
+    "copy": "evidence\\portfolio-v2\\video-visual-qa.json",
+    "sha256": "4afd4f9bcc34587514b39bcdffdb84227428475042b7c6b4143857509f15300b"
+  },
+  {
+    "original": "D:\\AegisWork\\Reports\\v2-20260918\\local-install.json",
+    "copy": "evidence\\portfolio-v2\\local-install.json",
+    "sha256": "003fb7dc17b0caabdbd52df1943c0feb72b41bc2f35fcad0edd6fb43b50f2d08"
+  }
+]

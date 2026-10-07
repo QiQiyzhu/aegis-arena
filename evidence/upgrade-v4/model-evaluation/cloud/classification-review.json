@@ -1,0 +1,77 @@
+{
+  "reviewedAtUtc": "2026-09-11T07:09:13.847746+00:00",
+  "method": "Independently read raw provider responses, comparing complete ordered skill/target objects to predeclared alternatives; manually reviewed both no-visible labels. No API requests.",
+  "exactOrderedPlansCorrect": 12,
+  "labelScope": "Automatic evaluator enforces printable ASCII/length only. This review additionally verifies semantic missing-target explanations for both no-visible cases.",
+  "cases": [
+    {
+      "case": "tuning_capture_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "tuning_guard_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "tuning_focus_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "tuning_capture_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "tuning_guard_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "tuning_focus_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "heldout_capture_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "heldout_guard_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "heldout_no_visible_en",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true,
+      "noVisibleTargetFallbackCorrect": true,
+      "manuallyReviewedLabel": "No visible threat; guard the player",
+      "labelExplainsMissingVisibleTarget": true
+    },
+    {
+      "case": "heldout_capture_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "heldout_guard_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true
+    },
+    {
+      "case": "heldout_no_visible_zh",
+      "exactOrderedSkillTargetPairsCorrect": true,
+      "labelPrintableAsciiAndBounded": true,
+      "noVisibleTargetFallbackCorrect": true,
+      "manuallyReviewedLabel": "No visible enemy; guard the player",
+      "labelExplainsMissingVisibleTarget": true
+    }
+  ],
+  "strictJsonRawAndContentRechecked": 12,
+  "duplicateKeysOrNonfiniteConstantsFound": 0,
+  "hardenedEvaluatorSha256": "c5d5bd9e38932b0621b42d84fbe459f3cd78e84f95de3e85f188cd625125b4a9"
+}

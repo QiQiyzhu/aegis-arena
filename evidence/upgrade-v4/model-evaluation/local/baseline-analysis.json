@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "runAtUtc": "2026-09-11T06:39:42.562799+00:00",
+  "scope": "Six bilingual native-preset requests; structural schema and visible-token grounding are separate from plan-quality judgment. No Unreal or concurrent-load validation.",
+  "server": "http://127.0.0.1:18765",
+  "model": "Qwen3-0.6B",
+  "quantization": "Q8_0",
+  "cpu": "Intel Core i9-13900HX",
+  "threads": 4,
+  "context": 2048,
+  "gpuLayers": 0,
+  "systemPrompt": "You choose high-level skills for one allied companion. Return ONLY JSON matching the supplied schema. Use 1 to 3 steps. Skills: guard (protect player for five seconds), regroup (move near explicitly linked player), capture_relay (move to the currently public relay; invalid if complete; extraction needs player present), focus_visible (engage only a target token from visible_hostiles, revalidated before execution). Never invent targets, coordinates, world facts or skills. Prefer a short practical plan. The label must be printable ASCII <=80 characters. /no_think",
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "label",
+      "steps"
+    ],
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80,
+        "pattern": "^[ -~]+$"
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "skill",
+            "target"
+          ],
+          "properties": {
+            "skill": {
+              "type": "string",
+              "enum": [
+                "guard",
+                "capture_relay",
+                "focus_visible",
+                "regroup"
+              ]
+            },
+            "target": {
+              "type": "string",
+              "enum": [
+                "none",
+                "t0",
+                "t1",
+                "t2",
+                "t3",
+                "t4",
+                "t5"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "observation": {
+    "wave": 1,
+    "relay": 0,
+    "objective": {
+      "complete": false,
+      "contested": false,
+      "charge": 1.0,
+      "player_in_ring": false,
+      "companion_in_ring": false,
+      "requires_player": false
+    },
+    "player": {
+      "health_fraction": 0.7,
+      "distance_cm": 400
+    },
+    "companion": {
+      "health_fraction": 0.8
+    },
+    "visible_hostiles": [
+      {
+        "target": "t0",
+        "distance_cm": 900,
+        "health_fraction": 0.5
+      }
+    ]
+  },
+  "requests": [
+    {
+      "case": "capture_en",
+      "instruction": "Secure the relay, then cover me.",
+      "expectedSkill": "capture_relay",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1644.3576000019675,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": false,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "SECURE_RELAY_COVER_ME",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "t0"
+          },
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 267,
+        "total_tokens": 331,
+        "prompt_tokens_details": {
+          "cached_tokens": 266
+        }
+      },
+      "timings": {
+        "cache_n": 266,
+        "prompt_n": 1,
+        "prompt_ms": 25.266,
+        "prompt_per_token_ms": 25.266,
+        "prompt_per_second": 39.578880709253546,
+        "predicted_n": 64,
+        "predicted_ms": 1575.852,
+        "predicted_per_token_ms": 25.01352380952381,
+        "predicted_per_second": 39.97837360361252
+      },
+      "firstRequestInThisRun": true,
+      "promptCacheTokens": 266,
+      "fullyUncachedPrompt": false
+    },
+    {
+      "case": "guard_en",
+      "instruction": "Stay close and protect me.",
+      "expectedSkill": "guard",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1054.3078999980935,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": true,
+      "desiredSkillPresent": false,
+      "plan": {
+        "label": "CATCH_T0",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 40,
+        "prompt_tokens": 265,
+        "total_tokens": 305,
+        "prompt_tokens_details": {
+          "cached_tokens": 264
+        }
+      },
+      "timings": {
+        "cache_n": 264,
+        "prompt_n": 1,
+        "prompt_ms": 24.115,
+        "prompt_per_token_ms": 24.115,
+        "prompt_per_second": 41.467965996267885,
+        "predicted_n": 40,
+        "predicted_ms": 1003.906,
+        "predicted_per_token_ms": 25.741179487179487,
+        "predicted_per_second": 38.848258701511895
+      },
+      "firstRequestInThisRun": false,
+      "promptCacheTokens": 264,
+      "fullyUncachedPrompt": false
+    },
+    {
+      "case": "focus_en",
+      "instruction": "Attack the visible threat, then regroup.",
+      "expectedSkill": "focus_visible",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1554.6499999982188,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": false,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "ATTACK_RELAY",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "capture_relay",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 268,
+        "total_tokens": 329,
+        "prompt_tokens_details": {
+          "cached_tokens": 267
+        }
+      },
+      "timings": {
+        "cache_n": 267,
+        "prompt_n": 1,
+        "prompt_ms": 23.998,
+        "prompt_per_token_ms": 23.998,
+        "prompt_per_second": 41.670139178264854,
+        "predicted_n": 61,
+        "predicted_ms": 1502.829,
+        "predicted_per_token_ms": 25.04715,
+        "predicted_per_second": 39.92470201200536
+      },
+      "firstRequestInThisRun": false,
+      "promptCacheTokens": 267,
+      "fullyUncachedPrompt": false
+    },
+    {
+      "case": "capture_zh",
+      "instruction": "先控制信号中继，再掩护我。",
+      "expectedSkill": "capture_relay",
+      "httpStatus": 200,
+      "latencyMilliseconds": 2342.300999996951,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": false,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "control_relay capture_relay focus_visible guard regroup",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "capture_relay",
+            "target": "t0"
+          },
+          {
+            "skill": "guard",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 87,
+        "prompt_tokens": 271,
+        "total_tokens": 358,
+        "prompt_tokens_details": {
+          "cached_tokens": 270
+        }
+      },
+      "timings": {
+        "cache_n": 270,
+        "prompt_n": 1,
+        "prompt_ms": 23.78,
+        "prompt_per_token_ms": 23.78,
+        "prompt_per_second": 42.052144659377625,
+        "predicted_n": 87,
+        "predicted_ms": 2266.887,
+        "predicted_per_token_ms": 26.3591511627907,
+        "predicted_per_second": 37.937488723522605
+      },
+      "firstRequestInThisRun": false,
+      "promptCacheTokens": 270,
+      "fullyUncachedPrompt": false
+    },
+    {
+      "case": "guard_zh",
+      "instruction": "靠近我并保护我。",
+      "expectedSkill": "guard",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1923.8017000025138,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": false,
+      "desiredSkillPresent": false,
+      "plan": {
+        "label": "CATCH",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "t0"
+          },
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 266,
+        "total_tokens": 325,
+        "prompt_tokens_details": {
+          "cached_tokens": 127
+        }
+      },
+      "timings": {
+        "cache_n": 127,
+        "prompt_n": 139,
+        "prompt_ms": 450.733,
+        "prompt_per_token_ms": 3.2426834532374103,
+        "prompt_per_second": 308.3865614454677,
+        "predicted_n": 59,
+        "predicted_ms": 1431.334,
+        "predicted_per_token_ms": 24.678172413793103,
+        "predicted_per_second": 40.521639254010594
+      },
+      "firstRequestInThisRun": false,
+      "promptCacheTokens": 127,
+      "fullyUncachedPrompt": false
+    },
+    {
+      "case": "focus_zh",
+      "instruction": "攻击视野中的敌人，然后重新集结。",
+      "expectedSkill": "focus_visible",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1963.2870999994338,
+      "finishReason": "stop",
+      "schemaValid": true,
+      "grounded": false,
+      "desiredSkillPresent": true,
+      "plan": {
+        "label": "attack_target_relay",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "capture_relay",
+            "target": "t0"
+          }
+        ]
+      },
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 269,
+        "total_tokens": 330,
+        "prompt_tokens_details": {
+          "cached_tokens": 127
+        }
+      },
+      "timings": {
+        "cache_n": 127,
+        "prompt_n": 142,
+        "prompt_ms": 438.18,
+        "prompt_per_token_ms": 3.085774647887324,
+        "prompt_per_second": 324.067734720891,
+        "predicted_n": 61,
+        "predicted_ms": 1502.915,
+        "predicted_per_token_ms": 25.048583333333333,
+        "predicted_per_second": 39.92241743545044
+      },
+      "firstRequestInThisRun": false,
+      "promptCacheTokens": 127,
+      "fullyUncachedPrompt": false
+    }
+  ],
+  "schemaValidCount": 6,
+  "groundedCount": 1,
+  "desiredSkillPresentCount": 4,
+  "latencyMilliseconds": {
+    "min": 1054.3078999980935,
+    "median": 1784.0796500022407,
+    "max": 2342.300999996951,
+    "firstRequest": 1644.3576000019675
+  },
+  "actionableIntentCount": 0,
+  "cacheDisclosure": "Run02 reused the live server and prompt caches. firstRequestInThisRun is not a cold request. Initial uncached capture_en in inference/ measured 2456.0813ms (267 prompt tokens, cached 0)."
+}

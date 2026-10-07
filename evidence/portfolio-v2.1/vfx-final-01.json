@@ -1,0 +1,20 @@
+{
+  "lastPlayerSnapshot": {
+    "shots": 58,
+    "chargedShots": 1,
+    "renderedShots": 58,
+    "traceImpacts": 70,
+    "damageImpacts": 59,
+    "worldImpacts": 11,
+    "blockedCharacterImpacts": 0,
+    "fatalImpacts": 10,
+    "deathsObserved": 0,
+    "renderedDeathBursts": 0,
+    "poolComponents": 27,
+    "peakActiveComponents": 18,
+    "reusedActiveSlots": 0
+  },
+  "samplesChecked": 1226,
+  "dashAfterRepeatedShotsSamples": 11,
+  "scope": "Actual player shot/impact counters and per-player pool; visual quality reviewed separately. Not GPU performance."
+}

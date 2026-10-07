@@ -1,0 +1,1524 @@
+{
+  "schemaVersion": 1,
+  "deliveryReady": true,
+  "reviewedAtUtc": "2026-09-18T03:55:17.508771+00:00",
+  "reviewerScript": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\scripts\\review_v2_release.py",
+    "bytes": 28859,
+    "sha256": "d697862fbf49fa5419b619c9e4521c40fea0dd36de7fdbfb8edec29e379f6e15"
+  },
+  "frozenInputs": {
+    "sourceSha256": "6dad19526dbc6b093a841ccf46f040e48148e37700d3e5a2184d6f66d42b3cc2",
+    "contentSha256": "9667582db87935a68d8823eca0801b1c47ade897f12a1c848f926a4e02e88fd5"
+  },
+  "package": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12890784,
+        "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 57106,
+        "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+      },
+      "global.ucas": {
+        "bytes": 1569152,
+        "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+      }
+    }
+  },
+  "evaluationProtocol": {
+    "expectedHoldoutSeeds": [
+      5501,
+      6607,
+      7703
+    ],
+    "policies": [
+      "legacy",
+      "improved"
+    ],
+    "developmentSeed": 1101,
+    "requiredResolution": [
+      1920,
+      1080
+    ],
+    "seedSelection": "Explicit CLI protocol; gate does not select or optimize seeds",
+    "explicitPreservedHistoryDirectories": [
+      "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01",
+      "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01"
+    ]
+  },
+  "evidenceCategories": {
+    "nativeControl": {
+      "assertions": 36,
+      "provenance": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-packaged-02\\provenance.json",
+        "bytes": 10403,
+        "sha256": "dc215c41458fbb8355292f98458cec400b0479bde9d656e23ff2991d84fac9c6"
+      },
+      "sessions": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-packaged-02\\system\\portfolio-264A901D4EF395B24CB486970D876007.jsonl",
+          "sha256": "c2d9cee0792f32cc0ef54c9616f1215d3aa1de30f2a45d289deb9b0256fbdcef",
+          "summarySha256": "b85cc98fb83a009b22752fb34a79e47632c1c826a2c739be072ef30069a1ce83"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-packaged-02\\system\\portfolio-310762674D8F6D5AF93C8E87D03CD902.jsonl",
+          "sha256": "29cb85e11ad12907296f350544abdc66f86b1a8075107e583da3a957bb9568e1",
+          "summarySha256": "7eae082d708236fdaf37bf82c8e524b44d7a0206d10c1a2a09b914d59ac4e238"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-packaged-02\\system\\portfolio-0A26EC364DD6ABBC012E0D990A2105E4.jsonl",
+          "sha256": "ec9da92f2e03a9e061e400797c6c027527104462c065ff8750fa61fef1c80a96",
+          "summarySha256": "874620cda6f7d64096f81dea67b48e011ed3e25cbca547067eb0996ce2168715"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-packaged-02\\system\\portfolio-614F74A0433EEF1FFB019DB655FA4388.jsonl",
+          "sha256": "e30c3cc5827f41e6e6e4ba81ae4ab74ab5cec41ecfb699369257fe969f56c5aa",
+          "summarySha256": "15bed6c56af700ea139b0a85fd78e4c10bd6b56c4040fa19b8b85036915aacf9"
+        }
+      ],
+      "fixtureDamage": true,
+      "fixturePlacement": true,
+      "aiFrozen": true,
+      "notCovered": [
+        "real window focus loss",
+        "charge cancellation on natural stage transition",
+        "upgrade penetration of three targets",
+        "V on first upgrade page",
+        "F rejection during extraction",
+        "F expiration and next-relay eligibility",
+        "symbiosis healing"
+      ]
+    },
+    "nativeDecisionLabInput": {
+      "assertions": 35,
+      "provenance": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\lab-input-packaged-02\\provenance.json",
+        "bytes": 14517,
+        "sha256": "d541ccfd12f8adaa22959c0577b0c71c84cf183076a0cb31bdd9c1a84655728b"
+      },
+      "screenshots": [
+        {
+          "file": "lab-briefing.png",
+          "bytes": 480699,
+          "width": 1280,
+          "height": 720,
+          "sha256": "3b40bda7b34449a07e398f9920dffa1d9f11d12934ce8fb55397942de4588bd4",
+          "structureVerified": true
+        },
+        {
+          "file": "lab-active.png",
+          "bytes": 664850,
+          "width": 1280,
+          "height": 720,
+          "sha256": "efbb9b0a8c425f0d6b68a9bc25c3e0a87aa19b91026a94883f093606ddc8c99f",
+          "structureVerified": true
+        },
+        {
+          "file": "lab-debug.png",
+          "bytes": 591533,
+          "width": 1280,
+          "height": 720,
+          "sha256": "0167024242efeebbaf065f8312cae10d4dbad1c02453283ef690161bcf33cc0d",
+          "structureVerified": true
+        },
+        {
+          "file": "lab-paused.png",
+          "bytes": 381420,
+          "width": 1280,
+          "height": 720,
+          "sha256": "b30ec6364e954a402ee38cc3916abb103c17369792b7ba72678b7b26c67731fd",
+          "structureVerified": true
+        }
+      ],
+      "scope": "Classic Utility/BT/EQS entry and input proof, not a repeat of v1.4 policy evaluation"
+    },
+    "controlledGuardMechanism": {
+      "assertionsPerRun": 12,
+      "runs": {
+        "baseline": {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\provenance.json",
+            "bytes": 5229,
+            "sha256": "6c458c7f6b5d4a75d9507605ab23e524170d1b628e5db1ab30dbdacf0430ce5d"
+          },
+          "facts": {
+            "schemaVersion": 1,
+            "mode": "baseline",
+            "passed": true,
+            "worldType": 3,
+            "begunPlay": true,
+            "damageDisabled": true,
+            "stationaryLeaderAndTarget": true,
+            "setupBrainPaused": true,
+            "sensesToggled": false,
+            "baselineDefectObserved": true,
+            "observedWindup": false,
+            "shots": 0,
+            "movementCm": 0,
+            "movementMeasured": true,
+            "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+            "finalPosition": "X=-180.000 Y=240.000 Z=90.150",
+            "slotChecks": 0,
+            "slotRejections": 0,
+            "slotReason": "legacy_formation",
+            "alternateSelections": 0,
+            "hiddenChecksUnchanged": true,
+            "hiddenShotsUnchanged": true,
+            "wallSeconds": 4.848768301308155,
+            "gameSeconds": 4.850033797323704,
+            "reason": "Baseline defect reproduced: reachable first slot blocks the usable alternate",
+            "initialPreferredSlotOffsetCm": 30,
+            "preferredNavigation": {
+              "start": "X=-180.000 Y=240.000 Z=90.150",
+              "requested": "X=-150.000 Y=240.000 Z=0.000",
+              "projected": true,
+              "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+              "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+              "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+              "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+              "physicalMuzzleValid": true,
+              "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+              "pathExists": true,
+              "pathValid": true,
+              "pathPartial": false,
+              "pointCount": 2
+            },
+            "alternateNavigation": {
+              "start": "X=-180.000 Y=240.000 Z=90.150",
+              "requested": "X=-150.000 Y=-240.000 Z=0.000",
+              "projected": true,
+              "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+              "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+              "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+              "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+              "physicalMuzzleValid": true,
+              "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+              "pathExists": true,
+              "pathValid": true,
+              "pathPartial": false,
+              "pointCount": 2
+            },
+            "assertions": [
+              {
+                "name": "game_world_begun",
+                "passed": true,
+                "gameSeconds": 0
+              },
+              {
+                "name": "v2_enable_matches_launch",
+                "passed": true,
+                "gameSeconds": 0.050000499933958054
+              },
+              {
+                "name": "own_sight_authorizes_target",
+                "passed": true,
+                "gameSeconds": 0.5500040985643864
+              },
+              {
+                "name": "preferred_slot_weapon_trace_blocked",
+                "passed": true,
+                "gameSeconds": 0.5500040985643864
+              },
+              {
+                "name": "alternate_slot_weapon_trace_clear",
+                "passed": true,
+                "gameSeconds": 0.5500040985643864
+              },
+              {
+                "name": "both_formation_slots_have_complete_paths",
+                "passed": true,
+                "gameSeconds": 0.5500040985643864
+              },
+              {
+                "name": "baseline_prefers_blocked_slot",
+                "passed": true,
+                "gameSeconds": 3.5500244982540607
+              },
+              {
+                "name": "baseline_cannot_fire_through_obstacle",
+                "passed": true,
+                "gameSeconds": 3.5500244982540607
+              },
+              {
+                "name": "baseline_v2_counters_unused",
+                "passed": true,
+                "gameSeconds": 3.5500244982540607
+              },
+              {
+                "name": "opaque_cover_removes_sight",
+                "passed": true,
+                "gameSeconds": 3.850026600062847
+              },
+              {
+                "name": "hidden_target_does_not_fire",
+                "passed": true,
+                "gameSeconds": 4.850033797323704
+              },
+              {
+                "name": "hidden_target_does_not_run_slot_checks",
+                "passed": true,
+                "gameSeconds": 4.850033797323704
+              }
+            ]
+          }
+        },
+        "improved": {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\provenance.json",
+            "bytes": 5274,
+            "sha256": "0bf613bbbdf2090e44f29f82986a45cc317022680385584b14bf9a6614ae77a2"
+          },
+          "facts": {
+            "schemaVersion": 1,
+            "mode": "improved",
+            "passed": true,
+            "worldType": 3,
+            "begunPlay": true,
+            "damageDisabled": true,
+            "stationaryLeaderAndTarget": true,
+            "setupBrainPaused": true,
+            "sensesToggled": false,
+            "baselineDefectObserved": false,
+            "observedWindup": true,
+            "shots": 1,
+            "movementCm": 380.26401268023307,
+            "movementMeasured": true,
+            "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+            "finalPosition": "X=-150.863 Y=-139.146 Z=90.150",
+            "slotChecks": 4,
+            "slotRejections": 2,
+            "slotReason": "team_formation_without_visible_target",
+            "alternateSelections": 2,
+            "hiddenChecksUnchanged": true,
+            "hiddenShotsUnchanged": true,
+            "wallSeconds": 5.352972097694874,
+            "gameSeconds": 5.354050401598215,
+            "reason": "Authorized firing-slot selection produces real movement and fire",
+            "initialPreferredSlotOffsetCm": 30,
+            "preferredNavigation": {
+              "start": "X=-180.000 Y=240.000 Z=90.150",
+              "requested": "X=-150.000 Y=240.000 Z=0.000",
+              "projected": true,
+              "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+              "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+              "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+              "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+              "physicalMuzzleValid": true,
+              "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+              "pathExists": true,
+              "pathValid": true,
+              "pathPartial": false,
+              "pointCount": 2
+            },
+            "alternateNavigation": {
+              "start": "X=-180.000 Y=240.000 Z=90.150",
+              "requested": "X=-150.000 Y=-240.000 Z=0.000",
+              "projected": true,
+              "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+              "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+              "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+              "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+              "physicalMuzzleValid": true,
+              "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+              "pathExists": true,
+              "pathValid": true,
+              "pathPartial": false,
+              "pointCount": 2
+            },
+            "assertions": [
+              {
+                "name": "game_world_begun",
+                "passed": true,
+                "gameSeconds": 0
+              },
+              {
+                "name": "v2_enable_matches_launch",
+                "passed": true,
+                "gameSeconds": 0.05000029876828194
+              },
+              {
+                "name": "own_sight_authorizes_target",
+                "passed": true,
+                "gameSeconds": 0.5500033013522625
+              },
+              {
+                "name": "preferred_slot_weapon_trace_blocked",
+                "passed": true,
+                "gameSeconds": 0.5500033013522625
+              },
+              {
+                "name": "alternate_slot_weapon_trace_clear",
+                "passed": true,
+                "gameSeconds": 0.5500033013522625
+              },
+              {
+                "name": "both_formation_slots_have_complete_paths",
+                "passed": true,
+                "gameSeconds": 0.5500033013522625
+              },
+              {
+                "name": "v2_rejects_primary_and_selects_alternate",
+                "passed": true,
+                "gameSeconds": 4.050024900585413
+              },
+              {
+                "name": "v2_physically_moves_toward_other_flank",
+                "passed": true,
+                "gameSeconds": 4.050024900585413
+              },
+              {
+                "name": "v2_winds_up_and_fires_normally",
+                "passed": true,
+                "gameSeconds": 4.050024900585413
+              },
+              {
+                "name": "opaque_cover_removes_sight",
+                "passed": true,
+                "gameSeconds": 4.35404409840703
+              },
+              {
+                "name": "hidden_target_does_not_fire",
+                "passed": true,
+                "gameSeconds": 5.354050401598215
+              },
+              {
+                "name": "hidden_target_does_not_run_slot_checks",
+                "passed": true,
+                "gameSeconds": 5.354050401598215
+              }
+            ]
+          }
+        }
+      },
+      "scope": "Damage-disabled, stationary leader/target, controlled PIE geometry; baseline PASS reproduces the defect"
+    },
+    "fullNativeDemonstration": {
+      "provenance": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-02\\provenance.json",
+        "bytes": 563771,
+        "sha256": "6745121e806b0ef9ae182ac1e145591347f9a0dc2f3ad6d3df9cc6546a587828"
+      },
+      "outcome": "won",
+      "seed": 1101,
+      "policy": "improved",
+      "metrics": {
+        "outcome": "won",
+        "completed": true,
+        "trialElapsedSeconds": 106.80000557005405,
+        "stagesRewarded": 3,
+        "alliedActualDamageDealt": 1260,
+        "playerActualDamageTaken": 238,
+        "companionActualDamageTaken": 42,
+        "companionSurvived": true,
+        "companionStateChanges": 122,
+        "companionShortReversalsUnder1s": 18,
+        "companionShots": 25,
+        "companionMoveRequests": 83,
+        "guardSlotChecks": 46,
+        "guardSlotRejections": 12,
+        "guardAlternateSelections": 6,
+        "chargedShots": 1,
+        "overclocks": 3,
+        "pulsesUsed": 1,
+        "repairsUsed": 4,
+        "energySpent": 237,
+        "energyFinal": 42,
+        "energyOverflow": 0,
+        "symbiosisPlayerActualHealing": 6.266664505004883,
+        "symbiosisCompanionActualHealing": 1.0666656494140625
+      },
+      "systemEvidence": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-02\\system\\portfolio-535EBAC24BE86CA0747DC39DB1A174FC.json",
+        "sha256": "2c411180feae15a67c3e940e6fd3e5b5a8ea04f7a43fc58959beb9e47c8a4266",
+        "traceSha256": "0424ed9fddf353729448b6ac7965f9e3ff648ada589b329db66818b94d8f23b8",
+        "events": 302,
+        "outcome": "won",
+        "ledgerReconciled": true,
+        "damageRoleVerification": "full",
+        "pulsesUsed": 1,
+        "repairsUsed": 4,
+        "actualRepairHealing": 104.933349609375,
+        "chargedShots": 1,
+        "overclocks": 3,
+        "northRouteFirst": true,
+        "symbiosisActualHealing": 7.333332315087318,
+        "companionStateChanges": 122,
+        "companionShortReversalsUnder1s": 18,
+        "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+        "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+      },
+      "nativeCapture": {
+        "resultQuitEvidence": {
+          "outcome": "won",
+          "key": "X",
+          "normalExit": true,
+          "resultHoldSeconds": 4.000000208616257
+        },
+        "frames": 3656,
+        "videoSeconds": 121.90000635758042,
+        "knownEngineWarnings": [
+          "[2026.09.18-03.06.46:918][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+        ]
+      },
+      "resolution": [
+        1920,
+        1080
+      ]
+    },
+    "pairedNativeObservations": {
+      "record": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\evaluation.json",
+        "bytes": 10055,
+        "sha256": "2f286cee044136445ec74515341848add6606f8a0a8ab2b98609252aae8b53d2"
+      },
+      "rows": [
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-legacy\\provenance.json",
+            "bytes": 8472,
+            "sha256": "57c6d78288b416e505e7a1b78acd8ea72f1f9fba8a034498b5116a239023866b"
+          },
+          "outcome": "won",
+          "seed": 5501,
+          "policy": "legacy",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 90.90000474080443,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 62,
+            "companionActualDamageTaken": 70,
+            "companionSurvived": true,
+            "companionStateChanges": 91,
+            "companionShortReversalsUnder1s": 19,
+            "companionShots": 11,
+            "companionMoveRequests": 67,
+            "guardSlotChecks": 0,
+            "guardSlotRejections": 0,
+            "guardAlternateSelections": 0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "pulsesUsed": 2,
+            "repairsUsed": 1,
+            "energySpent": 199,
+            "energyFinal": 80,
+            "energyOverflow": 0,
+            "symbiosisPlayerActualHealing": 24.833351135253906,
+            "symbiosisCompanionActualHealing": 8.999996185302734
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-legacy\\system\\portfolio-892E573A42B51FE709223AAE63B0E32F.json",
+            "sha256": "a82ae31758f45a949c9062de08365be9d3e93c2a7b3defa2628b35336c3f9370",
+            "traceSha256": "e1e25cf11483c07832525127fb26710f56f10c87887d4835f2e567762f6d0e9a",
+            "events": 343,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 2,
+            "repairsUsed": 1,
+            "actualRepairHealing": 14.0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 33.833334147930145,
+            "companionStateChanges": 91,
+            "companionShortReversalsUnder1s": 19,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 106.0000055283308,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.31.45:874][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-improved\\provenance.json",
+            "bytes": 8470,
+            "sha256": "77a2f581ab671f338812b7b5c933b6541a0c3a7a984d83321e27b4a7010dd56a"
+          },
+          "outcome": "won",
+          "seed": 5501,
+          "policy": "improved",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 100.90000526234508,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 76,
+            "companionActualDamageTaken": 70,
+            "companionSurvived": true,
+            "companionStateChanges": 78,
+            "companionShortReversalsUnder1s": 11,
+            "companionShots": 11,
+            "companionMoveRequests": 80,
+            "guardSlotChecks": 18,
+            "guardSlotRejections": 8,
+            "guardAlternateSelections": 2,
+            "chargedShots": 2,
+            "overclocks": 3,
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "energySpent": 235,
+            "energyFinal": 44,
+            "energyOverflow": 0,
+            "symbiosisPlayerActualHealing": 7.06666374206543,
+            "symbiosisCompanionActualHealing": 6.466663837432861
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\5501-improved\\system\\portfolio-06234BF84706126FCCA24B9C406F75E1.json",
+            "sha256": "3cdee397f08cb31db4d3c7fc5c536f5e0fcd5b2bc61f8eaabc7f85b9b5bbc786",
+            "traceSha256": "68deac4dab5a5a8bf647fd8cb71304e065f83ccdde44b0c0cf2ab7e42148adf4",
+            "events": 262,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "actualRepairHealing": 44.0,
+            "chargedShots": 2,
+            "overclocks": 3,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 13.533332988619804,
+            "companionStateChanges": 78,
+            "companionShortReversalsUnder1s": 11,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 116.00000604987144,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.32.06:821][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-improved\\provenance.json",
+            "bytes": 8458,
+            "sha256": "413ad005f8d8383b33cce2e3fffade24ef4a70965923f0296c7eed779dc9cc6b"
+          },
+          "outcome": "won",
+          "seed": 6607,
+          "policy": "improved",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 92.20000480860472,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 118,
+            "companionActualDamageTaken": 20,
+            "companionSurvived": true,
+            "companionStateChanges": 47,
+            "companionShortReversalsUnder1s": 9,
+            "companionShots": 6,
+            "companionMoveRequests": 68,
+            "guardSlotChecks": 9,
+            "guardSlotRejections": 1,
+            "guardAlternateSelections": 1,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "energySpent": 223,
+            "energyFinal": 56,
+            "energyOverflow": 0,
+            "symbiosisPlayerActualHealing": 22.000225067138672,
+            "symbiosisCompanionActualHealing": 0
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-improved\\system\\portfolio-5C672CCC4436EB56009B0D92A8BC33AC.json",
+            "sha256": "9f3e8a96f24f24eda7d48b1e2f50d1a1639461af4effea3a206a5e9e220be292",
+            "traceSha256": "aea605ab1c5f90d4f76ab24e3d9ec016fa732c3561ad78530dc86027c7cc29f6",
+            "events": 279,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "actualRepairHealing": 44.0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 22.000214874744415,
+            "companionStateChanges": 47,
+            "companionShortReversalsUnder1s": 9,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 107.30000559613109,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.32.28:749][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-legacy\\provenance.json",
+            "bytes": 8486,
+            "sha256": "97e41680a96f253b265b8dbdbe17368fa97698b9db6850aefba3e9867ca6a7fe"
+          },
+          "outcome": "won",
+          "seed": 6607,
+          "policy": "legacy",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 92.20000480860472,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 118,
+            "companionActualDamageTaken": 20,
+            "companionSurvived": true,
+            "companionStateChanges": 47,
+            "companionShortReversalsUnder1s": 9,
+            "companionShots": 6,
+            "companionMoveRequests": 68,
+            "guardSlotChecks": 0,
+            "guardSlotRejections": 0,
+            "guardAlternateSelections": 0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "energySpent": 223,
+            "energyFinal": 56,
+            "energyOverflow": 0,
+            "symbiosisPlayerActualHealing": 22.000225067138672,
+            "symbiosisCompanionActualHealing": 0
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\6607-legacy\\system\\portfolio-71BB84F54224B73D853823A799EEA6A4.json",
+            "sha256": "df996b0baa36cfd823deb12416643961586021963e9681e18d55f0587bd48c4b",
+            "traceSha256": "3077dd17181893e4741b5363e8d5b24066423277f31e31975b522fd9fe9f6816",
+            "events": 279,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 2,
+            "repairsUsed": 2,
+            "actualRepairHealing": 44.0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 22.000214874744415,
+            "companionStateChanges": 47,
+            "companionShortReversalsUnder1s": 9,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 107.30000559613109,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.32.49:870][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-legacy\\provenance.json",
+            "bytes": 8469,
+            "sha256": "fd83101f7b046837452653e48612fb38355c09e7d0852722a52d9be11e4d8380"
+          },
+          "outcome": "won",
+          "seed": 7703,
+          "policy": "legacy",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 87.10000454261899,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 0,
+            "companionActualDamageTaken": 14,
+            "companionSurvived": true,
+            "companionStateChanges": 72,
+            "companionShortReversalsUnder1s": 9,
+            "companionShots": 11,
+            "companionMoveRequests": 68,
+            "guardSlotChecks": 0,
+            "guardSlotRejections": 0,
+            "guardAlternateSelections": 0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "pulsesUsed": 2,
+            "repairsUsed": 0,
+            "energySpent": 187,
+            "energyFinal": 82,
+            "energyOverflow": 10,
+            "symbiosisPlayerActualHealing": 0,
+            "symbiosisCompanionActualHealing": 0
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-legacy\\system\\portfolio-AF8604DE40933A7442CCF190A7574EF3.json",
+            "sha256": "91a2c9adf9564ab165b17f3f1f088b20e7d0e0b419bae8b55178d02c1fee242c",
+            "traceSha256": "2e054fd34139f6b21e0dc925b82f2d414d65952bc872056f9f3e15d0775f38c6",
+            "events": 179,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 2,
+            "repairsUsed": 0,
+            "actualRepairHealing": 0.0,
+            "chargedShots": 1,
+            "overclocks": 3,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 0.0,
+            "companionStateChanges": 72,
+            "companionShortReversalsUnder1s": 9,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 102.20000533014536,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.33.11:060][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        },
+        {
+          "provenance": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-improved\\provenance.json",
+            "bytes": 8468,
+            "sha256": "ddec6a400fa1bb75e94e223e5d443b84ad2ac1b244a2535ea47e1786b59a193a"
+          },
+          "outcome": "won",
+          "seed": 7703,
+          "policy": "improved",
+          "metrics": {
+            "outcome": "won",
+            "completed": true,
+            "trialElapsedSeconds": 86.70000452175736,
+            "stagesRewarded": 3,
+            "alliedActualDamageDealt": 1260,
+            "playerActualDamageTaken": 104,
+            "companionActualDamageTaken": 56,
+            "companionSurvived": true,
+            "companionStateChanges": 65,
+            "companionShortReversalsUnder1s": 8,
+            "companionShots": 10,
+            "companionMoveRequests": 75,
+            "guardSlotChecks": 20,
+            "guardSlotRejections": 3,
+            "guardAlternateSelections": 3,
+            "chargedShots": 1,
+            "overclocks": 2,
+            "pulsesUsed": 3,
+            "repairsUsed": 2,
+            "energySpent": 235,
+            "energyFinal": 44,
+            "energyOverflow": 0,
+            "symbiosisPlayerActualHealing": 7.799996376037598,
+            "symbiosisCompanionActualHealing": 10.66666030883789
+          },
+          "systemEvidence": {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-02\\7703-improved\\system\\portfolio-2206B1E64D4344E93629488454852E59.json",
+            "sha256": "90b5b1634ecb5fc4c8d17b9662fd8a17d737b49e5c404c84ac0f7a2bb4f9a827",
+            "traceSha256": "9d44f8fec8ebd6e437f5167857582fca7a61324ef8c2e452abfc84e84fbe7cbd",
+            "events": 282,
+            "outcome": "won",
+            "ledgerReconciled": true,
+            "damageRoleVerification": "full",
+            "pulsesUsed": 3,
+            "repairsUsed": 2,
+            "actualRepairHealing": 58.0,
+            "chargedShots": 1,
+            "overclocks": 2,
+            "northRouteFirst": true,
+            "symbiosisActualHealing": 18.466666407883167,
+            "companionStateChanges": 65,
+            "companionShortReversalsUnder1s": 8,
+            "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+            "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+          },
+          "nativeCapture": {
+            "resultQuitEvidence": {
+              "outcome": "won",
+              "key": "X",
+              "normalExit": true,
+              "resultHoldSeconds": 4.000000208616257
+            },
+            "frames": 0,
+            "videoSeconds": 101.80000530928373,
+            "knownEngineWarnings": [
+              "[2026.09.18-03.33.31:157][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+            ]
+          },
+          "resolution": [
+            1920,
+            1080
+          ]
+        }
+      ]
+    },
+    "encodedVideo": {
+      "record": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\video-provenance.json",
+        "bytes": 12827,
+        "sha256": "9ce4cf2d8ad7fc80ca7e597097df3de60de55f1da7face56c2f78a708360f182"
+      },
+      "video": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\Aegis-Arena-v2.0-Demo.mp4",
+        "bytes": 16656237,
+        "sha256": "0914e23e6c71f284b670ec04c06b1a81b3a965d8695f08acc86c7c517179a1b6"
+      },
+      "decodedFrames": 4016,
+      "durationSeconds": 133.87,
+      "nativeFrames": 3656,
+      "audioScope": "Real engine-triggered audio events remixed from source WAVs, not loopback recording",
+      "visualReview": {
+        "record": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\visual-qa.json",
+          "bytes": 1538,
+          "sha256": "4afd4f9bcc34587514b39bcdffdb84227428475042b7c6b4143857509f15300b"
+        },
+        "reviewedImageCount": 5,
+        "explicitReviewPassed": true,
+        "scope": "Recorded human/agent visual inspection; no human gameplay or usability claim"
+      }
+    },
+    "designDocument": {
+      "record": {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\build-record.json",
+        "bytes": 16116,
+        "sha256": "df3b032fff5841d28d95fbd8c5b6d9b8ed0e8ae8000538f059933da272d96308"
+      },
+      "pageCount": 10,
+      "outputs": [
+        {
+          "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2\\documents\\Aegis_Arena_System_Design_v2.0.docx",
+          "bytes": 14425544,
+          "sha256": "c351a6826739a51dc16d012dd21704a73d2e49462f1fd78970f7052192aac68c"
+        },
+        {
+          "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2\\documents\\Aegis_Arena_System_Design_v2.0.pdf",
+          "bytes": 1551011,
+          "sha256": "c5170982b05542922f4b7019616b24c7c812d18415488ce37900c290afa59ee8"
+        }
+      ],
+      "visualReview": {
+        "record": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\visual-qa.json",
+          "bytes": 3630,
+          "sha256": "de3f3de90bd581e08664254342db2fe7de8ad30876b766e5fa121f766bd5f332"
+        },
+        "reviewedImageCount": 10,
+        "explicitReviewPassed": true,
+        "scope": "Recorded human/agent visual inspection; no human gameplay or usability claim"
+      }
+    },
+    "additionalUnitOrBuildEvidence": []
+  },
+  "preservedHistoricalFailures": {
+    "historyRoot": "D:\\AegisWork\\Reports\\v2-20260918",
+    "scope": "All failed provenance/build records found under this v2 report root, plus explicit paths",
+    "runs": [
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\assets-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Known historical failure/warning run retained without reinterpretation",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\assets-01\\engine.log",
+            "bytes": 114073,
+            "sha256": "b80f23fad14bff849d2e9c5caedec76365f63817c75de1185e57ad7d05ff6a25"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\assets-01\\stdout.log",
+            "bytes": 115113,
+            "sha256": "dbeb89d7c0e8e904511ee0b2df5d2980687a47880e07eec900e15bca359f55b1"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\builds-01\\20260918-015404-cbc683bc4b8a4c22b6227135e5d8fc7b",
+        "classification": "preserved historical failure or warning",
+        "reason": "Compiler/build failure preserved",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\builds-01\\20260918-015404-cbc683bc4b8a4c22b6227135e5d8fc7b\\build.log",
+            "bytes": 11352,
+            "sha256": "ed66cf6549adb98a38421b22edf0812c44769d2f6d9a04a25c08f6015068a15c"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\builds-04\\20260918-021030-19445201ecad4c908dcb3c47ae7b2776",
+        "classification": "preserved historical failure or warning",
+        "reason": "Compiler/build failure preserved",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\builds-04\\20260918-021030-19445201ecad4c908dcb3c47ae7b2776\\build.log",
+            "bytes": 2980,
+            "sha256": "e8f963327bca97759f24273ba67eef9e5526160d742b364ddf9fa57f1f54b824"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Explicitly supplied historical failure",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\capture.json",
+            "bytes": 3244603,
+            "sha256": "199b20f42bcc764ef8b7a9df5bcaa05074380993bd3acf0ceeeed0a6b8d5106d"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\engine.log",
+            "bytes": 81075,
+            "sha256": "2cf0ccb2030dc2cb2987df6f737c6b2d09f998e78fa11175642ccae4ce3431cd"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\provenance.json",
+            "bytes": 897566,
+            "sha256": "45043515567c5247bf5d51e5fcca02ccf9947ff6ddc7219d93ae7726d00cbf03"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\stdout.log",
+            "bytes": 80975,
+            "sha256": "c7f6923f92815973f7e6bd77138c40bc431127a3ed42c56c25e2df0fba4796f5"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\system\\portfolio-A23976734FA7FB6C81782FB2ECBFD54F.json",
+            "bytes": 1214,
+            "sha256": "223e94ad0c739e4728ddb2553fee568d509d8f0876ead0468fc9d9fc95faccdb"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-01\\system\\portfolio-A23976734FA7FB6C81782FB2ECBFD54F.jsonl",
+            "bytes": 80685,
+            "sha256": "c5cc5380832a5b8ebe63a4b3e59bb11d05e68cf2ce04889479ca5a15fd2252ed"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02",
+        "classification": "preserved historical failure or warning",
+        "reason": "ValueError('Engine log reported an unaccepted warning, error or fatal message')",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\capture.json",
+            "bytes": 1788781,
+            "sha256": "ec9125d796d3a374bc05c187a8a4492c71b9315bea438714f3da46e8a5b8d7ba"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\engine.log",
+            "bytes": 83178,
+            "sha256": "304504e4348a2b46aed5be6d0c3577cfbecc43564b0c32baa9508ff6e58b3fee"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\provenance.json",
+            "bytes": 7069,
+            "sha256": "d9ace2d1049ec3b2068617681ee482413b5bb1a9c0d416b2e02c948da74e5a20"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\stdout.log",
+            "bytes": 83078,
+            "sha256": "aea9409123cbfa61750ba014277331a315b17ad1c22e2d6325613bbebb81ec77"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\system\\portfolio-75B3DCFA47AE16966B5746BDE76A1A52.json",
+            "bytes": 1242,
+            "sha256": "3ba8e90e7abca8c2fa7510a56ec523cdca16357e852fb68e464bacb930e3515d"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\capture-packaged-calibration-02\\system\\portfolio-75B3DCFA47AE16966B5746BDE76A1A52.jsonl",
+            "bytes": 85564,
+            "sha256": "4e3ae41bbd4a4037206bcb30e08ff870e68bf35acb87cf90a2ef93a5f71cfc59"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Unexpected evidence field passed",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\engine.log",
+            "bytes": 128709,
+            "sha256": "0136d74247e061aad76c66aa73e880408badd5cd69c86d4996565942f493b507"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\provenance.json",
+            "bytes": 6857,
+            "sha256": "92435a1e7bfdd645ac17671b962312d60e9c8630c0d462e1efa9b00b30adaf3e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\stdout.log",
+            "bytes": 129720,
+            "sha256": "2cd7b35cc25631b7a3f1c4422ace52194c36f177367efe710bbe035cac3511db"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\system\\portfolio-3179E59A4BDF130AE20CEE897DAD31A3.json",
+            "bytes": 1169,
+            "sha256": "4bb4b062da5fa41a2ea3a10ecb2495305e62776b90f3849680b76345273a54cd"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\system\\portfolio-3179E59A4BDF130AE20CEE897DAD31A3.jsonl",
+            "bytes": 3688,
+            "sha256": "ef568f1c1ec9a07b30904934b4ff34dd0367c070ae9d725cdce56542d67773f6"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\system\\portfolio-8821AC024A092BFFD2225E868C872156.json",
+            "bytes": 1171,
+            "sha256": "9021e4f5b1e042c28a8a24ac4676b9271eeae184a60501d309a06023895ad49b"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\system\\portfolio-8821AC024A092BFFD2225E868C872156.jsonl",
+            "bytes": 3956,
+            "sha256": "780f00443809c40a9c349b0d54f237c086c4e707c0b4e55edd88e559cbc6d459"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\control-editor-01\\v2-probe.json",
+            "bytes": 8948,
+            "sha256": "199db82fda3637cf00b3a2eeec09fb1c50c42e61c339f3675d3f220ee30772e2"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Explicitly supplied historical failure",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\capture.json",
+            "bytes": 2658867,
+            "sha256": "358b9d666e2a42f20d3981b8a0086e94cb9ebff4d405ecb7414cc7c55f99cfc0"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\engine.log",
+            "bytes": 79966,
+            "sha256": "a2aa38e5cbf6893f958b700138ecf473791f4ce3812efb0ba232614632cadf67"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\provenance.json",
+            "bytes": 8455,
+            "sha256": "b328cbdddbd4d20de94547230577368d1730a2355950efe81f972162a80a857c"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\stdout.log",
+            "bytes": 79836,
+            "sha256": "29f0bb1aab095d68b365a45291fa20cf1048461128535aa313b67e888cbcb298"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\system\\portfolio-B349A39B4B2ECE314328D3AD5A341C38.json",
+            "bytes": 1185,
+            "sha256": "9726be667425809b88c6d37b72240b6bc112a9fed98f7eb5a46997fbe44175b1"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\system\\portfolio-B349A39B4B2ECE314328D3AD5A341C38.jsonl",
+            "bytes": 17058,
+            "sha256": "2e8ed40e6930c61897bd30c6b5a7d372e37fb8a6757c7ffb5e80562904b23864"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved-runner.log",
+            "bytes": 6689,
+            "sha256": "d2affe74f9faf3aa973c89e2ba4aa0fe95bcfec074942faaabc8f513d1cf7166"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\capture.json",
+            "bytes": 2619318,
+            "sha256": "b2eec21c1bb552b1b70eb104a340afdb1558510b555286ef01094093b1f9d58e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\engine.log",
+            "bytes": 80244,
+            "sha256": "7bd25938331bdddec8ed3f86a996776369e8c9322a87dae0ec021f27a42e3295"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\provenance.json",
+            "bytes": 8470,
+            "sha256": "5b28775632be4de9d6697ae2956912a22b06b672e9a9f4c04382b07a09dc67e7"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\stdout.log",
+            "bytes": 80144,
+            "sha256": "45c555c85f267643d78382fbab77782f0dbb4cf0c244d85ba5e32c80e7d4aed3"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\system\\portfolio-069A799E49F4B2EF69E0CBB6CDAD2B72.json",
+            "bytes": 1183,
+            "sha256": "9725d854168c7a5fe44b9614face9a192ee253acdd06e9d6d6a0fc5a965e9409"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\system\\portfolio-069A799E49F4B2EF69E0CBB6CDAD2B72.jsonl",
+            "bytes": 16349,
+            "sha256": "500199c9cf73fd843df01c6bcb2af9d845362fa60a9b5839e12b59f0c7a7c79b"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy-runner.log",
+            "bytes": 6684,
+            "sha256": "35bc1bce592b231f74095ecba66f6c922da999a89b1d58ffff09a81192adf2d8"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\capture.json",
+            "bytes": 2658895,
+            "sha256": "7344f17b39dc6fb4be773d4a12b618f817a305722f59712f10c1a872359e5829"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\engine.log",
+            "bytes": 80087,
+            "sha256": "724db718f40671ce4d521e210b52160e2ce6bc692a4c5323c004b197f4529673"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\provenance.json",
+            "bytes": 8455,
+            "sha256": "3bc9c7cfe4e5cbc4f25645b4267a5960620210231a799adab5eedd6cf7935428"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\stdout.log",
+            "bytes": 79987,
+            "sha256": "66ad8676522acbfda87e94787810a9bbb4923fa5e9802454b2d1bab1fe459548"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\system\\portfolio-79787F074DF7931A2379008C2A65691A.json",
+            "bytes": 1185,
+            "sha256": "35dec26b9c1ce7df2d865f86d68dcd8126be5c8ac8841f5edb8f10dcd1591472"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\system\\portfolio-79787F074DF7931A2379008C2A65691A.jsonl",
+            "bytes": 16769,
+            "sha256": "58f329224fe320c6cf0eaade7c1683e1e631a025fb86788930efba1930743064"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved-runner.log",
+            "bytes": 6689,
+            "sha256": "fc531a38d71249da3813411145db90bcaba5283361fe28c9c88dbd678c9d60d2"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\capture.json",
+            "bytes": 2619331,
+            "sha256": "2cf78a1a6914ca5ed6176def9e6e13325ba262203c22e88310d426b5dc147a62"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\engine.log",
+            "bytes": 80016,
+            "sha256": "9157c93e0be84d248dec532ee05f293f557ac8a2f339d796da2979ca20b42731"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\provenance.json",
+            "bytes": 8471,
+            "sha256": "a21c123e7ae5a4edd5f9bdd1545609de488add0195527e016bb589df96f59535"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\stdout.log",
+            "bytes": 79916,
+            "sha256": "4a851b247bc94c3046cfdda46200756c74f4951d9639c3d4655e4fa79dc06c8f"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\system\\portfolio-5220E4FD4D684CC911FF598BA1604497.json",
+            "bytes": 1183,
+            "sha256": "493bce47072b22894137b4ca04cc1fe1e78d19cb8354cfc3a3556101fc6aabc9"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\system\\portfolio-5220E4FD4D684CC911FF598BA1604497.jsonl",
+            "bytes": 16076,
+            "sha256": "6fac483fa8fa2afe06b8c1629d8384931e327fe5e2faf1bb5b811243b2d1e34f"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy-runner.log",
+            "bytes": 6685,
+            "sha256": "ce048ab9a84d075ca04778cde196044764fbf17faf312d1393d2b3f816ec467b"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\capture.json",
+            "bytes": 1567555,
+            "sha256": "76fb71c7457ae4ae306eda362faa5787d6522ecc0b8e1d855e5df0d38a4b3136"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\engine.log",
+            "bytes": 80860,
+            "sha256": "e865e532fcee356f5ba6ba87c903d5b532c7da476ef23f076da1091375247852"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\provenance.json",
+            "bytes": 8455,
+            "sha256": "345f98a22b62717d3f42e54b71daf6f224ebb6e424c929198c9385cb05f74f22"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\stdout.log",
+            "bytes": 80760,
+            "sha256": "93b67bfc44a141f32fc8dec5df47873bd14a6a4303af86acd7b2a799e2d000b4"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\system\\portfolio-0CFEBF5B4A290CE2F33AAAB96FAF190D.json",
+            "bytes": 1210,
+            "sha256": "fbb28d792eb72bd47b31fbb703f4b4e5a161b2cd87243a9c891603c6c94e5ba5"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\system\\portfolio-0CFEBF5B4A290CE2F33AAAB96FAF190D.jsonl",
+            "bytes": 62869,
+            "sha256": "19af4036694c894813000631d92585803a95f440eef2bd24fd1ecbe57393cdd3"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved-runner.log",
+            "bytes": 6689,
+            "sha256": "e21dcd78a6b0370a8bd9b25f6f10e70a74356e193f43fce1d17a7f9b0931db9e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\capture.json",
+            "bytes": 1599412,
+            "sha256": "080ed94368e19cf593dc488d363267a2de6ecb699982cf5e5729a2791be0c027"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\engine.log",
+            "bytes": 80854,
+            "sha256": "75bbc51f50674073b664a9a170737e0696c01f824a1eb5f409f5fcd8d329e1ac"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\provenance.json",
+            "bytes": 8473,
+            "sha256": "7ef98f84a9fc53db21dcd06e4d00c398634833226e6431d263ed17a3e45089d5"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\stdout.log",
+            "bytes": 80724,
+            "sha256": "45429a0870e98cc80e171a487e4958cf645266aab408cf8d424d54d731e8eecb"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\system\\portfolio-E69E666340CB4F79EFF7839999A5100D.json",
+            "bytes": 1193,
+            "sha256": "b099911750bda9b7d06f957afa14c5009b3b16e49b179ee2c3afcfd3b159152a"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\system\\portfolio-E69E666340CB4F79EFF7839999A5100D.jsonl",
+            "bytes": 59288,
+            "sha256": "35be35b74c96fb3c7c64196a17bbbd8f32a8e0bbc015cc1bbdcb215847ecbf3c"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy-runner.log",
+            "bytes": 6687,
+            "sha256": "b256b0638d4904c8db7e406698a716cb104c2de6ce670325a1fe10b2cac25f22"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\evaluation.json",
+            "bytes": 9396,
+            "sha256": "64b7768c994c80d47bf95f020ebba05a5151ed78182d1cc39bb480ba938cf95e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\freeze.json",
+            "bytes": 3085,
+            "sha256": "4ac93576e72a80b3b3f3a2bfc09c0086c3b387226de96e8314be29f6588c93b9"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Unexpected evidence field succeeded",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\engine.log",
+            "bytes": 145981,
+            "sha256": "49be68aa6d2fd22c79ccfdbe73e2357a3deb13b6451376ae11a8c709643aa9db"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\guard-slot.json",
+            "bytes": 1260,
+            "sha256": "e31f273a5566646001ba6237cea36d55195d35b46323e6ee8a527523e89477ec"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\index.json",
+            "bytes": 6253,
+            "sha256": "379048ef2709b74b86319fdb9c0569ce328aa0e509c96aeaf633ac4c7b864cfc"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\provenance.json",
+            "bytes": 5188,
+            "sha256": "d07e27c4eee4580821ad836abf3abc888b784e4a208cab3752421ec8d6dbe24b"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\stdout.log",
+            "bytes": 147087,
+            "sha256": "c099956cca52ef2573b3d94dd4e016a27b810b708208b087acf9714612b02776"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02",
+        "classification": "preserved historical failure or warning",
+        "reason": "Engine log reported an unaccepted warning, error or fatal message",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\engine.log",
+            "bytes": 146406,
+            "sha256": "b68a6e4003ccb88449c09c6894712908942fdc253b107725e921fb38db660a68"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\guard-slot.json",
+            "bytes": 2612,
+            "sha256": "f0cd657afafa69ac8ebacbc86e564d953feb00a44d9020f51b502b0c639b1303"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\index.json",
+            "bytes": 5829,
+            "sha256": "2be1bc1321693a4df59e94ee436124a8839f437334abffe3109ab5de12c02ac9"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\provenance.json",
+            "bytes": 5218,
+            "sha256": "2ad6816f2bc1999aaf25815cf61c537933b42244bf965044bec499311871da4d"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\stdout.log",
+            "bytes": 147482,
+            "sha256": "2ed4f070335cbcbfd6697b1ecf5ac0bb1c4b6ef31ac0c0da32b911b187d7c1e5"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01",
+        "classification": "preserved historical failure or warning",
+        "reason": "Unexpected evidence field succeeded",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\engine.log",
+            "bytes": 142113,
+            "sha256": "28c7886b680a893722384d2a13309af118924f2ae60f92611803dd8f4aa574e5"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\guard-slot.json",
+            "bytes": 1874,
+            "sha256": "02f18f967707c4222cc582824a7213d2f7361c3e166c871df3a4853b4bb122c5"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\index.json",
+            "bytes": 6084,
+            "sha256": "d7e707184c7b4c04409aaffa1e6896c41d456c57737d6fa2e142dd8eb40a99b7"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\provenance.json",
+            "bytes": 5265,
+            "sha256": "112d20b78049a2ba47b74eb1d34e65c50d2b81dade7ac4c736961ab542798949"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\stdout.log",
+            "bytes": 143219,
+            "sha256": "7cba54595a81415d20b03d8b1f3c331e905f0c4b8dac05fb6732950fdfddcd05"
+          }
+        ]
+      },
+      {
+        "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03",
+        "classification": "preserved historical failure or warning",
+        "reason": "Engine log reported an unaccepted warning, error or fatal message",
+        "files": [
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\engine.log",
+            "bytes": 144574,
+            "sha256": "317959d93fec6a1f4d6874037055a223f5c72080794d682f630735acc96ca60e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\guard-slot.json",
+            "bytes": 3388,
+            "sha256": "61292238aac5f349da1b0bcec16b93a768eebb61625518d56d03ef63da82ec9e"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\index.json",
+            "bytes": 5832,
+            "sha256": "49828f09fcbc0df91fd02cdf38f36874babd75ca6947a09f84bc8a5ae1e35702"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\provenance.json",
+            "bytes": 5283,
+            "sha256": "6f7af6f92af658a4ce88af606f4cf6ecc1c7153a1fc7e1a148a25bd7136de208"
+          },
+          {
+            "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\stdout.log",
+            "bytes": 145680,
+            "sha256": "f11105059498c7c068bed0378e698475e66214575abcbd8188325c98a1bb83f0"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "No model training, reinforcement learning, human playtest, general win-rate or hardware-performance claim.",
+    "Six holdout runs are three paired seeds; retain every natural won/lost outcome and all tradeoffs.",
+    "Tactical DebugState changes/short ABA counts include ordinary aim/fire/reposition; they are not Utility oscillation metrics.",
+    "Final Guard movementCm is end-of-test net displacement, including the occlusion stage; it is not path length or exact first-shot displacement.",
+    "Final Guard slotReason can describe the later no-visible-target formation stage rather than the earlier accepted firing slot.",
+    "Guard editor reports bind launcher/runtime DLL, not a historical before/after snapshot of the Editor fixture DLL.",
+    "Decision Lab input wrapper binds executables but not cooked containers before/after; the other packaged gates and final review bind the package containers.",
+    "Native controlled assertion counts and pure unit assertions are separate; no aggregate gameplay reliability score is created."
+  ]
+}

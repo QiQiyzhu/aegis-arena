@@ -1,0 +1,232 @@
+{
+  "createdUtc": "2026-09-18T06:09:56.394191+00:00",
+  "python": "C:\\Users\\yzhu\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "schemaVersion": 2,
+  "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+  "source": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\docs\\portfolio-v2.1-design.md",
+    "sha256": "e50f445e224304b0145d1c30dc5b49780de7bd9e95d5f2490f281620f0bd3317"
+  },
+  "manifest": {
+    "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-prep\\final-reviewed.json",
+    "sha256": "a94f53aaf01fa5da82d2da9fdd42543de8d7c10c8603b47acdb730364b2928cb"
+  },
+  "inputHashes": {
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\docs\\portfolio-v2.1-design.md": "e50f445e224304b0145d1c30dc5b49780de7bd9e95d5f2490f281620f0bd3317",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-prep\\final-reviewed.json": "a94f53aaf01fa5da82d2da9fdd42543de8d7c10c8603b47acdb730364b2928cb",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\scripts\\build_v21_document.py": "b9ce8ebbcb4a3ff3f9e7912f0001ad316d2a821c49d970ed0450d97da0c20ec4",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\scripts\\build_portfolio_document.py": "4f4cddb1201eabe667536e40be4b118fda53a6077afbff44b0923e6f69c68c62",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000283.png": "f9324089ac0094b40da00c57e273104808665fd4ba1c6327c1e9c60680704408",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000237.png": "2ef0ebe1adb8bc2400866ee61d8dcd134da0fabeef361a77ea295164d6e4926e",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000516.png": "ec12457ed974da96c8e62617b82bf4081b286cb334e6094686229f4d6f3478d7",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000244.png": "a1522af9b8d6a5cc3d15e3311a0230e63129507c5b9e02cf2a13b73abb9b353c",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000874.png": "30dac18a2be6593396ada0fd0bc72183f7600680e8f3d2163109ccd1ef0420d7",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-001158.png": "a1abe67b702326175140c3c8311dd13ed4265d6d21c29c6676dfa0552ffa58f9",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-003566.png": "2f2e17e8e318da033479544dac6b75d79c879e34deacd90d732c4f8348cc569e",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json": "8af9b3eb11ead5069d67ee94db49284c24dcb489ea8abd42c573ed46468fed12",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\capture.json": "fdcad0d18ffb82017932b0f95be8e694bba90d66e119dd967012bd70d1335d16",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\system\\portfolio-A0D224764863FC7A346B48B306537967.json": "f95f7dbb589b7e6525d587b28d68f79e742c09b23eed2ef1b743cdd41fb4be3d",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\system\\portfolio-A0D224764863FC7A346B48B306537967.jsonl": "ffa855e361ab7b9cf46195f1ac607ee459b6e67e9ef883aff65fd061e641b944",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\provenance.json": "1712cb533d5dde5b0fa65acfc2c78a6228b0ab67503107ae65bb58bd116fd1ef",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\provenance.json": "0214c4f0ce0facc368278013edd83f6145753784574043c3f39fdc1213ccdb4e",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\lab-package-02\\provenance.json": "163ca4c9da2cae20b9524e285a6fe20b9827a23cb85148ad066c2ce8a35eaa09",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\vfx-final-01.json": "8fdecb3de5a1ad42e201a58ad35d04d8e7be9da19f44c2aa6b26f70f912644a4",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\video-provenance.json": "adebbf3dcea36d36f8ff11f7bac0db05f201abee50a9e2437556e8e0fceb55ca",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\provenance.json": "082907843d80419324a173435547f8029566a440e53f525f0598421f8de6802f",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\provenance.json": "da0b3979d0f395953510be109259517b1bb4fbb1ccb00a37fb519e96bb85e9cb",
+    "D:\\AegisWork\\Reports\\v2-20260918\\acceptance-final-01.json": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965"
+  },
+  "nativeImages": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000283.png",
+      "caption": "中继内协同交火，敌人橙色攻击与击破后的紫色碎晶同时可见。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "hero",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f9324089ac0094b40da00c57e273104808665fd4ba1c6327c1e9c60680704408"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000237.png",
+      "caption": "实际使用 F 后能量由 60 降至 25，界面显示双倍推进及剩余时间。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "energy",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2ef0ebe1adb8bc2400866ee61d8dcd134da0fabeef361a77ea295164d6e4926e"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000516.png",
+      "caption": "首阶段后的升级选择页，三项升级说明收益与边界。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "upgrade",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ec12457ed974da96c8e62617b82bf4081b286cb334e6094686229f4d6f3478d7"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000244.png",
+      "caption": "普通射击的枪口亮点、细弹道与目标受击闪光。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "shot",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a1522af9b8d6a5cc3d15e3311a0230e63129507c5b9e02cf2a13b73abb9b353c"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-000874.png",
+      "caption": "蓄能释放的紫白射线，屏幕记录扣除 12 能量。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "charge",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "30dac18a2be6593396ada0fd0bc72183f7600680e8f3d2163109ccd1ef0420d7"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-001158.png",
+      "caption": "F1 原生诊断页，明确本模式的 Utility 分数与 EQS 不控制战术移动。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "diagnostic",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a1abe67b702326175140c3c8311dd13ed4265d6d21c29c6676dfa0552ffa58f9"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\frames\\frame-003566.png",
+      "caption": "本轮原生包体自然通关后的任务、承伤、能量与治疗结算。",
+      "version": "v2.1 / 4512e5e07bad",
+      "inputMode": "脚本正常输入",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "slot": "after",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2f2e17e8e318da033479544dac6b75d79c879e34deacd90d732c4f8348cc569e"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "sha256": "8af9b3eb11ead5069d67ee94db49284c24dcb489ea8abd42c573ed46468fed12",
+      "bytes": 563755
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\capture.json",
+      "sha256": "fdcad0d18ffb82017932b0f95be8e694bba90d66e119dd967012bd70d1335d16",
+      "bytes": 2991054
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\system\\portfolio-A0D224764863FC7A346B48B306537967.json",
+      "sha256": "f95f7dbb589b7e6525d587b28d68f79e742c09b23eed2ef1b743cdd41fb4be3d",
+      "bytes": 1223
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\system\\portfolio-A0D224764863FC7A346B48B306537967.jsonl",
+      "sha256": "ffa855e361ab7b9cf46195f1ac607ee459b6e67e9ef883aff65fd061e641b944",
+      "bytes": 85564
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\provenance.json",
+      "sha256": "1712cb533d5dde5b0fa65acfc2c78a6228b0ab67503107ae65bb58bd116fd1ef",
+      "bytes": 10408
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\provenance.json",
+      "sha256": "0214c4f0ce0facc368278013edd83f6145753784574043c3f39fdc1213ccdb4e",
+      "bytes": 8924
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\lab-package-02\\provenance.json",
+      "sha256": "163ca4c9da2cae20b9524e285a6fe20b9827a23cb85148ad066c2ce8a35eaa09",
+      "bytes": 15531
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\vfx-final-01.json",
+      "sha256": "8fdecb3de5a1ad42e201a58ad35d04d8e7be9da19f44c2aa6b26f70f912644a4",
+      "bytes": 582
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\video-provenance.json",
+      "sha256": "adebbf3dcea36d36f8ff11f7bac0db05f201abee50a9e2437556e8e0fceb55ca",
+      "bytes": 19356
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\provenance.json",
+      "sha256": "082907843d80419324a173435547f8029566a440e53f525f0598421f8de6802f",
+      "bytes": 8446
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\provenance.json",
+      "sha256": "da0b3979d0f395953510be109259517b1bb4fbb1ccb00a37fb519e96bb85e9cb",
+      "bytes": 61576
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\acceptance-final-01.json",
+      "sha256": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965",
+      "bytes": 68587
+    }
+  ],
+  "pageCount": 11,
+  "pageImages": [
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-1.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-2.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-3.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-4.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-5.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-6.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-7.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-8.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-9.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-10.png",
+    "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-11.png"
+  ],
+  "visualReviewRequired": true,
+  "visualReviewCompleted": false,
+  "designDiagrams": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\v21-design-loop.png",
+      "sha256": "b285b5c84a0692e4f675e48d46f6b6031e35427b9edcaf11b1a7bebd5586d02b",
+      "kind": "design_diagram"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\v21-design-order.png",
+      "sha256": "17d484b0cb0753c22fa346a6302e563f88979766103b34c618d359ac02d0269a",
+      "kind": "design_diagram"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\v21-design-audio.png",
+      "sha256": "421b19fa57eb9ea1f00b2545b63bcbc0aeb73e9c541dcf00f1c4f01a71d04bb5",
+      "kind": "design_diagram"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2.1\\documents\\Aegis_Arena_System_Design_v2.1.docx",
+      "sha256": "8c39901fa9f75b9674a08fd67ee710d8fe5a5498cb1a4058e0a27adb7e88739c",
+      "bytes": 12788395
+    },
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2.1\\documents\\Aegis_Arena_System_Design_v2.1.pdf",
+      "sha256": "c3fab283f3454d09ce17e7eb950d1d3e28242e738f8dc10ef78b2ebee53edb42",
+      "bytes": 1491115
+    }
+  ]
+}

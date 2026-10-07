@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "method": "AAC stream fully decoded to PCM and measured; no listening claim",
+  "listeningPerformed": false,
+  "decodedSampleRate": 48000,
+  "channels": 2,
+  "decodedPcmSeconds": 107.968,
+  "peakAmplitude": 0.20102617144584656,
+  "rmsAmplitude": 0.0058939475068053755,
+  "clippedSampleCount": 0,
+  "firstAudibleSampleSeconds": 11.8978125,
+  "expectedFirstEventSeconds": 11.900000359863043,
+  "firstOnsetDifferenceSeconds": -0.002187859863042263,
+  "eventCount": 195,
+  "assets": [
+    "S_Break",
+    "S_Impact",
+    "S_Pulse",
+    "S_Repair",
+    "S_Shot",
+    "S_Upgrade"
+  ],
+  "mixMethod": "genuine engine-triggered events remixed from original WAVs; not loopback capture"
+}

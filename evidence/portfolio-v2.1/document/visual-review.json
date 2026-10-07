@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "reviewer": "Codex agent; all 11 original-resolution rendered page images viewed",
+  "reviewedImages": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-1.png",
+      "sha256": "369b4f4860163fea0c2bbcfe29ce1f726f9a1af920b8e0c45d49b01c73c5843a",
+      "passed": true,
+      "notes": "Title, overview, native hero and table balanced."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-2.png",
+      "sha256": "1303aab558cb6f3c1ad02151fb3345f970c1ab831b7869544aa31c50c7e4ce26",
+      "passed": true,
+      "notes": "Loop diagram and control matrix legible."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-3.png",
+      "sha256": "f6bde5c4cda1b193c8f218fe5ce7e47334d89f70571d8114c5d6c97a4bd54e1c",
+      "passed": true,
+      "notes": "Energy pricing table and screenshot caption complete."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-4.png",
+      "sha256": "ba55c4696aa2c93c4f5c5bfb68eb857fe8af913894609925aeff152a4cda21d6",
+      "passed": true,
+      "notes": "Objective routes, upgrade figure and tradeoff table complete."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-5.png",
+      "sha256": "6ad46c83f97de4ef692ccee82371aa021377c303e1d32c71b585dd5d4709b83e",
+      "passed": true,
+      "notes": "Two unmodified shot illustrations, table and full final paragraph fit."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-6.png",
+      "sha256": "6625b1cf683bbc82e26f7921caa46e0001aa947010a284b157f97b166ecdc9e2",
+      "passed": true,
+      "notes": "Music diagram and numerical validation text complete."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-7.png",
+      "sha256": "834ca228b1b3353b29066880923117960a5407b9368114f1582b06d3e8fac37e",
+      "passed": true,
+      "notes": "Diagnostic image and actual decision-path distinction legible."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-8.png",
+      "sha256": "fdee4754379d25c2d1dd991cbdddc95bfca5687146c6a8a62ac099b9992c95b3",
+      "passed": true,
+      "notes": "Historical paired outcomes and negative limits fully visible."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-9.png",
+      "sha256": "1f12bcae275fc505df1fee59310602b1136e0bd19e865efd72be3777dd543aad",
+      "passed": true,
+      "notes": "Native evidence matrix and failures legible."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-10.png",
+      "sha256": "9acadcb4c2321ccbf28a1024e12a97e906cb4017191806bb0af29179dc1de6c7",
+      "passed": true,
+      "notes": "Result image, current metrics and delivery text complete."
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\render\\page-11.png",
+      "sha256": "0546e87aeb6bad1d0a9a026f6dad8e563a4716ebcd961ece4e472c0916810361",
+      "passed": true,
+      "notes": "Source links, reading chain and contribution disclosure complete."
+    }
+  ]
+}

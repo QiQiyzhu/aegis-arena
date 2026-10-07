@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "presentationVersion": "2.1",
+  "engine": "unreal-runtime",
+  "command": [
+    "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+    "-AegisV2",
+    "-AegisAVProbe",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-AudioMixer",
+    "-windowed",
+    "-ForceRes",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nop4",
+    "-nosplash",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ExecCmds=au.NeverDisableSubmixes 1",
+    "-ini:Engine:[Audio]:UnfocusedVolumeMultiplier=1",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-AegisAVProbeOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\system",
+    "-abslog=D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\engine.log"
+  ],
+  "humanPlaytest": false,
+  "soundEnabled": true,
+  "hardwareLoopback": false,
+  "launch": "packaged-development",
+  "audioProbeOverride": "UnfocusedVolumeMultiplier=1 permits offscreen audio; au.NeverDisableSubmixes=1 renders actual silent buffers during mute. Default runtime may mute unfocused windows and suspend silent submixes.",
+  "startedAtUtc": "2026-09-18T05:43:28.737774+00:00",
+  "inputsBefore": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "wrappersBefore": {
+    "run_v21_av_probe.py": "0f5aa62b9a69afe11fe61668fe7c48dc868a228217c494571b278e5a536b5b10",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc"
+  },
+  "exitCode": 0,
+  "nativeAssertions": 15,
+  "masterSubmixWavs": {
+    "on": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-on.wav",
+      "bytes": 286764,
+      "sha256": "2663267433e8c2ecde35e11d7748ef7afcdef55c0ae83e7a72488b7acd9fd836",
+      "channels": 2,
+      "sampleRate": 48000,
+      "frames": 71680,
+      "duration": 1.4933333333333334,
+      "peak": 0.1837158203125,
+      "rms": 0.054804367578191675
+    },
+    "muted": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-muted.wav",
+      "bytes": 229420,
+      "sha256": "156b6cc305c14859b2ba6a242d4d9ec7e82458fbf86827b66d91397d1f9a7284",
+      "channels": 2,
+      "sampleRate": 48000,
+      "frames": 57344,
+      "duration": 1.1946666666666668,
+      "peak": 0.0,
+      "rms": 0.0
+    },
+    "restored": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-restored.wav",
+      "bytes": 286764,
+      "sha256": "48723287d3375f32f026c71fde130a1449539d480b5db88d33561886d65925dd",
+      "channels": 2,
+      "sampleRate": 48000,
+      "frames": 71680,
+      "duration": 1.4933333333333334,
+      "peak": 0.1839599609375,
+      "rms": 0.056678088183778466
+    }
+  },
+  "deviceConversionDiagnostics": [
+    "Sample rate mismatch. Engine sample rate: 48000 Device sample rate: 44100",
+    "Device level sample rate conversion will be used."
+  ],
+  "scope": "Actual UE master-mix samples and ordinary keyboard lifecycle. Not physical speaker proof or a human listening test.",
+  "inputsAfter": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "wrappersAfter": {
+    "run_v21_av_probe.py": "0f5aa62b9a69afe11fe61668fe7c48dc868a228217c494571b278e5a536b5b10",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc"
+  },
+  "wallSeconds": 17.81199999999808,
+  "files": {
+    "audio\\bgm-muted.wav": {
+      "bytes": 229420,
+      "sha256": "156b6cc305c14859b2ba6a242d4d9ec7e82458fbf86827b66d91397d1f9a7284"
+    },
+    "audio\\bgm-on.wav": {
+      "bytes": 286764,
+      "sha256": "2663267433e8c2ecde35e11d7748ef7afcdef55c0ae83e7a72488b7acd9fd836"
+    },
+    "audio\\bgm-restored.wav": {
+      "bytes": 286764,
+      "sha256": "48723287d3375f32f026c71fde130a1449539d480b5db88d33561886d65925dd"
+    },
+    "av-probe.json": {
+      "bytes": 5407,
+      "sha256": "43e9313a84fc4760eb2d28a3d9edce60c4f56bd26a7ba8b223cf64c65e21a0df"
+    },
+    "engine.log": {
+      "bytes": 90047,
+      "sha256": "421fa6375fc58a507bda527757c292ffb15bc13cf1658d8db79a5831c7d38acb"
+    },
+    "stdout.log": {
+      "bytes": 89917,
+      "sha256": "70b817c48f2f1957567ca4ba105c0d732d68ff59a7ccdd915248da9466b73e75"
+    },
+    "system\\portfolio-4F3F897A4E3F060331EE0CBABD0CF727.json": {
+      "bytes": 1149,
+      "sha256": "f6a81ec9418764b9db793c259e018f504db6a3bee46cae8d8045358b4b843be1"
+    },
+    "system\\portfolio-4F3F897A4E3F060331EE0CBABD0CF727.jsonl": {
+      "bytes": 1913,
+      "sha256": "8cb1622a3d7f31bdf6a5d138f40cddd2f90cf33fbe92d24503b6b71138b0e271"
+    },
+    "system\\portfolio-C98C8D5C4A2DB49F84C59BB8E9E25E18.json": {
+      "bytes": 1151,
+      "sha256": "8ed073589a07f010ac4973e78aeab562fb0e124b0ea5a38cf05e7f5ef4339d1f"
+    },
+    "system\\portfolio-C98C8D5C4A2DB49F84C59BB8E9E25E18.jsonl": {
+      "bytes": 1915,
+      "sha256": "46d0e16070fd1b43e715b9d7509f7ab8b537b644ae5390a743317357735ac99c"
+    },
+    "system\\portfolio-CE0E2F754EC9DEBCE32875A3D44BAA92.json": {
+      "bytes": 1168,
+      "sha256": "6fb7a2efe131ef6fd858dfc0b66cf1a2bdf0173099aff367b15c4042552c9364"
+    },
+    "system\\portfolio-CE0E2F754EC9DEBCE32875A3D44BAA92.jsonl": {
+      "bytes": 2377,
+      "sha256": "db375fb7af703c83c5e28e7eb64b972a0b39d7a65e42404795563647ada2fdd7"
+    }
+  }
+}

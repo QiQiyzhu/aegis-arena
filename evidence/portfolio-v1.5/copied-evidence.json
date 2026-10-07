@@ -1,0 +1,68 @@
+[
+  {
+    "file": "capture-provenance.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\provenance.json",
+    "bytes": 444751,
+    "sha256": "1aa02c6471d0471124a0494bc1190f5b00826285f1d6aa076d94b23f442ee7e5"
+  },
+  {
+    "file": "probe-provenance.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-01\\provenance.json",
+    "bytes": 18133,
+    "sha256": "147eb3d3bfe162735d4cd99ad61633218551526ecd95bd7b8fb151f34d93ba09"
+  },
+  {
+    "file": "gameplay-summary.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\system\\portfolio-0B125E6949C4D7B435E01AB4BD3B5B6C.json",
+    "bytes": 721,
+    "sha256": "21b1aa6bebc4fc5a6ab195d8c4a47022ae55cabb8973ded93b4b8db3fc86441b"
+  },
+  {
+    "file": "gameplay-trace.jsonl",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\system\\portfolio-0B125E6949C4D7B435E01AB4BD3B5B6C.jsonl",
+    "bytes": 31168,
+    "sha256": "c80b75eab3c544fd46368007afe1088f63464468bb9034d5e75036a19522d5c0"
+  },
+  {
+    "file": "core-automation.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\builds\\20260917-201009-08ed3aaa5b9f4195bab5ab061b4fa8d7\\automation\\index.json",
+    "bytes": 2919,
+    "sha256": "750efe1e26b613e2d6d51fb7669dd917a102cc8fc2633305487514bad0325d71"
+  },
+  {
+    "file": "video-provenance.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\video-provenance.json",
+    "bytes": 11123,
+    "sha256": "9475a2bd7b271f31d0877a7d57351e376134e6a6d0001acfcc0186954cc0c2ac"
+  },
+  {
+    "file": "video-visual-review.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\video-visual-review.json",
+    "bytes": 4809,
+    "sha256": "4247f022f2b3df1e857504fccd19ce9580c5175587cc8c3c53763138fe3d13dc"
+  },
+  {
+    "file": "video-audio-review.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\video-audio-review.json",
+    "bytes": 722,
+    "sha256": "9d11c24ce7b146e7d24718d9923b1c1bc5fb5d49364c8d65d75b8242339402ed"
+  },
+  {
+    "file": "desktop-shortcut.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\desktop-shortcut.json",
+    "bytes": 358,
+    "sha256": "fada92d6e8a5cdbece66b30924d2c933fa0546d3b399a00ddc1215c7b578fe5f"
+  },
+  {
+    "file": "portable-ledger-report.json",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-ledger-01\\report.json",
+    "bytes": 710,
+    "sha256": "952df8bfeb849321ec92cb837711a561f4964a127840d0aa6df9386ed2de07e1"
+  },
+  {
+    "file": "probe-gate-tests.txt",
+    "original": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\portfolio-probe-gate-tests.txt",
+    "bytes": 3120,
+    "sha256": "9214ea573da20d8c9b6e5fa667a110a80f3daf4446d912e9072ece505c3f2cda"
+  }
+]

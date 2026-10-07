@@ -1,0 +1,44 @@
+{
+  "case": "capture_en",
+  "instruction": "Secure the relay, then cover me.",
+  "expectedSkill": "capture_relay",
+  "coldRequest": true,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1644.3576000019675,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": false,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "SECURE_RELAY_COVER_ME",
+    "steps": [
+      {
+        "skill": "capture_relay",
+        "target": "t0"
+      },
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 267,
+    "total_tokens": 331,
+    "prompt_tokens_details": {
+      "cached_tokens": 266
+    }
+  },
+  "timings": {
+    "cache_n": 266,
+    "prompt_n": 1,
+    "prompt_ms": 25.266,
+    "prompt_per_token_ms": 25.266,
+    "prompt_per_second": 39.578880709253546,
+    "predicted_n": 64,
+    "predicted_ms": 1575.852,
+    "predicted_per_token_ms": 25.01352380952381,
+    "predicted_per_second": 39.97837360361252
+  }
+}

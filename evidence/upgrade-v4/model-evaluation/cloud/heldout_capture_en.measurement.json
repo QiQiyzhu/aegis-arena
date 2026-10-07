@@ -1,0 +1,41 @@
+{
+  "case": "heldout_capture_en",
+  "split": "heldout",
+  "httpStatus": 200,
+  "latencyMilliseconds": 1088.6873999988893,
+  "rawResponseSha256": "163c21fd8e1ce29d8e93b1555001227db2f1a8bdab82e01b163afa946520694c",
+  "savedResponseSha256": "163c21fd8e1ce29d8e93b1555001227db2f1a8bdab82e01b163afa946520694c",
+  "credentialRedactionApplied": false,
+  "responseId": "c04c0514-b399-4f4b-86c2-e10a871bcb6e",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 710,
+    "completion_tokens": 34,
+    "total_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 326
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Capture relay then protect player",
+    "steps": [
+      {
+        "skill": "capture_relay",
+        "target": "none"
+      },
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

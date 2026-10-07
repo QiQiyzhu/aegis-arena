@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "phase": "holdout",
+  "frozenAtUtc": "2026-09-17T08:06:19.071562+00:00",
+  "policies": [
+    "baseline",
+    "improved",
+    "priority"
+  ],
+  "sourceSha256": "8193689c4841b7fe17f41956d338d9b6d1ea2df8474d3e8fab5959f989307c3e",
+  "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+  "binaries": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "7e74169799b6ade5ca8803aeea831c6e251c1c32679b3ba205ead7ec8143ed0e"
+    }
+  },
+  "wrapperSha256": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+  "analyzerSha256": "72dc880a9dad3115667f36f7f1cf0a9628c30b1a3e45824c9ef3899d0c41cf54",
+  "cells": [
+    {
+      "scenarioId": "decision_lab_v1",
+      "layout": 0,
+      "enemyCount": 2,
+      "duration": 60,
+      "seeds": [
+        9001,
+        9002,
+        9003,
+        9004,
+        9005,
+        9006
+      ]
+    },
+    {
+      "scenarioId": "decision_lab_v1",
+      "layout": 1,
+      "enemyCount": 2,
+      "duration": 60,
+      "seeds": [
+        9101,
+        9102,
+        9103,
+        9104,
+        9105,
+        9106
+      ]
+    }
+  ],
+  "executionOrder": [
+    {
+      "layout": 0,
+      "seed": 9001,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9001,
+      "policy": "improved"
+    },
+    {
+      "layout": 0,
+      "seed": 9001,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9002,
+      "policy": "improved"
+    },
+    {
+      "layout": 0,
+      "seed": 9002,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9002,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9003,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9003,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9003,
+      "policy": "improved"
+    },
+    {
+      "layout": 0,
+      "seed": 9004,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9004,
+      "policy": "improved"
+    },
+    {
+      "layout": 0,
+      "seed": 9004,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9005,
+      "policy": "improved"
+    },
+    {
+      "layout": 0,
+      "seed": 9005,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9005,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9006,
+      "policy": "priority"
+    },
+    {
+      "layout": 0,
+      "seed": 9006,
+      "policy": "baseline"
+    },
+    {
+      "layout": 0,
+      "seed": 9006,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9101,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9101,
+      "policy": "priority"
+    },
+    {
+      "layout": 1,
+      "seed": 9101,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9102,
+      "policy": "priority"
+    },
+    {
+      "layout": 1,
+      "seed": 9102,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9102,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9103,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9103,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9103,
+      "policy": "priority"
+    },
+    {
+      "layout": 1,
+      "seed": 9104,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9104,
+      "policy": "priority"
+    },
+    {
+      "layout": 1,
+      "seed": 9104,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9105,
+      "policy": "priority"
+    },
+    {
+      "layout": 1,
+      "seed": 9105,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9105,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9106,
+      "policy": "baseline"
+    },
+    {
+      "layout": 1,
+      "seed": 9106,
+      "policy": "improved"
+    },
+    {
+      "layout": 1,
+      "seed": 9106,
+      "policy": "priority"
+    }
+  ],
+  "launch": "packaged",
+  "timeMode": "fixed_game_step_1_60",
+  "renderingEnabled": false,
+  "episodesPerProcess": 1,
+  "primaryComparison": "improved minus baseline",
+  "mechanism": "Only Follow lacking a visually perceived ally may use the explicitly registered same-team position link. No linked health or enemy information. Scores, combat, BT and EQS unchanged.",
+  "scenarioSelection": "Initial 18 development episodes, baseline/priority only: largest E with 1 or 2 wins of 3 in either arm; E=2. Batched calibration separate from final single-episode process comparisons.",
+  "endpoints": [
+    "team win/termination",
+    "player damage taken",
+    "companion damage taken and alive at end/exposure",
+    "player/companion damage dealt",
+    "healing",
+    "switches",
+    "short reversals",
+    "sampled accepted-leaf and selected-action dwell",
+    "stuck proxy"
+  ],
+  "retryPolicy": "Never replace a completed gameplay result. Preserve any infrastructure failure and stop; a corrected protocol must identify affected comparisons. No tuning after seeing holdout.",
+  "limits": [
+    "No RL training or learned policy",
+    "Scripted player, not human win rate",
+    "One map, layout1 rotates spawn lanes 180 degrees",
+    "Seed is not a guarantee of bit-identical asynchronous engine scheduling",
+    "Position link adds declared allied information; not an equal-information scoring comparison"
+  ]
+}

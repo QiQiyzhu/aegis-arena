@@ -1,0 +1,40 @@
+{
+  "case": "guard_en",
+  "instruction": "Stay close and protect me.",
+  "expectedSkill": "guard",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1054.3078999980935,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": true,
+  "desiredSkillPresent": false,
+  "plan": {
+    "label": "CATCH_T0",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 40,
+    "prompt_tokens": 265,
+    "total_tokens": 305,
+    "prompt_tokens_details": {
+      "cached_tokens": 264
+    }
+  },
+  "timings": {
+    "cache_n": 264,
+    "prompt_n": 1,
+    "prompt_ms": 24.115,
+    "prompt_per_token_ms": 24.115,
+    "prompt_per_second": 41.467965996267885,
+    "predicted_n": 40,
+    "predicted_ms": 1003.906,
+    "predicted_per_token_ms": 25.741179487179487,
+    "predicted_per_second": 38.848258701511895
+  }
+}

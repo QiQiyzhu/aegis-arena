@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "kind": "byte-preserving-local-evidence-collection",
+  "collectedAtUtc": "2026-09-10T16:39:43.839600+00:00",
+  "destinationBase": "evidence/upgrade-v2",
+  "collectionScope": "Requested local original reports only; no Unreal launch, build, test execution or total acceptance verdict performed by this collection.",
+  "allCopiedFilesByteVerified": true,
+  "copiedFileCount": 45,
+  "copiedBytes": 4259875,
+  "groups": [
+    {
+      "id": "portable",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01",
+      "destinationDirectory": "portable",
+      "snapshotAuthority": "portable-core",
+      "sourceSha256": "58809048a96e0c14e7b0d3ce99d0eacc2fe155eafb8fd0292490977770a3bc62",
+      "contentSha256": null,
+      "originalProvenanceRelativePath": "portable/verification.json",
+      "engine": "portable-cpp-model",
+      "status": "passed",
+      "sourceDigestScope": "Portable core tree; original smoke/report.json source_sha256; not the UE runtime digest scope",
+      "portableAssertions": 347,
+      "portableFailed": 0
+    },
+    {
+      "id": "memory",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final",
+      "destinationDirectory": "memory",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "94144c382b4d962219be62d81e89b6af97415b8b129fa105a07bf18531862d92",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b",
+      "originalProvenanceRelativePath": "memory/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": true,
+      "nativeAssertions": 28,
+      "startedAtUtc": "2026-09-10T16:29:09.536601+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a"
+    },
+    {
+      "id": "trial",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final",
+      "destinationDirectory": "trial",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "94144c382b4d962219be62d81e89b6af97415b8b129fa105a07bf18531862d92",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b",
+      "originalProvenanceRelativePath": "trial/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": true,
+      "nativeAssertions": 54,
+      "startedAtUtc": "2026-09-10T16:29:23.236538+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a"
+    },
+    {
+      "id": "input-editor",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-input-font",
+      "destinationDirectory": "input-editor",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "583c3534f9f568fa665daad852914da40c376798495037ace6dbaffc24fefd24",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b",
+      "originalProvenanceRelativePath": "input-editor/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": true,
+      "nativeAssertions": 26,
+      "startedAtUtc": "2026-09-10T16:32:28.519370+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a"
+    },
+    {
+      "id": "rendered-smoke",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final",
+      "destinationDirectory": "rendered-smoke",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "94144c382b4d962219be62d81e89b6af97415b8b129fa105a07bf18531862d92",
+      "contentSha256": "fed2e9efde70c084ffa0c33d6392494952d78c9e7081b8b773b284c1979eeb1b",
+      "originalProvenanceRelativePath": "rendered-smoke/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": true,
+      "episodeCount": 2,
+      "startedAtUtc": "2026-09-10T16:29:44.747194+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes"
+    },
+    {
+      "id": "build-editor-07",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-163115-5859347978124945b5012b8a7dbe8a1a",
+      "destinationDirectory": "build-editor-07",
+      "snapshotAuthority": "not-recorded",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "bindingLimitation": "Original build/automation log has no independently recorded source/content digest; no snapshot hash inferred during collection."
+    },
+    {
+      "id": "core-automation-build-06",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d",
+      "destinationDirectory": "core-automation-build-06",
+      "snapshotAuthority": "not-recorded",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "bindingLimitation": "Original build/automation log has no independently recorded source/content digest; no snapshot hash inferred during collection.",
+      "reportedAutomationTotals": {
+        "succeeded": 5,
+        "succeededWithWarnings": 0,
+        "failed": 0,
+        "notRun": 0,
+        "inProcess": 0
+      },
+      "limitation": "Five Core automation tests ran with build 06, before the later build 07/font snapshot; not represented as rerun on build 07."
+    },
+    {
+      "id": "failure-compile-01",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-155352-3dc0743c59884621b1daffa70b2f83ce",
+      "destinationDirectory": "failures/compile-01",
+      "snapshotAuthority": "not-recorded",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "bindingLimitation": "Original build/automation log has no independently recorded source/content digest; no snapshot hash inferred during collection."
+    },
+    {
+      "id": "failure-trial-01",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01",
+      "destinationDirectory": "failures/trial-01",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "3ae2b82c29227846cb1cf750ed0db547ff25f7121098459251e6ac46f3e34b35",
+      "contentSha256": "4d6c15dbf47979046ae8790d585017994724334645ec799ef7f91ed3ed0540a5",
+      "originalProvenanceRelativePath": "failures/trial-01/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": false,
+      "startedAtUtc": "2026-09-10T15:58:52.237201+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+      "failure": "Expected exactly one completed native trial test and zero warnings or failures"
+    },
+    {
+      "id": "failure-input-01",
+      "sourceDirectory": "D:\\AegisWork\\Reports\\upgrade-v2-input-01",
+      "destinationDirectory": "failures/input-01",
+      "snapshotAuthority": "native-runtime",
+      "sourceSha256": "13bd8031b9bd8025fb5a73c21556fb210826523998af12b2ce2b9335b43b63de",
+      "contentSha256": "4d6c15dbf47979046ae8790d585017994724334645ec799ef7f91ed3ed0540a5",
+      "originalProvenanceRelativePath": "failures/input-01/provenance.json",
+      "engine": "unreal-runtime",
+      "passed": false,
+      "startedAtUtc": "2026-09-10T16:14:15.580376+00:00",
+      "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+      "contentDigestScope": "Content/Aegis; sorted relative path + bytes",
+      "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+      "failure": "Command '['D:\\\\Program Files\\\\UE_5.8\\\\Engine\\\\Binaries\\\\Win64\\\\UnrealEditor-Cmd.exe', 'C:\\\\Users\\\\yzhu\\\\Documents\\\\ChatGPT\\\\Games\\\\Aegis-Arena\\\\AegisArena.uproject', '/Game/Aegis/Maps/AegisArena', '-game', '-RenderOffscreen', '-AegisInputProbe', '-AegisProbeOutput=D:\\\\AegisWork\\\\Reports\\\\upgrade-v2-input-01', '-ResX=1280', '-ResY=720', '-windowed', '-unattended', '-nop4', '-ForceDPCVars=HomeScreen.EnableHomeScreen=0', '-stdout', '-FullStdOutLogOutput', '-abslog=D:\\\\AegisWork\\\\Reports\\\\upgrade-v2-input-01\\\\engine.log']' timed out after 120.0 seconds"
+    },
+    {
+      "id": "python",
+      "sourceDirectory": "D:\\AegisWork\\Reports",
+      "destinationDirectory": "python",
+      "sourceSha256": null,
+      "contentSha256": null,
+      "snapshotAuthority": "not-recorded",
+      "reportedTests": 33,
+      "reportedOutcome": "OK",
+      "bindingLimitation": "Original unittest stdout has no independently recorded code digest. Its Ran 33 tests / OK text is preserved without assigning a later source snapshot."
+    }
+  ],
+  "files": [
+    {
+      "group": "build-editor-07",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-163115-5859347978124945b5012b8a7dbe8a1a\\build.log",
+      "destinationRelativePath": "build-editor-07/build.log",
+      "bytes": 3104,
+      "sha256": "d69753ad76a8b46f6b6ed87e1bb68ef4d9ac4cb715b43f51b5389ac4e04e4eba"
+    },
+    {
+      "group": "build-editor-07",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-build07-console.log",
+      "destinationRelativePath": "build-editor-07/console.log",
+      "bytes": 3254,
+      "sha256": "18403ed79b42bc63ee289bebc3ccaa99e3ecc62e236d84e9802d0f87695302ec"
+    },
+    {
+      "group": "core-automation-build-06",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d\\automation-engine.log",
+      "destinationRelativePath": "core-automation-build-06/automation-engine.log",
+      "bytes": 138166,
+      "sha256": "0bf684f1996eb985637fde220fcefce22c14e33322b8f5b33d3ce9cea0515d9b"
+    },
+    {
+      "group": "core-automation-build-06",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d\\automation.log",
+      "destinationRelativePath": "core-automation-build-06/automation.log",
+      "bytes": 139272,
+      "sha256": "a1c9baaf960f9b8115e1926e4d548738187c5090f2a8ce88874cf4216bfd180f"
+    },
+    {
+      "group": "core-automation-build-06",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d\\automation\\index.json",
+      "destinationRelativePath": "core-automation-build-06/automation/index.json",
+      "bytes": 2554,
+      "sha256": "7d35832437fb8b86da12c3476f7d4a4440b6e883311772388d4569a359e32ce7"
+    },
+    {
+      "group": "core-automation-build-06",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d\\build.log",
+      "destinationRelativePath": "core-automation-build-06/build.log",
+      "bytes": 2379,
+      "sha256": "aa711db4593faf6e930d39321dd3e6e51263330dd470626e70c449743631492e"
+    },
+    {
+      "group": "core-automation-build-06",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-build06-console.log",
+      "destinationRelativePath": "core-automation-build-06/console.log",
+      "bytes": 141801,
+      "sha256": "011dfcde38dbd37aa7ffb7f15f2d90d9746d5cb351327172497d78400ca227cf"
+    },
+    {
+      "group": "failure-compile-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-155352-3dc0743c59884621b1daffa70b2f83ce\\build.log",
+      "destinationRelativePath": "failures/compile-01/build.log",
+      "bytes": 4737,
+      "sha256": "f2f45797256bd22d177f988be99a358ff758d8243e0d2e81faca745bd1fc7f19"
+    },
+    {
+      "group": "failure-input-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-01\\engine.log",
+      "destinationRelativePath": "failures/input-01/engine.log",
+      "bytes": 127660,
+      "sha256": "a235cc9b213e7262a06a3b1c89b79a0899ce2f7fb4d5684426b7bb82adb237bb"
+    },
+    {
+      "group": "failure-input-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-01\\provenance.json",
+      "destinationRelativePath": "failures/input-01/provenance.json",
+      "bytes": 5203,
+      "sha256": "721b88ea1e5d343236c762df5c3d07157143fc066793e79f59f7d6b2b90c47ea"
+    },
+    {
+      "group": "failure-input-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-01\\stdout.log",
+      "destinationRelativePath": "failures/input-01/stdout.log",
+      "bytes": 128767,
+      "sha256": "a2f062a9bc11bcfdfe54016ba30311c2035f03b8a9d9434d5b3fb2937c0bef28"
+    },
+    {
+      "group": "failure-trial-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01\\engine.log",
+      "destinationRelativePath": "failures/trial-01/engine.log",
+      "bytes": 168697,
+      "sha256": "c02b8e403e44c443bf89ec32b07523ebc66994ff34e21275e0c07a5725f081a3"
+    },
+    {
+      "group": "failure-trial-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01\\index.json",
+      "destinationRelativePath": "failures/trial-01/index.json",
+      "bytes": 41480,
+      "sha256": "ab7eb454b53b18a51c3d0802672eed72280e6f95c842fabe0daf940c51a9e4ac"
+    },
+    {
+      "group": "failure-trial-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01\\provenance.json",
+      "destinationRelativePath": "failures/trial-01/provenance.json",
+      "bytes": 3244,
+      "sha256": "bfa80c83bc277ce6c819621cc74c0d67b5f4fde2898c03502ec599b6200d86b8"
+    },
+    {
+      "group": "failure-trial-01",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01\\stdout.log",
+      "destinationRelativePath": "failures/trial-01/stdout.log",
+      "bytes": 169773,
+      "sha256": "cfbd2394eb16b478fa793d00d35cfb907344e9864538d27112a30417de51b842"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\active.png",
+      "destinationRelativePath": "input-editor/active.png",
+      "bytes": 753274,
+      "sha256": "bc5cd6c42533b4e55eb05e21da04b8a3abc1817a650fe38278b45fd1e18b4618"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\briefing.png",
+      "destinationRelativePath": "input-editor/briefing.png",
+      "bytes": 407328,
+      "sha256": "15ff45398ef4935f536b9b6ae9dd22fae333b14c5dd0d08c66b6f39ff5e40c1c"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\engine.log",
+      "destinationRelativePath": "input-editor/engine.log",
+      "bytes": 134664,
+      "sha256": "0f752645cc6cd7d52bd343d662c8e179b969ed39964ec7241f150ea781b51639"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\input-probe.json",
+      "destinationRelativePath": "input-editor/input-probe.json",
+      "bytes": 3830,
+      "sha256": "ac400bf334299ce6a951ca684796b0f878dbf786bad44fd29499477195d0e16d"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\newattempt.png",
+      "destinationRelativePath": "input-editor/newattempt.png",
+      "bytes": 401090,
+      "sha256": "27a16a3c2400d0ba25d588ab46249af7bc7eed6f3364aa90478f7168222f26da"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\paused.png",
+      "destinationRelativePath": "input-editor/paused.png",
+      "bytes": 414878,
+      "sha256": "3884e022f2a40890d50905133ab948aa6320b1e337ab729a072b52c66a606691"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\provenance.json",
+      "destinationRelativePath": "input-editor/provenance.json",
+      "bytes": 6483,
+      "sha256": "18a5f2b7ca873ec06084a97e6296268092e183be991f8b90c6f4197aab7b4ea3"
+    },
+    {
+      "group": "input-editor",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-input-font\\stdout.log",
+      "destinationRelativePath": "input-editor/stdout.log",
+      "bytes": 135705,
+      "sha256": "9dd4d1602bc04424f2385c905b82033e2db31a269a6af60b5d7f39df1bf7df60"
+    },
+    {
+      "group": "memory",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final\\engine.log",
+      "destinationRelativePath": "memory/engine.log",
+      "bytes": 144499,
+      "sha256": "2fda503195042746cdba0b688118582dc58abce3f13ee9b87e5bc4f8abffdae4"
+    },
+    {
+      "group": "memory",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final\\index.json",
+      "destinationRelativePath": "memory/index.json",
+      "bytes": 11086,
+      "sha256": "ae074762b393010d2b5efb0e31244347c5bf5c6ccc90852d2db68ba8a035bb0c"
+    },
+    {
+      "group": "memory",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final\\provenance.json",
+      "destinationRelativePath": "memory/provenance.json",
+      "bytes": 3252,
+      "sha256": "1ca40c933f6a2951820d70acb885bf545cfc2c1c8f5f6641472aeebe28095008"
+    },
+    {
+      "group": "memory",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final\\stdout.log",
+      "destinationRelativePath": "memory/stdout.log",
+      "bytes": 145605,
+      "sha256": "83e955424cb63cdd89cb4522f2ba1d35c6b3c14653e0764030ace1e3b8c12d6d"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\build.log",
+      "destinationRelativePath": "portable/build.log",
+      "bytes": 340,
+      "sha256": "9aa494a6ee3e82d8375e30678ffbb900e280bdef8f899bb09aac5939fe9216cc"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\python-tests.log",
+      "destinationRelativePath": "portable/python-tests.log",
+      "bytes": 2411,
+      "sha256": "8358482a5eb188fd4748654c8028c8160da7025c78c56b1d96222afb2089f5eb"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\smoke.log",
+      "destinationRelativePath": "portable/smoke.log",
+      "bytes": 1371,
+      "sha256": "4a3abdf38b2b3e34ace6a6b3040d4ab83d38b99af6cbd10cdcc4b4bfd89a81ae"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\smoke\\episodes.csv",
+      "destinationRelativePath": "portable/smoke/episodes.csv",
+      "bytes": 414,
+      "sha256": "511a4bae2bfd708c912fda8b88e7e9accc7a4a5fa286f291e19f334821bb9c12"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\smoke\\episodes.json",
+      "destinationRelativePath": "portable/smoke/episodes.json",
+      "bytes": 1830,
+      "sha256": "8a26286ebc6efc4549a001e52be847b7acdb8ae53ffa3a0fb99724c0d541fafb"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\smoke\\report.json",
+      "destinationRelativePath": "portable/smoke/report.json",
+      "bytes": 2741,
+      "sha256": "86142de5381fcf51df229bf2bc0ead8819384bc937c626ce9339d8cb6076fc1e"
+    },
+    {
+      "group": "portable",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-portable-01\\verification.json",
+      "destinationRelativePath": "portable/verification.json",
+      "bytes": 672,
+      "sha256": "b34c6594a73e0e4bbb9cdb71ea2f6aee3db129aee804d1cd7b1771658e745d01"
+    },
+    {
+      "group": "python",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-python-final.log",
+      "destinationRelativePath": "python/python-final.log",
+      "bytes": 4909,
+      "sha256": "661f019fcd80e2b498e5374fbc5b548ec1b1bd046f4f92582e3be8c039c7d3a4"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\engine.log",
+      "destinationRelativePath": "rendered-smoke/engine.log",
+      "bytes": 123248,
+      "sha256": "f0a3c1b1b6be632aab908547218d100e06a4b4bca60f3f95479f18c48626ae5f"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\provenance.json",
+      "destinationRelativePath": "rendered-smoke/provenance.json",
+      "bytes": 6331,
+      "sha256": "0488beb46d352a7ba1f3729596bc318880176035accf46eb1db3b0ecb877ea88"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\raw\\episode-000.json",
+      "destinationRelativePath": "rendered-smoke/raw/episode-000.json",
+      "bytes": 949,
+      "sha256": "77fc87cfc085de27b501cc43a8298215a6bdee18870608accb0d569d9b111181"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\raw\\episode-001.json",
+      "destinationRelativePath": "rendered-smoke/raw/episode-001.json",
+      "bytes": 965,
+      "sha256": "7e293429486af33f0f543afa6df83d83a66f9addd05505bc9ffadfcba01b0738"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\raw\\episodes.csv",
+      "destinationRelativePath": "rendered-smoke/raw/episodes.csv",
+      "bytes": 355,
+      "sha256": "f47f14c3d02a6dfb8e9e2eb8bbb78d28b74749d0f2e243ba30c3f42345a814b0"
+    },
+    {
+      "group": "rendered-smoke",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-rendered-smoke-final\\stdout.log",
+      "destinationRelativePath": "rendered-smoke/stdout.log",
+      "bytes": 124289,
+      "sha256": "f540ed6f247bf5776a8b268153a86b5846300f5f2713f2b642c5252a28bb5aa2"
+    },
+    {
+      "group": "trial",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final\\engine.log",
+      "destinationRelativePath": "trial/engine.log",
+      "bytes": 159448,
+      "sha256": "3231316e8770720192c9cbd9d7da86db773c6dc8c1653b7b47a6cb002910ebea"
+    },
+    {
+      "group": "trial",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final\\index.json",
+      "destinationRelativePath": "trial/index.json",
+      "bytes": 21946,
+      "sha256": "daa183c205db53df4b506ec34e2fc48bfc938ed5db09d831d2d14983c8188b48"
+    },
+    {
+      "group": "trial",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final\\provenance.json",
+      "destinationRelativePath": "trial/provenance.json",
+      "bytes": 5317,
+      "sha256": "c84a915d8c219585c84f3fb0f1f3add3eb0bdcbda0abd4002ed6408663965c39"
+    },
+    {
+      "group": "trial",
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final\\stdout.log",
+      "destinationRelativePath": "trial/stdout.log",
+      "bytes": 160554,
+      "sha256": "a1e092ac85772da40a46e1e6046a01ce636c9f0fbb2567a01449bbbb8ab61fab"
+    }
+  ],
+  "excludedFiles": [
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-memory-final\\index.html",
+      "reason": "HTML/web assets, binaries and caches omitted; only raw log/JSON/CSV/TXT and the four input PNGs are collected."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-final\\index.html",
+      "reason": "HTML/web assets, binaries and caches omitted; only raw log/JSON/CSV/TXT and the four input PNGs are collected."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-builds\\20260910-162715-853eb1d3f6144b44bae6a9abd77d229d\\automation\\index.html",
+      "reason": "HTML/web assets, binaries and caches omitted; only raw log/JSON/CSV/TXT and the four input PNGs are collected."
+    },
+    {
+      "sourceAbsolutePath": "D:\\AegisWork\\Reports\\upgrade-v2-trial-01\\index.html",
+      "reason": "HTML/web assets, binaries and caches omitted; only raw log/JSON/CSV/TXT and the four input PNGs are collected."
+    }
+  ],
+  "generatedFiles": [
+    "sources.json",
+    "README.md",
+    "failures/README.md"
+  ],
+  "limitations": [
+    "Groups come from different original source snapshots; matching Git HEAD alone does not establish identical dirty source.",
+    "Preserved passed/status fields describe original per-run provenance, not a combined final acceptance decision.",
+    "Portable source digests and UE source digests have different scopes.",
+    "No source hash was fabricated for Python stdout, build logs or the build-06 Core report.",
+    "The four PNG files are original rendered synthetic-input captures from UnrealEditor-Cmd -game, not screenshots from a packaged executable or human usability evidence.",
+    "Failing attempts stay under failures with their original failed provenance and logs."
+  ]
+}

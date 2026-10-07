@@ -1,0 +1,47 @@
+{
+  "checkedAtUtc": "2026-09-10T20:08:13.924247+00:00",
+  "check": "Development vs Shipping registration strings; not execution or packaging acceptance",
+  "targets": {
+    "Development": {
+      "file": "AegisArena.exe",
+      "bytes": 220104704,
+      "sha256": "210f0a34595b0aa37403a7800ba36cd00980239c132ca713e90d75ba73e73a20",
+      "markers": {
+        "aegis.PauseAI": true,
+        "aegis.StepDecision": true,
+        "aegis.Policy": true,
+        "aegis.SpawnBot": true,
+        "aegis.KillBot": true,
+        "aegis.Visualize": true,
+        "aegis.RunScenario": true,
+        "AEGIS / development diagnostics": true,
+        "AEGIS_EQS": true,
+        "AEGIS_INPUT_PROBE_PASS": true,
+        "AegisProbeOutput=": true,
+        "AEGIS_PLAY_PROBE_PASS": true,
+        "AegisPlayOutput=": true
+      }
+    },
+    "Shipping": {
+      "file": "AegisArena-Win64-Shipping.exe",
+      "bytes": 103247872,
+      "sha256": "b3cad745b1e0a5117c28cf9a99ac48421945f38ac790372ab6c99a0f1907d201",
+      "markers": {
+        "aegis.PauseAI": false,
+        "aegis.StepDecision": false,
+        "aegis.Policy": false,
+        "aegis.SpawnBot": false,
+        "aegis.KillBot": false,
+        "aegis.Visualize": false,
+        "aegis.RunScenario": false,
+        "AEGIS / development diagnostics": false,
+        "AEGIS_EQS": false,
+        "AEGIS_INPUT_PROBE_PASS": false,
+        "AegisProbeOutput=": false,
+        "AEGIS_PLAY_PROBE_PASS": false,
+        "AegisPlayOutput=": false
+      }
+    }
+  },
+  "passed": true
+}

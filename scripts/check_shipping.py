@@ -15,6 +15,11 @@ MARKERS = (
     "aegis.KillBot", "aegis.Visualize", "aegis.RunScenario",
     "AEGIS / development diagnostics",
     "AEGIS_EQS",
+    "AEGIS_INPUT_PROBE_PASS", "AegisProbeOutput=",
+    "AEGIS_PLAY_PROBE_PASS", "AegisPlayOutput=",
+    "AEGIS_COPILOT_PROBE_BEGIN", "AegisCopilotOutput=",
+    "AEGIS_COPILOT_FAULT_BEGIN", "AegisCopilotFaultOutput=",
+    "AEGIS_RELEASE_PROBE_CHECK", "AegisReleaseProbeOutput=",
 )
 
 

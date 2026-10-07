@@ -31,6 +31,10 @@ try {
  if ($LASTEXITCODE -ne 0) { throw "Unreal cook/package failed: $taskOutput/package.log" }
  $taskLauncher = Join-Path $taskOutput 'package/Windows/AegisArena.exe'
  if (!(Test-Path -LiteralPath $taskLauncher)) { throw 'UAT returned success but packaged launcher is missing.' }
+ Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'PLAY-Aegis.cmd') -Destination (Join-Path $taskOutput 'package/Windows/PLAY-Aegis.cmd')
+ Copy-Item -LiteralPath (Join-Path $taskRoot 'docs/portfolio-v2.4-play.md') -Destination (Join-Path $taskOutput 'package/Windows/PLAY.md')
+ if (Test-Path -LiteralPath (Join-Path $taskRoot 'LICENSE')) { Copy-Item -LiteralPath (Join-Path $taskRoot 'LICENSE') -Destination (Join-Path $taskOutput 'package/Windows/LICENSE.txt') }
+ Copy-Item -LiteralPath (Join-Path $taskRoot 'ThirdPartyNotices') -Destination (Join-Path $taskOutput 'package/Windows/ThirdPartyNotices') -Recurse
  Write-Output "Unreal $Configuration package built: $taskLauncher"
  Write-Output 'Build/cook/stage success is separate from launch, input and Shipping gate verification.'
 } finally {

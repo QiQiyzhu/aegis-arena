@@ -1,0 +1,3 @@
+# Captured evidence and third-party notices retain their original bytes.
+evidence/** -text
+ThirdPartyNotices/** -text

@@ -1,0 +1,52 @@
+{
+  "output": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\evaluation",
+  "episodes": 60,
+  "aggregate": [
+    {
+      "enemy_count": 4,
+      "policy": "priority",
+      "episodes": 30,
+      "wins": 20,
+      "win_rate": 0.6666666666666666,
+      "win_rate_95ci_wilson": [
+        0.48779725813830266,
+        0.807697044731538
+      ],
+      "mean_survival_seconds": 33.910000000000004,
+      "mean_damage_dealt": 359.96,
+      "mean_damage_taken": 86.53333333333333,
+      "mean_companion_deaths": 0.5333333333333333,
+      "mean_enemy_deaths": 3.3333333333333335,
+      "mean_stuck_events": 4.166666666666667,
+      "mean_distance_travelled": 181.389601,
+      "mean_cover_usage": 52.46666666666667,
+      "mean_decision_counts": 673.2,
+      "mean_decision_us": 0.33748076666666665,
+      "mean_geometry_query_us": 1.7503497666666668,
+      "mean_step_p95_us": 2.1
+    },
+    {
+      "enemy_count": 4,
+      "policy": "utility",
+      "episodes": 30,
+      "wins": 19,
+      "win_rate": 0.6333333333333333,
+      "win_rate_95ci_wilson": [
+        0.45513246433604937,
+        0.7812629779598231
+      ],
+      "mean_survival_seconds": 35.47,
+      "mean_damage_dealt": 344.22333333333336,
+      "mean_damage_taken": 104.5,
+      "mean_companion_deaths": 0.2,
+      "mean_enemy_deaths": 3,
+      "mean_stuck_events": 5.166666666666667,
+      "mean_distance_travelled": 198.47932826666667,
+      "mean_cover_usage": 78.9,
+      "mean_decision_counts": 759.3,
+      "mean_decision_us": 0.5763039333333333,
+      "mean_geometry_query_us": 1.7640329666666668,
+      "mean_step_p95_us": 2.7666666666666666
+    }
+  ]
+}

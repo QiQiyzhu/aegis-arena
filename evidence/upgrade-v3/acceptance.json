@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "version": "1.2.0 Uplink",
+  "checkedAtUtc": "2026-09-10T20:08:42.347002+00:00",
+  "status": "passed-with-declared-scope",
+  "engine": "Unreal Engine 5.8.2 CL 56702186",
+  "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+  "uncommittedLocalUpgrade": true,
+  "published": false,
+  "inputs": {
+    "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+    "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+  },
+  "tests": {
+    "memory-final": {
+      "passed": true,
+      "assertions": 28,
+      "provenance": "memory-final/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "trial-final": {
+      "passed": true,
+      "assertions": 54,
+      "provenance": "trial-final/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "tactical-final": {
+      "passed": true,
+      "assertions": 32,
+      "provenance": "tactical-final/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "weapons-final": {
+      "passed": true,
+      "assertions": 31,
+      "provenance": "weapons-final/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "operation-final": {
+      "passed": true,
+      "assertions": 31,
+      "provenance": "operation-final/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "input-packaged": {
+      "passed": true,
+      "assertions": 30,
+      "provenance": "input-packaged/provenance.json",
+      "sourceSha256": "78e833c4a2cfbf7df58bbe91b807c141d2957464676f1db2aaaf16f02af953d5",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "play-editor": {
+      "passed": true,
+      "provenance": "play-editor/provenance.json",
+      "observedOutcome": "lost",
+      "observedWallSeconds": 9.648618999868631,
+      "totals": {
+        "playerShots": 9,
+        "companionShots": 3,
+        "enemyShots": 9,
+        "playerDistanceCm": 1212.3310847359346,
+        "companionDistanceCm": 1754.0628591351908,
+        "enemyDistanceCm": 6369.649390159191,
+        "playerDamageDealt": 126,
+        "enemyDamageDealt": 122,
+        "playerDamageTaken": 122,
+        "companionDamageTaken": 0,
+        "enemyDeaths": 0,
+        "companionDeaths": 0,
+        "playerDeaths": 1,
+        "enemyWindups": 10,
+        "companionWindups": 3,
+        "pulseActivations": 0
+      },
+      "humanUsabilityTest": false,
+      "fixtureDamage": false,
+      "frozenAI": false
+    },
+    "play-packaged": {
+      "passed": true,
+      "provenance": "play-packaged/provenance.json",
+      "observedOutcome": "lost",
+      "observedWallSeconds": 27.564914897084236,
+      "totals": {
+        "playerShots": 27,
+        "companionShots": 4,
+        "enemyShots": 16,
+        "playerDistanceCm": 2607.1386807709973,
+        "companionDistanceCm": 3338.4826598946574,
+        "enemyDistanceCm": 13849.551991630178,
+        "playerDamageDealt": 384,
+        "enemyDamageDealt": 174,
+        "playerDamageTaken": 174,
+        "companionDamageTaken": 0,
+        "enemyDeaths": 4,
+        "companionDeaths": 0,
+        "playerDeaths": 1,
+        "enemyWindups": 23,
+        "companionWindups": 6,
+        "pulseActivations": 1
+      },
+      "humanUsabilityTest": false,
+      "fixtureDamage": false,
+      "frozenAI": false
+    },
+    "coreAutomation": {
+      "passed": true,
+      "tests": 5,
+      "report": "editor-final/automation/index.json",
+      "sourceBinding": "Final editor build followed by matching native fixtures"
+    },
+    "portable": {
+      "passed": true,
+      "assertions": 381,
+      "report": "portable-final/verification.json"
+    },
+    "python": {
+      "passed": true,
+      "tests": 62,
+      "report": "portable-final/python-tests.log"
+    }
+  },
+  "packages": {
+    "Development": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\uplink-v1.2-development\\package\\Windows",
+      "launcher": "D:\\AegisWork\\Packages\\uplink-v1.2-development\\package\\Windows\\AegisArena.exe",
+      "gameExecutable": "D:\\AegisWork\\Packages\\uplink-v1.2-development\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "gameExecutableSha256": "210f0a34595b0aa37403a7800ba36cd00980239c132ca713e90d75ba73e73a20",
+      "manifest": "packages/development-manifest.json",
+      "interactiveProbePassed": true,
+      "validationScope": "30 synthetic input/quit checks and natural-damage observation; ten native screenshots"
+    },
+    "Shipping": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\uplink-v1.2-shipping\\package\\Windows",
+      "launcher": "D:\\AegisWork\\Packages\\uplink-v1.2-shipping\\package\\Windows\\AegisArena.exe",
+      "gameExecutable": "D:\\AegisWork\\Packages\\uplink-v1.2-shipping\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena-Win64-Shipping.exe",
+      "gameExecutableSha256": "b3cad745b1e0a5117c28cf9a99ac48421945f38ac790372ab6c99a0f1907d201",
+      "manifest": "packages/shipping-manifest.json",
+      "interactiveProbePassed": false,
+      "validationScope": "Build/cook/stage and 13-marker static boundary; no final Shipping manual play"
+    }
+  },
+  "screenshotsReviewed": [
+    "input-packaged/briefing.png",
+    "input-packaged/active.png",
+    "input-packaged/paused.png",
+    "input-packaged/newattempt.png",
+    "play-packaged/play-briefing.png",
+    "play-packaged/play-02.png",
+    "play-packaged/play-04.png",
+    "play-packaged/play-06.png",
+    "play-packaged/play-08.png",
+    "play-packaged/play-final.png"
+  ],
+  "humanPlaytest": false,
+  "osInputUsedForFinalProbe": false,
+  "originalSourcesManifest": "sources.json",
+  "finalCopiedFiles": [
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-memory-final\\engine.log",
+      "path": "memory-final/engine.log",
+      "bytes": 144832,
+      "sha256": "ddd8c01fe4ae2e78dea745fc19931d03692eee10f62e6f3e76b797fa4ba00e58"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-memory-final\\index.json",
+      "path": "memory-final/index.json",
+      "bytes": 11086,
+      "sha256": "a02b8f27ffbac54fbc6956380ac11c253da68defc7421d0a11a75d9dca264c12"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-memory-final\\provenance.json",
+      "path": "memory-final/provenance.json",
+      "bytes": 4691,
+      "sha256": "3a2bd3aa525475a0176be8b14f416604c16b4a61095992f89c4219b67f8f6c3f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-memory-final\\stdout.log",
+      "path": "memory-final/stdout.log",
+      "bytes": 145908,
+      "sha256": "5a141c90ca471b7613bf920757268c650b8f233809c829671cd5a14634bfbeb0"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-trial-final\\engine.log",
+      "path": "trial-final/engine.log",
+      "bytes": 159153,
+      "sha256": "46fb4321c0f29ba73ff54dc1b3fc6cbec3726b4ecf82168643e6be3b345976aa"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-trial-final\\index.json",
+      "path": "trial-final/index.json",
+      "bytes": 21947,
+      "sha256": "fa408c74b0c28cc0489b7ef4a6224984798ac7e66d2291fb19a018e312615f79"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-trial-final\\provenance.json",
+      "path": "trial-final/provenance.json",
+      "bytes": 6743,
+      "sha256": "5f7e9ba37c7df9f4744ebaa0b8c42b1272e1043ffdfe2f98f0ca234405aa9b74"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-trial-final\\stdout.log",
+      "path": "trial-final/stdout.log",
+      "bytes": 160229,
+      "sha256": "74ea5538029ddc559ed6c9ff76a312b163cb223ac1c52d4163366e43206e42ee"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-final\\engine.log",
+      "path": "tactical-final/engine.log",
+      "bytes": 150205,
+      "sha256": "87ca49135a21b9fcadd6f6c6d92af1fdc1928db3ac847c2c47d464756434505a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-final\\index.json",
+      "path": "tactical-final/index.json",
+      "bytes": 13107,
+      "sha256": "1ec10e4508759c2c1375d9d85c2c61b7d01c0dc83d7309781aab3c3433f53393"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-final\\provenance.json",
+      "path": "tactical-final/provenance.json",
+      "bytes": 3814,
+      "sha256": "0bad24087ccb33eaaa8c849d105ccaf8a25d28eb6a705349040c8ad51faa597d"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-tactical-final\\stdout.log",
+      "path": "tactical-final/stdout.log",
+      "bytes": 151281,
+      "sha256": "b7a56c4cd82787d52d6c0bb2fcc9c72ab524f923c365d6f57d388acd9c61d550"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-final\\engine.log",
+      "path": "weapons-final/engine.log",
+      "bytes": 140738,
+      "sha256": "452420796032bd5ebd154b3b77033fbbbc033a108dd46ae4e0de4dea13a1721b"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-final\\index.json",
+      "path": "weapons-final/index.json",
+      "bytes": 13132,
+      "sha256": "f27174768d44682d9264c9bdc8cac16f510186667e5c55d3813e26a02caac06a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-final\\provenance.json",
+      "path": "weapons-final/provenance.json",
+      "bytes": 5485,
+      "sha256": "88f11c20931fb793761a2df0e7e74257f5f30549ac468f6333fa6114425892be"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-weapons-final\\stdout.log",
+      "path": "weapons-final/stdout.log",
+      "bytes": 141844,
+      "sha256": "f560b44cbefa70f825b06046b39fe93ee40bacb5b16afdc8264d9ca9231296d7"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-operation-final\\engine.log",
+      "path": "operation-final/engine.log",
+      "bytes": 152283,
+      "sha256": "a391ae0ce004cc9bde9cdaed30786096673985641c9dab1eb14d728602f552e3"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-operation-final\\index.json",
+      "path": "operation-final/index.json",
+      "bytes": 13110,
+      "sha256": "96ec7ff31ba05dfa0508f87fad3d57b43da297c3c6eb35eabceef2bdbebd1bd1"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-operation-final\\provenance.json",
+      "path": "operation-final/provenance.json",
+      "bytes": 7427,
+      "sha256": "e9ff7e33dc459e153128b4a8907dea23c1facc08cd160733daf12a57567cf01e"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-operation-final\\stdout.log",
+      "path": "operation-final/stdout.log",
+      "bytes": 153389,
+      "sha256": "46577c3d675719b4e0f60ac7ae4ac8a4ff703996138faa2c8db824329a10c476"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\active.png",
+      "path": "input-packaged/active.png",
+      "bytes": 680242,
+      "sha256": "2e623ba18d163cdceea3915d1f576e2ec89604912699821ed2bc299f9072b391"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\briefing.png",
+      "path": "input-packaged/briefing.png",
+      "bytes": 309362,
+      "sha256": "6291d45e217ff3530fff90cfabaa4601a7f5c16a8e0c0ea60858a515860b3b62"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\engine.log",
+      "path": "input-packaged/engine.log",
+      "bytes": 93775,
+      "sha256": "c2cb5fe4c4b6007b5076cc79315a51772b22cb7a0757e5a02d66a10f99399bf0"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\input-probe.json",
+      "path": "input-packaged/input-probe.json",
+      "bytes": 4451,
+      "sha256": "9aaf7ea776e5b7b234c3d89132ccad1723ea07dd646b92e93c334dded365d6ae"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\newattempt.png",
+      "path": "input-packaged/newattempt.png",
+      "bytes": 311124,
+      "sha256": "b2980d9969bea1ffae43f5d9fd456b9ebcc8a6ee14e278824bbd20aa91fcaf88"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\paused.png",
+      "path": "input-packaged/paused.png",
+      "bytes": 319353,
+      "sha256": "46b7db2bb255181ea7b1feae80a39f18cf9ff599064e3335397349e155ed6391"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\provenance.json",
+      "path": "input-packaged/provenance.json",
+      "bytes": 8061,
+      "sha256": "e9dad82230ac4ed07c7535c5e1ed5d7a10e5fcfec9dbf4a8f2cafb76de1fefbe"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-input-packaged-final\\stdout.log",
+      "path": "input-packaged/stdout.log",
+      "bytes": 93675,
+      "sha256": "6482b5bbaa3a3042490f606a903d74ab240c39f61cb8737183ae201da8919703"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\engine.log",
+      "path": "play-editor/engine.log",
+      "bytes": 130970,
+      "sha256": "8fd85bb6b478d5fe35d8ec615dc4b72061df0b398e67e2854362a2cc6fa862ea"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-02.png",
+      "path": "play-editor/play-02.png",
+      "bytes": 663049,
+      "sha256": "a4ad94b843ec31a3f10549d54147d48fb3c414352e8e49865804270553cda7d5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-04.png",
+      "path": "play-editor/play-04.png",
+      "bytes": 562750,
+      "sha256": "b965fde94b5e26070b03982d3c114db23051414d4b8624dfd1da0d1bf800e50d"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-06.png",
+      "path": "play-editor/play-06.png",
+      "bytes": 546226,
+      "sha256": "e7bab9f827cb983b3d32bfe0111c5a5ea9dda35b5e216b5ae6612872ba6107a2"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-08.png",
+      "path": "play-editor/play-08.png",
+      "bytes": 545766,
+      "sha256": "3f0188b7888fff614b50f0e908e6340bf74fd42d1004f39dbf5373f07d81af74"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-briefing.png",
+      "path": "play-editor/play-briefing.png",
+      "bytes": 315698,
+      "sha256": "2bce4bce3290fec91abd08f63ad6049ff5a9992179e5f6a963cc71f5d8b9950f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-final.png",
+      "path": "play-editor/play-final.png",
+      "bytes": 292954,
+      "sha256": "799ad364bf6428448d4c4876668ced11a0e21bd635fe55045df72a6306db9fe2"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\play-probe.json",
+      "path": "play-editor/play-probe.json",
+      "bytes": 25977,
+      "sha256": "48f96f638a1315b8ae1178389bbb58c78192a9ba3c0647031983c152a1ba4eea"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\provenance.json",
+      "path": "play-editor/provenance.json",
+      "bytes": 8915,
+      "sha256": "75add18c0894932131d8b6431e16fbf0425ac5ddf13f0c3b269b4363e8c46d1f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-02\\stdout.log",
+      "path": "play-editor/stdout.log",
+      "bytes": 132011,
+      "sha256": "d57b4113e1d07cc523acc1394ff9266a2f53e220ba86737e992638194eb8e415"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\engine.log",
+      "path": "play-packaged/engine.log",
+      "bytes": 89584,
+      "sha256": "04fe0c552b75424c541e52583f5fd5633bed0a728504ce03e411bb1c9a8b5913"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-02.png",
+      "path": "play-packaged/play-02.png",
+      "bytes": 666485,
+      "sha256": "1aecb2f89b9e75ee379a8958b52d6b8d46e5b45e7a47c4125414f0c03fdc66ab"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-04.png",
+      "path": "play-packaged/play-04.png",
+      "bytes": 573620,
+      "sha256": "95770588f4aa42773c4b7a06adb8373527a4fd114985b9b701fc2f6da06a73cb"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-06.png",
+      "path": "play-packaged/play-06.png",
+      "bytes": 540018,
+      "sha256": "d1f32c79ecf3183f4a9bc8fc6bda636a608554626aaf9732ff6c6a87a39f998b"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-08.png",
+      "path": "play-packaged/play-08.png",
+      "bytes": 550350,
+      "sha256": "69886441d6bd588625a76af99aa87cbce44604fd5a1087e1d7a1780ab8b8146e"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-briefing.png",
+      "path": "play-packaged/play-briefing.png",
+      "bytes": 309512,
+      "sha256": "0e85255010ac176608d2f4fb57fd0bce1bdb5b5fe6206d071a887847b5913aa3"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-final.png",
+      "path": "play-packaged/play-final.png",
+      "bytes": 298199,
+      "sha256": "479549b8c82699b90c9426e75138ce497ef50910c5e6e872a67073834ab5a8ce"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\play-probe.json",
+      "path": "play-packaged/play-probe.json",
+      "bytes": 55138,
+      "sha256": "bc83d7d5cd63909a25414a071a43dc00102a292ca6b46af159f1cccfe14a3318"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\provenance.json",
+      "path": "play-packaged/provenance.json",
+      "bytes": 8896,
+      "sha256": "27526ecf53846d6cf92b17dbd4220c60d40431a659228f8c17a0b02ccaff0f9a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-packaged-final\\stdout.log",
+      "path": "play-packaged/stdout.log",
+      "bytes": 89454,
+      "sha256": "fdf6882e03beaa1352f12de4e478a55b4948dacad044f8b8ba65297479704dd1"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\engine.log",
+      "path": "failures/play01/engine.log",
+      "bytes": 131355,
+      "sha256": "f3cb1d3e7c9e50c945490f4c2de747a21226b89623fef298d9645b289db45604"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-02.png",
+      "path": "failures/play01/play-02.png",
+      "bytes": 657693,
+      "sha256": "f80e7ae5ed8961c3c0f498dc0c54d167ddbc9bb381c7e6b5cbc286dbe0a9703f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-04.png",
+      "path": "failures/play01/play-04.png",
+      "bytes": 563737,
+      "sha256": "cd1c32c3ef708b553c5d5db9ac13e90a48089eac85c3ce3e77c7c0a3301ed142"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-06.png",
+      "path": "failures/play01/play-06.png",
+      "bytes": 540368,
+      "sha256": "648127715a553fe1ae34a6d86a77d87c9c5daba0b851662169f44acc71b5ce58"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-08.png",
+      "path": "failures/play01/play-08.png",
+      "bytes": 553398,
+      "sha256": "3f0f61f744e5b71a675355dd95e663d6ad0a4f35eb576d967b9d2dad18ccea76"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-briefing.png",
+      "path": "failures/play01/play-briefing.png",
+      "bytes": 313111,
+      "sha256": "b856454cb2dd139405ffddfb8a4a2ce2ca396d2f1aa4f6fe01652f68357066f8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-final.png",
+      "path": "failures/play01/play-final.png",
+      "bytes": 693881,
+      "sha256": "413da536ca65f641b1486c5b3978ecab1ce8f5d5120471fbbddf314d3a0997cb"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\play-probe.json",
+      "path": "failures/play01/play-probe.json",
+      "bytes": 157789,
+      "sha256": "0d1f42a1c0d4308e1277c07e5727d8aad8db7a624b440a1bafbb89eabe29f7ba"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\provenance.json",
+      "path": "failures/play01/provenance.json",
+      "bytes": 6921,
+      "sha256": "227f816f31708a1af0c03a25a4e4449ec3388521b54f47bb95abe6370a7ce58e"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-play-editor-01\\stdout.log",
+      "path": "failures/play01/stdout.log",
+      "bytes": 132396,
+      "sha256": "b46027ce6aea955f66aaf39b9fe4e1b271debaf7ab21dd7f64b4f691bd1f0fac"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-195519-6453d1c626184faa99034b5eb90619ee\\automation\\index.json",
+      "path": "editor-final/automation/index.json",
+      "bytes": 2555,
+      "sha256": "9cf91abca547c601f006b2064980ec3a483beedd6fa4cc0c485480cec57df55f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-195519-6453d1c626184faa99034b5eb90619ee\\automation-engine.log",
+      "path": "editor-final/automation-engine.log",
+      "bytes": 138096,
+      "sha256": "87a1687528902bdcd7a24a9a4f5aacfbd0e5789692e2b97e1f21c5637155d0be"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-195519-6453d1c626184faa99034b5eb90619ee\\automation.log",
+      "path": "editor-final/automation.log",
+      "bytes": 139172,
+      "sha256": "7033a72cfe0030f284f727b522ef580df8fb85c4ef4c14b6b0410aa75d7dedb5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-builds\\20260910-195519-6453d1c626184faa99034b5eb90619ee\\build.log",
+      "path": "editor-final/build.log",
+      "bytes": 3262,
+      "sha256": "524bcb327aad76d48c87ee4fe5c84bf01d9fcd879f7df95bb731e8e158ee0708"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\build.log",
+      "path": "portable-final/build.log",
+      "bytes": 340,
+      "sha256": "1c22d95129a733274126d12bff9c88d98eb177c7a448f5a3a39ff57f1873b8dc"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\python-tests.log",
+      "path": "portable-final/python-tests.log",
+      "bytes": 9555,
+      "sha256": "59eb8555f568202aaa45f99e0a7941f86e3f62dcb4044337d33d2c23ba09a082"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\smoke\\episodes.csv",
+      "path": "portable-final/smoke/episodes.csv",
+      "bytes": 414,
+      "sha256": "511a4bae2bfd708c912fda8b88e7e9accc7a4a5fa286f291e19f334821bb9c12"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\smoke\\episodes.json",
+      "path": "portable-final/smoke/episodes.json",
+      "bytes": 1830,
+      "sha256": "20ba48d0503431c7ccc9045267aaa20d893d2990a319008fb96f133e2b3dc63a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\smoke\\report.json",
+      "path": "portable-final/smoke/report.json",
+      "bytes": 2741,
+      "sha256": "7821f380baa94b837dc69a36ee3b4074434f7c2e416fbcecc986d106015b69f4"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\smoke.log",
+      "path": "portable-final/smoke.log",
+      "bytes": 1374,
+      "sha256": "6a4f701fd35d23ace29f21ecd4b443d6813d0ced1bb1c06fe90408e3c51922c9"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-portable-final\\verification.json",
+      "path": "portable-final/verification.json",
+      "bytes": 672,
+      "sha256": "bfeb79d3c95cd392ec5e2da5a98066551c0f3207b0785ced19c42c1f90e66950"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v3-shipping-gate.json",
+      "path": "packages/shipping-marker-gate.json",
+      "bytes": 1560,
+      "sha256": "bf8132a9bbfe8c2738df1b7f8b6a33def219db9125e1b1ec14069f72da6c7aa5"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\uplink-v1.2-development\\package.log",
+      "path": "packages/development-package.log",
+      "bytes": 70670,
+      "sha256": "800f811b671d8b6ed69b7db5c2da595a5912ed3a198acc7718d32d5fade1c613"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\uplink-v1.2-shipping\\package.log",
+      "path": "packages/shipping-package.log",
+      "bytes": 70368,
+      "sha256": "c9fd2db363424d3c15f3400ee7929088719c3a61f37e4f70c1f35b5adecc0ef8"
+    }
+  ],
+  "discoveredFailure": {
+    "report": "failures/play01/provenance.json",
+    "enemyShots": 0,
+    "cause": "Listener registered before possession excluded existing allies; team assignment alone does not refresh UE Sight queries.",
+    "correction": "Refresh listener after possession and team initialization; add three spawn-order assertions without toggling senses."
+  },
+  "limitations": [
+    "Native fixtures disclose placement, sense toggles, disabled AI or authored damage; they prove bounded contracts, not balance.",
+    "Natural play observation uses synthetic controller input and normal damage, ending at win/loss or a 60-second budget; no human usability or victory-rate claim.",
+    "Final Shipping was built/cooked and statically checked, not manually played.",
+    "No updated long performance benchmark, paired policy evaluation, audio, gamepad, rebinding, Chinese UI or RL training.",
+    "Public GitHub release remains v1.0; this upgrade is local."
+  ]
+}

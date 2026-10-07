@@ -1,0 +1,12 @@
+{
+  "startupOnly": true,
+  "humanPlaytest": false,
+  "scope": "Visible normal launcher startup; map loaded and navigation initialized. No human input/playtest claimed.",
+  "observedMarkers": [
+    "[2026.09.17-20.28.52:964][  0]LogLoad: LoadMap: /Game/Aegis/Maps/AegisArena?Name=Player",
+    "[2026.09.17-20.28.53:635][103]LogNavigationDataBuild: Display:    FRecastNavMeshGenerator::ProcessTileTasksAndGetUpdatedTiles build time: 0.01s",
+    "[2026.09.17-20.28.54:141][243]LogTemp: Display: AEGIS_PORTFOLIO_BEGIN run=AD0A073C4A5FB9296C27449677AA37B1 trace=D:/AegisWork/Packages/portfolio-v1.5-release/package/Windows/AegisArena/Saved/AegisPortfolio/portfolio-AD0A073C4A5FB9296C27449677AA37B1.jsonl"
+  ],
+  "startupLog": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\manual-launch.log",
+  "startupLogSnapshotSha256": "9507d31e10e9da73d8ec9fe4bb4633cc7f9b67fe20f03c811610a95686d4763f"
+}

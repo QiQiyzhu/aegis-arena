@@ -1,0 +1,41 @@
+{
+  "case": "tuning_focus_zh",
+  "split": "tuning",
+  "httpStatus": 200,
+  "latencyMilliseconds": 777.26850000181,
+  "rawResponseSha256": "033bc73a81dd126a2d4063b32873559c74616355a227eaa31ccab0510ac0b7dc",
+  "savedResponseSha256": "033bc73a81dd126a2d4063b32873559c74616355a227eaa31ccab0510ac0b7dc",
+  "credentialRedactionApplied": false,
+  "responseId": "3f52d076-3ec6-462d-824a-0d64d597de5a",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 708,
+    "completion_tokens": 36,
+    "total_tokens": 744,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 324
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Engage visible enemy then regroup",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "regroup",
+        "target": "none"
+      }
+    ]
+  }
+}

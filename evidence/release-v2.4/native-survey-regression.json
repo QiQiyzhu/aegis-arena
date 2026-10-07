@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "engine": "unreal-runtime",
+  "launch": "editor-game",
+  "command": [
+    "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\AegisArena.uproject",
+    "/Game/Aegis/Maps/AegisArena",
+    "-game",
+    "-AegisV2",
+    "-AegisV23",
+    "-AegisPortfolio",
+    "-AegisV23Probe",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-ForceRes",
+    "-ResX=1280",
+    "-ResY=720",
+    "-windowed",
+    "-unattended",
+    "-nop4",
+    "-nosound",
+    "-nosplash",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-AegisPortfolioSeed=1101",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-AegisV23ProbeOutput=D:\\AegisWork\\Reports\\release-v24-20261007\\survey-regression",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\release-v24-20261007\\survey-regression\\system",
+    "-abslog=D:\\AegisWork\\Reports\\release-v24-20261007\\survey-regression\\engine.log"
+  ],
+  "expectedAssertions": [
+    "begun_game_world_v23",
+    "briefing_survey_defaults",
+    "briefing_survey_inputs_rejected",
+    "deploys_frozen_active_trial",
+    "out_of_range_scan_rejected",
+    "h_selects_supply",
+    "full_health_supply_rejected",
+    "held_g_advances_partial_scan",
+    "release_cancels_without_claim",
+    "pause_cancels_scan",
+    "paused_survey_inputs_preserve_state_time",
+    "damage_cancels_without_automatic_retry",
+    "leaving_radius_cancels_scan",
+    "continuous_hold_claims_one_key",
+    "continued_hold_cannot_repeat_claim",
+    "claimed_cache_repress_rejected",
+    "pending_key_cannot_stack_at_second_cache",
+    "supply_selection_preserves_pending_key",
+    "supply_heals_actual_twenty_fifteen",
+    "supply_consumes_cache_without_energy_cost",
+    "claimed_supply_repress_rejected",
+    "productive_relay_binds_key_once",
+    "bound_key_accelerates_actual_relay_progress",
+    "completed_relay_releases_boost_without_energy_change",
+    "normal_menu_quit_available"
+  ],
+  "notCovered": [
+    "human input and natural combat",
+    "real window focus loss",
+    "wave-three key rejection in native play",
+    "supply line-of-sight occlusion"
+  ],
+  "fixtureDamage": true,
+  "fixturePlacement": true,
+  "aiFrozen": true,
+  "syntheticKeyboardInput": true,
+  "humanPlaytest": false,
+  "policyPerformanceTest": false,
+  "actorDeadlineSeconds": 60,
+  "processTimeoutSeconds": 180,
+  "startedAtUtc": "2026-10-07T14:10:53.687321+00:00",
+  "inputsBefore": {
+    "sourceSha256": "8cd2d334b4a12fc0868b44e3d0d52e7bc14f7f1e6032a497d375274f231ffd9e",
+    "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+  },
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+      "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+    },
+    "projectModule": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+      "sha256": "7cf6c5973b29d39d009b8a5787743d7b7e061b3d9c06e575084cfe60d040cceb"
+    }
+  },
+  "wrappersBefore": {
+    "run_v23_probe.py": "2dc14f8d213806ef6cd459305f7d341626ac786782bc55598639850f322a6a0f",
+    "v23_survey_gate.py": "71a60d28be3caca41214c34235d18e13519e9edf5443fb8153c12952ae56380e",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4"
+  },
+  "exitCode": 0,
+  "session": {
+    "path": "D:\\AegisWork\\Reports\\release-v24-20261007\\survey-regression\\system\\portfolio-4C142C78437CFC4219E0C496C460E020.jsonl",
+    "sha256": "91520dc861671f9b45e6f002a8c2091ab831e1efc389f129d336966ca56d12f7",
+    "summarySha256": "dd485d86d51772fccf77c5e04e569a297f62c0de1dca7eac3e85bf2585b7f708",
+    "survey": {
+      "surveyKeys": 1,
+      "surveySupplies": 1,
+      "surveyBoosts": 1,
+      "surveyCancelled": 4,
+      "surveyPlayerActualHealing": 20.0,
+      "surveyCompanionActualHealing": 15.0,
+      "surveyClaimedMask": 3,
+      "surveyKeyPending": false,
+      "surveyBoostRelayKey": -1
+    }
+  },
+  "nativeAssertions": 25,
+  "inputsAfter": {
+    "sourceSha256": "8cd2d334b4a12fc0868b44e3d0d52e7bc14f7f1e6032a497d375274f231ffd9e",
+    "contentSha256": "2ef7570f5e847a3fdbd96e6eb687790d3fcc3443d13d1e6fca2719aa85682489"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+      "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+    },
+    "projectModule": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+      "sha256": "7cf6c5973b29d39d009b8a5787743d7b7e061b3d9c06e575084cfe60d040cceb"
+    }
+  },
+  "wrappersAfter": {
+    "run_v23_probe.py": "2dc14f8d213806ef6cd459305f7d341626ac786782bc55598639850f322a6a0f",
+    "v23_survey_gate.py": "71a60d28be3caca41214c34235d18e13519e9edf5443fb8153c12952ae56380e",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4"
+  },
+  "wallSeconds": 32.32800000000134,
+  "files": {
+    "engine.log": {
+      "bytes": 130490,
+      "sha256": "be63a08f6779af022a10058014fc835e2c873575f6688ce4d968310616a1021f"
+    },
+    "stdout.log": {
+      "bytes": 131501,
+      "sha256": "b0243134cc72332a9affbf50d75717b24ad14e8404abe6bbf4ccb1dadec34cad"
+    },
+    "system\\portfolio-4C142C78437CFC4219E0C496C460E020.json": {
+      "bytes": 1409,
+      "sha256": "dd485d86d51772fccf77c5e04e569a297f62c0de1dca7eac3e85bf2585b7f708"
+    },
+    "system\\portfolio-4C142C78437CFC4219E0C496C460E020.jsonl": {
+      "bytes": 7529,
+      "sha256": "91520dc861671f9b45e6f002a8c2091ab831e1efc389f129d336966ca56d12f7"
+    },
+    "v23-probe.json": {
+      "bytes": 19088,
+      "sha256": "d84a24884803c0985d5230ebb5dc4220001f691a2732256e15f9afbe579596cc"
+    }
+  }
+}

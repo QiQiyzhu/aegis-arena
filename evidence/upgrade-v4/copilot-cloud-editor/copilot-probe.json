@@ -1,0 +1,75 @@
+{
+	"passed": true,
+	"engine": "unreal-runtime",
+	"worldType": 1,
+	"begunPlay": true,
+	"syntheticSlateInput": true,
+	"humanUsabilityTest": false,
+	"fixtureService": false,
+	"provider": "Cloud / deepseek-flash",
+	"plan": "capture_relay > guard",
+	"tracePath": "C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisPlans/D418282646A212AF9C1D7189EAFE5D80.jsonl",
+	"plannerStatus": "Plan cancelled - classic squad control",
+	"wallSeconds": 6.2389019019901752,
+	"lastStage": 11,
+	"assertions": [
+		{
+			"name": "begun_game_world",
+			"passed": true
+		},
+		{
+			"name": "deployed_with_planner",
+			"passed": true
+		},
+		{
+			"name": "tab_opens_paused_slate_panel",
+			"passed": true
+		},
+		{
+			"name": "slate_text_and_enter_submit_real_request",
+			"passed": true
+		},
+		{
+			"name": "provider_plan_passes_runtime_validation",
+			"passed": true
+		},
+		{
+			"name": "goal_preserves_capture_then_guard_order",
+			"passed": true
+		},
+		{
+			"name": "network_response_does_not_advance_paused_game",
+			"passed": true
+		},
+		{
+			"name": "slate_tab_returns_to_combat",
+			"passed": true
+		},
+		{
+			"name": "validated_capture_drives_real_companion_movement",
+			"passed": true
+		},
+		{
+			"name": "manual_guard_cancels_model_plan",
+			"passed": true
+		},
+		{
+			"name": "restart_clears_plan_and_replaces_pawn",
+			"passed": true
+		},
+		{
+			"name": "planner_can_reopen_after_restart",
+			"passed": true
+		},
+		{
+			"name": "slate_escape_closes_panel",
+			"passed": true
+		}
+	],
+	"screenshots": [
+		"D:/AegisWork/Reports/upgrade-v4-copilot-cloud-editor-01/copilot-open.png",
+		"D:/AegisWork/Reports/upgrade-v4-copilot-cloud-editor-01/copilot-request.png",
+		"D:/AegisWork/Reports/upgrade-v4-copilot-cloud-editor-01/copilot-plan.png",
+		"D:/AegisWork/Reports/upgrade-v4-copilot-cloud-editor-01/copilot-executing.png"
+	]
+}

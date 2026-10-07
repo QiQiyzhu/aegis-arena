@@ -1,0 +1,401 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "engine": "unreal-runtime",
+  "launch": "packaged-development",
+  "command": [
+    "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+    "/Game/Aegis/Maps/AegisArena",
+    "-AegisPortfolio",
+    "-AegisPortfolioProbe",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-AegisPortfolioProbeOutput=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system",
+    "-ResX=1280",
+    "-ResY=720",
+    "-windowed",
+    "-unattended",
+    "-nop4",
+    "-nosound",
+    "-nosplash",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-abslog=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\engine.log"
+  ],
+  "host": "Windows-10-10.0.22631-SP0",
+  "startedAtUtc": "2026-09-17T20:45:12.741226+00:00",
+  "syntheticKeyboardInput": true,
+  "fixtureDamage": true,
+  "aiFrozen": true,
+  "humanUsabilityTest": false,
+  "policyPerformanceTest": false,
+  "rendering": "RenderOffscreen",
+  "actorDeadlineSeconds": 35,
+  "processTimeoutSeconds": 120,
+  "expectedAssertions": [
+    "begun_game_world",
+    "briefing_preset_and_budget",
+    "briefing_rejects_pulse_and_repair",
+    "enter_deploys_active_trial",
+    "full_health_repair_has_no_cost_or_cooldown",
+    "disclosed_fixture_damage_applies_45",
+    "repair_spends_exactly_40",
+    "repair_applies_and_records_actual_30",
+    "repair_starts_game_clock_cooldown",
+    "repair_cooldown_rejects_repeat",
+    "low_energy_pulse_preserves_gameplay_cooldown",
+    "restart_replaces_player_pawn",
+    "restart_resets_energy_health_cooldown_and_statistics",
+    "second_deploy_uses_normal_enter",
+    "accepted_pulse_spends_exactly_35",
+    "accepted_pulse_updates_actual_counter_and_cooldown",
+    "pulse_cooldown_repeat_does_not_double_charge",
+    "second_restart_resets_both_abilities",
+    "normal_pause_menu_opens",
+    "paused_q_and_e_preserve_time_and_resources",
+    "restart_from_pause_restores_briefing",
+    "normal_held_fire_actually_fires",
+    "restart_during_held_fire_replaces_pawn",
+    "redeploy_does_not_retain_held_fire",
+    "normal_quit_menu_is_available"
+  ],
+  "scope": "Native transaction/input fixture; one explicit hostile damage call and frozen AI",
+  "sourceDigestScope": "Source, core/include, Config, AegisArena.uproject; sorted relative path + bytes",
+  "contentDigestScope": "Content/Aegis; sorted relative path + bytes; packaged cooked containers separately hashed",
+  "inputsBefore": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298000,
+        "sha256": "9ff0721d8e5038a8bf21cfec8583aef05bc1aa37fdda524b8092468d9c76ef4b"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12786016,
+        "sha256": "e495680594a1edd0f264fc446df507a8269813363e83205bec09b78c55986f07"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 55547,
+        "sha256": "d8aa3fa687b9c1dcbcc5119cb4d6b373ded679be6148de483a2c560a1782b6b7"
+      },
+      "global.ucas": {
+        "bytes": 1568800,
+        "sha256": "cb21e77754a0e0e16df43c66f6e5469a69ef32cb41162c464e526d244f191faa"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "06bf8629dc0554fdb242a27fa7f5a8f7a2d2a23e001a6f055bf5303c8a0dbb29"
+      }
+    }
+  },
+  "wrappersBefore": {
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+  "gitStatus": [
+    " M ASSETS.md",
+    " M Config/DefaultGame.ini",
+    " M Config/DefaultInput.ini",
+    " M Content/Aegis/Materials/M_AegisActor.uasset",
+    " M README.md",
+    " M Source/AegisArena/AegisArena.Build.cs",
+    " M Source/AegisArena/Private/AegisAIController.cpp",
+    " M Source/AegisArena/Private/AegisCharacter.cpp",
+    " M Source/AegisArena/Private/AegisLab.cpp",
+    " M Source/AegisArena/Public/AegisAIController.h",
+    " M Source/AegisArena/Public/AegisCharacter.h",
+    " M Source/AegisArena/Public/AegisLab.h",
+    " M Source/AegisArenaEditor/Private/AegisCombatFunctionalTest.cpp",
+    " M Source/AegisArenaEditor/Public/AegisCombatFunctionalTest.h",
+    " M core/tests/tests.cpp",
+    " M docs/status.md",
+    " M scripts/build_unreal.ps1",
+    " M scripts/check_shipping.py",
+    " M scripts/run_unreal_functional.py",
+    " M scripts/test_native_gate.py",
+    " M scripts/verify_portable.py",
+    "?? Content/Aegis/Audio/",
+    "?? Content/Aegis/Maps/AegisOperationFunctional.umap",
+    "?? Content/Aegis/Maps/AegisTacticalFunctional.umap",
+    "?? Content/Aegis/Maps/AegisTrialFunctional.umap",
+    "?? Content/Aegis/Maps/AegisWeaponsFunctional.umap",
+    "?? Content/Aegis/Materials/M_PortfolioGlow.uasset",
+    "?? Content/Aegis/Materials/M_PortfolioMetal.uasset",
+    "?? PROJECT_HANDOFF.md",
+    "?? Source/AegisArena/Private/AegisCopilotFaultProbe.cpp",
+    "?? Source/AegisArena/Private/AegisCopilotProbe.cpp",
+    "?? Source/AegisArena/Private/AegisDecisionLab.cpp",
+    "?? Source/AegisArena/Private/AegisDecisionLabHUD.cpp",
+    "?? Source/AegisArena/Private/AegisDecisionLabProbe.cpp",
+    "?? Source/AegisArena/Private/AegisInputProbe.cpp",
+    "?? Source/AegisArena/Private/AegisPlannerUI.cpp",
+    "?? Source/AegisArena/Private/AegisPlayProbe.cpp",
+    "?? Source/AegisArena/Private/AegisPortfolio.cpp",
+    "?? Source/AegisArena/Private/AegisPortfolioCapture.cpp",
+    "?? Source/AegisArena/Private/AegisPortfolioHUD.cpp",
+    "?? Source/AegisArena/Private/AegisPortfolioPresentation.cpp",
+    "?? Source/AegisArena/Private/AegisPortfolioProbe.cpp",
+    "?? Source/AegisArena/Private/AegisSquadPlanner.cpp",
+    "?? Source/AegisArena/Public/AegisCopilotFaultProbe.h",
+    "?? Source/AegisArena/Public/AegisCopilotProbe.h",
+    "?? Source/AegisArena/Public/AegisDecisionLab.h",
+    "?? Source/AegisArena/Public/AegisDecisionLabProbe.h",
+    "?? Source/AegisArena/Public/AegisInputProbe.h",
+    "?? Source/AegisArena/Public/AegisPlayProbe.h",
+    "?? Source/AegisArena/Public/AegisPortfolio.h",
+    "?? Source/AegisArena/Public/AegisPortfolioCapture.h",
+    "?? Source/AegisArena/Public/AegisPortfolioPresentation.h",
+    "?? Source/AegisArena/Public/AegisPortfolioProbe.h",
+    "?? Source/AegisArena/Public/AegisSquadPlanner.h",
+    "?? Source/AegisArenaEditor/Private/AegisOperationFunctionalTest.cpp",
+    "?? Source/AegisArenaEditor/Private/AegisPlannerContractTests.cpp",
+    "?? Source/AegisArenaEditor/Private/AegisTacticalFunctionalTest.cpp",
+    "?? Source/AegisArenaEditor/Private/AegisTrialFunctionalTest.cpp",
+    "?? Source/AegisArenaEditor/Private/AegisWeaponsFunctionalTest.cpp",
+    "?? Source/AegisArenaEditor/Public/AegisOperationFunctionalTest.h",
+    "?? Source/AegisArenaEditor/Public/AegisTacticalFunctionalTest.h",
+    "?? Source/AegisArenaEditor/Public/AegisTrialFunctionalTest.h",
+    "?? Source/AegisArenaEditor/Public/AegisWeaponsFunctionalTest.h",
+    "?? assets/",
+    "?? core/include/aegis/operation.hpp",
+    "?? core/include/aegis/portfolio.hpp",
+    "?? core/include/aegis/trial.hpp",
+    "?? core/tests/portfolio_tests.cpp",
+    "?? docs/ai-reliability-v2.md",
+    "?? docs/competition-research-2026.md",
+    "?? docs/decision-lab-case.md",
+    "?? docs/decision-lab-code-audit.md",
+    "?? docs/decision-lab-cpp-guide.md",
+    "?? docs/decision-lab-delivery.md",
+    "?? docs/decision-lab-demo.md",
+    "?? docs/decision-lab-evaluation-audit.md",
+    "?? docs/decision-lab-play.md",
+    "?? docs/decision-lab-presentation-audit.md",
+    "?? docs/decision-lab-results.md",
+    "?? docs/portfolio-cpp-guide.md",
+    "?? docs/portfolio-delivery.md",
+    "?? docs/portfolio-play.md",
+    "?? docs/portfolio-recording-case.md",
+    "?? docs/portfolio-v1.5-design.md",
+    "?? docs/portfolio-v1.5-outline.md",
+    "?? docs/portfolio-v1.5-references.md",
+    "?? docs/portfolio-v1.5-systems-audit.md",
+    "?? docs/squad-copilot-explained.md",
+    "?? docs/upgrade-v2.md",
+    "?? docs/upgrade-v3-references.md",
+    "?? docs/upgrade-v3.md",
+    "?? docs/upgrade-v4-references.md",
+    "?? docs/upgrade-v4.md",
+    "?? evidence/decision-lab-v1.4/",
+    "?? evidence/portfolio-v1.5/",
+    "?? evidence/upgrade-v2/",
+    "?? evidence/upgrade-v3/",
+    "?? evidence/upgrade-v4/",
+    "?? scripts/aegis_ai_config.py",
+    "?? scripts/analyze_decision_lab.py",
+    "?? scripts/assemble_portfolio_delivery.py",
+    "?? scripts/build_portfolio_document.py",
+    "?? scripts/build_portfolio_video.py",
+    "?? scripts/evaluate_copilot_model.py",
+    "?? scripts/install_copilot_launchers.py",
+    "?? scripts/launch_copilot.py",
+    "?? scripts/run_decision_lab.py",
+    "?? scripts/run_decision_lab_input.py",
+    "?? scripts/run_frozen_decision_lab.py",
+    "?? scripts/run_portfolio_capture.py",
+    "?? scripts/run_portfolio_core_tests.py",
+    "?? scripts/run_portfolio_probe.py",
+    "?? scripts/run_unreal_copilot_fault_probe.py",
+    "?? scripts/run_unreal_copilot_probe.py",
+    "?? scripts/run_unreal_input_probe.py",
+    "?? scripts/run_unreal_operation.py",
+    "?? scripts/run_unreal_play_probe.py",
+    "?? scripts/run_unreal_tactical.py",
+    "?? scripts/run_unreal_trial.py",
+    "?? scripts/run_unreal_weapons.py",
+    "?? scripts/test_ai_config.py",
+    "?? scripts/test_copilot_fault_gate.py",
+    "?? scripts/test_copilot_model_evaluation.py",
+    "?? scripts/test_copilot_probe_gate.py",
+    "?? scripts/test_decision_lab_gate.py",
+    "?? scripts/test_decision_lab_input_gate.py",
+    "?? scripts/test_input_probe_gate.py",
+    "?? scripts/test_operation_gate.py",
+    "?? scripts/test_play_probe_gate.py",
+    "?? scripts/test_portfolio_probe_gate.py",
+    "?? scripts/test_portfolio_result_quit_gate.py",
+    "?? scripts/test_portfolio_video.py",
+    "?? scripts/test_tactical_gate.py",
+    "?? scripts/test_trial_gate.py",
+    "?? scripts/test_weapons_gate.py",
+    "?? scripts/unreal/create_operation_fixture.py",
+    "?? scripts/unreal/create_portfolio_assets.py",
+    "?? scripts/unreal/create_tactical_fixture.py",
+    "?? scripts/unreal/create_trial_fixture.py",
+    "?? scripts/unreal/create_weapons_fixture.py",
+    "?? scripts/unreal/enable_instancing.py"
+  ],
+  "engineBuild": {
+    "MajorVersion": 5,
+    "MinorVersion": 8,
+    "PatchVersion": 2,
+    "Changelist": 56702186,
+    "CompatibleChangelist": 55116800,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.8"
+  },
+  "engineBuildSha256": "ff99fc3dd98e7c7fd2f5700334bc792dfb7baced3828cdee32940bb69581a6a4",
+  "exitCode": 0,
+  "sessions": [
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system\\portfolio-AC63AD9F42D8B5E04B6E6FB8395D5F92.json",
+      "sha256": "9a7662c364addbc71a6b3fe938d859342889f855e5a1a37ea32bd9bd44d21c64",
+      "traceSha256": "2cf93eb7f698dc8ea9706a23d9d14ba043de9eb37701839ed05030495df29c29",
+      "outcome": "restarted"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system\\portfolio-65D6658445D19E5F6551968290F8F878.json",
+      "sha256": "283369c8efcc400e53499226114b7eee649e2adbf6af85a00c2c4712c0642b12",
+      "traceSha256": "798ef81093d9e855a8b93bfedbae6c24ef1f59a9a1464c70ec0f3972a86d59e7",
+      "outcome": "restarted"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system\\portfolio-D7DD35CC47149A4C67312CBCA36C17A8.json",
+      "sha256": "2b7f5d92e3102ace9f6f6f820ac4fdf9a6e5c35b9aeeb1e210222f76d3966299",
+      "traceSha256": "f0f2a81713cdad5865c74c5fe4f264b35f8b6d90f2db9a6a7b8e08240ab50d77",
+      "outcome": "restarted"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system\\portfolio-2C3B448C4051A3B2611F5B9CE6AFCE1B.json",
+      "sha256": "9ba86a37e2df8181ae83871b52275ed41932376e5f7d7ef090f1bd76ba3748d9",
+      "traceSha256": "3c229039c06f1cada197193f3c1236720797e26649a3c103d8def8f5c1d673cf",
+      "outcome": "restarted"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\system\\portfolio-5FB0645944C76804AB0E33A5A15FD46C.json",
+      "sha256": "6c861ba94beb40823624a31951286a6b2399539c82b59e12a0cae41a864a9a7a",
+      "traceSha256": "a7dcd0d6776cca0010238a25190e9bd6fb7f8997ce18bebdb3ccde4822736565",
+      "outcome": "aborted"
+    }
+  ],
+  "nativeAssertions": 25,
+  "inputsAfter": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298000,
+        "sha256": "9ff0721d8e5038a8bf21cfec8583aef05bc1aa37fdda524b8092468d9c76ef4b"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12786016,
+        "sha256": "e495680594a1edd0f264fc446df507a8269813363e83205bec09b78c55986f07"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 55547,
+        "sha256": "d8aa3fa687b9c1dcbcc5119cb4d6b373ded679be6148de483a2c560a1782b6b7"
+      },
+      "global.ucas": {
+        "bytes": 1568800,
+        "sha256": "cb21e77754a0e0e16df43c66f6e5469a69ef32cb41162c464e526d244f191faa"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "06bf8629dc0554fdb242a27fa7f5a8f7a2d2a23e001a6f055bf5303c8a0dbb29"
+      }
+    }
+  },
+  "wrappersAfter": {
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "knownEngineWarnings": [
+    "[2026.09.17-20.45.15:849][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+  ],
+  "wallSeconds": 10.671000000000276,
+  "files": {
+    "engine.log": {
+      "bytes": 83186,
+      "sha256": "b2505952407b31f499bee08247e15835ccd5ee6fe33692af56af643b70aaaa1a"
+    },
+    "portfolio-probe.json": {
+      "bytes": 7789,
+      "sha256": "1386bacd5aa73306b56f5269430fe8300a54445b5476e1bf181b46fd3a922dc6"
+    },
+    "stdout.log": {
+      "bytes": 83086,
+      "sha256": "695579aefe31fd10763fcdf21cb021b3bc6846d35f22117a536ca4304e7d4003"
+    },
+    "system/portfolio-2C3B448C4051A3B2611F5B9CE6AFCE1B.json": {
+      "bytes": 712,
+      "sha256": "9ba86a37e2df8181ae83871b52275ed41932376e5f7d7ef090f1bd76ba3748d9"
+    },
+    "system/portfolio-2C3B448C4051A3B2611F5B9CE6AFCE1B.jsonl": {
+      "bytes": 1464,
+      "sha256": "3c229039c06f1cada197193f3c1236720797e26649a3c103d8def8f5c1d673cf"
+    },
+    "system/portfolio-5FB0645944C76804AB0E33A5A15FD46C.json": {
+      "bytes": 711,
+      "sha256": "6c861ba94beb40823624a31951286a6b2399539c82b59e12a0cae41a864a9a7a"
+    },
+    "system/portfolio-5FB0645944C76804AB0E33A5A15FD46C.jsonl": {
+      "bytes": 1462,
+      "sha256": "a7dcd0d6776cca0010238a25190e9bd6fb7f8997ce18bebdb3ccde4822736565"
+    },
+    "system/portfolio-65D6658445D19E5F6551968290F8F878.json": {
+      "bytes": 714,
+      "sha256": "283369c8efcc400e53499226114b7eee649e2adbf6af85a00c2c4712c0642b12"
+    },
+    "system/portfolio-65D6658445D19E5F6551968290F8F878.jsonl": {
+      "bytes": 1702,
+      "sha256": "798ef81093d9e855a8b93bfedbae6c24ef1f59a9a1464c70ec0f3972a86d59e7"
+    },
+    "system/portfolio-AC63AD9F42D8B5E04B6E6FB8395D5F92.json": {
+      "bytes": 716,
+      "sha256": "9a7662c364addbc71a6b3fe938d859342889f855e5a1a37ea32bd9bd44d21c64"
+    },
+    "system/portfolio-AC63AD9F42D8B5E04B6E6FB8395D5F92.jsonl": {
+      "bytes": 2783,
+      "sha256": "2cf93eb7f698dc8ea9706a23d9d14ba043de9eb37701839ed05030495df29c29"
+    },
+    "system/portfolio-D7DD35CC47149A4C67312CBCA36C17A8.json": {
+      "bytes": 713,
+      "sha256": "2b7f5d92e3102ace9f6f6f820ac4fdf9a6e5c35b9aeeb1e210222f76d3966299"
+    },
+    "system/portfolio-D7DD35CC47149A4C67312CBCA36C17A8.jsonl": {
+      "bytes": 1465,
+      "sha256": "f0f2a81713cdad5865c74c5fe4f264b35f8b6d90f2db9a6a7b8e08240ab50d77"
+    }
+  }
+}

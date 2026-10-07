@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "engine": "unreal-runtime",
+  "launch": "packaged-development",
+  "command": [
+    "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+    "-AegisV2",
+    "-AegisPortfolio",
+    "-AegisV2Probe",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-ForceRes",
+    "-ResX=1280",
+    "-ResY=720",
+    "-windowed",
+    "-unattended",
+    "-nop4",
+    "-nosound",
+    "-nosplash",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-AegisV2ProbeOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\system",
+    "-abslog=D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\engine.log"
+  ],
+  "expectedAssertions": [
+    "begun_game_world_v2",
+    "briefing_defaults_route_energy",
+    "briefing_actions_have_no_cost",
+    "v_toggles_route_in_briefing",
+    "enter_deploys_frozen_active_trial",
+    "active_v_cannot_change_route",
+    "full_health_repair_has_no_cost",
+    "partial_charge_starts_without_spending",
+    "partial_charge_release_is_free",
+    "charging_blocks_primary_fire",
+    "pause_cancels_charge_without_cost",
+    "paused_actions_preserve_time_energy",
+    "small_repair_quote_is_8",
+    "small_repair_spends_8_heals_10",
+    "small_repair_cooldown_rejects_repeat",
+    "restart_resets_route_energy_charge",
+    "large_repair_quote_is_40",
+    "large_repair_spends_40",
+    "large_repair_actual_30_20",
+    "full_charge_reaches_ready_without_spending",
+    "charged_shot_spends_12",
+    "charged_shot_hits_two_for_52",
+    "insufficient_energy_full_charge_release_is_free",
+    "second_restart_resets_all_v2_state",
+    "outside_relay_overclock_rejected",
+    "relay_overclock_spends_35",
+    "overclock_is_2x_and_used",
+    "overclock_repeat_has_no_cost",
+    "contested_relay_consumes_duration_without_progress",
+    "overclock_pause_freezes_timer",
+    "overclock_restart_clears_used_route_and_energy",
+    "out_of_range_ally_repair_rejected",
+    "covered_ally_repair_rejected",
+    "clear_ally_repair_quote_is_16",
+    "clear_ally_repair_charges_16_heals_20",
+    "normal_menu_quit_available"
+  ],
+  "notCovered": [
+    "real window focus loss",
+    "charge cancellation on natural stage transition",
+    "upgrade penetration of three targets",
+    "V on first upgrade page",
+    "F rejection during extraction",
+    "F expiration and next-relay eligibility",
+    "symbiosis healing"
+  ],
+  "fixtureDamage": true,
+  "fixturePlacement": true,
+  "aiFrozen": true,
+  "syntheticKeyboardInput": true,
+  "humanPlaytest": false,
+  "policyPerformanceTest": false,
+  "actorDeadlineSeconds": 45,
+  "processTimeoutSeconds": 180,
+  "startedAtUtc": "2026-09-18T05:43:46.762163+00:00",
+  "inputsBefore": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "wrappersBefore": {
+    "run_v2_probe.py": "112cc6cb05fc39813327533226dc7793d5eaea80d42b8527cd73d10f458e63a3",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4"
+  },
+  "exitCode": 0,
+  "sessions": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\system\\portfolio-DC5FC2354CA2263543708EA3E3BC2EB3.jsonl",
+      "sha256": "69e33e988d7397878a34e3a3b6689b7aef72f13b0c0075970ed0d5b8980a4305",
+      "summarySha256": "6a0e3aa63ddbe649ae51e55eae435ecb56fa57b69e71d9f3fa703f517d31457e"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\system\\portfolio-DC1A5AEC41C663BDA3AEB98F5D0D0669.jsonl",
+      "sha256": "c02c63ac521a8589b22aac2a6aa160db6c8458a1a2b752e5eda77d013325716a",
+      "summarySha256": "dd1ccbe847803fa88d7b4f430f4d5a1921d0b43cf74af98c67be6a012dd25263"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\system\\portfolio-526A6B83447AB77550DAF5BC1ABF83E7.jsonl",
+      "sha256": "72fa648e48cbefb231563afef70898d935e588a6b455778823682f22d28bfd96",
+      "summarySha256": "2834179098b006d1df499cc731aeb832510a2f65ea357e9e4cd31b910a70bc7b"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\system\\portfolio-3F06748345A7306BFCD761A4F5881A10.jsonl",
+      "sha256": "ba1f42dba346abd38b3de1b6bca8fcc165416904d4a6d61e07e3dcbd1add452c",
+      "summarySha256": "e395eaca859d10d40d4d74cd63500518789c4ccca8f3d26f39a1348f39a2235c"
+    }
+  ],
+  "nativeAssertions": 36,
+  "inputsAfter": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "wrappersAfter": {
+    "run_v2_probe.py": "112cc6cb05fc39813327533226dc7793d5eaea80d42b8527cd73d10f458e63a3",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4"
+  },
+  "wallSeconds": 13.75,
+  "files": {
+    "engine.log": {
+      "bytes": 86626,
+      "sha256": "97c28b6be3594435f7672bc6f4a03fda5e083fe6ba75c91386736a8803de3e71"
+    },
+    "stdout.log": {
+      "bytes": 86526,
+      "sha256": "99dd94d75e31c9989c0086bf8d69d140ec81818a02a752db4f932000ed4b0148"
+    },
+    "system\\portfolio-3F06748345A7306BFCD761A4F5881A10.json": {
+      "bytes": 1172,
+      "sha256": "e395eaca859d10d40d4d74cd63500518789c4ccca8f3d26f39a1348f39a2235c"
+    },
+    "system\\portfolio-3F06748345A7306BFCD761A4F5881A10.jsonl": {
+      "bytes": 3597,
+      "sha256": "ba1f42dba346abd38b3de1b6bca8fcc165416904d4a6d61e07e3dcbd1add452c"
+    },
+    "system\\portfolio-526A6B83447AB77550DAF5BC1ABF83E7.json": {
+      "bytes": 1171,
+      "sha256": "2834179098b006d1df499cc731aeb832510a2f65ea357e9e4cd31b910a70bc7b"
+    },
+    "system\\portfolio-526A6B83447AB77550DAF5BC1ABF83E7.jsonl": {
+      "bytes": 2836,
+      "sha256": "72fa648e48cbefb231563afef70898d935e588a6b455778823682f22d28bfd96"
+    },
+    "system\\portfolio-DC1A5AEC41C663BDA3AEB98F5D0D0669.json": {
+      "bytes": 1177,
+      "sha256": "dd1ccbe847803fa88d7b4f430f4d5a1921d0b43cf74af98c67be6a012dd25263"
+    },
+    "system\\portfolio-DC1A5AEC41C663BDA3AEB98F5D0D0669.jsonl": {
+      "bytes": 4313,
+      "sha256": "c02c63ac521a8589b22aac2a6aa160db6c8458a1a2b752e5eda77d013325716a"
+    },
+    "system\\portfolio-DC5FC2354CA2263543708EA3E3BC2EB3.json": {
+      "bytes": 1171,
+      "sha256": "6a0e3aa63ddbe649ae51e55eae435ecb56fa57b69e71d9f3fa703f517d31457e"
+    },
+    "system\\portfolio-DC5FC2354CA2263543708EA3E3BC2EB3.jsonl": {
+      "bytes": 3712,
+      "sha256": "69e33e988d7397878a34e3a3b6689b7aef72f13b0c0075970ed0d5b8980a4305"
+    },
+    "v2-probe.json": {
+      "bytes": 20452,
+      "sha256": "4157c71cc30b5f3860aa4e4d3bbbef38f6899e9e21ac00325a4283b2499d13c0"
+    }
+  }
+}

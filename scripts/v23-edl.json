@@ -1,0 +1,11 @@
+[
+  {"label":"briefing_and_stage1","start":0.00,"end":16.20,"reason":"中文默认与 L 英文切换；进入目标并推进中继"},
+  {"label":"upgrade_1","start":16.20,"end":24.73,"reason":"恢复中文并完成第一次升级；准备下一段路线"},
+  {"label":"stage2_charge","start":24.73,"end":37.60,"reason":"蓄力射击、脉冲打断、超频与中继推进"},
+  {"label":"upgrade_2","start":48.43,"end":57.00,"reason":"第二次升级；调整火力与资源节奏"},
+  {"label":"stage3_open","start":57.00,"end":70.00,"reason":"第三阶段开局；处理威胁并与队友协同"},
+  {"label":"stage3_route","start":70.00,"end":83.00,"reason":"沿地图路线转移；在输出与修复之间取舍"},
+  {"label":"stage3_mid","start":83.00,"end":94.00,"reason":"掩体走位、火力交换与队友状态反馈"},
+  {"label":"stage3_recover","start":94.00,"end":108.00,"reason":"修复资源并为最后的撤离保留余量"},
+  {"label":"stage3_finish","start":108.00,"end":121.90,"reason":"清敌、进入撤离区并完成结算闭环"}
+]

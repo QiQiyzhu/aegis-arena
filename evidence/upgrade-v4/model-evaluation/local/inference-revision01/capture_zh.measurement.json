@@ -1,0 +1,44 @@
+{
+  "case": "capture_zh",
+  "instruction": "先控制信号中继，再掩护我。",
+  "expectedSkill": "capture_relay",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1953.793400003633,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": true,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "Control relay then protect",
+    "steps": [
+      {
+        "skill": "capture_relay",
+        "target": "none"
+      },
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 52,
+    "prompt_tokens": 540,
+    "total_tokens": 592,
+    "prompt_tokens_details": {
+      "cached_tokens": 396
+    }
+  },
+  "timings": {
+    "cache_n": 396,
+    "prompt_n": 144,
+    "prompt_ms": 501.095,
+    "prompt_per_token_ms": 3.479826388888889,
+    "prompt_per_second": 287.37065825841404,
+    "predicted_n": 52,
+    "predicted_ms": 1419.633,
+    "predicted_per_token_ms": 27.835941176470588,
+    "predicted_per_second": 35.924777741853
+  }
+}

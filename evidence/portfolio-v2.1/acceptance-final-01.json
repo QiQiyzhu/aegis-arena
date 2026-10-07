@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "presentationVersion": "2.1",
+  "deliveryReady": true,
+  "reviewedAtUtc": "2026-09-18T06:12:43.287214+00:00",
+  "inputs": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "package": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "cb296319c3067f01a82de6ffd0810ab8e756a9f3bdcb06a06c4c461d9aea30fa"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298008,
+        "sha256": "ad2acbd0a3aca59d010de83087a7eb39c07fd75d68b8825ac7875d6e9d54ab72"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 17788128,
+        "sha256": "fd91546d7ac0783b8fce38c4cc5a505d10025f3a55319a24d0448b8415798029"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 60343,
+        "sha256": "22f01dc24d808b20e7168a2ce5662bc6a0db9dd53a98252333e706e62b61b312"
+      },
+      "global.ucas": {
+        "bytes": 1569504,
+        "sha256": "caece702b1705dbc7d0b8e672c65dacbf41f8f1dc7b7749a88d60790305ebe35"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "4a644a27e508da88fe20b40223974f9e72e5b861e7e6614e9235bca4bb4269e5"
+      }
+    }
+  },
+  "nativeControl": {
+    "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-package-02\\provenance.json",
+    "bytes": 10408,
+    "sha256": "1712cb533d5dde5b0fa65acfc2c78a6228b0ab67503107ae65bb58bd116fd1ef"
+  },
+  "nativeAudio": {
+    "nativeAssertions": 15,
+    "masterSubmixWavs": {
+      "on": {
+        "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-on.wav",
+        "bytes": 286764,
+        "sha256": "2663267433e8c2ecde35e11d7748ef7afcdef55c0ae83e7a72488b7acd9fd836",
+        "channels": 2,
+        "sampleRate": 48000,
+        "frames": 71680,
+        "duration": 1.4933333333333334,
+        "peak": 0.1837158203125,
+        "rms": 0.054804367578191675
+      },
+      "muted": {
+        "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-muted.wav",
+        "bytes": 229420,
+        "sha256": "156b6cc305c14859b2ba6a242d4d9ec7e82458fbf86827b66d91397d1f9a7284",
+        "channels": 2,
+        "sampleRate": 48000,
+        "frames": 57344,
+        "duration": 1.1946666666666668,
+        "peak": 0.0,
+        "rms": 0.0
+      },
+      "restored": {
+        "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\audio\\bgm-restored.wav",
+        "bytes": 286764,
+        "sha256": "48723287d3375f32f026c71fde130a1449539d480b5db88d33561886d65925dd",
+        "channels": 2,
+        "sampleRate": 48000,
+        "frames": 71680,
+        "duration": 1.4933333333333334,
+        "peak": 0.1839599609375,
+        "rms": 0.056678088183778466
+      }
+    },
+    "deviceConversionDiagnostics": [
+      "Sample rate mismatch. Engine sample rate: 48000 Device sample rate: 44100",
+      "Device level sample rate conversion will be used."
+    ],
+    "scope": "Actual UE master-mix samples and ordinary keyboard lifecycle. Not physical speaker proof or a human listening test."
+  },
+  "nativeAudioProvenance": {
+    "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-03\\provenance.json",
+    "bytes": 8924,
+    "sha256": "0214c4f0ce0facc368278013edd83f6145753784574043c3f39fdc1213ccdb4e"
+  },
+  "nativeLab": {
+    "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\lab-package-02\\provenance.json",
+    "bytes": 15531,
+    "sha256": "163ca4c9da2cae20b9524e285a6fe20b9827a23cb85148ad066c2ce8a35eaa09"
+  },
+  "capture": {
+    "provenance": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\provenance.json",
+      "bytes": 563755,
+      "sha256": "8af9b3eb11ead5069d67ee94db49284c24dcb489ea8abd42c573ed46468fed12"
+    },
+    "outcome": "won",
+    "seed": 1101,
+    "policy": "improved",
+    "metrics": {
+      "outcome": "won",
+      "completed": true,
+      "trialElapsedSeconds": 106.80000557005405,
+      "stagesRewarded": 3,
+      "alliedActualDamageDealt": 1260,
+      "playerActualDamageTaken": 238,
+      "companionActualDamageTaken": 42,
+      "companionSurvived": true,
+      "companionStateChanges": 122,
+      "companionShortReversalsUnder1s": 18,
+      "companionShots": 25,
+      "companionMoveRequests": 83,
+      "guardSlotChecks": 46,
+      "guardSlotRejections": 12,
+      "guardAlternateSelections": 6,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "pulsesUsed": 1,
+      "repairsUsed": 4,
+      "energySpent": 237,
+      "energyFinal": 42,
+      "energyOverflow": 0,
+      "symbiosisPlayerActualHealing": 6.266664505004883,
+      "symbiosisCompanionActualHealing": 1.0666656494140625
+    },
+    "systemEvidence": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-02\\system\\portfolio-A0D224764863FC7A346B48B306537967.json",
+      "sha256": "f95f7dbb589b7e6525d587b28d68f79e742c09b23eed2ef1b743cdd41fb4be3d",
+      "traceSha256": "ffa855e361ab7b9cf46195f1ac607ee459b6e67e9ef883aff65fd061e641b944",
+      "events": 302,
+      "outcome": "won",
+      "ledgerReconciled": true,
+      "damageRoleVerification": "full",
+      "pulsesUsed": 1,
+      "repairsUsed": 4,
+      "actualRepairHealing": 104.933349609375,
+      "chargedShots": 1,
+      "overclocks": 3,
+      "northRouteFirst": true,
+      "symbiosisActualHealing": 7.333332315087318,
+      "companionStateChanges": 122,
+      "companionShortReversalsUnder1s": 18,
+      "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+      "guardCounterScope": "native reported totals; complete gameplay is observational, not a causal fixture"
+    },
+    "nativeCapture": {
+      "resultQuitEvidence": {
+        "outcome": "won",
+        "key": "X",
+        "normalExit": true,
+        "resultHoldSeconds": 4.000000208616257
+      },
+      "frames": 3656,
+      "videoSeconds": 121.90000635758042,
+      "knownEngineWarnings": [
+        "[2026.09.18-05.44.48:946][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+      ]
+    },
+    "resolution": [
+      1920,
+      1080
+    ]
+  },
+  "vfx": {
+    "lastPlayerSnapshot": {
+      "shots": 58,
+      "chargedShots": 1,
+      "renderedShots": 58,
+      "traceImpacts": 70,
+      "damageImpacts": 59,
+      "worldImpacts": 11,
+      "blockedCharacterImpacts": 0,
+      "fatalImpacts": 10,
+      "deathsObserved": 0,
+      "renderedDeathBursts": 0,
+      "poolComponents": 27,
+      "peakActiveComponents": 18,
+      "reusedActiveSlots": 0
+    },
+    "samplesChecked": 1226,
+    "dashAfterRepeatedShotsSamples": 11,
+    "scope": "Actual player shot/impact counters and per-player pool; visual quality reviewed separately. Not GPU performance."
+  },
+  "video": {
+    "record": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\video-provenance.json",
+      "bytes": 19356,
+      "sha256": "adebbf3dcea36d36f8ff11f7bac0db05f201abee50a9e2437556e8e0fceb55ca"
+    },
+    "video": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\Aegis-Arena-v2.1-Demo.mp4",
+      "bytes": 18718486,
+      "sha256": "4cb6f78b262582bb7f0ad43eb38181f52ca67d9f7450f10d0fc9d53e35ce8224"
+    },
+    "decodedFrames": 4016,
+    "durationSeconds": 133.87,
+    "nativeFrames": 3656,
+    "audioScope": "Real engine-triggered audio events remixed from source WAVs, not loopback recording",
+    "visualReview": {
+      "record": {
+        "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\video-final-01\\visual-review.json",
+        "bytes": 1522,
+        "sha256": "b81d48b8b1a9e42662678b81a7d915fd2e7f1a160d532a5f5cda093db69ad446"
+      },
+      "reviewedImageCount": 5,
+      "explicitReviewPassed": true,
+      "scope": "Recorded human/agent visual inspection; no human gameplay or usability claim"
+    }
+  },
+  "document": {
+    "record": {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\build-record.json",
+      "bytes": 13150,
+      "sha256": "ee0fd633a33efabd1ae1c7cba1ca093785d61889cb26cdf9d505cdc559d99962"
+    },
+    "pageCount": 11,
+    "outputs": [
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2.1\\documents\\Aegis_Arena_System_Design_v2.1.docx",
+        "bytes": 12788395,
+        "sha256": "8c39901fa9f75b9674a08fd67ee710d8fe5a5498cb1a4058e0a27adb7e88739c"
+      },
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v2.1\\documents\\Aegis_Arena_System_Design_v2.1.pdf",
+        "bytes": 1491115,
+        "sha256": "c3fab283f3454d09ce17e7eb950d1d3e28242e738f8dc10ef78b2ebee53edb42"
+      }
+    ],
+    "visualReview": {
+      "record": {
+        "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\document-qa-01\\visual-review.json",
+        "bytes": 3328,
+        "sha256": "0108c0fa5bc97398a79f0dc0ab6490569d67bd2cb9f45fa6973a62cfae7dd0b5"
+      },
+      "reviewedImageCount": 11,
+      "explicitReviewPassed": true,
+      "scope": "Recorded human/agent visual inspection; no human gameplay or usability claim"
+    }
+  },
+  "historicalAI": {
+    "acceptance": {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\acceptance-final-01.json",
+      "bytes": 68587,
+      "sha256": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965"
+    },
+    "scope": "Preserved v2.0 Guard case and paired outcomes; no v2.1 AI reevaluation or training claim"
+  },
+  "preservedDevelopmentFailures": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01",
+      "failure": "Native AV probe failed",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\av-probe.json",
+          "bytes": 5030,
+          "sha256": "84f5d3a498c8ef8926c2d73cf556631bca5a0165b0fda4f635cbda165719b124"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\engine.log",
+          "bytes": 136571,
+          "sha256": "cdfd7aa869417162ef0e1ee37c08595f51cb18347c89ca28512ed3534d317282"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\provenance.json",
+          "bytes": 5394,
+          "sha256": "b6c6853e39bc5c566756fb97253619ad8e7441352cbe878722326c4fec85e81a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\stdout.log",
+          "bytes": 137582,
+          "sha256": "201e3abcd35af8d3b0dc5e395d181ca157008b19f89192edc2e6c1f5d4037e08"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-A897874C4DC434CDF8A66B9D3F06A3CE.json",
+          "bytes": 1150,
+          "sha256": "203aeb924bb8e8863f44721a418d6b058dbdaa8cd08c679f27c6d2002aa0ddbc"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-A897874C4DC434CDF8A66B9D3F06A3CE.jsonl",
+          "bytes": 1915,
+          "sha256": "f6cc3840082adc927fe3effd7a1bf8ba82605d69756037c9108eb35d4440ad06"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-B7C8C76744D41B27ABDA96BFEF48841A.json",
+          "bytes": 1167,
+          "sha256": "33700f1d6d4b46db09f51b9508815c535c835acf5b0b98b8c43a1ca9dcebb884"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-B7C8C76744D41B27ABDA96BFEF48841A.jsonl",
+          "bytes": 2377,
+          "sha256": "cbc8f9a9acc8456f612997d13cecab63dd608e34fc7cedfc0e936721245f7199"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-E961464D4FE582B6068E09ACF47B0FB4.json",
+          "bytes": 1149,
+          "sha256": "14b9ccbd18aea07d47a38cf9c43d4d77d04b4073b38f09394119a1c7f86ac173"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-01\\system\\portfolio-E961464D4FE582B6068E09ACF47B0FB4.jsonl",
+          "bytes": 1914,
+          "sha256": "c09b383fa84227fec203a02e88f648456a087cd6f14aebe1c8fdb75214d34dec"
+        }
+      ]
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02",
+      "failure": "Missing or clipped rendered music: on",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\av-probe.json",
+          "bytes": 5406,
+          "sha256": "99d32a37ca96613218b34a7e2984ac473aaec306e69064fec513affabfdf4c26"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\engine.log",
+          "bytes": 136978,
+          "sha256": "9886a5d1f89e2c826b6426952fcde31c59eb9ebcc37056c713ce545d305ca4ac"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\provenance.json",
+          "bytes": 5740,
+          "sha256": "7f947ea62fc62c9ce6e5f007183c133f430e8eaa59609c41d3a93b6c410d8fca"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\stdout.log",
+          "bytes": 138019,
+          "sha256": "5ea411161485edf9c784cf6653600d4f25cd6047dbfc10a46dfa62dcb044ca2f"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-410528974BBB3EC6DF9456997DDD0CBC.json",
+          "bytes": 1166,
+          "sha256": "c903044e492396408b56e662d9d3ee4d6e7a90c73e418c6cf207c4b340ad2e67"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-410528974BBB3EC6DF9456997DDD0CBC.jsonl",
+          "bytes": 2376,
+          "sha256": "3098df595b0728146826c2fdb655a844c903727a47841e93b27a5cab41f93ab1"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-6AE771884D5DC351488D35BE82408E58.json",
+          "bytes": 1150,
+          "sha256": "83666c9ffb549277dbd3ec4011dc8b238117b6a71bba7ff35e20cfe66462a635"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-6AE771884D5DC351488D35BE82408E58.jsonl",
+          "bytes": 1915,
+          "sha256": "a5ebcd12e0b650d4b09f24d5c34a1c3b7f6423de5e1b5ddbc6e9859cfb79da92"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-E17415BF4FEB593385C142A2C0A8A629.json",
+          "bytes": 1148,
+          "sha256": "023a90f3a0937b74139d348733cf929472e37eb0dfc598cfb5c7a77add2ec38f"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-editor-02\\system\\portfolio-E17415BF4FEB593385C142A2C0A8A629.jsonl",
+          "bytes": 1913,
+          "sha256": "63036d7298be300abdec1562ced6ea8b0fecf39625b41fbe0126a1ec0ce21027"
+        }
+      ]
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02",
+      "failure": "Engine log reported an unaccepted warning, error or fatal message",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\av-probe.json",
+          "bytes": 5407,
+          "sha256": "9efe52e26676903c655e73ecd9661812d38a34fb1be8384615adf9d7791b43a6"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\engine.log",
+          "bytes": 90047,
+          "sha256": "254ed5790b906db548d9dad39be7841108be4982a251b81bddb1fde7cec9d917"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\provenance.json",
+          "bytes": 7430,
+          "sha256": "0770b8a1859d4f9c23358281c836b1393f7623d1c678e76a4c2da7427e3e159c"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\stdout.log",
+          "bytes": 89917,
+          "sha256": "677b87bf341aa7ad9f58cae26fca7c55db6fb02b364c327a88159af87f2a2481"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-0A9A889F497C1B693131A5B8144D1C80.json",
+          "bytes": 1151,
+          "sha256": "4c42e87d34caa98c629ce68524f14973903865030fa9925741fd4abacc9d8711"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-0A9A889F497C1B693131A5B8144D1C80.jsonl",
+          "bytes": 1915,
+          "sha256": "96609de360f5835ed1addb35fb047ebb3d1bd97c46a282092f6bcf72c109d176"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-481068714F4E40F31514B39B6070630E.json",
+          "bytes": 1149,
+          "sha256": "aeb151eae91c7f6621aed54105421228132e20234c20218eaa92a8dbfc97db8a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-481068714F4E40F31514B39B6070630E.jsonl",
+          "bytes": 1913,
+          "sha256": "e957218da3fa3b89709d4ee01d390e66cc37cd160bff9c906f5379d8fcb686bf"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-FF113249407D93C22C514B9E797D565A.json",
+          "bytes": 1167,
+          "sha256": "3ceb2ad62706330bfb3ffa2ac0e496698fbd39f661447fef902970accabadb62"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\audio-package-02\\system\\portfolio-FF113249407D93C22C514B9E797D565A.jsonl",
+          "bytes": 2376,
+          "sha256": "ad6e3fb684cd49710ddbb12be11e70967819787a7679a72bd675c4aaa14e3c72"
+        }
+      ]
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01",
+      "failure": "ValueError('Capture process exited unsuccessfully')",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\engine.log",
+          "bytes": 85393,
+          "sha256": "12334bbc9f00c9f2fbf677cfcac43ad21efc64f6737ed58cbb5e4ddcca6e44a1"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\provenance.json",
+          "bytes": 61576,
+          "sha256": "da0b3979d0f395953510be109259517b1bb4fbb1ccb00a37fb519e96bb85e9cb"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\stdout.log",
+          "bytes": 85334,
+          "sha256": "ed56a1b90f51d89567f504b603c29e7cfc539e755545cd2fc0871e530945ac40"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\capture-01\\system\\portfolio-1E282C4A41EDF7B08E602580464E475A.jsonl",
+          "bytes": 10495,
+          "sha256": "fe484e2f8919f9e24bef31bd53789d188f3192aa04f2e36d4ccb5db3fc1ae087"
+        }
+      ]
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01",
+      "failure": "Engine log reported an unaccepted warning, error or fatal message",
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\engine.log",
+          "bytes": 133120,
+          "sha256": "942ab50979b052b54c9b2761ed74eea69f166431b9a8fccb13ac268537d36cc0"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\provenance.json",
+          "bytes": 7606,
+          "sha256": "2bc4d5fc825b447cc47c3da32a849566fa95800bf77c4a41e6317a68c8fa1252"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\stdout.log",
+          "bytes": 134131,
+          "sha256": "b69a64b8bc9c73c4ea14201490baae1d352d0745f30c320e61928d8029fbe69a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-741FFC5745E0D83E7A482885300FEA4C.json",
+          "bytes": 1175,
+          "sha256": "9c1617dce3afcaed077f7b6367fe89299cccaea7adc55ce6c711b7352127081a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-741FFC5745E0D83E7A482885300FEA4C.jsonl",
+          "bytes": 4242,
+          "sha256": "00da7b024c77067f5d6154f28c00c548e4a15d4ace4db96ebd18d2beaf17900f"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-BE2CCE4E47649017C575A1A66A21417C.json",
+          "bytes": 1170,
+          "sha256": "857c834aaebfa94350008cff16d891a5b4a6ab1c6579bc1a324a6430b0ac272a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-BE2CCE4E47649017C575A1A66A21417C.jsonl",
+          "bytes": 2834,
+          "sha256": "3f115ace4e681c11074c6bc85fbec2f00ab816b05024de99673b928a627cc9f9"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-C53F826045D50ED12631AC94FCC84A16.json",
+          "bytes": 1171,
+          "sha256": "d90b91d60d6198566723428bd75e50b346e93718d5aae09c932c06cdbec76c90"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-C53F826045D50ED12631AC94FCC84A16.jsonl",
+          "bytes": 3579,
+          "sha256": "d45301761668505af5bbbc40043f929af1d0c971642b85b7ced77c1bd7e0c25c"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-D2E3D8464760C10B0558DB9787EDAFB6.json",
+          "bytes": 1171,
+          "sha256": "46d3830664d57ea79117fe9256395c5b1e2f1d20631f74d57c866a0e813553ca"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\system\\portfolio-D2E3D8464760C10B0558DB9787EDAFB6.jsonl",
+          "bytes": 3697,
+          "sha256": "9af5cecd06efc661de977ce759e6998043ac7001ea75b527c701bcd1eaedd249"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\control-editor-01\\v2-probe.json",
+          "bytes": 20167,
+          "sha256": "1094ccc9d2ea18df00be77d17dad315d36ce5c497661d72e2b51b4dbcf801d3c"
+        }
+      ]
+    }
+  ],
+  "preservedCompletedRegressions": [
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01",
+      "technicalPassed": true,
+      "result": {
+        "mode": "aegis-prism-fall-v2.0",
+        "chargedShots": 3,
+        "overclocks": 2,
+        "symbiosisPlayerActualHealing": 36.000492095947266,
+        "symbiosisCompanionActualHealing": 0,
+        "northRouteFirst": true,
+        "companionSurvived": true,
+        "companionStateChanges": 96,
+        "companionShortReversalsUnder1s": 16,
+        "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+        "companionShots": 16,
+        "companionMoveRequests": 66,
+        "guardSlotChecks": 25,
+        "guardSlotRejections": 6,
+        "guardAlternateSelections": 6,
+        "runId": "73AF350849D689D72A0C07901FC0F1A7",
+        "outcome": "won",
+        "completed": true,
+        "sessionGameSeconds": 96.6000050380826,
+        "trialElapsedSeconds": 92.60000482946634,
+        "energyInitial": 60,
+        "energyFinal": 67,
+        "energyEarned": 219,
+        "energySpent": 212,
+        "energyOverflow": 0,
+        "pulsesUsed": 2,
+        "repairsUsed": 2,
+        "enemiesRewarded": 12,
+        "stagesRewarded": 3,
+        "repairPlayerActualHealing": 44,
+        "repairCompanionActualHealing": 0,
+        "alliedActualDamageDealt": 1260,
+        "playerActualDamageTaken": 84,
+        "companionActualDamageTaken": 84,
+        "upgradeMask": 5,
+        "ledgerBalanced": true
+      },
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\capture.json",
+          "bytes": 2243996,
+          "sha256": "e1fa66bb7f47139741645c4875ed025645d9b4334efd4ec3472e0330b6b218db"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\engine.log",
+          "bytes": 142487,
+          "sha256": "b1879a862bf133a51a33badb53c2946993f57cec7e530aa0b34df70e9ce19300"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\provenance.json",
+          "bytes": 6885,
+          "sha256": "be82fb60c46d70e3b20ac05e1bf0a5c58c3622f557037e4fc53133eef5f099a0"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\stdout.log",
+          "bytes": 143528,
+          "sha256": "62c9e4da915fedbc73be9eb15a0fa07309b15878dc7dee7dc2c33bb7b26b94c7"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\system\\portfolio-73AF350849D689D72A0C07901FC0F1A7.json",
+          "bytes": 1197,
+          "sha256": "7dfef5ad38be74b05ca2c84adf16b2af20e89157b52ea0ea5df5555d8bc2e414"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-editor-01\\system\\portfolio-73AF350849D689D72A0C07901FC0F1A7.jsonl",
+          "bytes": 106666,
+          "sha256": "a1a8c3a49b577739dd37dfc4852709c441f57f7444f3e0721287f04284cc4bbc"
+        }
+      ],
+      "scope": "Separate no-frame regression execution; not a paired AI comparison or the final video run"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01",
+      "technicalPassed": true,
+      "result": {
+        "mode": "aegis-prism-fall-v2.0",
+        "chargedShots": 1,
+        "overclocks": 3,
+        "symbiosisPlayerActualHealing": 0,
+        "symbiosisCompanionActualHealing": 1.0666656494140625,
+        "northRouteFirst": true,
+        "companionSurvived": true,
+        "companionStateChanges": 70,
+        "companionShortReversalsUnder1s": 14,
+        "stabilityMetricDefinition": "Observed tactical DebugState transitions; includes normal aim/fire/reposition cycles, not Utility switching",
+        "companionShots": 12,
+        "companionMoveRequests": 59,
+        "guardSlotChecks": 40,
+        "guardSlotRejections": 20,
+        "guardAlternateSelections": 8,
+        "runId": "6751F6E847D1AAAF6EB8C99AB08157D4",
+        "outcome": "lost",
+        "completed": true,
+        "sessionGameSeconds": 84.00000438094139,
+        "trialElapsedSeconds": 80.00000417232513,
+        "energyInitial": 60,
+        "energyFinal": 29,
+        "energyEarned": 158,
+        "energySpent": 189,
+        "energyOverflow": 0,
+        "pulsesUsed": 1,
+        "repairsUsed": 2,
+        "enemiesRewarded": 9,
+        "stagesRewarded": 2,
+        "repairPlayerActualHealing": 44,
+        "repairCompanionActualHealing": 0.933349609375,
+        "alliedActualDamageDealt": 1016,
+        "playerActualDamageTaken": 184,
+        "companionActualDamageTaken": 42,
+        "upgradeMask": 5,
+        "ledgerBalanced": true
+      },
+      "files": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\capture.json",
+          "bytes": 1987484,
+          "sha256": "7713160121e3bc0c08d4ff2041883248aba0121e3a1c2fdc52681fffb0b8a5fa"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\engine.log",
+          "bytes": 84335,
+          "sha256": "01f78a573f5fe75f9e2a14b8302fbe46de7153699629c28c0f67fbf3dbf6c575"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\provenance.json",
+          "bytes": 8446,
+          "sha256": "082907843d80419324a173435547f8029566a440e53f525f0598421f8de6802f"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\stdout.log",
+          "bytes": 84205,
+          "sha256": "60997768068613de74ed1a3911a487acb77167dfb4a9faf6ccb1fd9ce41654cb"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\system\\portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.json",
+          "bytes": 1215,
+          "sha256": "a0ecd64d58272ab596c15d4a68305975d5b19920aa15fa25d33061961156f95e"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2.1-20260918\\regression-package-01\\system\\portfolio-6751F6E847D1AAAF6EB8C99AB08157D4.jsonl",
+          "bytes": 54375,
+          "sha256": "2f14678ec35ed5cb36254d86f0a54a89252da8a6aa8c663d80e7c842311d5e61"
+        }
+      ],
+      "scope": "Separate no-frame regression execution; not a paired AI comparison or the final video run"
+    }
+  ],
+  "training": false,
+  "humanPlaytest": false,
+  "performanceBenchmark": false,
+  "musicScope": "Native master-submix checks cover briefing/mute/restore, lifecycle covers relay1/pause/restart; video reconstructs issued music/SFX commands."
+}

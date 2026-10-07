@@ -1,0 +1,705 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "E82BCD4C4689EA4B2563859893C7F2FE",
+			"instanceName": "雨竹砌筑-20556",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-19.59.08",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 11.751656532287598,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "Trial lifecycle - fixture damage, not balance evaluation",
+			"fullTestPath": "Project.Functional Tests.Aegis.Maps.AegisTrialFunctional.Trial lifecycle - fixture damage, not balance evaluation",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"E82BCD4C4689EA4B2563859893C7F2FE"
+			],
+			"duration": 11.751656532287598,
+			"dateTime": "2026.09.10-19.58.56",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exactly one configured trial runner)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.56"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player and companion exist)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing contains no enemies or active wave)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing blocks player combat input)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Fresh player health movement collision and cooldowns restored)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Trial damage counters reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Guided deploy creates two enemies and enables combat)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Duplicate deploy cannot change mode or add enemies)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Authored hostile damage reaches real allied health components)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Damage delegates record allied output and player intake once)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (First elimination enters recovery without spawning early)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Guided recovery heals player thirty and companion forty)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.57"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Repeated recovery updates neither spawn nor postpone transition)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.58"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Recovery healing happens exactly once)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.58.58"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Second wave starts after real five-second recovery with three enemies)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Second clear enters second recovery)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.02"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Final guided wave contains four enemies after recovery)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.07"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.07"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Final wave contains exactly one elite)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.07"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Final clear wins and blocks player combat)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Finished trial cannot redeploy without restart)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player and companion exist)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing contains no enemies or active wave)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing blocks player combat input)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Fresh player health movement collision and cooldowns restored)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Trial damage counters reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Pressure opening creates three enemies)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player death produces loss and stops combat movement collision)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player and companion exist)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing contains no enemies or active wave)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing blocks player combat input)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Fresh player health movement collision and cooldowns restored)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Trial damage counters reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Retry destroys prior pawn and possesses a new one)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player and companion exist)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing contains no enemies or active wave)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing blocks player combat input)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Fresh player health movement collision and cooldowns restored)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Trial damage counters reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Retry destroys prior pawn and possesses a new one)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Player and companion exist)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing contains no enemies or active wave)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Briefing blocks player combat input)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Fresh player health movement collision and cooldowns restored)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Trial damage counters reset)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Exact bot controller and possessed-player population)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Assertion passed (Retry destroys prior pawn and possesses a new one)",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Trial lifecycle - fixture damage, not balance evaluation: Trial transitions and retries verified with fixture-authored damage",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.09.10-19.59.08"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

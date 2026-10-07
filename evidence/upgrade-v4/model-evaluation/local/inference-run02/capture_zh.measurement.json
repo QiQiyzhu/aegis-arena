@@ -1,0 +1,48 @@
+{
+  "case": "capture_zh",
+  "instruction": "先控制信号中继，再掩护我。",
+  "expectedSkill": "capture_relay",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 2342.300999996951,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": false,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "control_relay capture_relay focus_visible guard regroup",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "capture_relay",
+        "target": "t0"
+      },
+      {
+        "skill": "guard",
+        "target": "t0"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 87,
+    "prompt_tokens": 271,
+    "total_tokens": 358,
+    "prompt_tokens_details": {
+      "cached_tokens": 270
+    }
+  },
+  "timings": {
+    "cache_n": 270,
+    "prompt_n": 1,
+    "prompt_ms": 23.78,
+    "prompt_per_token_ms": 23.78,
+    "prompt_per_second": 42.052144659377625,
+    "predicted_n": 87,
+    "predicted_ms": 2266.887,
+    "predicted_per_token_ms": 26.3591511627907,
+    "predicted_per_second": 37.937488723522605
+  }
+}

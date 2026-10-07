@@ -1,0 +1,7 @@
+{
+  "shortcut": "C:/Users/yzhu/Desktop/Aegis Arena 作品集.lnk",
+  "target": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+  "arguments": "-AegisPortfolio -windowed -ResX=1280 -ResY=720 -d3d11",
+  "workingDirectory": "D:/AegisWork/Packages/portfolio-v1.5-release-r2/package/Windows",
+  "targetExists": true
+}

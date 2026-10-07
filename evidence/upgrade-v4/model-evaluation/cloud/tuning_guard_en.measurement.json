@@ -1,0 +1,37 @@
+{
+  "case": "tuning_guard_en",
+  "split": "tuning",
+  "httpStatus": 200,
+  "latencyMilliseconds": 775.1607999962289,
+  "rawResponseSha256": "4b1e1daa635734709eab5904519b796f44dcbf8a4d9185da5b926acabbfa6931",
+  "savedResponseSha256": "4b1e1daa635734709eab5904519b796f44dcbf8a4d9185da5b926acabbfa6931",
+  "credentialRedactionApplied": false,
+  "responseId": "500b762d-f6ec-42c7-8e5f-df4da6eb18bf",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 704,
+    "completion_tokens": 21,
+    "total_tokens": 725,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 320
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Protect the player",
+    "steps": [
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

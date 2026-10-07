@@ -1,0 +1,138 @@
+{
+  "createdUtc": "2026-09-17T21:10:27.347742+00:00",
+  "python": "C:\\Users\\yzhu\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "source": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\docs\\portfolio-v1.5-design.md",
+    "sha256": "d83f6f0adcdaaff0deeba66f412c8eff5bd87177644bc9eadacb10b1d5ea4197"
+  },
+  "manifest": {
+    "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-evidence-r2.json",
+    "sha256": "5f1338ce8467b5006eed070a5222658a92a62dfbb27eae5d26278fad9d387c40"
+  },
+  "nativeImages": [
+    {
+      "slot": "hero",
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\frames\\frame-001530.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6e26a345a9ed5402083bd0c1a1c3fbd0a047bb026abb53ea2dccd494edfedd59",
+      "caption": "第三阶段实机：玩家、队友、敌人预警与脉冲反馈同时出现。",
+      "version": "v1.5 / Windows Development / 30d7bb8f4da7",
+      "inputMode": "正常游戏输入驱动自动玩家；非真人",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\provenance.json"
+    },
+    {
+      "slot": "energy",
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\frames\\frame-000330.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2058d18b8202bfe3640354e7e908b7b5746264d447d51e4dce9a0270d1a904cb",
+      "caption": "实际修复：扣除 40 能量，仅恢复 14 HP；名义治疗上限不等于实际收益。",
+      "version": "v1.5 / Windows Development / 30d7bb8f4da7",
+      "inputMode": "正常游戏输入驱动自动玩家；非真人",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\provenance.json"
+    },
+    {
+      "slot": "upgrade",
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\frames\\frame-000420.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3c083f2140ccde37b82b0c612e74a3383ccbafbd52e04d7f14f5bf4836176a28",
+      "caption": "第一阶段后的三选一；时间暂停，玩家选择本局持续的升级。",
+      "version": "v1.5 / Windows Development / 30d7bb8f4da7",
+      "inputMode": "正常游戏输入驱动自动玩家；非真人",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\provenance.json"
+    },
+    {
+      "slot": "after",
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\frames\\frame-000900.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3d13a290f57129cce5a2d9e788d6fa0aad3125811a36950bdce00bac89abe6b3",
+      "caption": "v1.5 独立包：双人占圈加速、目标进度与共享能量同步展示。",
+      "version": "v1.5 / Windows Development / 30d7bb8f4da7",
+      "inputMode": "正常游戏输入驱动自动玩家；非真人",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\provenance.json"
+    },
+    {
+      "slot": "before",
+      "path": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-executing.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "edb47ea9e16855801fd297cc47dc013b73524eabeed462aeaff8723f4cd32b36",
+      "caption": "历史 v1.3 Copilot 独立包原生画面，离屏合成输入。系统与数值不同，仅作表现对照。",
+      "version": "v1.3 Copilot / Windows Development",
+      "inputMode": "合成 Slate 输入；非真人",
+      "captureKind": "native",
+      "sourceEvidence": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\provenance.json"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\provenance.json",
+      "sha256": "549bfb2aa7fd756d881a598c7c5882a6676c09130b0118251f82b24e591aa4f5"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\capture.json",
+      "sha256": "7a08816e22817234b252b379e2d2168e13875b9a7b6a58aa8c9bdd28e53d9ab4"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\probe-packaged-02\\provenance.json",
+      "sha256": "1ee5dd16d8ed69309f2caf743c164a4560d1fc32e83fa5f26edfff2c4b18445a"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\builds-r2\\20260917-204154-a04c3942cda048edbc7057b2c08164d9\\automation\\index.json",
+      "sha256": "fe87e76e1673804278a9a4d6c9132041679cb17c3144dae7a3c9f66484c348bc"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\system\\portfolio-F2CD544A4AE24B5CB9ED0588097FC751.json",
+      "sha256": "ac339770eb71a550b907e7fcba5e5d2bbd2638890f7327955229ecde487aef51"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final-02\\video-provenance.json",
+      "sha256": "5928276bf0d1c343062aec7535bd5c249803bc7bb2325aed82ad24e5cfe744b7"
+    }
+  ],
+  "pageCount": 9,
+  "pageImages": [
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-1.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-2.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-3.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-4.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-5.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-6.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-7.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-8.png",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\render\\page-9.png"
+  ],
+  "designDiagrams": [
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\design-loop.png",
+      "sha256": "3bd2492a971790bf6c7d36eae29151c5d0018c2b65377285f5f0dbef4bc5fa46",
+      "kind": "design_diagram"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\document-qa-05\\design-arena.png",
+      "sha256": "523495f5d7cc14d82e25a7c886b6470bc92692965078374c1b718acbb98ae621",
+      "kind": "design_diagram"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v1.5\\documents\\Aegis_Arena_System_Design_v1.5.docx",
+      "sha256": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e",
+      "bytes": 8202758
+    },
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v1.5\\documents\\Aegis_Arena_System_Design_v1.5.pdf",
+      "sha256": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f",
+      "bytes": 1257292
+    }
+  ],
+  "visualReviewRequired": true,
+  "visualReviewCompleted": false
+}

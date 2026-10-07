@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "version": "v1.5 PRISM RELAY / release-r2",
+  "role": "systems and general game design portfolio",
+  "configuration": "Windows Development",
+  "source": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "binaries": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298000,
+        "sha256": "9ff0721d8e5038a8bf21cfec8583aef05bc1aa37fdda524b8092468d9c76ef4b"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12786016,
+        "sha256": "e495680594a1edd0f264fc446df507a8269813363e83205bec09b78c55986f07"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 55547,
+        "sha256": "d8aa3fa687b9c1dcbcc5119cb4d6b373ded679be6148de483a2c560a1782b6b7"
+      },
+      "global.ucas": {
+        "bytes": 1568800,
+        "sha256": "cb21e77754a0e0e16df43c66f6e5469a69ef32cb41162c464e526d244f191faa"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "06bf8629dc0554fdb242a27fa7f5a8f7a2d2a23e001a6f055bf5303c8a0dbb29"
+      }
+    }
+  },
+  "nativeCoreTests": 6,
+  "nativeControlledInputAssertions": 25,
+  "inputFixture": {
+    "syntheticKeyboard": true,
+    "aiFrozen": true,
+    "damage": 45
+  },
+  "naturalRecordedRun": {
+    "mode": "aegis-portfolio-v1.5",
+    "runId": "F2CD544A4AE24B5CB9ED0588097FC751",
+    "outcome": "won",
+    "completed": true,
+    "sessionGameSeconds": 84.90000442788005,
+    "trialElapsedSeconds": 80.90000421926379,
+    "energyInitial": 60,
+    "energyFinal": 100,
+    "energyEarned": 185,
+    "energySpent": 145,
+    "energyOverflow": 34,
+    "pulsesUsed": 3,
+    "repairsUsed": 1,
+    "enemiesRewarded": 12,
+    "stagesRewarded": 3,
+    "repairPlayerActualHealing": 14,
+    "repairCompanionActualHealing": 0,
+    "alliedActualDamageDealt": 1260,
+    "playerActualDamageTaken": 70,
+    "companionActualDamageTaken": 28,
+    "upgradeMask": 6,
+    "ledgerBalanced": true,
+    "eventCount": 111,
+    "tracePath": "D:/AegisWork/Reports/portfolio-v1.5-20260918/capture-packaged-02/system/portfolio-F2CD544A4AE24B5CB9ED0588097FC751.jsonl",
+    "traceComplete": true
+  },
+  "resultKeyExit": {
+    "outcome": "won",
+    "key": "X",
+    "normalExit": true,
+    "resultHoldSeconds": 4.000000208616257
+  },
+  "companionEndState": {
+    "alive": true,
+    "basis": "Visual review of the actual native final frame: health bar and operation-ended/standing-by state",
+    "frame": {
+      "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-02\\frames\\frame-002860.png",
+      "bytes": 660209,
+      "sha256": "61d33a543e0f8a034e3a7e16b80e3a6c549296eac4f59eb43b5a7280d5616fc6"
+    }
+  },
+  "recording": {
+    "nativeFrames": 2879,
+    "fixedGameStep": true,
+    "wallSeconds": 743.1569999999992,
+    "humanPlaytest": false,
+    "hardwarePerformanceBenchmark": false
+  },
+  "video": {
+    "seconds": 107.97,
+    "bytes": 14163113,
+    "sha256": "f7f2bfb2710841068cb725db633b8e3b8ff4044ddecf2c81ba9ed7539ae361e3",
+    "decodedFrames": 3239,
+    "fullDecodePassed": true,
+    "reviewedEncodedFrames": 5,
+    "audioEvents": 195,
+    "audioMethod": "genuine engine-triggered events remixed from original WAVs; not loopback capture"
+  },
+  "documents": {
+    "pages": 9,
+    "allPagesReviewed": true,
+    "outputHashes": {
+      "Aegis_Arena_System_Design_v1.5.docx": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e",
+      "Aegis_Arena_System_Design_v1.5.pdf": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f"
+    }
+  },
+  "delivery": [
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-Portfolio-v1.5.mp4",
+      "bytes": 14163113,
+      "sha256": "f7f2bfb2710841068cb725db633b8e3b8ff4044ddecf2c81ba9ed7539ae361e3"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis_Arena_System_Design_v1.5.pdf",
+      "bytes": 1257292,
+      "sha256": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis_Arena_System_Design_v1.5.docx",
+      "bytes": 8202758,
+      "sha256": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\先读我-投递与试玩.txt",
+      "bytes": 1331,
+      "sha256": "0a4b2fb79a4925395b6b2e2e9cd764b278879def03ce856f25afab863d4004e6"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\文件清单.txt",
+      "bytes": 584,
+      "sha256": "d6a143bbe218d21890f037b0080fd68b603c73865386412b5f984dcd050efeec"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-v1.5-Windows.zip",
+      "bytes": 164546350,
+      "sha256": "b47771e3a3a19bff126055120d353f1f786146e979dd6bc8ab929ef6ee015249"
+    },
+    {
+      "path": "D:\\AegisWork\\Deliveries\\Aegis-Arena-Portfolio-v1.5\\Aegis-Arena-v1.5-Application.zip",
+      "bytes": 23312723,
+      "sha256": "6090f146d1e5db6a3c7f6f162b6fe1c42538dc191d5563ab27842b3127248d76"
+    }
+  ],
+  "evidence": {
+    "assembly-independent-verification.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\assembly-independent-verification.json",
+      "bytes": 550,
+      "sha256": "994d955a82822500294bceef82ab4f7ac8ed3660fd0ed142cdcb7bad147160c5"
+    },
+    "capture-provenance.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\capture-provenance.json",
+      "bytes": 444926,
+      "sha256": "549bfb2aa7fd756d881a598c7c5882a6676c09130b0118251f82b24e591aa4f5"
+    },
+    "copied-evidence.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\copied-evidence.json",
+      "bytes": 2952,
+      "sha256": "344b515208c6d7f5a54dcea449872c22fb519ea3af006c7330c05e12493e8a61"
+    },
+    "core-automation.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\core-automation.json",
+      "bytes": 2920,
+      "sha256": "fe87e76e1673804278a9a4d6c9132041679cb17c3144dae7a3c9f66484c348bc"
+    },
+    "delivery-manifest.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\delivery-manifest.json",
+      "bytes": 21436,
+      "sha256": "5dd53acacf6d54143f6dd4ac6ecf5263b1f34aa8fad59a05b1b173b6bc3744bb"
+    },
+    "desktop-shortcut.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\desktop-shortcut.json",
+      "bytes": 360,
+      "sha256": "bb9932f6fc9506d5840fd6907bf2b2a4882ae2e44c2784f18309db59c06a8a94"
+    },
+    "document-build-record.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\document-build-record.json",
+      "bytes": 7251,
+      "sha256": "769b04e0d6e3dae8dd051ec5ff8d7ce4bd82fb5b9ee94f81b3f3863ec28ff262"
+    },
+    "document-structural-review.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\document-structural-review.json",
+      "bytes": 735,
+      "sha256": "decd0afd0ba60da35d50bea8a0c84c4dd8b53edc56c70f17211f66665b0c6e86"
+    },
+    "document-visual-review.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\document-visual-review.json",
+      "bytes": 3585,
+      "sha256": "215d7487232947114b318973aaa13adf0537fdd8410fabdb40c9c5f412e8eb56"
+    },
+    "exit-diagnostic-provenance.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\exit-diagnostic-provenance.json",
+      "bytes": 7805,
+      "sha256": "ab8621d664d23c6b5b1c30a5f68225cafb67f882919800e28dae6f18ed471cff"
+    },
+    "gameplay-summary.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\gameplay-summary.json",
+      "bytes": 721,
+      "sha256": "ac339770eb71a550b907e7fcba5e5d2bbd2638890f7327955229ecde487aef51"
+    },
+    "gameplay-trace.jsonl": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\gameplay-trace.jsonl",
+      "bytes": 31168,
+      "sha256": "753de1d1fce0aeed3fd2fbb314aa1c3f6f3b444aed0a40eaafe2c277fb2dcc1a"
+    },
+    "manual-startup.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\manual-startup.json",
+      "bytes": 928,
+      "sha256": "9cc95fb9ce9001bc4e2391ddc4c1c6583e59713575e446d0237fa623cb398e72"
+    },
+    "portable-ledger-report.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\portable-ledger-report.json",
+      "bytes": 710,
+      "sha256": "952df8bfeb849321ec92cb837711a561f4964a127840d0aa6df9386ed2de07e1"
+    },
+    "probe-provenance.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\probe-provenance.json",
+      "bytes": 18321,
+      "sha256": "1ee5dd16d8ed69309f2caf743c164a4560d1fc32e83fa5f26edfff2c4b18445a"
+    },
+    "video-audio-review.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\video-audio-review.json",
+      "bytes": 722,
+      "sha256": "9d11c24ce7b146e7d24718d9923b1c1bc5fb5d49364c8d65d75b8242339402ed"
+    },
+    "video-provenance.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\video-provenance.json",
+      "bytes": 11142,
+      "sha256": "5928276bf0d1c343062aec7535bd5c249803bc7bb2325aed82ad24e5cfe744b7"
+    },
+    "video-visual-review.json": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\evidence\\portfolio-v1.5\\final\\video-visual-review.json",
+      "bytes": 5242,
+      "sha256": "c4856340bd2c6776065ef0de0ab4b5dc325426eb0ad8ada0db885efa38e8425c"
+    }
+  },
+  "historicalBoundary": "v1.4 policy experiments and pre-exit-fix v1.5 captures remain separately preserved; no relabelled native policy or action-stability comparison",
+  "reinforcementLearningTraining": false,
+  "published": false
+}

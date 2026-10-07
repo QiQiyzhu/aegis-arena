@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "allDeliveredFileHashesVerified": true,
+  "zipCrcVerified": [
+    {
+      "name": "Aegis-Arena-v1.5-Windows.zip",
+      "bytes": 164546350,
+      "entries": 53
+    },
+    {
+      "name": "Aegis-Arena-v1.5-Application.zip",
+      "bytes": 23312723,
+      "entries": 5
+    }
+  ],
+  "note": "Assembler wrote manifest and completed archive CRC before its console print failed under cp932 for Chinese filenames. Console output changed to escaped JSON; existing artifacts independently reverified without rewriting."
+}

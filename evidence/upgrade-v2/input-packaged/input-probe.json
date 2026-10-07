@@ -1,0 +1,154 @@
+{
+	"schemaVersion": 1,
+	"engine": "unreal-runtime",
+	"syntheticInput": true,
+	"renderOffscreen": true,
+	"renderingEnabled": true,
+	"humanUsabilityTest": false,
+	"fixtureDamage": false,
+	"passed": true,
+	"reason": "Synthetic controller input and rendered lifecycle checks completed",
+	"worldType": 1,
+	"begunPlay": true,
+	"wallSeconds": 6.5500441007316113,
+	"screenshotRequests": 4,
+	"screenshotProcessed": 4,
+	"assertions": [
+		{
+			"name": "game_world_begun",
+			"passed": true,
+			"detail": "worldType=1 begun=1"
+		},
+		{
+			"name": "briefing_initial_population",
+			"passed": true,
+			"detail": "characters=2 aiControllers=1"
+		},
+		{
+			"name": "briefing_blocks_movement",
+			"passed": true,
+			"detail": "distanceCm=0.000"
+		},
+		{
+			"name": "briefing_blocks_fire",
+			"passed": true,
+			"detail": "held LMB delivered through PlayerController"
+		},
+		{
+			"name": "briefing_blocks_dash",
+			"passed": true,
+			"detail": "Space delivered through PlayerController"
+		},
+		{
+			"name": "enter_deploys_guided_wave",
+			"passed": true,
+			"detail": "wave=1 enemies=2 combatEnabled=1"
+		},
+		{
+			"name": "w_moves_screen_forward",
+			"passed": true,
+			"detail": "delta=V(X=196.68, Z=-25.30)"
+		},
+		{
+			"name": "space_starts_dash_cooldown",
+			"passed": true,
+			"detail": "remaining=2.302"
+		},
+		{
+			"name": "dash_moves_character",
+			"passed": true,
+			"detail": "distanceCm=362.439"
+		},
+		{
+			"name": "dash_cooldown_blocks_repeat",
+			"passed": true,
+			"detail": "readyTimeError=0.0000"
+		},
+		{
+			"name": "dash_restores_walk_speed",
+			"passed": true,
+			"detail": "walkSpeed=420.0"
+		},
+		{
+			"name": "ground_point_projects_to_viewport",
+			"passed": true,
+			"detail": "fixed ground offset, independent of enemies"
+		},
+		{
+			"name": "cursor_deprojects_to_ground_xy",
+			"passed": true,
+			"detail": "errorCm=0.843 aim=V(X=-277.77, Y=249.22, Z=120.15)"
+		},
+		{
+			"name": "cursor_sets_character_heading",
+			"passed": true,
+			"detail": "heading follows projected ground target"
+		},
+		{
+			"name": "held_lmb_repeats_after_cooldown",
+			"passed": true,
+			"detail": "acceptedShots=3 heldSeconds=1.604"
+		},
+		{
+			"name": "lmb_release_stops_repeat",
+			"passed": true,
+			"detail": "acceptedShotsAfterRelease=0"
+		},
+		{
+			"name": "p_enters_pause",
+			"passed": true,
+			"detail": "P binding invoked through PlayerController"
+		},
+		{
+			"name": "pause_freezes_game_clock",
+			"passed": true,
+			"detail": "wallDelta=0.552 gameDelta=0.000000"
+		},
+		{
+			"name": "pause_blocks_movement_and_fire",
+			"passed": true,
+			"detail": "W/LMB/Space injected while paused"
+		},
+		{
+			"name": "p_resumes_game_clock",
+			"passed": true,
+			"detail": "paused=0 gameDelta=0.198"
+		},
+		{
+			"name": "restart_fixture_has_held_inputs",
+			"passed": true,
+			"detail": "held keys intentionally cross R restart"
+		},
+		{
+			"name": "r_creates_fresh_briefing_pawn",
+			"passed": true,
+			"detail": "oldId=18550 newId=18690"
+		},
+		{
+			"name": "restart_resets_cooldowns_and_shots",
+			"passed": true,
+			"detail": "new pawn owns fresh combat and dash state"
+		},
+		{
+			"name": "restart_flushes_held_inputs",
+			"passed": true,
+			"detail": "no inherited W/LMB state after R"
+		},
+		{
+			"name": "restart_retires_old_population",
+			"passed": true,
+			"detail": "characters=2 aiControllers=1"
+		},
+		{
+			"name": "four_rendered_screenshots_saved",
+			"passed": true,
+			"detail": "requests=4 processed=4 files=4"
+		}
+	],
+	"screenshots": [
+		"D:/AegisWork/Reports/upgrade-v2-input-packaged-final/briefing.png",
+		"D:/AegisWork/Reports/upgrade-v2-input-packaged-final/active.png",
+		"D:/AegisWork/Reports/upgrade-v2-input-packaged-final/paused.png",
+		"D:/AegisWork/Reports/upgrade-v2-input-packaged-final/newattempt.png"
+	]
+}

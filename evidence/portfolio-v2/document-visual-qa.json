@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "allPagesReviewed": true,
+  "pageCount": 10,
+  "reviewedAtUtc": "2026-09-18T03:51:33.864155+00:00",
+  "reviewedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "reviewedImages": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-1.png",
+      "sha256": "e820c0646074e4869857d50c752fd29d2a12f11c2e2df7d54a863acf5929c6e4"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-2.png",
+      "sha256": "f19ca473ec231e6199ebc9d26453b5b872d605c577a99ead61ca8d703b0531f1"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-3.png",
+      "sha256": "07a1e462f0ad9ffda313b5f23487b56f02958f8cc87d1dc864ceea4090d8bd90"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-4.png",
+      "sha256": "70338e98e97b31cba113fda45d6b750eca1d7b82b52c42b1fef35d52a97bbdb4"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-5.png",
+      "sha256": "19cd7dd253e48148fe76f52c32b4ff10d8b3a3b980dd2d5a16b24ded1c6ff5ed"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-6.png",
+      "sha256": "80c7819ca82c04ad8a69e953d79cb7e3245714442e381630e83e34b855afce93"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-7.png",
+      "sha256": "1b04942b3ca45703faef2343d9a02aee19d1aaa50695e5cac65b426aa513b6d0"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-8.png",
+      "sha256": "22a9bb8a279ddcbd9f9645de667291a5b432c7beee2688225a7964bf7bf7ed3a"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-9.png",
+      "sha256": "a6c834097eccbefa06f66e0c5820a087bd8399f9ac60632a4f569fc666881e58"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\render\\page-10.png",
+      "sha256": "5b2f75ac8414c7a84ba596ece1fe11d2b032e9bb3f53bb1b982f80e5a30a94b0"
+    }
+  ],
+  "outputHashes": {
+    "Aegis_Arena_System_Design_v2.0.docx": "c351a6826739a51dc16d012dd21704a73d2e49462f1fd78970f7052192aac68c",
+    "Aegis_Arena_System_Design_v2.0.pdf": "c5170982b05542922f4b7019616b24c7c812d18415488ce37900c290afa59ee8"
+  },
+  "buildRecord": {
+    "path": "D:\\AegisWork\\Reports\\v2-20260918\\document-qa-02\\build-record.json",
+    "sha256": "df3b032fff5841d28d95fbd8c5b6d9b8ed0e8ae8000538f059933da272d96308"
+  },
+  "notes": [
+    "All ten final page PNGs opened individually at original resolution and visually inspected after the final canonical render.",
+    "No clipping, overlap, missing Chinese glyphs, broken tables, blank pages or orphan captions observed; all ten page numbers and margins are consistent.",
+    "Body remains 11 pt. Seven unchanged native figure files have explicit version/input captions; two original rule diagrams are labelled as design schematics.",
+    "Page 9 states paired damage/time tradeoffs, retained prior failures, scope of local fixture and automatic input; it does not claim general AI or win-rate improvement.",
+    "The v2 artifact start marker was invoked once successfully before the first authoring command; the second render is layout/content review iteration, without a repeated marker.",
+    "build-record.json remains the immutable creation record with visualReviewCompleted=false. This separate reviewed-image record records completion of actual visual QA."
+  ]
+}

@@ -13,30 +13,46 @@ jobs:
   portable:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    defaults:
+      run:
+        shell: bash
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-media.txt
       - name: State the execution boundary
-        run: echo 'This job compiles the portable C++ model with g++. It does not install, compile, or execute Unreal Engine.'
+        run: |
+          mkdir -p outputs/ci-logs
+          echo 'This job compiles the portable C++ model and economy ledger with g++. It does not install, compile, or execute Unreal Engine.' | tee outputs/ci-logs/boundary.log
+          echo 'Windows DPAPI, Microsoft YaHei caption rendering, and the local Windows delivery ffmpeg checks may skip when their platform assets are unavailable.' | tee -a outputs/ci-logs/boundary.log
+          python3 --version | tee outputs/ci-logs/python-version.log
+          git rev-parse HEAD > outputs/ci-logs/source-commit.txt
+      - name: Install the pinned Python test dependencies
+        run: python3 -m pip install -r requirements-media.txt 2>&1 | tee outputs/ci-logs/install.log
       - name: Compile strict C++17 and run assertions
-        run: python3 scripts/build_portable.py --compiler g++
+        run: python3 scripts/build_portable.py --compiler g++ 2>&1 | tee outputs/ci-logs/portable-build.log
+      - name: Compile and test the portfolio economy ledger
+        run: python3 scripts/run_portfolio_core_tests.py --compiler g++ --output outputs/ci-portfolio 2>&1 | tee outputs/ci-logs/portfolio-build.log
       - name: Test scenario tools and actual binary integration
-        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v
+        run: python3 -m unittest discover -s scripts -p 'test_*.py' -v 2>&1 | tee outputs/ci-logs/python-tests.log
       - name: Reproduce frozen native endpoint analysis without running Unreal
         run: python3 scripts/export_decision_case.py --output evidence/unreal/decision-case.json --check
       - name: Run short pipeline scenario
         run: python3 scripts/run_benchmark.py --scenario scenarios/smoke.json --output outputs/ci-smoke
       - name: Run all 60 fixed evaluation episodes
         run: python3 scripts/run_benchmark.py --scenario scenarios/evaluation.json --output outputs/ci-evaluation
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: portable-model-evidence-not-unreal
           retention-days: 30
           if-no-files-found: warn
           path: |
+            outputs/ci-logs
+            outputs/ci-portfolio
             outputs/ci-smoke
             outputs/ci-evaluation
             build/build-report.json

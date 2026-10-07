@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "pageCount": 9,
+  "embeddedImageCount": 7,
+  "referenceHyperlinks": 3,
+  "staleSourceHashAbsent": true,
+  "unresolvedTokensAbsent": true,
+  "outputFiles": [
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v1.5\\documents\\Aegis_Arena_System_Design_v1.5.docx",
+      "sha256": "7c1a17915486d87fd732a9169def7a99b245da618db62352f6b4a0a9c958ea3e",
+      "bytes": 8202758
+    },
+    {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\outputs\\portfolio-v1.5\\documents\\Aegis_Arena_System_Design_v1.5.pdf",
+      "sha256": "ef8fd450a2bec8cbb688641abd3693ce48a9d91c08a9b18ce2ac0a59dae3b12f",
+      "bytes": 1257292
+    }
+  ]
+}

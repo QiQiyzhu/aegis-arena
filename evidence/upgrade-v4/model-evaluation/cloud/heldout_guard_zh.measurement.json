@@ -1,0 +1,37 @@
+{
+  "case": "heldout_guard_zh",
+  "split": "heldout",
+  "httpStatus": 200,
+  "latencyMilliseconds": 820.4397000008612,
+  "rawResponseSha256": "099d16d1b9d98f9155d06cb2b3b834757c0b4ba6f4c59fcb19f3bd208da918a5",
+  "savedResponseSha256": "099d16d1b9d98f9155d06cb2b3b834757c0b4ba6f4c59fcb19f3bd208da918a5",
+  "credentialRedactionApplied": false,
+  "responseId": "2ed6a7b0-b991-40bf-bfea-38e136e92958",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 712,
+    "completion_tokens": 22,
+    "total_tokens": 734,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 328
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Follow and cover the player",
+    "steps": [
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+[build]
+{
+  "engine": "portable-cpp-model",
+  "compiler": "clang version 20.1.2 (https://github.com/ziglang/zig-bootstrap 7ef74e656cf8ddbd6bf891a8475892aa1afa6891)",
+  "flags": "C++17 -O2 -Wall -Wextra -Werror -pedantic",
+  "tests": {
+    "suite": "portable_cpp",
+    "assertions": 381,
+    "failed": 0
+  },
+  "unreal_compiled": false
+}
+[python-tests]
+test_actual_frozen_rows_and_counterexamples (test_decision_case.DecisionCaseTests.test_actual_frozen_rows_and_counterexamples) ... ok
+test_canonical_json_ignores_checkout_line_endings_and_key_order (test_decision_case.DecisionCaseTests.test_canonical_json_ignores_checkout_line_endings_and_key_order) ... ok
+test_committed_export_is_reproducible (test_decision_case.DecisionCaseTests.test_committed_export_is_reproducible) ... ok
+test_failed_provenance_mixed_revision_and_changed_aggregate_rejected (test_decision_case.DecisionCaseTests.test_failed_provenance_mixed_revision_and_changed_aggregate_rejected) ... ok
+test_invalid_weights_rejected (test_decision_case.DecisionCaseTests.test_invalid_weights_rejected) ... ok
+test_missing_duplicate_mixed_or_nonfinite_rows_rejected (test_decision_case.DecisionCaseTests.test_missing_duplicate_mixed_or_nonfinite_rows_rejected) ... ok
+test_preference_flip_is_only_endpoint_reweighting (test_decision_case.DecisionCaseTests.test_preference_flip_is_only_endpoint_reweighting) ... ok
+test_complete_contract_requires_four_image_validations (test_input_probe_gate.InputProbeEvidenceGateTests.test_complete_contract_requires_four_image_validations) ... ok
+test_default_launch_keeps_editor_project_and_game_arguments (test_input_probe_gate.InputProbeEvidenceGateTests.test_default_launch_keeps_editor_project_and_game_arguments) ... ok
+test_packaged_launch_uses_only_game_executable_and_common_probe_flags (test_input_probe_gate.InputProbeEvidenceGateTests.test_packaged_launch_uses_only_game_executable_and_common_probe_flags) ... ok
+test_png_checks_bytes_dimensions_crc_and_real_scanline_stream (test_input_probe_gate.InputProbeEvidenceGateTests.test_png_checks_bytes_dimensions_crc_and_real_scanline_stream) ... ok
+test_report_labels_and_screenshot_destinations_are_exact (test_input_probe_gate.InputProbeEvidenceGateTests.test_report_labels_and_screenshot_destinations_are_exact) ... ok
+test_success_json_cannot_replace_real_unique_assertion_emissions (test_input_probe_gate.InputProbeEvidenceGateTests.test_success_json_cannot_replace_real_unique_assertion_emissions) ... ok
+test_wrong_scope_partial_capture_or_actor_timeout_is_rejected (test_input_probe_gate.InputProbeEvidenceGateTests.test_wrong_scope_partial_capture_or_actor_timeout_is_rejected) ... ok
+test_input_provenance_tracks_source_and_asset_changes (test_native_gate.NativeEvidenceGateTests.test_input_provenance_tracks_source_and_asset_changes) ... ok
+test_json_success_without_world_assertions_is_rejected (test_native_gate.NativeEvidenceGateTests.test_json_success_without_world_assertions_is_rejected) ... ok
+test_memory_evidence_requires_config_and_game_world (test_native_gate.NativeEvidenceGateTests.test_memory_evidence_requires_config_and_game_world) ... ok
+test_success_requires_all_assertions_and_no_ensure (test_native_gate.NativeEvidenceGateTests.test_success_requires_all_assertions_and_no_ensure) ... ok
+test_complete_native_contract_is_accepted (test_operation_gate.OperationEvidenceGateTests.test_complete_native_contract_is_accepted) ... ok
+test_duplicate_or_unknown_assertion_is_rejected (test_operation_gate.OperationEvidenceGateTests.test_duplicate_or_unknown_assertion_is_rejected) ... ok
+test_each_named_world_assertion_is_required (test_operation_gate.OperationEvidenceGateTests.test_each_named_world_assertion_is_required) ... ok
+test_engine_failure_and_missing_offline_override_are_rejected (test_operation_gate.OperationEvidenceGateTests.test_engine_failure_and_missing_offline_override_are_rejected) ... ok
+test_incomplete_warning_or_unrelated_report_is_rejected (test_operation_gate.OperationEvidenceGateTests.test_incomplete_warning_or_unrelated_report_is_rejected) ... ok
+test_replay_does_not_count_as_original_execution (test_operation_gate.OperationEvidenceGateTests.test_replay_does_not_count_as_original_execution) ... ok
+test_report_only_wrong_world_or_hidden_interventions_are_rejected (test_operation_gate.OperationEvidenceGateTests.test_report_only_wrong_world_or_hidden_interventions_are_rejected) ... ok
+test_every_missing_assertion_is_rejected (test_tactical_gate.TacticalEvidenceGateTests.test_every_missing_assertion_is_rejected) ... ok
+test_exact_native_evidence_passes (test_tactical_gate.TacticalEvidenceGateTests.test_exact_native_evidence_passes) ... ok
+test_replayed_or_duplicate_evidence_is_rejected (test_tactical_gate.TacticalEvidenceGateTests.test_replayed_or_duplicate_evidence_is_rejected) ... ok
+test_wrong_world_or_failed_native_run_is_rejected (test_tactical_gate.TacticalEvidenceGateTests.test_wrong_world_or_failed_native_run_is_rejected) ... ok
+test_actual_binary_json_csv_pipeline (test_tools.ToolsTests.test_actual_binary_json_csv_pipeline) ... ok
+test_cli_rejects_unknown_and_invalid (test_tools.ToolsTests.test_cli_rejects_unknown_and_invalid) ... ok
+test_confidence_interval_not_point_estimate (test_tools.ToolsTests.test_confidence_interval_not_point_estimate) ... ok
+test_overflow (test_tools.ToolsTests.test_overflow) ... ok
+test_reject_invalid_schema_and_ranges (test_tools.ToolsTests.test_reject_invalid_schema_and_ranges) ... ok
+test_schema_roundtrip (test_tools.ToolsTests.test_schema_roundtrip) ... ok
+test_unknown_fields (test_tools.ToolsTests.test_unknown_fields) ... ok
+test_automation_replay_cannot_replace_original_fixture_evidence (test_trial_gate.TrialEvidenceGateTests.test_automation_replay_cannot_replace_original_fixture_evidence) ... ok
+test_complete_fixture_evidence_is_accepted (test_trial_gate.TrialEvidenceGateTests.test_complete_fixture_evidence_is_accepted) ... ok
+test_dirty_incomplete_or_unrelated_report_is_rejected (test_trial_gate.TrialEvidenceGateTests.test_dirty_incomplete_or_unrelated_report_is_rejected) ... ok
+test_each_assertion_and_retry_occurrence_is_required (test_trial_gate.TrialEvidenceGateTests.test_each_assertion_and_retry_occurrence_is_required) ... ok
+test_extra_unknown_assertion_is_rejected (test_trial_gate.TrialEvidenceGateTests.test_extra_unknown_assertion_is_rejected) ... ok
+test_fatal_ensure_or_failed_assertion_overrides_success (test_trial_gate.TrialEvidenceGateTests.test_fatal_ensure_or_failed_assertion_overrides_success) ... ok
+test_offline_startup_override_must_have_executed (test_trial_gate.TrialEvidenceGateTests.test_offline_startup_override_must_have_executed) ... ok
+test_report_only_or_wrong_world_success_is_rejected (test_trial_gate.TrialEvidenceGateTests.test_report_only_or_wrong_world_success_is_rejected) ... ok
+test_complete_evidence_is_accepted (test_weapons_gate.WeaponsEvidenceGateTests.test_complete_evidence_is_accepted) ... ok
+test_duplicates_and_unknown_assertions_are_rejected (test_weapons_gate.WeaponsEvidenceGateTests.test_duplicates_and_unknown_assertions_are_rejected) ... ok
+test_each_assertion_is_required (test_weapons_gate.WeaponsEvidenceGateTests.test_each_assertion_is_required) ... ok
+test_errors_override_success (test_weapons_gate.WeaponsEvidenceGateTests.test_errors_override_success) ... ok
+test_fixture_interventions_and_offline_context_are_required (test_weapons_gate.WeaponsEvidenceGateTests.test_fixture_interventions_and_offline_context_are_required) ... ok
+test_replayed_logs_cannot_replace_original_assertions (test_weapons_gate.WeaponsEvidenceGateTests.test_replayed_logs_cannot_replace_original_assertions) ... ok
+test_report_only_or_wrong_world_is_rejected (test_weapons_gate.WeaponsEvidenceGateTests.test_report_only_or_wrong_world_is_rejected) ... ok
+test_unrelated_or_incomplete_reports_are_rejected (test_weapons_gate.WeaponsEvidenceGateTests.test_unrelated_or_incomplete_reports_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.944s
+
+OK
+[smoke]
+{
+  "output": "D:\\AegisWork\\Reports\\upgrade-v3-portable-01\\smoke",
+  "episodes": 2,
+  "aggregate": [
+    {
+      "enemy_count": 4,
+      "policy": "priority",
+      "episodes": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_survival_seconds": 2.0,
+      "mean_damage_dealt": 0.0,
+      "mean_damage_taken": 0.0,
+      "mean_companion_deaths": 0,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0,
+      "mean_distance_travelled": 38.94,
+      "mean_cover_usage": 0,
+      "mean_decision_counts": 59,
+      "mean_decision_us": 0.145763,
+      "mean_geometry_query_us": 0.0,
+      "mean_step_p95_us": 0.5
+    },
+    {
+      "enemy_count": 4,
+      "policy": "utility",
+      "episodes": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_survival_seconds": 2.0,
+      "mean_damage_dealt": 0.0,
+      "mean_damage_taken": 0.0,
+      "mean_companion_deaths": 0,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0,
+      "mean_distance_travelled": 38.94,
+      "mean_cover_usage": 0,
+      "mean_decision_counts": 59,
+      "mean_decision_us": 0.150847,
+      "mean_geometry_query_us": 0.0,
+      "mean_step_p95_us": 0.5
+    }
+  ]
+}
+Portable verification passed. Evidence: D:\AegisWork\Reports\upgrade-v3-portable-01

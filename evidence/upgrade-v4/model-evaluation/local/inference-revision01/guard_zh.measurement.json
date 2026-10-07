@@ -1,0 +1,40 @@
+{
+  "case": "guard_zh",
+  "instruction": "靠近我并保护我。",
+  "expectedSkill": "guard",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 1572.454300003301,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": true,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "Protect me",
+    "steps": [
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 35,
+    "prompt_tokens": 535,
+    "total_tokens": 570,
+    "prompt_tokens_details": {
+      "cached_tokens": 396
+    }
+  },
+  "timings": {
+    "cache_n": 396,
+    "prompt_n": 139,
+    "prompt_ms": 534.762,
+    "prompt_per_token_ms": 3.847208633093525,
+    "prompt_per_second": 259.9287159521432,
+    "predicted_n": 35,
+    "predicted_ms": 1026.668,
+    "predicted_per_token_ms": 30.19611764705882,
+    "predicted_per_second": 33.11684010799986
+  }
+}

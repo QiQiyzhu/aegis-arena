@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "version": "2.0.0",
+  "packageSource": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows",
+  "videoUnder300MB": true,
+  "artifacts": {
+    "Aegis-Arena-v2.0-Demo.mp4": {
+      "bytes": 16656237,
+      "sha256": "0914e23e6c71f284b670ec04c06b1a81b3a965d8695f08acc86c7c517179a1b6"
+    },
+    "Aegis-Arena-v2.0-Design.pdf": {
+      "bytes": 1551011,
+      "sha256": "c5170982b05542922f4b7019616b24c7c812d18415488ce37900c290afa59ee8"
+    },
+    "Aegis-Arena-v2.0-Design.docx": {
+      "bytes": 14425544,
+      "sha256": "c351a6826739a51dc16d012dd21704a73d2e49462f1fd78970f7052192aac68c"
+    },
+    "acceptance.json": {
+      "bytes": 68587,
+      "sha256": "b68164b067c54b17e0144de63817ee26afb99ecf746ae68c8ed3bc730b901965"
+    },
+    "Aegis-Arena-v2.0-Cpp-Guide.md": {
+      "bytes": 18650,
+      "sha256": "8030b426b265186c3b73d8afde4343ef0c55b35bf6fe4897d4e9eed770232333"
+    },
+    "Aegis-Arena-v2.0-AI-Case.md": {
+      "bytes": 17779,
+      "sha256": "cacde2999615a4584cb3d7e0c2d48e21c928d3456aa1a9e4b3fcd6878a9e51c1"
+    },
+    "portfolio-v2-recording-case.md": {
+      "bytes": 14490,
+      "sha256": "261b209b86634f1d0193e6cdfa8ff3d8e24e6fc1e54ad2af66475dd209667ee1"
+    },
+    "v2-reference-and-direction.md": {
+      "bytes": 8018,
+      "sha256": "6f8d362cfc026a7714526458ed7a288bde948bdab7d3159f8d8e81d8ebe4ba5c"
+    },
+    "Aegis-Arena-v2.0-Application.zip": {
+      "bytes": 32320353,
+      "sha256": "283fcacc9f7753470a0f33646f68b520060b92dc407553bd914786f75db6a486",
+      "entries": 9,
+      "crcPassed": true
+    },
+    "Aegis-Arena-v2.0-Windows.zip": {
+      "bytes": 155348382,
+      "sha256": "b06d484ae09a242e71213920e1f70246a4b7fff8504ce2604fdd327e86c41341",
+      "entries": 49,
+      "crcPassed": true
+    }
+  },
+  "excludedBuildFiles": [
+    "AegisArena/Binaries/Win64/AegisArena.pdb",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-057C897A4BA61CB4860F37A95AEEFB2F/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-16F9B82B4F9495368E12618009CE079C/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-211198C64F3FCA5BF48BA9B93AABEBF4/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-216EE2C64A9264CDF4F564AAF1625C05/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-303494B6449EAB04F5486AB55D5B53CF/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-342F69BA4493F0FBB50AFDAFFCFEC4FA/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-7227B54A4AD531FC208487A6AB15DE7F/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-761372864920F0E7B300F2AE8DADB8AA/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-7D7A567F42AA0168F0DAE68BEED99518/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-8F60501D47DE94CE15EDF2A5AF56F9E4/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-962020D7442DDD723BF3A897E263917B/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-A9181AF1423F4558A0B28699E28ABA0D/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-ADD78C42497E4A33AD1816ACD488CB22/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-AE3204B949AF0901E43E728127A25272/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-C3A1EA164CD48BE4927C1389CB00DB8B/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-D23D55FE44B881F378F70192B10969B8/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-EB96867D45E65EBE5AA95C941C2447AF/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-FECB83FA4F0E0B759D6D82AFCC2A6EE1/CrashReportClient.ini",
+    "AegisArena/Saved/Config/Windows/GameUserSettings.ini",
+    "Engine/Saved/Config/Windows/Manifest.ini"
+  ],
+  "exclusionReason": "Local generated Saved state and optional debugger PDB symbols; original build preserved"
+}

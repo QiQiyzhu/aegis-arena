@@ -1,0 +1,696 @@
+{
+  "schemaVersion": 1,
+  "reviewedAtUtc": "2026-09-18T03:26:14.580756+00:00",
+  "reviewType": "Independent read-only final r3 controlled Guard comparison",
+  "reviewPassed": true,
+  "scope": {
+    "mechanismOnly": true,
+    "runsPerMode": 1,
+    "controlledPIEGeometry": true,
+    "rendering": "NullRHI",
+    "damageDisabled": true,
+    "stationaryLeaderAndTarget": true,
+    "setupBrainPausedOnlyDuringSetup": true,
+    "sensesToggled": false,
+    "realPerceptionNavigationAndAcceptedFire": true,
+    "humanPlaytest": false,
+    "naturalCombat": false,
+    "policyWinRateEvaluation": false,
+    "hardwarePerformanceEvaluation": false,
+    "newUnrealLaunchByReviewer": false
+  },
+  "comparisonChecks": {
+    "strict12AssertionsPerModeReplayed": true,
+    "allRecordedRawFileHashesVerified": true,
+    "sameSourceAndContentAcrossRuns": true,
+    "stableWithinRunSnapshots": true,
+    "sameRecordedLauncherAndRuntimeDll": true,
+    "sameWrappers": true,
+    "sameGeometryAndMuzzleOrigins": true,
+    "normalizedCommandsDifferOnlyV2FlagAndReportPaths": true,
+    "unknownWarningsStillRejected": true
+  },
+  "binding": {
+    "inputs": {
+      "sourceSha256": "6dad19526dbc6b093a841ccf46f040e48148e37700d3e5a2184d6f66d42b3cc2",
+      "contentSha256": "9667582db87935a68d8823eca0801b1c47ade897f12a1c848f926a4e02e88fd5"
+    },
+    "nativeBinaries": {
+      "launcher": {
+        "path": "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+        "sha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e"
+      },
+      "projectModule": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Binaries\\Win64\\UnrealEditor-AegisArena.dll",
+        "sha256": "f62b695ef0e44401b86466f49717b6f2290cdd93dc3a0b2185784f1e803f1217"
+      }
+    },
+    "wrappers": {
+      "run_unreal_guard_slot.py": "5ccbf27673ca5d34b960ae5de128cb7a4618c83282d5b48c8ae946bfc18c6eb7",
+      "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+      "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad",
+      "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+      "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb"
+    },
+    "currentSourceFiles": [
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Source\\AegisArena\\Private\\AegisAIController.cpp",
+        "bytes": 51882,
+        "sha256": "f1a3712171bf3c534a366e36d6183efef2d011f14bd7feb3bbf24ac3ef000a41"
+      },
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Source\\AegisArena\\Public\\AegisAIController.h",
+        "bytes": 10617,
+        "sha256": "ae6c82fc2c9dab8622d15f9da614a52b0ac2385873e74fd4d9ae648ab336ca1d"
+      },
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Source\\AegisArenaEditor\\Private\\AegisGuardSlotFunctionalTest.cpp",
+        "bytes": 16784,
+        "sha256": "b8a6d440a19471f6a5c0a271b2af0c77fc14484616071903c7fb9f9c27b72753"
+      },
+      {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Source\\AegisArenaEditor\\Public\\AegisGuardSlotFunctionalTest.h",
+        "bytes": 1912,
+        "sha256": "6d45a38e295c83eb0effa3f732565e866f1939b3fbfbba1c2adc99d8210df1fb"
+      }
+    ],
+    "priorR1CaseReview": {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-case-review.json",
+      "bytes": 31941,
+      "sha256": "b09902e695ddd927cb146e69685f0749b0bf3c303b00cc19cb390e9bf906c0e9"
+    }
+  },
+  "geometry": {
+    "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+    "initialPreferredSlotOffsetCm": 30,
+    "preferredNavigation": {
+      "start": "X=-180.000 Y=240.000 Z=90.150",
+      "requested": "X=-150.000 Y=240.000 Z=0.000",
+      "projected": true,
+      "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+      "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+      "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+      "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+      "physicalMuzzleValid": true,
+      "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+      "pathExists": true,
+      "pathValid": true,
+      "pathPartial": false,
+      "pointCount": 2
+    },
+    "alternateNavigation": {
+      "start": "X=-180.000 Y=240.000 Z=90.150",
+      "requested": "X=-150.000 Y=-240.000 Z=0.000",
+      "projected": true,
+      "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+      "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+      "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+      "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+      "physicalMuzzleValid": true,
+      "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+      "pathExists": true,
+      "pathValid": true,
+      "pathPartial": false,
+      "pointCount": 2
+    }
+  },
+  "runs": {
+    "baseline": {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05",
+      "nativeAssertions": 12,
+      "strictValidatorReplayed": true,
+      "nativeFacts": {
+        "schemaVersion": 1,
+        "mode": "baseline",
+        "passed": true,
+        "worldType": 3,
+        "begunPlay": true,
+        "damageDisabled": true,
+        "stationaryLeaderAndTarget": true,
+        "setupBrainPaused": true,
+        "sensesToggled": false,
+        "baselineDefectObserved": true,
+        "observedWindup": false,
+        "shots": 0,
+        "movementCm": 0,
+        "movementMeasured": true,
+        "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+        "finalPosition": "X=-180.000 Y=240.000 Z=90.150",
+        "slotChecks": 0,
+        "slotRejections": 0,
+        "slotReason": "legacy_formation",
+        "alternateSelections": 0,
+        "hiddenChecksUnchanged": true,
+        "hiddenShotsUnchanged": true,
+        "wallSeconds": 4.848768301308155,
+        "gameSeconds": 4.850033797323704,
+        "reason": "Baseline defect reproduced: reachable first slot blocks the usable alternate",
+        "initialPreferredSlotOffsetCm": 30,
+        "preferredNavigation": {
+          "start": "X=-180.000 Y=240.000 Z=90.150",
+          "requested": "X=-150.000 Y=240.000 Z=0.000",
+          "projected": true,
+          "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+          "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+          "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+          "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+          "physicalMuzzleValid": true,
+          "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+          "pathExists": true,
+          "pathValid": true,
+          "pathPartial": false,
+          "pointCount": 2
+        },
+        "alternateNavigation": {
+          "start": "X=-180.000 Y=240.000 Z=90.150",
+          "requested": "X=-150.000 Y=-240.000 Z=0.000",
+          "projected": true,
+          "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+          "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+          "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+          "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+          "physicalMuzzleValid": true,
+          "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+          "pathExists": true,
+          "pathValid": true,
+          "pathPartial": false,
+          "pointCount": 2
+        },
+        "assertions": [
+          {
+            "name": "game_world_begun",
+            "passed": true,
+            "gameSeconds": 0
+          },
+          {
+            "name": "v2_enable_matches_launch",
+            "passed": true,
+            "gameSeconds": 0.050000499933958054
+          },
+          {
+            "name": "own_sight_authorizes_target",
+            "passed": true,
+            "gameSeconds": 0.5500040985643864
+          },
+          {
+            "name": "preferred_slot_weapon_trace_blocked",
+            "passed": true,
+            "gameSeconds": 0.5500040985643864
+          },
+          {
+            "name": "alternate_slot_weapon_trace_clear",
+            "passed": true,
+            "gameSeconds": 0.5500040985643864
+          },
+          {
+            "name": "both_formation_slots_have_complete_paths",
+            "passed": true,
+            "gameSeconds": 0.5500040985643864
+          },
+          {
+            "name": "baseline_prefers_blocked_slot",
+            "passed": true,
+            "gameSeconds": 3.5500244982540607
+          },
+          {
+            "name": "baseline_cannot_fire_through_obstacle",
+            "passed": true,
+            "gameSeconds": 3.5500244982540607
+          },
+          {
+            "name": "baseline_v2_counters_unused",
+            "passed": true,
+            "gameSeconds": 3.5500244982540607
+          },
+          {
+            "name": "opaque_cover_removes_sight",
+            "passed": true,
+            "gameSeconds": 3.850026600062847
+          },
+          {
+            "name": "hidden_target_does_not_fire",
+            "passed": true,
+            "gameSeconds": 4.850033797323704
+          },
+          {
+            "name": "hidden_target_does_not_run_slot_checks",
+            "passed": true,
+            "gameSeconds": 4.850033797323704
+          }
+        ]
+      },
+      "rawFiles": {
+        "provenance.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\provenance.json",
+          "bytes": 5229,
+          "sha256": "6c458c7f6b5d4a75d9507605ab23e524170d1b628e5db1ab30dbdacf0430ce5d"
+        },
+        "guard-slot.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\guard-slot.json",
+          "bytes": 3347,
+          "sha256": "5b5d90e14813f8eda45c07750557d11478f4b454b4fe2e89eb522163a4662e17"
+        },
+        "index.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\index.json",
+          "bytes": 5829,
+          "sha256": "157ce9bbce437e40b434bd4d42a5f8358a00618d1901e156cb6d11fcf4060c1a"
+        },
+        "engine.log": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\engine.log",
+          "bytes": 142861,
+          "sha256": "903679d4041cea32d5069b4c9f0259be22458dc7b53b54704d3acd2d691d5a5c"
+        },
+        "stdout.log": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-05\\stdout.log",
+          "bytes": 143967,
+          "sha256": "0b1a838fffa90b0554c1084bb93129a6cc972bc6bdf0750844a072c88a48be6f"
+        }
+      }
+    },
+    "improved": {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04",
+      "nativeAssertions": 12,
+      "strictValidatorReplayed": true,
+      "nativeFacts": {
+        "schemaVersion": 1,
+        "mode": "improved",
+        "passed": true,
+        "worldType": 3,
+        "begunPlay": true,
+        "damageDisabled": true,
+        "stationaryLeaderAndTarget": true,
+        "setupBrainPaused": true,
+        "sensesToggled": false,
+        "baselineDefectObserved": false,
+        "observedWindup": true,
+        "shots": 1,
+        "movementCm": 380.26401268023307,
+        "movementMeasured": true,
+        "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+        "finalPosition": "X=-150.863 Y=-139.146 Z=90.150",
+        "slotChecks": 4,
+        "slotRejections": 2,
+        "slotReason": "team_formation_without_visible_target",
+        "alternateSelections": 2,
+        "hiddenChecksUnchanged": true,
+        "hiddenShotsUnchanged": true,
+        "wallSeconds": 5.352972097694874,
+        "gameSeconds": 5.354050401598215,
+        "reason": "Authorized firing-slot selection produces real movement and fire",
+        "initialPreferredSlotOffsetCm": 30,
+        "preferredNavigation": {
+          "start": "X=-180.000 Y=240.000 Z=90.150",
+          "requested": "X=-150.000 Y=240.000 Z=0.000",
+          "projected": true,
+          "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+          "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+          "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+          "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+          "physicalMuzzleValid": true,
+          "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+          "pathExists": true,
+          "pathValid": true,
+          "pathPartial": false,
+          "pointCount": 2
+        },
+        "alternateNavigation": {
+          "start": "X=-180.000 Y=240.000 Z=90.150",
+          "requested": "X=-150.000 Y=-240.000 Z=0.000",
+          "projected": true,
+          "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+          "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+          "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+          "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+          "physicalMuzzleValid": true,
+          "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+          "pathExists": true,
+          "pathValid": true,
+          "pathPartial": false,
+          "pointCount": 2
+        },
+        "assertions": [
+          {
+            "name": "game_world_begun",
+            "passed": true,
+            "gameSeconds": 0
+          },
+          {
+            "name": "v2_enable_matches_launch",
+            "passed": true,
+            "gameSeconds": 0.05000029876828194
+          },
+          {
+            "name": "own_sight_authorizes_target",
+            "passed": true,
+            "gameSeconds": 0.5500033013522625
+          },
+          {
+            "name": "preferred_slot_weapon_trace_blocked",
+            "passed": true,
+            "gameSeconds": 0.5500033013522625
+          },
+          {
+            "name": "alternate_slot_weapon_trace_clear",
+            "passed": true,
+            "gameSeconds": 0.5500033013522625
+          },
+          {
+            "name": "both_formation_slots_have_complete_paths",
+            "passed": true,
+            "gameSeconds": 0.5500033013522625
+          },
+          {
+            "name": "v2_rejects_primary_and_selects_alternate",
+            "passed": true,
+            "gameSeconds": 4.050024900585413
+          },
+          {
+            "name": "v2_physically_moves_toward_other_flank",
+            "passed": true,
+            "gameSeconds": 4.050024900585413
+          },
+          {
+            "name": "v2_winds_up_and_fires_normally",
+            "passed": true,
+            "gameSeconds": 4.050024900585413
+          },
+          {
+            "name": "opaque_cover_removes_sight",
+            "passed": true,
+            "gameSeconds": 4.35404409840703
+          },
+          {
+            "name": "hidden_target_does_not_fire",
+            "passed": true,
+            "gameSeconds": 5.354050401598215
+          },
+          {
+            "name": "hidden_target_does_not_run_slot_checks",
+            "passed": true,
+            "gameSeconds": 5.354050401598215
+          }
+        ]
+      },
+      "rawFiles": {
+        "provenance.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\provenance.json",
+          "bytes": 5274,
+          "sha256": "0bf613bbbdf2090e44f29f82986a45cc317022680385584b14bf9a6614ae77a2"
+        },
+        "guard-slot.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\guard-slot.json",
+          "bytes": 3382,
+          "sha256": "18bc4a1260ada5c7f5899bc35067dc81f6c213fb635ca248a3d0d37de37be623"
+        },
+        "index.json": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\index.json",
+          "bytes": 5830,
+          "sha256": "5e58745630fda6a445c0d70c2ff776ecb41f5ddd8933ab9ff22bb3db136adaa3"
+        },
+        "engine.log": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\engine.log",
+          "bytes": 144390,
+          "sha256": "8c6e3d6a59c391f21fc24fa1e3b814a2811a2927cf3e2f7f6c06e49c508f2bea"
+        },
+        "stdout.log": {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-04\\stdout.log",
+          "bytes": 145496,
+          "sha256": "f9d3d8ccbe228dfd04c9cafa893ed9ca387211118099faf9f3c9bff400dfb33d"
+        }
+      }
+    }
+  },
+  "mechanism": "Only v2 companion Guard with own active Sight qualifies the same two formation slots against physical-ground muzzle geometry and existing navigation; no enemy policy, range, damage, BT/Utility/EQS or formation tuning.",
+  "movementInterpretation": "movementCm is measured final net displacement at Complete, including the post-fire occlusion stage. Stage2 independently asserts >=120cm movement and alternate-side progress before occlusion; exact first-shot displacement is not retained.",
+  "finalSlotReasonInterpretation": "Improved final slotReason team_formation_without_visible_target describes the post-occlusion state; it is not the earlier firing-slot acceptance reason.",
+  "failureAndDevelopmentHistory": [
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01",
+      "wrapperPassed": false,
+      "failure": "Unexpected evidence field succeeded",
+      "records": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\engine.log",
+          "bytes": 145981,
+          "sha256": "49be68aa6d2fd22c79ccfdbe73e2357a3deb13b6451376ae11a8c709643aa9db"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\guard-slot.json",
+          "bytes": 1260,
+          "sha256": "e31f273a5566646001ba6237cea36d55195d35b46323e6ee8a527523e89477ec"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\index.json",
+          "bytes": 6253,
+          "sha256": "379048ef2709b74b86319fdb9c0569ce328aa0e509c96aeaf633ac4c7b864cfc"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\provenance.json",
+          "bytes": 5188,
+          "sha256": "d07e27c4eee4580821ad836abf3abc888b784e4a208cab3752421ec8d6dbe24b"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-01\\stdout.log",
+          "bytes": 147087,
+          "sha256": "c099956cca52ef2573b3d94dd4e016a27b810b708208b087acf9714612b02776"
+        }
+      ]
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02",
+      "wrapperPassed": false,
+      "failure": "Engine log reported an unaccepted warning, error or fatal message",
+      "records": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\engine.log",
+          "bytes": 146406,
+          "sha256": "b68a6e4003ccb88449c09c6894712908942fdc253b107725e921fb38db660a68"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\guard-slot.json",
+          "bytes": 2612,
+          "sha256": "f0cd657afafa69ac8ebacbc86e564d953feb00a44d9020f51b502b0c639b1303"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\index.json",
+          "bytes": 5829,
+          "sha256": "2be1bc1321693a4df59e94ee436124a8839f437334abffe3109ab5de12c02ac9"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\provenance.json",
+          "bytes": 5218,
+          "sha256": "2ad6816f2bc1999aaf25815cf61c537933b42244bf965044bec499311871da4d"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-baseline-02\\stdout.log",
+          "bytes": 147482,
+          "sha256": "2ed4f070335cbcbfd6697b1ecf5ac0bb1c4b6ef31ac0c0da32b911b187d7c1e5"
+        }
+      ]
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01",
+      "wrapperPassed": false,
+      "failure": "Unexpected evidence field succeeded",
+      "records": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\engine.log",
+          "bytes": 142113,
+          "sha256": "28c7886b680a893722384d2a13309af118924f2ae60f92611803dd8f4aa574e5"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\guard-slot.json",
+          "bytes": 1874,
+          "sha256": "02f18f967707c4222cc582824a7213d2f7361c3e166c871df3a4853b4bb122c5"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\index.json",
+          "bytes": 6084,
+          "sha256": "d7e707184c7b4c04409aaffa1e6896c41d456c57737d6fa2e142dd8eb40a99b7"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\provenance.json",
+          "bytes": 5265,
+          "sha256": "112d20b78049a2ba47b74eb1d34e65c50d2b81dade7ac4c736961ab542798949"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-01\\stdout.log",
+          "bytes": 143219,
+          "sha256": "7cba54595a81415d20b03d8b1f3c331e905f0c4b8dac05fb6732950fdfddcd05"
+        }
+      ]
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03",
+      "wrapperPassed": false,
+      "failure": "Engine log reported an unaccepted warning, error or fatal message",
+      "records": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\engine.log",
+          "bytes": 144574,
+          "sha256": "317959d93fec6a1f4d6874037055a223f5c72080794d682f630735acc96ca60e"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\guard-slot.json",
+          "bytes": 3388,
+          "sha256": "61292238aac5f349da1b0bcec16b93a768eebb61625518d56d03ef63da82ec9e"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\index.json",
+          "bytes": 5832,
+          "sha256": "49828f09fcbc0df91fd02cdf38f36874babd75ca6947a09f84bc8a5ae1e35702"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\provenance.json",
+          "bytes": 5283,
+          "sha256": "6f7af6f92af658a4ce88af606f4cf6ecc1c7153a1fc7e1a148a25bd7136de208"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03\\stdout.log",
+          "bytes": 145680,
+          "sha256": "f11105059498c7c068bed0378e698475e66214575abcbd8188325c98a1bb83f0"
+        }
+      ]
+    }
+  ],
+  "excludedR3Attempt": {
+    "directory": "D:\\AegisWork\\Reports\\v2-20260918\\guard-improved-03",
+    "nativePassed12": true,
+    "wrapperPassed": false,
+    "validatorRejectsAgain": true,
+    "rejection": "Engine log reported an unaccepted warning, error or fatal message",
+    "warnings": [
+      "[2026.09.18-03.05.38:767][  0]LogZenServiceInstance: Warning: Found locked valid lock file 'D:/AegisWork/Cache/DerivedDataCache/Zen/.lock' but can't find registered process (Pid: 37448), will attempt shut down",
+      "[2026.09.18-03.05.38:774][  0]LogZenServiceInstance: Warning: Found locked but invalid lock file at 'D:/AegisWork/Cache/DerivedDataCache/Zen/.lock', attempting shut down of zenserver process with pid 37448"
+    ],
+    "nativeFacts": {
+      "schemaVersion": 1,
+      "mode": "improved",
+      "passed": true,
+      "worldType": 3,
+      "begunPlay": true,
+      "damageDisabled": true,
+      "stationaryLeaderAndTarget": true,
+      "setupBrainPaused": true,
+      "sensesToggled": false,
+      "baselineDefectObserved": false,
+      "observedWindup": true,
+      "shots": 1,
+      "movementCm": 380.26516291510313,
+      "movementMeasured": true,
+      "engagementStartPosition": "X=-180.000 Y=240.000 Z=90.150",
+      "finalPosition": "X=-150.863 Y=-139.147 Z=90.150",
+      "slotChecks": 4,
+      "slotRejections": 2,
+      "slotReason": "team_formation_without_visible_target",
+      "alternateSelections": 2,
+      "hiddenChecksUnchanged": true,
+      "hiddenShotsUnchanged": true,
+      "wallSeconds": 5.350025299936533,
+      "gameSeconds": 5.3500366024672985,
+      "reason": "Authorized firing-slot selection produces real movement and fire",
+      "initialPreferredSlotOffsetCm": 30,
+      "preferredNavigation": {
+        "start": "X=-180.000 Y=240.000 Z=90.150",
+        "requested": "X=-150.000 Y=240.000 Z=0.000",
+        "projected": true,
+        "projectedLocation": "X=-150.000 Y=240.000 Z=10.000",
+        "rawGroundMuzzle": "X=-150.000 Y=240.000 Z=118.000",
+        "oldNavMuzzle": "X=-150.000 Y=240.000 Z=128.000",
+        "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+        "physicalMuzzleValid": true,
+        "physicalCandidateMuzzle": "X=-150.000 Y=240.000 Z=120.150",
+        "pathExists": true,
+        "pathValid": true,
+        "pathPartial": false,
+        "pointCount": 2
+      },
+      "alternateNavigation": {
+        "start": "X=-180.000 Y=240.000 Z=90.150",
+        "requested": "X=-150.000 Y=-240.000 Z=0.000",
+        "projected": true,
+        "projectedLocation": "X=-150.000 Y=-240.000 Z=10.000",
+        "rawGroundMuzzle": "X=-150.000 Y=-240.000 Z=118.000",
+        "oldNavMuzzle": "X=-150.000 Y=-240.000 Z=128.000",
+        "actualCurrentMuzzle": "X=-180.000 Y=240.000 Z=120.150",
+        "physicalMuzzleValid": true,
+        "physicalCandidateMuzzle": "X=-150.000 Y=-240.000 Z=120.150",
+        "pathExists": true,
+        "pathValid": true,
+        "pathPartial": false,
+        "pointCount": 2
+      },
+      "assertions": [
+        {
+          "name": "game_world_begun",
+          "passed": true,
+          "gameSeconds": 0
+        },
+        {
+          "name": "v2_enable_matches_launch",
+          "passed": true,
+          "gameSeconds": 0.050000399351119995
+        },
+        {
+          "name": "own_sight_authorizes_target",
+          "passed": true,
+          "gameSeconds": 0.5500042997300625
+        },
+        {
+          "name": "preferred_slot_weapon_trace_blocked",
+          "passed": true,
+          "gameSeconds": 0.5500042997300625
+        },
+        {
+          "name": "alternate_slot_weapon_trace_clear",
+          "passed": true,
+          "gameSeconds": 0.5500042997300625
+        },
+        {
+          "name": "both_formation_slots_have_complete_paths",
+          "passed": true,
+          "gameSeconds": 0.5500042997300625
+        },
+        {
+          "name": "v2_rejects_primary_and_selects_alternate",
+          "passed": true,
+          "gameSeconds": 4.050028499215841
+        },
+        {
+          "name": "v2_physically_moves_toward_other_flank",
+          "passed": true,
+          "gameSeconds": 4.050028499215841
+        },
+        {
+          "name": "v2_winds_up_and_fires_normally",
+          "passed": true,
+          "gameSeconds": 4.050028499215841
+        },
+        {
+          "name": "opaque_cover_removes_sight",
+          "passed": true,
+          "gameSeconds": 4.35003050044179
+        },
+        {
+          "name": "hidden_target_does_not_fire",
+          "passed": true,
+          "gameSeconds": 5.3500366024672985
+        },
+        {
+          "name": "hidden_target_does_not_run_slot_checks",
+          "passed": true,
+          "gameSeconds": 5.3500366024672985
+        }
+      ]
+    },
+    "subsequentRetry": "guard-improved-04 used a fresh guard-r3-clean cache root; no warning allowance changed"
+  },
+  "limitations": [
+    "One controlled geometry per mode, not a sample of natural gameplay or a population success rate.",
+    "Cache environment differs for the final improved retry. Engine flags and gameplay inputs match except the mode; no claim of identical OS/cache state.",
+    "The guard wrapper binds the Editor launcher and runtime project DLL, but does not provide a historical before/after snapshot of the Editor fixture DLL.",
+    "Historical guard-improved-01 movementCm=0 was not assigned on its timeout path; it cannot prove no motion.",
+    "Damage is disabled. One accepted ranged shot proves the real firing path, not inflicted damage.",
+    "Final occlusion assertions bound hidden-target behavior; they do not establish universal perception reliability."
+  ]
+}

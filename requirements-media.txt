@@ -1,2 +1,4 @@
-# Optional; tests, compiler driver and benchmark runner use only Python stdlib.
+# Required by the full Python test suite and optional media-generation tools.
+# NumPy 2.3 supports the Python 3.11 CI interpreter (as well as 3.12-3.14).
+numpy==2.3.5
 Pillow==11.3.0

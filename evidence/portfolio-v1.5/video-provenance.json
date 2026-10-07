@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "preview": false,
+  "humanPlaytest": false,
+  "fixtureDamage": false,
+  "nativeGameplayUncropped": true,
+  "gameplayInterpolation": false,
+  "script": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\scripts\\build_portfolio_video.py",
+    "sha256": "849d4261cae249eeb6076bc58a3f8b3ae738b3a9219abf45da4619de89fc3560"
+  },
+  "capturePath": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01",
+  "inputs": {
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\capture.json": {
+      "sha256": "935ff27a39950f141f6890c6b1e034db5793ce2415120f851b1854eb1c1f7e9e",
+      "bytes": 1224843
+    },
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\provenance.json": {
+      "sha256": "1aa02c6471d0471124a0494bc1190f5b00826285f1d6aa076d94b23f442ee7e5",
+      "bytes": 444751
+    },
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\system\\portfolio-0B125E6949C4D7B435E01AB4BD3B5B6C.json": {
+      "sha256": "21b1aa6bebc4fc5a6ab195d8c4a47022ae55cabb8973ded93b4b8db3fc86441b",
+      "bytes": 721
+    },
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\system\\portfolio-0B125E6949C4D7B435E01AB4BD3B5B6C.jsonl": {
+      "sha256": "c80b75eab3c544fd46368007afe1088f63464468bb9034d5e75036a19522d5c0",
+      "bytes": 31168
+    }
+  },
+  "sourceBinary": {
+    "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+    "sha256": "e156b93a814d120a00dc3360e796ec492a8e0f807b70dd2d7c5b200712106867"
+  },
+  "knownEngineWarnings": [
+    "[2026.09.17-20.12.57:849][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+  ],
+  "nativeFrameManifestSha256": "55929f096101cea5a9be43e937b54141251b04b5c32d6efcb8150103ba69deaf",
+  "nativeFrames": 2879,
+  "nativeSize": [
+    1920,
+    1080
+  ],
+  "nativeIntervalSeconds": 0.03333333507180214,
+  "nativeFrameRate": 29.999998435378156,
+  "nativeGameplaySeconds": 95.96667167171836,
+  "introSeconds": 5,
+  "outroSeconds": 7,
+  "expectedDurationSeconds": 107.96667167171836,
+  "sourceTimestampOrigin": 0.03333333507180214,
+  "chapters": [
+    {
+      "key": "briefing",
+      "firstSourceFrame": 0,
+      "start": 0.0,
+      "duration": 4.000000208616257
+    },
+    {
+      "key": "stage1",
+      "firstSourceFrame": 120,
+      "start": 4.000000208616257,
+      "duration": 8.600000448524952
+    },
+    {
+      "key": "upgrade1",
+      "firstSourceFrame": 378,
+      "start": 12.600000657141209,
+      "duration": 8.533333778381348
+    },
+    {
+      "key": "stage2",
+      "firstSourceFrame": 634,
+      "start": 21.133334435522556,
+      "duration": 16.466667525470257
+    },
+    {
+      "key": "diagnostics",
+      "firstSourceFrame": 1128,
+      "start": 37.60000196099281,
+      "duration": 1.6333334185183048
+    },
+    {
+      "key": "upgrade2",
+      "firstSourceFrame": 1177,
+      "start": 39.23333537951112,
+      "duration": 8.533333778381348
+    },
+    {
+      "key": "diagnostics",
+      "firstSourceFrame": 1433,
+      "start": 47.766669157892466,
+      "duration": 0.03333333507180214
+    },
+    {
+      "key": "stage3",
+      "firstSourceFrame": 1434,
+      "start": 47.80000249296427,
+      "duration": 44.166668970137835
+    },
+    {
+      "key": "result",
+      "firstSourceFrame": 2759,
+      "start": 91.9666714631021,
+      "duration": 4.000000208616257
+    }
+  ],
+  "outcome": "won",
+  "fullRunLedger": {
+    "mode": "aegis-portfolio-v1.5",
+    "runId": "0B125E6949C4D7B435E01AB4BD3B5B6C",
+    "outcome": "won",
+    "completed": true,
+    "sessionGameSeconds": 84.90000442788005,
+    "trialElapsedSeconds": 80.90000421926379,
+    "energyInitial": 60,
+    "energyFinal": 100,
+    "energyEarned": 185,
+    "energySpent": 145,
+    "energyOverflow": 34,
+    "pulsesUsed": 3,
+    "repairsUsed": 1,
+    "enemiesRewarded": 12,
+    "stagesRewarded": 3,
+    "repairPlayerActualHealing": 14,
+    "repairCompanionActualHealing": 0,
+    "alliedActualDamageDealt": 1260,
+    "playerActualDamageTaken": 70,
+    "companionActualDamageTaken": 28,
+    "upgradeMask": 6,
+    "ledgerBalanced": true,
+    "eventCount": 111,
+    "tracePath": "D:/AegisWork/Reports/portfolio-v1.5-20260918/capture-packaged-01/system/portfolio-0B125E6949C4D7B435E01AB4BD3B5B6C.jsonl",
+    "traceComplete": true
+  },
+  "audio": {
+    "eventCount": 195,
+    "assets": {
+      "S_Impact": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Impact.wav",
+        "sha256": "34d826980ed3ebcbfe0131e04fb5f1a58aa3f5a78c4b337cdfcc4118d5d1c417",
+        "bytes": 5804,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      },
+      "S_Shot": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Shot.wav",
+        "sha256": "8c16876d976aa1bb9db712278886584d9f6607d414ffeffe4949040d3cb4cfde",
+        "bytes": 6284,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      },
+      "S_Break": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Break.wav",
+        "sha256": "62b156a4476425cfc3331fa0314ce158b428aa7be112b17046c9706818e86dd3",
+        "bytes": 23084,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      },
+      "S_Repair": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Repair.wav",
+        "sha256": "2acc80b66359ca34ab27443248430c17bee3a6d5482d13cee96abf92c866dd82",
+        "bytes": 26444,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      },
+      "S_Upgrade": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Upgrade.wav",
+        "sha256": "0ad9db491e46e550c3bef45f3b53e7f95b46a2598b0fc09ca575760b819d2975",
+        "bytes": 31244,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      },
+      "S_Pulse": {
+        "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\assets\\source_audio\\S_Pulse.wav",
+        "sha256": "8197adbaba34e70ef1537ad2d590c54ddb9d220d267b0865df2bae23ba8f5bbd",
+        "bytes": 31244,
+        "sourceSampleRate": 24000,
+        "sourceChannels": 1
+      }
+    },
+    "sourceGain": 0.5,
+    "peakBeforeNormalization": 0.20401662588119507,
+    "normalizationGain": 1.0,
+    "stereoMethod": "centered source channels; no invented spatial attenuation",
+    "sampleRate": 48000,
+    "channels": 2,
+    "sha256": "37c91aafbb193a9ea9c7159d29928d82ed5454a45b9b05e6c24cf6cd711b7c65",
+    "method": "genuine engine-triggered events remixed from original WAVs; not loopback capture"
+  },
+  "audioEventsSha256": "6b86dcff0f7f1d270dd58b92ae8e06e3340facf91370d3ea1cdc3ac8cddc8459",
+  "layout": {
+    "output": [
+      1920,
+      1080
+    ],
+    "nativeGameplay": [
+      40,
+      150,
+      1440,
+      810
+    ],
+    "rail": [
+      1510,
+      150,
+      370,
+      810
+    ]
+  },
+  "fonts": {
+    "C:\\Windows\\Fonts\\msyh.ttc": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+    "C:\\Windows\\Fonts\\msyhbd.ttc": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6"
+  },
+  "prepared": true,
+  "visualQaRequired": "Inspect the five encoded QA images, including native on-screen engine warnings; mechanical gates do not read screen text",
+  "ffmpeg": {
+    "path": "D:\\AegisWork\\Tools\\decision-video\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3"
+  },
+  "command": [
+    "D:\\AegisWork\\Tools\\decision-video\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-y",
+    "-threads",
+    "2",
+    "-filter_complex_threads",
+    "2",
+    "-framerate",
+    "30",
+    "-start_number",
+    "0",
+    "-i",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-packaged-01\\frames\\frame-%06d.png",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\backgrounds.txt",
+    "-loop",
+    "1",
+    "-framerate",
+    "30",
+    "-i",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\intro.png",
+    "-loop",
+    "1",
+    "-framerate",
+    "30",
+    "-i",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\outro.png",
+    "-i",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\event-mix.wav",
+    "-filter_complex",
+    "[0:v]scale=1440:810:flags=lanczos,setsar=1,setpts=PTS-STARTPTS[native];[1:v]fps=30,tpad=stop_mode=clone:stop_duration=1,setpts=PTS-STARTPTS[background];[background][native]overlay=40:150:eof_action=repeat,trim=end_frame=2879,setpts=PTS-STARTPTS[game];[2:v]fps=30,trim=duration=5,setsar=1,setpts=PTS-STARTPTS[intro];[3:v]fps=30,trim=duration=7,setsar=1,setpts=PTS-STARTPTS[outro];[intro][game][outro]concat=n=3:v=1:a=0,format=yuv420p[v]",
+    "-map",
+    "[v]",
+    "-map",
+    "4:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-threads",
+    "2",
+    "-crf",
+    "22",
+    "-pix_fmt",
+    "yuv420p",
+    "-r",
+    "30",
+    "-fps_mode",
+    "cfr",
+    "-frames:v",
+    "3239",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "160k",
+    "-movflags",
+    "+faststart",
+    "-shortest",
+    "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\video-final\\Aegis-Arena-Portfolio-v1.5.mp4"
+  ],
+  "encodedDurationSeconds": 107.97,
+  "decodedFrames": 3239,
+  "fullDecodePassed": true,
+  "video": {
+    "file": "Aegis-Arena-Portfolio-v1.5.mp4",
+    "bytes": 14160407,
+    "sha256": "78cd24bc9ceadb5e47d43a9495a353d34eb62d1d7b3f370ea582ae92df11c974",
+    "codec": "H.264",
+    "audioCodec": "AAC",
+    "pixelFormat": "yuv420p",
+    "fps": 30,
+    "crf": 22
+  },
+  "qaFrames": [
+    {
+      "file": "qa-01.png",
+      "encodedSeconds": 2.0,
+      "sha256": "d1d5674a6a0d4e844d1d59f42fc3759a0e5056d3bec1ac95d44f37e1c3eca9bd"
+    },
+    {
+      "file": "qa-02.png",
+      "encodedSeconds": 10.000000208616257,
+      "sha256": "bd26e2d75ba0f6396cb292842ffb91f7b5fd3b9f95bd348dfd49cf8df1e06b05"
+    },
+    {
+      "file": "qa-03.png",
+      "encodedSeconds": 18.60000065714121,
+      "sha256": "ebc6f5540f21f1b26c16c46e675b78a86a44aae83307e92805aac69be161a2c3"
+    },
+    {
+      "file": "qa-04.png",
+      "encodedSeconds": 43.416668670251966,
+      "sha256": "44b97110d81cd84aae497fa85b10432eefe532fe4b4d7f0b3c9120cc1ca28105"
+    },
+    {
+      "file": "qa-05.png",
+      "encodedSeconds": 104.96667167171836,
+      "sha256": "df300a7c9ce7c7d34e97a683b275b201d183e39013fc143f8a8cb089d839fccc"
+    }
+  ],
+  "wallSeconds": 95.8130000000001
+}

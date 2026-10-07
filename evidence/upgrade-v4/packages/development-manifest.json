@@ -1,0 +1,287 @@
+[
+  {
+    "path": "AegisArena/Binaries/Win64/AegisArena.exe",
+    "bytes": 220232704,
+    "sha256": "475eb446b9aaee0c564cb7092d9eb7fc5589b7bddf513f9f4b38fdf7763b5064"
+  },
+  {
+    "path": "AegisArena/Binaries/Win64/D3D12/x64/D3D12Core.dll",
+    "bytes": 4831768,
+    "sha256": "c41711499e13244fd07ca28a9b32ece29e4454ecc38fb50681f74254b333a9b3"
+  },
+  {
+    "path": "AegisArena/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll",
+    "bytes": 4943344,
+    "sha256": "e36f1ee4371798892529762368907d19b997493ad6f30aa8acbfd0132881804f"
+  },
+  {
+    "path": "AegisArena/Binaries/Win64/tbb12.dll",
+    "bytes": 342456,
+    "sha256": "de15a5f93bfd334d4fe32343a81d76f9de0824af8e31b2189637d12545af2673"
+  },
+  {
+    "path": "AegisArena/Binaries/Win64/tbbmalloc.dll",
+    "bytes": 117176,
+    "sha256": "74edc04a8f5bc2593a5a555b675c1251d6d90e693ee6a67cfa11dd3b2d17a856"
+  },
+  {
+    "path": "AegisArena/Content/Paks/AegisArena-Windows.pak",
+    "bytes": 10295952,
+    "sha256": "93ffe7ae1461ec056435673ab33aa536685dc8935f4375a404a6ec58cf0f3b29"
+  },
+  {
+    "path": "AegisArena/Content/Paks/AegisArena-Windows.ucas",
+    "bytes": 12736656,
+    "sha256": "c12cca6160446e01a1c1aead88a7f8820a38fcc64443a43bf2c71f534c0569f2"
+  },
+  {
+    "path": "AegisArena/Content/Paks/AegisArena-Windows.utoc",
+    "bytes": 54110,
+    "sha256": "acff7dcab54b04ee0af0daa46680be7a36ca7ebc4b45ed9c421036e2d08137f1"
+  },
+  {
+    "path": "AegisArena/Content/Paks/global.ucas",
+    "bytes": 1568064,
+    "sha256": "c0375c034a79ede2b0407835745cf6563e571934f52d2a8442b73b5f54a765ea"
+  },
+  {
+    "path": "AegisArena/Content/Paks/global.utoc",
+    "bytes": 482,
+    "sha256": "b3891a42cdd4d6473230bb3155f3501811f09e04dd1bd68019d9805866b5dfd1"
+  },
+  {
+    "path": "AegisArena/Saved/AegisPlans/BE9EE981438532E91C5DA99497EA10C2.jsonl",
+    "bytes": 219,
+    "sha256": "92dc22a11a890520e4a919f8fe01202b3cfd17254853735bba86aa40e6a997f6"
+  },
+  {
+    "path": "AegisArena/Saved/AegisPlans/EA80EF38449AED5C93749CB9EE06B450.jsonl",
+    "bytes": 5723,
+    "sha256": "c243b5a5b129fc14b78ecefca8cc276976017ebd5390a48a7a24822bdb5d8167"
+  },
+  {
+    "path": "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-7059D4954786E59BC06177B3CFC02E7B/CrashReportClient.ini",
+    "bytes": 239,
+    "sha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893"
+  },
+  {
+    "path": "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-FEAEAE994CC161F262BA7BA9B78897F3/CrashReportClient.ini",
+    "bytes": 239,
+    "sha256": "ce69d7e7bbd1a64729bd4d5724f3c1efc47c6c3d555da9d2c6ad741eddc3d893"
+  },
+  {
+    "path": "AegisArena/Saved/Config/Windows/GameUserSettings.ini",
+    "bytes": 1378,
+    "sha256": "25034567f71ecec90a640fa803a6bb0292ec483021905251ec22f55c8b4aa91b"
+  },
+  {
+    "path": "AegisArena.exe",
+    "bytes": 171520,
+    "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+  },
+  {
+    "path": "Configure Aegis AI.cmd",
+    "bytes": 880,
+    "sha256": "21107d2fa6e6f636106d9523596d76a52f06496f08c15855ec2ad1e74e08dac3"
+  },
+  {
+    "path": "Copilot/aegis_ai_config.py",
+    "bytes": 12651,
+    "sha256": "1dc98bf3d119c646e97132a7f109636682702df08fbeff3162507960e7ad8998"
+  },
+  {
+    "path": "Copilot/launch_copilot.py",
+    "bytes": 1787,
+    "sha256": "b7c51308f0b089a0b7f8005754fee554128bf2215465411fc5ffeb259596243a"
+  },
+  {
+    "path": "Copilot/READ ME.txt",
+    "bytes": 874,
+    "sha256": "d240f5d52965d843183b94c300314cbb4a15379d445e8a53433ecb9056feddfe"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll",
+    "bytes": 2232688,
+    "sha256": "36795e47d9724ee68349efbbe64aba94db108b9cad1e3dfe8bc510f359136f53"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll",
+    "bytes": 5799016,
+    "sha256": "82d7a3e50710d660927db2f318cbed471049c962b7c05de12c2b2b3e40a35af9"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll",
+    "bytes": 59832,
+    "sha256": "f23df1213c4bf23b5c666bafa7ec18743847a2e18192ae8e0d096a2fb7c28bf9"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll",
+    "bytes": 1724856,
+    "sha256": "a56d43a98e197f5e73a1dadf5c1dc7a07ad40327b199faa4ff1247abd6eccd5b"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll",
+    "bytes": 48568,
+    "sha256": "d64e67ca918716be8b6056a6f7a1f6256e910754425db8369d952943264b40eb"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll",
+    "bytes": 8161680,
+    "sha256": "8c5af98e2d899d4aec744c63a8bc99b90124d8fc3bdc120d4c178e1df3a3e5e8"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json",
+    "bytes": 13848,
+    "sha256": "9e55221c225dce4b5448bac7dadb7e39fd216f51354dde02e58f950f4a0dd80b"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll",
+    "bytes": 2890128,
+    "sha256": "7972fa60e084dc7da6c8a69ac1645b112f5e98a078fc27a7d3df469f2da4f811"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json",
+    "bytes": 23055,
+    "sha256": "578bde354874789671dee1a96468c965619c9f3ba16cfa65f850e81a80674087"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll",
+    "bytes": 8166288,
+    "sha256": "dd72d28450db1b52bd6c5dc12228741b680940c5fb5eb6b6a0e26f0ee5c3fc3e"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json",
+    "bytes": 28099,
+    "sha256": "71d4e243a2af74874f4f61378bdfe3753cb01ce5eb9b98400d83612bf882a815"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll",
+    "bytes": 1485200,
+    "sha256": "93227f57ddca0084e1655a65d2cc915d65b5191f6c645a17c0b36cfa2f714b38"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json",
+    "bytes": 66696,
+    "sha256": "6095c28691757e083a8c1bef3c69ca76a8b5017e21acaf55d1bc7e82221a0fbe"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll",
+    "bytes": 415632,
+    "sha256": "eebd555aab6df20b21520564d0eb2341ad0e9cdde6148ee1c71ef76805c5e7df"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json",
+    "bytes": 4455,
+    "sha256": "18ecafc9a65e1b7af8cd0e36dc936026cdb3aed333c4ea5a7c17d6d9465cfaf4"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll",
+    "bytes": 397200,
+    "sha256": "341b6b5eedbf4b7aeb4439af85b23974b820b1413dfaf6356911476df44ed559"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json",
+    "bytes": 1910,
+    "sha256": "a1e980a24be9a16a826b00c27d61b85ee0e2e17226dc9c4e8eec031879e5f26a"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll",
+    "bytes": 19509136,
+    "sha256": "ea37bfda6749684d88a1944ae7103a87d9b38468579f397c3c82ede1ceaa40d6"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json",
+    "bytes": 95917,
+    "sha256": "5c464b84457776d92a674de506f7b7a489294583a7d7609f78fcc52bc4406d09"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll",
+    "bytes": 69056,
+    "sha256": "ba40d206c6113ac1a35993a06390c93e55602713a902d7ba7b2f2f0ed13e3d3f"
+  },
+  {
+    "path": "Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll",
+    "bytes": 858152,
+    "sha256": "0ca010abcabe52493fdb744d79c4c8132ae6756046b68aa7c88bdc03ec1effcd"
+  },
+  {
+    "path": "Engine/Config/StagedBuild_AegisArena.ini",
+    "bytes": 3,
+    "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+  },
+  {
+    "path": "Engine/Content/Renderer/TessellationTable.bin",
+    "bytes": 259568,
+    "sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941"
+  },
+  {
+    "path": "Engine/Content/Slate/Cursor/invisible.cur",
+    "bytes": 326,
+    "sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1"
+  },
+  {
+    "path": "Engine/Content/SlateDebug/Fonts/LastResort.tps",
+    "bytes": 930,
+    "sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8"
+  },
+  {
+    "path": "Engine/Content/SlateDebug/Fonts/LastResort.ttf",
+    "bytes": 5395052,
+    "sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9"
+  },
+  {
+    "path": "Engine/Extras/GPUDumpViewer/GPUDumpViewer.html",
+    "bytes": 195428,
+    "sha256": "eb599b5171e99d7c2e35732abf9525baeb39b9c2ac86619522f307c57cc90384"
+  },
+  {
+    "path": "Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat",
+    "bytes": 879,
+    "sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b"
+  },
+  {
+    "path": "Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh",
+    "bytes": 2165,
+    "sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a"
+  },
+  {
+    "path": "Engine/Extras/Redist/en-us/vc_redist.arm64.exe",
+    "bytes": 11751688,
+    "sha256": "9a4540c1ed0ac2a0755c0093a9c01e4b3dbe21b25805318ba495648fc890e14f"
+  },
+  {
+    "path": "Engine/Extras/Redist/en-us/vc_redist.x64.exe",
+    "bytes": 18569648,
+    "sha256": "c458c6841310561ef6fadef893092ed02d840da205ad0ae9843fb0d2579b3378"
+  },
+  {
+    "path": "Engine/Saved/Config/Windows/Manifest.ini",
+    "bytes": 25,
+    "sha256": "531bfb7088f544a87ff1268a69a3648dc0648ba49aaca9c3c67d4c4dcf87f088"
+  },
+  {
+    "path": "Manifest_DebugFiles_Win64.txt",
+    "bytes": 437,
+    "sha256": "2fc6792a7a835f3abab139ac7c9b4e6380b33cc25509b649746a992b085eea7c"
+  },
+  {
+    "path": "Manifest_NonUFSFiles_Win64.txt",
+    "bytes": 2778,
+    "sha256": "b73af761e98c39dab7cad5a358ad64b1c305fa8568a8cefb55dc7573b8d6b6b4"
+  },
+  {
+    "path": "Manifest_UFSFiles_Win64.txt",
+    "bytes": 144925,
+    "sha256": "4c71874e2ec2f7532ef9a92d29c6050a5074b8fa11afa9d047d72ffd14c2b718"
+  },
+  {
+    "path": "NOTICES.txt",
+    "bytes": 111,
+    "sha256": "ba49ae5586f817b36a2772269f71f899cb1f54b5f2720fad951319edd5e140b8"
+  },
+  {
+    "path": "Play Aegis Copilot.cmd",
+    "bytes": 927,
+    "sha256": "e5c87578cf0bf0353ad164d88d08a7f6b00a6bd81fecdc71ab6dde44127f2161"
+  }
+]

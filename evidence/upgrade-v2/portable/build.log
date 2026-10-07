@@ -1,0 +1,11 @@
+{
+  "engine": "portable-cpp-model",
+  "compiler": "clang version 20.1.2 (https://github.com/ziglang/zig-bootstrap 7ef74e656cf8ddbd6bf891a8475892aa1afa6891)",
+  "flags": "C++17 -O2 -Wall -Wextra -Werror -pedantic",
+  "tests": {
+    "suite": "portable_cpp",
+    "assertions": 347,
+    "failed": 0
+  },
+  "unreal_compiled": false
+}

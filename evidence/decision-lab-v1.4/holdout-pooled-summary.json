@@ -1,0 +1,1469 @@
+{
+  "schemaVersion": 1,
+  "scope": "Descriptive equal mixture of frozen layout 0 and layout 1, six paired seeds each; no development episodes",
+  "sourceAnalysis": "D:\\AegisWork\\Reports\\decision-lab-20260917\\holdout-analysis.json",
+  "sourceAnalysisSha256": "fc2592dce72849d7730ef4924561a07e2ff1b44fbd432d9429be02f627ca0915",
+  "protocolSha256": "b559096f62e9dfd53aec1b4bb3ef37fc44bf2c4a14c97b0e23fc3a943d0ca91d",
+  "policies": {
+    "baseline": {
+      "episodes": 12,
+      "wins": 2,
+      "winRateWilson95": [
+        0.04696414761482223,
+        0.44803635738467273
+      ],
+      "terminationCounts": {
+        "timeout": 7,
+        "player_dead": 3,
+        "enemy_clear": 2
+      },
+      "companionDeaths": 2,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 113.16666793823242,
+          "median": 124.0,
+          "minimum": 36,
+          "maximum": 180.00001525878906
+        },
+        "companionDamageTaken": {
+          "mean": 69.10833644866943,
+          "median": 56.0,
+          "minimum": 0,
+          "maximum": 121.00001525878906
+        },
+        "playerDamageDealt": {
+          "mean": 115.95000453790028,
+          "median": 126.95002746582031,
+          "minimum": 52,
+          "maximum": 196
+        },
+        "companionDamageDealt": {
+          "mean": 62.5,
+          "median": 60.0,
+          "minimum": 28,
+          "maximum": 112
+        },
+        "playerHealingReceived": {
+          "mean": 63.35834248860677,
+          "median": 53.150001525878906,
+          "minimum": 0,
+          "maximum": 127.50001525878906
+        },
+        "companionHealingReceived": {
+          "mean": 20.6500186920166,
+          "median": 21.000015258789062,
+          "minimum": 0,
+          "maximum": 63.700069427490234
+        },
+        "companionAliveSeconds": {
+          "mean": 45.147224576833345,
+          "median": 48.2833358515054,
+          "minimum": 19.100000996142626,
+          "maximum": 60.00000312924385
+        },
+        "companionStuckSeconds": {
+          "mean": 0.3166666831821203,
+          "median": 0.30000001564621925,
+          "minimum": 0.10000000521540642,
+          "maximum": 0.5000000260770321
+        },
+        "companionShots": {
+          "mean": 4.5,
+          "median": 4.5,
+          "minimum": 2,
+          "maximum": 8
+        },
+        "companionDecisions": {
+          "mean": 217.41666666666666,
+          "median": 233.5,
+          "minimum": 92,
+          "maximum": 290
+        },
+        "companionActionSwitches": {
+          "mean": 9.5,
+          "median": 8.0,
+          "minimum": 3,
+          "maximum": 18
+        },
+        "companionShortReversals": {
+          "mean": 1.75,
+          "median": 2.0,
+          "minimum": 0,
+          "maximum": 3
+        },
+        "companionSupportHeals": {
+          "mean": 51.28333282470703,
+          "median": 44.0,
+          "minimum": 0,
+          "maximum": 110
+        },
+        "companionSupportHealCount": {
+          "mean": 2.3333333333333335,
+          "median": 2.0,
+          "minimum": 0,
+          "maximum": 5
+        },
+        "elapsedGameSeconds": {
+          "mean": 47.10000245645642,
+          "median": 60.00000312924385,
+          "minimum": 19.100000996142626,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 0.8333333333333334,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "win": {
+          "mean": 0.16666666666666666,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 1.25,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "waitingSeconds": {
+          "mean": 12.913889562400678,
+          "median": 9.958333852700889,
+          "minimum": 2.400000125169754,
+          "maximum": 41.816668847575784
+        },
+        "selectedFollowSeconds": {
+          "mean": 17.691667589358985,
+          "median": 11.933333955705166,
+          "minimum": 5.883333640173078,
+          "maximum": 54.38333616964519
+        }
+      }
+    },
+    "improved": {
+      "episodes": 12,
+      "wins": 6,
+      "winRateWilson95": [
+        0.2537781703934222,
+        0.7462218296065778
+      ],
+      "terminationCounts": {
+        "timeout": 4,
+        "enemy_clear": 6,
+        "player_dead": 2
+      },
+      "companionDeaths": 3,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 94.67500146230061,
+          "median": 91.0,
+          "minimum": 42,
+          "maximum": 146.10000228881836
+        },
+        "companionDamageTaken": {
+          "mean": 61.45833492279053,
+          "median": 56.0,
+          "minimum": 0,
+          "maximum": 112.60001373291016
+        },
+        "playerDamageDealt": {
+          "mean": 121.83334263165791,
+          "median": 113.0,
+          "minimum": 56,
+          "maximum": 169.90001773834229
+        },
+        "companionDamageDealt": {
+          "mean": 77.86667060852051,
+          "median": 82.50002670288086,
+          "minimum": 28,
+          "maximum": 106
+        },
+        "playerHealingReceived": {
+          "mean": 58.86667537689209,
+          "median": 60.600006103515625,
+          "minimum": 14.000015258789062,
+          "maximum": 113.20001983642578
+        },
+        "companionHealingReceived": {
+          "mean": 9.216673851013184,
+          "median": 6.30000114440918,
+          "minimum": 0,
+          "maximum": 35.000030517578125
+        },
+        "companionAliveSeconds": {
+          "mean": 45.21528013593828,
+          "median": 46.350002417340875,
+          "minimum": 26.400001376867294,
+          "maximum": 60.00000312924385
+        },
+        "companionStuckSeconds": {
+          "mean": 0.6500000339001417,
+          "median": 0.6500000339001417,
+          "minimum": 0.20000001043081284,
+          "maximum": 1.4000000730156898
+        },
+        "companionShots": {
+          "mean": 6.083333333333333,
+          "median": 6.0,
+          "minimum": 2,
+          "maximum": 9
+        },
+        "companionDecisions": {
+          "mean": 217.33333333333334,
+          "median": 222.0,
+          "minimum": 127,
+          "maximum": 289
+        },
+        "companionActionSwitches": {
+          "mean": 10.333333333333334,
+          "median": 10.5,
+          "minimum": 4,
+          "maximum": 20
+        },
+        "companionShortReversals": {
+          "mean": 2.4166666666666665,
+          "median": 2.0,
+          "minimum": 0,
+          "maximum": 11
+        },
+        "companionSupportHeals": {
+          "mean": 47.666666666666664,
+          "median": 44.0,
+          "minimum": 0,
+          "maximum": 88
+        },
+        "companionSupportHealCount": {
+          "mean": 2.1666666666666665,
+          "median": 2.0,
+          "minimum": 0,
+          "maximum": 4
+        },
+        "elapsedGameSeconds": {
+          "mean": 47.83333582803607,
+          "median": 51.70000269636512,
+          "minimum": 26.400001376867294,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 0.75,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "win": {
+          "mean": 0.5,
+          "median": 0.5,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 0.8333333333333334,
+          "median": 0.5,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "waitingSeconds": {
+          "mean": 0.11666667275130749,
+          "median": 0.11666667275130749,
+          "minimum": 0.11666667275130749,
+          "maximum": 0.11666667275130749
+        },
+        "selectedFollowSeconds": {
+          "mean": 20.216667721047997,
+          "median": 17.483334245160222,
+          "minimum": 7.283333713188767,
+          "maximum": 38.883335361257195
+        }
+      }
+    },
+    "priority": {
+      "episodes": 12,
+      "wins": 5,
+      "winRateWilson95": [
+        0.19325746190524656,
+        0.6804926643446272
+      ],
+      "terminationCounts": {
+        "timeout": 6,
+        "enemy_clear": 5,
+        "player_dead": 1
+      },
+      "companionDeaths": 3,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 68.5,
+          "median": 56.0,
+          "minimum": 14,
+          "maximum": 140
+        },
+        "companionDamageTaken": {
+          "mean": 74,
+          "median": 84.0,
+          "minimum": 0,
+          "maximum": 100
+        },
+        "playerDamageDealt": {
+          "mean": 89.50000373522441,
+          "median": 86.49999952316284,
+          "minimum": 56,
+          "maximum": 135.0000457763672
+        },
+        "companionDamageDealt": {
+          "mean": 113.61666667461395,
+          "median": 126.0,
+          "minimum": 30,
+          "maximum": 154
+        },
+        "playerHealingReceived": {
+          "mean": 17.850014686584473,
+          "median": 5.950000762939453,
+          "minimum": 0,
+          "maximum": 82.60006713867188
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 39.31250205030665,
+          "median": 37.74166863504797,
+          "minimum": 14.600000761449337,
+          "maximum": 60.00000312924385
+        },
+        "companionStuckSeconds": {
+          "mean": 0.3333333507180214,
+          "median": 0.30000001564621925,
+          "minimum": 0.10000000521540642,
+          "maximum": 0.7000000365078449
+        },
+        "companionShots": {
+          "mean": 8.5,
+          "median": 9.0,
+          "minimum": 3,
+          "maximum": 11
+        },
+        "companionDecisions": {
+          "mean": 189.58333333333334,
+          "median": 182.5,
+          "minimum": 69,
+          "maximum": 291
+        },
+        "companionActionSwitches": {
+          "mean": 4.833333333333333,
+          "median": 5.0,
+          "minimum": 2,
+          "maximum": 8
+        },
+        "companionShortReversals": {
+          "mean": 1.0833333333333333,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 4
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionSupportHealCount": {
+          "mean": 0,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "elapsedGameSeconds": {
+          "mean": 43.708335612900555,
+          "median": 49.05000255815685,
+          "minimum": 14.600000761449337,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 0.75,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "win": {
+          "mean": 0.4166666666666667,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 0.8333333333333334,
+          "median": 1.0,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "waitingSeconds": {
+          "mean": 17.472223133469623,
+          "median": 19.566667687147856,
+          "minimum": 0.5166666936129332,
+          "maximum": 33.416668409481645
+        },
+        "selectedFollowSeconds": {
+          "mean": 30.645834931638092,
+          "median": 29.43333486840129,
+          "minimum": 3.9833335410803556,
+          "maximum": 57.6833363417536
+        }
+      }
+    }
+  },
+  "pairedComparisons": {
+    "improved": {
+      "definition": "improved minus baseline within identical layout/seed",
+      "candidateOnlyWins": 6,
+      "baselineOnlyWins": 2,
+      "pairs": [
+        {
+          "layout": 0,
+          "seed": 9001,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -28,
+            "companionDamageTaken": -64.30002212524414,
+            "playerDamageDealt": -18.10002899169922,
+            "companionDamageDealt": 30,
+            "playerHealingReceived": -12,
+            "companionHealingReceived": 0.6999931335449219,
+            "companionAliveSeconds": 20.650001076981425,
+            "companionStuckSeconds": 0.6000000312924385,
+            "companionShots": 3,
+            "companionDecisions": 99,
+            "companionActionSwitches": 3,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 0.600006103515625,
+            "companionSupportHealCount": 0,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 1,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": -2.3000001199543476,
+            "selectedFollowSeconds": 8.10000042244792
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9002,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": 6,
+            "companionDamageTaken": -65.00001525878906,
+            "playerDamageDealt": 50.10000228881836,
+            "companionDamageDealt": 16,
+            "playerHealingReceived": 22,
+            "companionHealingReceived": -13.300006866455078,
+            "companionAliveSeconds": -6.916667027398944,
+            "companionStuckSeconds": 0.30000001564621925,
+            "companionShots": 2,
+            "companionDecisions": -35,
+            "companionActionSwitches": 0,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 22,
+            "companionSupportHealCount": 1,
+            "elapsedGameSeconds": -9.700000505894423,
+            "companionAliveAtEnd": 1,
+            "win": 1,
+            "enemiesAlive": -1,
+            "waitingSeconds": -20.600001074373722,
+            "selectedFollowSeconds": 6.000000312924385
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9003,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 0,
+            "companionDamageTaken": -14,
+            "playerDamageDealt": -11.800025939941406,
+            "companionDamageDealt": 50,
+            "playerHealingReceived": -7.29998779296875,
+            "companionHealingReceived": -34.30002975463867,
+            "companionAliveSeconds": 0.0,
+            "companionStuckSeconds": 0.9000000469386578,
+            "companionShots": 2,
+            "companionDecisions": 1,
+            "companionActionSwitches": -1,
+            "companionShortReversals": 2,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": 1,
+            "waitingSeconds": -10.800000563263893,
+            "selectedFollowSeconds": 28.100001465529203
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9004,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 20.10000228881836,
+            "companionDamageTaken": -7.099994659423828,
+            "playerDamageDealt": -42,
+            "companionDamageDealt": -42,
+            "playerHealingReceived": -67.50003433227539,
+            "companionHealingReceived": -58.80006408691406,
+            "companionAliveSeconds": -29.233334857970476,
+            "companionStuckSeconds": 0.10000000521540642,
+            "companionShots": -3,
+            "companionDecisions": -140,
+            "companionActionSwitches": -8,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": -27.60000143945217,
+            "companionAliveAtEnd": -1,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": -2.3000001199543476,
+            "selectedFollowSeconds": 10.60000055283308
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9005,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -7.9999847412109375,
+            "companionDamageTaken": 28.600013732910156,
+            "playerDamageDealt": 0,
+            "companionDamageDealt": 28,
+            "playerHealingReceived": -7.9999847412109375,
+            "companionHealingReceived": 9.10000991821289,
+            "companionAliveSeconds": 8.26666709780693,
+            "companionStuckSeconds": 0.10000000521540642,
+            "companionShots": 2,
+            "companionDecisions": 40,
+            "companionActionSwitches": 0,
+            "companionShortReversals": 0,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": 12.600000657141209,
+            "companionAliveAtEnd": -1,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": -2.2833334524184465,
+            "selectedFollowSeconds": -0.30000001564621925
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9006,
+          "baselineWin": true,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 64,
+            "companionDamageTaken": 58,
+            "playerDamageDealt": -35.49999952316284,
+            "companionDamageDealt": -42,
+            "playerHealingReceived": 63.00004577636719,
+            "companionHealingReceived": -4.200004577636719,
+            "companionAliveSeconds": 12.250000638887286,
+            "companionStuckSeconds": 0.30000001564621925,
+            "companionShots": -3,
+            "companionDecisions": 58,
+            "companionActionSwitches": 2,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 0,
+            "companionSupportHealCount": 0,
+            "elapsedGameSeconds": 37.70000196620822,
+            "companionAliveAtEnd": -1,
+            "win": -1,
+            "enemiesAlive": 2,
+            "waitingSeconds": -4.600000239908695,
+            "selectedFollowSeconds": 3.5000001825392246
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9101,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -56,
+            "companionDamageTaken": 0,
+            "playerDamageDealt": -28,
+            "companionDamageDealt": 39.00005340576172,
+            "playerHealingReceived": -48.20000457763672,
+            "companionHealingReceived": 0.0,
+            "companionAliveSeconds": -6.900000359863043,
+            "companionStuckSeconds": 0.0,
+            "companionShots": 4,
+            "companionDecisions": -34,
+            "companionActionSwitches": -2,
+            "companionShortReversals": -1,
+            "companionSupportHeals": -44,
+            "companionSupportHealCount": -2,
+            "elapsedGameSeconds": -6.900000359863043,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -2,
+            "waitingSeconds": -21.600001126527786,
+            "selectedFollowSeconds": -2.3000001199543476
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9102,
+          "baselineWin": true,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -36,
+            "companionDamageTaken": -14,
+            "playerDamageDealt": 13.000045776367188,
+            "companionDamageDealt": 20,
+            "playerHealingReceived": 15.699996948242188,
+            "companionHealingReceived": -8.400020599365234,
+            "companionAliveSeconds": 26.400001376867294,
+            "companionStuckSeconds": 0.5000000260770321,
+            "companionShots": 1,
+            "companionDecisions": 127,
+            "companionActionSwitches": 7,
+            "companionShortReversals": 8,
+            "companionSupportHeals": 22,
+            "companionSupportHealCount": 1,
+            "elapsedGameSeconds": 26.400001376867294,
+            "companionAliveAtEnd": 0,
+            "win": -1,
+            "enemiesAlive": 1,
+            "waitingSeconds": -4.2000002190470695,
+            "selectedFollowSeconds": 4.500000234693289
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9103,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": 42,
+            "companionDamageTaken": -56,
+            "playerDamageDealt": 48,
+            "companionDamageDealt": -44.600006103515625,
+            "playerHealingReceived": 33.20001220703125,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -18.800000980496407,
+            "companionStuckSeconds": 0.6000000312924385,
+            "companionShots": -2,
+            "companionDecisions": -91,
+            "companionActionSwitches": -2,
+            "companionShortReversals": -1,
+            "companionSupportHeals": 22,
+            "companionSupportHealCount": 1,
+            "elapsedGameSeconds": -18.800000980496407,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -1,
+            "waitingSeconds": -23.500001225620508,
+            "selectedFollowSeconds": 5.700000297278166
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9104,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -96.00001525878906,
+            "companionDamageTaken": 14,
+            "playerDamageDealt": 99.90001773834229,
+            "companionDamageDealt": 42,
+            "playerHealingReceived": -8.400016784667969,
+            "companionHealingReceived": 14.000015258789062,
+            "companionAliveSeconds": 18.800000980496407,
+            "companionStuckSeconds": -0.10000000521540642,
+            "companionShots": 4,
+            "companionDecisions": 89,
+            "companionActionSwitches": 7,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 0,
+            "companionSupportHealCount": 0,
+            "elapsedGameSeconds": 18.800000980496407,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -2,
+            "waitingSeconds": -9.483333827927709,
+            "selectedFollowSeconds": 5.700000297278166
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9105,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -84,
+            "companionDamageTaken": 28,
+            "playerDamageDealt": -28,
+            "companionDamageDealt": 58,
+            "playerHealingReceived": -80.40003204345703,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": -33.600001752376556,
+            "companionStuckSeconds": 0.0,
+            "companionShots": 5,
+            "companionDecisions": -162,
+            "companionActionSwitches": -3,
+            "companionShortReversals": -3,
+            "companionSupportHeals": -44,
+            "companionSupportHealCount": -2,
+            "elapsedGameSeconds": -33.600001752376556,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -1,
+            "waitingSeconds": -41.700002174824476,
+            "selectedFollowSeconds": -40.70000212267041
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9106,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -46,
+            "companionDamageTaken": 0,
+            "playerDamageDealt": 23.000045776367188,
+            "companionDamageDealt": 30,
+            "playerHealingReceived": 44,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": 9.900000516325235,
+            "companionStuckSeconds": 0.7000000365078449,
+            "companionShots": 4,
+            "companionDecisions": 47,
+            "companionActionSwitches": 7,
+            "companionShortReversals": 2,
+            "companionSupportHeals": 44,
+            "companionSupportHealCount": 2,
+            "elapsedGameSeconds": 9.900000516325235,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -2,
+            "waitingSeconds": -10.200000531971455,
+            "selectedFollowSeconds": 1.4000000730156898
+          }
+        }
+      ],
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": -18.491666475931805,
+          "median": -17.99999237060547,
+          "minimum": -96.00001525878906,
+          "maximum": 64,
+          "negativePairs": 7,
+          "zeroPairs": 1,
+          "positivePairs": 4
+        },
+        "companionDamageTaken": {
+          "mean": -7.650001525878906,
+          "median": -3.549997329711914,
+          "minimum": -65.00001525878906,
+          "maximum": 58,
+          "negativePairs": 6,
+          "zeroPairs": 2,
+          "positivePairs": 4
+        },
+        "playerDamageDealt": {
+          "mean": 5.883338093757629,
+          "median": -5.900012969970703,
+          "minimum": -42,
+          "maximum": 99.90001773834229,
+          "negativePairs": 6,
+          "zeroPairs": 1,
+          "positivePairs": 5
+        },
+        "companionDamageDealt": {
+          "mean": 15.366670608520508,
+          "median": 29.0,
+          "minimum": -44.600006103515625,
+          "maximum": 58,
+          "negativePairs": 3,
+          "zeroPairs": 0,
+          "positivePairs": 9
+        },
+        "playerHealingReceived": {
+          "mean": -4.491667111714681,
+          "median": -7.649986267089844,
+          "minimum": -80.40003204345703,
+          "maximum": 63.00004577636719,
+          "negativePairs": 7,
+          "zeroPairs": 0,
+          "positivePairs": 5
+        },
+        "companionHealingReceived": {
+          "mean": -11.433344841003418,
+          "median": -6.300012588500977,
+          "minimum": -58.80006408691406,
+          "maximum": 14.000015258789062,
+          "negativePairs": 7,
+          "zeroPairs": 2,
+          "positivePairs": 3
+        },
+        "companionAliveSeconds": {
+          "mean": 0.06805555910492937,
+          "median": 4.133333548903465,
+          "minimum": -33.600001752376556,
+          "maximum": 26.400001376867294,
+          "negativePairs": 5,
+          "zeroPairs": 1,
+          "positivePairs": 6
+        },
+        "companionStuckSeconds": {
+          "mean": 0.3333333507180214,
+          "median": 0.30000001564621925,
+          "minimum": -0.10000000521540642,
+          "maximum": 0.9000000469386578,
+          "negativePairs": 1,
+          "zeroPairs": 2,
+          "positivePairs": 9
+        },
+        "companionShots": {
+          "mean": 1.5833333333333333,
+          "median": 2.0,
+          "minimum": -3,
+          "maximum": 5,
+          "negativePairs": 3,
+          "zeroPairs": 0,
+          "positivePairs": 9
+        },
+        "companionDecisions": {
+          "mean": -0.08333333333333333,
+          "median": 20.5,
+          "minimum": -162,
+          "maximum": 127,
+          "negativePairs": 5,
+          "zeroPairs": 0,
+          "positivePairs": 7
+        },
+        "companionActionSwitches": {
+          "mean": 0.8333333333333334,
+          "median": 0.0,
+          "minimum": -8,
+          "maximum": 7,
+          "negativePairs": 5,
+          "zeroPairs": 2,
+          "positivePairs": 5
+        },
+        "companionShortReversals": {
+          "mean": 0.6666666666666666,
+          "median": 0.0,
+          "minimum": -3,
+          "maximum": 8,
+          "negativePairs": 3,
+          "zeroPairs": 5,
+          "positivePairs": 4
+        },
+        "companionSupportHeals": {
+          "mean": -3.6166661580403647,
+          "median": 0.0,
+          "minimum": -44,
+          "maximum": 44,
+          "negativePairs": 5,
+          "zeroPairs": 2,
+          "positivePairs": 5
+        },
+        "companionSupportHealCount": {
+          "mean": -0.16666666666666666,
+          "median": 0.0,
+          "minimum": -2,
+          "maximum": 2,
+          "negativePairs": 5,
+          "zeroPairs": 3,
+          "positivePairs": 4
+        },
+        "elapsedGameSeconds": {
+          "mean": 0.7333333715796471,
+          "median": 0.0,
+          "minimum": -33.600001752376556,
+          "maximum": 37.70000196620822,
+          "negativePairs": 5,
+          "zeroPairs": 2,
+          "positivePairs": 5
+        },
+        "companionAliveAtEnd": {
+          "mean": -0.08333333333333333,
+          "median": 0.0,
+          "minimum": -1,
+          "maximum": 1,
+          "negativePairs": 3,
+          "zeroPairs": 7,
+          "positivePairs": 2
+        },
+        "win": {
+          "mean": 0.3333333333333333,
+          "median": 0.5,
+          "minimum": -1,
+          "maximum": 1,
+          "negativePairs": 2,
+          "zeroPairs": 4,
+          "positivePairs": 6
+        },
+        "enemiesAlive": {
+          "mean": -0.4166666666666667,
+          "median": -0.5,
+          "minimum": -2,
+          "maximum": 2,
+          "negativePairs": 6,
+          "zeroPairs": 3,
+          "positivePairs": 3
+        },
+        "waitingSeconds": {
+          "mean": -12.79722288964937,
+          "median": -9.841667179949582,
+          "minimum": -41.700002174824476,
+          "maximum": -2.2833334524184465,
+          "negativePairs": 12,
+          "zeroPairs": 0,
+          "positivePairs": 0
+        },
+        "selectedFollowSeconds": {
+          "mean": 2.525000131689012,
+          "median": 5.100000265985727,
+          "minimum": -40.70000212267041,
+          "maximum": 28.100001465529203,
+          "negativePairs": 3,
+          "zeroPairs": 0,
+          "positivePairs": 9
+        }
+      }
+    },
+    "priority": {
+      "definition": "priority minus baseline within identical layout/seed",
+      "candidateOnlyWins": 3,
+      "baselineOnlyWins": 0,
+      "pairs": [
+        {
+          "layout": 0,
+          "seed": 9001,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -28,
+            "companionDamageTaken": -22.30002212524414,
+            "playerDamageDealt": -16.10002899169922,
+            "companionDamageDealt": 84,
+            "playerHealingReceived": -56,
+            "companionHealingReceived": -20.30002212524414,
+            "companionAliveSeconds": 20.650001076981425,
+            "companionStuckSeconds": 0.20000001043081284,
+            "companionShots": 6,
+            "companionDecisions": 100,
+            "companionActionSwitches": -2,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -43.399993896484375,
+            "companionSupportHealCount": -2,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 1,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": 18.600000970065594,
+            "selectedFollowSeconds": 38.100001987069845
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9002,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -8,
+            "companionDamageTaken": -37.00001525878906,
+            "playerDamageDealt": 50,
+            "companionDamageDealt": 14,
+            "playerHealingReceived": 0,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -19.116667663678527,
+            "companionStuckSeconds": -0.10000000521540642,
+            "companionShots": 1,
+            "companionDecisions": -92,
+            "companionActionSwitches": 0,
+            "companionShortReversals": -1,
+            "companionSupportHeals": 0,
+            "companionSupportHealCount": 0,
+            "elapsedGameSeconds": -21.900001142174006,
+            "companionAliveAtEnd": 1,
+            "win": 1,
+            "enemiesAlive": -1,
+            "waitingSeconds": -2.400000125169754,
+            "selectedFollowSeconds": 6.70000034943223
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9003,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 14,
+            "companionDamageTaken": 30,
+            "playerDamageDealt": -11.800025939941406,
+            "companionDamageDealt": 84,
+            "playerHealingReceived": -37.899940490722656,
+            "companionHealingReceived": -35.000030517578125,
+            "companionAliveSeconds": -22.61666784621775,
+            "companionStuckSeconds": -0.30000001564621925,
+            "companionShots": 6,
+            "companionDecisions": -108,
+            "companionActionSwitches": -13,
+            "companionShortReversals": -2,
+            "companionSupportHeals": -110,
+            "companionSupportHealCount": -5,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": -1,
+            "win": 0,
+            "enemiesAlive": 1,
+            "waitingSeconds": 9.900000516325235,
+            "selectedFollowSeconds": 17.60000091791153
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9004,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -112,
+            "companionDamageTaken": -28,
+            "playerDamageDealt": -98,
+            "companionDamageDealt": 56,
+            "playerHealingReceived": -113.60003662109375,
+            "companionHealingReceived": -63.700069427490234,
+            "companionAliveSeconds": 0.0,
+            "companionStuckSeconds": 0.20000001043081284,
+            "companionShots": 4,
+            "companionDecisions": 2,
+            "companionActionSwitches": -10,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -66,
+            "companionSupportHealCount": -3,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": 24.60000128298998,
+            "selectedFollowSeconds": 44.70000233128667
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9005,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 4,
+            "companionDamageTaken": 16,
+            "playerDamageDealt": 79.00004577636719,
+            "companionDamageDealt": 112,
+            "playerHealingReceived": 27.000045776367188,
+            "companionHealingReceived": -3.5000038146972656,
+            "companionAliveSeconds": 21.616667794063687,
+            "companionStuckSeconds": 0.0,
+            "companionShots": 8,
+            "companionDecisions": 105,
+            "companionActionSwitches": 1,
+            "companionShortReversals": 2,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": 40.900002133101225,
+            "companionAliveAtEnd": -1,
+            "win": 0,
+            "enemiesAlive": -1,
+            "waitingSeconds": 22.200001157820225,
+            "selectedFollowSeconds": 21.900001142174006
+          }
+        },
+        {
+          "layout": 0,
+          "seed": 9006,
+          "baselineWin": true,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": 0,
+            "companionDamageTaken": 14,
+            "playerDamageDealt": -24.500000476837158,
+            "companionDamageDealt": 28,
+            "playerHealingReceived": -7.299983978271484,
+            "companionHealingReceived": -4.200004577636719,
+            "companionAliveSeconds": 5.100000265985727,
+            "companionStuckSeconds": 0.20000001043081284,
+            "companionShots": 2,
+            "companionDecisions": 25,
+            "companionActionSwitches": 3,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": 5.100000265985727,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": 6.200000323355198,
+            "selectedFollowSeconds": 9.600000500679016
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9101,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -98,
+            "companionDamageTaken": 14,
+            "playerDamageDealt": -98,
+            "companionDamageDealt": 59.40000009536743,
+            "playerHealingReceived": -92.49998474121094,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": 0.0,
+            "companionStuckSeconds": -0.10000000521540642,
+            "companionShots": 5,
+            "companionDecisions": -1,
+            "companionActionSwitches": -7,
+            "companionShortReversals": -2,
+            "companionSupportHeals": -110,
+            "companionSupportHealCount": -5,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": -1,
+            "waitingSeconds": 11.70000061020255,
+            "selectedFollowSeconds": 18.700000975281
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9102,
+          "baselineWin": true,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -28,
+            "companionDamageTaken": 14,
+            "playerDamageDealt": -44,
+            "companionDamageDealt": 44,
+            "playerHealingReceived": -38.400001525878906,
+            "companionHealingReceived": -16.100017547607422,
+            "companionAliveSeconds": -11.900000620633364,
+            "companionStuckSeconds": -0.20000001043081284,
+            "companionShots": 4,
+            "companionDecisions": -57,
+            "companionActionSwitches": -9,
+            "companionShortReversals": -3,
+            "companionSupportHeals": -44,
+            "companionSupportHealCount": -2,
+            "elapsedGameSeconds": -11.900000620633364,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": 1.900000099092722,
+            "selectedFollowSeconds": 0.0
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9103,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": 0,
+            "companionDamageTaken": -28,
+            "playerDamageDealt": -14,
+            "companionDamageDealt": 16,
+            "playerHealingReceived": -22,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -34.200001783668995,
+            "companionStuckSeconds": 0.0,
+            "companionShots": 2,
+            "companionDecisions": -166,
+            "companionActionSwitches": -5,
+            "companionShortReversals": -1,
+            "companionSupportHeals": -22,
+            "companionSupportHealCount": -1,
+            "elapsedGameSeconds": -34.200001783668995,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -1,
+            "waitingSeconds": -15.500000808387995,
+            "selectedFollowSeconds": -6.300000328570604
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9104,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -80.00001525878906,
+            "companionDamageTaken": 44,
+            "playerDamageDealt": 0,
+            "companionDamageDealt": 56,
+            "playerHealingReceived": -80.00001525878906,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -11.650000607594848,
+            "companionStuckSeconds": -0.20000001043081284,
+            "companionShots": 4,
+            "companionDecisions": -56,
+            "companionActionSwitches": -5,
+            "companionShortReversals": -2,
+            "companionSupportHeals": -66,
+            "companionSupportHealCount": -3,
+            "elapsedGameSeconds": -0.8000000417232513,
+            "companionAliveAtEnd": -1,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": -0.6000000312924385,
+            "selectedFollowSeconds": 3.0500001590698957
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9105,
+          "baselineWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -98,
+            "companionDamageTaken": 0,
+            "playerDamageDealt": -72,
+            "companionDamageDealt": 2,
+            "playerHealingReceived": -81.40001678466797,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": 0.0,
+            "companionStuckSeconds": 0.5000000260770321,
+            "companionShots": 1,
+            "companionDecisions": 0,
+            "companionActionSwitches": -6,
+            "companionShortReversals": -3,
+            "companionSupportHeals": -66,
+            "companionSupportHealCount": -3,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": 0,
+            "win": 0,
+            "enemiesAlive": 0,
+            "waitingSeconds": -12.100000631064177,
+            "selectedFollowSeconds": 3.300000172108412
+          }
+        },
+        {
+          "layout": 1,
+          "seed": 9106,
+          "baselineWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -102,
+            "companionDamageTaken": 42,
+            "playerDamageDealt": -68,
+            "companionDamageDealt": 58,
+            "playerHealingReceived": -44,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -17.90000093355775,
+            "companionStuckSeconds": 0.0,
+            "companionShots": 5,
+            "companionDecisions": -86,
+            "companionActionSwitches": -3,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -44,
+            "companionSupportHealCount": -2,
+            "elapsedGameSeconds": -17.90000093355775,
+            "companionAliveAtEnd": 0,
+            "win": 1,
+            "enemiesAlive": -2,
+            "waitingSeconds": -9.800000511109829,
+            "selectedFollowSeconds": -1.900000099092722
+          }
+        }
+      ],
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": -44.66666793823242,
+          "median": -28.0,
+          "minimum": -112,
+          "maximum": 14,
+          "negativePairs": 8,
+          "zeroPairs": 2,
+          "positivePairs": 2
+        },
+        "companionDamageTaken": {
+          "mean": 4.891663551330566,
+          "median": 14.0,
+          "minimum": -37.00001525878906,
+          "maximum": 44,
+          "negativePairs": 4,
+          "zeroPairs": 1,
+          "positivePairs": 7
+        },
+        "playerDamageDealt": {
+          "mean": -26.450000802675884,
+          "median": -20.30001473426819,
+          "minimum": -98,
+          "maximum": 79.00004577636719,
+          "negativePairs": 9,
+          "zeroPairs": 1,
+          "positivePairs": 2
+        },
+        "companionDamageDealt": {
+          "mean": 51.11666667461395,
+          "median": 56.0,
+          "minimum": 2,
+          "maximum": 112,
+          "negativePairs": 0,
+          "zeroPairs": 0,
+          "positivePairs": 12
+        },
+        "playerHealingReceived": {
+          "mean": -45.5083278020223,
+          "median": -41.20000076293945,
+          "minimum": -113.60003662109375,
+          "maximum": 27.000045776367188,
+          "negativePairs": 10,
+          "zeroPairs": 1,
+          "positivePairs": 1
+        },
+        "companionHealingReceived": {
+          "mean": -20.6500186920166,
+          "median": -21.000015258789062,
+          "minimum": -63.700069427490234,
+          "maximum": 0,
+          "negativePairs": 11,
+          "zeroPairs": 1,
+          "positivePairs": 0
+        },
+        "companionAliveSeconds": {
+          "mean": -5.8347225265267,
+          "median": -5.825000303797424,
+          "minimum": -34.200001783668995,
+          "maximum": 21.616667794063687,
+          "negativePairs": 6,
+          "zeroPairs": 3,
+          "positivePairs": 3
+        },
+        "companionStuckSeconds": {
+          "mean": 0.01666666753590107,
+          "median": 0.0,
+          "minimum": -0.30000001564621925,
+          "maximum": 0.5000000260770321,
+          "negativePairs": 5,
+          "zeroPairs": 3,
+          "positivePairs": 4
+        },
+        "companionShots": {
+          "mean": 4,
+          "median": 4.0,
+          "minimum": 1,
+          "maximum": 8,
+          "negativePairs": 0,
+          "zeroPairs": 0,
+          "positivePairs": 12
+        },
+        "companionDecisions": {
+          "mean": -27.833333333333332,
+          "median": -28.5,
+          "minimum": -166,
+          "maximum": 105,
+          "negativePairs": 7,
+          "zeroPairs": 1,
+          "positivePairs": 4
+        },
+        "companionActionSwitches": {
+          "mean": -4.666666666666667,
+          "median": -5.0,
+          "minimum": -13,
+          "maximum": 3,
+          "negativePairs": 9,
+          "zeroPairs": 1,
+          "positivePairs": 2
+        },
+        "companionShortReversals": {
+          "mean": -0.6666666666666666,
+          "median": -1.0,
+          "minimum": -3,
+          "maximum": 2,
+          "negativePairs": 7,
+          "zeroPairs": 0,
+          "positivePairs": 5
+        },
+        "companionSupportHeals": {
+          "mean": -51.28333282470703,
+          "median": -44.0,
+          "minimum": -110,
+          "maximum": 0,
+          "negativePairs": 11,
+          "zeroPairs": 1,
+          "positivePairs": 0
+        },
+        "companionSupportHealCount": {
+          "mean": -2.3333333333333335,
+          "median": -2.0,
+          "minimum": -5,
+          "maximum": 0,
+          "negativePairs": 11,
+          "zeroPairs": 1,
+          "positivePairs": 0
+        },
+        "elapsedGameSeconds": {
+          "mean": -3.3916668435558677,
+          "median": 0.0,
+          "minimum": -34.200001783668995,
+          "maximum": 40.900002133101225,
+          "negativePairs": 5,
+          "zeroPairs": 5,
+          "positivePairs": 2
+        },
+        "companionAliveAtEnd": {
+          "mean": -0.08333333333333333,
+          "median": 0.0,
+          "minimum": -1,
+          "maximum": 1,
+          "negativePairs": 3,
+          "zeroPairs": 7,
+          "positivePairs": 2
+        },
+        "win": {
+          "mean": 0.25,
+          "median": 0.0,
+          "minimum": 0,
+          "maximum": 1,
+          "negativePairs": 0,
+          "zeroPairs": 9,
+          "positivePairs": 3
+        },
+        "enemiesAlive": {
+          "mean": -0.4166666666666667,
+          "median": 0.0,
+          "minimum": -2,
+          "maximum": 1,
+          "negativePairs": 5,
+          "zeroPairs": 6,
+          "positivePairs": 1
+        },
+        "waitingSeconds": {
+          "mean": 4.5583335710689425,
+          "median": 4.05000021122396,
+          "minimum": -15.500000808387995,
+          "maximum": 24.60000128298998,
+          "negativePairs": 5,
+          "zeroPairs": 0,
+          "positivePairs": 7
+        },
+        "selectedFollowSeconds": {
+          "mean": 12.954167342279106,
+          "median": 8.150000425055623,
+          "minimum": -6.300000328570604,
+          "maximum": 44.70000233128667,
+          "negativePairs": 2,
+          "zeroPairs": 1,
+          "positivePairs": 9
+        }
+      }
+    }
+  }
+}

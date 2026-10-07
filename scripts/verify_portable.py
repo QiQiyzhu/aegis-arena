@@ -1,7 +1,9 @@
-"""One-command, stdlib-only portable verification; never invokes Unreal.
+"""One-command portable verification; never invokes Unreal.
 
-By default: strict C++ build, core assertions, seven Python test cases, and a
+By default: strict C++ build, core assertions, the current Python test suite, and a
 two-episode smoke scenario. --full additionally runs the defined 60-episode set.
+The driver uses the standard library; the full test suite requires installing
+the pinned dependencies with `python -m pip install -r requirements-media.txt`.
 """
 from __future__ import annotations
 import argparse

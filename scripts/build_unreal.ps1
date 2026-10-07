@@ -47,7 +47,7 @@ try {
   if (!(Test-Path -LiteralPath $taskReportFile)) { throw 'No new Automation report; process exit is not test success.' }
   $taskReport = Get-Content -LiteralPath $taskReportFile -Raw | ConvertFrom-Json
   if ($null -eq $taskReport.succeeded -or $null -eq $taskReport.failed) { throw 'Unknown Automation report schema. Inspect manually.' }
-  if ($taskReport.succeeded -lt 5 -or $taskReport.failed -ne 0 -or $taskReport.notRun -gt 0 -or $taskReport.inProcess -gt 0) { throw 'Expected at least five completed passing Aegis core tests.' }
+  if ($taskReport.succeeded -lt 6 -or $taskReport.failed -ne 0 -or $taskReport.notRun -gt 0 -or $taskReport.inProcess -gt 0) { throw 'Expected at least six completed passing Aegis core tests, including the planner protocol.' }
  }
  Write-Output "Unreal build completed. New logs and requested test reports: $taskOutput"
 } finally {

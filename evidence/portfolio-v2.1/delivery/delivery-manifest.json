@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "version": "2.1.0",
+  "presentationVersion": "2.1",
+  "packageSource": "D:\\AegisWork\\Packages\\prism-fall-v2.1-release-r2\\package\\Windows",
+  "reviewedSource": {
+    "sourceSha256": "4512e5e07bad285542e35911f7915d0d84beaae134aa7195861d67659343d3ea",
+    "contentSha256": "22f45d7d2d271bafeb26b88791ab66d93f46dc31bbce747d8bb3ffd826f61cf6"
+  },
+  "acceptanceSha256": "6b5ef45aec4238d1cdedffe2d217401a79ce6185f3477aa919f0f7babd06f9b2",
+  "videoUnder300MB": true,
+  "artifacts": {
+    "Aegis-Arena-v2.1-Demo.mp4": {
+      "bytes": 18718486,
+      "sha256": "4cb6f78b262582bb7f0ad43eb38181f52ca67d9f7450f10d0fc9d53e35ce8224"
+    },
+    "Aegis-Arena-v2.1-Design.pdf": {
+      "bytes": 1491115,
+      "sha256": "c3fab283f3454d09ce17e7eb950d1d3e28242e738f8dc10ef78b2ebee53edb42"
+    },
+    "Aegis-Arena-v2.1-Design.docx": {
+      "bytes": 12788395,
+      "sha256": "8c39901fa9f75b9674a08fd67ee710d8fe5a5498cb1a4058e0a27adb7e88739c"
+    },
+    "acceptance.json": {
+      "bytes": 29494,
+      "sha256": "6b5ef45aec4238d1cdedffe2d217401a79ce6185f3477aa919f0f7babd06f9b2"
+    },
+    "Aegis-Arena-v2.1-Cpp-Guide.md": {
+      "bytes": 9880,
+      "sha256": "25cf463fd1c419ce75ead2c05225615e14065679fd1b990c71e670d9bc6d78d0"
+    },
+    "Aegis-Arena-v2.0-Historical-AI-Case.md": {
+      "bytes": 17779,
+      "sha256": "cacde2999615a4584cb3d7e0c2d48e21c928d3456aa1a9e4b3fcd6878a9e51c1"
+    },
+    "portfolio-v2-recording-case.md": {
+      "bytes": 14490,
+      "sha256": "261b209b86634f1d0193e6cdfa8ff3d8e24e6fc1e54ad2af66475dd209667ee1"
+    },
+    "v2-reference-and-direction.md": {
+      "bytes": 8018,
+      "sha256": "6f8d362cfc026a7714526458ed7a288bde948bdab7d3159f8d8e81d8ebe4ba5c"
+    },
+    "Aegis-Arena-v2.1-Audiovisual.md": {
+      "bytes": 6508,
+      "sha256": "953b1184ecbc51ab8e01f7e6d7cfe479881daa9871ed1e044a8aff99fe32c39a"
+    },
+    "Aegis-Arena-v2.1-Native-Audio-Case.md": {
+      "bytes": 2936,
+      "sha256": "eaab38ff6d684ab075ebe4c1d283739599d01c25ca60749ae46f7411d65c448b"
+    },
+    "README-先读我.txt": {
+      "bytes": 2196,
+      "sha256": "3443b21d1f33df48c2454ed32c2b5d5e05356c9482ad0c6ac3fb057fe3fc6787"
+    },
+    "Aegis-Arena-v2.1-Application.zip": {
+      "bytes": 32683886,
+      "sha256": "592e4174ead2d4957b71a0dcf6517b7f11537a06aea48b2e8ade0b14e158d327",
+      "entries": 11,
+      "crcPassed": true
+    },
+    "Aegis-Arena-v2.1-Windows.zip": {
+      "bytes": 160185889,
+      "sha256": "fb48aa51a32f4a402b79a9fa3d4254b6f4e5205625e2d009689f74c362094094",
+      "entries": 49,
+      "crcPassed": true
+    }
+  },
+  "excludedBuildFiles": [
+    "AegisArena/Binaries/Win64/AegisArena.pdb",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-14F0CA6242BB594913B74CBD4F08E85D/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-1757163E4D9BFDA61A5BC0BFE934FE45/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-416FBCB84E5D6183D90494AEC8B50857/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-506F421E4B35186F53DF0BB85729052D/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-98F6129549374CB44A6152841FCD6E13/CrashReportClient.ini",
+    "AegisArena/Saved/Config/CrashReportClient/UECC-Windows-E81DD195451F58299CFC8CB0CD702B2D/CrashReportClient.ini",
+    "AegisArena/Saved/Config/Windows/GameUserSettings.ini",
+    "Engine/Saved/Config/Windows/Manifest.ini"
+  ],
+  "exclusionReason": "Local generated Saved state and optional debugger PDB symbols; original build preserved"
+}

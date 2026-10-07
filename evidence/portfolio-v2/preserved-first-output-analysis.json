@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 1,
+  "analysisComplete": true,
+  "createdUtc": "2026-09-18T03:30:58.711341+00:00",
+  "script": {
+    "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\scripts\\analyze_v2_output.py",
+    "bytes": 12731,
+    "sha256": "d8bbb44c6bc46908f8fb99c33e8a55de0b0af50434cab22e664cfe90cf76b036"
+  },
+  "frozenInputs": {
+    "sourceSha256": "6dad19526dbc6b093a841ccf46f040e48148e37700d3e5a2184d6f66d42b3cc2",
+    "contentSha256": "9667582db87935a68d8823eca0801b1c47ade897f12a1c848f926a4e02e88fd5"
+  },
+  "auditedContract": {
+    "file": {
+      "path": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Source\\AegisArena\\Private\\AegisPortfolio.cpp",
+      "bytes": 31241,
+      "sha256": "33d4cbd55b3c9add3779da8a372ed8c89c8f9053484bc2671d3be49e4fca4b08"
+    },
+    "method": "AAegisPortfolio::OnDamage",
+    "rule": "enemyVictim damage events require Source == current Player or current companion; native class names discriminate those two roles",
+    "unknownPolicy": "Unrecognized source names remain unknown; no allocation or inferred redistribution"
+  },
+  "evaluation": {
+    "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\evaluation.json",
+    "bytes": 9396,
+    "sha256": "64b7768c994c80d47bf95f020ebba05a5151ed78182d1cc39bb480ba938cf95e"
+  },
+  "rows": [
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy",
+      "seed": 2203,
+      "policy": "legacy",
+      "outcome": "lost",
+      "taskGameSeconds": 180.00000938773155,
+      "stagesCompleted": 0,
+      "damage": {
+        "player": 204.0,
+        "companion": 14.0,
+        "unknown": 0.0,
+        "total": 218.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.06422018348623854,
+        "playerShareOfTotal": 0.9357798165137615,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 14.0,
+            "damageEvents": 1
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 204.0,
+            "damageEvents": 12
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 1.133333274225397,
+        "companion": 0.07777777372135078,
+        "unknown": 0.0,
+        "total": 1.2111110479467477
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\provenance.json",
+          "bytes": 8470,
+          "sha256": "5b28775632be4de9d6697ae2956912a22b06b672e9a9f4c04382b07a09dc67e7"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\capture.json",
+          "bytes": 2619318,
+          "sha256": "b2eec21c1bb552b1b70eb104a340afdb1558510b555286ef01094093b1f9d58e"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\engine.log",
+          "bytes": 80244,
+          "sha256": "7bd25938331bdddec8ed3f86a996776369e8c9322a87dae0ec021f27a42e3295"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\system\\portfolio-069A799E49F4B2EF69E0CBB6CDAD2B72.json",
+          "bytes": 1183,
+          "sha256": "9725d854168c7a5fe44b9614face9a192ee253acdd06e9d6d6a0fc5a965e9409"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-legacy\\system\\portfolio-069A799E49F4B2EF69E0CBB6CDAD2B72.jsonl",
+          "bytes": 16349,
+          "sha256": "500199c9cf73fd843df01c6bcb2af9d845362fa60a9b5839e12b59f0c7a7c79b"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    },
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved",
+      "seed": 2203,
+      "policy": "improved",
+      "outcome": "lost",
+      "taskGameSeconds": 180.00000938773155,
+      "stagesCompleted": 0,
+      "damage": {
+        "player": 204.0,
+        "companion": 14.0,
+        "unknown": 0.0,
+        "total": 218.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.06422018348623854,
+        "playerShareOfTotal": 0.9357798165137615,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 14.0,
+            "damageEvents": 1
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 204.0,
+            "damageEvents": 12
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 1.133333274225397,
+        "companion": 0.07777777372135078,
+        "unknown": 0.0,
+        "total": 1.2111110479467477
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\provenance.json",
+          "bytes": 8455,
+          "sha256": "b328cbdddbd4d20de94547230577368d1730a2355950efe81f972162a80a857c"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\capture.json",
+          "bytes": 2658867,
+          "sha256": "358b9d666e2a42f20d3981b8a0086e94cb9ebff4d405ecb7414cc7c55f99cfc0"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\engine.log",
+          "bytes": 79966,
+          "sha256": "a2aa38e5cbf6893f958b700138ecf473791f4ce3812efb0ba232614632cadf67"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\system\\portfolio-B349A39B4B2ECE314328D3AD5A341C38.json",
+          "bytes": 1185,
+          "sha256": "9726be667425809b88c6d37b72240b6bc112a9fed98f7eb5a46997fbe44175b1"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\2203-improved\\system\\portfolio-B349A39B4B2ECE314328D3AD5A341C38.jsonl",
+          "bytes": 17058,
+          "sha256": "2e8ed40e6930c61897bd30c6b5a7d372e37fb8a6757c7ffb5e80562904b23864"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    },
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved",
+      "seed": 3307,
+      "policy": "improved",
+      "outcome": "lost",
+      "taskGameSeconds": 180.00000938773155,
+      "stagesCompleted": 0,
+      "damage": {
+        "player": 204.0,
+        "companion": 14.0,
+        "unknown": 0.0,
+        "total": 218.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.06422018348623854,
+        "playerShareOfTotal": 0.9357798165137615,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 14.0,
+            "damageEvents": 1
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 204.0,
+            "damageEvents": 12
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 1.133333274225397,
+        "companion": 0.07777777372135078,
+        "unknown": 0.0,
+        "total": 1.2111110479467477
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\provenance.json",
+          "bytes": 8455,
+          "sha256": "3bc9c7cfe4e5cbc4f25645b4267a5960620210231a799adab5eedd6cf7935428"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\capture.json",
+          "bytes": 2658895,
+          "sha256": "7344f17b39dc6fb4be773d4a12b618f817a305722f59712f10c1a872359e5829"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\engine.log",
+          "bytes": 80087,
+          "sha256": "724db718f40671ce4d521e210b52160e2ce6bc692a4c5323c004b197f4529673"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\system\\portfolio-79787F074DF7931A2379008C2A65691A.json",
+          "bytes": 1185,
+          "sha256": "35dec26b9c1ce7df2d865f86d68dcd8126be5c8ac8841f5edb8f10dcd1591472"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-improved\\system\\portfolio-79787F074DF7931A2379008C2A65691A.jsonl",
+          "bytes": 16769,
+          "sha256": "58f329224fe320c6cf0eaade7c1683e1e631a025fb86788930efba1930743064"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    },
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy",
+      "seed": 3307,
+      "policy": "legacy",
+      "outcome": "lost",
+      "taskGameSeconds": 180.00000938773155,
+      "stagesCompleted": 0,
+      "damage": {
+        "player": 204.0,
+        "companion": 14.0,
+        "unknown": 0.0,
+        "total": 218.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.06422018348623854,
+        "playerShareOfTotal": 0.9357798165137615,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 14.0,
+            "damageEvents": 1
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 204.0,
+            "damageEvents": 12
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 1.133333274225397,
+        "companion": 0.07777777372135078,
+        "unknown": 0.0,
+        "total": 1.2111110479467477
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\provenance.json",
+          "bytes": 8471,
+          "sha256": "a21c123e7ae5a4edd5f9bdd1545609de488add0195527e016bb589df96f59535"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\capture.json",
+          "bytes": 2619331,
+          "sha256": "2cf78a1a6914ca5ed6176def9e6e13325ba262203c22e88310d426b5dc147a62"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\engine.log",
+          "bytes": 80016,
+          "sha256": "9157c93e0be84d248dec532ee05f293f557ac8a2f339d796da2979ca20b42731"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\system\\portfolio-5220E4FD4D684CC911FF598BA1604497.json",
+          "bytes": 1183,
+          "sha256": "493bce47072b22894137b4ca04cc1fe1e78d19cb8354cfc3a3556101fc6aabc9"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\3307-legacy\\system\\portfolio-5220E4FD4D684CC911FF598BA1604497.jsonl",
+          "bytes": 16076,
+          "sha256": "6fac483fa8fa2afe06b8c1629d8384931e327fe5e2faf1bb5b811243b2d1e34f"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    },
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy",
+      "seed": 4409,
+      "policy": "legacy",
+      "outcome": "lost",
+      "taskGameSeconds": 97.70000509545207,
+      "stagesCompleted": 2,
+      "damage": {
+        "player": 1030.0,
+        "companion": 158.0,
+        "unknown": 0.0,
+        "total": 1188.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.132996632996633,
+        "playerShareOfTotal": 0.867003367003367,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 158.0,
+            "damageEvents": 12
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 1030.0,
+            "damageEvents": 56
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 10.542476420484306,
+        "companion": 1.6171954120742915,
+        "unknown": 0.0,
+        "total": 12.159671832558598
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\provenance.json",
+          "bytes": 8473,
+          "sha256": "7ef98f84a9fc53db21dcd06e4d00c398634833226e6431d263ed17a3e45089d5"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\capture.json",
+          "bytes": 1599412,
+          "sha256": "080ed94368e19cf593dc488d363267a2de6ecb699982cf5e5729a2791be0c027"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\engine.log",
+          "bytes": 80854,
+          "sha256": "75bbc51f50674073b664a9a170737e0696c01f824a1eb5f409f5fcd8d329e1ac"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\system\\portfolio-E69E666340CB4F79EFF7839999A5100D.json",
+          "bytes": 1193,
+          "sha256": "b099911750bda9b7d06f957afa14c5009b3b16e49b179ee2c3afcfd3b159152a"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-legacy\\system\\portfolio-E69E666340CB4F79EFF7839999A5100D.jsonl",
+          "bytes": 59288,
+          "sha256": "35be35b74c96fb3c7c64196a17bbbd8f32a8e0bbc015cc1bbdcb215847ecbf3c"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    },
+    {
+      "runDirectory": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved",
+      "seed": 4409,
+      "policy": "improved",
+      "outcome": "won",
+      "taskGameSeconds": 94.10000490769744,
+      "stagesCompleted": 3,
+      "damage": {
+        "player": 1180.0,
+        "companion": 80.0,
+        "unknown": 0.0,
+        "total": 1260.0,
+        "fullyAttributed": true,
+        "companionShareOfTotal": 0.06349206349206349,
+        "playerShareOfTotal": 0.9365079365079365,
+        "roleIdentities": {
+          "player": [
+            "AegisPlayerCharacter_2147482405"
+          ],
+          "companion": [
+            "AegisAICharacter_2147482372"
+          ]
+        },
+        "sources": [
+          {
+            "name": "AegisAICharacter_2147482372",
+            "role": "companion",
+            "actualDamage": 80.0,
+            "damageEvents": 6
+          },
+          {
+            "name": "AegisPlayerCharacter_2147482405",
+            "role": "player",
+            "actualDamage": 1180.0,
+            "damageEvents": 65
+          }
+        ]
+      },
+      "damagePerTaskSecond": {
+        "player": 12.539850568099974,
+        "companion": 0.8501593605491508,
+        "unknown": 0.0,
+        "total": 13.390009928649125
+      },
+      "boundOriginals": [
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\provenance.json",
+          "bytes": 8455,
+          "sha256": "345f98a22b62717d3f42e54b71daf6f224ebb6e424c929198c9385cb05f74f22"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\capture.json",
+          "bytes": 1567555,
+          "sha256": "76fb71c7457ae4ae306eda362faa5787d6522ecc0b8e1d855e5df0d38a4b3136"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\engine.log",
+          "bytes": 80860,
+          "sha256": "e865e532fcee356f5ba6ba87c903d5b532c7da476ef23f076da1091375247852"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\system\\portfolio-0CFEBF5B4A290CE2F33AAAB96FAF190D.json",
+          "bytes": 1210,
+          "sha256": "fbb28d792eb72bd47b31fbb703f4b4e5a161b2cd87243a9c891603c6c94e5ba5"
+        },
+        {
+          "path": "D:\\AegisWork\\Reports\\v2-20260918\\evaluation-frozen-01\\4409-improved\\system\\portfolio-0CFEBF5B4A290CE2F33AAAB96FAF190D.jsonl",
+          "bytes": 62869,
+          "sha256": "19af4036694c894813000631d92585803a95f440eef2bd24fd1ecbe57393cdd3"
+        }
+      ],
+      "binaryBinding": {
+        "launcher": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena.exe",
+          "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+        },
+        "gamePayload": {
+          "path": "D:\\AegisWork\\Packages\\prism-fall-v2-release-r3\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+          "sha256": "b1fc5c4fb2dca50f3e5bc937a20e83669827d3550769b679e489061eb5bcb87c"
+        },
+        "cookedContainers": {
+          "AegisArena-Windows.pak": {
+            "bytes": 10298008,
+            "sha256": "dce447d7ed17a1fc6c33c05b4612dc20063372c31e65c240af4065c4a68c9317"
+          },
+          "AegisArena-Windows.ucas": {
+            "bytes": 12890784,
+            "sha256": "7b3ffb8c31ce8e02591daefb1a43299e951eedc0e2f7d300a3f20378e43c3986"
+          },
+          "AegisArena-Windows.utoc": {
+            "bytes": 57106,
+            "sha256": "2790c50d472afc5fd26915a6871e0a06284c7c8ae629d334fcce720d545925f5"
+          },
+          "global.ucas": {
+            "bytes": 1569152,
+            "sha256": "69326cc0b20387a8d7638d923a764d4b89f7a4abda0a3e0279a3f91d5dccf28b"
+          },
+          "global.utoc": {
+            "bytes": 482,
+            "sha256": "13d7f99b557cfb4b871c0c11e15c6dcdc326796201789ca212017d3120e1f22e"
+          }
+        }
+      }
+    }
+  ],
+  "pairedDifferences": [
+    {
+      "seed": 2203,
+      "legacyOutcome": "lost",
+      "improvedOutcome": "lost",
+      "deltaDefinition": "improved minus legacy; all observed outcomes retained",
+      "taskSecondsDelta": 0.0,
+      "damageDelta": {
+        "player": 0.0,
+        "companion": 0.0,
+        "unknown": 0.0,
+        "total": 0.0
+      },
+      "completeRoleAttribution": true,
+      "companionShareDelta": 0.0
+    },
+    {
+      "seed": 3307,
+      "legacyOutcome": "lost",
+      "improvedOutcome": "lost",
+      "deltaDefinition": "improved minus legacy; all observed outcomes retained",
+      "taskSecondsDelta": 0.0,
+      "damageDelta": {
+        "player": 0.0,
+        "companion": 0.0,
+        "unknown": 0.0,
+        "total": 0.0
+      },
+      "completeRoleAttribution": true,
+      "companionShareDelta": 0.0
+    },
+    {
+      "seed": 4409,
+      "legacyOutcome": "lost",
+      "improvedOutcome": "won",
+      "deltaDefinition": "improved minus legacy; all observed outcomes retained",
+      "taskSecondsDelta": -3.600000187754631,
+      "damageDelta": {
+        "player": 150.0,
+        "companion": -78.0,
+        "unknown": 0.0,
+        "total": 72.0
+      },
+      "completeRoleAttribution": true,
+      "companionShareDelta": -0.06950456950456951
+    }
+  ],
+  "allDamageAttributed": true,
+  "scope": "Descriptive actual HP removed, including all damage abilities and health-clamped final hits; no damage attempted or overkill credit",
+  "limitations": [
+    "No training, human playtest, general win-rate or causal population claim.",
+    "Task-second rate includes objective waiting and traversal; it is not combat-only DPS.",
+    "Companion share is contribution in these scripted runs, not a fairness, balance or general intelligence score.",
+    "Role inference is valid only under the bound native C++ event filter and unrenamed native actor classes. Unknown identities stay visible."
+  ]
+}

@@ -1,0 +1,1097 @@
+{
+	"schemaVersion": 1,
+	"engine": "unreal-runtime",
+	"syntheticInput": true,
+	"renderOffscreen": true,
+	"renderingEnabled": true,
+	"humanUsabilityTest": false,
+	"fixtureDamage": false,
+	"frozenAI": false,
+	"teleportedActors": false,
+	"forcedWaves": false,
+	"passed": true,
+	"observedOutcome": "lost",
+	"finalPhase": "lost",
+	"reason": "Observed normal gameplay through simulated player input",
+	"worldType": 1,
+	"begunPlay": true,
+	"observationBudgetSeconds": 60,
+	"wallSeconds": 9.6486189998686314,
+	"screenshotRequests": 6,
+	"screenshotProcessed": 6,
+	"totals":
+	{
+		"playerShots": 9,
+		"companionShots": 3,
+		"enemyShots": 9,
+		"playerDistanceCm": 1212.3310847359346,
+		"companionDistanceCm": 1754.0628591351908,
+		"enemyDistanceCm": 6369.6493901591912,
+		"playerDamageDealt": 126,
+		"enemyDamageDealt": 122,
+		"playerDamageTaken": 122,
+		"companionDamageTaken": 0,
+		"enemyDeaths": 0,
+		"companionDeaths": 0,
+		"playerDeaths": 1,
+		"enemyWindups": 10,
+		"companionWindups": 3,
+		"pulseActivations": 0
+	},
+	"samples": [
+		{
+			"wallSeconds": 0.00044300034642219543,
+			"gameSeconds": 1.0015907016932033,
+			"phase": "briefing",
+			"wave": 0,
+			"relay": 0,
+			"charge": 0,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 0,
+			"playerHealth": 100,
+			"playerPosition": [
+				-1200,
+				0,
+				149.99218389912875
+			],
+			"objectivePosition": [
+				0,
+				0,
+				0
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 0,
+				"companionShots": 0,
+				"enemyShots": 0,
+				"playerDistanceCm": 0,
+				"companionDistanceCm": 0,
+				"enemyDistanceCm": 0,
+				"playerDamageDealt": 0,
+				"enemyDamageDealt": 0,
+				"playerDamageTaken": 0,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 0,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 1.0022899992763996,
+			"gameSeconds": 2.0062290047644638,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 0,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 100,
+			"playerPosition": [
+				-1117.4799564815291,
+				-82.52004351847377,
+				90.150001695728562
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 0,
+				"companionShots": 0,
+				"enemyShots": 0,
+				"playerDistanceCm": 116.70096471144153,
+				"companionDistanceCm": 0,
+				"enemyDistanceCm": 350.10289033365456,
+				"playerDamageDealt": 0,
+				"enemyDamageDealt": 0,
+				"playerDamageTaken": 0,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 0,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 2.002980500459671,
+			"gameSeconds": 3.0066582066356204,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 0,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 100,
+			"playerPosition": [
+				-969.81832948554006,
+				-462.33147387537105,
+				90.150001695728562
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 0,
+				"companionShots": 0,
+				"enemyShots": 0,
+				"playerDistanceCm": 536.88122949732815,
+				"companionDistanceCm": 89.626039972802403,
+				"enemyDistanceCm": 1610.6436704335765,
+				"playerDamageDealt": 0,
+				"enemyDamageDealt": 0,
+				"playerDamageTaken": 0,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 0,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 3.0050629004836082,
+			"gameSeconds": 4.0090425004600547,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 0,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 100,
+			"playerPosition": [
+				-804.22900906011239,
+				-838.14016299815864,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 0,
+				"companionShots": 0,
+				"enemyShots": 0,
+				"playerDistanceCm": 957.67513817401584,
+				"companionDistanceCm": 396.13930299275245,
+				"enemyDistanceCm": 2873.6478665559534,
+				"playerDamageDealt": 0,
+				"enemyDamageDealt": 0,
+				"playerDamageTaken": 0,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 0,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 4.0766411013901234,
+			"gameSeconds": 5.0800876011489891,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 0.79868839681148529,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 100,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 2,
+				"companionShots": 0,
+				"enemyShots": 0,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 734.21388235480504,
+				"enemyDistanceCm": 4018.4994286086194,
+				"playerDamageDealt": 28,
+				"enemyDamageDealt": 0,
+				"playerDamageTaken": 0,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 1,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 5.0799992009997368,
+			"gameSeconds": 6.0838800994097255,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 1.798123687505722,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 86,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 3,
+				"companionShots": 0,
+				"enemyShots": 1,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1086.2031744912388,
+				"enemyDistanceCm": 4637.7924771519256,
+				"playerDamageDealt": 42,
+				"enemyDamageDealt": 14,
+				"playerDamageTaken": 14,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 2,
+				"companionWindups": 0,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 6.0818970985710621,
+			"gameSeconds": 7.0859143053530715,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 2.7984392866492271,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 80,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 4,
+				"companionShots": 1,
+				"enemyShots": 3,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1172.7507661681543,
+				"enemyDistanceCm": 4832.3322855948618,
+				"playerDamageDealt": 56,
+				"enemyDamageDealt": 42,
+				"playerDamageTaken": 42,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 4,
+				"companionWindups": 1,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 7.0832180008292198,
+			"gameSeconds": 8.0873244059621356,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0,
+			"charge": 3.8974692076444626,
+			"objectiveComplete": false,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 66,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 6,
+				"companionShots": 1,
+				"enemyShots": 4,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1475.2120507902523,
+				"enemyDistanceCm": 5323.3000755211178,
+				"playerDamageDealt": 84,
+				"enemyDamageDealt": 56,
+				"playerDamageTaken": 56,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 7,
+				"companionWindups": 2,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 8.086591299623251,
+			"gameSeconds": 9.0904875052510761,
+			"phase": "active",
+			"wave": 1,
+			"relay": 1,
+			"charge": 4,
+			"objectiveComplete": true,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 38,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 7,
+				"companionShots": 2,
+				"enemyShots": 6,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1601.8731708579899,
+				"enemyDistanceCm": 5660.1527066790841,
+				"playerDamageDealt": 98,
+				"enemyDamageDealt": 84,
+				"playerDamageTaken": 84,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 7,
+				"companionWindups": 2,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 9.089563999325037,
+			"gameSeconds": 10.093407704436686,
+			"phase": "active",
+			"wave": 1,
+			"relay": 1,
+			"charge": 4,
+			"objectiveComplete": true,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 10,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 9,
+				"companionShots": 2,
+				"enemyShots": 8,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1704.5635484780323,
+				"enemyDistanceCm": 6176.7291743816049,
+				"playerDamageDealt": 126,
+				"enemyDamageDealt": 112,
+				"playerDamageTaken": 112,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 0,
+				"enemyWindups": 10,
+				"companionWindups": 3,
+				"pulseActivations": 0
+			}
+		},
+		{
+			"wallSeconds": 9.6485939994454384,
+			"gameSeconds": 10.652192606532481,
+			"phase": "lost",
+			"wave": 1,
+			"relay": 1,
+			"charge": 4,
+			"objectiveComplete": true,
+			"objectiveContested": false,
+			"enemyAlive": 3,
+			"playerHealth": 0,
+			"playerPosition": [
+				-603.24291707635348,
+				-978.86560276071611,
+				90.149999847559855
+			],
+			"objectivePosition": [
+				-500,
+				-1000,
+				10
+			],
+			"companionCommand": "guard",
+			"totals":
+			{
+				"playerShots": 9,
+				"companionShots": 3,
+				"enemyShots": 9,
+				"playerDistanceCm": 1212.3310847359346,
+				"companionDistanceCm": 1754.0628591351908,
+				"enemyDistanceCm": 6369.6493901591912,
+				"playerDamageDealt": 126,
+				"enemyDamageDealt": 122,
+				"playerDamageTaken": 122,
+				"companionDamageTaken": 0,
+				"enemyDeaths": 0,
+				"companionDeaths": 0,
+				"playerDeaths": 1,
+				"enemyWindups": 10,
+				"companionWindups": 3,
+				"pulseActivations": 0
+			}
+		}
+	],
+	"events": [
+		{
+			"kind": "spawn_observed",
+			"wallSeconds": 0.00016510114073753357,
+			"gameSeconds": 1.0015907016932033,
+			"actor": "AegisPlayerCharacter_1",
+			"role": "player"
+		},
+		{
+			"kind": "spawn_observed",
+			"wallSeconds": 0.0001708008348941803,
+			"gameSeconds": 1.0015907016932033,
+			"actor": "AegisAICharacter_0",
+			"role": "companion"
+		},
+		{
+			"kind": "transition",
+			"wallSeconds": 0.00017509981989860535,
+			"gameSeconds": 1.0015907016932033,
+			"phase": "briefing",
+			"wave": 0,
+			"relay": 0
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 0.62231770157814026,
+			"gameSeconds": 1.6259961043833755,
+			"key": "Enter",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 0.62233370169997215,
+			"gameSeconds": 1.6259961043833755,
+			"key": "Enter",
+			"state": "released"
+		},
+		{
+			"kind": "spawn_observed",
+			"wallSeconds": 0.62563899904489517,
+			"gameSeconds": 1.6275856037973426,
+			"actor": "AegisAICharacter_1",
+			"role": "enemy"
+		},
+		{
+			"kind": "spawn_observed",
+			"wallSeconds": 0.62564510107040405,
+			"gameSeconds": 1.6275856037973426,
+			"actor": "AegisAICharacter_2",
+			"role": "enemy"
+		},
+		{
+			"kind": "spawn_observed",
+			"wallSeconds": 0.62564809992909431,
+			"gameSeconds": 1.6275856037973426,
+			"actor": "AegisAICharacter_3",
+			"role": "enemy"
+		},
+		{
+			"kind": "transition",
+			"wallSeconds": 0.62565140053629875,
+			"gameSeconds": 1.6275856037973426,
+			"phase": "active",
+			"wave": 1,
+			"relay": 0
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 0.62569539994001389,
+			"gameSeconds": 1.6275856037973426,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 0.62570010125637054,
+			"gameSeconds": 1.6275856037973426,
+			"key": "A",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.2281709015369415,
+			"gameSeconds": 2.2321636033593677,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.4622853994369507,
+			"gameSeconds": 2.4662853059708141,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.5219359993934631,
+			"gameSeconds": 2.5259721045731567,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.6143666990101337,
+			"gameSeconds": 2.6183025044738315,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.6499462015926838,
+			"gameSeconds": 2.6539284055470489,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.7096643000841141,
+			"gameSeconds": 2.7136266035377048,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.73091059923172,
+			"gameSeconds": 2.7348020066856407,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.7625017017126083,
+			"gameSeconds": 2.7666478035389446,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.7764059007167816,
+			"gameSeconds": 2.7805333053111099,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.8048743009567261,
+			"gameSeconds": 2.8089443062781356,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.8191807009279728,
+			"gameSeconds": 2.8232002062140964,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.8472669012844563,
+			"gameSeconds": 2.8513932031928562,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.8614322990179062,
+			"gameSeconds": 2.8654572059749626,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.8932791985571384,
+			"gameSeconds": 2.8972906050621532,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.9109417013823986,
+			"gameSeconds": 2.9148736064671539,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.9462847001850605,
+			"gameSeconds": 2.9501506043015979,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.9608389995992184,
+			"gameSeconds": 2.9646460031508468,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 1.9886105991899967,
+			"gameSeconds": 2.9924365048645996,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.0030709989368916,
+			"gameSeconds": 3.0066582066356204,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.0845405012369156,
+			"gameSeconds": 3.0882751000463031,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.17134889960289,
+			"gameSeconds": 3.1753383008181117,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.3159734010696411,
+			"gameSeconds": 3.3199693997739814,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.3612821996212006,
+			"gameSeconds": 3.3653780994354747,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.4353037998080254,
+			"gameSeconds": 3.4393502016901039,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.4674259014427662,
+			"gameSeconds": 3.4712685001431964,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.5267280004918575,
+			"gameSeconds": 3.5308822010993026,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.551714800298214,
+			"gameSeconds": 3.5556945008574985,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 2.5731016993522644,
+			"gameSeconds": 3.5771218006848358,
+			"key": "W",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 3.0017824992537498,
+			"gameSeconds": 4.0055838031112216,
+			"key": "Z",
+			"state": "pressed"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 3.0050452016294003,
+			"gameSeconds": 4.0090425004600547,
+			"key": "Z",
+			"state": "released"
+		},
+		{
+			"kind": "aim",
+			"wallSeconds": 3.2878910005092621,
+			"gameSeconds": 4.2917246994911693,
+			"actor": "AegisAICharacter_1",
+			"lineOfSight": true,
+			"distanceCm": 1099.6760243521194
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 3.2879106998443604,
+			"gameSeconds": 4.2917246994911693,
+			"key": "LeftMouseButton",
+			"state": "pressed"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 3.2908631004393101,
+			"gameSeconds": 4.2951534008025192,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 3.3989649005234241,
+			"gameSeconds": 4.4028634009300731,
+			"key": "A",
+			"state": "released"
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 3.5794185996055603,
+			"gameSeconds": 4.5833140005706809,
+			"key": "W",
+			"state": "released"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 3.9945344999432564,
+			"gameSeconds": 4.9985619997023605,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "aim",
+			"wallSeconds": 4.1568797007203102,
+			"gameSeconds": 5.1608546031056903,
+			"actor": "AegisAICharacter_2",
+			"lineOfSight": true,
+			"distanceCm": 857.24727441695802
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 4.291226901113987,
+			"gameSeconds": 5.2953895022510551,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_1",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 4.6963082998991013,
+			"gameSeconds": 5.7004669000743888,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 5.3515757992863655,
+			"gameSeconds": 6.3558455025195144,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_2",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 5.3988845981657505,
+			"gameSeconds": 6.4031043005525135,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 5.5619612000882626,
+			"gameSeconds": 6.5660655004321598,
+			"amount": 14,
+			"sourceTeam": "companion",
+			"victimTeam": "enemy",
+			"source": "AegisAICharacter_0",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 5.7748089991509914,
+			"gameSeconds": 6.7790289027034305,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_1",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 6.0992705002427101,
+			"gameSeconds": 7.1034662043093704,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "aim",
+			"wallSeconds": 6.1097851991653442,
+			"gameSeconds": 7.1138127063750289,
+			"actor": "AegisAICharacter_1",
+			"lineOfSight": true,
+			"distanceCm": 849.92018398045479
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 6.1987549997866154,
+			"gameSeconds": 7.2028926042257808,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_3",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 6.8023286983370781,
+			"gameSeconds": 7.8065595058142208,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "transition",
+			"wallSeconds": 7.1001772992312908,
+			"gameSeconds": 8.1042213057517074,
+			"phase": "active",
+			"wave": 1,
+			"relay": 1
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 7.2595643997192383,
+			"gameSeconds": 8.2637419057427905,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_1",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 7.4719301983714104,
+			"gameSeconds": 8.4760303040384315,
+			"amount": 14,
+			"sourceTeam": "companion",
+			"victimTeam": "enemy",
+			"source": "AegisAICharacter_0",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 7.4719652980566025,
+			"gameSeconds": 8.4760303040384315,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_2",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 7.5029278993606567,
+			"gameSeconds": 8.5069551048218273,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 8.1072361990809441,
+			"gameSeconds": 9.1111917038797401,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_3",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 8.2035887986421585,
+			"gameSeconds": 9.20775980403414,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_1"
+		},
+		{
+			"kind": "aim",
+			"wallSeconds": 8.4137182980775833,
+			"gameSeconds": 9.4176239063381217,
+			"actor": "AegisAICharacter_2",
+			"lineOfSight": true,
+			"distanceCm": 810.66894206210361
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 8.741763599216938,
+			"gameSeconds": 9.7457829033373855,
+			"amount": 14,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_1",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 8.9039896987378597,
+			"gameSeconds": 9.9081318033277057,
+			"amount": 14,
+			"sourceTeam": "player",
+			"victimTeam": "enemy",
+			"source": "AegisPlayerCharacter_1",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 9.1686448007822037,
+			"gameSeconds": 10.1727557060658,
+			"amount": 14,
+			"sourceTeam": "companion",
+			"victimTeam": "enemy",
+			"source": "AegisAICharacter_0",
+			"victim": "AegisAICharacter_2"
+		},
+		{
+			"kind": "damage",
+			"wallSeconds": 9.5947486013174057,
+			"gameSeconds": 10.598907104635146,
+			"amount": 10,
+			"sourceTeam": "enemy",
+			"victimTeam": "player",
+			"source": "AegisAICharacter_2",
+			"victim": "AegisPlayerCharacter_1"
+		},
+		{
+			"kind": "death",
+			"wallSeconds": 9.5948847010731697,
+			"gameSeconds": 10.598907104635146,
+			"actor": "AegisPlayerCharacter_1",
+			"role": "player"
+		},
+		{
+			"kind": "transition",
+			"wallSeconds": 9.5982262007892132,
+			"gameSeconds": 10.601990005874541,
+			"phase": "lost",
+			"wave": 1,
+			"relay": 1
+		},
+		{
+			"kind": "input",
+			"wallSeconds": 9.598243098706007,
+			"gameSeconds": 10.601990005874541,
+			"key": "LeftMouseButton",
+			"state": "released"
+		}
+	],
+	"screenshots": [
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-briefing.png",
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-02.png",
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-04.png",
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-06.png",
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-08.png",
+		"D:/AegisWork/Reports/upgrade-v3-play-editor-02/play-final.png"
+	]
+}

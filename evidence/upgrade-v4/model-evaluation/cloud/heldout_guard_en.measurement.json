@@ -1,0 +1,37 @@
+{
+  "case": "heldout_guard_en",
+  "split": "heldout",
+  "httpStatus": 200,
+  "latencyMilliseconds": 1055.6094999992638,
+  "rawResponseSha256": "fc41dd192513e247ef75da70b2bb2434756a6fad10c5eaa5231c4710b39081a3",
+  "savedResponseSha256": "fc41dd192513e247ef75da70b2bb2434756a6fad10c5eaa5231c4710b39081a3",
+  "credentialRedactionApplied": false,
+  "responseId": "c4adc01d-3605-4fd0-9f76-a9a12adf56a2",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 715,
+    "completion_tokens": 22,
+    "total_tokens": 737,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 331
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Stay with player and guard",
+    "steps": [
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

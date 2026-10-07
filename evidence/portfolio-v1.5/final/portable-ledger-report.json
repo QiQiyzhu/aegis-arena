@@ -1,0 +1,25 @@
+{
+  "engine": "portable-cpp-ledger",
+  "unrealCompiled": false,
+  "unrealRuntime": false,
+  "compiler": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\.tools\\zig-x86_64-windows-0.15.2\\zig.exe",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-pedantic"
+  ],
+  "exitCode": 0,
+  "sources": {
+    "core\\include\\aegis\\portfolio.hpp": "0bffe989e16f4eb84935950d7b5a221aefabe7fde23a088f8e89d42853046c83",
+    "core\\tests\\portfolio_tests.cpp": "3720fe16f2d077ac398566df982f3d5ab8334bd48fe92e750c59a166150b7696"
+  },
+  "tests": {
+    "suite": "portfolio-economy",
+    "checks": 32,
+    "failures": 0,
+    "unrealRuntime": false
+  }
+}

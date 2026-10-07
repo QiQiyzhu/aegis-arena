@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "reviewedAtUtc": "2026-09-18T03:33:05.070519+00:00",
+  "reviewedImages": [
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\qa-01.png",
+      "sha256": "4fdac51482c905e6f4aef17249e6a429216f18d1872411377c3cf6f0583046d8"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\qa-02.png",
+      "sha256": "db6463b01f5a708537026f52eae916ba63c6e0409c612a7ebf6a3594c313fc8a"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\qa-03.png",
+      "sha256": "17efd8d6be2c2602aa5768193efa1e2cd32d8165af3b9e68fdc345e3afa3d8cc"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\qa-04.png",
+      "sha256": "5cc57473f067f06ad15602502d6c3439ec4783d0c3edeaf38a6f746addbf715f"
+    },
+    {
+      "path": "D:\\AegisWork\\Reports\\v2-20260918\\video-final-01\\qa-05.png",
+      "sha256": "d858b28e5e3f0c9e51948a30288633c9802983e70f2288cab14aecd7718d528a"
+    }
+  ],
+  "notes": [
+    "Manually viewed all five encoded-delivery frames: intro, stage 1, upgrade, actual diagnostics, outro.",
+    "Chinese text and native controls readable; no clipped rail/body text, no visible engine warning overlay, gameplay remains fully framed.",
+    "Actual tactical controller scope and single scripted-run/audio reconstruction scope are stated.",
+    "Displayed 106.8 seconds/1260 damage/237 spend/1 charged/3 overclock match the native ledger; 105 healing is a rounded display of 104.933349609375."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "case": "tuning_capture_en",
+  "split": "tuning",
+  "httpStatus": 200,
+  "latencyMilliseconds": 1194.4952999983798,
+  "rawResponseSha256": "b866809cd95958ab03554592ee8cfff12c592aaacab8ebaa443ca12aa54a8235",
+  "savedResponseSha256": "b866809cd95958ab03554592ee8cfff12c592aaacab8ebaa443ca12aa54a8235",
+  "credentialRedactionApplied": false,
+  "responseId": "100be7fc-e960-4477-8bf8-71010a2d9a04",
+  "responseModel": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 706,
+    "completion_tokens": 33,
+    "total_tokens": 739,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 706
+  },
+  "finishReason": "stop",
+  "validJson": true,
+  "schemaValid": true,
+  "skillNamesLegal": true,
+  "targetsLegal": true,
+  "skillsLegal": true,
+  "fullIntentCorrect": true,
+  "plan": {
+    "label": "Secure relay then protect",
+    "steps": [
+      {
+        "skill": "capture_relay",
+        "target": "none"
+      },
+      {
+        "skill": "guard",
+        "target": "none"
+      }
+    ]
+  }
+}

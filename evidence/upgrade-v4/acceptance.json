@@ -1,0 +1,1306 @@
+{
+  "schemaVersion": 1,
+  "version": "1.3.0 Squad Copilot",
+  "checkedAtUtc": "2026-09-11T07:28:11.086500+00:00",
+  "status": "passed-with-declared-scope",
+  "engine": "Unreal Engine 5.8.2 CL 56702186",
+  "gitHead": "daabbe2bee5ab2fe8336d04aa058c0da13f9722a",
+  "uncommittedLocalUpgrade": true,
+  "published": false,
+  "inputs": {
+    "sourceSha256": "2ee8534f16485a895b69628f0bf8b107bde0aa5d05b6a074fad90e0c82cb894f",
+    "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+  },
+  "tests": {
+    "tactical-final": {
+      "passed": true,
+      "assertions": 32,
+      "provenance": "tactical-final/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "weapons-final": {
+      "passed": true,
+      "assertions": 31,
+      "provenance": "weapons-final/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "operation-final": {
+      "passed": true,
+      "assertions": 31,
+      "provenance": "operation-final/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "memory-final": {
+      "passed": true,
+      "assertions": 28,
+      "provenance": "memory-final/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "trial-final": {
+      "passed": true,
+      "assertions": 54,
+      "provenance": "trial-final/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "copilot-cloud-editor": {
+      "passed": true,
+      "assertions": 13,
+      "provenance": "copilot-cloud-editor/provenance.json",
+      "sourceBinding": "before UI error-message correction; all other source/config/assets identical; final UI verified by packaged Copilot probe",
+      "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "copilot-fault": {
+      "passed": true,
+      "assertions": 25,
+      "provenance": "copilot-fault/provenance.json",
+      "sourceBinding": "final source",
+      "sourceSha256": "2ee8534f16485a895b69628f0bf8b107bde0aa5d05b6a074fad90e0c82cb894f",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "input-packaged": {
+      "passed": true,
+      "assertions": 30,
+      "provenance": "input-packaged/provenance.json",
+      "sourceBinding": "final source",
+      "sourceSha256": "2ee8534f16485a895b69628f0bf8b107bde0aa5d05b6a074fad90e0c82cb894f",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "copilot-cloud-packaged": {
+      "passed": true,
+      "assertions": 13,
+      "provenance": "copilot-cloud-packaged/provenance.json",
+      "sourceBinding": "final source",
+      "sourceSha256": "2ee8534f16485a895b69628f0bf8b107bde0aa5d05b6a074fad90e0c82cb894f",
+      "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+    },
+    "coreAutomation": {
+      "passed": true,
+      "tests": 6,
+      "report": "editor-final/automation/index.json"
+    },
+    "portable": {
+      "passed": true,
+      "assertions": 381,
+      "report": "portable-final/verification.json"
+    },
+    "python": {
+      "passed": true,
+      "tests": 117,
+      "report": "portable-final/python-tests.log"
+    },
+    "cloudSemantics": {
+      "actualModelInference": true,
+      "model": "deepseek-flash",
+      "syntheticObservations": true,
+      "tuning": {
+        "validJson": 6,
+        "schemaValid": 6,
+        "skillNamesLegal": 6,
+        "targetsLegal": 6,
+        "skillsLegal": 6,
+        "fullIntentCorrect": 6,
+        "count": 6,
+        "latencyMilliseconds": {
+          "min": 775.1607999962289,
+          "median": 952.7224499979638,
+          "max": 1422.0248000056017
+        }
+      },
+      "heldout": {
+        "validJson": 6,
+        "schemaValid": 6,
+        "skillNamesLegal": 6,
+        "targetsLegal": 6,
+        "skillsLegal": 6,
+        "fullIntentCorrect": 6,
+        "count": 6,
+        "latencyMilliseconds": {
+          "min": 820.4397000008612,
+          "median": 1021.0768500000995,
+          "max": 1537.9487000027439
+        }
+      },
+      "latencyMilliseconds": {
+        "min": 775.1607999962289,
+        "median": 1021.0768500000995,
+        "max": 1537.9487000027439
+      },
+      "report": "model-evaluation/cloud/report.json"
+    }
+  },
+  "packages": {
+    "Development": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\copilot-v1.3-development\\package\\Windows",
+      "copilotLauncher": "D:\\AegisWork\\Packages\\copilot-v1.3-development\\package\\Windows\\Play Aegis Copilot.cmd",
+      "providerSettings": "D:\\AegisWork\\Packages\\copilot-v1.3-development\\package\\Windows\\Configure Aegis AI.cmd",
+      "gameExecutable": "D:\\AegisWork\\Packages\\copilot-v1.3-development\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "gameExecutableSha256": "475eb446b9aaee0c564cb7092d9eb7fc5589b7bddf513f9f4b38fdf7763b5064",
+      "manifest": "packages/development-manifest.json",
+      "syntheticInputAndCopilotProbePassed": true,
+      "humanPlaytest": false
+    },
+    "Shipping": {
+      "buildCookStagePassed": true,
+      "root": "D:\\AegisWork\\Packages\\copilot-v1.3-shipping\\package\\Windows",
+      "copilotLauncher": "D:\\AegisWork\\Packages\\copilot-v1.3-shipping\\package\\Windows\\Play Aegis Copilot.cmd",
+      "providerSettings": "D:\\AegisWork\\Packages\\copilot-v1.3-shipping\\package\\Windows\\Configure Aegis AI.cmd",
+      "gameExecutable": "D:\\AegisWork\\Packages\\copilot-v1.3-shipping\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena-Win64-Shipping.exe",
+      "gameExecutableSha256": "7ee54ddb5e6ee6f765da9f40e2ba827a865afa2c6b3ccbad6341bf322b9c3414",
+      "manifest": "packages/shipping-manifest.json",
+      "syntheticInputAndCopilotProbePassed": false,
+      "humanPlaytest": false
+    }
+  },
+  "latePresentationChange": {
+    "changedFiles": [
+      "Source/AegisArena/Private/AegisPlannerUI.cpp"
+    ],
+    "detail": "Synchronous request failures now preserve the planner error instead of replacing it with Deploy first.",
+    "regressionBinding": "source-binding/before-ui-message-correction.json"
+  },
+  "screenshotsReviewed": [
+    "input-packaged/briefing.png",
+    "input-packaged/active.png",
+    "input-packaged/paused.png",
+    "input-packaged/newattempt.png",
+    "copilot-cloud-packaged/copilot-open.png",
+    "copilot-cloud-packaged/copilot-request.png",
+    "copilot-cloud-packaged/copilot-plan.png",
+    "copilot-cloud-packaged/copilot-executing.png"
+  ],
+  "humanPlaytest": false,
+  "osInputUsedForFinalProbe": false,
+  "finalCopiedFiles": [
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-before-final-ui.json",
+      "path": "source-binding/before-ui-message-correction.json",
+      "bytes": 5851,
+      "sha256": "ebdf1660a41c8233f120532c5f4f87e7697eb3ac5eaf58a0a634c6b41096b7cc"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-tactical-final\\engine.log",
+      "path": "tactical-final/engine.log",
+      "bytes": 150292,
+      "sha256": "76990d84ca6e72163d21aa0aeec41276b59b309f1af0bcf6c53588125481da88"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-tactical-final\\index.json",
+      "path": "tactical-final/index.json",
+      "bytes": 13107,
+      "sha256": "c1066933c914a432deced2cb21bb4f77d12fb6aaa83258dac4537b20fadf8ce7"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-tactical-final\\provenance.json",
+      "path": "tactical-final/provenance.json",
+      "bytes": 3814,
+      "sha256": "9461780d2644ad15ec26b160219a883fca601d72c4ea5cb814181ad73df84dc2"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-tactical-final\\stdout.log",
+      "path": "tactical-final/stdout.log",
+      "bytes": 151398,
+      "sha256": "21bb9d4d4d8f65ce93ede86024ac0b40f82ecfe4d5da1f25f4c5f3f1f079c098"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-weapons-final\\engine.log",
+      "path": "weapons-final/engine.log",
+      "bytes": 139291,
+      "sha256": "c7f064ece127623b5e52ab6689dbecbb85c2f42bb08a19a9af11735079678595"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-weapons-final\\index.json",
+      "path": "weapons-final/index.json",
+      "bytes": 13132,
+      "sha256": "eb06de45841a4267ad611c650019f75abc8e4372fc8ad22331e404d1aa3e4825"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-weapons-final\\provenance.json",
+      "path": "weapons-final/provenance.json",
+      "bytes": 6531,
+      "sha256": "b2525ad79c9f58996e5f26e1b151641baa824a1c58ea09155d5267d1becfca4a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-weapons-final\\stdout.log",
+      "path": "weapons-final/stdout.log",
+      "bytes": 140367,
+      "sha256": "51c86eca5972c9ebb6b6138b74eb0f2a3deedb2ad10c6ffe524eb3052d221582"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-operation-final\\engine.log",
+      "path": "operation-final/engine.log",
+      "bytes": 152596,
+      "sha256": "a320728d3969c5e3f1963af61c9a445da7353a8c25203d9709991eba928d07b1"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-operation-final\\index.json",
+      "path": "operation-final/index.json",
+      "bytes": 13110,
+      "sha256": "fef426faf51091e8f6836d1da1025c33fcf7d646dc557b4af942dfae97f9f6b1"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-operation-final\\provenance.json",
+      "path": "operation-final/provenance.json",
+      "bytes": 8571,
+      "sha256": "c98cd4c3324c122f6672a3c707f29e35db8b66978b50d9b6b052d37cfaddd5ba"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-operation-final\\stdout.log",
+      "path": "operation-final/stdout.log",
+      "bytes": 153672,
+      "sha256": "59d9b6d545cf6c3ee3ba58f18648c2355bd001c4bf79ca1feb84dbc53439820a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-memory-final\\engine.log",
+      "path": "memory-final/engine.log",
+      "bytes": 144279,
+      "sha256": "4e1f24fc110ddf5a45a21a51ee08262952b0fbffdef2a6d740abbed9b0b04938"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-memory-final\\index.json",
+      "path": "memory-final/index.json",
+      "bytes": 11086,
+      "sha256": "8957662e61a1f7fdd391aeba99a14370938df33b459b9788841ee913a5432cf8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-memory-final\\provenance.json",
+      "path": "memory-final/provenance.json",
+      "bytes": 5823,
+      "sha256": "ba0229fc9caaeb527cd4831be77e63a009ed14d771052fc2e3233bb7d0edb5bf"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-memory-final\\stdout.log",
+      "path": "memory-final/stdout.log",
+      "bytes": 145385,
+      "sha256": "a419555042767a78662c943a112ffbb39fb778092af09bc32dd587e5f2763076"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-trial-final\\engine.log",
+      "path": "trial-final/engine.log",
+      "bytes": 157766,
+      "sha256": "1109200af0663a08a1d2713793e4a769227bde46ae25920f60a737bb5ff2936e"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-trial-final\\index.json",
+      "path": "trial-final/index.json",
+      "bytes": 21947,
+      "sha256": "e5d674e5261c2678d9f7c2b222f55cb56497d280b660cd1d01ac307715d0a86e"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-trial-final\\provenance.json",
+      "path": "trial-final/provenance.json",
+      "bytes": 7888,
+      "sha256": "04db7bf6af51552b959341527abacdf0049aae639bc35355d2945909fbf37858"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-trial-final\\stdout.log",
+      "path": "trial-final/stdout.log",
+      "bytes": 158842,
+      "sha256": "7c833114a823249cad853adb4cd7974822d65dc6f8230322d9f7da3e2f4d01c3"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\copilot-executing.png",
+      "path": "copilot-cloud-editor/copilot-executing.png",
+      "bytes": 606791,
+      "sha256": "b60197ef545d214a2545da85e573366fc5316346102a95666083d69b7e87d12c"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\copilot-open.png",
+      "path": "copilot-cloud-editor/copilot-open.png",
+      "bytes": 112786,
+      "sha256": "5f876db2ee86d5fc6edf5c2e331b1677fc95fb8611e5747f98526ab735007e3c"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\copilot-plan.png",
+      "path": "copilot-cloud-editor/copilot-plan.png",
+      "bytes": 120934,
+      "sha256": "1c167aa0c32fca95292c1ec2f7ecbc9eb1a5d8f5ce3e7fe2ab41689702419ed5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\copilot-probe.json",
+      "path": "copilot-cloud-editor/copilot-probe.json",
+      "bytes": 1890,
+      "sha256": "d288423e6371bd0da7465420098e8cad7f3d3351d757684cc4505085902b9e06"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\copilot-request.png",
+      "path": "copilot-cloud-editor/copilot-request.png",
+      "bytes": 112762,
+      "sha256": "4bab32621db2fa78f2cf6036b77b44320e68962482bd466d80ebf25cd38a4b50"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\engine.log",
+      "path": "copilot-cloud-editor/engine.log",
+      "bytes": 136312,
+      "sha256": "efd304549b3d827a30244e9c4cd2813d801af426634a246254f7703861319d10"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\planner-trace.jsonl",
+      "path": "copilot-cloud-editor/planner-trace.jsonl",
+      "bytes": 5728,
+      "sha256": "ee3f92ea01c87430e3f74488ce21e9556d33082f8cc34c69f9a9ad208a16136a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\provenance.json",
+      "path": "copilot-cloud-editor/provenance.json",
+      "bytes": 3620,
+      "sha256": "bf1a274bf6776afe03e567e9cc783e1cc137659a1d25b1df9afaab64543fcc5f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\stdout.log",
+      "path": "copilot-cloud-editor/stdout.log",
+      "bytes": 137323,
+      "sha256": "52e5852171066058d9e761f90c018870c42b33bf968c9dd74fb6c1a1fc31ffa2"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\copilot-fault-probe.json",
+      "path": "copilot-fault/copilot-fault-probe.json",
+      "bytes": 4866,
+      "sha256": "bd4fc328d8345526d9a25c9733dee3fe090717487c7876e38bc752be17924d76"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\engine.log",
+      "path": "copilot-fault/engine.log",
+      "bytes": 110441,
+      "sha256": "d09cf264fd93dfd46dea1c9b7fa725f3c1220ede78c9519e5be40f38595e4adc"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\fixture-http.jsonl",
+      "path": "copilot-fault/fixture-http.jsonl",
+      "bytes": 18462,
+      "sha256": "d05c88ad061d9e4980fc71d12b86230ebdb51faee7987761aa97d1a108052672"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\planner-trace.jsonl",
+      "path": "copilot-fault/planner-trace.jsonl",
+      "bytes": 20947,
+      "sha256": "863bec2ebcbb4698245f7a5fe9e4fef382bde571807c24093470ca206d2c79e8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\provenance.json",
+      "path": "copilot-fault/provenance.json",
+      "bytes": 3152,
+      "sha256": "65daf8bb56f632bcb10edf70c94aa9b9aa169d9ce253ea5748f7bdfd77334cb1"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fault-01\\stdout.log",
+      "path": "copilot-fault/stdout.log",
+      "bytes": 111481,
+      "sha256": "7ef4f442b3ddb9c72e031d31a7df8446db174ab46a55524c5269eaa02660f57a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\active.png",
+      "path": "input-packaged/active.png",
+      "bytes": 672843,
+      "sha256": "232616f2709e68ba8fc0f6d18a5766f4c95609365772c7129587a05090a3e793"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\briefing.png",
+      "path": "input-packaged/briefing.png",
+      "bytes": 312972,
+      "sha256": "5db70afa14b2ce23de585277999915990f1617db5abb8ab3fb63d5bdf8a4bc5f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\engine.log",
+      "path": "input-packaged/engine.log",
+      "bytes": 94111,
+      "sha256": "8ddfa714f993768989f2f2764beb96acc0a24cb7a7aaadff803c51718c2e5cd5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\input-probe.json",
+      "path": "input-packaged/input-probe.json",
+      "bytes": 4451,
+      "sha256": "a5c3f3a9657b9ff877fa0eb5e1957481ac4f954aeaeaa52cd5cf2d3ed449ff92"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\newattempt.png",
+      "path": "input-packaged/newattempt.png",
+      "bytes": 312974,
+      "sha256": "cf72def25c077836bd283bb274d9a8a6843a166b9cf719de2523ad29f92faae5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\paused.png",
+      "path": "input-packaged/paused.png",
+      "bytes": 316680,
+      "sha256": "e6f1929a52f436cee647b931c4366ebdb9f511571e04deba8952a4549cd2ed2a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\provenance.json",
+      "path": "input-packaged/provenance.json",
+      "bytes": 9194,
+      "sha256": "b55374b9c9ea7fd460c148dae35d21c57d9073bc42783848219bfd523dd0f325"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-input-packaged-final\\stdout.log",
+      "path": "input-packaged/stdout.log",
+      "bytes": 94011,
+      "sha256": "0a593fc5680a973afff988bf914a01d5347d2890d21877eb06ce48c498199127"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-executing.png",
+      "path": "copilot-cloud-packaged/copilot-executing.png",
+      "bytes": 609430,
+      "sha256": "edb47ea9e16855801fd297cc47dc013b73524eabeed462aeaff8723f4cd32b36"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-open.png",
+      "path": "copilot-cloud-packaged/copilot-open.png",
+      "bytes": 112884,
+      "sha256": "ec9448c8aa0e527a332fe4abe3e49c92471fb4d3fcc25cdb07f0f8ff58483f3b"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-plan.png",
+      "path": "copilot-cloud-packaged/copilot-plan.png",
+      "bytes": 120925,
+      "sha256": "17a3e1dad6a715947059ee1ff7f3ddfe04777adcc9cc1590f8c0c2cc57a9e608"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-probe.json",
+      "path": "copilot-cloud-packaged/copilot-probe.json",
+      "bytes": 1933,
+      "sha256": "23a390cf62de553bac3e39731e87ebb2056935d9fdb356f0ff66858478f28b18"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\copilot-request.png",
+      "path": "copilot-cloud-packaged/copilot-request.png",
+      "bytes": 113403,
+      "sha256": "7cc2b17f218a9b86eda727dda43a444e63be1ff3dba7c78ad65aef087430a992"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\engine.log",
+      "path": "copilot-cloud-packaged/engine.log",
+      "bytes": 95060,
+      "sha256": "913481e9949758ba4874b4d3c995d43788a70bbcd74e428d8c78ca56bdf910e0"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\planner-trace.jsonl",
+      "path": "copilot-cloud-packaged/planner-trace.jsonl",
+      "bytes": 5723,
+      "sha256": "c243b5a5b129fc14b78ecefca8cc276976017ebd5390a48a7a24822bdb5d8167"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\provenance.json",
+      "path": "copilot-cloud-packaged/provenance.json",
+      "bytes": 3594,
+      "sha256": "bc51425df6f97b60143c54c98fb2a49bbccf29dbce7226b32e691265726f35be"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-packaged-final\\stdout.log",
+      "path": "copilot-cloud-packaged/stdout.log",
+      "bytes": 94930,
+      "sha256": "71218d31dce6445bf10e0b13d64b8a9978863dfa60fe739673584001b74f0a40"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-071151-145172a4ae77441f8963abfa2da3f608\\automation\\index.json",
+      "path": "editor-final/automation/index.json",
+      "bytes": 2920,
+      "sha256": "34ef6017abf4fdd228a39831e7f14ff0f2df09075c23575d21528edef5978507"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-071151-145172a4ae77441f8963abfa2da3f608\\automation-engine.log",
+      "path": "editor-final/automation-engine.log",
+      "bytes": 139316,
+      "sha256": "43d082de82fa172b9baa7ea20fc9421ec4238a4d63b9a26801776d2af564f5b8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-071151-145172a4ae77441f8963abfa2da3f608\\automation.log",
+      "path": "editor-final/automation.log",
+      "bytes": 140422,
+      "sha256": "43560e0d03f65cc33144cc18e59ed4a6f9c261b648dcdd65ad38e196ad92259d"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-071151-145172a4ae77441f8963abfa2da3f608\\build.log",
+      "path": "editor-final/build.log",
+      "bytes": 2629,
+      "sha256": "330018b802b486fa3a506f69a87d6db1e584e80b552106086924a349ff34a3cd"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-070556-1a89758cd09646c79dd8fa30f7f7c28f\\automation\\index.json",
+      "path": "editor-before-ui-message-correction/automation/index.json",
+      "bytes": 2919,
+      "sha256": "09a8238efce3c7387b9da081d660d3e574d36d2ab2797ea480d3ac868ff06322"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-070556-1a89758cd09646c79dd8fa30f7f7c28f\\automation-engine.log",
+      "path": "editor-before-ui-message-correction/automation-engine.log",
+      "bytes": 148567,
+      "sha256": "060b8577f042f39b8eb2392fd534b5d25912fe85c2adfcf075f13d660e9d1bfc"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-070556-1a89758cd09646c79dd8fa30f7f7c28f\\automation.log",
+      "path": "editor-before-ui-message-correction/automation.log",
+      "bytes": 149673,
+      "sha256": "7a5060a1fa8fe00ff0102b770ae53f31f8193f0ba7c3cd13c33ed3ede0f8b2d7"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-builds\\20260911-070556-1a89758cd09646c79dd8fa30f7f7c28f\\build.log",
+      "path": "editor-before-ui-message-correction/build.log",
+      "bytes": 2864,
+      "sha256": "bae532f3c6da5503d8f512d39312461266242dbeb6fd0f5e83dadfd2945bcc6d"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\build.log",
+      "path": "portable-final/build.log",
+      "bytes": 340,
+      "sha256": "1c22d95129a733274126d12bff9c88d98eb177c7a448f5a3a39ff57f1873b8dc"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\evaluation\\episodes.csv",
+      "path": "portable-final/evaluation/episodes.csv",
+      "bytes": 6831,
+      "sha256": "22e6d06e620d6ca2253acce3bfb6bd95987a9ad323dd0219d02581a637f05822"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\evaluation\\episodes.json",
+      "path": "portable-final/evaluation/episodes.json",
+      "bytes": 56066,
+      "sha256": "d8fedc10ea1bbf0773fca1a36d59ea91155090b65ba867acba51c95346826f42"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\evaluation\\report.json",
+      "path": "portable-final/evaluation/report.json",
+      "bytes": 3044,
+      "sha256": "7b9b9bde1106d0c447a36329fbeb8efed8c2f86743d8197c7d95827229a37f8f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\evaluation.log",
+      "path": "portable-final/evaluation.log",
+      "bytes": 1677,
+      "sha256": "1950c83bca9833f13eb986c1d9d8c3de917bb63a439c5d627dc8792187bf0e04"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\python-tests.log",
+      "path": "portable-final/python-tests.log",
+      "bytes": 18589,
+      "sha256": "986fa9c0cdaac6da92a94d17412cc7fe191a17147f16f2e2d287de663510b9b8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\smoke\\episodes.csv",
+      "path": "portable-final/smoke/episodes.csv",
+      "bytes": 414,
+      "sha256": "511a4bae2bfd708c912fda8b88e7e9accc7a4a5fa286f291e19f334821bb9c12"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\smoke\\episodes.json",
+      "path": "portable-final/smoke/episodes.json",
+      "bytes": 1829,
+      "sha256": "3dab92894df103a8f81c3ba4b37e91a190af6254ac9b9c1c9361f881321b5c91"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\smoke\\report.json",
+      "path": "portable-final/smoke/report.json",
+      "bytes": 2741,
+      "sha256": "26712942079fa1b1e987971c68bedc0c1e06d70cbc6cc643185b5a9d621fa758"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\smoke.log",
+      "path": "portable-final/smoke.log",
+      "bytes": 1374,
+      "sha256": "2ac39aba8348adf541ff852341a6c12c85a684f8f89365294c3087755b4d4632"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-portable-final\\verification.json",
+      "path": "portable-final/verification.json",
+      "bytes": 738,
+      "sha256": "765cb6bc5970d01458b10a65ceb34a4745d2e354a5e7c456afaf1fff573a0e74"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\copilot-open.png",
+      "path": "failures/slate-focus01/copilot-open.png",
+      "bytes": 115698,
+      "sha256": "30b0166c20225ebf3fec3dfa8d4892d20b5789b2af2c041b82f8bad54f56e53f"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\copilot-plan.png",
+      "path": "failures/slate-focus01/copilot-plan.png",
+      "bytes": 124912,
+      "sha256": "fa458e2e2f50ac601479adc3cb696290ea443baca6675c64a75b162ffc21dfc5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\copilot-probe.json",
+      "path": "failures/slate-focus01/copilot-probe.json",
+      "bytes": 1402,
+      "sha256": "960eeb1b2d4483951ba7cc62ebdb6a2771674906c8a4a6a25245632caeac2f18"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\copilot-request.png",
+      "path": "failures/slate-focus01/copilot-request.png",
+      "bytes": 115629,
+      "sha256": "0f6b2ab988a56a3b80c15e69fe14cc83ac59b03b4bfc1839848f8a7152054989"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\engine.log",
+      "path": "failures/slate-focus01/engine.log",
+      "bytes": 135284,
+      "sha256": "415d4ad4a95dca28d04a648717db1f2663451155199b81f01fb547a571b370b9"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\fixture-http.jsonl",
+      "path": "failures/slate-focus01/fixture-http.jsonl",
+      "bytes": 3401,
+      "sha256": "99c07806b9ad633f1626d7720b17e897ddccd2c90e7b83dfaef0074d89c45734"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\provenance.json",
+      "path": "failures/slate-focus01/provenance.json",
+      "bytes": 2110,
+      "sha256": "2d648683d4fd65c41a8b236e1b07adb12c00c2d1413809d3095a9be612bf25d6"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-01\\stdout.log",
+      "path": "failures/slate-focus01/stdout.log",
+      "bytes": 136325,
+      "sha256": "e304f545bea49b1b0c344a9983040e9ef9b4d9915782b535c58f9638b4f28b1c"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\copilot-executing.png",
+      "path": "intermediate/transport02/copilot-executing.png",
+      "bytes": 611191,
+      "sha256": "fd375d13f5e7af9cf678b5c0cf08a9ca27837fa95227d78fff356dd6cf0e4763"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\copilot-open.png",
+      "path": "intermediate/transport02/copilot-open.png",
+      "bytes": 114384,
+      "sha256": "9d3d4ad597c062949f48b6e4c9f10e0a6dc03d89c1c9e4f7206cdc96864cd0a8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\copilot-plan.png",
+      "path": "intermediate/transport02/copilot-plan.png",
+      "bytes": 123545,
+      "sha256": "18685a3ae9b1a83e8fcc9c90652dc99d500670019d01802e1d17061175dbeaf9"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\copilot-probe.json",
+      "path": "intermediate/transport02/copilot-probe.json",
+      "bytes": 1882,
+      "sha256": "2f7e2e049ad6b1e6006fa303e962948898238764af60e0caa83a8ad05018676a"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\copilot-request.png",
+      "path": "intermediate/transport02/copilot-request.png",
+      "bytes": 114476,
+      "sha256": "ffaab985bccf155914e14611d8d1faf8e80b4511ee9bfba40f2649ad8edcb7e4"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\engine.log",
+      "path": "intermediate/transport02/engine.log",
+      "bytes": 136519,
+      "sha256": "de5bed6718aafe562af4b65fb8c5d70216220bc659e8445a477af5e49d9fa302"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\fixture-http.jsonl",
+      "path": "intermediate/transport02/fixture-http.jsonl",
+      "bytes": 3401,
+      "sha256": "99c07806b9ad633f1626d7720b17e897ddccd2c90e7b83dfaef0074d89c45734"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\planner-trace.jsonl",
+      "path": "intermediate/transport02/planner-trace.jsonl",
+      "bytes": 5420,
+      "sha256": "2356fd4dfa145f8782a0a255a21d5f256a97ac3ab399bc2b7f6f2ed4285f23a8"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\provenance.json",
+      "path": "intermediate/transport02/provenance.json",
+      "bytes": 3760,
+      "sha256": "26d6a7f5879fd456210add887ab0d8fec203ef90db8ab44c8219130ee61aa746"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-copilot-fixture-02\\stdout.log",
+      "path": "intermediate/transport02/stdout.log",
+      "bytes": 137560,
+      "sha256": "c461107bb550fb4349e5533f3f5f077d08d3764be00f80e6b489d88f99fa841c"
+    },
+    {
+      "source": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Saved\\AegisPlans\\270CF2C0466D20C09A8B7FBE580C2F67.jsonl",
+      "path": "failures/slate-focus01/planner-trace.jsonl",
+      "bytes": 5188,
+      "sha256": "2e8dad5abde13c304985a9a3cfc1841fc37f1f811db339360c88a83e002ef469"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\audit.json",
+      "path": "model-evaluation/cloud/audit.json",
+      "bytes": 349,
+      "sha256": "115136efa4ae1eb39e2919d0938e9cd148c970ade98b8c7071c4f5e4af010853"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\classification-review.json",
+      "path": "model-evaluation/cloud/classification-review.json",
+      "bytes": 2786,
+      "sha256": "62fc20eb42411bd688b06053a371c9fc88364bd5d0d1a3159790bbe656701656"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\declared-cases.json",
+      "path": "model-evaluation/cloud/declared-cases.json",
+      "bytes": 52180,
+      "sha256": "8a5659cd350bd96a867279f2cbdfbe9f09bd949a37c4a07fd7555de477eed3e8"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_en.measurement.json",
+      "path": "model-evaluation/cloud/heldout_capture_en.measurement.json",
+      "bytes": 1117,
+      "sha256": "1c8897117baf69cbedadd30055a58e510886c7af3ef79e9b55c8d56417c345e2"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_en.request.json",
+      "path": "model-evaluation/cloud/heldout_capture_en.request.json",
+      "bytes": 3274,
+      "sha256": "cf84f3ee580b66d23b98e9855d586028146a65b3a46f2bd2a5eea227dea1dc10"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_en.response.json",
+      "path": "model-evaluation/cloud/heldout_capture_en.response.json",
+      "bytes": 613,
+      "sha256": "163c21fd8e1ce29d8e93b1555001227db2f1a8bdab82e01b163afa946520694c"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_zh.measurement.json",
+      "path": "model-evaluation/cloud/heldout_capture_zh.measurement.json",
+      "bytes": 1117,
+      "sha256": "a6e0aafcf9c3f19c2fdd53955e32eb0f63627b15501b25411f461771c8eda377"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_zh.request.json",
+      "path": "model-evaluation/cloud/heldout_capture_zh.request.json",
+      "bytes": 3256,
+      "sha256": "aeb36da93397043aacc269c273acfd331984ec365cbc1ce368d879ee5b1fc3cc"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_capture_zh.response.json",
+      "path": "model-evaluation/cloud/heldout_capture_zh.response.json",
+      "bytes": 613,
+      "sha256": "263c1fb0d07708519b3ebbc1417199a4b8644019caed5b6dccfba03732316153"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_en.measurement.json",
+      "path": "model-evaluation/cloud/heldout_guard_en.measurement.json",
+      "bytes": 1028,
+      "sha256": "ccbf72935fd586a7e5c597f33124b0cd58d7e9d3b1e755631adfb113fa0d951c"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_en.request.json",
+      "path": "model-evaluation/cloud/heldout_guard_en.request.json",
+      "bytes": 3280,
+      "sha256": "9744b9e1cb73c9cda135286442979e5c8ae46383eb4188ca037ec87a74ecff8b"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_en.response.json",
+      "path": "model-evaluation/cloud/heldout_guard_en.response.json",
+      "bytes": 556,
+      "sha256": "fc41dd192513e247ef75da70b2bb2434756a6fad10c5eaa5231c4710b39081a3"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_zh.measurement.json",
+      "path": "model-evaluation/cloud/heldout_guard_zh.measurement.json",
+      "bytes": 1028,
+      "sha256": "0e406caec46d4792682f20bbe2ab9c9ba1e86f12ec8235be8f66e299edd37ef0"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_zh.request.json",
+      "path": "model-evaluation/cloud/heldout_guard_zh.request.json",
+      "bytes": 3268,
+      "sha256": "c5deca33142883a6f6208596ad09843f836589e47f542f7b5625545b1aeb6b75"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_guard_zh.response.json",
+      "path": "model-evaluation/cloud/heldout_guard_zh.response.json",
+      "bytes": 557,
+      "sha256": "099d16d1b9d98f9155d06cb2b3b834757c0b4ba6f4c59fcb19f3bd208da918a5"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_en.measurement.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_en.measurement.json",
+      "bytes": 1041,
+      "sha256": "dcea5346a5a65a0a84925d9b4428b25b151e399a9490a67d694ba36fca6d6a7a"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_en.request.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_en.request.json",
+      "bytes": 3223,
+      "sha256": "bf8e5a534c5520a76449a62994dac0f29fd71f22a23b6db59565463db7bfd34f"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_en.response.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_en.response.json",
+      "bytes": 565,
+      "sha256": "185182573c3f314b3ab0fc1065113757ccf12c2d6c2ad9a9816b30811700b390"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_zh.measurement.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_zh.measurement.json",
+      "bytes": 1040,
+      "sha256": "32d712b14456d798f39b4f56c488e2086c70486dc86757cbfd722cbdeb337743"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_zh.request.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_zh.request.json",
+      "bytes": 3233,
+      "sha256": "9d5c33bb70b4bc7d712b037b7a16fb3ed252166a8934e6473ed88cb45c5bf58e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\heldout_no_visible_zh.response.json",
+      "path": "model-evaluation/cloud/heldout_no_visible_zh.response.json",
+      "bytes": 564,
+      "sha256": "f4657b036dda39d8eb202139c6733ae2b5399b4ea362277f08fd553933e5f20e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\report.json",
+      "path": "model-evaluation/cloud/report.json",
+      "bytes": 16547,
+      "sha256": "998fcaf6ab6a81825e32357d61bd031d0ce965edd31e25f8a3f2a28246acc9ea"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\RESULTS.md",
+      "path": "model-evaluation/cloud/RESULTS.md",
+      "bytes": 3816,
+      "sha256": "27f646e0ee6a0e89ab4a0756c7a62385f201d6823788282207d27f07708eecca"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_en.measurement.json",
+      "path": "model-evaluation/cloud/tuning_capture_en.measurement.json",
+      "bytes": 1103,
+      "sha256": "063747a265ed97eb5e5f507df9ad02ec3d3ce395c00e0779cf4b1c993d59fdc0"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_en.request.json",
+      "path": "model-evaluation/cloud/tuning_capture_en.request.json",
+      "bytes": 3243,
+      "sha256": "ae8fdb5ed0700051cb912dc52491744cb18e16f7b442e23ff86daab64bab7d6f"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_en.response.json",
+      "path": "model-evaluation/cloud/tuning_capture_en.response.json",
+      "bytes": 601,
+      "sha256": "b866809cd95958ab03554592ee8cfff12c592aaacab8ebaa443ca12aa54a8235"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_zh.measurement.json",
+      "path": "model-evaluation/cloud/tuning_capture_zh.measurement.json",
+      "bytes": 1115,
+      "sha256": "260a585f17181fb584d8fc34869638b1a458c5a43729cd3e15e21d848739bf18"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_zh.request.json",
+      "path": "model-evaluation/cloud/tuning_capture_zh.request.json",
+      "bytes": 3250,
+      "sha256": "51c6c90d7c347e0ebcb61ebefb4bfd5d6bed3e8b7396873cd72186b573c355da"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_capture_zh.response.json",
+      "path": "model-evaluation/cloud/tuning_capture_zh.response.json",
+      "bytes": 613,
+      "sha256": "5b574054436c15b49c1636cad809f9c371a06cef5a9ad56a20dca70e3ab390c6"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_en.measurement.json",
+      "path": "model-evaluation/cloud/tuning_focus_en.measurement.json",
+      "bytes": 1099,
+      "sha256": "4f402f8032f0af73d7486a4eea3b7d5dd736ff237a9e40e3661f19339ee72807"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_en.request.json",
+      "path": "model-evaluation/cloud/tuning_focus_en.request.json",
+      "bytes": 3251,
+      "sha256": "d84ac0e343c4ce074bcd31e74f545f764a1e5099317a0a825730ea7b92066d42"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_en.response.json",
+      "path": "model-evaluation/cloud/tuning_focus_en.response.json",
+      "bytes": 599,
+      "sha256": "c4b97bd6282afa945dfb2918ec5cf4a1a3eef9109c506b528b24cc902df3fa40"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_zh.measurement.json",
+      "path": "model-evaluation/cloud/tuning_focus_zh.measurement.json",
+      "bytes": 1110,
+      "sha256": "568b2382795972390a862b3907ed47830edb7834080949fa8c130932baead88a"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_zh.request.json",
+      "path": "model-evaluation/cloud/tuning_focus_zh.request.json",
+      "bytes": 3259,
+      "sha256": "de6a92cedb0c5c1ded72da7efcbb2e722170d2fa27f22f73543b46090f84a1e6"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_focus_zh.response.json",
+      "path": "model-evaluation/cloud/tuning_focus_zh.response.json",
+      "bytes": 613,
+      "sha256": "033bc73a81dd126a2d4063b32873559c74616355a227eaa31ccab0510ac0b7dc"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_en.measurement.json",
+      "path": "model-evaluation/cloud/tuning_guard_en.measurement.json",
+      "bytes": 1017,
+      "sha256": "0cecaef27fba238d7200fa560f435fc00041ba262a658131cfd79a78abfdc799"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_en.request.json",
+      "path": "model-evaluation/cloud/tuning_guard_en.request.json",
+      "bytes": 3237,
+      "sha256": "55c1c42696dfb822762f805672046b7e091e3daf369e4351f240082e91aab499"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_en.response.json",
+      "path": "model-evaluation/cloud/tuning_guard_en.response.json",
+      "bytes": 548,
+      "sha256": "4b1e1daa635734709eab5904519b796f44dcbf8a4d9185da5b926acabbfa6931"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_zh.measurement.json",
+      "path": "model-evaluation/cloud/tuning_guard_zh.measurement.json",
+      "bytes": 1103,
+      "sha256": "5462335063bd21131ac287e5be32bf7f3ab9df809818e3de2c6e34a6dc4b4368"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_zh.request.json",
+      "path": "model-evaluation/cloud/tuning_guard_zh.request.json",
+      "bytes": 3235,
+      "sha256": "96cfba14a422b6cd00f9a09cf4ccd0cee293839b8d84c1027f0b21bad27b9069"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\cloud-evaluation-01\\tuning_guard_zh.response.json",
+      "path": "model-evaluation/cloud/tuning_guard_zh.response.json",
+      "bytes": 605,
+      "sha256": "fde19019b78b76475fe545edbd0e015357a44c8c82ddeec4f47f1755ea5e806d"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\FEASIBILITY.md",
+      "path": "model-evaluation/local/FEASIBILITY.md",
+      "bytes": 7608,
+      "sha256": "46dbb3ab56f65eace8dab0a355577bf89881ce9dc8055f20a8f96782fa24671e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\baseline-analysis.json",
+      "path": "model-evaluation/local/baseline-analysis.json",
+      "bytes": 11060,
+      "sha256": "fc6a685637ae5994816271a1e4db7cafa4560d3c35b3ee3ad1bdafa1906d529a"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\revision-analysis.json",
+      "path": "model-evaluation/local/revision-analysis.json",
+      "bytes": 11642,
+      "sha256": "0d8071f119d2da689805d262a70c99909d713400b975469dd310abafb64e9b5c"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\server-stop.json",
+      "path": "model-evaluation/local/server-stop.json",
+      "bytes": 203,
+      "sha256": "d5e7826e55c5ffdcce3d509f24ed190bcecdceddc991398aadd6f5029fdbe168"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_en.measurement.json",
+      "path": "model-evaluation/local/inference-run02/capture_en.measurement.json",
+      "bytes": 1045,
+      "sha256": "1cc7d5a29c65eef8f4dac828e3bfc58e0629a0a2b5e328d5f221eae2cff3411a"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_en.request.json",
+      "path": "model-evaluation/local/inference-run02/capture_en.request.json",
+      "bytes": 1878,
+      "sha256": "dd21abf02c873ede105aa5479a2d7ff0cb83b3460e45abc31287d92160317b66"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_en.response.json",
+      "path": "model-evaluation/local/inference-run02/capture_en.response.json",
+      "bytes": 840,
+      "sha256": "3454b2cf64816f74e94e00d7c42f68771ce3a548e179b3b1073a68b929e55ebf"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_zh.measurement.json",
+      "path": "model-evaluation/local/inference-run02/capture_zh.measurement.json",
+      "bytes": 1154,
+      "sha256": "013b733fdbf7940a57cf634febf08d6447a2a0ddeada24a4f0f860c1e98e3a8a"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_zh.request.json",
+      "path": "model-evaluation/local/inference-run02/capture_zh.request.json",
+      "bytes": 1885,
+      "sha256": "1bb5e64ac7fac14e658379b9b1991d7910391c2b9904c63c2fcd36318c809a15"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\capture_zh.response.json",
+      "path": "model-evaluation/local/inference-run02/capture_zh.response.json",
+      "bytes": 942,
+      "sha256": "48840749df625cba174829aaa04dff454d22a2774213601c00811a335ca06926"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_en.measurement.json",
+      "path": "model-evaluation/local/inference-run02/focus_en.measurement.json",
+      "bytes": 1034,
+      "sha256": "b159b2881e9652267c004cec47ec371c071af814e88e1bca57da2bfda06b8412"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_en.request.json",
+      "path": "model-evaluation/local/inference-run02/focus_en.request.json",
+      "bytes": 1886,
+      "sha256": "6dcdefa47c221ba144a490f43b6a564939ba7f68348ee706f39175d59face3b0"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_en.response.json",
+      "path": "model-evaluation/local/inference-run02/focus_en.response.json",
+      "bytes": 822,
+      "sha256": "270c25743a3d042827424b088560bb17e5a35672152430b38b849b7656b982fa"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_zh.measurement.json",
+      "path": "model-evaluation/local/inference-run02/focus_zh.measurement.json",
+      "bytes": 1070,
+      "sha256": "8c6c83a8552dfd7d2ad57638ec6cb380b0ef374e1ad422129f14a49c63827dd5"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_zh.request.json",
+      "path": "model-evaluation/local/inference-run02/focus_zh.request.json",
+      "bytes": 1894,
+      "sha256": "3a8025026926c1521200cf4c6e285b57381e8a1ff06af1ab3e7c1c13ec422a5c"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\focus_zh.response.json",
+      "path": "model-evaluation/local/inference-run02/focus_zh.response.json",
+      "bytes": 850,
+      "sha256": "0499e7bf1424f29eb0ff5b164eb6c07ad4aa1cf81778152800831ab9bdf79f59"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_en.measurement.json",
+      "path": "model-evaluation/local/inference-run02/guard_en.measurement.json",
+      "bytes": 941,
+      "sha256": "53be9f563203d7eea461d4237bc87d082cbbddabbb7aa9bc6475078e98a2ffb3"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_en.request.json",
+      "path": "model-evaluation/local/inference-run02/guard_en.request.json",
+      "bytes": 1872,
+      "sha256": "b4202bc5105c966294f9c6e7926fe96e8a334158ee03e66c631a429a1e3efd3e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_en.response.json",
+      "path": "model-evaluation/local/inference-run02/guard_en.response.json",
+      "bytes": 751,
+      "sha256": "497d719b9985b2e68666fa342e886cb81bb9e63721a29275bd59ff94d082ba62"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_zh.measurement.json",
+      "path": "model-evaluation/local/inference-run02/guard_zh.measurement.json",
+      "bytes": 1029,
+      "sha256": "2db34aeaa623a396f14b41ef8f78f312bb06e0450d4b975eec29699534efd760"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_zh.request.json",
+      "path": "model-evaluation/local/inference-run02/guard_zh.request.json",
+      "bytes": 1870,
+      "sha256": "762d09856111a5fd09647361b468dbec763ed7d21f5a53e7d001dfdc7b36a6a2"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\guard_zh.response.json",
+      "path": "model-evaluation/local/inference-run02/guard_zh.response.json",
+      "bytes": 840,
+      "sha256": "d6c3f2eedc13021603abc7c162794a763f405e8f9e58e5a4e38fcb1025a6f710"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\health.json",
+      "path": "model-evaluation/local/inference-run02/health.json",
+      "bytes": 15,
+      "sha256": "a29ee2b15c494311c52521766e44af56a3ad2248e7a8ab465e5206463c13d288"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\props.json",
+      "path": "model-evaluation/local/inference-run02/props.json",
+      "bytes": 6095,
+      "sha256": "144dbfd11db856c8fd76be75b57e612dc2047d926ab6b3b184f4886af28387bc"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\summary.json",
+      "path": "model-evaluation/local/inference-run02/summary.json",
+      "bytes": 10337,
+      "sha256": "9ac52a123671e47eccc4c2411d853cd76aa559d723231032968d59854fdbda33"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-run02\\v1-models.json",
+      "path": "model-evaluation/local/inference-run02/v1-models.json",
+      "bytes": 586,
+      "sha256": "40a3d3f73dbe08d6bb5b55c54c4b2b7f420eec61bb51a70760cbb106c1cf7be2"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_en.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/capture_en.measurement.json",
+      "bytes": 972,
+      "sha256": "6bc6fe65cad6f4b35edba05b53076c0d0b78ef8d25026b429e238a4db964d337"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_en.request.json",
+      "path": "model-evaluation/local/inference-revision01/capture_en.request.json",
+      "bytes": 3147,
+      "sha256": "b33384963115f388eef669a42fc394b9da348d6cda7cf56a9a86e34680744615"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_en.response.json",
+      "path": "model-evaluation/local/inference-revision01/capture_en.response.json",
+      "bytes": 769,
+      "sha256": "859c538d323ca5d25665cce723ca8adcc76ed235e17878d4e4aabf5f987dd22e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_zh.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/capture_zh.measurement.json",
+      "bytes": 1065,
+      "sha256": "8b9df2802e85248af8e259fbb8ea87dacbb672d2f573c9fbdf358b8eebdfaf58"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_zh.request.json",
+      "path": "model-evaluation/local/inference-revision01/capture_zh.request.json",
+      "bytes": 3154,
+      "sha256": "0cc72f4c2331802ba9eb812346a77278481ba512419ce0b2019595cafd8f99d0"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\capture_zh.response.json",
+      "path": "model-evaluation/local/inference-revision01/capture_zh.response.json",
+      "bytes": 812,
+      "sha256": "d7fd9dd7fd1523ba4d4642f601797ba575fe8adabcc07a542c13ad1bba3e25bd"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_en.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/focus_en.measurement.json",
+      "bytes": 992,
+      "sha256": "cda8abb164f1732e38810b8c57dac60e0217b1c9a41a5b445814a8dff3d84440"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_en.request.json",
+      "path": "model-evaluation/local/inference-revision01/focus_en.request.json",
+      "bytes": 3155,
+      "sha256": "4c9c45f76222ec4c3b7c6ac30d0e814efc989c1c1cf78ff12dd5486d1dc46f38"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_en.response.json",
+      "path": "model-evaluation/local/inference-revision01/focus_en.response.json",
+      "bytes": 781,
+      "sha256": "7588244c4208f11110066258075e708d2d0d3c2007630e48592987128346c239"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_zh.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/focus_zh.measurement.json",
+      "bytes": 1066,
+      "sha256": "642e3cde778488090942efe032f638b1307d801114bca2fd7bc53519a5776ef5"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_zh.request.json",
+      "path": "model-evaluation/local/inference-revision01/focus_zh.request.json",
+      "bytes": 3163,
+      "sha256": "208070c362ca2f9a6234e6c8968836ac30a593c6535b6173e9be6c192d52bfaf"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\focus_zh.response.json",
+      "path": "model-evaluation/local/inference-revision01/focus_zh.response.json",
+      "bytes": 806,
+      "sha256": "0364ea5bff5520f9c0aa89742ecbdf7b5193594f294ae0dcf6fe517bd8a39250"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_en.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/guard_en.measurement.json",
+      "bytes": 948,
+      "sha256": "aa838ecd465577e35f73da4b86c400a53de37de5b7467583e358e90ffecd9dce"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_en.request.json",
+      "path": "model-evaluation/local/inference-revision01/guard_en.request.json",
+      "bytes": 3141,
+      "sha256": "289637dd992c417ab9a6dcca8f78300ea98d9f3f9bcecc43f4a607afdb74551f"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_en.response.json",
+      "path": "model-evaluation/local/inference-revision01/guard_en.response.json",
+      "bytes": 760,
+      "sha256": "23f3d2ebc864fae6bb07b6bfa40945c18d6c4f3b454be0906545793194de3a0e"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_zh.measurement.json",
+      "path": "model-evaluation/local/inference-revision01/guard_zh.measurement.json",
+      "bytes": 944,
+      "sha256": "b261e25dde7aa7ab26897818f0b1b8ba41666d391962cb50be0e1217bd458041"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_zh.request.json",
+      "path": "model-evaluation/local/inference-revision01/guard_zh.request.json",
+      "bytes": 3139,
+      "sha256": "eb49eee12b5b27b2bd492c6174ee03b32408f6618e068a3b9b3ad1eeb50c39e7"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\guard_zh.response.json",
+      "path": "model-evaluation/local/inference-revision01/guard_zh.response.json",
+      "bytes": 737,
+      "sha256": "f33066989c071b7416e11f1a275b548461f6288b0fc8f482da4ad554700aece3"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\health.json",
+      "path": "model-evaluation/local/inference-revision01/health.json",
+      "bytes": 15,
+      "sha256": "a29ee2b15c494311c52521766e44af56a3ad2248e7a8ab465e5206463c13d288"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\props.json",
+      "path": "model-evaluation/local/inference-revision01/props.json",
+      "bytes": 6095,
+      "sha256": "144dbfd11db856c8fd76be75b57e612dc2047d926ab6b3b184f4886af28387bc"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\summary.json",
+      "path": "model-evaluation/local/inference-revision01/summary.json",
+      "bytes": 11253,
+      "sha256": "8d0f1e215a59fc22f4c069238f11045b9ba0623987a084df71852c4bcc34a2f6"
+    },
+    {
+      "source": "D:\\AegisWork\\AI\\v1.3\\inference-revision01\\v1-models.json",
+      "path": "model-evaluation/local/inference-revision01/v1-models.json",
+      "bytes": 586,
+      "sha256": "1e6c649228d2de07f6d231cef4d747ff6147d3f48a3805ffa0d29c3c78e1fae7"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-shipping-gate.json",
+      "path": "packages/shipping-marker-gate.json",
+      "bytes": 1902,
+      "sha256": "c750aa9a0d8112fdc374b6ea03e0447251b9c1bb36b7ba5ee113b6134a6471e5"
+    },
+    {
+      "source": "D:\\AegisWork\\Reports\\upgrade-v4-secret-audit.json",
+      "path": "credential-audit.json",
+      "bytes": 195,
+      "sha256": "748e6285f6c4f1de2a62e714811b4ccd0996aaa5343af3465f5a290694fad16e"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\copilot-v1.3-development\\package.log",
+      "path": "packages/development-package.log",
+      "bytes": 71351,
+      "sha256": "2f730876e507e14ee1a34a4c82ec9dad5546275f7993c651bd6585226d1b2075"
+    },
+    {
+      "source": "D:\\AegisWork\\Packages\\copilot-v1.3-shipping\\package.log",
+      "path": "packages/shipping-package.log",
+      "bytes": 70987,
+      "sha256": "d17d88ac4a793f5c7044fafa48cae12dec7733117e90bc0b179c515024f9ff73"
+    }
+  ],
+  "discoveredFailure": {
+    "report": "failures/slate-focus01/provenance.json",
+    "cause": "Slate cleared edit focus after Enter, so the panel stopped receiving Tab.",
+    "correction": "Preserve keyboard focus on commit; real Slate input rerun verifies Tab and Esc."
+  },
+  "limitations": [
+    "Twelve model calls use synthetic observations and short commands; no win-rate, broad intelligence or balance inference.",
+    "Slate keyboard events are synthetic engine input; physical keyboard, Chinese IME, button clicks, Alt-Tab and human usability were not tested.",
+    "Actual cloud game probes verify accepted capture plan, real movement, manual override and restart; they cancel before claiming the full capture/guard plan completed.",
+    "Fault probe uses disclosed HTTP fixtures, normal pause and public planner API; it is not model inference.",
+    "Final Shipping was built/cooked and statically checked, not manually played.",
+    "No online learning, RAG, reinforcement training, voice, new art assets or long performance benchmark.",
+    "Cloud API needs network and configured credentials; no local model is bundled.",
+    "Public release remains v1.0; this upgrade is local."
+  ]
+}

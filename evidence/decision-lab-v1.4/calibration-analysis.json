@@ -1,0 +1,2696 @@
+{
+  "schemaVersion": 1,
+  "engine": "unreal-runtime",
+  "phase": "development",
+  "sourceSha256": "3ba7a05c8fe1f8364e60e22e871f3f1e481b71a966ccd78855a2c0ca021b3734",
+  "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+  "protocolSha256": null,
+  "analyzerSha256": "72dc880a9dad3115667f36f7f1cf0a9628c30b1a3e45824c9ef3899d0c41cf54",
+  "episodeCount": 18,
+  "summaries": [
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 3,
+      "winRateWilson95": [
+        0.43849391955098227,
+        1
+      ],
+      "terminationCounts": {
+        "enemy_clear": 3
+      },
+      "companionDeathsAtEnd": 0,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 32.666666666666664,
+          "median": 28,
+          "minimum": 28,
+          "maximum": 42
+        },
+        "companionDamageTaken": {
+          "mean": 23.333333333333332,
+          "median": 14,
+          "minimum": 0,
+          "maximum": 56
+        },
+        "playerDamageDealt": {
+          "mean": 53.36666742960612,
+          "median": 58,
+          "minimum": 42,
+          "maximum": 60.10000228881836
+        },
+        "companionDamageDealt": {
+          "mean": 47.333333333333336,
+          "median": 42,
+          "minimum": 42,
+          "maximum": 58
+        },
+        "playerHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 38.266668662428856,
+          "median": 39.60000206530094,
+          "minimum": 29.500001538544893,
+          "maximum": 45.70000238344073
+        },
+        "companionDecisions": {
+          "mean": 184,
+          "median": 191,
+          "minimum": 142,
+          "maximum": 219
+        },
+        "companionActionSwitches": {
+          "mean": 3,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 7
+        },
+        "companionStuckSeconds": {
+          "mean": 0.30000001564621925,
+          "median": 0.30000001564621925,
+          "minimum": 0.10000000521540642,
+          "maximum": 0.5000000260770321
+        },
+        "companionShortReversals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionShots": {
+          "mean": 3.6666666666666665,
+          "median": 3,
+          "minimum": 3,
+          "maximum": 5
+        },
+        "elapsedGameSeconds": {
+          "mean": 38.266668662428856,
+          "median": 39.60000206530094,
+          "minimum": 29.500001538544893,
+          "maximum": 45.70000238344073
+        },
+        "companionAliveAtEnd": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 2.200000114738941,
+          "Chase": 2.433333460241556,
+          "Follow": 12.194445080434283,
+          "Retreat": 2.2333334498107433,
+          "Support": 1.0000000521540642,
+          "waiting": 18.20555650504927
+        },
+        "companionSelectedSeconds": {
+          "attack": 4.733333580195904,
+          "follow": 29.894446003561217,
+          "none": 0.2722222364197175,
+          "retreat": 2.3333334550261497,
+          "support": 1.0333333872258663
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2002,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2003,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        }
+      ]
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 3,
+      "winRateWilson95": [
+        0.43849391955098227,
+        1
+      ],
+      "terminationCounts": {
+        "enemy_clear": 3
+      },
+      "companionDeathsAtEnd": 0,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 18.666666666666668,
+          "median": 28,
+          "minimum": 0,
+          "maximum": 28
+        },
+        "companionDamageTaken": {
+          "mean": 28,
+          "median": 14,
+          "minimum": 0,
+          "maximum": 70
+        },
+        "playerDamageDealt": {
+          "mean": 37.333333333333336,
+          "median": 56,
+          "minimum": 0,
+          "maximum": 56
+        },
+        "companionDamageDealt": {
+          "mean": 62.666666666666664,
+          "median": 44,
+          "minimum": 44,
+          "maximum": 100
+        },
+        "playerHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 43.46666893362999,
+          "median": 38.60000201314688,
+          "minimum": 37.10000193491578,
+          "maximum": 54.70000285282731
+        },
+        "companionDecisions": {
+          "mean": 209.66666666666666,
+          "median": 187,
+          "minimum": 178,
+          "maximum": 264
+        },
+        "companionActionSwitches": {
+          "mean": 1.6666666666666667,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 3
+        },
+        "companionStuckSeconds": {
+          "mean": 0.2666666805744171,
+          "median": 0.20000001043081284,
+          "minimum": 0.20000001043081284,
+          "maximum": 0.40000002086162567
+        },
+        "companionShortReversals": {
+          "mean": 0.3333333333333333,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionShots": {
+          "mean": 5.333333333333333,
+          "median": 4,
+          "minimum": 4,
+          "maximum": 8
+        },
+        "elapsedGameSeconds": {
+          "mean": 43.46666893362999,
+          "median": 38.60000201314688,
+          "minimum": 37.10000193491578,
+          "maximum": 54.70000285282731
+        },
+        "companionAliveAtEnd": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 3.2666668370366096,
+          "Chase": 3.133333496749401,
+          "Follow": 10.794445007418593,
+          "waiting": 26.272223592425387
+        },
+        "companionSelectedSeconds": {
+          "attack": 6.533333674073219,
+          "follow": 36.661113023137055,
+          "none": 0.2722222364197175
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2002,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2003,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        }
+      ]
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 1,
+      "winRateWilson95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ],
+      "terminationCounts": {
+        "timeout": 2,
+        "enemy_clear": 1
+      },
+      "companionDeathsAtEnd": 0,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 91.33333333333333,
+          "median": 70,
+          "minimum": 70,
+          "maximum": 134
+        },
+        "companionDamageTaken": {
+          "mean": 23.333333333333332,
+          "median": 14,
+          "minimum": 0,
+          "maximum": 56
+        },
+        "playerDamageDealt": {
+          "mean": 124.70000076293945,
+          "median": 114,
+          "minimum": 90.10000228881836,
+          "maximum": 170
+        },
+        "companionDamageDealt": {
+          "mean": 79.33333333333333,
+          "median": 84,
+          "minimum": 42,
+          "maximum": 112
+        },
+        "playerHealingReceived": {
+          "mean": 78.53334045410156,
+          "median": 70,
+          "minimum": 44,
+          "maximum": 121.60002136230469
+        },
+        "companionHealingReceived": {
+          "mean": 7.0000050862630205,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 21.000015258789062
+        },
+        "companionAliveSeconds": {
+          "mean": 53.0000027641654,
+          "median": 60.00000312924385,
+          "minimum": 39.0000020340085,
+          "maximum": 60.00000312924385
+        },
+        "companionDecisions": {
+          "mean": 255.33333333333334,
+          "median": 289,
+          "minimum": 187,
+          "maximum": 290
+        },
+        "companionActionSwitches": {
+          "mean": 11,
+          "median": 9,
+          "minimum": 8,
+          "maximum": 16
+        },
+        "companionStuckSeconds": {
+          "mean": 0.6000000312924385,
+          "median": 0.6000000312924385,
+          "minimum": 0.5000000260770321,
+          "maximum": 0.7000000365078449
+        },
+        "companionShortReversals": {
+          "mean": 2.3333333333333335,
+          "median": 2,
+          "minimum": 2,
+          "maximum": 3
+        },
+        "companionSupportHeals": {
+          "mean": 65.93333435058594,
+          "median": 65.80000305175781,
+          "minimum": 44,
+          "maximum": 88
+        },
+        "companionShots": {
+          "mean": 5.666666666666667,
+          "median": 6,
+          "minimum": 3,
+          "maximum": 8
+        },
+        "elapsedGameSeconds": {
+          "mean": 53.0000027641654,
+          "median": 60.00000312924385,
+          "minimum": 39.0000020340085,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 0.6666666666666666,
+          "median": 1,
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 3.633333522826433,
+          "Chase": 5.466666951775551,
+          "Follow": 14.394445195173224,
+          "Recover": 2.5333334654569626,
+          "Retreat": 2.7000001408159733,
+          "Support": 2.833333481103182,
+          "waiting": 21.438890007014077
+        },
+        "companionSelectedSeconds": {
+          "attack": 9.300000485032797,
+          "follow": 30.027779343848426,
+          "none": 0.2722222364197175,
+          "retreat": 10.60000055283308,
+          "support": 2.8000001460313797
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "timeout"
+        },
+        {
+          "seed": 2002,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2003,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "timeout"
+        }
+      ]
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 1,
+      "winRateWilson95": [
+        0.0614903152761605,
+        0.7923450448735121
+      ],
+      "terminationCounts": {
+        "enemy_clear": 1,
+        "timeout": 1,
+        "player_dead": 1
+      },
+      "companionDeathsAtEnd": 0,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 70.66666666666667,
+          "median": 70,
+          "minimum": 42,
+          "maximum": 100
+        },
+        "companionDamageTaken": {
+          "mean": 46.666666666666664,
+          "median": 56,
+          "minimum": 0,
+          "maximum": 84
+        },
+        "playerDamageDealt": {
+          "mean": 84,
+          "median": 84,
+          "minimum": 70,
+          "maximum": 98
+        },
+        "companionDamageDealt": {
+          "mean": 81.33333333333333,
+          "median": 116,
+          "minimum": 0,
+          "maximum": 128
+        },
+        "playerHealingReceived": {
+          "mean": 2.5666656494140625,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 7.6999969482421875
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 34.46666846424341,
+          "median": 22.000001147389412,
+          "minimum": 21.400001116096973,
+          "maximum": 60.00000312924385
+        },
+        "companionDecisions": {
+          "mean": 166.33333333333334,
+          "median": 106,
+          "minimum": 103,
+          "maximum": 290
+        },
+        "companionActionSwitches": {
+          "mean": 4.666666666666667,
+          "median": 6,
+          "minimum": 0,
+          "maximum": 8
+        },
+        "companionStuckSeconds": {
+          "mean": 0.30000001564621925,
+          "median": 0.40000002086162567,
+          "minimum": 0,
+          "maximum": 0.5000000260770321
+        },
+        "companionShortReversals": {
+          "mean": 1.3333333333333333,
+          "median": 1,
+          "minimum": 0,
+          "maximum": 3
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionShots": {
+          "mean": 6.666666666666667,
+          "median": 10,
+          "minimum": 0,
+          "maximum": 10
+        },
+        "elapsedGameSeconds": {
+          "mean": 34.46666846424341,
+          "median": 22.000001147389412,
+          "minimum": 21.400001116096973,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 0,
+          "maximum": 2
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 3.9666668735444546,
+          "Chase": 3.0000001564621925,
+          "Follow": 11.227778363352021,
+          "waiting": 16.272223070884746
+        },
+        "companionSelectedSeconds": {
+          "attack": 7.200000375509262,
+          "follow": 26.99444585231443,
+          "none": 0.2722222364197175
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "enemy_clear"
+        },
+        {
+          "seed": 2002,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "timeout"
+        },
+        {
+          "seed": 2003,
+          "player": 21.95000114478171,
+          "companion": -1,
+          "terminationReason": "player_dead"
+        }
+      ]
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 0,
+      "winRateWilson95": [
+        0,
+        0.5615060804490177
+      ],
+      "terminationCounts": {
+        "timeout": 1,
+        "player_dead": 2
+      },
+      "companionDeathsAtEnd": 0,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 149.73333485921225,
+          "median": 177.20000457763672,
+          "minimum": 84,
+          "maximum": 188
+        },
+        "companionDamageTaken": {
+          "mean": 60.666666666666664,
+          "median": 56,
+          "minimum": 56,
+          "maximum": 70
+        },
+        "playerDamageDealt": {
+          "mean": 185.89999961853027,
+          "median": 177.69999885559082,
+          "minimum": 154,
+          "maximum": 226
+        },
+        "companionDamageDealt": {
+          "mean": 99.33333333333333,
+          "median": 100,
+          "minimum": 70,
+          "maximum": 128
+        },
+        "playerHealingReceived": {
+          "mean": 78.93333435058594,
+          "median": 77.20000457763672,
+          "minimum": 71.5999984741211,
+          "maximum": 88
+        },
+        "companionHealingReceived": {
+          "mean": 19.1333491007487,
+          "median": 21.000015258789062,
+          "minimum": 1.4000015258789062,
+          "maximum": 35.000030517578125
+        },
+        "companionAliveSeconds": {
+          "mean": 51.4666693508625,
+          "median": 59.900003124028444,
+          "minimum": 34.500001799315214,
+          "maximum": 60.00000312924385
+        },
+        "companionDecisions": {
+          "mean": 248.66666666666666,
+          "median": 289,
+          "minimum": 167,
+          "maximum": 290
+        },
+        "companionActionSwitches": {
+          "mean": 11.666666666666666,
+          "median": 12,
+          "minimum": 10,
+          "maximum": 13
+        },
+        "companionStuckSeconds": {
+          "mean": 0.6666667014360428,
+          "median": 0.7000000365078449,
+          "minimum": 0.5000000260770321,
+          "maximum": 0.8000000417232513
+        },
+        "companionShortReversals": {
+          "mean": 2.3333333333333335,
+          "median": 2,
+          "minimum": 0,
+          "maximum": 5
+        },
+        "companionSupportHeals": {
+          "mean": 73.33333333333333,
+          "median": 66,
+          "minimum": 66,
+          "maximum": 88
+        },
+        "companionShots": {
+          "mean": 7.666666666666667,
+          "median": 8,
+          "minimum": 5,
+          "maximum": 10
+        },
+        "elapsedGameSeconds": {
+          "mean": 51.4666693508625,
+          "median": 59.900003124028444,
+          "minimum": 34.500001799315214,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 1,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 1.6666666666666667,
+          "median": 2,
+          "minimum": 1,
+          "maximum": 2
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 4.566666904836893,
+          "Chase": 4.033333543688059,
+          "Follow": 12.894445116942128,
+          "Recover": 6.933333694934845,
+          "Retreat": 11.466667264699936,
+          "Support": 1.8000000938773155,
+          "waiting": 9.772222731883327
+        },
+        "companionSelectedSeconds": {
+          "attack": 8.56666711345315,
+          "follow": 17.1611120061328,
+          "none": 0.2722222364197175,
+          "retreat": 23.66666790097952,
+          "support": 1.8000000938773155
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "timeout"
+        },
+        {
+          "seed": 2002,
+          "player": 59.88333645649254,
+          "companion": -1,
+          "terminationReason": "player_dead"
+        },
+        {
+          "seed": 2003,
+          "player": 34.41666846163571,
+          "companion": -1,
+          "terminationReason": "player_dead"
+        }
+      ]
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seeds": [
+        2001,
+        2002,
+        2003
+      ],
+      "episodes": 3,
+      "wins": 0,
+      "winRateWilson95": [
+        0,
+        0.5615060804490177
+      ],
+      "terminationCounts": {
+        "timeout": 3
+      },
+      "companionDeathsAtEnd": 2,
+      "metrics": {
+        "playerDamageTaken": {
+          "mean": 82,
+          "median": 84,
+          "minimum": 64,
+          "maximum": 98
+        },
+        "companionDamageTaken": {
+          "mean": 99.33333333333333,
+          "median": 100,
+          "minimum": 98,
+          "maximum": 100
+        },
+        "playerDamageDealt": {
+          "mean": 135.1333440144857,
+          "median": 120,
+          "minimum": 70,
+          "maximum": 215.40003204345703
+        },
+        "companionDamageDealt": {
+          "mean": 157.86666631698608,
+          "median": 126,
+          "minimum": 114,
+          "maximum": 233.59999895095825
+        },
+        "playerHealingReceived": {
+          "mean": 21.466681162516277,
+          "median": 15.400005340576172,
+          "minimum": 0,
+          "maximum": 49.000038146972656
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 43.33333559334278,
+          "median": 50.06666927784681,
+          "minimum": 19.93333437293768,
+          "maximum": 60.00000312924385
+        },
+        "companionDecisions": {
+          "mean": 209,
+          "median": 241,
+          "minimum": 96,
+          "maximum": 290
+        },
+        "companionActionSwitches": {
+          "mean": 4,
+          "median": 5,
+          "minimum": 2,
+          "maximum": 5
+        },
+        "companionStuckSeconds": {
+          "mean": 0.36666668578982353,
+          "median": 0.30000001564621925,
+          "minimum": 0.20000001043081284,
+          "maximum": 0.6000000312924385
+        },
+        "companionShortReversals": {
+          "mean": 1.3333333333333333,
+          "median": 2,
+          "minimum": 0,
+          "maximum": 2
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionShots": {
+          "mean": 12,
+          "median": 9,
+          "minimum": 9,
+          "maximum": 18
+        },
+        "elapsedGameSeconds": {
+          "mean": 60.00000312924385,
+          "median": 60.00000312924385,
+          "minimum": 60.00000312924385,
+          "maximum": 60.00000312924385
+        },
+        "companionAliveAtEnd": {
+          "mean": 0.3333333333333333,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "enemiesAlive": {
+          "mean": 1.3333333333333333,
+          "median": 1,
+          "minimum": 1,
+          "maximum": 2
+        }
+      },
+      "meanActionSeconds": {
+        "companionActionSeconds": {
+          "Attack": 7.966667082160711,
+          "Chase": 3.400000177323818,
+          "Follow": 14.094445179527005,
+          "waiting": 17.872223154331248
+        },
+        "companionSelectedSeconds": {
+          "attack": 11.466667264699936,
+          "follow": 31.594446092223126,
+          "none": 0.2722222364197175
+        }
+      },
+      "deathTimes": [
+        {
+          "seed": 2001,
+          "player": -1,
+          "companion": 50.06666927784681,
+          "terminationReason": "timeout"
+        },
+        {
+          "seed": 2002,
+          "player": -1,
+          "companion": -1,
+          "terminationReason": "timeout"
+        },
+        {
+          "seed": 2003,
+          "player": -1,
+          "companion": 19.93333437293768,
+          "terminationReason": "timeout"
+        }
+      ]
+    }
+  ],
+  "pairedComparisons": [
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "reference": "baseline",
+      "candidate": "priority",
+      "pairs": [
+        {
+          "seed": 2001,
+          "referenceWin": true,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -28,
+            "companionDamageTaken": 14,
+            "playerDamageDealt": -60.10000228881836,
+            "companionDamageDealt": 58,
+            "playerHealingReceived": 0,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": -8.600000448524952,
+            "companionDecisions": -41,
+            "companionActionSwitches": -4,
+            "companionStuckSeconds": -0.10000000521540642,
+            "companionShortReversals": 1,
+            "companionSupportHeals": 0,
+            "companionShots": 5,
+            "elapsedGameSeconds": -8.600000448524952,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 0
+          }
+        },
+        {
+          "seed": 2002,
+          "referenceWin": true,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": 0,
+            "companionDamageTaken": 0,
+            "playerDamageDealt": -2,
+            "companionDamageDealt": 2,
+            "playerHealingReceived": 0,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": 25.200001314282417,
+            "companionDecisions": 122,
+            "companionActionSwitches": 0,
+            "companionStuckSeconds": -0.10000000521540642,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 0,
+            "companionShots": 1,
+            "elapsedGameSeconds": 25.200001314282417,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 0
+          }
+        },
+        {
+          "seed": 2003,
+          "referenceWin": true,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -14,
+            "companionDamageTaken": 0,
+            "playerDamageDealt": 14,
+            "companionDamageDealt": -14,
+            "playerHealingReceived": 0,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": -1.0000000521540642,
+            "companionDecisions": -4,
+            "companionActionSwitches": 0,
+            "companionStuckSeconds": 0.10000000521540642,
+            "companionShortReversals": 0,
+            "companionSupportHeals": 0,
+            "companionShots": -1,
+            "elapsedGameSeconds": -1.0000000521540642,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 0
+          }
+        }
+      ],
+      "candidateOnlyWins": 0,
+      "referenceOnlyWins": 0,
+      "pairedDeltas": {
+        "playerDamageTaken": {
+          "mean": -14,
+          "median": -14,
+          "minimum": -28,
+          "maximum": 0
+        },
+        "companionDamageTaken": {
+          "mean": 4.666666666666667,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 14
+        },
+        "playerDamageDealt": {
+          "mean": -16.033334096272785,
+          "median": -2,
+          "minimum": -60.10000228881836,
+          "maximum": 14
+        },
+        "companionDamageDealt": {
+          "mean": 15.333333333333334,
+          "median": 2,
+          "minimum": -14,
+          "maximum": 58
+        },
+        "playerHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionHealingReceived": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": 5.200000271201134,
+          "median": -1.0000000521540642,
+          "minimum": -8.600000448524952,
+          "maximum": 25.200001314282417
+        },
+        "companionDecisions": {
+          "mean": 25.666666666666668,
+          "median": -4,
+          "minimum": -41,
+          "maximum": 122
+        },
+        "companionActionSwitches": {
+          "mean": -1.3333333333333333,
+          "median": 0,
+          "minimum": -4,
+          "maximum": 0
+        },
+        "companionStuckSeconds": {
+          "mean": -0.03333333507180214,
+          "median": -0.10000000521540642,
+          "minimum": -0.10000000521540642,
+          "maximum": 0.10000000521540642
+        },
+        "companionShortReversals": {
+          "mean": 0.3333333333333333,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 1
+        },
+        "companionSupportHeals": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "companionShots": {
+          "mean": 1.6666666666666667,
+          "median": 1,
+          "minimum": -1,
+          "maximum": 5
+        },
+        "elapsedGameSeconds": {
+          "mean": 5.200000271201134,
+          "median": -1.0000000521540642,
+          "minimum": -8.600000448524952,
+          "maximum": 25.200001314282417
+        },
+        "companionAliveAtEnd": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "enemiesAlive": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      }
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "reference": "baseline",
+      "candidate": "priority",
+      "pairs": [
+        {
+          "seed": 2001,
+          "referenceWin": false,
+          "candidateWin": true,
+          "delta": {
+            "playerDamageTaken": -64,
+            "companionDamageTaken": 56,
+            "playerDamageDealt": -86,
+            "companionDamageDealt": 74,
+            "playerHealingReceived": -121.60002136230469,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": -38.60000201314688,
+            "companionDecisions": -187,
+            "companionActionSwitches": -3,
+            "companionStuckSeconds": -0.30000001564621925,
+            "companionShortReversals": -1,
+            "companionSupportHeals": -88,
+            "companionShots": 7,
+            "elapsedGameSeconds": -38.60000201314688,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": -1
+          }
+        },
+        {
+          "seed": 2002,
+          "referenceWin": true,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -28,
+            "companionDamageTaken": 70,
+            "playerDamageDealt": -20.10000228881836,
+            "companionDamageDealt": 16,
+            "playerHealingReceived": -36.30000305175781,
+            "companionHealingReceived": 0,
+            "companionAliveSeconds": 21.000001095235348,
+            "companionDecisions": 103,
+            "companionActionSwitches": 0,
+            "companionStuckSeconds": 0.0,
+            "companionShortReversals": 1,
+            "companionSupportHeals": -44,
+            "companionShots": 2,
+            "elapsedGameSeconds": 21.000001095235348,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 1
+          }
+        },
+        {
+          "seed": 2003,
+          "referenceWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": 30,
+            "companionDamageTaken": -56,
+            "playerDamageDealt": -16,
+            "companionDamageDealt": -84,
+            "playerHealingReceived": -70,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -38.00000198185444,
+            "companionDecisions": -183,
+            "companionActionSwitches": -16,
+            "companionStuckSeconds": -0.6000000312924385,
+            "companionShortReversals": -3,
+            "companionSupportHeals": -65.80000305175781,
+            "companionShots": -6,
+            "elapsedGameSeconds": -38.00000198185444,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 1
+          }
+        }
+      ],
+      "candidateOnlyWins": 1,
+      "referenceOnlyWins": 1,
+      "pairedDeltas": {
+        "playerDamageTaken": {
+          "mean": -20.666666666666668,
+          "median": -28,
+          "minimum": -64,
+          "maximum": 30
+        },
+        "companionDamageTaken": {
+          "mean": 23.333333333333332,
+          "median": 56,
+          "minimum": -56,
+          "maximum": 70
+        },
+        "playerDamageDealt": {
+          "mean": -40.70000076293945,
+          "median": -20.10000228881836,
+          "minimum": -86,
+          "maximum": -16
+        },
+        "companionDamageDealt": {
+          "mean": 2,
+          "median": 16,
+          "minimum": -84,
+          "maximum": 74
+        },
+        "playerHealingReceived": {
+          "mean": -75.9666748046875,
+          "median": -70,
+          "minimum": -121.60002136230469,
+          "maximum": -36.30000305175781
+        },
+        "companionHealingReceived": {
+          "mean": -7.0000050862630205,
+          "median": 0,
+          "minimum": -21.000015258789062,
+          "maximum": 0
+        },
+        "companionAliveSeconds": {
+          "mean": -18.53333429992199,
+          "median": -38.00000198185444,
+          "minimum": -38.60000201314688,
+          "maximum": 21.000001095235348
+        },
+        "companionDecisions": {
+          "mean": -89,
+          "median": -183,
+          "minimum": -187,
+          "maximum": 103
+        },
+        "companionActionSwitches": {
+          "mean": -6.333333333333333,
+          "median": -3,
+          "minimum": -16,
+          "maximum": 0
+        },
+        "companionStuckSeconds": {
+          "mean": -0.30000001564621925,
+          "median": -0.30000001564621925,
+          "minimum": -0.6000000312924385,
+          "maximum": 0.0
+        },
+        "companionShortReversals": {
+          "mean": -1,
+          "median": -1,
+          "minimum": -3,
+          "maximum": 1
+        },
+        "companionSupportHeals": {
+          "mean": -65.93333435058594,
+          "median": -65.80000305175781,
+          "minimum": -88,
+          "maximum": -44
+        },
+        "companionShots": {
+          "mean": 1,
+          "median": 2,
+          "minimum": -6,
+          "maximum": 7
+        },
+        "elapsedGameSeconds": {
+          "mean": -18.53333429992199,
+          "median": -38.00000198185444,
+          "minimum": -38.60000201314688,
+          "maximum": 21.000001095235348
+        },
+        "companionAliveAtEnd": {
+          "mean": 0,
+          "median": 0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        "enemiesAlive": {
+          "mean": 0.3333333333333333,
+          "median": 1,
+          "minimum": -1,
+          "maximum": 1
+        }
+      }
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "reference": "baseline",
+      "candidate": "priority",
+      "pairs": [
+        {
+          "seed": 2001,
+          "referenceWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -20,
+            "companionDamageTaken": 44,
+            "playerDamageDealt": -57.69999885559082,
+            "companionDamageDealt": 105.59999895095825,
+            "playerHealingReceived": -56.19999313354492,
+            "companionHealingReceived": -21.000015258789062,
+            "companionAliveSeconds": -9.933333851397038,
+            "companionDecisions": -48,
+            "companionActionSwitches": -8,
+            "companionStuckSeconds": -0.40000002086162567,
+            "companionShortReversals": 2,
+            "companionSupportHeals": -66,
+            "companionShots": 8,
+            "elapsedGameSeconds": 0.0,
+            "companionAliveAtEnd": -1,
+            "enemiesAlive": 0
+          }
+        },
+        {
+          "seed": 2002,
+          "referenceWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -93.20000457763672,
+            "companionDamageTaken": 28,
+            "playerDamageDealt": -156,
+            "companionDamageDealt": 44,
+            "playerHealingReceived": -77.20000457763672,
+            "companionHealingReceived": -35.000030517578125,
+            "companionAliveSeconds": 0.10000000521540642,
+            "companionDecisions": 0,
+            "companionActionSwitches": -8,
+            "companionStuckSeconds": -0.20000001043081284,
+            "companionShortReversals": -2,
+            "companionSupportHeals": -66,
+            "companionShots": 4,
+            "elapsedGameSeconds": 0.10000000521540642,
+            "companionAliveAtEnd": 0,
+            "enemiesAlive": 0
+          }
+        },
+        {
+          "seed": 2003,
+          "referenceWin": false,
+          "candidateWin": false,
+          "delta": {
+            "playerDamageTaken": -90,
+            "companionDamageTaken": 44,
+            "playerDamageDealt": 61.40003204345703,
+            "companionDamageDealt": 26,
+            "playerHealingReceived": -38.999961853027344,
+            "companionHealingReceived": -1.4000015258789062,
+            "companionAliveSeconds": -14.566667426377535,
+            "companionDecisions": -71,
+            "companionActionSwitches": -7,
+            "companionStuckSeconds": -0.30000001564621925,
+            "companionShortReversals": -3,
+            "companionSupportHeals": -88,
+            "companionShots": 1,
+            "elapsedGameSeconds": 25.500001329928637,
+            "companionAliveAtEnd": -1,
+            "enemiesAlive": -1
+          }
+        }
+      ],
+      "candidateOnlyWins": 0,
+      "referenceOnlyWins": 0,
+      "pairedDeltas": {
+        "playerDamageTaken": {
+          "mean": -67.73333485921223,
+          "median": -90,
+          "minimum": -93.20000457763672,
+          "maximum": -20
+        },
+        "companionDamageTaken": {
+          "mean": 38.666666666666664,
+          "median": 44,
+          "minimum": 28,
+          "maximum": 44
+        },
+        "playerDamageDealt": {
+          "mean": -50.766655604044594,
+          "median": -57.69999885559082,
+          "minimum": -156,
+          "maximum": 61.40003204345703
+        },
+        "companionDamageDealt": {
+          "mean": 58.53333298365275,
+          "median": 44,
+          "minimum": 26,
+          "maximum": 105.59999895095825
+        },
+        "playerHealingReceived": {
+          "mean": -57.466653188069664,
+          "median": -56.19999313354492,
+          "minimum": -77.20000457763672,
+          "maximum": -38.999961853027344
+        },
+        "companionHealingReceived": {
+          "mean": -19.1333491007487,
+          "median": -21.000015258789062,
+          "minimum": -35.000030517578125,
+          "maximum": -1.4000015258789062
+        },
+        "companionAliveSeconds": {
+          "mean": -8.133333757519722,
+          "median": -9.933333851397038,
+          "minimum": -14.566667426377535,
+          "maximum": 0.10000000521540642
+        },
+        "companionDecisions": {
+          "mean": -39.666666666666664,
+          "median": -48,
+          "minimum": -71,
+          "maximum": 0
+        },
+        "companionActionSwitches": {
+          "mean": -7.666666666666667,
+          "median": -8,
+          "minimum": -8,
+          "maximum": -7
+        },
+        "companionStuckSeconds": {
+          "mean": -0.30000001564621925,
+          "median": -0.30000001564621925,
+          "minimum": -0.40000002086162567,
+          "maximum": -0.20000001043081284
+        },
+        "companionShortReversals": {
+          "mean": -1,
+          "median": -2,
+          "minimum": -3,
+          "maximum": 2
+        },
+        "companionSupportHeals": {
+          "mean": -73.33333333333333,
+          "median": -66,
+          "minimum": -88,
+          "maximum": -66
+        },
+        "companionShots": {
+          "mean": 4.333333333333333,
+          "median": 4,
+          "minimum": 1,
+          "maximum": 8
+        },
+        "elapsedGameSeconds": {
+          "mean": 8.533333778381348,
+          "median": 0.10000000521540642,
+          "minimum": 0.0,
+          "maximum": 25.500001329928637
+        },
+        "companionAliveAtEnd": {
+          "mean": -0.6666666666666666,
+          "median": -1,
+          "minimum": -1,
+          "maximum": 0
+        },
+        "enemiesAlive": {
+          "mean": -0.3333333333333333,
+          "median": 0,
+          "minimum": -1,
+          "maximum": 0
+        }
+      }
+    }
+  ],
+  "episodes": [
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2001,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 45.70000238344073,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 28,
+          "companionDamageTaken": 56,
+          "playerDamageDealt": 60.10000228881836,
+          "companionDamageDealt": 42,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 45.70000238344073,
+          "companionStuckSeconds": 0.30000001564621925,
+          "companionShots": 3,
+          "companionActionSeconds": {
+            "waiting": 20.616667741909623,
+            "Follow": 11.283333921805024,
+            "Chase": 1.8000000938773155,
+            "Attack": 2.3000001199543476,
+            "Retreat": 6.70000034943223,
+            "Support": 3.0000001564621925
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 31.383334970101714,
+            "attack": 4.000000208616257,
+            "retreat": 7.000000365078449,
+            "support": 3.100000161677599
+          },
+          "companionDecisions": 219,
+          "companionActionSwitches": 7,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-baseline\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2002,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 29.500001538544893,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 28,
+          "companionDamageTaken": 14,
+          "playerDamageDealt": 58,
+          "companionDamageDealt": 42,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 29.500001538544893,
+          "companionStuckSeconds": 0.5000000260770321,
+          "companionShots": 3,
+          "companionActionSeconds": {
+            "waiting": 11.200000584125519,
+            "Follow": 15.600000813603401,
+            "Chase": 1.0000000521540642,
+            "Attack": 1.700000088661909
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 26.300001371651888,
+            "attack": 2.900000151246786
+          },
+          "companionDecisions": 142,
+          "companionActionSwitches": 1,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-baseline\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2003,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 39.60000206530094,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 42,
+          "companionDamageTaken": 0,
+          "playerDamageDealt": 42,
+          "companionDamageDealt": 58,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 39.60000206530094,
+          "companionStuckSeconds": 0.10000000521540642,
+          "companionShots": 5,
+          "companionActionSeconds": {
+            "waiting": 22.800001189112663,
+            "Follow": 9.700000505894423,
+            "Chase": 4.500000234693289,
+            "Attack": 2.600000135600567
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 32.000001668930054,
+            "attack": 7.3000003807246685
+          },
+          "companionDecisions": 191,
+          "companionActionSwitches": 1,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-baseline\\episode-002.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2001,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 37.10000193491578,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 0,
+          "companionDamageTaken": 70,
+          "playerDamageDealt": 0,
+          "companionDamageDealt": 100,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 37.10000193491578,
+          "companionStuckSeconds": 0.20000001043081284,
+          "companionShots": 8,
+          "companionActionSeconds": {
+            "waiting": 21.116667767986655,
+            "Follow": 6.683333681896329,
+            "Chase": 3.9000002034008503,
+            "Attack": 5.400000281631947
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 27.383334761485457,
+            "attack": 9.50000049546361
+          },
+          "companionDecisions": 178,
+          "companionActionSwitches": 3,
+          "companionShortReversals": 1,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-priority\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2002,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 54.70000285282731,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 28,
+          "companionDamageTaken": 14,
+          "playerDamageDealt": 56,
+          "companionDamageDealt": 44,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 54.70000285282731,
+          "companionStuckSeconds": 0.40000002086162567,
+          "companionShots": 4,
+          "companionActionSeconds": {
+            "waiting": 35.000001825392246,
+            "Follow": 16.20000084489584,
+            "Chase": 1.200000062584877,
+            "Attack": 2.3000001199543476
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 50.700002644211054,
+            "attack": 3.7000001929700375
+          },
+          "companionDecisions": 264,
+          "companionActionSwitches": 1,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-priority\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        1,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2003,
+          "enemyCount": 1,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 38.60000201314688,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 28,
+          "companionDamageTaken": 0,
+          "playerDamageDealt": 56,
+          "companionDamageDealt": 44,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 38.60000201314688,
+          "companionStuckSeconds": 0.20000001043081284,
+          "companionShots": 4,
+          "companionActionSeconds": {
+            "waiting": 22.700001183897257,
+            "Follow": 9.50000049546361,
+            "Chase": 4.300000224262476,
+            "Attack": 2.1000001095235348
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 31.900001663714647,
+            "attack": 6.400000333786011
+          },
+          "companionDecisions": 187,
+          "companionActionSwitches": 1,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-priority\\episode-002.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2001,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 134,
+          "companionDamageTaken": 0,
+          "playerDamageDealt": 170,
+          "companionDamageDealt": 42,
+          "playerHealingReceived": 121.60002136230469,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 60.00000312924385,
+          "companionStuckSeconds": 0.7000000365078449,
+          "companionShots": 3,
+          "companionActionSeconds": {
+            "waiting": 36.11666855029762,
+            "Follow": 15.5833341460675,
+            "Chase": 4.2000002190470695,
+            "Attack": 2.0000001043081284,
+            "Support": 2.1000001095235348
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 51.483336018398404,
+            "attack": 6.300000328570604,
+            "support": 2.0000001043081284
+          },
+          "companionDecisions": 290,
+          "companionActionSwitches": 9,
+          "companionShortReversals": 2,
+          "companionSupportHeals": 88,
+          "companionSupportHealCount": 4
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-baseline\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2002,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 39.0000020340085,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 70,
+          "companionDamageTaken": 14,
+          "playerDamageDealt": 90.10000228881836,
+          "companionDamageDealt": 112,
+          "playerHealingReceived": 44,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 39.0000020340085,
+          "companionStuckSeconds": 0.5000000260770321,
+          "companionShots": 8,
+          "companionActionSeconds": {
+            "waiting": 10.700000558048487,
+            "Follow": 14.000000730156898,
+            "Chase": 8.900000464171171,
+            "Attack": 4.9000002555549145,
+            "Support": 0.5000000260770321
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 23.300001215189695,
+            "attack": 14.200000740587711,
+            "support": 0.6000000312924385,
+            "retreat": 0.6000000312924385
+          },
+          "companionDecisions": 187,
+          "companionActionSwitches": 8,
+          "companionShortReversals": 2,
+          "companionSupportHeals": 44,
+          "companionSupportHealCount": 2
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-baseline\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2003,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 70,
+          "companionDamageTaken": 56,
+          "playerDamageDealt": 114,
+          "companionDamageDealt": 84,
+          "playerHealingReceived": 70,
+          "companionHealingReceived": 21.000015258789062,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 60.00000312924385,
+          "companionStuckSeconds": 0.6000000312924385,
+          "companionShots": 6,
+          "companionActionSeconds": {
+            "waiting": 17.500000912696123,
+            "Follow": 13.600000709295273,
+            "Chase": 3.300000172108412,
+            "Attack": 4.000000208616257,
+            "Retreat": 8.10000042244792,
+            "Support": 5.900000307708979,
+            "Recover": 7.600000396370888
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 15.300000797957182,
+            "attack": 7.400000385940075,
+            "retreat": 31.200001627206802,
+            "support": 5.800000302493572
+          },
+          "companionDecisions": 289,
+          "companionActionSwitches": 16,
+          "companionShortReversals": 3,
+          "companionSupportHeals": 65.80000305175781,
+          "companionSupportHealCount": 3
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-baseline\\episode-002.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2001,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": true,
+        "terminationReason": "enemy_clear",
+        "elapsedGameSeconds": 21.400001116096973,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 0,
+        "metrics": {
+          "playerDamageTaken": 70,
+          "companionDamageTaken": 56,
+          "playerDamageDealt": 84,
+          "companionDamageDealt": 116,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 21.400001116096973,
+          "companionStuckSeconds": 0.40000002086162567,
+          "companionShots": 10,
+          "companionActionSeconds": {
+            "waiting": 5.116666933521628,
+            "Follow": 5.983333645388484,
+            "Chase": 4.800000250339508,
+            "Attack": 5.500000286847353
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 10.683333890512586,
+            "attack": 10.500000547617674
+          },
+          "companionDecisions": 103,
+          "companionActionSwitches": 6,
+          "companionShortReversals": 1,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-priority\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2002,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 42,
+          "companionDamageTaken": 84,
+          "playerDamageDealt": 70,
+          "companionDamageDealt": 128,
+          "playerHealingReceived": 7.6999969482421875,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 60.00000312924385,
+          "companionStuckSeconds": 0.5000000260770321,
+          "companionShots": 10,
+          "companionActionSeconds": {
+            "waiting": 26.80000139772892,
+            "Follow": 22.60000117868185,
+            "Chase": 4.2000002190470695,
+            "Attack": 6.400000333786011
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 48.60000253468752,
+            "attack": 11.100000578910112
+          },
+          "companionDecisions": 290,
+          "companionActionSwitches": 8,
+          "companionShortReversals": 3,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-priority\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        2,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2003,
+          "enemyCount": 2,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "player_dead",
+        "elapsedGameSeconds": 22.000001147389412,
+        "playerAlive": false,
+        "companionAlive": true,
+        "enemiesAlive": 2,
+        "metrics": {
+          "playerDamageTaken": 100,
+          "companionDamageTaken": 0,
+          "playerDamageDealt": 98,
+          "companionDamageDealt": 0,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": 21.95000114478171,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 22.000001147389412,
+          "companionStuckSeconds": 0,
+          "companionShots": 0,
+          "companionActionSeconds": {
+            "waiting": 16.900000881403685,
+            "Follow": 5.100000265985727
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 21.700001131743193
+          },
+          "companionDecisions": 106,
+          "companionActionSwitches": 0,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-priority\\episode-002.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2001,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 84,
+          "companionDamageTaken": 56,
+          "playerDamageDealt": 177.69999885559082,
+          "companionDamageDealt": 128,
+          "playerHealingReceived": 71.5999984741211,
+          "companionHealingReceived": 21.000015258789062,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 60.00000312924385,
+          "companionStuckSeconds": 0.7000000365078449,
+          "companionShots": 10,
+          "companionActionSeconds": {
+            "waiting": 11.716667277738452,
+            "Follow": 15.183334125205874,
+            "Chase": 4.300000224262476,
+            "Attack": 6.000000312924385,
+            "Support": 2.7000001408159733,
+            "Retreat": 12.500000651925802,
+            "Recover": 7.600000396370888
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 14.383334083482623,
+            "attack": 10.300000537186861,
+            "support": 2.7000001408159733,
+            "retreat": 32.40000168979168
+          },
+          "companionDecisions": 289,
+          "companionActionSwitches": 13,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 66,
+          "companionSupportHealCount": 3
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-baseline\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2002,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "player_dead",
+        "elapsedGameSeconds": 59.900003124028444,
+        "playerAlive": false,
+        "companionAlive": true,
+        "enemiesAlive": 2,
+        "metrics": {
+          "playerDamageTaken": 177.20000457763672,
+          "companionDamageTaken": 70,
+          "playerDamageDealt": 226,
+          "companionDamageDealt": 70,
+          "playerHealingReceived": 77.20000457763672,
+          "companionHealingReceived": 35.000030517578125,
+          "playerDeathSeconds": 59.88333645649254,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 59.900003124028444,
+          "companionStuckSeconds": 0.8000000417232513,
+          "companionShots": 5,
+          "companionActionSeconds": {
+            "waiting": 12.800000667572021,
+            "Follow": 15.600000813603401,
+            "Chase": 4.000000208616257,
+            "Attack": 2.900000151246786,
+            "Support": 1.6000000834465027,
+            "Retreat": 10.300000537186861,
+            "Recover": 12.700000662356615
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 25.10000130906701,
+            "attack": 6.70000034943223,
+            "support": 1.6000000834465027,
+            "retreat": 26.20000136643648
+          },
+          "companionDecisions": 290,
+          "companionActionSwitches": 10,
+          "companionShortReversals": 2,
+          "companionSupportHeals": 66,
+          "companionSupportHealCount": 3
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-baseline\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "baseline",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "baseline",
+          "seed": 2003,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "player_dead",
+        "elapsedGameSeconds": 34.500001799315214,
+        "playerAlive": false,
+        "companionAlive": true,
+        "enemiesAlive": 2,
+        "metrics": {
+          "playerDamageTaken": 188,
+          "companionDamageTaken": 56,
+          "playerDamageDealt": 154,
+          "companionDamageDealt": 100,
+          "playerHealingReceived": 88,
+          "companionHealingReceived": 1.4000015258789062,
+          "playerDeathSeconds": 34.41666846163571,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 34.500001799315214,
+          "companionStuckSeconds": 0.5000000260770321,
+          "companionShots": 8,
+          "companionActionSeconds": {
+            "waiting": 4.800000250339508,
+            "Follow": 7.900000412017107,
+            "Chase": 3.800000198185444,
+            "Support": 1.1000000573694706,
+            "Attack": 4.800000250339508,
+            "Retreat": 11.600000604987144,
+            "Recover": 0.5000000260770321
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 12.00000062584877,
+            "attack": 8.700000453740358,
+            "support": 1.1000000573694706,
+            "retreat": 12.400000646710396
+          },
+          "companionDecisions": 167,
+          "companionActionSwitches": 12,
+          "companionShortReversals": 5,
+          "companionSupportHeals": 88,
+          "companionSupportHealCount": 4
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-baseline\\episode-002.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2001,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2001,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": false,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 64,
+          "companionDamageTaken": 100,
+          "playerDamageDealt": 120,
+          "companionDamageDealt": 233.59999895095825,
+          "playerHealingReceived": 15.400005340576172,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": 50.06666927784681,
+          "companionAliveSeconds": 50.06666927784681,
+          "companionStuckSeconds": 0.30000001564621925,
+          "companionShots": 18,
+          "companionActionSeconds": {
+            "waiting": 14.416667418554425,
+            "Follow": 18.38333429209888,
+            "Chase": 6.1000003181397915,
+            "Attack": 11.166667249053717
+          },
+          "companionSelectedSeconds": {
+            "none": 0.2166666779667139,
+            "follow": 32.58333503268659,
+            "attack": 17.266667567193508
+          },
+          "companionDecisions": 241,
+          "companionActionSwitches": 5,
+          "companionShortReversals": 2,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-priority\\episode-000.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2002,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2002,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": true,
+        "enemiesAlive": 2,
+        "metrics": {
+          "playerDamageTaken": 84,
+          "companionDamageTaken": 98,
+          "playerDamageDealt": 70,
+          "companionDamageDealt": 114,
+          "playerHealingReceived": 0,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": -1,
+          "companionAliveSeconds": 60.00000312924385,
+          "companionStuckSeconds": 0.6000000312924385,
+          "companionShots": 9,
+          "companionActionSeconds": {
+            "waiting": 33.400001741945744,
+            "Follow": 17.90000093355775,
+            "Chase": 2.200000114738941,
+            "Attack": 6.500000339001417
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 50.700002644211054,
+            "attack": 9.000000469386578
+          },
+          "companionDecisions": 290,
+          "companionActionSwitches": 2,
+          "companionShortReversals": 0,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-priority\\episode-001.json"
+    },
+    {
+      "condition": [
+        "decision_lab_v1",
+        0,
+        3,
+        60,
+        "fixed_game_step_1_60",
+        false
+      ],
+      "policy": "priority",
+      "seed": 2003,
+      "episode": {
+        "schemaVersion": 1,
+        "engine": "unreal-runtime",
+        "automated": true,
+        "scenario": {
+          "policy": "priority",
+          "seed": 2003,
+          "enemyCount": 3,
+          "duration": 60,
+          "layout": 0,
+          "scenarioId": "decision_lab_v1"
+        },
+        "win": false,
+        "terminationReason": "timeout",
+        "elapsedGameSeconds": 60.00000312924385,
+        "playerAlive": true,
+        "companionAlive": false,
+        "enemiesAlive": 1,
+        "metrics": {
+          "playerDamageTaken": 98,
+          "companionDamageTaken": 100,
+          "playerDamageDealt": 215.40003204345703,
+          "companionDamageDealt": 126,
+          "playerHealingReceived": 49.000038146972656,
+          "companionHealingReceived": 0,
+          "playerDeathSeconds": -1,
+          "companionDeathSeconds": 19.93333437293768,
+          "companionAliveSeconds": 19.93333437293768,
+          "companionStuckSeconds": 0.20000001043081284,
+          "companionShots": 9,
+          "companionActionSeconds": {
+            "waiting": 5.800000302493572,
+            "Follow": 6.000000312924385,
+            "Chase": 1.900000099092722,
+            "Attack": 6.233333658427
+          },
+          "companionSelectedSeconds": {
+            "none": 0.30000001564621925,
+            "follow": 11.500000599771738,
+            "attack": 8.133333757519722
+          },
+          "companionDecisions": 96,
+          "companionActionSwitches": 5,
+          "companionShortReversals": 2,
+          "companionSupportHeals": 0,
+          "companionSupportHealCount": 0
+        }
+      },
+      "source": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-priority\\episode-002.json"
+    }
+  ],
+  "runs": [
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-baseline",
+      "provenanceSha256": "442dca2296d70bd90be8b0d85fb861741e2e848e1ea9218626c8f8bb7f72f59b",
+      "episodeCount": 3,
+      "phase": "development"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e1-priority",
+      "provenanceSha256": "3dec55c6aac4e8a1e6e10f33e94552269de47e7fa3113f694cf3a646c7f3378d",
+      "episodeCount": 3,
+      "phase": "development"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-baseline",
+      "provenanceSha256": "8ad4ed271a638ed83f3f35f01ff23348510eaa18acf9c2db26fb4a8ceeb7b194",
+      "episodeCount": 3,
+      "phase": "development"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e2-priority",
+      "provenanceSha256": "a55585e641b59a69745ee861baa3cdd3348c4758dcf459908f5e074d9cbee352",
+      "episodeCount": 3,
+      "phase": "development"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-baseline",
+      "provenanceSha256": "592c7e138c31c4ce5a3d3f5049a8127a9fbc0fe158fa41b8d6a60c6d978b42f9",
+      "episodeCount": 3,
+      "phase": "development"
+    },
+    {
+      "directory": "D:\\AegisWork\\Reports\\decision-lab-20260917\\calibration-v1-e3-priority",
+      "provenanceSha256": "f21852a1210d2c8508d12cef9f307ee462349aa78d68de1d07dd4d4292d661b9",
+      "episodeCount": 3,
+      "phase": "development"
+    }
+  ],
+  "limits": [
+    "Legacy BT/EQS scripted encounter, not Copilot or Uplink gameplay",
+    "One map; alternate spawn layout is not cross-map generalization",
+    "Project seeds do not certify bit-deterministic UE trajectories",
+    "Companion alive seconds are observed exposure ending at episode termination, not survival free of competing risks",
+    "Fixed-step throughput is not rendered gameplay FPS",
+    "Small paired samples; descriptive endpoints do not establish general policy superiority",
+    "Historical v1.0 0/30 results remain separate and are not pooled here"
+  ]
+}

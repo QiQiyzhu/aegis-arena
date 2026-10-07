@@ -1,0 +1,6 @@
+{
+  "shortcut": "C:\\Users\\yzhu\\Desktop\\Aegis Arena 决策演示.lnk",
+  "target": "D:\\AegisWork\\Packages\\decision-lab-v1.4-development\\package\\Windows\\AegisArena.exe",
+  "arguments": "-AegisDecisionLab -AegisLabPolicy=improved -AegisLabEnemies=2 -AegisLabSeed=2001 -AegisLabDuration=60 -AegisLabLayout=0 -d3d11 -windowed -ResX=1280 -ResY=720",
+  "workingDirectory": "D:/AegisWork/Packages/decision-lab-v1.4-development/package/Windows"
+}

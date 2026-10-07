@@ -1,0 +1,25 @@
+name: 游戏问题 / Game bug
+description: 报告无法启动、操作、画面或任务问题
+title: "[游戏问题] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 下载包版本 / Package version
+      placeholder: v2.4.0-rc.1
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Windows 版本与显卡 / Windows and GPU
+      placeholder: Windows 11 / RTX 4060 Laptop
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 如何重现 / Steps to reproduce
+      description: 说明是否完整解压、如何启动、操作步骤、预期结果与实际结果。可以附图，请勿上传私人信息。
+    validations:
+      required: true

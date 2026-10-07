@@ -1,0 +1,530 @@
+{
+  "schemaVersion": 1,
+  "completedAtUtc": "2026-09-11T07:04:12.818753+00:00",
+  "declarationSha256": "8a5659cd350bd96a867279f2cbdfbe9f09bd949a37c4a07fd7555de477eed3e8",
+  "requestCount": 12,
+  "requestedModel": "deepseek-flash",
+  "responseModels": [
+    "deepseek-flash"
+  ],
+  "scope": "Six existing tuning commands and six new heldout paraphrases; synthetic observations with runtime field shape. No model training, no Unreal execution.",
+  "summary": {
+    "tuning": {
+      "validJson": 6,
+      "schemaValid": 6,
+      "skillNamesLegal": 6,
+      "targetsLegal": 6,
+      "skillsLegal": 6,
+      "fullIntentCorrect": 6,
+      "count": 6,
+      "latencyMilliseconds": {
+        "min": 775.1607999962289,
+        "median": 952.7224499979638,
+        "max": 1422.0248000056017
+      }
+    },
+    "heldout": {
+      "validJson": 6,
+      "schemaValid": 6,
+      "skillNamesLegal": 6,
+      "targetsLegal": 6,
+      "skillsLegal": 6,
+      "fullIntentCorrect": 6,
+      "count": 6,
+      "latencyMilliseconds": {
+        "min": 820.4397000008612,
+        "median": 1021.0768500000995,
+        "max": 1537.9487000027439
+      }
+    },
+    "all": {
+      "validJson": 12,
+      "schemaValid": 12,
+      "skillNamesLegal": 12,
+      "targetsLegal": 12,
+      "skillsLegal": 12,
+      "fullIntentCorrect": 12,
+      "count": 12,
+      "latencyMilliseconds": {
+        "min": 775.1607999962289,
+        "median": 1021.0768500000995,
+        "max": 1537.9487000027439
+      }
+    }
+  },
+  "results": [
+    {
+      "case": "tuning_capture_en",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1194.4952999983798,
+      "rawResponseSha256": "b866809cd95958ab03554592ee8cfff12c592aaacab8ebaa443ca12aa54a8235",
+      "savedResponseSha256": "b866809cd95958ab03554592ee8cfff12c592aaacab8ebaa443ca12aa54a8235",
+      "credentialRedactionApplied": false,
+      "responseId": "100be7fc-e960-4477-8bf8-71010a2d9a04",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 706,
+        "completion_tokens": 33,
+        "total_tokens": 739,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 706
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Secure relay then protect",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tuning_guard_en",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 775.1607999962289,
+      "rawResponseSha256": "4b1e1daa635734709eab5904519b796f44dcbf8a4d9185da5b926acabbfa6931",
+      "savedResponseSha256": "4b1e1daa635734709eab5904519b796f44dcbf8a4d9185da5b926acabbfa6931",
+      "credentialRedactionApplied": false,
+      "responseId": "500b762d-f6ec-42c7-8e5f-df4da6eb18bf",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 704,
+        "completion_tokens": 21,
+        "total_tokens": 725,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 320
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Protect the player",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tuning_focus_en",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1422.0248000056017,
+      "rawResponseSha256": "c4b97bd6282afa945dfb2918ec5cf4a1a3eef9109c506b528b24cc902df3fa40",
+      "savedResponseSha256": "c4b97bd6282afa945dfb2918ec5cf4a1a3eef9109c506b528b24cc902df3fa40",
+      "credentialRedactionApplied": false,
+      "responseId": "c3ddb150-8d5e-4e03-afed-f070f89555a9",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 706,
+        "completion_tokens": 34,
+        "total_tokens": 740,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 322
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Engage then regroup",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "regroup",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tuning_capture_zh",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1092.3282999938237,
+      "rawResponseSha256": "5b574054436c15b49c1636cad809f9c371a06cef5a9ad56a20dca70e3ab390c6",
+      "savedResponseSha256": "5b574054436c15b49c1636cad809f9c371a06cef5a9ad56a20dca70e3ab390c6",
+      "credentialRedactionApplied": false,
+      "responseId": "a0944359-6c2f-41ea-8b87-16902bb4140a",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 709,
+        "completion_tokens": 34,
+        "total_tokens": 743,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 325
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Capture relay then protect player",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tuning_guard_zh",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 813.116600002104,
+      "rawResponseSha256": "fde19019b78b76475fe545edbd0e015357a44c8c82ddeec4f47f1755ea5e806d",
+      "savedResponseSha256": "fde19019b78b76475fe545edbd0e015357a44c8c82ddeec4f47f1755ea5e806d",
+      "credentialRedactionApplied": false,
+      "responseId": "c8874c90-30ec-4200-a2bc-4f1ed20ba114",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 705,
+        "completion_tokens": 33,
+        "total_tokens": 738,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 321
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Regroup then protect the player",
+        "steps": [
+          {
+            "skill": "regroup",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "tuning_focus_zh",
+      "split": "tuning",
+      "httpStatus": 200,
+      "latencyMilliseconds": 777.26850000181,
+      "rawResponseSha256": "033bc73a81dd126a2d4063b32873559c74616355a227eaa31ccab0510ac0b7dc",
+      "savedResponseSha256": "033bc73a81dd126a2d4063b32873559c74616355a227eaa31ccab0510ac0b7dc",
+      "credentialRedactionApplied": false,
+      "responseId": "3f52d076-3ec6-462d-824a-0d64d597de5a",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 708,
+        "completion_tokens": 36,
+        "total_tokens": 744,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 324
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Engage visible enemy then regroup",
+        "steps": [
+          {
+            "skill": "focus_visible",
+            "target": "t0"
+          },
+          {
+            "skill": "regroup",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_capture_en",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1088.6873999988893,
+      "rawResponseSha256": "163c21fd8e1ce29d8e93b1555001227db2f1a8bdab82e01b163afa946520694c",
+      "savedResponseSha256": "163c21fd8e1ce29d8e93b1555001227db2f1a8bdab82e01b163afa946520694c",
+      "credentialRedactionApplied": false,
+      "responseId": "c04c0514-b399-4f4b-86c2-e10a871bcb6e",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 710,
+        "completion_tokens": 34,
+        "total_tokens": 744,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 326
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Capture relay then protect player",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_guard_en",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1055.6094999992638,
+      "rawResponseSha256": "fc41dd192513e247ef75da70b2bb2434756a6fad10c5eaa5231c4710b39081a3",
+      "savedResponseSha256": "fc41dd192513e247ef75da70b2bb2434756a6fad10c5eaa5231c4710b39081a3",
+      "credentialRedactionApplied": false,
+      "responseId": "c4adc01d-3605-4fd0-9f76-a9a12adf56a2",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 715,
+        "completion_tokens": 22,
+        "total_tokens": 737,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 331
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Stay with player and guard",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_no_visible_en",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 986.5442000009352,
+      "rawResponseSha256": "185182573c3f314b3ab0fc1065113757ccf12c2d6c2ad9a9816b30811700b390",
+      "savedResponseSha256": "185182573c3f314b3ab0fc1065113757ccf12c2d6c2ad9a9816b30811700b390",
+      "credentialRedactionApplied": false,
+      "responseId": "b3e3c715-1b91-473b-9241-860d5828a005",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 693,
+        "completion_tokens": 24,
+        "total_tokens": 717,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 309
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "No visible threat; guard the player",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_capture_zh",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 1537.9487000027439,
+      "rawResponseSha256": "263c1fb0d07708519b3ebbc1417199a4b8644019caed5b6dccfba03732316153",
+      "savedResponseSha256": "263c1fb0d07708519b3ebbc1417199a4b8644019caed5b6dccfba03732316153",
+      "credentialRedactionApplied": false,
+      "responseId": "df19e85a-aa56-4bb0-bd53-44b85ac09fa5",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 710,
+        "completion_tokens": 34,
+        "total_tokens": 744,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 326
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Capture relay then protect player",
+        "steps": [
+          {
+            "skill": "capture_relay",
+            "target": "none"
+          },
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_guard_zh",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 820.4397000008612,
+      "rawResponseSha256": "099d16d1b9d98f9155d06cb2b3b834757c0b4ba6f4c59fcb19f3bd208da918a5",
+      "savedResponseSha256": "099d16d1b9d98f9155d06cb2b3b834757c0b4ba6f4c59fcb19f3bd208da918a5",
+      "credentialRedactionApplied": false,
+      "responseId": "2ed6a7b0-b991-40bf-bfea-38e136e92958",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 712,
+        "completion_tokens": 22,
+        "total_tokens": 734,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 328
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "Follow and cover the player",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    },
+    {
+      "case": "heldout_no_visible_zh",
+      "split": "heldout",
+      "httpStatus": 200,
+      "latencyMilliseconds": 944.9335000026622,
+      "rawResponseSha256": "f4657b036dda39d8eb202139c6733ae2b5399b4ea362277f08fd553933e5f20e",
+      "savedResponseSha256": "f4657b036dda39d8eb202139c6733ae2b5399b4ea362277f08fd553933e5f20e",
+      "credentialRedactionApplied": false,
+      "responseId": "22231567-2f41-4587-893f-379896f5c64c",
+      "responseModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 693,
+        "completion_tokens": 24,
+        "total_tokens": 717,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 309
+      },
+      "finishReason": "stop",
+      "validJson": true,
+      "schemaValid": true,
+      "skillNamesLegal": true,
+      "targetsLegal": true,
+      "skillsLegal": true,
+      "fullIntentCorrect": true,
+      "plan": {
+        "label": "No visible enemy; guard the player",
+        "steps": [
+          {
+            "skill": "guard",
+            "target": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": "Small preregistered semantic evaluation; not a gameplay, balance or general reliability guarantee. No retries or output repair."
+}

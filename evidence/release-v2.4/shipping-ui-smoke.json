@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-07",
+  "method": "Computer-use API keyboard events on the real Windows Shipping application, with visible window inspection",
+  "humanPlaytest": false,
+  "shippingBinarySha256": "87f8b48e272d2af0852a6347e299d9a81030a31909b69085e5ce214178441847",
+  "checks": {
+    "outerLauncherOpensLatestGameWithoutFlags": true,
+    "chineseAndEnglishBriefingReadable": true,
+    "enterStartsCombat": true,
+    "restartRequiresConfirmation": true,
+    "cancelKeepsHealthAndTime": true,
+    "realAltTabPauses": true,
+    "returnFocusKeepsPausedHealth72Time2m43": true,
+    "musicToggleVisible": true,
+    "windowBorderlessSwitchWorks": true,
+    "menuXExitsProcess": true,
+    "restartPersistsEnglishMusicOffBorderless": true,
+    "restoredChineseMusicOnWindowedAfterTest": true
+  },
+  "limits": [
+    "Short interaction smoke, not a full natural playthrough",
+    "One Windows computer; no cross-device performance claim",
+    "No fresh-machine prerequisite installation or human audio review"
+  ]
+}

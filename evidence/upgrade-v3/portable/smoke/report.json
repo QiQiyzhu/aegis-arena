@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "engine": "portable-cpp-model",
+  "created_utc": "2026-09-10T19:35:23.319858+00:00",
+  "source_sha256": "57f517fc8c348e8ec96bcf8b9cf1728e93aa51768772ca06b5e2cdc048188d78",
+  "binary_sha256": "b6a0137059233d5c3044a601dbbf5032062dd900cb4a70657d070a5353a3d8a0",
+  "host": {
+    "platform": "Windows-10-10.0.22631-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "build": {
+    "engine": "portable-cpp-model",
+    "compiler": "clang version 20.1.2 (https://github.com/ziglang/zig-bootstrap 7ef74e656cf8ddbd6bf891a8475892aa1afa6891)",
+    "flags": "C++17 -O2 -Wall -Wextra -Werror -pedantic",
+    "tests": {
+      "suite": "portable_cpp",
+      "assertions": 381,
+      "failed": 0
+    },
+    "unreal_compiled": false
+  },
+  "config": {
+    "schema_version": 1,
+    "arena": "pillars",
+    "player_config": "scripted",
+    "companion_policies": [
+      "priority",
+      "utility"
+    ],
+    "enemy_policy": "priority",
+    "enemy_counts": [
+      4
+    ],
+    "seed_start": 1,
+    "episodes": 1,
+    "duration": 2,
+    "director": false
+  },
+  "episode_count": 2,
+  "aggregate": [
+    {
+      "enemy_count": 4,
+      "policy": "priority",
+      "episodes": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_survival_seconds": 2.0,
+      "mean_damage_dealt": 0.0,
+      "mean_damage_taken": 0.0,
+      "mean_companion_deaths": 0,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0,
+      "mean_distance_travelled": 38.94,
+      "mean_cover_usage": 0,
+      "mean_decision_counts": 59,
+      "mean_decision_us": 0.145763,
+      "mean_geometry_query_us": 0.0,
+      "mean_step_p95_us": 0.5
+    },
+    {
+      "enemy_count": 4,
+      "policy": "utility",
+      "episodes": 1,
+      "wins": 0,
+      "win_rate": 0.0,
+      "win_rate_95ci_wilson": [
+        0,
+        0.7934567085261071
+      ],
+      "mean_survival_seconds": 2.0,
+      "mean_damage_dealt": 0.0,
+      "mean_damage_taken": 0.0,
+      "mean_companion_deaths": 0,
+      "mean_enemy_deaths": 0,
+      "mean_stuck_events": 0,
+      "mean_distance_travelled": 38.94,
+      "mean_cover_usage": 0,
+      "mean_decision_counts": 59,
+      "mean_decision_us": 0.150847,
+      "mean_geometry_query_us": 0.0,
+      "mean_step_p95_us": 0.5
+    }
+  ],
+  "limitations": [
+    "Not Unreal runtime or rendered frame measurements",
+    "CPU microbenchmarks share a busy desktop host",
+    "Simple axis-slide geometry can become stuck; no NavMesh",
+    "Priority policy is not execution of Unreal Behavior Tree",
+    "No RL or learning results"
+  ]
+}

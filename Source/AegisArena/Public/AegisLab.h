@@ -3,8 +3,11 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/HUD.h"
 #include "GameFramework/GameModeBase.h"
+#include "GameFramework/PlayerController.h"
 #include "AegisCharacter.h"
 #include "aegis/rules.hpp"
+#include "aegis/trial.hpp"
+#include "aegis/operation.hpp"
 #include "AegisLab.generated.h"
 
 USTRUCT(BlueprintType)
@@ -45,6 +48,7 @@ struct FAegisEpisodeResult
     UPROPERTY() int32 EnemiesSpawned = 0;
     UPROPERTY() int32 CompletedQueries = 0;
     UPROPERTY() int32 FailedQueries = 0;
+    UPROPERTY() int32 CancelledQueries = 0;
     UPROPERTY() int32 ProfiledQueries = 0;
     UPROPERTY() double DecisionCpuMilliseconds = 0;
     UPROPERTY() double EqsCpuMilliseconds = 0;
@@ -78,6 +82,29 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
     UFUNCTION(CallInEditor, BlueprintCallable, Category = "Scenario") void RunBatch();
     UFUNCTION(CallInEditor, BlueprintCallable, Category = "Scenario") void CancelBatch();
     UFUNCTION(BlueprintCallable, Category = "Scenario") void StartInteractive();
+    void DeployTrial(bool Pressure);
+    const aegis::Trial& GetTrial() const { return Trial; }
+    bool IsInteractive() const { return bInteractive; }
+    int32 LivingEnemies() const;
+    AAegisAICharacter* GetCompanion() const;
+    float TrialDamageDealt = 0, TrialDamageTaken = 0;
+    bool bPressureSelected = false;
+    // The old wave-lifecycle fixture opts out explicitly; normal play uses objectives.
+    UPROPERTY(EditAnywhere, Category = "Scenario") bool bObjectiveTrial = true;
+    const aegis::Operation& GetOperation() const { return Operation; }
+    FVector GetObjectiveLocation() const { return ObjectiveLocation; }
+    bool IsObjectiveContested() const { return bObjectiveContested; }
+    float GetObjectiveRadius() const { return 260.f; }
+    bool IsPlayerInObjective() const;
+    bool IsCompanionInObjective() const;
+    bool IsNorthRouteFirst() const { return bNorthRouteFirst; }
+    bool ToggleRelayRoute();
+    bool IsUpgradePending() const { return bUpgradePending; }
+    bool HasUpgrade(int32 Index) const { return Index >= 1 && Index <= 3 && (UpgradeMask & (1 << (Index-1))) != 0; }
+    bool ChooseUpgrade(int32 Index);
+    FString ObjectiveText() const;
+    FString LastUpgrade;
+    class AAegisSquadPlanner* GetSquadPlanner() const { return SquadPlanner; }
 
   protected:
     virtual void BeginPlay() override;
@@ -86,6 +113,7 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
   private:
     UPROPERTY() TArray<TObjectPtr<AAegisAICharacter>> OwnedBots;
     UPROPERTY() TObjectPtr<class AAegisEncounterDirector> Director;
+    UPROPERTY() TObjectPtr<class AAegisSquadPlanner> SquadPlanner;
     TArray<FVector> LastPositions;
     TArray<float> StuckSeconds;
     TArray<FAegisEpisodeResult> Results;
@@ -103,9 +131,24 @@ class AEGISARENA_API AAegisScenarioRunner : public AActor
     FString CaptureDirectory;
     double NextCaptureAt = 2;
     int32 CaptureIndex = 0;
+    aegis::Trial Trial;
+    aegis::Operation Operation;
+    FVector ObjectiveLocation = FVector::ZeroVector;
+    bool bObjectiveContested = false, bUpgradePending = false;
+    bool bNorthRouteFirst = false;
+    int32 UpgradeMask = 0;
+    double LastObjectiveAt = 0;
+    UPROPERTY() TObjectPtr<class UInstancedStaticMeshComponent> ObjectiveRing;
+    UPROPERTY() TObjectPtr<class UMaterialInstanceDynamic> ObjectiveMaterial;
+    void SetObjectiveLocation();
+    void UpdateObjective(float DeltaSeconds);
+    void UpdateInteractive();
+    bool SpawnTrialWave();
+    UFUNCTION() void RecordInteractiveDamage(float Applied, AActor* Source, AActor* Victim);
     void Startup();
+    void BuildArenaPresentation();
     AAegisAICharacter* SpawnConfiguredBot(const FVector& Location, EAegisTeam Team, bool Companion,
-                                          bool Elite, int32 Seed);
+                                          bool Elite, int32 Seed, int32 TacticalRole = -1);
     void ApplyDirector();
     void StartEpisode();
     void Sample();
@@ -146,7 +189,56 @@ class AEGISARENA_API AAegisDebugHUD : public AHUD
 {
     GENERATED_BODY()
   public:
+    AAegisDebugHUD();
     virtual void DrawHUD() override;
+    virtual void NotifyHitBoxClick(FName BoxName) override;
+  private:
+    void DrawDecisionLab(class AAegisDecisionLab* Lab);
+    void DrawPortfolio(class AAegisScenarioRunner* Runner);
+    UPROPERTY() TObjectPtr<class UFont> InterfaceFont;
+    UPROPERTY() TObjectPtr<class UTexture2D> BriefingIllustration;
+};
+
+UCLASS()
+class AEGISARENA_API AAegisPlayerController : public APlayerController
+{
+    GENERATED_BODY()
+  public:
+    bool bShowDiagnostics = false;
+    bool bMenuOpen = false;
+    bool bRestartConfirmation = false;
+    bool bPausedForFocus = false;
+    bool bPlannerOpen = false;
+    // Saved local UI preference. Missing/invalid settings default to Chinese.
+    bool bEnglishUI = false;
+    FString CommandFeedback;
+    double CommandFeedbackUntil = 0;
+    void MenuAction(FName Action);
+    void TogglePlannerPanel();
+    void ToggleLanguage();
+    void ToggleWindowMode();
+    void OnApplicationActivationChanged(bool bActive);
+    void ClosePlannerPanel();
+    bool SubmitPlannerInstruction(const FString& Instruction);
+    virtual void SetupInputComponent() override;
+  protected:
+    virtual void BeginPlay() override;
+    virtual void EndPlay(const EEndPlayReason::Type Reason) override;
+  private:
+    bool bPersistUILanguage = true;
+    FDelegateHandle ApplicationActivationHandle;
+    TSharedPtr<class SWidget> PlannerPanel;
+    void Deploy();
+    void Restart();
+    void Guided();
+    void Pressure();
+    void ThirdUpgrade();
+    void Guard();
+    void FocusOrQuit();
+    void Rally();
+    void IssueCompanionCommand(int32 Mode);
+    void PauseTrial();
+    void Diagnostics();
 };
 
 UCLASS()

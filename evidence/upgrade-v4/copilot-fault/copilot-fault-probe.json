@@ -1,0 +1,184 @@
+{
+	"schemaVersion": 1,
+	"passed": true,
+	"engine": "unreal-runtime",
+	"worldType": 1,
+	"begunPlay": true,
+	"rendering": "NullRHI",
+	"fixtureService": true,
+	"syntheticKeyboardInput": true,
+	"directPlannerApi": true,
+	"normalGameplayPauseUsed": true,
+	"actualModelInference": false,
+	"syntheticSlateInput": false,
+	"humanUsabilityTest": false,
+	"fixtureDamage": false,
+	"combatValuesChanged": false,
+	"reason": "Five disclosed HTTP failure/cancellation cases completed",
+	"tracePath": "C:/Users/yzhu/Documents/ChatGPT/Games/Aegis-Arena/Saved/AegisPlans/D51F6A9F4377084C2DE88B843FF9CBE1.jsonl",
+	"plannerStatus": "Classic Guard - model plan unavailable or invalid",
+	"lastOutcome": "model provider timed out",
+	"wallSeconds": 21.178516600281,
+	"timeoutObservedSeconds": 10.00088720023632,
+	"lastStage": 16,
+	"assertions": [
+		{
+			"name": "begun_game_world",
+			"passed": true,
+			"wallSeconds": 0.35015380010008812,
+			"gameSeconds": 1.7448794713127427
+		},
+		{
+			"name": "deployed_living_linked_companion",
+			"passed": true,
+			"wallSeconds": 0.65181810036301613,
+			"gameSeconds": 2.2386448054458015
+		},
+		{
+			"name": "normal_pause_freezes_gameplay",
+			"passed": true,
+			"wallSeconds": 1.0520024001598358,
+			"gameSeconds": 2.2391448054695502
+		},
+		{
+			"name": "malformed_request_reaches_pending",
+			"passed": true,
+			"wallSeconds": 1.0580751001834869,
+			"gameSeconds": 2.2391448054695502
+		},
+		{
+			"name": "malformed_response_rejected",
+			"passed": true,
+			"wallSeconds": 1.3227353990077972,
+			"gameSeconds": 2.2391448054695502
+		},
+		{
+			"name": "malformed_returns_classic_guard",
+			"passed": true,
+			"wallSeconds": 1.3227456994354725,
+			"gameSeconds": 2.2391448054695502
+		},
+		{
+			"name": "manual_delay_request_pending",
+			"passed": true,
+			"wallSeconds": 1.323123499751091,
+			"gameSeconds": 2.2391448054695502
+		},
+		{
+			"name": "normal_resume_before_manual_guard",
+			"passed": true,
+			"wallSeconds": 1.8235133998095989,
+			"gameSeconds": 2.5189775202306919
+		},
+		{
+			"name": "manual_guard_cancels_pending",
+			"passed": true,
+			"wallSeconds": 2.0239043012261391,
+			"gameSeconds": 2.8288609380251728
+		},
+		{
+			"name": "delayed_manual_response_never_accepted",
+			"passed": true,
+			"wallSeconds": 4.3239370994269848,
+			"gameSeconds": 2.8293609380489215
+		},
+		{
+			"name": "delayed_manual_response_preserves_guard",
+			"passed": true,
+			"wallSeconds": 4.3239548988640308,
+			"gameSeconds": 2.8293609380489215
+		},
+		{
+			"name": "restart_delay_request_pending",
+			"passed": true,
+			"wallSeconds": 4.324396301060915,
+			"gameSeconds": 2.8293609380489215
+		},
+		{
+			"name": "normal_restart_replaces_pawn",
+			"passed": true,
+			"wallSeconds": 4.9247587993741035,
+			"gameSeconds": 3.4619466661242768
+		},
+		{
+			"name": "restart_invalidates_pending_plan",
+			"passed": true,
+			"wallSeconds": 4.9247763007879257,
+			"gameSeconds": 3.4619466661242768
+		},
+		{
+			"name": "delayed_restart_response_never_accepted",
+			"passed": true,
+			"wallSeconds": 7.3248726986348629,
+			"gameSeconds": 8.8256327369599603
+		},
+		{
+			"name": "restarted_companion_remains_guard",
+			"passed": true,
+			"wallSeconds": 7.3248924985527992,
+			"gameSeconds": 8.8256327369599603
+		},
+		{
+			"name": "redeploy_before_transport_failures",
+			"passed": true,
+			"wallSeconds": 7.6249956004321575,
+			"gameSeconds": 9.2146166496095248
+		},
+		{
+			"name": "transport_requests_run_in_normal_pause",
+			"passed": true,
+			"wallSeconds": 7.9250525012612343,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "http503_request_pending",
+			"passed": true,
+			"wallSeconds": 7.9255357980728149,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "http503_triggers_explicit_fallback",
+			"passed": true,
+			"wallSeconds": 8.1782983988523483,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "timeout_request_pending",
+			"passed": true,
+			"wallSeconds": 8.1786076985299587,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "timeout_is_bounded_real_wait",
+			"passed": true,
+			"wallSeconds": 18.179197497665882,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "timeout_triggers_explicit_fallback",
+			"passed": true,
+			"wallSeconds": 18.179222401231527,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "all_requests_accounted_no_plan_accepted",
+			"passed": true,
+			"wallSeconds": 18.179233998060226,
+			"gameSeconds": 9.2151166496332735
+		},
+		{
+			"name": "no_later_execution_after_timeout",
+			"passed": true,
+			"wallSeconds": 21.178450297564268,
+			"gameSeconds": 9.2151166496332735
+		}
+	],
+	"plannerCounters":
+	{
+		"requests": 5,
+		"acceptedPlans": 0,
+		"rejectedPlans": 3,
+		"fallbacks": 3,
+		"completedSteps": 0
+	}
+}

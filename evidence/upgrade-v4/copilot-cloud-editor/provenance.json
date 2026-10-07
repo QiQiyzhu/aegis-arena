@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+  "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5",
+  "command": [
+    "D:\\Program Files\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor-Cmd.exe",
+    "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\AegisArena.uproject",
+    "/Game/Aegis/Maps/AegisArena",
+    "-game",
+    "-RenderOffscreen",
+    "-AegisCopilotProbe",
+    "-AegisInputProbe",
+    "-AegisQuit",
+    "-AegisCopilotOutput=D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01",
+    "-ResX=1280",
+    "-ResY=720",
+    "-windowed",
+    "-unattended",
+    "-nop4",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-abslog=D:\\AegisWork\\Reports\\upgrade-v4-copilot-cloud-editor-01\\engine.log"
+  ],
+  "actualModelInference": true,
+  "fixtureService": false,
+  "syntheticSlateInput": true,
+  "humanUsabilityTest": false,
+  "providerEndpoint": "https://api.deepseek.com/chat/completions",
+  "model": "deepseek-flash",
+  "executableSha256": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e",
+  "packaged": false,
+  "startedAtUtc": "2026-09-11T07:07:05.897135+00:00",
+  "exitCode": 0,
+  "screenshots": [
+    {
+      "file": "copilot-open.png",
+      "bytes": 112786,
+      "width": 1280,
+      "height": 720,
+      "sha256": "5f876db2ee86d5fc6edf5c2e331b1677fc95fb8611e5747f98526ab735007e3c",
+      "structureVerified": true
+    },
+    {
+      "file": "copilot-request.png",
+      "bytes": 112762,
+      "width": 1280,
+      "height": 720,
+      "sha256": "4bab32621db2fa78f2cf6036b77b44320e68962482bd466d80ebf25cd38a4b50",
+      "structureVerified": true
+    },
+    {
+      "file": "copilot-plan.png",
+      "bytes": 120934,
+      "width": 1280,
+      "height": 720,
+      "sha256": "1c167aa0c32fca95292c1ec2f7ecbc9eb1a5d8f5ce3e7fe2ab41689702419ed5",
+      "structureVerified": true
+    },
+    {
+      "file": "copilot-executing.png",
+      "bytes": 606791,
+      "width": 1280,
+      "height": 720,
+      "sha256": "b60197ef545d214a2545da85e573366fc5316346102a95666083d69b7e87d12c",
+      "structureVerified": true
+    }
+  ],
+  "inputsAfter": {
+    "sourceSha256": "676f9ed3f7f1b9fa1e45910a287b43fd44afc726065958b38ab3510e87560d5d",
+    "contentSha256": "4333792af4623cd2d405171a76b80741abb7b393063f4d3a218e45bb25e440a5"
+  },
+  "executableSha256After": "ae92f55952a3c9a7def90983fcf5aedce52d8ee8e4565fbd923985e9d9d3e05e",
+  "nativeAssertions": 13,
+  "provider": "Cloud / deepseek-flash",
+  "plan": "capture_relay > guard",
+  "traceSource": "C:\\Users\\yzhu\\Documents\\ChatGPT\\Games\\Aegis-Arena\\Saved\\AegisPlans\\D418282646A212AF9C1D7189EAFE5D80.jsonl",
+  "wallSeconds": 17.734000000004016,
+  "files": {
+    "copilot-executing.png": "b60197ef545d214a2545da85e573366fc5316346102a95666083d69b7e87d12c",
+    "copilot-open.png": "5f876db2ee86d5fc6edf5c2e331b1677fc95fb8611e5747f98526ab735007e3c",
+    "copilot-plan.png": "1c167aa0c32fca95292c1ec2f7ecbc9eb1a5d8f5ce3e7fe2ab41689702419ed5",
+    "copilot-probe.json": "d288423e6371bd0da7465420098e8cad7f3d3351d757684cc4505085902b9e06",
+    "copilot-request.png": "4bab32621db2fa78f2cf6036b77b44320e68962482bd466d80ebf25cd38a4b50",
+    "engine.log": "efd304549b3d827a30244e9c4cd2813d801af426634a246254f7703861319d10",
+    "planner-trace.jsonl": "ee3f92ea01c87430e3f74488ce21e9556d33082f8cc34c69f9a9ad208a16136a",
+    "stdout.log": "52e5852171066058d9e761f90c018870c42b33bf968c9dd74fb6c1a1fc31ffa2"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "engine": "unreal-runtime",
+  "launch": "packaged-development",
+  "scriptedInput": true,
+  "fixtureDamage": false,
+  "humanPlaytest": false,
+  "phase": "development-demonstration",
+  "source": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "inputsBefore": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "command": [
+    "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+    "-AegisPortfolio",
+    "-AegisPortfolioCapture",
+    "-AegisInputProbe",
+    "-RenderOffscreen",
+    "-d3d11",
+    "-windowed",
+    "-ForceRes",
+    "-ResX=1920",
+    "-ResY=1080",
+    "-UseFixedTimeStep",
+    "-FPS=30",
+    "-unattended",
+    "-nop4",
+    "-nosound",
+    "-nosplash",
+    "-stdout",
+    "-FullStdOutLogOutput",
+    "-ForceDPCVars=HomeScreen.EnableHomeScreen=0",
+    "-AegisPortfolioCaptureOutput=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-exit-check-r2",
+    "-AegisPortfolioOutput=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-exit-check-r2\\system",
+    "-AegisPortfolioFrameInterval=0.03333333333333333",
+    "-AegisPortfolioSeed=1101",
+    "-abslog=D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-exit-check-r2\\engine.log",
+    "-AegisPortfolioNoFrames"
+  ],
+  "passed": true,
+  "recording": "native rendered PNGs with game/video timestamps; no generated gameplay frames",
+  "binariesBefore": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298000,
+        "sha256": "9ff0721d8e5038a8bf21cfec8583aef05bc1aa37fdda524b8092468d9c76ef4b"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12786016,
+        "sha256": "e495680594a1edd0f264fc446df507a8269813363e83205bec09b78c55986f07"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 55547,
+        "sha256": "d8aa3fa687b9c1dcbcc5119cb4d6b373ded679be6148de483a2c560a1782b6b7"
+      },
+      "global.ucas": {
+        "bytes": 1568800,
+        "sha256": "cb21e77754a0e0e16df43c66f6e5469a69ef32cb41162c464e526d244f191faa"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "06bf8629dc0554fdb242a27fa7f5a8f7a2d2a23e001a6f055bf5303c8a0dbb29"
+      }
+    }
+  },
+  "binary": {
+    "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+    "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+  },
+  "wrappersBefore": {
+    "run_portfolio_capture.py": "fb8c403eac703a8403654af1c433f98c1c4c415678339e01866a8f92d0169702",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "exitCode": 0,
+  "resultQuitEvidence": {
+    "outcome": "won",
+    "key": "X",
+    "normalExit": true,
+    "resultHoldSeconds": 4.000000208616257
+  },
+  "systemEvidence": {
+    "path": "D:\\AegisWork\\Reports\\portfolio-v1.5-20260918\\capture-exit-check-r2\\system\\portfolio-528AF268421438D821480589CFD3ABEF.json",
+    "sha256": "2e041175e86e1b10a28539ce455f2781614637eae8d3ba100c61500bbe5ab15f",
+    "traceSha256": "e1a11b06efff8e2e2b87c6b460a36917ad30d9e3cf75fdd586134ffdcd4abc5b",
+    "events": 111,
+    "outcome": "won",
+    "ledgerReconciled": true,
+    "damageRoleVerification": "full",
+    "pulsesUsed": 3,
+    "repairsUsed": 1,
+    "actualRepairHealing": 14.0
+  },
+  "outcome": "won",
+  "frames": 0,
+  "videoSeconds": 96.00000500679016,
+  "knownEngineWarnings": [
+    "[2026.09.17-20.45.34:957][  1]LogConsoleManager: Warning: Console variable 'r.MotionVectorSimulation' used in the render thread. Rendering artifacts could happen. Use ECVF_RenderThreadSafe or don't use in render thread."
+  ],
+  "inputsAfter": {
+    "sourceSha256": "30d7bb8f4da778140e5bceb243201d85c5930eeb204350dc2da631d3c6778843",
+    "contentSha256": "fc9cf6d1e9db8f22542f8e4deba1b5ba0d1ec3aed28e7889b987ab1e0f1a7c78"
+  },
+  "binariesAfter": {
+    "launcher": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena.exe",
+      "sha256": "6adf03ef8d250c2303754fcff9434f49fe78721ba7896e91e54ad34eb3d8e8c4"
+    },
+    "gamePayload": {
+      "path": "D:\\AegisWork\\Packages\\portfolio-v1.5-release-r2\\package\\Windows\\AegisArena\\Binaries\\Win64\\AegisArena.exe",
+      "sha256": "b4fbb3a6015ded6c47800f709d6d46af86d28de04eaa6254f5c2e1ff0808026c"
+    },
+    "cookedContainers": {
+      "AegisArena-Windows.pak": {
+        "bytes": 10298000,
+        "sha256": "9ff0721d8e5038a8bf21cfec8583aef05bc1aa37fdda524b8092468d9c76ef4b"
+      },
+      "AegisArena-Windows.ucas": {
+        "bytes": 12786016,
+        "sha256": "e495680594a1edd0f264fc446df507a8269813363e83205bec09b78c55986f07"
+      },
+      "AegisArena-Windows.utoc": {
+        "bytes": 55547,
+        "sha256": "d8aa3fa687b9c1dcbcc5119cb4d6b373ded679be6148de483a2c560a1782b6b7"
+      },
+      "global.ucas": {
+        "bytes": 1568800,
+        "sha256": "cb21e77754a0e0e16df43c66f6e5469a69ef32cb41162c464e526d244f191faa"
+      },
+      "global.utoc": {
+        "bytes": 482,
+        "sha256": "06bf8629dc0554fdb242a27fa7f5a8f7a2d2a23e001a6f055bf5303c8a0dbb29"
+      }
+    }
+  },
+  "wrappersAfter": {
+    "run_portfolio_capture.py": "fb8c403eac703a8403654af1c433f98c1c4c415678339e01866a8f92d0169702",
+    "run_portfolio_probe.py": "a8c1c03bda8461f76c4b7dd03f2d8933bb37cf7cc53780ce2242a682d79ad1bc",
+    "run_decision_lab.py": "d53cf37cc36f3f31871024a7baeec30d2e39ffaeff8a51ba096cbed87c8beedb",
+    "run_unreal_functional.py": "fb32c359f5523d8a9c01a4f0dd14256ddeebcbb746d006e0d67406be5c02c39e",
+    "run_unreal_input_probe.py": "6198c9672180e86b3b97a5ce7c0c0c9fcdde0e4f81505d93184bdd797e4723d4",
+    "run_unreal_trial.py": "27dcb110a743e195fa0e1c7182c677a12b44fcbf11bdfbe82314ba39bd9626ad"
+  },
+  "wallSeconds": 18.26599999999962,
+  "files": {
+    "capture.json": {
+      "bytes": 871844,
+      "sha256": "d16de4e087d82530623c77cf4ee454ca7bf381688b79040773c07c1728bb4ccf"
+    },
+    "engine.log": {
+      "bytes": 80742,
+      "sha256": "dbfcf65dbb8ba59839df9d46e5c4db3f078bc6d3d625663962f46babe30c70d0"
+    },
+    "stdout.log": {
+      "bytes": 80642,
+      "sha256": "a8bdc94d308dcccd6372a20b701902e3f4e14b8f0f87338d18f66711fc3473a0"
+    },
+    "system\\portfolio-528AF268421438D821480589CFD3ABEF.json": {
+      "bytes": 723,
+      "sha256": "2e041175e86e1b10a28539ce455f2781614637eae8d3ba100c61500bbe5ab15f"
+    },
+    "system\\portfolio-528AF268421438D821480589CFD3ABEF.jsonl": {
+      "bytes": 31168,
+      "sha256": "e1a11b06efff8e2e2b87c6b460a36917ad30d9e3cf75fdd586134ffdcd4abc5b"
+    }
+  }
+}

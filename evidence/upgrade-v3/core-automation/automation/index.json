@@ -1,0 +1,104 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "雨竹砌筑",
+			"instance": "FED8C20F4A61E70DA2FD03827C2E7568",
+			"instanceName": "雨竹砌筑-11920",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 11 (23H2) [10.0.22631.5624] ",
+			"model": "Default",
+			"gPU": "Intel(R) UHD Graphics",
+			"cPUModel": "13th Gen Intel(R) Core(TM) i9-13900HX",
+			"rAMInGB": 16,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.09.10-19.37.21",
+	"succeeded": 5,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.082973793148994446,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "DamageAndTeams",
+			"fullTestPath": "Aegis.Core.DamageAndTeams",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"FED8C20F4A61E70DA2FD03827C2E7568"
+			],
+			"duration": 0.016565900295972824,
+			"dateTime": "2026.09.10-19.37.20",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "DirectorBounds",
+			"fullTestPath": "Aegis.Core.DirectorBounds",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"FED8C20F4A61E70DA2FD03827C2E7568"
+			],
+			"duration": 0.016765497624874115,
+			"dateTime": "2026.09.10-19.37.20",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "FixedSeed",
+			"fullTestPath": "Aegis.Core.FixedSeed",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"FED8C20F4A61E70DA2FD03827C2E7568"
+			],
+			"duration": 0.016825400292873383,
+			"dateTime": "2026.09.10-19.37.21",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ScenarioSerialization",
+			"fullTestPath": "Aegis.Core.ScenarioSerialization",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"FED8C20F4A61E70DA2FD03827C2E7568"
+			],
+			"duration": 0.01649089902639389,
+			"dateTime": "2026.09.10-19.37.21",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "UtilityAuthorization",
+			"fullTestPath": "Aegis.Core.UtilityAuthorization",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"FED8C20F4A61E70DA2FD03827C2E7568"
+			],
+			"duration": 0.016326099634170532,
+			"dateTime": "2026.09.10-19.37.21",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

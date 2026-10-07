@@ -1,0 +1,44 @@
+{
+  "case": "focus_zh",
+  "instruction": "攻击视野中的敌人，然后重新集结。",
+  "expectedSkill": "focus_visible",
+  "coldRequest": false,
+  "httpStatus": 200,
+  "latencyMilliseconds": 2197.701800003415,
+  "finishReason": "stop",
+  "schemaValid": true,
+  "grounded": true,
+  "desiredSkillPresent": true,
+  "plan": {
+    "label": "Engage then regroup",
+    "steps": [
+      {
+        "skill": "focus_visible",
+        "target": "t0"
+      },
+      {
+        "skill": "regroup",
+        "target": "none"
+      }
+    ]
+  },
+  "usage": {
+    "completion_tokens": 54,
+    "prompt_tokens": 538,
+    "total_tokens": 592,
+    "prompt_tokens_details": {
+      "cached_tokens": 396
+    }
+  },
+  "timings": {
+    "cache_n": 396,
+    "prompt_n": 142,
+    "prompt_ms": 597.745,
+    "prompt_per_token_ms": 4.209471830985915,
+    "prompt_per_second": 237.55949443324494,
+    "predicted_n": 54,
+    "predicted_ms": 1588.298,
+    "predicted_per_token_ms": 29.96788679245283,
+    "predicted_per_second": 33.36905291072582
+  }
+}

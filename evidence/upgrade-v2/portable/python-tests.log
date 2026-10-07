@@ -1,0 +1,23 @@
+test_actual_frozen_rows_and_counterexamples (test_decision_case.DecisionCaseTests.test_actual_frozen_rows_and_counterexamples) ... ok
+test_canonical_json_ignores_checkout_line_endings_and_key_order (test_decision_case.DecisionCaseTests.test_canonical_json_ignores_checkout_line_endings_and_key_order) ... ok
+test_committed_export_is_reproducible (test_decision_case.DecisionCaseTests.test_committed_export_is_reproducible) ... ok
+test_failed_provenance_mixed_revision_and_changed_aggregate_rejected (test_decision_case.DecisionCaseTests.test_failed_provenance_mixed_revision_and_changed_aggregate_rejected) ... ok
+test_invalid_weights_rejected (test_decision_case.DecisionCaseTests.test_invalid_weights_rejected) ... ok
+test_missing_duplicate_mixed_or_nonfinite_rows_rejected (test_decision_case.DecisionCaseTests.test_missing_duplicate_mixed_or_nonfinite_rows_rejected) ... ok
+test_preference_flip_is_only_endpoint_reweighting (test_decision_case.DecisionCaseTests.test_preference_flip_is_only_endpoint_reweighting) ... ok
+test_input_provenance_tracks_source_and_asset_changes (test_native_gate.NativeEvidenceGateTests.test_input_provenance_tracks_source_and_asset_changes) ... ok
+test_json_success_without_world_assertions_is_rejected (test_native_gate.NativeEvidenceGateTests.test_json_success_without_world_assertions_is_rejected) ... ok
+test_memory_evidence_requires_config_and_game_world (test_native_gate.NativeEvidenceGateTests.test_memory_evidence_requires_config_and_game_world) ... ok
+test_success_requires_all_assertions_and_no_ensure (test_native_gate.NativeEvidenceGateTests.test_success_requires_all_assertions_and_no_ensure) ... ok
+test_actual_binary_json_csv_pipeline (test_tools.ToolsTests.test_actual_binary_json_csv_pipeline) ... ok
+test_cli_rejects_unknown_and_invalid (test_tools.ToolsTests.test_cli_rejects_unknown_and_invalid) ... ok
+test_confidence_interval_not_point_estimate (test_tools.ToolsTests.test_confidence_interval_not_point_estimate) ... ok
+test_overflow (test_tools.ToolsTests.test_overflow) ... ok
+test_reject_invalid_schema_and_ranges (test_tools.ToolsTests.test_reject_invalid_schema_and_ranges) ... ok
+test_schema_roundtrip (test_tools.ToolsTests.test_schema_roundtrip) ... ok
+test_unknown_fields (test_tools.ToolsTests.test_unknown_fields) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.769s
+
+OK

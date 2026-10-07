@@ -1,0 +1,78 @@
+[
+  {
+    "schema_version": 1,
+    "engine": "portable-cpp-model",
+    "seed": 1,
+    "arena": "pillars",
+    "policy": "priority",
+    "enemies": 4,
+    "duration_limit": 2.0,
+    "director": false,
+    "win": false,
+    "survival_seconds": 2.0,
+    "damage_dealt": 0.0,
+    "damage_taken": 0.0,
+    "companion_deaths": 0,
+    "enemy_deaths": 0,
+    "spawned": 4,
+    "time_to_engage": null,
+    "stuck_events": 0,
+    "distance_travelled": 38.94,
+    "cover_usage": 0,
+    "decision_counts": 59,
+    "companion_actions": {
+      "follow": 10,
+      "attack": 0,
+      "support": 0,
+      "retreat": 0
+    },
+    "cpu": {
+      "wall_ms": 0.0526,
+      "decision_mean_us": 0.183051,
+      "geometry_query_mean_us": 0.0,
+      "step_p50_us": 0.3,
+      "step_p95_us": 0.7,
+      "memory_bytes": null,
+      "unreal_game_thread_ms": null,
+      "unreal_eqs_ms": null
+    }
+  },
+  {
+    "schema_version": 1,
+    "engine": "portable-cpp-model",
+    "seed": 1,
+    "arena": "pillars",
+    "policy": "utility",
+    "enemies": 4,
+    "duration_limit": 2.0,
+    "director": false,
+    "win": false,
+    "survival_seconds": 2.0,
+    "damage_dealt": 0.0,
+    "damage_taken": 0.0,
+    "companion_deaths": 0,
+    "enemy_deaths": 0,
+    "spawned": 4,
+    "time_to_engage": null,
+    "stuck_events": 0,
+    "distance_travelled": 38.94,
+    "cover_usage": 0,
+    "decision_counts": 59,
+    "companion_actions": {
+      "follow": 10,
+      "attack": 0,
+      "support": 0,
+      "retreat": 0
+    },
+    "cpu": {
+      "wall_ms": 0.0646,
+      "decision_mean_us": 0.184746,
+      "geometry_query_mean_us": 0.0,
+      "step_p50_us": 0.3,
+      "step_p95_us": 0.6,
+      "memory_bytes": null,
+      "unreal_game_thread_ms": null,
+      "unreal_eqs_ms": null
+    }
+  }
+]
